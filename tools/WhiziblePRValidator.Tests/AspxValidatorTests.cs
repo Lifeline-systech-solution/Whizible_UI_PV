@@ -236,6 +236,39 @@ public class AspxValidatorTests
         Assert.Empty(issues);
     }
 
+    [Fact]
+    public void DebuggerStatement_IsReported()
+    {
+        var markup = """
+            <script>
+            function drawBudgetVarianceChart(data) {
+                debugger
+            }
+            </script>
+            """;
+        var issues = Parse(markup);
+        Assert.Contains(issues, i => i.RuleId == RuleIds.AspxDebugger && i.Severity == Whizible.PRValidator.Models.ValidationSeverity.Error);
+    }
+
+    [Fact]
+    public void DebuggerInCommentStringOrProperty_IsIgnored()
+    {
+        var markup = """
+            <script>
+            // debugger
+            var label = "debugger";
+            /* debugger */
+            var item = { debugger: 1 };
+            item.debugger = 1;
+            </script>
+            <style>
+            .debugger { color: red; }
+            </style>
+            """;
+        var issues = Parse(markup);
+        Assert.DoesNotContain(issues, i => i.RuleId == RuleIds.AspxDebugger);
+    }
+
     private static List<Whizible.PRValidator.Models.ValidationError> Parse(string markup)
     {
         return new AspxMarkupParser(markup, "Page.aspx", Catalog(), true).Parse().Issues;

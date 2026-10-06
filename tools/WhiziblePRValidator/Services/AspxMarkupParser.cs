@@ -357,7 +357,8 @@ public sealed class AspxMarkupParser
             if (local.Equals("script", StringComparison.OrdinalIgnoreCase) ||
                 local.Equals("style", StringComparison.OrdinalIgnoreCase))
             {
-                if (ConsumeRawUntilEnd(local) &&
+                var scanDebugger = local.Equals("script", StringComparison.OrdinalIgnoreCase);
+                if (ConsumeRawUntilEnd(local, scanDebugger) &&
                     stack.Count > 0 &&
                     stack.Peek().Name.Equals(name, StringComparison.OrdinalIgnoreCase))
                 {
@@ -406,13 +407,16 @@ public sealed class AspxMarkupParser
             idScopes.Pop();
     }
 
-    private bool ConsumeRawUntilEnd(string tagName)
+    private bool ConsumeRawUntilEnd(string tagName, bool scanDebugger)
     {
+        var bodyStart = _index;
         var closer = "</" + tagName;
         while (_index < _text.Length)
         {
             if (StartsWith(closer, StringComparison.OrdinalIgnoreCase))
             {
+                if (scanDebugger)
+                    ReportDebuggerStatements(bodyStart, _index);
                 _index += closer.Length;
                 SkipWhitespace();
                 if (Peek('>'))
@@ -427,6 +431,104 @@ public sealed class AspxMarkupParser
             $"<{tagName}> is not closed.",
             $"Add </{tagName}>.");
         return false;
+    }
+
+    private void ReportDebuggerStatements(int start, int end)
+    {
+        var i = start;
+        while (i < end)
+        {
+            var c = _text[i];
+            if (c == '/' && i + 1 < end && _text[i + 1] == '/')
+            {
+                i += 2;
+                while (i < end && _text[i] != '\n')
+                    i++;
+                continue;
+            }
+
+            if (c == '/' && i + 1 < end && _text[i + 1] == '*')
+            {
+                i += 2;
+                while (i + 1 < end && !(_text[i] == '*' && _text[i + 1] == '/'))
+                    i++;
+                i = Math.Min(end, i + 2);
+                continue;
+            }
+
+            if (c is '"' or '\'' or '`')
+            {
+                i = SkipJavaScriptString(i, end, c);
+                continue;
+            }
+
+            if (IsJavaScriptIdentifierStart(c))
+            {
+                var wordStart = i;
+                i++;
+                while (i < end && IsJavaScriptIdentifierPart(_text[i]))
+                    i++;
+
+                if (i - wordStart == 8 &&
+                    string.Compare(_text, wordStart, "debugger", 0, 8, StringComparison.Ordinal) == 0 &&
+                    !IsPropertyAccess(wordStart) &&
+                    !IsObjectKey(i, end))
+                {
+                    Issue(RuleIds.AspxDebugger, LineAt(wordStart), ColumnAt(wordStart),
+                        "JavaScript debugger statement is not allowed.",
+                        "Remove the debugger statement.");
+                }
+
+                continue;
+            }
+
+            i++;
+        }
+    }
+
+    private bool IsPropertyAccess(int wordStart)
+    {
+        var i = wordStart - 1;
+        while (i >= 0 && char.IsWhiteSpace(_text[i]))
+            i--;
+        return i >= 0 && _text[i] == '.';
+    }
+
+    private bool IsObjectKey(int wordEnd, int limit)
+    {
+        var i = wordEnd;
+        while (i < limit && char.IsWhiteSpace(_text[i]))
+            i++;
+        return i < limit && _text[i] == ':';
+    }
+
+    private int SkipJavaScriptString(int index, int end, char quote)
+    {
+        index++;
+        while (index < end)
+        {
+            if (_text[index] == '\\')
+            {
+                index = Math.Min(end, index + 2);
+                continue;
+            }
+
+            if (_text[index] == quote)
+                return index + 1;
+            index++;
+        }
+
+        return index;
+    }
+
+    private static bool IsJavaScriptIdentifierStart(char c)
+    {
+        return char.IsLetter(c) || c is '_' or '$';
+    }
+
+    private static bool IsJavaScriptIdentifierPart(char c)
+    {
+        return char.IsLetterOrDigit(c) || c is '_' or '$';
     }
 
     private bool ConsumeCodeBlock()

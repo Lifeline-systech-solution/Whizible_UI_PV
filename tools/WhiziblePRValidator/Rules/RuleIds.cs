@@ -12,6 +12,7 @@ public static class RuleIds
     public const string AspxMissingBrace = "ASPX-008";
     public const string AspxInvalidMethod = "ASPX-009";
     public const string AspxInvalidReference = "ASPX-010";
+    public const string AspxDebugger = "ASPX-011";
 
     public const string ApiAuthorize = "API-001";
     public const string ApiAuthorizeAudit = "API-002";
