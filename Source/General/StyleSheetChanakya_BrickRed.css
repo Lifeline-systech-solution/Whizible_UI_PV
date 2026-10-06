@@ -1,0 +1,5252 @@
+/*Added By Vaijat K ON 29/09/2016 For Dynamic Theme*/
+@import 'custom_stylesheet.css';
+@import 'Stylesheet_Whiz_Laptop-large.css';
+@import 'Stylesheet_Whiz_Laptop.css';
+@import 'Stylesheet_Whiz_Tablet.css';
+@import 'Stylesheet_Whiz_Mobile.css';
+/*End Added By Vaijat K ON 29/09/2016 For Dynamic Theme*/
+#tree {
+    FONT-SIZE: 7pt;
+    FONT-FAMILY: Verdana, Arial;
+}
+
+    #tree A {
+        FONT-WEIGHT: lighter;
+        FONT-SIZE: 7pt;
+        COLOR: black;
+        FONT-FAMILY: Verdana, Arial;
+        TEXT-DECORATION: none;
+    }
+
+        #tree A:hover:unknown {
+            FONT-WEIGHT: lighter;
+            FONT-SIZE: 11px;
+            COLOR: red;
+            FONT-FAMILY: Verdana, Arial;
+            TEXT-DECORATION: none;
+        }
+
+    #tree IMG {
+        BORDER-RIGHT: 0px;
+        BORDER-TOP: 0px;
+        BORDER-LEFT: 0px;
+        WIDTH: 19px;
+        BORDER-BOTTOM: 0px;
+        HEIGHT: 16px;
+    }
+
+#inactive {
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 9px;
+    BACKGROUND-IMAGE: none;
+    MARGIN: 2pt 2pt 2pt 1px;
+    COLOR: gray;
+    FONT-FAMILY: Verdana, Arial;
+}
+
+BODY.clsBody {
+    BORDER-RIGHT: #641a02 4px solid;
+    BORDER-TOP: #641a02 4px solid;
+    PADDING-LEFT: 2px;
+    SCROLLBAR-FACE-COLOR: #f0d8ce;
+    FONT-SIZE: 7pt;
+    MARGIN: 2px 0px;
+    SCROLLBAR-HIGHLIGHT-COLOR: #f9efea;
+    BORDER-LEFT: #000000 0px solid;
+    SCROLLBAR-SHADOW-COLOR: #f9efea;
+    SCROLLBAR-3DLIGHT-COLOR: #f9efea;
+    LINE-HEIGHT: 1;
+    SCROLLBAR-ARROW-COLOR: #921b19;
+    PADDING-TOP: 0px;
+    SCROLLBAR-TRACK-COLOR: #f9efea;
+    BORDER-BOTTOM: #641a02 4px solid;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    SCROLLBAR-DARKSHADOW-COLOR: #f9efea;
+    SCROLLBAR-BASE-COLOR: #f0e2e2;
+    /*Commented by SuchitraP on 7-Apr-2009 ,KM UI scrollbar was not displayed*/
+    /*overflow:visible  ;*/
+    /*End by SuchitraP*/
+}
+
+BODY.clsPageBody {
+    BORDER-RIGHT: #641a02 4px solid;
+    BORDER-TOP: #641a02 4px solid;
+    PADDING-LEFT: 2px;
+    SCROLLBAR-FACE-COLOR: #f0d8ce;
+    FONT-SIZE: 7pt;
+    MARGIN: 2px 0px;
+    SCROLLBAR-HIGHLIGHT-COLOR: #f9efea;
+    BORDER-LEFT: #000000 0px solid;
+    SCROLLBAR-SHADOW-COLOR: #f9efea;
+    SCROLLBAR-3DLIGHT-COLOR: #f9efea;
+    LINE-HEIGHT: 1;
+    SCROLLBAR-ARROW-COLOR: #921b19;
+    PADDING-TOP: 0px;
+    SCROLLBAR-TRACK-COLOR: #f9efea;
+    BORDER-BOTTOM: #641a02 4px solid;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    SCROLLBAR-DARKSHADOW-COLOR: #f9efea;
+    SCROLLBAR-BASE-COLOR: #f0e2e2;
+}
+/* WAF3_PB_41 START */
+BODY.clsVerticalNavBody {
+    border-right: #641a02 1px solid; /*changed size from 6 to 1*/
+    padding-left: 2px;
+    SCROLLBAR-FACE-COLOR: #f0d8ce;
+    font-size: 7pt;
+    margin: 2px 0px;
+    SCROLLBAR-HIGHLIGHT-COLOR: #f9efea;
+    border-left: #000000 0px solid;
+    SCROLLBAR-SHADOW-COLOR: #f9efea;
+    SCROLLBAR-3DLIGHT-COLOR: #f9efea;
+    line-height: 1;
+    SCROLLBAR-ARROW-COLOR: #921b19;
+    padding-top: 0px;
+    SCROLLBAR-TRACK-COLOR: #f9efea;
+    border-bottom: #641a02 6px solid;
+    background-repeat: repeat;
+    font-family: Verdana, Arial;
+    SCROLLBAR-DARKSHADOW-COLOR: #f9efea;
+    SCROLLBAR-BASE-COLOR: #f0e2e2;
+}
+
+BODY.clsVerticalNavPageBody {
+    border-right: #641a02 6px solid;
+    padding-left: 0px; /*changed padding from 2 to 0*/
+    SCROLLBAR-FACE-COLOR: #f0d8ce;
+    font-size: 7pt;
+    margin: 2px 0px;
+    SCROLLBAR-HIGHLIGHT-COLOR: #f9efea;
+    border-left: #641a02 1px solid; /*changed size from 0 to 1;color from #000000 to style color */
+    SCROLLBAR-SHADOW-COLOR: #f9efea;
+    SCROLLBAR-3DLIGHT-COLOR: #f9efea;
+    line-height: 1;
+    SCROLLBAR-ARROW-COLOR: #921b19;
+    padding-top: 0px;
+    SCROLLBAR-TRACK-COLOR: #f9efea;
+    border-bottom: #641a02 6px solid;
+    background-repeat: repeat;
+    font-family: Verdana, Arial;
+    SCROLLBAR-DARKSHADOW-COLOR: #f9efea;
+    SCROLLBAR-BASE-COLOR: #f0e2e2;
+}
+
+BODY.clsHorizontalNavBody {
+    border-right: #641a02 6px solid;
+    padding-left: 2px;
+    SCROLLBAR-FACE-COLOR: #f0d8ce;
+    font-size: 7pt;
+    margin: 2px 0px 0px;
+    SCROLLBAR-HIGHLIGHT-COLOR: #f9efea;
+    border-left: #000000 0px solid;
+    SCROLLBAR-SHADOW-COLOR: #f9efea;
+    SCROLLBAR-3DLIGHT-COLOR: #f9efea;
+    line-height: 1;
+    SCROLLBAR-ARROW-COLOR: #921b19;
+    padding-top: 0px;
+    SCROLLBAR-TRACK-COLOR: #f9efea;
+    border-bottom: #641a02 1px solid; /*changed size from 6 to 1*/
+    background-repeat: repeat;
+    font-family: Verdana, Arial;
+    SCROLLBAR-DARKSHADOW-COLOR: #f9efea;
+    SCROLLBAR-BASE-COLOR: #f0e2e2;
+}
+
+BODY.clsHorizontalNavPageBody {
+    border-right: #641a02 6px solid;
+    padding-left: 2px;
+    SCROLLBAR-FACE-COLOR: #f0d8ce;
+    font-size: 7pt;
+    margin: 0px 0px 2px 2px;
+    SCROLLBAR-HIGHLIGHT-COLOR: #f9efea;
+    border-left: #000000 0px solid;
+    SCROLLBAR-SHADOW-COLOR: #f9efea;
+    SCROLLBAR-3DLIGHT-COLOR: #f9efea;
+    line-height: 1;
+    SCROLLBAR-ARROW-COLOR: #921b19;
+    padding-top: 0px;
+    SCROLLBAR-TRACK-COLOR: #f9efea;
+    border-bottom: #641a02 6px solid;
+    background-repeat: repeat;
+    font-family: Verdana, Arial;
+    SCROLLBAR-DARKSHADOW-COLOR: #f9efea;
+    SCROLLBAR-BASE-COLOR: #f0e2e2;
+    border-top: #641a02 1px solid; /*<new property>*/
+}
+/* WAF3_PB_41 END */
+BODY.clsBodylinks {
+    BACKGROUND: url(../../Images/BrickRed/clsBody_bg.gif) #f9efea;
+}
+
+BODY.clsFullPageBody {
+    BORDER-RIGHT: #921b19 4px solid;
+    BORDER-TOP: #921b19 4px solid;
+    PADDING-LEFT: 0px;
+    SCROLLBAR-FACE-COLOR: #f0d8ce;
+    FONT-SIZE: 7pt;
+    MARGIN: 2pt;
+    SCROLLBAR-HIGHLIGHT-COLOR: #f9efea;
+    BORDER-LEFT: #921b19 0px solid;
+    SCROLLBAR-SHADOW-COLOR: #f9efea;
+    SCROLLBAR-3DLIGHT-COLOR: #f9efea;
+    LINE-HEIGHT: 1;
+    SCROLLBAR-ARROW-COLOR: #921b19;
+    SCROLLBAR-TRACK-COLOR: #f9efea;
+    BORDER-BOTTOM: #921b19 4px solid;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    SCROLLBAR-DARKSHADOW-COLOR: #f9efea;
+    SCROLLBAR-BASE-COLOR: #f0e2e2;
+    BACKGROUND-COLOR: white;
+}
+
+TABLE.clsTable {
+    FONT-SIZE: 10pt;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: transparent;
+}
+
+TABLE.clsGridTable {
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #f6eee4;
+}
+
+TR.clsTRSectionHeader {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 22px;
+    BACKGROUND-COLOR: #f8dede;
+}
+
+THEAD.clsTRSectionHeader {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 22px;
+    BACKGROUND-COLOR: #f8dede;
+}
+
+TR.clsTRColumnHeader {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 1pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 1pt;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 1pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 1pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 22px;
+    BACKGROUND-COLOR: #f0ccc3;
+}
+
+THEAD.clsTRColumnHeader {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 1pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 1pt;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 1pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 1pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 22px;
+    BACKGROUND-COLOR: #f0ccc3;
+}
+
+TR.clsTRRadarMenu {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 1pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 1pt;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 1pt;
+    BORDER-LEFT: thin;
+    COLOR: white;
+    PADDING-TOP: 1pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 22px;
+    BACKGROUND-COLOR: black;
+}
+
+TR.clsTRRadarCurrent {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 1pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 1pt;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 1pt;
+    BORDER-LEFT: thin;
+    COLOR: red;
+    PADDING-TOP: 1pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 22px;
+    BACKGROUND-COLOR: floralwhite;
+}
+
+TD.clsTDSortColHeader {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 1pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 1pt;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    BACKGROUND: url(../../Images/BrickRed/columnhdr_sel_bg.gif) #921b19;
+    PADDING-BOTTOM: 1pt;
+    BORDER-LEFT: thin;
+    COLOR: white;
+    PADDING-TOP: 1pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 22px;
+}
+
+TR.clsTRPageFilters {
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    COLOR: #000000;
+    PADDING-TOP: 2pt;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 18px;
+    BACKGROUND-COLOR: white; /*#fcefec*/
+}
+
+TH.clsTDSortColHeader {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 1pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 1pt;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    BACKGROUND: url(../../Images/BrickRed/columnhdr_sel_bg.gif) #921b19;
+    PADDING-BOTTOM: 1pt;
+    BORDER-LEFT: thin;
+    COLOR: white;
+    PADDING-TOP: 1pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 22px;
+}
+
+TD.clsTDColumnSeparator {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 1pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 1pt;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 1pt;
+    BACKGROUND-IMAGE: none;
+    PADDING-BOTTOM: 1pt;
+    BORDER-LEFT: thin;
+    WIDTH: 1px;
+    COLOR: black;
+    PADDING-TOP: 1pt;
+    BORDER-BOTTOM: thin;
+    HEIGHT: 22px;
+    BACKGROUND-COLOR: black;
+}
+
+TR.clsTRBlank {
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 7pt;
+    BACKGROUND-IMAGE: none;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    COLOR: #000000;
+    PADDING-TOP: 2pt;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #ffffff;
+}
+
+TR.clsTREven {
+    padding-right: 2pt;
+    padding-left: 2pt;
+    font-size: 8pt;
+    padding-bottom: 2pt;
+    margin: 2pt;
+    color: #000000;
+    padding-top: 2pt;
+    background-repeat: repeat;
+    font-family: Verdana, Arial;
+    height: 18px;
+    background-color: white; /*#fcefec;*/
+}
+
+TR.clsTREven {
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    COLOR: #000000;
+    PADDING-TOP: 2pt;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 18px;
+    BACKGROUND-COLOR: white; /*#fcefec*/
+}
+
+TR.clsTREvenRow {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 18px;
+    BACKGROUND-COLOR: white; /*#fcefec*/
+}
+
+TR.clsTRNumericPaging {
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    MARGIN: 2pt;
+    COLOR: #000000;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 6px;
+    BACKGROUND-COLOR: #F0DCDC;
+}
+
+TR.clsTRGroupHeader {
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    COLOR: #000000;
+    PADDING-TOP: 2pt;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 18px;
+    BACKGROUND-COLOR: #fbf0f0 !important;
+}
+
+TR.clsTROdd:not(.clsSettingstabs .odd) {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 18px;
+    BACKGROUND-COLOR: white; /*#f5e7e7*/
+}
+
+TR.clsTRPartialApprover {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: orange;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 18px;
+    BACKGROUND-COLOR: #f5e7e7;
+}
+
+TR.clsTRPageHeader {
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 18px;
+    BACKGROUND-COLOR: #f6f1ef;
+}
+
+TD.clsTDLabel {
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt 4pt 2pt 2pt;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #f0ccc3;
+    TEXT-ALIGN: right;
+}
+
+TD.clsTDBulleted {
+    BACKGROUND: #c79386;
+}
+
+TD.clsTDEven {
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    COLOR: #000000;
+    PADDING-TOP: 2pt;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #f0ccc3;
+}
+
+TD.clsTDOdd {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #f6f1ef;
+}
+
+TD.clsTDHeader {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 0pt;
+    BORDER-TOP: thin;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    BORDER-BOTTOM: thin;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #fde8e3;
+}
+
+TD.clsTDColumnHeader {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #fde8e3;
+}
+
+TD.clsTDGroupFooter {
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 8pt;
+    BACKGROUND-IMAGE: none;
+    COLOR: black;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #fccdc2;
+}
+
+.ButtonStyle {
+    FONT-SIZE: 8pt !important;
+    TEXT-TRANSFORM: capitalize;
+    WIDTH: 60pt;
+    COLOR: black !important;
+    FONT-FAMILY: Arial;
+    HEIGHT: 18pt;
+    TEXT-ALIGN: center;
+}
+
+TD.clsGraphHeading {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #bd8577;
+}
+
+TR.clsTRSelected {
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 1px;
+    MARGIN: 1px;
+    COLOR: #000000;
+    PADDING-TOP: 1px;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #000000;
+}
+
+TD.clsTDTreeHeader {
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+}
+
+TEXTAREA.clsTextArea {
+    BORDER-RIGHT: #cccccc 1px solid;
+    BORDER-TOP: #cccccc 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cccccc 1px solid;
+    BORDER-BOTTOM: #cccccc 1px solid;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #fbfbfb;
+}
+
+INPUT.clsTextBox {
+    BORDER-RIGHT: #cccccc 1px solid;
+    BORDER-TOP: #cccccc 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cccccc 1px solid;
+    BORDER-BOTTOM: #cccccc 1px solid;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #ffffff;
+}
+
+INPUT.clsNewTextBox {
+    BORDER-RIGHT: #cccccc 1px solid;
+    BORDER-TOP: #cccccc 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cccccc 1px solid;
+    BORDER-BOTTOM: #cccccc 1px solid;
+    FONT-FAMILY: Verdana,Arial;
+    HEIGHT: 18px;
+    BACKGROUND-COLOR: #ffffff;
+}
+
+INPUT.clsColorPaletteTextBox {
+    BORDER-RIGHT: #cccccc 1px solid;
+    BORDER-TOP: #cccccc 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cccccc 1px solid;
+    BORDER-BOTTOM: #cccccc 1px solid;
+    FONT-FAMILY: Verdana,Arial;
+    HEIGHT: 18px;
+    BACKGROUND-COLOR: #ffffff;
+}
+
+INPUT.clsTextBoxReadOnly {
+    BORDER-RIGHT: #cccccc 1px solid;
+    BORDER-TOP: #cccccc 1px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cccccc 1px solid;
+    BORDER-BOTTOM: #cccccc 1px solid;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #f6f1ef;
+}
+
+INPUT.clsFileControl {
+    BORDER-RIGHT: #cccccc 1px solid;
+    BORDER-TOP: #cccccc 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cccccc 1px solid;
+    BORDER-BOTTOM: #cccccc 1px solid;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #f6f1ef;
+}
+
+INPUT.clsCheckBox {
+    FONT-SIZE: 8pt;
+    BORDER-LEFT-COLOR: #cccccc;
+    BORDER-BOTTOM-COLOR: #cccccc;
+    WIDTH: 19px;
+    BORDER-TOP-STYLE: none;
+    FONT-FAMILY: Verdana, Arial;
+    BORDER-RIGHT-STYLE: none;
+    BORDER-LEFT-STYLE: none;
+    HEIGHT: 12px;
+    BORDER-RIGHT-COLOR: #cccccc;
+    BORDER-BOTTOM-STYLE: none;
+}
+
+INPUT.clsOptionButton {
+    FONT-SIZE: 8pt;
+    BORDER-LEFT-COLOR: #cccccc;
+    BORDER-BOTTOM-COLOR: #cccccc;
+    WIDTH: 14px;
+    BORDER-TOP-STYLE: none;
+    FONT-FAMILY: Verdana, Arial;
+    BORDER-RIGHT-STYLE: none;
+    BORDER-LEFT-STYLE: none;
+    HEIGHT: 12px;
+    BORDER-RIGHT-COLOR: #cccccc;
+    BORDER-BOTTOM-STYLE: none;
+}
+
+SELECT.clsComboBox {
+    BORDER-RIGHT: #cccccc 1px solid;
+    BORDER-TOP: #cccccc 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cccccc 1px solid;
+    BORDER-BOTTOM: #cccccc 1px solid;
+    FONT-FAMILY: Verdana, Arial;
+}
+
+TD.clsTDWhiteBG {
+    PADDING-RIGHT: 1pt;
+    PADDING-LEFT: 1pt;
+    FONT-SIZE: 7pt;
+    PADDING-BOTTOM: 1pt;
+    MARGIN: 1pt;
+    COLOR: #000000;
+    PADDING-TOP: 1pt;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #fbfbfb;
+    TEXT-ALIGN: left;
+}
+
+TD.clsHeader {
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #a84848;
+}
+
+BODY.clsHelpBody {
+    BACKGROUND-IMAGE: url(../../Images/BrickRed/Q1.gif);
+}
+
+TD.clsTDHelp {
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #fbfbfb;
+}
+
+INPUT.clsButtonColor {
+    FONT-SIZE: 8pt;
+    TEXT-TRANSFORM: capitalize;
+    WIDTH: 60pt;
+    COLOR: tomato;
+    FONT-FAMILY: Arial;
+    HEIGHT: 18pt;
+    TEXT-ALIGN: center;
+}
+
+TD.clsTDUSER {
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Verdana;
+    TEXT-DECORATION: none;
+}
+
+TD.clsTDPageHeader {
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #fde8e3;
+}
+
+TD.clsTDOddLabel {
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;
+    FONT-SIZE: 7pt;
+    PADDING-BOTTOM: 1px;
+    MARGIN: 1px;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #f6f1ef;
+    TEXT-ALIGN: right;
+}
+
+TD.clsTDEvenLabel {
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;
+    FONT-SIZE: 7pt;
+    PADDING-BOTTOM: 1px;
+    MARGIN: 1px;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #fbfbfb;
+    TEXT-ALIGN: right;
+}
+
+TABLE.clsBorderTable {
+    BORDER-RIGHT: thin inset;
+    BORDER-TOP: thin inset;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: thin inset;
+    BORDER-BOTTOM: thin inset;
+    FONT-FAMILY: Verdana, Arial;
+}
+
+A.clsHrefButton {
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-STYLE: oblique;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: lightcyan;
+    TEXT-DECORATION: none;
+}
+
+TD.clsTDNormal {
+    FONT-SIZE: 10px;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #b9a091;
+    TEXT-ALIGN: center;
+}
+
+TD.clsTDSelected {
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #000000;
+    TEXT-ALIGN: center;
+}
+
+TD.clsTDMouseOver {
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #eac0ae;
+    TEXT-ALIGN: center;
+}
+
+DIV.clsDivKM {
+    BACKGROUND-COLOR: #ffffe8;
+}
+
+TD.clsLinkPageHeader {
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    MARGIN-BOTTOM: 2px;
+    PADDING-BOTTOM: 2px;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #921b19;
+}
+
+TR.clsTRLinkPageHeader {
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    MARGIN-BOTTOM: 2px;
+    PADDING-BOTTOM: 2px;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #660000;
+}
+
+BODY.clsTreeBody {
+    PADDING-LEFT: 0px;
+    SCROLLBAR-FACE-COLOR: #fbf0f0;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 7pt;
+    MARGIN: 0pt;
+    SCROLLBAR-HIGHLIGHT-COLOR: #f9efea;
+    BORDER-LEFT: #641a02 6px solid;
+    SCROLLBAR-SHADOW-COLOR: #f9efea;
+    COLOR: #000000;
+    SCROLLBAR-3DLIGHT-COLOR: #f9efea;
+    LINE-HEIGHT: 1;
+    SCROLLBAR-ARROW-COLOR: #921b19;
+    SCROLLBAR-TRACK-COLOR: #f9efea;
+    BORDER-BOTTOM: #641a02 6px solid;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    SCROLLBAR-DARKSHADOW-COLOR: #f9efea;
+    SCROLLBAR-BASE-COLOR: #f0e2e2;
+    BACKGROUND-COLOR: #fbf0f0;
+}
+
+    BODY.clsTreeBody A.clTocHeading:active {
+        FONT-SIZE: 10px;
+        COLOR: maroon;
+        FONT-FAMILY: Verdana;
+        TEXT-DECORATION: none;
+    }
+
+    BODY.clsTreeBody A.clsTocHeading:hover {
+        FONT-SIZE: 10px;
+        COLOR: red;
+        FONT-FAMILY: Verdana;
+        TEXT-DECORATION: none;
+    }
+
+    BODY.clsTreeBody A.clsTocHeading:link {
+        FONT-SIZE: 10px;
+        COLOR: maroon;
+        FONT-FAMILY: Verdana;
+        TEXT-DECORATION: none;
+    }
+
+    BODY.clsTreeBody A.clsTocHeading:visited {
+        FONT-SIZE: 10px;
+        COLOR: maroon;
+        FONT-FAMILY: Verdana;
+        TEXT-DECORATION: none;
+    }
+
+    BODY.clsTreeBody A.clsTocItem:active {
+        FONT-SIZE: 10px;
+        COLOR: black;
+        FONT-FAMILY: Arial;
+        TEXT-DECORATION: none;
+    }
+
+    BODY.clsTreeBody A.clsTocItem:link {
+        FONT-SIZE: 10px;
+        COLOR: black;
+        FONT-FAMILY: Arial;
+        TEXT-DECORATION: none;
+    }
+
+    BODY.clsTreeBody A.clsTocItem:visited {
+        FONT-SIZE: 10px;
+        COLOR: black;
+        FONT-FAMILY: Arial;
+        TEXT-DECORATION: none;
+    }
+
+    BODY.clsTreeBody A.clsTocItem:hover {
+        FONT-SIZE: 10px;
+        COLOR: black;
+        FONT-FAMILY: Arial;
+        TEXT-DECORATION: none;
+    }
+
+TD.clsTDMPPTasks {
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: tan;
+}
+
+TD.clsTDAllTasks {
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: thistle;
+}
+
+TD.clsTDAssignedTasks {
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: darkturquoise;
+}
+
+TD.clsTDOverAllocate {
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #d8c4c8;
+}
+
+TD.clsTDOverAllocateMPPTasks {
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: peachpuff;
+}
+
+TD.clsTDOverAllocateAssignedTasks {
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #adc8d6;
+}
+
+TD.clsTDCritical {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: red;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #f0e2e2;
+}
+
+    TD.clsTDCritical A {
+        COLOR: red;
+    }
+
+        TD.clsTDCritical A:active {
+            COLOR: red;
+        }
+
+        TD.clsTDCritical A:link {
+            COLOR: red;
+        }
+
+        TD.clsTDCritical A:visited {
+            COLOR: red;
+        }
+
+DIV.clsDivDB {
+    OVERFLOW: auto;
+    WIDTH: 100%;
+    BACKGROUND-COLOR: #f5f5f5;
+}
+
+TR.clsTRPageCaption {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #fbf0f0;
+}
+
+THEAD.clsTRPageCaption {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #fbf0f0;
+}
+
+TR.clsTRMenu {
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    BACKGROUND: url(../../Images/BrickRed/Menu.gif);
+    background-image: url(../../Images/BrickRed/Menu.gif);
+    background-repeat: repeat;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    FONT-FAMILY: Arial, Verdana;
+    HEIGHT: 15px;
+}
+
+TD.clsTDDBNormal {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #00cc00;
+}
+
+TD.clsTDDBWarning {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #ffff66;
+}
+
+TD.clsTDDBDanger {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: white;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #ff3300;
+}
+/* Added By Shrikant B on 1 July 2008 ReqID WAF3_PB_64*/
+A.Menu {
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    padding-top: 1px;
+    border-top-width: 0px;
+    font-weight: lighter;
+    border-left-width: 0px;
+    font-size: 10px;
+    border-left-color: white;
+    border-bottom-width: 0px;
+    border-bottom-color: white;
+    color: black;
+    border-top-color: white;
+    font-family: Verdana, Arial;
+    border-right-width: 0px;
+    text-decoration: none;
+    border-right-color: white;
+    cursor: hand;
+}
+    /* Addition End By Shrikant B on 1 July 2008 ReqID WAF3_PB_64*/
+    A.Menu:link {
+        BORDER-TOP-WIDTH: 0px;
+        PADDING-RIGHT: 3px;
+        PADDING-LEFT: 3px;
+        FONT-WEIGHT: lighter;
+        BORDER-LEFT-WIDTH: 0px;
+        FONT-SIZE: 10px;
+        BORDER-LEFT-COLOR: white;
+        BORDER-BOTTOM-WIDTH: 0px;
+        BORDER-BOTTOM-COLOR: white;
+        PADDING-BOTTOM: 1px;
+        COLOR: black;
+        BORDER-TOP-COLOR: white;
+        PADDING-TOP: 1px;
+        FONT-FAMILY: Verdana, Arial;
+        BORDER-RIGHT-WIDTH: 0px;
+        TEXT-DECORATION: none;
+        BORDER-RIGHT-COLOR: white;
+    }
+
+    A.Menu:visited {
+        BORDER-TOP-WIDTH: 2px;
+        PADDING-RIGHT: 3px;
+        PADDING-LEFT: 3px;
+        FONT-WEIGHT: lighter;
+        BORDER-LEFT-WIDTH: 2px;
+        FONT-SIZE: 10px;
+        BORDER-LEFT-COLOR: white;
+        BORDER-BOTTOM-WIDTH: 2px;
+        BORDER-BOTTOM-COLOR: white;
+        PADDING-BOTTOM: 3px;
+        COLOR: black;
+        BORDER-TOP-COLOR: white;
+        PADDING-TOP: 1px;
+        FONT-FAMILY: Verdana, Arial;
+        BORDER-RIGHT-WIDTH: 2px;
+        TEXT-DECORATION: none;
+        BORDER-RIGHT-COLOR: white;
+    }
+
+    A.Menu:active {
+        BORDER-TOP-WIDTH: 2px;
+        PADDING-RIGHT: 3px;
+        PADDING-LEFT: 3px;
+        FONT-WEIGHT: lighter;
+        BORDER-LEFT-WIDTH: 2px;
+        FONT-SIZE: 10px;
+        BORDER-LEFT-COLOR: white;
+        BORDER-BOTTOM-WIDTH: 2px;
+        BORDER-BOTTOM-COLOR: white;
+        PADDING-BOTTOM: 3px;
+        COLOR: black;
+        BORDER-TOP-COLOR: white;
+        PADDING-TOP: 1px;
+        FONT-FAMILY: Verdana, Arial;
+        BORDER-RIGHT-WIDTH: 2px;
+        TEXT-DECORATION: none;
+        BORDER-RIGHT-COLOR: white;
+    }
+
+    A.Menu:hover {
+        BORDER-RIGHT: black 0px solid;
+        PADDING-RIGHT: 3px;
+        BORDER-TOP: black 0px solid;
+        PADDING-LEFT: 3px;
+        FONT-WEIGHT: lighter;
+        FONT-SIZE: 10px;
+        PADDING-BOTTOM: 1px;
+        BORDER-LEFT: black 0px solid;
+        COLOR: black;
+        PADDING-TOP: 1px;
+        BORDER-BOTTOM: black 0px solid;
+        FONT-FAMILY: Verdana, Arial;
+        BACKGROUND-COLOR: #ffd695;
+    }
+
+A.SetAsDefault:link {
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    TEXT-DECORATION: none;
+}
+
+A.SetAsDefault:hover {
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    TEXT-DECORATION: none;
+}
+
+A.SetAsDefault:visited {
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    TEXT-DECORATION: none;
+}
+
+A.SetAsDefault:active {
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    TEXT-DECORATION: none;
+}
+
+#selected {
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    BACKGROUND: url(../../Images/BrickRed/navtab_sel_bg.gif) #921b19 repeat-x;
+    PADDING-BOTTOM: 4px;
+    MARGIN: 1px -1px -1px 0px;
+    WIDTH: 20px;
+    COLOR: white;
+    PADDING-TOP: 4px;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 11px;
+    TEXT-DECORATION: none;
+}
+
+A.navtab {
+    BORDER-RIGHT: navy 1px solid;
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    BACKGROUND: url(../../Images/BrickRed/navtab_bg.gif) #d6e7fd;
+    PADDING-BOTTOM: 4px;
+    MARGIN: 1px 0px 0px;
+    WIDTH: 20px;
+    COLOR: #641a02;
+    LINE-HEIGHT: 11px;
+    PADDING-TOP: 4px;
+    FONT-FAMILY: Verdana, Arial;
+    POSITION: relative;
+    HEIGHT: 10px;
+    TEXT-DECORATION: none cursor:hand; /* Added By Shrikant on 1 July 2008 ReqID WAF3_PB_64*/
+}
+
+    A.navtab:visited {
+        BORDER-RIGHT: black 1px solid;
+        PADDING-RIGHT: 2px;
+        PADDING-LEFT: 2px;
+        FONT-WEIGHT: normal;
+        FONT-SIZE: 10px;
+        BACKGROUND: url(../../Images/BrickRed/navtab_bg.gif) #d6e7fd;
+        PADDING-BOTTOM: 4px;
+        MARGIN: 1px 0px 0px;
+        COLOR: #641a02;
+        LINE-HEIGHT: 11px;
+        PADDING-TOP: 4px;
+        FONT-FAMILY: Verdana, Arial;
+        POSITION: relative;
+        HEIGHT: 10px;
+        TEXT-DECORATION: none;
+    }
+
+    A.navtab:hover {
+        BORDER-RIGHT: navy 1px solid;
+        PADDING-RIGHT: 2px;
+        PADDING-LEFT: 2px;
+        FONT-WEIGHT: normal;
+        FONT-SIZE: 10px;
+        /*//Chakshuta*/
+        /*BACKGROUND: url(../../Images/green/navtab_hover_bg.gif) #ffdda8;*/
+        BACKGROUND: url(../../Images/BrickRed/navtab_bg.gif) #641a02;
+        /*//Chakshuta*/
+        PADDING-BOTTOM: 4px;
+        MARGIN: 1px 0px 0px;
+        COLOR: #641a02;
+        LINE-HEIGHT: 11px;
+        PADDING-TOP: 4px;
+        FONT-FAMILY: Verdana, Arial;
+        POSITION: relative;
+        HEIGHT: 10px;
+        TEXT-DECORATION: none;
+    }
+
+A.PagingSelected:link {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+}
+
+A.PagingSelected:hover {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+}
+
+A.PagingSelected:visited {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+}
+
+A.PagingSelected:active {
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 11px;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+}
+
+A.PagingNormal:link {
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+}
+
+A.PagingNormal:hover {
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+}
+
+A.PagingNormal:visited {
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+}
+
+A.PagingNormal:active {
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+}
+
+TABLE.clsSubTagTable {
+    BORDER-RIGHT: #921b19 3px solid;
+    BORDER-TOP: #921b19 3px solid;
+    FONT-SIZE: 10pt;
+    BACKGROUND-IMAGE: none;
+    BORDER-LEFT: #921b19 3px solid;
+    BORDER-BOTTOM: #921b19 3px solid;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: transparent;
+}
+
+A.clsCDBLinks:link {
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+    TEXT-DECORATION: none;
+}
+
+A.clsCDBLinks:visited {
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+    TEXT-DECORATION: none;
+}
+
+A.clsCDBLinks:active {
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+    TEXT-DECORATION: none;
+}
+
+A.clsCDBLinks:hover {
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    COLOR: red;
+    FONT-FAMILY: Verdana, Arial;
+    TEXT-DECORATION: none;
+}
+/* Added By Shrikant B on 1 July 2008 ReqID WAF3_PB_64*/
+A.clsTabSelected {
+    PADDING-RIGHT: 2px;
+    BACKGROUND-POSITION: left top;
+    PADDING-LEFT: 5px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    BACKGROUND-ATTACHMENT: scroll;
+    PADDING-BOTTOM: 4px;
+    MARGIN: 1px -1px -5px -2px;
+    COLOR: white;
+    PADDING-TOP: 4px;
+    BACKGROUND-REPEAT: no-repeat;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 11px;
+    BACKGROUND-COLOR: #921b19;
+    TEXT-DECORATION: none;
+    cursor: hand;
+}
+    /* End Addition By Shrikant B on 1 July 2008 ReqID WAF3_PB_64*/
+    A.clsTabSelected:link {
+        PADDING-RIGHT: 2px;
+        BACKGROUND-POSITION: left top;
+        PADDING-LEFT: 5px;
+        FONT-WEIGHT: bold;
+        FONT-SIZE: 10px;
+        BACKGROUND-ATTACHMENT: scroll;
+        PADDING-BOTTOM: 4px;
+        MARGIN: 1px -1px -5px -2px;
+        COLOR: white;
+        PADDING-TOP: 4px;
+        BACKGROUND-REPEAT: no-repeat;
+        FONT-FAMILY: Verdana, Arial;
+        HEIGHT: 11px;
+        BACKGROUND-COLOR: #921b19;
+        TEXT-DECORATION: none;
+    }
+
+    A.clsTabSelected:visited {
+        PADDING-RIGHT: 2px;
+        BACKGROUND-POSITION: left top;
+        PADDING-LEFT: 5px;
+        FONT-WEIGHT: bold;
+        FONT-SIZE: 10px;
+        BACKGROUND-ATTACHMENT: scroll;
+        PADDING-BOTTOM: 4px;
+        MARGIN: 1px -1px -5px -2px;
+        COLOR: white;
+        PADDING-TOP: 4px;
+        BACKGROUND-REPEAT: no-repeat;
+        FONT-FAMILY: Verdana, Arial;
+        HEIGHT: 11px;
+        BACKGROUND-COLOR: #921b19;
+        TEXT-DECORATION: none;
+    }
+
+    A.clsTabSelected:active {
+        PADDING-RIGHT: 2px;
+        BACKGROUND-POSITION: left top;
+        PADDING-LEFT: 5px;
+        FONT-WEIGHT: bold;
+        FONT-SIZE: 10px;
+        BACKGROUND-ATTACHMENT: scroll;
+        PADDING-BOTTOM: 4px;
+        MARGIN: 1px -1px -5px -2px;
+        COLOR: white;
+        PADDING-TOP: 4px;
+        BACKGROUND-REPEAT: no-repeat;
+        FONT-FAMILY: Verdana, Arial;
+        HEIGHT: 11px;
+        BACKGROUND-COLOR: #921b19;
+        TEXT-DECORATION: none;
+    }
+
+    A.clsTabSelected:hover {
+        PADDING-RIGHT: 2px;
+        BACKGROUND-POSITION: left top;
+        PADDING-LEFT: 5px;
+        FONT-WEIGHT: bold;
+        FONT-SIZE: 10px;
+        BACKGROUND-ATTACHMENT: scroll;
+        PADDING-BOTTOM: 4px;
+        MARGIN: 1px -1px -5px -2px;
+        COLOR: white;
+        PADDING-TOP: 4px;
+        BACKGROUND-REPEAT: no-repeat;
+        FONT-FAMILY: Verdana, Arial;
+        HEIGHT: 11px;
+        BACKGROUND-COLOR: #921b19;
+        TEXT-DECORATION: none;
+    }
+
+A.clsCDBSummaryAlert:active {
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: transparent;
+}
+
+A.clsCDBSummaryAlert:visited {
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+}
+
+A.clsCDBSummaryAlert:link {
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+}
+
+A.clsCDBSummaryAlert:hover {
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: blue;
+    FONT-FAMILY: Verdana, Arial;
+}
+
+A.RadarMenu:link {
+    BORDER-TOP-WIDTH: 2px;
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bolder;
+    BORDER-LEFT-WIDTH: 2px;
+    FONT-SIZE: 10px;
+    BORDER-LEFT-COLOR: black;
+    BORDER-BOTTOM-WIDTH: 2px;
+    BORDER-BOTTOM-COLOR: black;
+    PADDING-BOTTOM: 1px;
+    COLOR: white;
+    BORDER-TOP-COLOR: black;
+    PADDING-TOP: 1px;
+    FONT-FAMILY: Verdana, Arial;
+    BORDER-RIGHT-WIDTH: 2px;
+    TEXT-DECORATION: none;
+    BORDER-RIGHT-COLOR: black;
+}
+
+A.RadarMenu:visited {
+    BORDER-TOP-WIDTH: 2px;
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bolder;
+    BORDER-LEFT-WIDTH: 2px;
+    FONT-SIZE: 10px;
+    BORDER-LEFT-COLOR: black;
+    BORDER-BOTTOM-WIDTH: 2px;
+    BORDER-BOTTOM-COLOR: black;
+    PADDING-BOTTOM: 1px;
+    COLOR: white;
+    BORDER-TOP-COLOR: black;
+    PADDING-TOP: 1px;
+    FONT-FAMILY: Verdana, Arial;
+    BORDER-RIGHT-WIDTH: 2px;
+    TEXT-DECORATION: none;
+    BORDER-RIGHT-COLOR: black;
+}
+
+A.RadarMenu:active {
+    BORDER-TOP-WIDTH: 2px;
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bolder;
+    BORDER-LEFT-WIDTH: 2px;
+    FONT-SIZE: 10px;
+    BORDER-LEFT-COLOR: black;
+    BORDER-BOTTOM-WIDTH: 2px;
+    BORDER-BOTTOM-COLOR: black;
+    PADDING-BOTTOM: 1px;
+    COLOR: white;
+    BORDER-TOP-COLOR: black;
+    PADDING-TOP: 1px;
+    FONT-FAMILY: Verdana, Arial;
+    BORDER-RIGHT-WIDTH: 2px;
+    TEXT-DECORATION: none;
+    BORDER-RIGHT-COLOR: black;
+}
+
+A.RadarMenu:hover {
+    BORDER-RIGHT: black 1px solid;
+    PADDING-RIGHT: 2px;
+    BORDER-TOP: black 1px solid;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    PADDING-BOTTOM: 1px;
+    BORDER-LEFT: black 1px solid;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    BORDER-BOTTOM: black 1px solid;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #f6f1ef;
+}
+
+DIV.clsHeaderDiv {
+    Z-INDEX: 3;
+    VISIBILITY: hidden;
+    OVERFLOW: hidden;
+    POSITION: absolute;
+}
+
+TABLE.clsHeaderTable {
+    FONT-SIZE: 10pt;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: transparent;
+}
+/* Added By Shrikant on 1 July 2008 ReqID WAF3_PB_64*/
+A {
+    cursor: hand;
+}
+    /* End Addition By Shrikant on 1 July 2008 ReqID WAF3_PB_64*/
+    A:active {
+        FONT-WEIGHT: lighter;
+        FONT-SIZE: 11px;
+        COLOR: black;
+        FONT-FAMILY: Verdana, Arial;
+        BACKGROUND-COLOR: transparent;
+    }
+
+    A:visited {
+        FONT-WEIGHT: lighter;
+        /*FONT-SIZE: 11px;*/
+        COLOR: black;
+        FONT-FAMILY: Verdana, Arial;
+    }
+
+    A:link {
+        FONT-WEIGHT: lighter;
+        FONT-SIZE: 11px;
+        COLOR: black;
+        FONT-FAMILY: Verdana, Arial;
+    }
+
+    A:hover {
+        FONT-WEIGHT: lighter;
+        /*FONT-SIZE: 11px;*/
+        COLOR: #641a02;
+        FONT-FAMILY: Verdana, Arial;
+    }
+
+    A:inactive {
+        FONT-WEIGHT: lighter;
+        FONT-SIZE: 11px;
+        COLOR: black;
+        FONT-FAMILY: Verdana, Arial;
+    }
+
+    A:unknown {
+        FONT-WEIGHT: lighter;
+        FONT-SIZE: 11px;
+        COLOR: black;
+        FONT-FAMILY: Verdana, Arial;
+    }
+
+BODY.clsBodylnks {
+    BACKGROUND-COLOR: #641a02;
+}
+
+TABLE.clsTableBannerFrame: {
+    BORDER: 0;
+    WIDTH: 100%;
+    BACKGROUND-IMAGE: none;
+}
+
+TABLE.clsTableNavLinks: {
+    BORDER: 0;
+    WIDTH: 100%;
+    BACKGROUND-IMAGE: none;
+}
+
+UNKNOWN {
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    BACKGROUND-IMAGE: none;
+    BORDER-LEFT: 0px;
+    WIDTH: 100%;
+    BORDER-BOTTOM: 0px;
+}
+
+UNKNOWN {
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    BACKGROUND-IMAGE: none;
+    BORDER-LEFT: 0px;
+    WIDTH: 100%;
+    BORDER-BOTTOM: 0px;
+}
+
+TR.clsTRBanner {
+    BORDER-RIGHT: thin;
+    BORDER-TOP: thin;
+    BORDER-LEFT: thin;
+    BORDER-BOTTOM: thin;
+}
+
+TR.clsTRNavLinks {
+    BORDER-RIGHT: thin;
+    BORDER-TOP: thin;
+    BACKGROUND: url(../../Images/BrickRed/bs_color_2.gif);
+    BORDER-LEFT: thin;
+    BORDER-BOTTOM: thin;
+    HEIGHT: 30px;
+}
+
+A.clsNavTab {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #ffffff;
+    FONT-FAMILY: Tahoma;
+    POSITION: relative;
+    TEXT-DECORATION: none;
+}
+
+    A.clsNavTab:visited {
+        FONT-WEIGHT: bold;
+        FONT-SIZE: 11px;
+        COLOR: #ffffff;
+        FONT-FAMILY: Tahoma;
+        POSITION: relative;
+        TEXT-DECORATION: none;
+    }
+
+    A.clsNavTab:hover {
+        FONT-WEIGHT: bold;
+        FONT-SIZE: 11px;
+        COLOR: #ffffff;
+        FONT-FAMILY: Tahoma;
+        POSITION: relative;
+        TEXT-DECORATION: underline;
+    }
+
+A.clsSelected {
+    PADDING-RIGHT: 5px;
+    PADDING-LEFT: 5px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    BACKGROUND: url(../../Images/BrickRed/grey-color.gif) repeat-x;
+    PADDING-BOTTOM: 2px;
+    COLOR: #641a02;
+    FONT-FAMILY: Tahoma;
+    POSITION: relative;
+    TEXT-DECORATION: none;
+}
+
+    A.clsSelected:visited {
+        BORDER-RIGHT: #3366ff 1px groove;
+        PADDING-RIGHT: 5px;
+        BORDER-TOP: blue 1px groove;
+        PADDING-LEFT: 5px;
+        FONT-WEIGHT: bold;
+        FONT-SIZE: 11px;
+        BACKGROUND: url(../../Images/BrickRed/grey-color.gif) repeat-x;
+        PADDING-BOTTOM: 2px;
+        BORDER-LEFT: blue 1px groove;
+        COLOR: #641a02;
+        BORDER-BOTTOM: #3366ff 1px groove;
+        FONT-FAMILY: Tahoma;
+        POSITION: relative;
+        TEXT-DECORATION: none;
+    }
+
+    A.clsSelected:hover {
+        BORDER-RIGHT: #3366ff 1px groove;
+        PADDING-RIGHT: 5px;
+        BORDER-TOP: blue 1px groove;
+        PADDING-LEFT: 5px;
+        FONT-WEIGHT: bold;
+        FONT-SIZE: 11px;
+        BACKGROUND: url(../../Images/BrickRed/grey-color.gif) repeat-x;
+        PADDING-BOTTOM: 2px;
+        BORDER-LEFT: blue 1px groove;
+        COLOR: #641a02;
+        BORDER-BOTTOM: #3366ff 1px groove;
+        FONT-FAMILY: Tahoma;
+        POSITION: relative;
+        TEXT-DECORATION: underline;
+    }
+
+TD.clsLinkPageHeaderInner {
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    MARGIN-BOTTOM: 2px;
+    PADDING-BOTTOM: 2px;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    /*BACKGROUND-COLOR: #641a02*/
+}
+
+BODY.clsNavMenuPaneBody {
+    BORDER-LEFT: #641a02 6px solid;
+    BORDER-RIGHT: #641A02 3px solid;
+    BORDER-BOTTOM: #641a02 6px solid;
+    MARGIN: 0px 0px 2px 0px; /* T,L,B,R */
+    BACKGROUND: url(../../Images/BrickRed/NavMenuPaneBG.gif) #f9efea no-repeat;
+}
+
+TABLE.clsTableNavMenu {
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    BACKGROUND-IMAGE: none;
+    BORDER-LEFT: 0px;
+    BORDER-BOTTOM: 0px;
+    HEIGHT: 20px;
+}
+
+A.clsLinkParentNavMenu {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #641a02;
+    FONT-FAMILY: Tahoma;
+    POSITION: relative;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+
+    A.clsLinkParentNavMenu:visited {
+        FONT-WEIGHT: bold;
+        FONT-SIZE: 11px;
+        COLOR: #641a02;
+        FONT-FAMILY: Tahoma;
+        POSITION: relative;
+        TEXT-ALIGN: left;
+        TEXT-DECORATION: none;
+    }
+
+    A.clsLinkParentNavMenu:hover {
+        FONT-WEIGHT: bold;
+        FONT-SIZE: 11px;
+        COLOR: #641a02;
+        FONT-FAMILY: Tahoma;
+        POSITION: relative;
+        TEXT-ALIGN: left;
+        TEXT-DECORATION: underline;
+    }
+
+    A.clsLinkParentNavMenu:active {
+        FONT-WEIGHT: bold;
+        FONT-SIZE: 11px;
+        COLOR: #641a02;
+        FONT-FAMILY: Tahoma;
+        POSITION: relative;
+        TEXT-ALIGN: left;
+        TEXT-DECORATION: underline;
+    }
+
+TR.clsTRParentNavMenu {
+    POSITION: relative;
+    HEIGHT: 20px;
+    TEXT-ALIGN: left;
+}
+
+TD.clsTDParentNavMenu {
+    POSITION: relative;
+    HEIGHT: 20px;
+    TEXT-ALIGN: left;
+}
+
+TD.clsTDParentNavMenuImg {
+    VERTICAL-ALIGN: top;
+    HEIGHT: 20px;
+}
+
+A.clsLinkChildNavMenu {
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 11px;
+    COLOR: #641a02;
+    FONT-FAMILY: Tahoma;
+    POSITION: relative;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+
+    A.clsLinkChildNavMenu:visited {
+        FONT-WEIGHT: lighter;
+        FONT-SIZE: 11px;
+        COLOR: #641a02;
+        FONT-FAMILY: Tahoma;
+        POSITION: relative;
+        TEXT-ALIGN: left;
+        TEXT-DECORATION: none;
+    }
+
+    A.clsLinkChildNavMenu:hover {
+        FONT-WEIGHT: lighter;
+        FONT-SIZE: 11px;
+        COLOR: #641a02;
+        FONT-FAMILY: Tahoma;
+        POSITION: relative;
+        TEXT-ALIGN: left;
+        TEXT-DECORATION: underline;
+    }
+
+    A.clsLinkChildNavMenu:active {
+        FONT-WEIGHT: lighter;
+        FONT-SIZE: 11px;
+        COLOR: #641a02;
+        FONT-FAMILY: Tahoma;
+        POSITION: relative;
+        TEXT-ALIGN: left;
+        TEXT-DECORATION: underline;
+    }
+
+TR.clsTRChildNavMenu {
+    POSITION: relative;
+    HEIGHT: 20px;
+    TEXT-ALIGN: left;
+}
+
+TD.clsTDChildNavMenu {
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 11px;
+    COLOR: #641a02;
+    FONT-FAMILY: Tahoma;
+    POSITION: relative;
+    HEIGHT: 20px;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+
+TD.clsTDChildNavMenuImg {
+    VERTICAL-ALIGN: top;
+    HEIGHT: 20px;
+}
+
+A.clsLinkSelectedNavMenu {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #641a02;
+    FONT-FAMILY: Tahoma;
+    POSITION: relative;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+
+    A.clsLinkSelectedNavMenu:visited {
+        FONT-WEIGHT: bold;
+        FONT-SIZE: 11px;
+        COLOR: #641a02;
+        FONT-FAMILY: Tahoma;
+        POSITION: relative;
+        TEXT-ALIGN: left;
+        TEXT-DECORATION: none;
+    }
+
+    A.clsLinkSelectedNavMenu:hover {
+        FONT-WEIGHT: bold;
+        FONT-SIZE: 11px;
+        COLOR: #641a02;
+        FONT-FAMILY: Tahoma;
+        POSITION: relative;
+        TEXT-ALIGN: left;
+        TEXT-DECORATION: underline;
+    }
+
+    A.clsLinkSelectedNavMenu:active {
+        FONT-WEIGHT: bold;
+        FONT-SIZE: 11px;
+        COLOR: #641a02;
+        FONT-FAMILY: Tahoma;
+        POSITION: relative;
+        TEXT-ALIGN: left;
+        TEXT-DECORATION: underline;
+    }
+
+TR.clsTRSelectedNavMenu {
+    POSITION: relative;
+    HEIGHT: 20px;
+    TEXT-DECORATION: none;
+}
+
+TD.clsTDSelectedNavMenu {
+    BACKGROUND: url(../../Images/BrickRed/NavMenuselectionBG.gif) no-repeat;
+    POSITION: relative;
+    HEIGHT: 20px;
+    TEXT-DECORATION: none;
+}
+
+TD.clsTDSelectedNavMenuImg {
+    VERTICAL-ALIGN: top;
+    HEIGHT: 20px;
+}
+
+#clsDivNavMenu {
+    SCROLLBAR-FACE-COLOR: #f0d8ce;
+    SCROLLBAR-HIGHLIGHT-COLOR: #f9efea;
+    OVERFLOW: auto;
+    SCROLLBAR-SHADOW-COLOR: #f9efea;
+    SCROLLBAR-3DLIGHT-COLOR: #f9efea;
+    SCROLLBAR-ARROW-COLOR: #921b19;
+    SCROLLBAR-TRACK-COLOR: #f9efea;
+    SCROLLBAR-DARKSHADOW-COLOR: #f9efea;
+    SCROLLBAR-BASE-COLOR: #f0e2e2;
+    scroll: auto;
+}
+
+TR.clsTRBody {
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    COLOR: #000000;
+    PADDING-TOP: 2pt;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 18px;
+    BACKGROUND-COLOR: white; /*#fbf0f0*/
+}
+
+BODY.clsCDBBody {
+    BORDER-RIGHT: 0px;
+    SCROLLBAR-FACE-COLOR: #f0d8ce;
+    FONT-SIZE: 0pt;
+    MARGIN: 0px;
+    SCROLLBAR-HIGHLIGHT-COLOR: #f9efea;
+    BORDER-LEFT: 0px;
+    SCROLLBAR-SHADOW-COLOR: #f9efea;
+    COLOR: white;
+    SCROLLBAR-3DLIGHT-COLOR: #f9efea;
+    LINE-HEIGHT: 0;
+    SCROLLBAR-ARROW-COLOR: #921b19;
+    PADDING-TOP: 0px;
+    SCROLLBAR-TRACK-COLOR: #f9efea;
+    BORDER-BOTTOM: 0px;
+    BACKGROUND-REPEAT: no-repeat;
+    SCROLLBAR-DARKSHADOW-COLOR: #f9efea;
+    SCROLLBAR-BASE-COLOR: #f0e2e2;
+    BACKGROUND-COLOR: white;
+}
+
+TD.Locked {
+    BORDER-RIGHT: silver 1px solid;
+    FONT-WEIGHT: bold;
+    BACKGROUND-COLOR: #e5c8ba;
+}
+
+TH.Locked {
+    BORDER-RIGHT: silver 1px solid;
+    FONT-WEIGHT: bold;
+    BACKGROUND-COLOR: #e5c8ba;
+}
+
+#clsDivNavFavMenu {
+    overflow: auto;
+    color: White;
+    FONT-WEIGHT: Bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: none;
+    POSITION: relative;
+    background-color: #641A02;
+    scroll: auto;
+    SCROLLBAR-FACE-COLOR: #F9EFEA;
+    SCROLLBAR-HIGHLIGHT-COLOR: #FAEFEA;
+    SCROLLBAR-SHADOW-COLOR: #FAEFEA;
+    SCROLLBAR-ARROW-COLOR: #3D5FA3;
+    SCROLLBAR-TRACK-COLOR: #FAEFEA;
+    SCROLLBAR-BASE-COLOR: #E0E7EF;
+    scrollbar-darkshadow-color: #FAEFEA;
+    scrollbar-3dLight-Color: #FAEFEA;
+}
+
+/* Child Node */
+a.clsLinkFavNavMenu, a.clsLinkFavNavMenu:visited {
+    COLOR: #ffffff;
+    TEXT-DECORATION: none;
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+    TEXT-ALIGN: left;
+    POSITION: relative;
+    padding: 2 2 4 2;
+}
+
+    a.clsLinkFavNavMenu:hover {
+        COLOR: #ffffff;
+        TEXT-DECORATION: underline;
+        FONT-WEIGHT: lighter;
+        FONT-SIZE: 11px;
+        FONT-FAMILY: Tahoma;
+        TEXT-ALIGN: left;
+        POSITION: relative;
+    }
+
+    a.clsLinkFavNavMenu:active {
+        COLOR: #ffffff;
+        TEXT-DECORATION: underline;
+        FONT-WEIGHT: lighter;
+        FONT-SIZE: 11px;
+        FONT-FAMILY: Tahoma;
+        TEXT-ALIGN: left;
+        POSITION: relative;
+    }
+
+TD.clsFavoriteChildTDImg {
+    vertical-align: top;
+    border: none;
+}
+
+THead.clsTHeadFavoritesNavMenu {
+    background-color: #FAEFEA;
+    color: #641A02;
+    FONT-WEIGHT: Bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: none;
+    TEXT-ALIGN: left;
+    POSITION: relative;
+}
+
+Tabel.clsTableNavFavMenu {
+    BORDER: 0;
+    BACKGROUND-IMAGE: none;
+}
+/*WAF3_PB_30 UmeshJ Aug 10, 2006*/
+TD.clsTDFirstColumn {
+    border-right: 1px groove;
+    padding-right: 1pt;
+    border-top: 1px groove;
+    padding-left: 1pt;
+    font-weight: bold;
+    padding-bottom: 1pt;
+    border-left: 1px groove;
+    padding-top: 1pt;
+    border-bottom: 1px groove;
+    background-color: lightgrey;
+}
+
+TH.clsTHHeadFirstColumn {
+    border-right: 1px groove;
+    padding-right: 1pt;
+    border-top: 1px groove;
+    padding-left: 1pt;
+    font-weight: bold;
+    padding-bottom: 1pt;
+    border-left: 1px groove;
+    padding-top: 1pt;
+    border-bottom: 1px groove;
+    background-color: lightgrey;
+}
+
+/* WAF3_WF_2: Webform Workflow Starts*/
+div.clsDivWF {
+    height: 400px;
+    overflow: auto;
+}
+
+table.clsWFtable {
+    font-size: 10pt;
+    background-image: none;
+    font-family: Verdana, Arial;
+    background-color: transparent;
+    width: 99.9%;
+    height: 100%;
+}
+
+tr.clsTRDesignerBody {
+    background-image: url(../../images/cssImages/Workflow/WF_DesignerGrid.gif);
+    background-repeat: repeat;
+    width: 99.9%;
+    height: 100%;
+}
+
+td.clsRectSubmitStage {
+    border-style: none;
+    width: 190px;
+    height: 55px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Verdana, Arial;
+    font-size: 8pt;
+    padding: 0px 15px 0px 15px;
+    background-image: url(../../images/cssImages/Workflow/WF_SubmitStageBG.gif);
+    background-repeat: no-repeat;
+}
+
+td.clsRectArchiveStage {
+    border-style: none;
+    width: 190px;
+    height: 55px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Verdana, Arial;
+    font-size: 8pt;
+    padding: 0px 15px 0px 15px;
+    background-image: url(../../images/cssImages/Workflow/WF_ArchiveStageBG.gif);
+    background-repeat: no-repeat;
+}
+
+td.clsRectUserStage {
+    border-style: none;
+    width: 190px;
+    height: 55px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Verdana, Arial;
+    font-size: 8pt;
+    padding: 0px 25px 0px 25px;
+    background-image: url(../../images/cssImages/Workflow/WF_UserStageBG.gif);
+    background-repeat: no-repeat;
+}
+
+td.clsRectSystemStage {
+    border-style: none;
+    width: 190px;
+    height: 55px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Verdana, Arial;
+    font-size: 8pt;
+    padding: 0px 25px 0px 25px;
+    background-image: url(../../images/cssImages/Workflow/WF_SystemStageBG.gif);
+    background-repeat: no-repeat;
+}
+
+td.clsRectTimerStage {
+    border-style: none;
+    width: 190px;
+    height: 55px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Verdana, Arial;
+    font-size: 8pt;
+    padding: 0px 25px 0px 25px;
+    background-image: url(../../images/cssImages/Workflow/WF_TimerStageBG.gif);
+    background-repeat: no-repeat;
+}
+
+td.clsRectStageWait {
+    width: 300px;
+    height: 55px;
+    vertical-align: middle;
+    text-align: left;
+    font-family: Verdana, Arial;
+    font-size: 8pt;
+    padding: 0px 15px 0px 15px;
+    background-image: url(../../images/cssImages/Workflow/WF_EventWait.gif);
+    background-repeat: no-repeat;
+}
+
+td.clsRectStageWaitForOthers {
+    width: 190px;
+    height: 55px;
+    vertical-align: middle;
+    text-align: left;
+    font-family: Verdana, Arial;
+    font-size: 8pt;
+    padding: 0px 15px 0px 15px;
+    background-image: url(../../images/cssImages/Workflow/WF_EventWaitForOthers.gif);
+    background-repeat: no-repeat;
+}
+
+td.clsRectEventApprove {
+    width: 300px;
+    height: 55px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Verdana, Arial;
+    font-size: 8pt;
+    padding: 0px 25px 0px 25px;
+    background-image: url(../../images/cssImages/Workflow/WF_EventApprove.gif);
+    background-repeat: no-repeat;
+}
+
+td.clsRectEventReject {
+    width: 300px;
+    height: 55px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Verdana, Arial;
+    font-size: 8pt;
+    padding: 0px 25px 0px 25px;
+    background-image: url(../../images/cssImages/Workflow/WF_EventReject.gif);
+    background-repeat: no-repeat;
+}
+
+td.clsEventDetailCap {
+    vertical-align: top;
+    text-align: right;
+    width: 10%;
+    font-family: Verdana, Arial;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+td.clsEventDetailText {
+    vertical-align: top;
+    text-align: left;
+    width: 90%;
+    font-family: Verdana, Arial;
+    font-size: 8pt;
+}
+
+td.clsVerticalLine {
+    width: 1px;
+    height: 55px;
+    background-image: url(../../images/cssImages/Workflow/lineV.gif);
+    background-position: right top;
+    background-repeat: repeat-y;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+td.clsHorizontalLine {
+    width: 50px;
+    height: 1px;
+    background-image: url(../../images/cssImages/Workflow/lineH.gif);
+    background-position: left center;
+    background-repeat: repeat-x;
+    margin: 0px 0px 0px0px;
+    padding: 0px 0px 0px0px;
+}
+
+
+td.clsVericleLineGap {
+    height: 11px;
+    background-image: url(../../images/cssImages/Workflow/lineV.gif);
+    background-position: right top;
+    background-repeat: repeat-y;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+td.clsDownArrow {
+    width: 10px;
+    height: 5px;
+    background-image: url(../../images/cssImages/Workflow/arrow_down.gif);
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+/* WAF3_WF_2: Webform Workflow Ends*/
+
+/* WAF3_PB_47: Context Menu: Start */
+div.ContextMenu {
+    border-right: black 1px outset;
+    border-top: black 1px outset;
+    font-weight: lighter;
+    font-size: 10px;
+    z-index: 20;
+    background: #f7f7f7;
+    border-left: black 1px outset;
+    border-bottom: black 1px outset;
+    font-family: Verdana, Arial;
+    position: absolute;
+}
+/*Added By Chakshuta H on 20th-July-2017 Theme issue fixing*/
+.FadingTooltip {
+    background-color: #f8dede !important;
+}
+/*End Of Added By Chakshuta H on 20th-July-2017 Theme issue fixing*/
+tr.CtMn_Node {
+    font-size: 8pt;
+    font-family: Verdana;
+    cursor: default;
+    color: black;
+}
+/*Added By Chakshuta H on 20th-July-2017 Purpose::Theme issue fixing*/
+tr.CtMn_Node_Hover {
+    font-size: 8pt;
+    font-family: Verdana;
+    background-color: #f8dede; /*#dce6c3;*/
+    cursor: default;
+    color: black;
+    /*Added By Chakshuta H on 20th-July-2017 Purpose::Theme issue fixing*/
+    background: #f8dede !important;
+    /*End Of Added By Chakshuta H on 20th-July-2017 Purpose::Theme issue fixing*/
+}
+/*@media only screen and (max-width:1240px) and (min-width:992px)*/
+#tblGrid0581 tr.clsTRColumnHeader {
+    font-family: "Helvetica";
+    font-size: 11px;
+    border-right: thin;
+    padding-right: 1pt;
+    border-top: thin;
+    padding-left: 1pt;
+    padding-bottom: 1pt;
+    border-left: thin;
+    padding-top: 1pt;
+    border-bottom: thin;
+    font-weight: normal;
+    color: black;
+    height: 22px;
+    background-color: #FBF0F0;
+}
+/*End Of Added By Chakshuta H on 20th-July-2017 Purpose::Theme issue fixing*/
+tr.CtMn_Node_Hover {
+    font-size: 8pt;
+    font-family: Verdana;
+    background-color: #eddcd4;
+    cursor: default;
+    color: black;
+}
+
+tr.CtMn_Node_Disabled {
+    font-size: 8pt;
+    font-family: Verdana;
+    cursor: default;
+    color: Gray;
+}
+
+td.CtMn_LeftFill {
+    background-repeat: repeat-y;
+    background-image: url(../../Images/BrickRed/CtMn_LeftFill.jpg);
+    width: 20px;
+}
+
+td.CtMn_Hr {
+    height: 5px;
+    vertical-align: bottom;
+    background-repeat: repeat-x;
+    background-image: url(../../images/BrickRed/line_CtMn_Hr.gif);
+}
+
+td.CtMn_LeftFill_Hr {
+    background-image: url(../../Images/BrickRed/CtMn_LeftFill.jpg);
+    background-repeat: repeat-y;
+    width: 20px;
+    height: 5px;
+}
+/* WAF3_PB_47: Context Menu: End */
+
+/* Modified for WAF3_PB_47 : Start */
+/* Dropdown Menu START*/
+td.Mn_LeftFill {
+    background-repeat: repeat-y;
+    background-image: url(../../Images/BrickRed/Mn_LeftFill.jpg);
+    width: 20px;
+}
+
+td.Mn_Hr {
+    height: 5px;
+    vertical-align: bottom;
+    background-repeat: repeat-x;
+    background-image: url(../../images/BrickRed/line_Mn_Hr.gif);
+}
+
+td.Mn_LeftFill_Hr {
+    background-image: url(../../Images/BrickRed/Mn_LeftFill.jpg);
+    background-repeat: repeat-y;
+    width: 20px;
+    height: 5px;
+}
+
+Div.DropdownMenu {
+    border-right: black 1px outset;
+    border-top: black 1px outset;
+    font-weight: lighter;
+    font-size: 10px;
+    z-index: 20;
+    background: #f7f7f7; /*mistyrose;*/
+    visibility: hidden;
+    border-left: black 1px outset;
+    border-bottom: black 1px outset;
+    font-family: Verdana, Arial;
+    position: absolute;
+    top: -300px;
+}
+
+TR.Menu_HR {
+    height: 3px;
+    vertical-align: middle;
+    background-repeat: repeat-x;
+    background-image: url(../../images/brickred/line_HR.gif);
+}
+
+TR.MenuSelected_Normal {
+    font-size: 8pt;
+    font-family: Verdana;
+    cursor: default;
+    color: black;
+}
+
+TR.MenuSelected_Hover {
+    font-size: 8pt;
+    font-family: Verdana;
+    background-color: #eddcd4;
+    /*	background-image: url(../../Images/brickred/Menu.gif); */
+    cursor: default;
+    color: black;
+}
+
+A.Actions:link {
+    border-right: black 1px outset;
+    border-top: black 1px outset;
+    border-left: black 1px outset;
+    border-bottom: black 1px solid;
+    font-size: 8pt;
+    font-family: Verdana;
+    cursor: default;
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;
+}
+
+A.Actions:active {
+    font-size: 8pt;
+    font-family: Verdana;
+    cursor: default;
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;
+}
+
+A.Actions:visited {
+    border-right: black 1px outset;
+    border-top: black 1px outset;
+    border-left: black 1px outset;
+    border-bottom: black 1px solid;
+    font-size: 8pt;
+    font-family: Verdana;
+    cursor: default;
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;
+}
+
+A.Actions:hover {
+    font-size: 8pt;
+    font-family: Verdana;
+    background-color: #f7f7f7; /* mistyrose;*/
+    cursor: default;
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;
+}
+
+A.Actions_Selected:link {
+    border-right: black 1px outset;
+    border-top: black 1px outset;
+    border-left: black 1px outset;
+    border-bottom: black thin;
+    PADDING-LEFT: 8px;
+    padding-right: 6px;
+    font-weight: lighter;
+    font-size: 8pt;
+    padding-bottom: 1px;
+    cursor: default;
+    color: black;
+    padding-top: 1px;
+    font-family: Verdana;
+    background-color: #f7f7f7; /* mistyrose;*/
+}
+
+A.Actions_Selected:active {
+    font-size: 8pt;
+    font-family: Verdana;
+    cursor: default;
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;
+    background-color: #f7f7f7; /* mistyrose;*/
+}
+
+A.Actions_Selected:visited {
+    border-right: black 1px outset;
+    border-top: black 1px outset;
+    border-left: black 1px outset;
+    border-bottom: black 1px;
+    font-size: 8pt;
+    font-family: Verdana;
+    cursor: default;
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;
+    background-color: #f7f7f7; /* mistyrose;*/
+}
+
+A.Actions_Selected:hover {
+    font-size: 8pt;
+    font-family: Verdana;
+    cursor: default;
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;
+    background-color: #f7f7f7; /* mistyrose;*/
+    /*background-image: url(../../Images/purple/Menu.gif);*/
+}
+/* Dropdown Menu END*/
+/* Modification for WAF3_PB_47: Ends */
+
+/* Added By Ninad Text Area*/
+div.clsDivTextArea {
+    BORDER-TOP: gainsboro 1px solid;
+    OVERFLOW: scroll;
+    BORDER-LEFT: gainsboro 1px solid;
+}
+/*End Addition By Ninad Text Area*/
+
+/*WAF3_QRB_16 START :  Added for Server Grid By PushkarK*/
+
+.ServerGrid_clsTREvenRow {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 18px;
+    BACKGROUND-COLOR: #fcefec;
+}
+
+.ServerGrid_clsTROddRow {
+    BORDER-RIGHT: thin;
+    /*PADDING-RIGHT: 2pt;*/
+    BORDER-TOP: thin;
+    /*PADDING-LEFT: 2pt;*/
+    FONT-SIZE: 8pt;
+    /*PADDING-BOTTOM: 2pt;*/
+    /*MARGIN: 2pt;*/
+    BORDER-LEFT: thin;
+    COLOR: black;
+    /*PADDING-TOP: 2pt;*/
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    /*HEIGHT: 18px;*/
+    BACKGROUND-COLOR: #f5e7e7;
+}
+
+.ServerGrid_clsTRColumnHeader {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 1pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 1pt;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 1pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 1pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 22px;
+    BACKGROUND-COLOR: #f0ccc3;
+}
+
+.ServerGrid_clsGroupBox {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 1pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 1pt;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 1pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 1pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 22px;
+    BACKGROUND-COLOR: #f0ccc3;
+}
+
+.ServerGrid_clsTRGroupRow {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 1pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 1pt;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 1pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 1pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 22px;
+    BACKGROUND-COLOR: #f0ccc3;
+}
+
+.ServerGrid_clsFilterDDL {
+    border-right: thin;
+    border-top: thin;
+    font-size: 7pt;
+    border-left: thin;
+    color: black;
+    border-bottom: thin;
+    font-family: Verdana, Arial;
+    BACKGROUND-COLOR: #fcefec;
+}
+
+.ServerGrid_clsFilterDDLHover {
+    border-right: thin;
+    border-top: thin;
+    font-size: 7pt;
+    border-left: thin;
+    color: black;
+    border-bottom: thin;
+    font-family: Verdana, Arial;
+    BACKGROUND-COLOR: #f0ccc3;
+}
+
+.ServerGrid_clsTDSortColHeader {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 1pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 1pt;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    BACKGROUND: url(../../Images/BrickRed/columnhdr_sel_bg.gif) #921b19;
+    PADDING-BOTTOM: 1pt;
+    BORDER-LEFT: thin;
+    COLOR: white;
+    PADDING-TOP: 1pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 22px;
+}
+
+.ServerGrid_clsTDNoSortColHeader {
+    BORDER-COLOR: Gray;
+    BORDER-STYLE: solid;
+    BORDER-LEFT-COLOR: White;
+    BORDER-TOP-COLOR: White;
+    BORDER-LEFT-WIDTH: 1px;
+    border-right-width: 0px;
+    BORDER-TOP-WIDTH: 1px;
+    BORDER-BOTTOM-WIDTH: 1px;
+    TEXT-ALIGN: left;
+    PADDING-RIGHT: 1pt;
+    PADDING-LEFT: 1pt;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 1pt;
+    COLOR: black;
+    PADDING-TOP: 1pt;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 22px;
+    BACKGROUND-COLOR: #f0ccc3;
+}
+
+/*WAF3_QRB_16 END : ---------------------------------------*/
+
+/* Added by SuchitraP for KM UI */
+
+TABLE.clsRoundedTableHeader {
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    BACKGROUND-COLOR: #FCEFEC;
+    COLOR: #003091;
+}
+
+TABLE.clsRoundedTableMenu {
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    /*BACKGROUND-COLOR: #FBF0F0;*/
+    border-right: #FBF0F0 1px outset;
+    /*border-top: black 1px outset;*/
+    border-left: #FBF0F0 1px outset;
+    border-bottom: #FBF0F0 1px outset;
+}
+
+
+
+TR.clsTRControlMenu {
+    padding-right: 2pt;
+    padding-left: 2pt;
+    font-size: 8pt;
+    padding-bottom: 2pt;
+    margin: 2pt;
+    color: #000000;
+    padding-top: 2pt;
+    background-repeat: repeat;
+    font-family: Verdana, Arial;
+    height: 18px;
+    /*background-color: #E7F1FE;*/
+}
+
+TD.clsTDTopLeftCorner {
+    width: 14px;
+    height: 14px;
+    background-image: url(../../Images/BrickRed/rounded_corner1.gif);
+    background-repeat: no-repeat;
+}
+
+TD.clsTDTopRightCorner {
+    width: 14px;
+    height: 14px;
+    background-image: url(../../Images/BrickRed/rounded_corner2.gif);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+}
+
+TD.clsTDBottomLeftCorner {
+    width: 14px;
+    height: 14px;
+    /*background-image: url(../../Images/BrickRed/rounded_corner3.gif); 
+	background-repeat:no-repeat; */
+}
+
+TD.clsTDBottomRightCorner {
+    width: 14px;
+    height: 14px;
+    /*background-image: url(../../Images/BrickRed/rounded_corner4.gif);
+	background-repeat:no-repeat; */
+}
+/* End additions by SuchitraP */
+
+/* Customer Portal */
+TD.clsPortal {
+    FONT-SIZE: 12px;
+    COLOR: #323537;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+.tab_wrapper {
+    PADDING-RIGHT: 10px;
+    PADDING-LEFT: 20px;
+    BACKGROUND: url(../../images/tabs_bg.gif) repeat-x;
+    PADDING-BOTTOM: 0px;
+    PADDING-TOP: 22px;
+    HEIGHT: 47px;
+    FONT-SIZE: 12px;
+    COLOR: #323537;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+.tab_menu_over {
+    BORDER-RIGHT: #fff 2px solid;
+    PADDING-RIGHT: 30px;
+    PADDING-LEFT: 30px;
+    FONT-WEIGHT: bold;
+    BACKGROUND: #e7f1fe;
+    COLOR: #222;
+    height: 25px;
+    TEXT-ALIGN: center;
+    LINE-HEIGHT: 10px;
+    FONT-SIZE: 12px;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+    .tab_menu_over A {
+        COLOR: #222;
+        TEXT-DECORATION: none FONT-SIZE: 12px;
+        LINE-HEIGHT: 18px;
+        FONT-FAMILY: Arial, Helvetica, sans-serif;
+    }
+
+.tab_menu {
+    BORDER-RIGHT: #fff 2px solid;
+    PADDING-RIGHT: 30px;
+    PADDING-LEFT: 30px;
+    FONT-WEIGHT: bold;
+    BACKGROUND: #222;
+    COLOR: #fff;
+    height: 25px;
+    TEXT-ALIGN: center;
+    LINE-HEIGHT: 10px;
+    FONT-SIZE: 12px;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+    .tab_menu A {
+        COLOR: #fff;
+        TEXT-DECORATION: none FONT-SIZE: 12px;
+        COLOR: #323537;
+        LINE-HEIGHT: 18px;
+        FONT-FAMILY: Arial, Helvetica, sans-serif;
+    }
+
+
+.tab_menu_over_Summary {
+    BORDER-RIGHT: #fff 2px solid;
+    PADDING-RIGHT: 30px;
+    PADDING-LEFT: 30px;
+    FONT-WEIGHT: bold;
+    BACKGROUND: #3c71a7;
+    COLOR: WHITE;
+    height: 25px;
+    TEXT-ALIGN: center;
+    LINE-HEIGHT: 10px;
+    FONT-SIZE: 12px;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+    .tab_menu_over_Summary A {
+        COLOR: #222;
+        TEXT-DECORATION: none FONT-SIZE: 12px;
+        COLOR: #323537;
+        LINE-HEIGHT: 18px;
+        FONT-FAMILY: Arial, Helvetica, sans-serif;
+    }
+
+.tab_menu_Summary {
+    BORDER-RIGHT: #fff 2px solid;
+    PADDING-RIGHT: 30px;
+    PADDING-LEFT: 30px;
+    FONT-WEIGHT: bold;
+    BACKGROUND: #eeeef7;
+    COLOR: #222;
+    height: 25px;
+    TEXT-ALIGN: center;
+    LINE-HEIGHT: 10px;
+    FONT-SIZE: 12px;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+    .tab_menu_Summary A {
+        COLOR: #fff;
+        TEXT-DECORATION: none FONT-SIZE: 12px;
+        COLOR: #323537;
+        LINE-HEIGHT: 18px;
+        FONT-FAMILY: Arial, Helvetica, sans-serif;
+    }
+
+.blbase {
+    PADDING-RIGHT: 10px;
+    /*MODIFIED BY AMIT MAHADIK ON 12 MAY 2011 WHIZIBLE SEM 10.0*/
+    BACKGROUND: #F8DEDE;
+    /*END MODIFIED BY AMIT MAHADIK ON 12 MAY 2011 WHIZIBLE SEM 10.0*/
+    HEIGHT: 20px;
+    FONT-SIZE: 12px;
+    COLOR: #323537;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+
+TD.clsSelect {
+    COLOR: #ffffff;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: none;
+    PADDING-LEFT: 5px;
+    PADDING-RIGHT: 5px;
+    PADDING-BOTTOM: 2px;
+    POSITION: relative;
+}
+
+.flag_yellow {
+    PADDING-LEFT: 15px;
+    FONT-SIZE: 11px;
+    BACKGROUND: url(../../images/flag_yellow.gif) no-repeat left center COLOR: #323537;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+.flag_red {
+    PADDING-LEFT: 15px;
+    FONT-SIZE: 11px;
+    BACKGROUND: url(../../images/flag_red.gif) no-repeat left center COLOR: #323537;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+.flag_Gray {
+    PADDING-LEFT: 15px;
+    FONT-SIZE: 11px;
+    BACKGROUND: url(../../images/GrayFlag.gif) no-repeat left center FONT-SIZE: 12px;
+    COLOR: #323537;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+.flag_green {
+    PADDING-LEFT: 15px;
+    FONT-SIZE: 11px;
+    BACKGROUND: url(../../images/flag_green.gif) no-repeat left center FONT-SIZE: 12px;
+    COLOR: #323537;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+.legend_head {
+    PADDING-RIGHT: 20px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #323537;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+TABLE.container {
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    PADDING-TOP: 0px;
+    FONT-SIZE: 12px;
+    COLOR: #323537;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+    TABLE.container TD.border {
+        BORDER-RIGHT: #aeaeae 1px solid;
+        PADDING-RIGHT: 10px;
+        BORDER-TOP: #aeaeae 1px solid;
+        PADDING-LEFT: 10px;
+        PADDING-BOTTOM: 10px;
+        BORDER-LEFT: #aeaeae 1px solid;
+        PADDING-TOP: 10px;
+        BORDER-BOTTOM: #aeaeae 1px solid FONT-SIZE: 12px;
+        COLOR: #323537;
+        LINE-HEIGHT: 18px;
+        FONT-FAMILY: Arial, Helvetica, sans-serif;
+    }
+
+.blue_grad {
+    BORDER-RIGHT: #aeaeae 1px solid;
+    PADDING-RIGHT: 10px;
+    BORDER-TOP: #aeaeae 1px solid;
+    PADDING-LEFT: 10px;
+    PADDING-BOTTOM: 10px;
+    OVERFLOW: auto;
+    BORDER-LEFT: #aeaeae 1px solid;
+    PADDING-TOP: 15px;
+    BORDER-BOTTOM: #aeaeae 1px solid;
+    HEIGHT: 250px;
+    FONT-SIZE: 12px;
+    COLOR: #323537;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+.purp_grad {
+    BORDER-RIGHT: #aeaeae 1px solid;
+    PADDING-RIGHT: 10px;
+    BORDER-TOP: #aeaeae 1px solid;
+    PADDING-LEFT: 10px;
+    PADDING-BOTTOM: 10px;
+    OVERFLOW: auto;
+    BORDER-LEFT: #aeaeae 1px solid;
+    PADDING-TOP: 15px;
+    BORDER-BOTTOM: #aeaeae 1px solid;
+    HEIGHT: 250px;
+    FONT-SIZE: 12px;
+    COLOR: #323537;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+.blue_grad1 {
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 10px;
+    OVERFLOW: auto;
+    PADDING-TOP: 15px;
+    HEIGHT: 139px;
+    FONT-SIZE: 12px;
+    COLOR: #323537;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+.purp_grad1 {
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 10px;
+    OVERFLOW: auto;
+    PADDING-TOP: 15px;
+    HEIGHT: 139px;
+    FONT-SIZE: 12px;
+    COLOR: #323537;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+.normal_table {
+    OVERFLOW: auto;
+    HEIGHT: 120px;
+}
+
+.normal_table1 {
+    OVERFLOW: auto;
+    HEIGHT: 182px;
+}
+
+.container_header {
+    PADDING-RIGHT: 10px;
+    PADDING-LEFT: 10px;
+    FONT-WEIGHT: bold;
+    BACKGROUND: url(../../images/table_head_bg.gif) #335cad no-repeat left top;
+    PADDING-BOTTOM: 0px;
+    COLOR: #fff;
+    PADDING-TOP: 0px;
+    HEIGHT: 25px;
+    TEXT-ALIGN: center;
+    FONT-SIZE: 12px;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+.bl_head {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 14px;
+    PADDING-BOTTOM: 15px;
+    COLOR: #003399;
+}
+
+.txt_small {
+    FONT-SIZE: 11px;
+}
+
+.bullet_red {
+    BACKGROUND: #c63e41;
+    MARGIN-RIGHT: 5px;
+    HEIGHT: 8px;
+}
+
+.bullet_orange {
+    BACKGROUND: #ebb125;
+    MARGIN-RIGHT: 5px;
+    HEIGHT: 8px;
+}
+
+.bullet_yellow {
+    BACKGROUND: #dedc07;
+    MARGIN-RIGHT: 5px;
+    HEIGHT: 8px;
+}
+
+.bullet_blue {
+    BACKGROUND: #4f75d0;
+    MARGIN-RIGHT: 5px;
+    HEIGHT: 8px;
+}
+
+.bullet_green {
+    BACKGROUND: #6d9852;
+    MARGIN-RIGHT: 5px;
+    HEIGHT: 8px;
+}
+
+.bullet_beige {
+    BACKGROUND: #ebdab8;
+    MARGIN-RIGHT: 5px;
+    HEIGHT: 8px;
+}
+
+.bullet_green2 {
+    BACKGROUND: #a7eaa7;
+    MARGIN-RIGHT: 5px;
+    HEIGHT: 8px;
+}
+
+.bullet_blu {
+    BACKGROUND: #4497e9;
+    MARGIN-RIGHT: 5px;
+    HEIGHT: 8px;
+}
+
+.bullet_blu1 {
+    BACKGROUND: #a5c956;
+    MARGIN-RIGHT: 5px;
+    HEIGHT: 8px;
+}
+
+.bullet_blu2 {
+    BACKGROUND: #d60500;
+    MARGIN-RIGHT: 5px;
+    HEIGHT: 8px;
+}
+
+.bullet_1 {
+    BACKGROUND: #e6d5b4;
+    MARGIN-RIGHT: 5px;
+    HEIGHT: 8px;
+}
+
+.bullet_2 {
+    BACKGROUND: #a4e6a4;
+    MARGIN-RIGHT: 5px;
+    HEIGHT: 8px;
+}
+
+.bullet_3 {
+    BACKGROUND: #ffaaaa;
+    MARGIN-RIGHT: 5px;
+    HEIGHT: 8px;
+}
+
+.bullet_4 {
+    BACKGROUND: #aad2ff;
+    MARGIN-RIGHT: 5px;
+    HEIGHT: 8px;
+}
+
+.bullet_5 {
+    BACKGROUND: #b1bafe;
+    MARGIN-RIGHT: 5px;
+    HEIGHT: 8px;
+}
+
+.project_container {
+    MARGIN-BOTTOM: 10px;
+}
+
+.table_heading {
+    PADDING-RIGHT: 5px;
+    PADDING-LEFT: 9px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    PADDING-BOTTOM: 0px;
+    COLOR: #b22222; /*#3a60b8*/
+    LINE-HEIGHT: 25px;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: #a8acaf 1px solid;
+}
+
+.table_content_off {
+    PADDING-RIGHT: 5px;
+    PADDING-LEFT: 9px;
+    FONT-SIZE: 12px;
+    BACKGROUND: #840909;
+    PADDING-BOTTOM: 0px;
+    COLOR: #fff;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: #d3dbe1 1px solid;
+    HEIGHT: 25px;
+}
+
+.table_content {
+    PADDING-RIGHT: 5px;
+    PADDING-LEFT: 9px;
+    PADDING-BOTTOM: 0px;
+    COLOR: #31393e;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: #d3dbe1 1px solid;
+    HEIGHT: 25px;
+    FONT-SIZE: 12px;
+    LINE-HEIGHT: 18px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+    .table_content SPAN {
+        BORDER-RIGHT: #000 1px solid;
+        PADDING-RIGHT: 3px;
+        BORDER-TOP: #000 1px solid;
+        PADDING-LEFT: 3px;
+        BACKGROUND: #484848;
+        PADDING-BOTTOM: 0px;
+        BORDER-LEFT: #000 1px solid;
+        COLOR: #fff;
+        PADDING-TOP: 0px;
+        BORDER-BOTTOM: #000 1px solid;
+    }
+
+    .table_content A {
+        COLOR: #31393e;
+        TEXT-DECORATION: underline;
+    }
+
+.field {
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px 3px;
+    WIDTH: 60px;
+    COLOR: #000;
+    PADDING-TOP: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    HEIGHT: 18px;
+}
+
+.options_text {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    /*COLOR: #000; */
+    COLOR: #ffffff;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+    .options_text A {
+        PADDING-RIGHT: 3px;
+        PADDING-LEFT: 3px;
+        FONT-WEIGHT: normal;
+        FONT-SIZE: 11px;
+        PADDING-BOTTOM: 0px;
+        /*COLOR: #003399; */
+        COLOR: #ffffff;
+        PADDING-TOP: 0px;
+        FONT-FAMILY: Arial, Helvetica, sans-serif;
+        TEXT-DECORATION: underline;
+    }
+
+        .options_text A:hover {
+            FONT-SIZE: 11px;
+            /*COLOR: #003399;*/
+            COLOR: #ffffff;
+            FONT-FAMILY: Arial, Helvetica, sans-serif;
+            TEXT-DECORATION: none;
+        }
+
+.notifications {
+    MARGIN-TOP: 15px;
+}
+
+.notifications_heading {
+    PADDING-RIGHT: 10px;
+    PADDING-LEFT: 10px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 18px;
+    PADDING-BOTTOM: 0px;
+    COLOR: #000;
+    LINE-HEIGHT: 36px;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: #ccc 1px solid;
+}
+
+.notification_content {
+    PADDING-RIGHT: 10px;
+    PADDING-LEFT: 10px;
+    PADDING-BOTTOM: 0px;
+    COLOR: #222222;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: #666 1px dotted;
+    HEIGHT: 28px;
+}
+
+    .notification_content A {
+        COLOR: #222222;
+        TEXT-DECORATION: underline;
+    }
+
+    .notification_content SPAN {
+        FONT-WEIGHT: bold;
+        FONT-SIZE: 14px;
+        COLOR: #003399;
+    }
+
+        .notification_content SPAN A {
+            COLOR: #003399;
+            TEXT-DECORATION: none;
+        }
+
+.tabs {
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    WIDTH: 200px;
+    PADDING-TOP: 10px;
+}
+
+    .tabs UL {
+        PADDING-RIGHT: 0px;
+        PADDING-LEFT: 0px;
+        PADDING-BOTTOM: 0px;
+        MARGIN: 0px;
+        PADDING-TOP: 0px;
+        LIST-STYLE-TYPE: none;
+    }
+
+    .tabs LI {
+        DISPLAY: block;
+        FLOAT: left;
+        MARGIN-RIGHT: 2px;
+        HEIGHT: 25px;
+    }
+
+        .tabs LI A {
+            PADDING-RIGHT: 10px;
+            DISPLAY: block;
+            PADDING-LEFT: 10px;
+            FONT-WEIGHT: bold;
+            /*Commented and added by NitinC */
+            background: url(../../images/BrickRed/tdRolledOver.jpg);
+            /* BACKGROUND: #222; */
+            FLOAT: left;
+            PADDING-BOTTOM: 0px;
+            COLOR: #fff;
+            LINE-HEIGHT: 25px;
+            PADDING-TOP: 0px;
+            FONT-FAMILY: Arial, Helvetica, sans-serif;
+            HEIGHT: 25px;
+            TEXT-DECORATION: none;
+        }
+
+            .tabs LI A:hover {
+                background: url(../../images/BrickRed/bs_color_2.gif);
+                color: #fff;
+                /* Commented by NitinC 
+	BACKGROUND: #e7f1fe;
+	COLOR: #222;  #222 */
+            }
+
+        .tabs LI.current A {
+            background: url(../../images/BrickRed/bs_color_2.gif);
+            color: #fff;
+            /* Commented by NitinC 
+		BACKGROUND: #e7f1fe; 
+	   COLOR: #222 */
+        }
+
+.milestone_content {
+    PADDING-RIGHT: 5px;
+    PADDING-LEFT: 5px;
+    BACKGROUND: #e7f1fe;
+    PADDING-BOTTOM: 10px;
+    PADDING-TOP: 10px;
+}
+
+.milestone_cell {
+    PADDING-RIGHT: 5px;
+    PADDING-LEFT: 5px;
+    FONT-SIZE: 12px;
+    PADDING-BOTTOM: 0px;
+    COLOR: #31393e;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: #d3dbe1 1px solid;
+    HEIGHT: 25px;
+}
+
+    .milestone_cell A {
+        COLOR: #31393e;
+        TEXT-DECORATION: underline;
+    }
+
+.top_bar_int {
+    PADDING-LEFT: 10px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    BACKGROUND: url(../../images/top2.gif) repeat-x left top;
+    COLOR: #fff;
+    LINE-HEIGHT: 25px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+.close {
+    PADDING-RIGHT: 10px;
+    PADDING-LEFT: 10px;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 4px;
+    PADDING-TOP: 4px;
+}
+
+    .close A {
+        BORDER-RIGHT: #222 1px solid;
+        PADDING-RIGHT: 4px;
+        BORDER-TOP: #222 1px solid;
+        PADDING-LEFT: 4px;
+        FONT-SIZE: 11px;
+        BACKGROUND: #222;
+        PADDING-BOTTOM: 0px;
+        BORDER-LEFT: #222 1px solid;
+        COLOR: #fff;
+        PADDING-TOP: 0px;
+        BORDER-BOTTOM: #222 1px solid;
+        TEXT-DECORATION: none;
+    }
+
+        .close A:hover {
+            BORDER-RIGHT: #222 1px solid;
+            PADDING-RIGHT: 4px;
+            BORDER-TOP: #222 1px solid;
+            PADDING-LEFT: 4px;
+            FONT-SIZE: 11px;
+            BACKGROUND: #f3f3f3;
+            PADDING-BOTTOM: 0px;
+            BORDER-LEFT: #222 1px solid;
+            COLOR: #222;
+            PADDING-TOP: 0px;
+            BORDER-BOTTOM: #222 1px solid;
+            TEXT-DECORATION: none;
+        }
+
+.durations {
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12px;
+    BACKGROUND: #e7f1fe;
+    PADDING-BOTTOM: 15px;
+    LINE-HEIGHT: 24px;
+    PADDING-TOP: 15px;
+}
+
+.tabs2 UL {
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    PADDING-TOP: 0px;
+    LIST-STYLE-TYPE: none;
+}
+
+.tabs2 LI {
+    DISPLAY: block;
+    FLOAT: left;
+    MARGIN-RIGHT: 2px;
+    HEIGHT: 25px;
+}
+
+    .tabs2 LI.normal {
+        PADDING-RIGHT: 10px;
+        PADDING-LEFT: 10px;
+        FONT-WEIGHT: bold;
+        /*Commented and added by NitinC */
+        /* BACKGROUND: url(../../images/table_head_bg.gif) #335cad no-repeat left top; */
+        background: url(../../images/BrickRed/bs_color_2.gif);
+        PADDING-BOTTOM: 0px;
+        COLOR: #fff;
+        LINE-HEIGHT: 25px;
+        PADDING-TOP: 0px;
+        HEIGHT: 25px;
+        TEXT-DECORATION: none;
+    }
+
+    .tabs2 LI A {
+        BORDER-RIGHT: #999 1px solid;
+        PADDING-RIGHT: 10px;
+        BORDER-TOP: #999 1px solid;
+        DISPLAY: block;
+        PADDING-LEFT: 10px;
+        FONT-WEIGHT: bold;
+        /*Commented and added by NitinC */
+        background: url(../../images/BrickRed/tdRolledOver.jpg);
+        /* BACKGROUND: #fff; */
+        FLOAT: left;
+        PADDING-BOTTOM: 0px;
+        BORDER-LEFT: #999 1px solid;
+        COLOR: #000;
+        LINE-HEIGHT: 25px;
+        PADDING-TOP: 0px;
+        FONT-FAMILY: Arial, Helvetica, sans-serif;
+        HEIGHT: 25px;
+        TEXT-DECORATION: none;
+    }
+
+        .tabs2 LI A:hover {
+            background: url(../../images/BrickRed/bs_color_2.gif);
+            color: #fff;
+            /* Commented by NitinC 
+	BACKGROUND: url(../../images/hover_table_head_bg.gif) #335cad no-repeat left top; 
+	COLOR: #fff */
+        }
+
+    .tabs2 LI.current1 A {
+        background: url(../../images/BrickRed/bs_color_2.gif);
+        color: #fff;
+        /* Commented by NitinC 
+	BACKGROUND: url(../../images/hover_table_head_bg.gif) #335cad no-repeat left top; 
+	COLOR: #fff */
+    }
+
+.border1 {
+    BORDER-RIGHT: #aeaeae 1px solid;
+    BORDER-TOP: #aeaeae 1px solid;
+    BORDER-LEFT: #aeaeae 1px solid;
+    BORDER-BOTTOM: #aeaeae 1px solid;
+}
+
+.milestone {
+    BORDER-RIGHT: #aeaeae 1px solid;
+    PADDING-RIGHT: 0px;
+    BORDER-TOP: #aeaeae 1px solid;
+    PADDING-LEFT: 0px;
+    BACKGROUND: url(../../images/bg1.gif) #fff fixed repeat-x left bottom;
+    PADDING-BOTTOM: 10px;
+    BORDER-LEFT: #aeaeae 1px solid;
+    PADDING-TOP: 10px;
+    BORDER-BOTTOM: #aeaeae 1px solid;
+    HEIGHT: 250px;
+}
+/* End Customer Portal */
+/* Added by SandipL for Tabbed Home UI */
+
+TABLE.clsRoundedTableHeader {
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    BACKGROUND-COLOR: #FCEFEC;
+    COLOR: #003091;
+}
+
+TABLE.clsRoundedTableMenu {
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    /*BACKGROUND-COLOR: #FBF0F0;*/
+    border-right: #FBF0F0 1px outset;
+    /*border-top: black 1px outset;*/
+    border-left: #FBF0F0 1px outset;
+    border-bottom: #FBF0F0 1px outset;
+}
+
+
+
+TR.clsTRControlMenu {
+    padding-right: 2pt;
+    padding-left: 2pt;
+    font-size: 8pt;
+    padding-bottom: 2pt;
+    margin: 2pt;
+    color: #000000;
+    padding-top: 2pt;
+    background-repeat: repeat;
+    font-family: Verdana, Arial;
+    height: 18px;
+    /*background-color: #E7F1FE;*/
+}
+
+TD.clsTDTopLeftCorner {
+    width: 14px;
+    height: 14px;
+    background-image: url(../../Images/BrickRed/rounded_corner1.gif);
+    background-repeat: no-repeat;
+}
+
+TD.clsTDTopRightCorner {
+    width: 14px;
+    height: 14px;
+    background-image: url(../../Images/BrickRed/rounded_corner2.gif);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+}
+
+TD.clsTDBottomLeftCorner {
+    width: 14px;
+    height: 14px;
+    /*background-image: url(../../Images/BrickRed/rounded_corner3.gif); 
+	background-repeat:no-repeat; */
+}
+
+TD.clsTDBottomRightCorner {
+    width: 14px;
+    height: 14px;
+    /*background-image: url(../../Images/BrickRed/rounded_corner4.gif);
+	background-repeat:no-repeat; */
+}
+/* End additions by SandipL */
+/* Added by ArchanaN */
+DIV.clsDivPopup {
+    BORDER-RIGHT: LightCoral 6px solid;
+    BORDER-TOP: LightPink 3px solid;
+    FONT-SIZE: 10px;
+    BORDER-LEFT: LightPink 3px solid;
+    BORDER-BOTTOM: LightCoral 6px solid;
+    DISPLAY: block;
+    POSITION: absolute;
+    Z-INDEX: 1000;
+}
+/* End of Added by ArchanaN */
+A.clsControlMenuLink:link {
+    font-family: Verdana, Arial;
+    FONT-SIZE: 10pt;
+    TEXT-DECORATION: UNDELINE;
+}
+
+A.clsControlMenuLink:active {
+    font-family: Verdana, Arial;
+    FONT-SIZE: 10pt;
+    TEXT-DECORATION: UNDELINE;
+}
+
+A.clsControlMenuLink:visited {
+    font-family: Verdana, Arial;
+    FONT-SIZE: 10pt;
+    TEXT-DECORATION: UNDELINE;
+}
+
+A.clsControlMenuLink:hover {
+    font-family: Verdana, Arial;
+    FONT-SIZE: 10pt;
+    TEXT-DECORATION: UNDELINE;
+}
+
+
+BODY.clsPopUpBody {
+    BORDER: #641a02 1px solid;
+    PADDING-LEFT: 2px;
+    SCROLLBAR-FACE-COLOR: #f0d8ce;
+    FONT-SIZE: 7pt;
+    MARGIN: 2px 0px;
+    SCROLLBAR-HIGHLIGHT-COLOR: #f9efea;
+    SCROLLBAR-SHADOW-COLOR: #f9efea;
+    SCROLLBAR-3DLIGHT-COLOR: #f9efea;
+    LINE-HEIGHT: 1;
+    SCROLLBAR-ARROW-COLOR: #921b19;
+    PADDING-TOP: 0px;
+    SCROLLBAR-TRACK-COLOR: #f9efea;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    SCROLLBAR-DARKSHADOW-COLOR: #f9efea;
+    SCROLLBAR-BASE-COLOR: #f0e2e2;
+    overflow: visible;
+}
+
+
+/* Added by PrashantSJ on 29th June 2009*/
+A.clsMenu {
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    padding-top: 1px;
+    border-top-width: 0px;
+    /*font-weight: lighter;*/
+    border-left-width: 0px;
+    font-size: 11px;
+    border-left-color: white;
+    border-bottom-width: 0px;
+    border-bottom-color: white;
+    color: black;
+    border-top-color: white;
+    /*font-family: verdana, arial;*/
+    border-right-width: 0px;
+    text-decoration: none;
+    border-right-color: white;
+    cursor: hand;
+}
+
+    A.clsMenu:link {
+        padding-right: 3px;
+        padding-left: 3px;
+        padding-bottom: 3px;
+        padding-top: 1px;
+        border-top-width: 0px;
+        font-weight: lighter;
+        border-left-width: 0px;
+        font-size: 11px;
+        border-left-color: white;
+        border-bottom-width: 0px;
+        border-bottom-color: white;
+        color: black;
+        border-top-color: white;
+        /*font-family: arial;*/
+        border-right-width: 0px;
+        text-decoration: none;
+        border-right-color: white;
+    }
+
+    A.clsMenu:visited {
+        padding-right: 3px;
+        padding-left: 3px;
+        padding-bottom: 3px;
+        padding-top: 1px;
+        border-top-width: 2px;
+        font-weight: lighter;
+        border-left-width: 2px;
+        font-size: 11px;
+        border-left-color: white;
+        border-bottom-width: 2px;
+        border-bottom-color: white;
+        color: black;
+        border-top-color: white;
+        /*font-family: arial;*/
+        border-right-width: 2px;
+        text-decoration: none;
+        border-right-color: white;
+    }
+
+    A.clsMenu:active {
+        padding-right: 3px;
+        padding-left: 3px;
+        padding-bottom: 3px;
+        padding-top: 1px;
+        border-top-width: 2px;
+        font-weight: lighter;
+        border-left-width: 2px;
+        font-size: 11px;
+        border-left-color: white;
+        border-bottom-width: 2px;
+        border-bottom-color: white;
+        color: black;
+        border-top-color: white;
+        /*font-family: arial;*/
+        border-right-width: 2px;
+        text-decoration: none;
+        border-right-color: white;
+    }
+
+    A.clsMenu:hover {
+        padding-right: 3px;
+        padding-left: 3px;
+        padding-bottom: 3px;
+        padding-top: 1px;
+        border-right: black 0px solid;
+        border-top: black 0px solid;
+        font-weight: lighter;
+        font-size: 11px;
+        border-left: black 0px solid;
+        color: black;
+        border-bottom: black 0px solid;
+        /*font-family: arial;*/
+        /*background-color: #641a02;*/
+    }
+
+TD.cMenu {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    /*Commented and Added By Chakshuta H on 20th-July-2017 Theme issue fixing*/
+    /*border-right: #FFD695 3px solid;*/
+    border-right: #641a02 3px solid;
+    /*End Of Commented and Added By Chakshuta H on 20th-July-2017 Theme issue fixing*/
+    border-top: black 0px solid;
+    font-weight: lighter;
+    font-size: 11px;
+    border-left: black 0px solid;
+    color: black;
+    border-bottom: black 0px solid;
+    font-family: arial;
+    /*Commented and Added By Chakshuta H on 20th-July-2017 Theme issue fixing*/
+    /*background-color: #FFD695;*/
+    background-color: #641a02;
+    /*End Of Commented and Added By Chakshuta H on 20th-July-2017 Theme issue fixing*/
+}
+
+TD.clsTDScroll {
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin: 0;
+    color: black;
+    padding-top: 0;
+    border-right: #641a02 3px solid;
+    border-top: black 0px solid;
+    font-weight: lighter;
+    font-size: 11px;
+    border-left: black 0px solid;
+    border-bottom: black 0px solid;
+    font-family: arial;
+    background-color: #641a02;
+}
+
+a.cSelected {
+    COLOR: #003091;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: none;
+    PADDING-LEFT: 5px;
+    PADDING-RIGHT: 5px;
+    PADDING-BOTTOM: 2px;
+    POSITION: relative;
+    /*BACKGROUND: url(../../Images/cssImages/grey-color.gif) repeat-x;*/
+}
+
+    a.cSelected:visited {
+        COLOR: #003091;
+        FONT-WEIGHT: bold;
+        FONT-SIZE: 11px;
+        FONT-FAMILY: Tahoma;
+        BORDER-TOP: groove thin 1px blue;
+        BORDER-LEFT: groove thin blue 1px;
+        BORDER-BOTTOM: groove thin 1px #3366ff;
+        BORDER-RIGHT: groove thin 1px #3366ff;
+        PADDING-LEFT: 5px;
+        PADDING-RIGHT: 5px;
+        PADDING-BOTTOM: 2px;
+        POSITION: relative;
+        TEXT-DECORATION: none;
+        /*BACKGROUND: url(../../Images/cssImages/grey-color.gif) repeat-x;*/
+    }
+
+    a.cSelected:hover {
+        COLOR: #003091;
+        FONT-WEIGHT: bold;
+        FONT-SIZE: 11px;
+        FONT-FAMILY: Tahoma;
+        BORDER-TOP: groove thin 1px blue;
+        BORDER-LEFT: groove thin blue 1px;
+        BORDER-BOTTOM: groove thin 1px #3366ff;
+        BORDER-RIGHT: groove thin 1px #3366ff;
+        PADDING-LEFT: 5px;
+        PADDING-RIGHT: 5px;
+        PADDING-BOTTOM: 2px;
+        POSITION: relative;
+        TEXT-DECORATION: underline;
+        /*BACKGROUND: url(../../Images/cssImages/grey-color.gif) repeat-x;*/
+    }
+
+TABLE.cTable {
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    BACKGROUND-COLOR: transparent;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    PADDING-BOTTOM: 0px;
+    PADDING-TOP: 0px;
+    vertical-align: bottom;
+}
+
+TD.clsGanttChart {
+    /*padding-right: 2pt;
+	padding-left: 2pt;
+	font-weight: bolder;
+	font-size: 8pt;
+	background: url('../../Images/cssImages/Menu.gif');
+    background-image: url(../../Images/cssImages/Menu.gif); 
+	padding-bottom: 2pt;
+	margin: 2pt;
+	color: black;
+	padding-top: 2pt;
+	font-family: Arial, Verdana;
+	border-left-color: black;
+	border-right-color: black;
+	border-bottom-color: black;
+	border-top-color: black;
+	height: 10px;*/
+    BORDER-LEFT: thin 1px;
+    BORDER-RIGHT: thin 1px;
+    BORDER-TOP: thin 1px;
+    BORDER-BOTTOM: thin 1px;
+    HEIGHT: 8px;
+    /*BACKGROUND: url(../../Images/cssImages/blue_color_2.gif);*/
+    BACKGROUND: url(../../Images/red_color_2.gif);
+}
+/* End of addition  by PrashantSJ on 29th June 2009*/
+
+/*********************************************************************************************************
+   ADDED BY AMIT MAHADIK ON 10 MAY 2011 FOR CUSTOMER DASHBOARD THEME ,WHIZIBLESEM 10.0 [DEFAULT THEME]
+*********************************************************************************************************/
+/*brick red faint #FBF0F0*/
+
+
+.blbase_PPDB {
+    padding-right: 10px;
+    background: #e7f1fe;
+    height: 20px;
+}
+
+.tab_menu_PPDB {
+    vertical-align: middle;
+    border-right: #fff 2px solid;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-weight: bold;
+    background: #222;
+    color: #fff;
+    height: 25px;
+    line-height: 10px;
+    text-align: center;
+}
+
+    .tab_menu_PPDB A {
+        vertical-align: middle;
+        height: 25px;
+        line-height: 10px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+.tab_menu_over_Summary_PPDB {
+    vertical-align: middle;
+    border-right: #fff 2px solid;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-weight: bold;
+    background: #3c71a7;
+    color: WHITE;
+    height: 25px;
+    text-align: center;
+    line-height: 10px;
+}
+
+    .tab_menu_over_Summary_PPDB A {
+        vertical-align: middle;
+        height: 25px;
+        line-height: 10px;
+        color: #222;
+        text-decoration: none;
+    }
+
+.tab_menu_Summary_PPDB {
+    vertical-align: middle;
+    border-right: #fff 2px solid;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-weight: bold;
+    background: #eeeef7;
+    color: #222;
+    height: 25px;
+    text-align: center;
+    line-height: 10px;
+}
+
+    .tab_menu_Summary_PPDB A {
+        vertical-align: middle;
+        height: 25px;
+        color: #fff;
+        line-height: 10px;
+        text-decoration: none;
+    }
+
+.container_header_PPDB {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    /*Commented and added by Nitinc on 05 Aug 2011 for WhizibleSEM 10.0*/
+    /*background: url(../../images/table_head_bg.gif) #335cad no-repeat left top;*/
+    //background: url(../../images/BrickRed/bs_color_2.gif);
+    /*End Comment*/
+    padding-bottom: 0px;
+    color: #fff;
+    padding-top: 0px;
+    height: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+    .container_header_PPDB A {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+        .container_header_PPDB A:hover {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
+        }
+
+.options_text_PPDB {
+    font-weight: bold;
+    font-size: 11px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    .options_text_PPDB A {
+        padding-right: 3px;
+        padding-left: 3px;
+        font-weight: normal;
+        font-size: 11px;
+        padding-bottom: 0px;
+        color: #003399;
+        padding-top: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: underline;
+    }
+
+        .options_text_PPDB A:hover {
+            font-size: 11px;
+            color: #003399;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+
+.blue_grad_PPDB {
+    border-right: #aeaeae 1px solid;
+    padding-right: 10px;
+    border-top: #aeaeae 1px solid;
+    padding-left: 10px;
+    background: url(../../images/tdRolledOver.jpg) #FBF0F0 fixed repeat-x left top;
+    /*purple ebebf5			 blue e8f2f9 */
+    padding-bottom: 10px;
+    overflow: auto;
+    border-left: #aeaeae 1px solid;
+    padding-top: 15px;
+    border-bottom: #aeaeae 1px solid;
+    height: 250px;
+}
+
+.purp_grad_PPDB {
+    border-right: #aeaeae 1px solid;
+    padding-right: 10px;
+    border-top: #aeaeae 1px solid;
+    padding-left: 10px;
+    background: url(../../images/tdRolledOver.jpg) #FBF0F0 fixed repeat-x left top;
+    padding-bottom: 10px;
+    overflow: auto;
+    border-left: #aeaeae 1px solid;
+    padding-top: 15px;
+    border-bottom: #aeaeae 1px solid;
+    height: 250px;
+}
+
+.blue_grad1_PPDB {
+    padding-right: 0px;
+    padding-left: 0px;
+    /*Commented and added by NitinC */
+    /*background: url(../../images/gradient_blue.gif) #e8f2f9 fixed repeat-x left top;*/
+    background: url(../../images/tdRolledOver.jpg) #FBF0F0 fixed repeat-x left top;
+    padding-bottom: 10px;
+    overflow: auto;
+    padding-top: 15px;
+    height: 139px;
+}
+
+.purp_grad1_PPDB {
+    padding-right: 0px;
+    padding-left: 0px;
+    /*Commented and added by NitinC */
+    /*background: url(../../images/gradient_blue.gif) #e8f2f9 fixed repeat-x left top;*/
+    background: url(../../images/tdRolledOver.jpg) #FBF0F0 fixed repeat-x left top;
+    padding-bottom: 10px;
+    overflow: auto;
+    padding-top: 15px;
+    height: 139px;
+}
+
+.project_heading_PPDB {
+    border-right: #e8f2f9 1px solid;
+    padding-right: 0px;
+    border-top: #e8f2f9 1px solid;
+    padding-left: 9px;
+    font-weight: bold;
+    font-size: 15px;
+    background: url(../../images/BrickRed/tdRolledOver.jpg) repeat-x left top;
+    padding-bottom: 0px;
+    border-left: #e8f2f9 1px solid;
+    color: #fff;
+    padding-top: 0px;
+    border-bottom: #e8f2f9 1px solid;
+    height: 25px;
+    font-size: 12px;
+}
+
+.issues_heading_PPDB {
+    border-right: #dbdbff 1px solid;
+    padding-right: 0px;
+    border-top: #dbdbff 1px solid;
+    padding-left: 9px;
+    font-weight: bold;
+    font-size: 15px;
+    background: url(../../images/BrickRed/tdRolledOver.jpg) repeat-x left top;
+    padding-bottom: 0px;
+    border-left: #dbdbff 1px solid;
+    color: #fff;
+    padding-top: 0px;
+    border-bottom: #dbdbff 1px solid;
+    height: 25px;
+    font-size: 12px;
+}
+
+.notifications_PPDB {
+    margin-top: 15px;
+}
+
+.notifications_heading_PPDB {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 0px;
+    color: #000;
+    line-height: 36px;
+    padding-top: 0px;
+    border-bottom: #ccc 1px solid;
+}
+
+.notification_content_PPDB {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    color: #222222;
+    padding-top: 0px;
+    border-bottom: #666 1px dotted;
+    height: 28px;
+}
+
+    .notification_content_PPDB A {
+        color: #222222;
+        text-decoration: underline;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .notification_content_PPDB SPAN {
+        font-size: 14px;
+        color: #003399;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+        .notification_content_PPDB SPAN A {
+            font-size: 14px;
+            color: #003399;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+            .notification_content_PPDB SPAN A:hover {
+                font-size: 14px;
+                color: #003399;
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .notification_content_PPDB SPAN A:visited {
+                font-size: 14px;
+                color: #551A8B;
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+SELECT.clsComboBoxBlue {
+    border-right: #cccccc 1px solid;
+    border-top: #cccccc 1px solid;
+    font-size: 8pt;
+    border-left: #cccccc 1px solid;
+    border-bottom: #cccccc 1px solid;
+    /*Commented and added by Nitinc on 05 Aug 2011 for WhizibleSEM 10.0*/
+    /*background-color: #E8F2F9;   /*blue E8F2F9*/
+    background-color: #FBF0F0; /*blue E8F2F9*/
+    /*End Comment*/
+    color: Navy;
+    font-family: Arial, Helvetica, sans-serif;
+    /*purple EBEBF5			 blue E8F2F9  brick red #FBF0F0*/
+}
+/****************************For Scrollbars[Default-Blue theme]***************************************/
+#tab_CompletionStatus, #tab_ScheduleVariance, #div_ProjectTask, #div_ProjectIssues, #div_Deliverables, #tab_111, #rapper {
+    SCROLLBAR-FACE-COLOR: #f0d8ce;
+    SCROLLBAR-HIGHLIGHT-COLOR: #f9efea;
+    SCROLLBAR-SHADOW-COLOR: #f9efea;
+    SCROLLBAR-3DLIGHT-COLOR: #f9efea;
+    SCROLLBAR-ARROW-COLOR: #921b19;
+    SCROLLBAR-TRACK-COLOR: #f9efea;
+    SCROLLBAR-DARKSHADOW-COLOR: #f9efea;
+    SCROLLBAR-BASE-COLOR: #f0e2e2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.tabs_PPDB {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    width: 200px;
+    padding-top: 10px;
+}
+
+    .tabs_PPDB UL {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        margin: 0px;
+        padding-top: 0px;
+        list-style-type: none;
+    }
+
+    .tabs_PPDB LI {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        display: block;
+        float: left;
+        margin-right: 2px;
+        height: 25px;
+    }
+
+        .tabs_PPDB LI A {
+            font-size: 12px;
+            padding-right: 10px;
+            display: block;
+            padding-left: 10px;
+            font-weight: bold;
+            background: #222;
+            float: left;
+            padding-bottom: 0px;
+            color: #FFFFFF;
+            line-height: 25px;
+            padding-top: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 25px;
+            text-decoration: none;
+        }
+
+            .tabs_PPDB LI A:hover {
+                /*FONT-FAMILY: Arial, Helvetica, sans-serif;  	FONT-SIZE: 12px; 	BACKGROUND: #e7f1fe;  	COLOR: #222;*/
+            }
+
+        .tabs_PPDB LI.current A {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            background: #e7f1fe;
+            text-decoration: none;
+            color: #222;
+        }
+
+/**drag n drop*/
+.clsDragWindow {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #ffffff;
+    filter: alpha( opacity=40 );
+    position: absolute;
+    display: none;
+}
+
+.SpecimenLoc {
+    font-weight: normal;
+    font-size: 10pt;
+    font-family: tahoma;
+    text-align: center;
+}
+
+.WaterMarkBackGround {
+    background-attachment: scroll;
+    /*background-image: url(images/demo.gif);*/
+    background-repeat: repeat;
+    background-color: #F1F2F3;
+}
+
+/**/
+/*********************************************************************************************************
+  END ADDED BY AMIT MAHADIK ON 10 MAY 2011 FOR CUSTOMER DASHBOARD THEME ,WHIZIBLESEM 10.0 [DEFAULT THEME]
+*********************************************************************************************************/
+
+
+/*Added by NitinC on 14 June 2011 for WhizibleSEM v10.0 of Agile Methodology (Iteration Summary) */
+.rankBar {
+    BORDER-RIGHT: #888 1px solid;
+    BORDER-TOP: #888 1px solid;
+    FONT-SIZE: 1px;
+    FLOAT: left;
+    BORDER-LEFT: #888 1px solid;
+    BORDER-BOTTOM: #888 1px solid;
+    HEIGHT: 8px;
+}
+
+.rankFilledBar {
+    FONT-SIZE: 1px;
+    BACKGROUND: #b8e571;
+    FLOAT: left;
+    HEIGHT: 8px;
+}
+/*For View other reports page*/
+.H2 {
+    MARGIN-TOP: 0px;
+    MARGIN-BOTTOM: 15px;
+    FONT: bold 16px Arial;
+    COLOR: #103565;
+}
+
+IMG.icon {
+    MARGIN: 0px 5px 0px 0px;
+    POSITION: relative;
+    TOP: 2px;
+}
+/*End Added by NitinC on 14 June 2011 for WhizibleSEM v10.0 of Agile Methodology (Iteration Summary) */
+/*Added by NitinC on 16 Jan 2012 for WhizibleSEM v11.0 of Agile Methodology (Issue Fix 56304) */
+TR.clsScrumTROdd {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: blue;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 18px;
+    BACKGROUND-COLOR: white; /*#f5e7e7*/
+}
+
+TD.clsTDRedColumnHeader {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: red;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #fde8e3;
+}
+/*End Added by NitinC on 16 Jan 2012 for WhizibleSEM v11.0 of Agile Methodology (Issue Fix 56304) */
+
+
+
+
+
+/*Added By Vaijat K ON 29/09/2016 For Dynamic Theme*/
+#page1 {
+    border: 2px solid #641a02 !important;
+}
+
+.divTitle {
+    width: 92%;
+    height: 92%;
+    background: white !important;
+    color: black !important;
+    /*/ Commented  & Added By Dipali Vekhande On 12th Sep For ADI_NexGenUpGrade*/
+    /*border: 1px solid #e39321 !important;*/
+    border: 1px solid #641a02 !important;
+    /*End Of Commented Added By Dipali Vekhande On 12th Sep For ADI_NexGenUpGrade*/
+}
+
+#frmMyApprovalHome #page1 {
+    border: 2px solid #641a02;
+}
+
+#tblRoleAccessDisplay {
+    border: 1px solid #641a02 !important;
+}
+
+.pHeading {
+    /*margin-left:7% !important;*/
+    display: inline-block;
+    padding: 4px 9px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4285;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    /*cursor: pointer;*/
+    border: 1px solid transparent;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    color: #641a02 !important;
+    background-color: #ffffff !important;
+    border-color: #641a02 !important;
+    width: 250px;
+}
+
+.btn-primary {
+    color: #641a02 !important;
+    background-color: #ffffff !important;
+    border-color: #641a02 !important;
+}
+
+
+
+.additional_clsTRMenu li {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #c9c9c9;
+    line-height: 1.6;
+    background-color: #641a02 !important;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.footer_additional_clsTRMenu li {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #c9c9c9;
+    line-height: 1.6;
+    background-color: #641a02 !important;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.footer_menu_arrow {
+    padding: 4px 6px 2px 3px !important;
+    background-color: #641a02 !important;
+    margin-top: 1px;
+    float: right !important;
+    width: 23px !important;
+}
+
+#showProjectDetailsBody {
+    background: white !important;
+}
+
+
+A:hover {
+    /*font-family: 'Helvetica';
+            font-weight: lighter;*/
+    /*Commented And Added By Dipali Vekhande On 12th Sep For ADI_NexGenUpGrade*/
+    /*Color: #72afd2 !important;*/
+    /*End Of Commented Added By Dipali Vekhande On 12th Sep For ADI_NexGenUpGrade*/
+}
+
+A.Menu:hover {
+    font-family: 'Helvetica';
+    font-size: 12px;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    padding-top: 1px;
+    border-right: black 0px solid;
+    border-top: black 0px solid;
+    font-weight: lighter;
+    border-left: black 0px solid;
+    /*Added and commented by Dipali V on 14th sep 2016 for ADI NextGenUpgarde*/
+    /*color:black;*/
+    color: White !important;
+    border-bottom: black 0px solid;
+    /*background-color: #FFD695;*/
+    background-color: #641a02 !important;
+    /*Added and commented by Dipali V on 14th sep 2016 for ADI NextGenUpgarde*/
+}
+
+#divSection1 clsTable {
+    background-color: white !important;
+}
+
+.mainTabsSectionEasyMenu A:hover {
+    BORDER-RIGHT: #919b9c 1px thin;
+    PADDING-RIGHT: 10px;
+    BORDER-TOP: #919b9c 1px thin;
+    DISPLAY: block;
+    PADDING-LEFT: 10px;
+    FONT-SIZE: 7.5pt;
+    FLOAT: left;
+    PADDING-BOTTOM: 2px;
+    COLOR: black;
+    PADDING-TOP: 2px;
+    BORDER-BOTTOM: #919b9c 1px thin;
+    FONT-FAMILY: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+    TEXT-DECORATION: none;
+    BACKGROUND: url('../../Images/BrickRed/tab_left_over.gif') !important;
+    width: 12%; /*92px;*/
+    text-align: center;
+}
+
+#divclose {
+    background: transparent !important;
+}
+
+
+.mainTabsSectionEasyMenu .selectedTab {
+    BACKGROUND: url('../../Images/BrickRed/tab_left_active.gif') !important;
+    width: 12%; /*92px;*/
+    text-align: center;
+}
+
+    .mainTabsSectionEasyMenu .selectedTab:visited {
+        BACKGROUND: url('../../Images/BrickRed/tab_left_active.gif') !important;
+    }
+
+    .mainTabsSectionEasyMenu .selectedTab:hover {
+        BACKGROUND: url('../../Images/BrickRed/tab_left_active.gif') !important;
+    }
+
+#tdDot2 {
+    border: 3px solid #641a02 !important;
+}
+
+.clsSaveSnapshot {
+    /*Commented And Added By Dipali Vekhande On 13th Sep For ADI_NexGenUpGrade*/
+    background: #641a02 !important;
+    /*End of Commented And Added By Dipali Vekhande On 13th Sep For ADI_NexGenUpGrade*/
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+/*''Added By Chakshuta H on 10th-May-2016 Purpose::ADI Next Gen Upgrade Integration*/
+.progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    /*Added and Commented by Dipali Vekhande on 13th Sep 2016 for ADI NextGenUpGarde*/
+    /*background-color: #f7e6cc;*/
+    background-color: #f5f5f5 !important;
+    /*End Of Addition and Commented by Dipali Vekhande on 13th Sep 2016 for ADI NextGenUpGarde*/
+    border-radius: 0px !important;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+
+.footbar {
+    width: 100%;
+    text-align: center;
+    float: left;
+    border-radius: 2px;
+    margin-top: 1%;
+    margin-left: 6.5%;
+    /*Added and Commented by Dipali Vekhande on 13th Sep 2016 for ADI NextGenUpGarde*/
+    /*background:#e39321;*/
+    background: #641a02 !important;
+    /*End Of Addition and Commented by Dipali Vekhande on 13th Sep 2016 for ADI NextGenUpGarde*/
+    color: #0E0E0E;
+    padding-bottom: 2%;
+}
+
+
+#imgUpArrow {
+    background-image: url(../../Images/BrickRed/uparrow.png) !important;
+}
+
+#imgDownArrow {
+    background-image: url(../../Images/BrickRed/downarrow.png) !important;
+}
+
+#imgExpandTab {
+    background-image: url(../../Images/BrickRed/leftarrow.png) !important;
+}
+
+#imgclosetab {
+    background-image: url(../../Images/BrickRed/rightarrow.png) !important;
+}
+
+#imgNavigateArrow {
+    background-image: url(../../Images/BrickRed/rightarrow.png) !important;
+}
+
+.thmLeftArrow {
+    background-image: url(../../Images/BrickRed/leftarrow.png) !important;
+}
+
+.thmRightArrow {
+    background-image: url(../../Images/BrickRed/rightarrow.png) !important;
+}
+
+.thmUpArrow {
+    background-image: url(../../Images/BrickRed/uparrow.png) !important;
+}
+
+.thmDownArrow {
+    background-image: url(../../Images/BrickRed/downarrow.png) !important;
+}
+
+.menu_arrow_img {
+    padding: 3px 0px 3px 4px !important;
+    /*Commented And Added By Dipali Vekhande On 13th Sep For ADI_NexGenUpGrade*/
+    /*background-color: #e39321;*/
+    background-color: #641a02 !important;
+    /*End of Commented And Added By Dipali Vekhande On 13th Sep For ADI_NexGenUpGrade*/
+    float: right !important;
+    width: 23px !important;
+}
+
+
+.folderOpen {
+    background: url("../../Images/BrickRed/folder.gif") !important;
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    border: 0px;
+}
+
+.folder {
+    background: url("../../Images/BrickRed/folder.gif") !important;
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    border: 0px;
+}
+/*Added By Chakshuta H on 20th-July-2017 Theme issue fixing*/
+@media only screen and (max-width:991px) and (min-width:768px) {
+    .navigation_arrow_img {
+        padding: 3px 6px 6px 3px !important;
+        background-color: #f8dede;
+        float: left !important;
+        width: 23px !important;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:991px) and (min-width:768px) {
+    .gridTabsOuterTable .divSecondSectionUL li {
+        text-align: left;
+        width: 100% !important;
+        display: block;
+        border-bottom: 1px solid #c9c9c9;
+        background-color: #f8dede;
+        line-height: 2;
+    }
+}
+
+@media only screen and (max-width:991px) and (min-width:768px) {
+    .gridTabsOuterTable .divSecondSectionUL li a {
+        background: transparent;
+        border: none !important;
+        background-image: none !important;
+        color: black;
+    }
+}
+
+TR.clsTRNavLinks {
+    BORDER-LEFT: thin;
+    BORDER-RIGHT: thin;
+    BORDER-TOP: thin;
+    BORDER-BOTTOM: thin;
+    HEIGHT: 30px;
+    /* BACKGROUND: url(../../Images/bsImages/bs_color_2.gif); */
+    background-color: #641a02;
+}
+/*End Of Added By Chakshuta H on 20th-July-2017 Theme issue fixing*/
+/*End Added By Vaijat K ON 29/09/2016 For Dynamic Theme*/
+
+/*Added By Dipali V on 28rd Nov 2017 For Dynamic theme*/
+
+.table-responsive thead {
+    BACKGROUND-COLOR: #f0ccc3 !important;
+}
+
+.clsTROdd:not(.clsSettingstabs .odd) {
+    background-color: #f5e7e4 !important;
+}
+
+.panel-heading {
+    background-color: #641a02 !important;
+}
+/*Added By Kashish for ui change*/
+.panel {
+    border: 1px solid #641a02!important;
+}
+.new-req i {
+    color: #641a02 !important;
+}
+
+.sortingApplied {
+    background-color: #641a02 !important;
+    color: white;
+}
+
+
+.req-dsk-kn.new-req-head {
+    background: #f0ccc3 !important;
+}
+
+.help-desk #btnSetting {
+    background: #f0ccc3 !important;
+}
+
+.help-desk .setting-btn i {
+    background: #641a02 !important;
+}
+
+/*.apply-btn .btn {
+    background: #f5e7e4 !important;
+}*/
+/*Added By Dipali V on 23rd Nov 2017 For New Request Search Dynamic theme*/
+.popupnew {
+    float: left;
+    width: 100%;
+    background: #641a02 !important;
+    padding: 5px;
+}
+
+#subMainDiv .pagination > li > a, .pagination > li > span {
+    color: #641a02;
+}
+
+.clsTopNav li a.Active {
+    border-bottom: 4px solid #641a02 !important;
+}
+
+.clsTopNav li a:hover {
+    border-bottom: 4px solid #641a02 !important;
+}
+
+.imgFeedback {
+    background-color: #641a02 !important;
+    color: white !important;
+}
+
+#Feedback .appro-title {
+    color: white !important;
+}
+
+.btnClearFilter span {
+    background: #641a02 !important;
+    padding: 1px;
+    color: #fff !important;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+#seachValueList a:not(:first-child):before {
+    color: #641a02 !important;
+}
+
+.clsLoadFilterList a:not(:first-child):before {
+    color: #641a02 !important;
+}
+
+#collapseOne .fa-times {
+    background: #641a02 !important;
+}
+
+.popupnew ul li {
+    background: transparent !important;
+    color: #fff;
+    cursor: pointer;
+    display: block !important;
+    padding: 10px 10px;
+    border-bottom: solid #641a02 1px;
+}
+
+
+.page-item.active .page-link {
+    z-index: 2;
+    color: #fff !important;
+    background-color: #641a02 !important;
+    border-color: #641a02 !important;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    z-index: 2;
+    color: #fff !important;
+    background-color: #641a02 !important;
+    border-color: #641a02 !important;
+}
+
+#collapseOne .fa-times {
+    background: #641a02 !important;
+}
+
+.apply-btn .btn {
+    background: #641a02 !important;
+    color: white !important;
+    border-color: #641a02 !important;
+}
+/*End of Added By Dipali V on 23rd Nov 2017 For New Request Search Dynamic theme*/
+.detail-inner h2 {
+    background: #641a02 !important;
+}
+
+.attacment-file .input-group-btn button {
+    background: white !important;
+    border-color: #641a02 !important;
+    color: #641a02 !important;
+}
+
+button.btn.btn-default.save, .btn.btn-default.attch {
+    background: #641a02 !important;
+}
+
+#btngroupcnlsave1 .btn-default {
+    background: #641a02 !important;
+    color: white !important;
+    border-color: #641a02 !important;
+}
+
+
+
+
+.imgFeedback {
+    background: #641a02 !important;
+    color: white !important;
+}
+
+button.btn.btn-default.save, .btn.btn-default.attch:hover {
+    background: #641a02 !important;
+    color: white !important;
+    /*border-color: #641a02 !important;*/
+}
+
+.request-detail .detail-inner {
+    background: #f0ccc3 !important;
+}
+
+.req-title {
+    background: #641a02 !important;
+}
+
+.tab-section h3 {
+    background: #641a02 !important;
+}
+
+.updtae-btn {
+    background: #641a02 !important;
+}
+
+.Backbutton {
+    background: #641a02 !important;
+}
+
+#divIssueDetails .form-group {
+    background: #f0ccc3 !important;
+}
+
+.imgcontainer {
+    background: #641a02 !important;
+}
+
+
+.navPagination li:nth-child(2) a
+{
+     background-color:#f0ccc3 !important;
+}
+.right .btn-default {
+    /*Commented and Added by Chakshuta H on 13th-Dec-2017 Purpose::Issue fixing*/
+    /*background: #641a02 !important;
+    color:white!important;*/
+    background: WHITE !important;
+    color: black !important;
+    /*End OF Commented and Added by Chakshuta H on 13th-Dec-2017 Purpose::Issue fixing*/
+}
+
+    .right .btn-default:hover {
+        /*Commented and Added by Chakshuta H on 13th-Dec-2017 Purpose::Issue fixing*/
+        /*background: #641a02 !important;
+    color:white!important;*/
+        background: WHITE !important;
+        color: black !important;
+        /*End Of Commented and Added by Chakshuta H on 13th-Dec-2017 Purpose::Issue fixing*/
+    }
+
+.imgcontainer2 {
+    background: #641a02 !important;
+}
+
+.checkbox .btn {
+    background: #641a02 !important;
+}
+
+.modal-content.animate {
+    background: #f0ccc3 !important;
+}
+
+ul.custom-ul li:not(.init) {
+    background: #641a02 !important;
+}
+
+.clsFilterDefault {
+    background: #f0ccc3 !important;
+    color: white;
+}
+
+.dropdown-item:hover {
+    background: #f0ccc3 !important;
+}
+
+
+.attacment-file .input-group-btn button {
+    background-color: #641a02 !important;
+    border-color: 1px solid #641a02 !important;
+    color: white !important;
+}
+
+
+#header-fixed .clsTRColumnHeader {
+    border-top: 3px solid #641a02;
+}
+
+/*End of Added By Dipali V on 28rd Nov 2017 For Dynamic theme*/
+
+
+
+/*Added By Vidya Jadhav ON 30 Nov 2017 For aAdding Themes*/
+
+.clsTabs {
+    /*border: 1px solid white !important;
+    background-color: white !important;*/
+    border: 1px solid #ddd !important;
+    background-color: #f5f5f5 !important;
+    border-right: none!important;
+
+}
+#divAttachment .clsTROdd {
+    background-color: #f1dad5 !important;
+}
+   
+.btnSettingTab:not(.active) {
+    color: #641a02 !important;
+    font-weight: bold;
+    font-size:15px!important;
+    border-right: 1px solid #f5e7e4;
+    border-bottom: 1px solid #f5e7e4;
+}
+
+.clsTabs .active {
+    color: #641a02 !important;
+    font-weight: bold;
+    font-size:15px!important;
+    border-bottom: 1px solid #f5e7e4;
+}
+
+.clsTabs button:not(.active) {
+    color: #641a02 !important;
+    font-weight: bold !important;
+    border-right: 1px solid #f5e7e4 !important;
+    border-bottom: 1px solid #f5e7e4 !important;
+    border-top: 1px solid #f5e7e4 !important;
+}
+
+.iSettingsTab {
+    color:#E6AEAF!important;
+}
+.v-tabs div.tab button {
+    display: block;
+    background-color: inherit;
+    color: #fff;
+    padding: 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+     height: auto; 
+    padding-left: 17px;
+    font-weight: 600;
+    padding: 10px;
+    font-size: 12px;
+}
+.clsTabs button.active {
+    background: white !important;
+    color: #641a02 !important;
+    font-weight: bold !important;
+    border-top: 1px solid #f5e7e4 !important;
+    border-bottom: 1px solid #f5e7e4 !important;
+}
+
+.h-tabs div.tab button.active {
+    background-color: transparent;
+}
+
+.clsTabs div.tab button {
+    color: black !important;
+}
+
+    .clsTabs div.tab button:hover {
+        background-color: #641a02 !important;
+    }
+
+.h-tabs .btn-default {
+    background-color: transparent !important;
+    color: black !important;
+}
+
+    .h-tabs .btn-default:hover {
+        background-color: transparent !important;
+        color: black !important;
+    }
+
+.tablinks.active, .tablinks1.active, .h-tabs div.tab button.tablinks1.active, .h-tabs div.tab button.tablinks2.active, .h-tabs div.tab button.tablinks3.active {
+    color: #641a02 !important;
+}
+
+.panel-heading span {
+    color: white;
+}
+
+.bottom-bar .pannel-section i.fa.fa-plus, .bottom-bar .pannel-section i.fa.fa-minus {
+    color: white !important;
+}
+
+.clsSettingstabs .odd {
+    background-color: #f5e7e4 !important;
+}
+
+.bg-dark {
+    background-color: #641a02 !important;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header {
+    background-color: #641a02 !important;
+}
+
+#myModal2 .modal-header {
+    background: #641a02;
+    color: white;
+}
+
+#myModal2 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    z-index: 2;
+    color: black;
+    background-color: #f5e7e4;
+    border-color: #f5e7e4;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-family: Helvetica;
+}
+
+#btnCloseModel {
+    background: #641a02;
+    color: white;
+}
+
+
+#myModal2 .comments-list .comment-box:before, .comments-list .comment-box:after {
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    display: block;
+    border-width: 10px 12px 10px 0;
+    border-style: solid;
+    border-color: transparent #f5e7e4;
+    top: 8px;
+    left: -11px;
+}
+
+.comment-box .comment-head {
+    background: #f5e7e4;
+    padding: 10px 12px;
+    border-bottom: 1px solid #f5e7e4;
+    overflow: hidden;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.comments-list .comment-avatar {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 99;
+    float: left;
+    border: 3px solid transparent;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+  .comments-list .comment-box {
+    background: #f5e7e4;
+}
+.comment-box .comment-content {
+    background: #f5e7e4;
+    padding: 12px;
+    font-size: 12px;
+    color: #595959;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+#ulUserThemes li {
+    font-size:12px;
+}
+#ulUserThemes li>a:hover {
+    background:#641a02!important;
+    color:white!important;
+}
+
+.clsControlHeight .fa-bars {
+    color:#641a02!important;
+}
+
+.btnBorder {
+    border:1px solid #641a02!important;
+}
+
+/*Commented By Yasmin on 9th June*/
+/*#divTypeBottom .panel-collapse {
+    border: 1px solid #641a02!important;
+}*/

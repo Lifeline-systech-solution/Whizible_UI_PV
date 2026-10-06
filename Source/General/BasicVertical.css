@@ -1,0 +1,54 @@
+.MenuGroup
+{
+	border-right: black 1px solid;
+	padding-right: 2px;
+	border-top: black 1px solid;
+	padding-left: 2px;
+	font-weight: bold;
+	padding-bottom: 2px;
+	border-left: black 1px solid;
+	cursor: hand;
+	color: red;
+	padding-top: 2px;
+	border-bottom: black 1px solid;
+	font-family: Arial, Verdana;
+	background-color: blanchedalmond;
+	text-align: left;
+}
+
+.MenuItem
+{
+	border-right: black 1px solid;
+	padding-right: 2px;
+	border-top: black 1px solid;
+	padding-left: 2px;
+	font-weight: bold;
+	padding-bottom: 2px;
+	border-left: black 1px solid;
+	cursor: hand;
+	color: red;
+	padding-top: 2px;
+	border-bottom: black 1px solid;
+	font-family: Arial, Verdana;
+	background-color: blanchedalmond;
+	text-align: left;
+}
+
+
+.MenuItemOver
+{
+		border-right: black 1px solid;
+	padding-right: 2px;
+	border-top: black 1px solid;
+	padding-left: 2px;
+	font-weight: bold;
+	padding-bottom: 2px;
+	border-left: black 1px solid;
+	cursor: hand;
+	color: blanchedalmond;
+	padding-top: 2px;
+	border-bottom: black 1px solid;
+	font-family: Arial, Verdana;
+	background-color: red;
+	text-align: left;
+}

@@ -1,0 +1,1091 @@
+/*media_queries_start_here*/
+
+@media screen and (min-width:1279px) {
+    .timesheettable {
+        overflow-x: scroll;
+    }
+
+    .sidebar-menu li > a {
+        padding: 9px 5px 11px 5px;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    .modal, .modal-backdrop {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+
+@media screen and (max-height: 768px) {
+    /*.tbl-content{ height:480px;}*/
+    .tbl-content {
+        /*.modal, .modal-backdrop min-height: 60vh;*/
+    }
+}
+
+@media screen and (max-height:800px) {
+    /*.tbl-content{ height:520px;}*/
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1279px) {
+
+
+    .ts_headerbot li button.btn.ml-1 {
+        margin-left: 10px;
+        padding: 4px 9px;
+        font-size: 13px;
+    }
+
+    .btnlistinline li:first-child button {
+        margin-left: 0;
+    }
+
+    .statustext li:last-child {
+        margin-right: 0;
+    }
+
+    .ts_headerbot .col-md-6.col-sm-6.col-xs-12.pull-right {
+        padding-left: 0;
+    }
+
+    .weekly_calender .input-group-box {
+        min-width: 230px;
+    }
+
+    .filterpanelwrap .col-sm-2 {
+        min-width: 24.66%;
+    }
+
+
+    #Dailytab .timesheettable table tr th:nth-child(2n), #Dailytab .timesheettable table tr th:nth-child(4n), #Dailytab .timesheettable table tr th:nth-child(5n), #Dailytab .timesheettable table tr th:nth-child(6n), #Dailytab .timesheettable table tr td:nth-child(2n), #Dailytab .timesheettable table tr td:nth-child(4n), #Dailytab .timesheettable table tr td:nth-child(5n), #Dailytab .timesheettable table tr td:nth-child(6n) {
+        width: auto;
+    }
+
+    #Dailytab .timesheettable tbody tr.task td:first-child, #Dailytab .timesheettable thead tr td:first-child, #Dailytab .timesheettable thead tr th:first-child {
+        width: 260px;
+    }
+
+    #Dailytab .tbl-content, #Dailytab .tbl-header {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1279px) {
+    .responsivewarningmsg {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        background: rgba(255,255,255,1);
+        z-index: 99999;
+        text-align: center;
+        display: none;
+        align-items: center;
+    }
+
+        .responsivewarningmsg h2 {
+            width: 100%;
+        }
+
+    /*.timesheettable{overflow-x: scroll;}
+.tbl-content, .tbl-header{ width:1150px;}*/
+
+    .modal, .modal-backdrop {
+        position: fixed !important;
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .statustext li {
+        margin-right: 0px !important;
+    }
+
+    .quickentryrecord input[type="text"] {
+        width: 29px !important;
+        font-size: 10px;
+    }
+    /*Changed By Yasmin on 13-5-19*/
+    .quickentryrecord button {
+        padding: 1px 1px;
+        margin-left: -1px;
+    }
+
+    li.topli {
+        display: none !important;
+    }
+
+    .modal-dialog {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .content-wrapper, .right-side, .main-footer {
+        margin-left: 110px;
+    }
+
+    .main-header .logo {
+        width: 110px;
+    }
+
+    .main-header > .navbar {
+        margin-left: 110px;
+    }
+
+    .main-header .navbar .sidebar-toggle {
+        display: none;
+    }
+
+    .navbar-nav > .user-menu .user-image {
+        float: right;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    .ts_headerbot .btn .fas {
+        display: none;
+    }
+
+    .hidden-desktop {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:991px) {
+    /*Commented By Yasmin S on 4th Dec 2018*/
+    .weeklyanddaily {
+        /*margin-top: 10px;*/
+    }
+}
+
+
+@media screen and (max-width: 860px) {
+    .largcustmodal .modal-dialog {
+        width: 96%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    /*Added by yasmin on 30-7-19*/
+    .mainsubmenu .fa-chevron-right, .mainsubmenu .fa-chevron-left {
+        font-size: 22px;
+        margin-top: 10px;
+        color: #4263c1;
+    }
+    .projecttaskinfo_tooltipbox p {
+        margin-bottom: 15px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .popover {
+        z-index: 999!important;
+    }
+    .morecontent span {
+        display: none;
+    }
+
+    .morelink {
+        display: inline-block;
+    }
+
+    .tbl-projecttitle {
+        font-size: 16px;
+        color: #4263c1;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        min-height: 30px;
+        position: relative;
+        padding-right: 0px;
+        word-break: break-word;
+        white-space: normal;
+    }
+
+    .filter button[aria-expanded="true"] {
+        background: #fff;
+        color: #1359a6;
+        padding: 3px 5px;
+        border-radius: 3px;
+        margin-top: -10px;
+    }
+
+    .timesheettable tbody tr td:last-child {
+        border-right: none;
+        width: 55px;
+    }
+
+    /*.Mv_actualwork_hrs strong, .Mv_actualwork_hrs #ExpectedHours, .Mv_actualwork_hrs #ActualHours, .Mv_actualwork_hrs #fltActualHours {
+        font-size: 15px;
+    }*/
+
+    .Mv_sumbmiteddate {
+        font-size: 15px;
+    }
+
+    .mainheadingtop {
+        padding-left: 0
+    }
+
+    .chart-responsive {
+        text-align: center
+    }
+
+    .dashpiechart .chart-legend {
+        margin-top: 0
+    }
+
+    .tasklist li label {
+        width: 58%
+    }
+
+    .tasklist li span {
+        width: 38%
+    }
+
+    .main-sidebar, .sidebar-open .left-side {
+        width: auto
+    }
+
+    .content-wrapper {
+        min-height: auto;
+        background: #fff;
+    }
+
+    .content-wrapper, .right-side, .main-footer {
+        margin-left: 0
+    }
+
+    .sidebar-open .main-sidebar, .sidebar-open .left-side {
+        width: 140px
+    }
+
+    .sidebar-open .content-wrapper, .sidebar-open .right-side, .sidebar-open .main-footer {
+        margin-left: -90px
+    }
+
+    .main-header .navbar .sidebar-toggle {
+        display: block
+    }
+
+    .main-header .logo {
+        width: 100%
+    }
+
+    .main-header > .navbar {
+        margin: 0
+    }
+
+    .navbar-static-top {
+        padding: 0 15px;
+    }
+
+        .navbar-static-top .filter {
+            padding: 15px 0px 0 0;
+        }
+
+            .navbar-static-top .filter button .fas {
+                font-size: 18px;
+                vertical-align: middle;
+            }
+
+
+
+
+    /*Timesheetentry screen responsive*/
+    .skin-blue-light .main-header .navbar {
+        background-color: #4263c1;
+        color: #fff;
+    }
+
+    .mainheadingtop {
+        color: #fff;
+    }
+
+
+    /*.sidebar-toggle{ display: none!important; }*/
+    .Mv_bottommainsubmenu ul.mainsubmenu li a.Mmenu_toggle {
+        padding: 11px 10px;
+        color: #000;
+    }
+
+        .Mv_bottommainsubmenu ul.mainsubmenu li a.Mmenu_toggle .fas {
+            font-size: 22px;
+        }
+
+    .fixed .content-wrapper, .fixed .right-side {
+        padding-top: 50px;
+    }
+
+    .Mv_mobmenu {
+        display: none;
+    }
+
+        .Mv_mobmenu.Mv_mobmenu_open {
+            display: block;
+            position: fixed;
+            bottom: 50px;
+            width: 280px;
+            background: #4263c1;
+            color: #fff;
+            z-index: 9;
+        }
+
+        .Mv_mobmenu.Mv_mobmenu_open {
+            display: block;
+        }
+
+            .Mv_mobmenu.Mv_mobmenu_open .sidebar-toggle .fas {
+                font-size: 22px;
+                color: #000;
+            }
+
+        .Mv_mobmenu .sidebar-menu li {
+            display: block;
+            text-align: left;
+        }
+
+            .Mv_mobmenu .sidebar-menu li a {
+                text-align: left;
+                color: #fff;
+                font-weight: 400;
+            }
+
+            .Mv_mobmenu .sidebar-menu li .fa {
+                font-size: 18px;
+                display: inline-block;
+                width: auto;
+                line-height: initial;
+                margin: 0 20px 0 0;
+                padding-left: 10px;
+            }
+
+                .Mv_mobmenu .sidebar-menu li .fa img {
+                    width: 26px;
+                }
+
+        .Mv_mobmenu .navbar-custom-menu {
+            margin-right: 0;
+        }
+
+            .Mv_mobmenu .navbar-custom-menu > .navbar-nav > li {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 16px;
+            }
+
+                .Mv_mobmenu .navbar-custom-menu > .navbar-nav > li:last-child {
+                    margin-right: 0;
+                }
+
+            .Mv_mobmenu .navbar-custom-menu .navbar-nav > li > a {
+                padding: 5px;
+            }
+
+        .Mv_mobmenu ul.nav.navbar-nav {
+            float: none;
+            padding: 10px 15px;
+        }
+
+        .Mv_mobmenu .sidebar-menu {
+            padding: 0 0 10px;
+        }
+
+        .Mv_mobmenu .navbar-nav > .user-menu .user-image {
+            margin-top: 0;
+        }
+
+
+
+    .nobtnstyle-xs {
+        background: none;
+        border: none;
+        padding: 0;
+        font-size: 0;
+        text-indent: 0;
+        color: #000;
+    }
+
+        .nobtnstyle-xs .fas {
+            font-size: 26px;
+        }
+
+    .dropdown.subtasktitle {
+        display: inline-block;
+    }
+
+    span.selecttimeno {
+        position: static;
+    }
+
+    .timenoinput {
+        font-size: 16px;
+        font-weight: normal;
+        text-align: right;
+    }
+
+    label.selecttimeno {
+        font-weight: normal;
+    }
+
+    .tbl-projecttitle {
+        font-size: 14px;
+        color: #000;
+        font-weight: bold;
+    }
+
+    body .dropdown-menu.timeinfopopup.timedescpopup {
+        display: block;
+        position: static;
+        width: 100% !important;
+        padding: 0 !important;
+        background: #fff;
+        margin: 0px 0px 0;
+        box-shadow: none;
+        text-align: center;
+        border: none;
+        transform: none;
+    }
+
+        body .dropdown-menu.timeinfopopup.timedescpopup input {
+            background: #f5f5f5;
+            border: none;
+            font-weight: normal;
+        }
+
+    .tbl-content {
+        height: auto;
+        padding-top: 10px;
+    }
+
+    .Mvtimesheettable table tbody tr td .selecttimeno input {
+        text-decoration: underline;
+        border-bottom: 1px solid #000;
+        max-width: 70px;
+        float: right;
+        font-weight: normal;
+    }
+
+        .Mvtimesheettable table tbody tr td .selecttimeno input::placeholder, .Mvtimesheettable table tbody tr td .timeno input::placeholder {
+            color: #000;
+        }
+
+    .subtasklist {
+        font-size: 11.5px;
+        color: #464a4c;
+        padding-top: 4px;
+    }
+
+    .mobview_weektablehead .col-xs-1 i.fas {
+        margin-top: 28px;
+    }
+
+    .Mv_bottommainsubmenu {
+        background: #fff;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 0 6px 1px #ddd;
+        z-index: 9;
+    }
+
+        .Mv_bottommainsubmenu ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+            .Mv_bottommainsubmenu ul li {
+                border-right: 1px solid #ddd;
+                display: inline-block;
+                list-style-type: none;
+                flex-grow: 1;
+                min-width: 50px;
+            }
+                .Mv_bottommainsubmenu ul li #Panel_1, .Mv_bottommainsubmenu ul li #Panel_2 {
+                    border-right: 1px solid #ddd;
+                    display: inline-block;
+                    list-style-type: none;
+                    flex-grow: 1;
+                    min-width: 50px;
+                    height:52px;
+                }
+
+                .Mv_bottommainsubmenu ul li.active a {
+                    background: #4263c1;
+                    color: #fff;
+                    cursor: pointer;
+                    height: 50px;
+                }
+                /*.Mv_bottommainsubmenu ul li:hover a{ background:#4263c1; color: #fff; transition:0.4s ease-in-out 0s; }*/
+                .Mv_bottommainsubmenu ul li a {
+                    padding: 10px 10px;
+                    display: block;
+                    text-align: center;
+                }
+
+    .Mv_mobmenu .sidebar-menu li.Mmenulogo span {
+        margin-left: 20px;
+    }
+
+    .Mv_bottommainsubmenu ul li a img.activemenuimg {
+        display: none;
+    }
+
+    .Mv_bottommainsubmenu ul li.active a img.nonactivemenuimg {
+        display: none;
+        margin: 0 auto;
+    }
+
+    .Mv_bottommainsubmenu ul li.active a img.activemenuimg {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .timesheettable .mCSB_container {
+        padding-top: 10px;
+    }
+
+    /*.timesheettable table {
+        box-shadow: 0px 1px 9px 1px #ddd;
+        width: 98%;
+        margin: 0 auto 20px;
+    }*/
+    .timesheetentrycard table tr th, .timesheetentrycard table tr td {
+        border-radius: 0px;
+    }
+
+    .timesheetentrycard {
+        box-shadow: 0px 1px 9px 1px #ddd;
+        width: 98%;
+        margin: 0 auto 20px;
+    }
+
+    .tabstatusdiv {
+        box-shadow: 0px 1px 9px 1px #ddd;
+        width: 98%;
+        margin: 0 auto 20px;
+        display: inline-table;
+    }
+
+    .timesheetentrycard .table {
+        box-shadow: none !important;
+    }
+
+    .weeklytimesheetwrap {
+        background: #fff;
+        margin-bottom: 50px;
+    }
+
+
+    .dropdown-menu.timeinfopopup {
+        transform: none;
+        right: 0;
+        left: auto;
+        width: 270px;
+        top: 30px;
+        background: #fff;
+        padding-top: 20px;
+    }
+
+    .projecttaskinfo_tooltipbox button.close img {
+        width: 14px;
+        opacity: 1;
+    }
+
+    .infopopup {
+        margin-top: 3px;
+    }
+
+    .dropdown-menu.timeinfopopup .arrow-left {
+        width: 36px;
+        height: 14px;
+        position: absolute;
+        right: 5px;
+        overflow: hidden;
+        box-shadow: 0 16px 10px -17px rgba(0, 0, 0, 0.5);
+        top: -14px;
+        left: auto;
+    }
+
+        .dropdown-menu.timeinfopopup .arrow-left:after {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: #fff;
+            transform: rotate(45deg);
+            top: 6px;
+            right: 6px;
+            box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.5);
+        }
+
+    .projecttaskinfo_tooltipbox button.close {
+        margin: -10px 0px 0;
+    }
+
+    .largcustmodal .modal-dialog {
+        width: 96%;
+    }
+
+    .entryform .text-right {
+        text-align: left;
+    }
+
+    /*weekdate*/
+    .mobview_weektablehead tr th {
+        text-align: center;
+        border-top: none !important;
+    }
+
+        .mobview_weektablehead tr th span {
+            display: block;
+        }
+
+        .mobview_weektablehead tr th.activeday {
+            background: #2e52a3;
+            color: #fff;
+        }
+
+    .tbl-header.mobview_weektablehead table {
+        margin-bottom: 0;
+    }
+
+
+    .ts_headerbot .col-md-6.col-sm-12.col-xs-12.pull-right {
+        float: none
+    }
+
+    .ts_headerbot {
+        background: #fff !important;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+    }
+
+    .Mv_actualwork_hrs.hidden-desktop {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+    .Mv_actualwork_hrs strong, .Mv_actualwork_hrs #ExpectedHours, .Mv_actualwork_hrs #ActualHours, .Mv_actualwork_hrs #fltActualHours {
+        font-size: 16px;
+    }
+    .Mvtimesheettable table tbody tr td {
+        border: none;
+        text-align: right;
+        padding: 5px 8px;
+        vertical-align: top !important;
+    }
+
+        .Mvtimesheettable table tbody tr td.tbl-projecttitletd {
+            padding-bottom: 0px;
+        }
+
+        .Mvtimesheettable table tbody tr td .timeno input {
+            text-align: right;
+        }
+
+        .Mvtimesheettable table tbody tr td:first-child {
+            border-left: 4px solid #47ad23 !important;
+            border: none;
+            text-align: left;
+            margin: 0 0 4px;
+            width: 50%;
+            word-break:break-word;
+        }
+
+    .Mvtimesheettable table.progressgreen tbody tr td:first-child {
+        border-left: 4px solid #47ad23 !important;
+    }
+
+    .Mv_filterpanel {
+        padding: 20px 0;
+    }
+
+    .bootstrap-select > .dropdown-toggle {
+        border-color: #ddd;
+    }
+
+    .timesheettable table tr th, .timesheettable table tr td {
+        width: auto;
+    }
+
+
+    /*mobviewpopup*/
+
+    .mobcustmodal .modal-header {
+        background: #4263c1;
+        color: #fff;
+        font-weight: 400;
+        padding: 15px;
+    }
+
+        .mobcustmodal .modal-header .close {
+            color: #fff;
+            opacity: 1;
+            font-size: 26px;
+            /* Modified By Madhuri.K On 01-04-2026 */
+        }
+
+        .mobcustmodal .modal-header h4.modal-title {
+            font-size: 14px;
+            /* Modified By Madhuri.K On 01-04-2026 */
+        }
+    /*.mobcustmodal .modal-dialog{ height: 100%; top: 0; margin-top: 10px; }
+.mobcustmodal .modal-content{ height: 97%; }*/
+
+
+    .weekly_calender .input-group-box {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 210px;
+        min-width: 210;
+        margin: 0 6px;
+        position: relative;
+    }
+
+    .xs-pl-0 {
+        padding-left: 0;
+    }
+
+
+    .Mvtimesheetapprovalcheckbox label:before {
+        left: 90px;
+    }
+
+    .Mvtimesheetapprovalcheckbox input:checked + label:after {
+        left: 96px;
+    }
+
+    .Mvtimesheetapprovalcheckbox label {
+        padding-right: 44px;
+    }
+
+    .timedescpopup input.form-control {
+        background-color: #f5f5f5;
+    }
+
+
+
+    #rejecttaskmodal .text-right, #approvetaskbtnmodal .text-right {
+        text-align: left;
+    }
+
+    #rejecttaskmodal .modal-title, #approvetaskbtnmodal .modal-title {
+        padding-right: 30px;
+    }
+
+    .customelinks li {
+        display: inline-block;
+    }
+
+        .customelinks li a {
+            padding: 10px;
+        }
+
+    .customelinks {
+        text-align: center;
+    }
+
+    .DWnoumber {
+        width: 55px;
+    }
+
+
+    #bodyTimesheetApproval_mv .main-header, #bodyMyTimesheet .main-header {
+        position: static;
+    }
+
+    #bodyTimesheetApproval_mv .content-wrapper, #bodyMyTimesheet .content-wrapper {
+        padding-top: 0;
+    }
+
+    div#divTimesheetApproval, div#divMytimesheetmob {
+        padding-top: 0px;
+    }
+        /*.row.graybg.navstatuslinkfixed {position: fixed;width: 100%;top: 50px;z-index: 1;}*/
+
+        div#divTimesheetApproval .affix, div#divMytimesheetmob .affix {
+            top: 0px;
+            width: 100%;
+            z-index: 9999 !important;
+        }
+
+
+    /*Added on 14-12-2018*/
+    .navbar-static-top .filter.pull-right, .mainheaderrighticons {
+        position: absolute;
+        top: 0;
+        right: 15px;
+    }
+
+    .MVbackbtn {
+        background: none;
+        position: absolute;
+        top: 8px;
+        border: none;
+        color: #fff;
+        z-index: 9999;
+        font-size: 24px;
+        left: 8px;
+    }
+
+    .fa-angle-right {
+        font-size: 24px;
+    }
+
+    .tabstatusdiv {
+    }
+    /*.mobcusttble .table  {
+        box-shadow: 0px 1px 9px 1px #ddd;
+        width: 98%;
+        margin: 0 auto 15px;
+        display:inline-table;
+    }*/
+
+    .mobcusttble table tr td {
+        color: #000;
+        padding: 8px;
+    }
+
+    .mobcusttble .Mv_timeentryfield label small {
+        width: 20px;
+        display: inline-block;
+    }
+
+    .weektable-wrapper table tr th {
+        display: table-cell;
+        cursor: pointer;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .dropdown-menu.timeinfopopup {
+        max-height: 65vh;
+    }
+
+    .timesheettable table tr:last-child td .dropdown-menu.timeinfopopup, .timesheettable table tr:nth-last-child(2) td .dropdown-menu.timeinfopopup, .timesheettable table tr:nth-last-child(3) td .dropdown-menu.timeinfopopup {
+        top: 100%;
+        bottom: auto;
+        margin-top: 15px;
+        right: -20px;
+    }
+
+    span.YM_label {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background: #ddd;
+        font-size: 11px;
+        top: 1px;
+        color: #464a4c;
+    }
+
+    .Mv_filterpanel .show-tick.open ul li:first-child {
+        pointer-events: none;
+        user-select: none;
+    }
+
+        .Mv_filterpanel .show-tick.open ul li:first-child span.check-mark {
+            display: none !important;
+        }
+}
+
+
+
+@media screen and (max-width:480px) {
+    .nobtnstyle-xs .fas {
+        font-size: 20px;
+    }
+
+    .Mv_actualwork_hrs.hidden-desktop {
+        font-size: 11.6px;
+    }
+
+    .Mv_actualwork_hrs strong, .Mv_actualwork_hrs #ExpectedHours, .Mv_actualwork_hrs #ActualHours, .Mv_actualwork_hrs #fltActualHours {
+        font-size: 11.6px;
+    }
+
+    .Mv_weekly_calender .input-group-box {
+        font-size: 11.5px;
+        max-width: 178px;
+    }
+
+    .Mv_weekly_calender .form-control {
+        font-size: 11.5px;
+        padding-right: 32px !important;
+        padding-left: 5px;
+    }
+
+    .Mv_weekly_calender button {
+        padding: 6px 0px;
+        font-size: 14px;
+    }
+
+    #DateDemo .showCalendar {
+        margin-left: 0 !important;
+    }
+
+    .mvapproval_crossandcheckbtn button {
+        font-size: 11.5px;
+    }
+
+    .weekly_calender {
+        font-size: 11.5px;
+        text-align: left;
+    }
+
+    .mobcusttble .Mv_timeentryfield label small {
+        font-size: 11.5px;
+        width: 12px;
+    }
+
+    .nosubmittedlabel {
+        font-size: 11px;
+    }
+
+    .weekly_calender .input-group-box {
+        max-width: 185px;
+    }
+
+        .weekly_calender .input-group-box input {
+            font-size: 11.5px;
+            padding-right: 0px;
+        }
+
+    #DateDemo .showCalendar {
+        right: 6px;
+        font-size: 16px;
+    }
+
+    /*.Mv_actualwork_hrs strong, .Mv_actualwork_hrs #ExpectedHours, .Mv_actualwork_hrs #ActualHours, .Mv_actualwork_hrs #fltActualHours {
+        font-size: 14.3px;
+    }*/
+
+    .autoclosablemsg {
+        max-width: 360px;
+        float: right;
+        position: fixed;
+        top: 103px;
+        right: 0;
+        border-radius: 4px 0 0 4px;
+        min-width: 254px;
+        z-index: 9999999999;
+    }
+
+    .popover-content {
+        width: 300px;
+    }
+
+    .popover {
+        max-width: 350px !important;
+    }
+
+    .loginheader .logo a img {
+        width: 180px;
+    }
+
+    .loginform_panel {
+        margin-top: 30px;
+    }
+
+    .loginform {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .Mvtimesheettable table tbody tr td:first-child {
+
+        width:50%;
+    }
+}
+
+
+@media screen and (max-width:365px) {
+    .mobview_weektablehead .col-xs-1 {
+        width: 4.33333%;
+    }
+    /*
+        On 8th April 2019
+    */
+    .col-xs-1 {
+        padding-right: 10px;
+        padding-left: 10px;
+    /*
+        End of On 8th April 2019
+    */
+    }
+
+    .mobview_weektablehead .col-xs-10 {
+        /*width: 84.3333%;*/
+        width: 79.3333%;
+    }
+
+    .DWnoumber {
+        width: 54px;
+        font-size: 11px;
+    }
+
+    #weekPicker2 {
+        font-size: 11px;
+    }
+
+    .weekly_calender .input-group-box {
+        max-width: 163px;
+        margin: 0 -2px;
+    }
+
+        .weekly_calender .input-group-box input {
+            padding-right: 0px;
+            padding: 6px 4px;
+        }
+
+    .mvapproval_crossandcheckbtn button {
+        padding: 4px 4px;
+    }
+    .approval_crossandcheckbtn .input-group .btn {
+        min-width: 28px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .tasklist {
+        padding: 0;
+    }
+
+        .tasklist li {
+            font-size: 14px;
+        }
+
+    .nosubmittedlabel {
+        font-size: 9.8px;
+    }
+
+    #TAviewdatepaneldetailshow .timenoinput {
+        font-size: 14px;
+    }
+
+    .Mv_sumbmiteddate {
+        font-size: 13px;
+    }
+
+    /*.Mv_actualwork_hrs strong, .Mv_actualwork_hrs #ExpectedHours, .Mv_actualwork_hrs #ActualHours, .Mv_actualwork_hrs #fltActualHours {
+        font-size: 12.3px;
+    }*/
+}

@@ -1,0 +1,243 @@
+﻿<style type="text/css" >
+#tblFiles th, #tblFiles td {
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+
+#tblMainFiles th, #tblMainFiles td {
+	word-wrap: break-word;
+/*	word-break: break-all;*/
+}
+
+.content-wrapper, .right-side, .main-footer {
+	margin-left: 0;
+}
+
+.fixed .content-wrapper, .fixed .right-side {
+	padding-top: 0;
+}
+
+.flagfillRed {
+	color: #eb1c24;
+}
+
+.flagfillyellow {
+	color: #FFFF00 !important;
+}
+
+.flagfillGreen {
+	color: #81cf09 !important;
+}
+
+.flagfillBlack {
+	color: #464a4c !important;
+}
+
+.flagfillDefault {
+	color: #cccccc !important;
+}
+
+.ow {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+	max-width: 375px;
+}
+
+.ows {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+}
+
+div#sidebarpanel.collapsed {
+	display: none;
+	transition-delay: 0.6s;
+}
+
+button#btnMainSelectFile {
+	border-radius: 4px;
+	width: auto;
+	height: auto;
+}
+
+	button#btnMainSelectFile i.fa.fa-paperclip {
+		margin-right: 12px;
+	}
+
+#tab_5 th, #tab_5 td {
+	min-width: 110px;
+}
+
+#txtSummary {
+	width: 100% !important;
+}
+
+/*#CommonControlID {
+                height: 360px;
+                display: block;
+                overflow: scroll;
+            }*/
+
+.edit-input {
+	display: none;
+}
+
+.box-body.summurysection {
+	position: relative;
+}
+
+a.editsummury {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	font-size: 14px;
+}
+
+/*Added by yasmin for datepicker alignment on 4-9-19*/
+#divCDdate .input-group {
+	display: flex;
+}
+
+#txtFileName0 {
+	display: none;
+}
+
+#tab_7 button#btnattachmentdiscussion .fas {
+	margin-right: 10px;
+}
+/*add by pradip on 24-10-2019*/
+#tab_7 .modal-dialog {
+	margin: 10% auto;
+}
+
+div.contentfull.col-md-6 #tblAttachment th {
+	min-width: 180px;
+}
+
+#tblAttachment th:last-child {
+	min-width: 200px;
+}
+
+/*Added by Swapnagandha K. On 24 Oct 2019 For Issue Add Moew-Less Link In Discussion*/
+a.morelink {
+	text-decoration: none;
+	outline: none;
+}
+
+.morecontent span {
+	display: none;
+}
+
+h4.mt-0.ows {
+	font-size: 16px;
+	line-height: normal;
+}
+
+/*End Added by Swapnagandha K. On 24 Oct 2019 For Issue Add Moew-Less Link In Discussion*/
+
+.assignissue_order_list td {
+	min-width: 120px;
+}
+/*start vishal mahajan 05-12-2019*/
+.far.fa-flag {
+	color: #81cf09;
+}
+/*end vishal mahajan 05-12-2019*/
+.assignissue_order_list td {
+	min-width: 120px;
+}
+
+.contentfull.col-md-12 #tblAttachment tr th:not(:first-child) {
+	min-width: 110px;
+}
+
+
+/*Added By Dipali V On 16th May 2020 For Loader Issues*/
+.preloader {
+	position: absolute;
+	margin-top: -25px;
+	margin-left: -400px;
+	top: 50%;
+	left: 50%;
+	padding: 30px 15px 0px;
+	/* border: 3px solid #ababab; */
+	/* box-shadow: 1px 1px 10px #ababab; */
+	border-radius: 15px;
+	background: #ddd;
+	/* background-color: white; */
+	background: url(../../../Whizible2.0/dist/img/loading.gif) 100% 100% no-repeat;
+	/* background: url(../../../Whizible2.0/dist/img/loading.gif) rgba( 255, 255, 255, .8 ) 100% 100% no-repeat; */
+	width: 100px;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: -100px 0 0 -100px;
+	z-index: 1002;
+	text-align: center;
+}
+
+.clsShowHide {
+	display: none !important;
+}
+
+/*End of Added By Dipali V On 16th May 2020 For Loader Issues*/
+/*.content-wrapper {
+            overflow:auto!important;
+            height:100px!important;
+        }*/
+
+
+#DivLesson {
+	display: inline-block;
+	float: left;
+	margin-top: -36PX;
+	margin-left: 146PX;
+	cursor: pointer;
+}
+
+/*Added By Dipali V On 30th Aug 2020 For JDTIAC Upgarde*/
+
+/*commented style by pradip on2-9-2020*/
+/*.content {
+            height:656px;
+            overflow:auto
+        }*/
+
+#AlterSection select {
+	width: 125px;
+}
+/*End of Added By Dipali V On 30th Aug 2020 For JDTIAC Upgarde*/
+
+/*Added by Usha Pandit On 24.09.2020 For display flag as per status color*/
+.flagorange {
+	color: #fbb03b !important;
+}
+
+.flagred {
+	color: #eb1c24 !important;
+}
+
+.flag-success {
+	color: #81cf09 !important;
+}
+
+.tabwrapper .nav-tabs > li a {
+	color: #464a4c;
+	padding: 4px 0px !important;
+}
+/*End Of Added by Usha Pandit On 24.09.2020 For display flag as per status color*/
+/*Added by pradip on 23-02-2021*/
+.issuedetailsidebar .form-group label {
+	white-space: nowrap;
+}
+/*End Added by pradip on 23-02-2021*/
+ /*Added By Rutuja D. on 21 Jun 2021 For Discussion Delete header display*/  
+#deletediscmodal > div.modal-dialog.modalsmall > div > div.modal-header{
+    display:block!important;
+}
+ /*End of Added By Rutuja D. on 21 Jun 2021 For Discussion Delete header display*/  
+
+
+</style >

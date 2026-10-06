@@ -1,0 +1,8 @@
+*******************************************************************************
+9/18/2026 5:11:54 PM
+REPORT-ID :814
+ERROR :D:\Aditya\ALL SOLUTIONS\W27 Most Most Latest\Images\gtl.jpg
+SOURCE :AdHocReport->Processor->PictureControl()
+STACK TRACE :   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at AdHocReports.Report.AdHocReport.Processor.PictureControl(Single width, Single left, Double& Top, String HyperLink, String GraphFileName, PictureAlignment PictureAlignment, String GraphName)
+*******************************************************************************

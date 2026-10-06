@@ -1,0 +1,1 @@
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="QuickTask_Validate_CommonList.aspx.vb" Inherits="PbNIT.QuickTask_Validate_CommonList" %>

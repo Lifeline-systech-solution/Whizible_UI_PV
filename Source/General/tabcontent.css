@@ -1,0 +1,86 @@
+/*
+Added By : MahendraV On 6:23 PM 10-Oct-2007 for WhizibleSEM 7.1 Customization
+Purpose  : To apply tab css for pending Approvals page
+
+*/
+/* ######### CSS for Shade Tabs. ######### */
+
+.shadetabs{
+padding: 3px 3px;
+margin-left: 0;
+margin-top: 1px;
+margin-bottom: 0;
+font: bold 12px Verdana;
+list-style-type: none;
+text-align: left; /*set to left, center, or right to align the menu as desired*/
+text-decoration:none;
+}
+
+.shadetabs li{
+display: inline;
+margin: 0;
+text-decoration:none;
+}
+
+.shadetabs li a{
+text-decoration: none;
+position: relative;
+z-index: 1;
+padding: 2px 8px;
+/*margin-right: 3px;*/
+color: #2d2b2b;
+font: 12px Verdana;
+border: solid 1px gray;
+background: url(../../Images/Home/columnhdr_bg.gif) top left repeat-x;
+/*list-style-image: url('../../Images/Home/help_hide.gif');*/
+text-decoration:none
+}
+
+.shadetabs li a:visited{
+color: #2d2b2b;
+text-decoration:none;
+font: 12px Verdana;
+}
+
+.shadetabs li a:hover{
+color: #2d2b2b;
+text-decoration:none;
+font: 12px Verdana;
+background-image: none;
+}
+
+.shadetabs li a.selected{ /*selected main tab style */
+position: relative;
+top: 1px;
+text-decoration:none;
+/*background-image:url(../../Images/Home/blue_color.gif);*/
+background-image:none;
+font: bold 12px Verdana;
+border-bottom-color: white;
+}
+
+.shadetabs li a.selected:visited{ /*selected main tab style */
+	/*background : #FFFAFA;*/
+background-image: none;
+/*list-style-image: url('../../Images/Home/help_hide.gif');*/
+border-bottom-color: white;
+color:black;
+font: bold 12px Verdana;
+}
+
+.shadetabs li a.selected:hover{ /*selected main tab style */
+text-decoration: none;
+
+}
+
+.tabcontent{
+display:none;
+text-decoration:none
+}
+
+@media print {
+.tabcontent {
+display:block !important;
+text-decoration:none
+}
+}

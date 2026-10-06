@@ -1,0 +1,1 @@
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="CRW_SetReportAccess_CommonList.aspx.vb" Inherits="Whiz.CRW_SetReportAccess_CommonList"%>

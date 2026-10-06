@@ -1,0 +1,2020 @@
+/* Custom css starts */
+.dropdown-menu,
+.dropdown-menu .inner {
+    min-height: 1px !important;
+}
+
+.dropdown-menu.inner {
+    display: block !important;
+}
+.dropdown-menu>li>a:hover,
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover {
+    background-color: #E7EDF0;
+    color: #000;
+}
+
+.main_graybgtbs .nav-link.active {
+    background: #1359a6;
+    color: #fff;
+}
+.main_graybgtbs{
+    gap: 2px 0;
+}
+
+.blueTxt {
+    color: #1359a6;
+}
+
+.bgLightBlue {
+    background-color: #e6f8ff;
+}
+.bgLightGrey1 {
+    background-color: #ebebeb;
+}
+.bgLightGrey2 {
+    background-color: #f7f7f7;
+}
+
+.nested_tabs .nav {
+    justify-content: flex-end;
+}
+
+.nested_tabs .nav-tabs {
+    border-bottom: unset;
+}
+
+.nested_tabs .nav-tabs .nav-item.show .nav-link,
+.nested_tabs .nav-tabs .nav-link.active {
+    border-bottom: 1px solid #000 !important;
+    color: #000;
+}
+
+.nested_tabs .nav-link:focus,
+.nested_tabs .nav-link {
+    color: #464a4c;
+    border: unset !important;
+    margin: 0px 10px 10px;
+    padding: 0.1rem;
+}
+
+.nested_tabs .nav-link:focus,
+.nested_tabs .nav-link:hover {
+    color: #000 !important;
+    border: unset;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option {
+    padding-top: 3px;
+}
+
+.bootstrap-select>.dropdown-toggle {
+    border-radius: 4px;
+    border-color: #ddd;
+    background-color: #fff !important;
+}
+
+.bootstrap-select>.dropdown-toggle {
+    height: 34px;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100%;
+}
+
+.form-control:focus {
+    border-color: #000;
+    box-shadow: unset;
+}
+
+ul.nav.nav-tabs.detailsubtabs {
+    border-top: unset;
+    margin: 0;
+}
+
+ul.nav.nav-tabs.customSubTabs {
+    border-top: unset;
+    margin: 0;
+    background-color: #f5f5f5 ;
+}
+.customSubTabs>li>a.nav-link{
+    color: #000;
+}
+.customSubTabs.nav-tabs .nav-link:hover, .customSubTabs.nav-tabs .nav-link.active, .customSubTabs.nav-tabs .nav-link:focus {
+    color: #000;
+    background-color: #fff !important;
+    transition: 0.4s ease-in-out 0s;
+}
+
+.cust_tabpanel .nav-tabs>li>a {
+    background: #d8dde0;
+    margin-right: 1px;
+    border-radius: 1px;
+    color: #464a4c;
+}
+
+.accordion-button {
+    background-color: #e7edf0 !important;
+    color: #464a4c !important;
+    font-weight: 500;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-item .accordion-button {
+    border-top-left-radius: var(--bs-accordion-inner-border-radius);
+    border-top-right-radius: var(--bs-accordion-inner-border-radius);
+    border-top: 1px solid #dee2e6;
+}
+
+.bgGrey {
+    background-color: #e7edf0 !important;
+}
+
+.lightGrey {
+    background-color: #f7f7f7 !important;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+label.required:after {
+    content: "*";
+    color: red;
+    vertical-align: 2px;
+}
+
+.stickyTblHeader {
+    position: sticky;
+    top: -2px;
+    z-index: 5;
+    background-color: #e7edf0;
+}
+
+.modalLbl {
+    font-weight: 500;
+}
+
+.crsrLink {
+    cursor: pointer;
+}
+
+.vrticlyCntr {
+    vertical-align: middle;
+}
+
+.textUndrln {
+    text-decoration: underline !important;
+}
+
+.linkTxt {
+    font-size: 11px !important;
+}
+
+.textRed {
+    color: #eb1c24;
+}
+
+.bottom-note {
+    width: 96%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+.offcanvas {
+    --bs-offcanvas-width: 70%;
+}
+
+.offcanvas-50 {
+    --bs-offcanvas-width: 50%;
+}
+
+.offcanvas-70 {
+    --bs-offcanvas-width: 70%;
+}
+
+.offcanvas-85 {
+    --bs-offcanvas-width: 85%;
+}
+
+.offcanvas-90 {
+    --bs-offcanvas-width: 90%;
+}
+
+.offcanvas-95 {
+    --bs-offcanvas-width: 95%;
+}
+
+.offcanvas-98 {
+    --bs-offcanvas-width: 98%;
+}
+
+.btnTxt {
+    font-size: 11px !important;
+}
+.popover{
+    z-index: 9999;
+}
+.iconSize {
+    width: 13px;
+    height: 13px;
+}
+
+span.note-title {
+    font-weight: 500;
+}
+
+.custmodal .modal-content .modal-body {
+    padding: 20px;
+}
+
+.bgColor {
+    background-color: #ebdfff;
+}
+
+.dottedBrdr {
+    border: 1px dotted #414042;
+}
+.flex-1{
+    flex: 1;
+}
+/* Custom css ends */
+
+/*calendar css start*/
+.gc-calendar .gc-calendar-header {
+    background-color: rgb(59 92 128);
+    padding: 5px 10px;
+    margin-bottom: 0;
+    /* text-align: center; */
+    position: relative;
+}
+
+.gc-calendar .gc-calendar-header .gc-calendar-month-year {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 105px;
+}
+
+.gc-calendar .gc-calendar-header button.prev {
+    margin-left: 20px;
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+
+.gc-calendar table.calendar thead tr {
+    background-color: #efefef;
+    height: 55px;
+}
+
+.gc-calendar table.calendar thead th {
+    border: 1px solid #8f8f93;
+    font-weight: 800;
+}
+
+.gc-calendar table.calendar td {
+    height: 60px;
+    padding: 0;
+    border: 1px solid #8f8f93;
+}
+
+.gc-calendar table.calendar th::before,
+.gc-calendar table.calendar tr:not(:last-child) td::before {
+    background-color: unset;
+}
+
+.gc-calendar table.calendar td .day-number {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gc-calendar table.calendar a {
+    height: 100%;
+}
+
+.gc-calendar table.calendar a:hover {
+    background-color: unset;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 10px;
+    transition: .2s;
+    /* height: 75px; */
+}
+
+.gc-calendar table.calendar td:hover {
+    padding: 0;
+}
+
+.gc-calendar table.calendar td:hover {
+    background: linear-gradient(90deg, #fff 100%, transparent 50%);
+}
+
+.gc-calendar .badge {
+    padding: 2px 0;
+    position: relative;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gc-calendar .gc-event {
+    width: 90%;
+    font-weight: 500;
+    margin: -18px auto 0;
+}
+
+.gc-event.holiday {
+    margin: -25px auto 0;
+    line-height: 1;
+    font-size: 11px;
+}
+
+.gc-event.badge1 {
+    position: absolute;
+    left: 30%;
+    bottom: 9px;
+}
+
+.gc-event.badge2 {
+    margin: -19px auto 0;
+    position: absolute;
+    right: 35%;
+}
+
+.gc-event.badgeNum {
+    color: #000;
+    margin: -19px auto 0;
+    font-size: 11.5px;
+    font-weight: 600;
+}
+
+.gc-event.badgeNum1 {
+
+    position: absolute;
+    left: 38%;
+}
+
+.gc-event.badgeNum2 {
+
+    position: absolute;
+    right: 28%;
+}
+
+.gc-event.badge3 {
+    margin: -29px auto 0;
+}
+
+.gc-calendar table.calendar a:hover .day-number {
+    color: #000;
+}
+
+.gc-calendar table.calendar td .today .day-number {
+    color: #122b95;
+}
+
+.gc-calendar .gc-calendar-header button.next,
+.gc-calendar .gc-calendar-header button.prev {
+    box-shadow: none;
+    background: unset;
+    color: #fff;
+}
+
+.gc-calendar table.calendar td:nth-child(6),
+.gc-calendar table.calendar td:nth-child(7) {
+    background-image: repeating-linear-gradient(45deg, #fff, #e9e9e9 1px, #fff 3px, #fff 4px);
+}
+
+.calendarDate {
+    font-weight: 600;
+    color: #b158e9;
+}
+
+.lgdPH {
+    border-left: 2px solid red !important;
+    background-image: repeating-linear-gradient(45deg, #fff, #e9e9e9 1px, #fff 3px, #fff 4px);
+    background-size: 50px 50px;
+    /* width: 90%; */
+}
+
+.lgdPlannedday {
+    background-image: repeating-linear-gradient(45deg, #fff, #ffae00 1px, #fff 3px, #fff 3px);
+    border-left: 1.5px solid red !important;
+    /* width: 90%; */
+}
+
+.lgdHoliday {
+    background-image: repeating-linear-gradient(45deg, #fff, yellow 1px, #fff 3px, #fff 4px);
+    border-left: 1px solid red !important;
+    /* width: 90%; */
+}
+
+.event a {
+    background-image: repeating-linear-gradient(45deg, #fff, yellow 1px, #fff 3px, #fff 4px);
+    /* width: 90%; */
+    height: 100%;
+}
+
+.today {
+    background-image: repeating-linear-gradient(45deg, #fff, #ffae00 1px, #fff 3px, #fff 4px) !important;
+    /* width: 90%; */
+    height: 100%;
+}
+
+.legend span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-right: 9px;
+}
+
+/*calendar css end*/
+
+/* Drag and Drop CSS starts */
+
+.drop-zone {
+    max-width: 363px;
+    height: 86px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    color: #9da7cd;
+    border: 2px dashed #5878ac;
+    border-radius: 20px;
+}
+
+.drop-zone--over {
+    border-style: solid;
+}
+
+.drop-zone__input {
+    display: none;
+}
+
+.drop-zone__thumb {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #cccccc;
+    background-size: cover;
+    position: relative;
+}
+
+.drop-zone__thumb::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Drag and Drop CSS ends */
+
+/* Project Site Page Style Starts */
+label {
+    font-weight: 400;
+}
+
+.detailSubtabTitle {
+    font-size: 14px;
+}
+
+.detailTabTitleDiv {
+    background-color: #e7edf0;
+    padding: 10px;
+}
+
+.projInnerTitle {
+    font-size: 14px;
+}
+
+.projInnerTitle.active {
+    font-weight: 500;
+}
+
+/* .RoleRateFieldContent{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding-top: 15px;
+} */
+
+.cust_tabpanel .nav-tabs>li>a {
+    background: #d8dde0;
+    margin-right: 1px;
+    border-radius: 1px;
+    color: #464a4c;
+}
+
+/* Project Site Page Style Ends */
+
+/* Resource Reallocation css starts */
+.ResourceInfo span {
+    font-weight: 600;
+}
+
+/* .smallDescTxt{
+    font-style: italic;
+} */
+/* .resourcesTable tr td:first-child{
+    text-align: left;
+} */
+td.ResHeaderRow {
+    text-align: left !important;
+    background-color: #ebebeb !important;
+}
+
+.resImg {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.resImgSmall {
+    width: 20px;
+    border-radius: 50%;
+}
+
+tr.disabled {
+    cursor: no-drop;
+}
+
+.TopNoteTitle {
+    color: #4263c1;
+    font-size: 14px;
+}
+
+.noteSec {
+    position: sticky;
+    bottom: 0;
+    /* width: 98%; */
+    z-index: 1;
+}
+
+.noteContent {
+    /* color: #4263c1; */
+    font-size: 11.5px;
+}
+
+.borderbox {
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+    padding: 20px;
+}
+
+td.taskActions {
+    vertical-align: middle;
+}
+
+/* Basic Rules */
+.switch input {
+    display: none
+}
+
+.switch {
+    display: inline-block;
+    width: 55px;
+    height: 25px;
+    /* margin-top: -12px;
+    transform: translateY(50%); */
+    position: relative
+}
+
+/* Style Wired */
+.slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border: 4px solid transparent;
+    overflow: hidden;
+    transition: .4s;
+    background: #ddd
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 30px;
+    transform: translateX(-30px);
+    transition: .4s
+}
+
+input:checked+.slider:before {
+    transform: translateX(30px);
+    background: #fff
+}
+
+input:checked+.slider {
+    border: 4px solid #4263c1;
+    background: #4263c1
+}
+
+/* input:checked + .slider{border:4px solid #75bb08;background:#75bb08} */
+/* Style Flat */
+.switch.flat .slider {
+    box-shadow: none
+}
+
+.switch.flat .slider:before {
+    background: #FFF
+}
+
+.switch.flat input:checked+.slider:before {
+    background: white
+}
+
+.switch.flat input:checked+.slider {
+    background: limeGreen
+}
+
+/* Resource Reallocation css ends */
+
+/* Bulk Task Creation css starts */
+.bulkTaskPanel {
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+}
+
+.brdrbotHide {
+    border-bottom-style: hidden;
+}
+
+.freezeColumns tr th:nth-child(1),
+.freezeColumns tr td:nth-child(1) {
+    position: sticky;
+    left: -1px;
+    top: 3;
+    /* z-index: 3; */
+    border: 1px solid #ddd;
+}
+
+.freezeColumns tr th:nth-child(1) {
+    z-index: 999 !important;
+}
+
+.freezeColumns tr td:nth-child(1) {
+    background-color: #f5f5f5;
+    z-index: 3;
+}
+
+.tblBrdrLeft {
+    border-left: 4px solid #ddd;
+}
+
+.bulkTaskTable2 {
+    border-left-style: hidden;
+}
+
+.bulkTaskTable thead th {
+    min-width: 180px;
+}
+
+/* .bulkTaskTable tbody td {
+    vertical-align: middle;
+} */
+
+.bulkTaskTable tbody tr {
+    height: 90px;
+}
+
+.bulkTaskTable tfoot tr {
+    height: 50px;
+}
+
+.bulkTaskTable1 th:nth-child(1) {
+    border: 1px solid #ddd;
+    min-width: 162px;
+}
+
+.bulkTaskTable1 td:nth-child(1) {
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.bulkTaskTable1 th:nth-child(5) {
+    min-width: 100px;
+}
+
+.bulkTaskTable1 th:nth-child(6) {
+    min-width: 80px;
+}
+
+/* .bulkTaskTable th, .bulkTaskTable td{
+    border: 1px solid #ddd;
+} */
+.custInput {
+    display: inline-block;
+    width: 85%;
+}
+
+.custSelect {
+    display: inline-block !important;
+    width: 90% !important;
+}
+
+.notebox {
+    border: none;
+}
+
+.notebox ul li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.noteIcon {
+    background-color: yellow;
+}
+
+.togglerup .collapseup {
+    display: block;
+}
+
+.togglerup .collapsedown {
+    display: none;
+}
+
+.togglerdown .collapsedown {
+    display: block;
+}
+
+.togglerdown .collapseup {
+    display: none;
+}
+
+.crossValidatnIcn {
+    width: 20px;
+}
+
+.ValidatnIcn {
+    width: 12px;
+}
+
+.rightValidatnIcn {
+    font-size: 20px;
+    color: green;
+}
+
+.add_info p {
+    font-size: 11px !important;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.add_info span {
+    font-weight: 500;
+    color: #1359a6;
+}
+
+.remarkslist li {
+    list-style-type: decimal;
+}
+
+.tskValTbl tbody tr td {
+    height: 50px;
+}
+
+/* .tskValTbl ol li{
+    line-height: 1.8;
+} */
+/* .remarkslist li span{
+    display: inline-block;
+    width: 50%;
+} */
+.remarkslist li img {
+    width: 12px;
+}
+
+/* Bulk Task Creation css ends */
+
+/* IR-PIR css section starts */
+span.INRCurncy {
+    display: inline-block !important;
+}
+
+.amtFilSection {
+    border: 1px solid #ddd;
+}
+
+.IRPIR_Table tbody tr td {
+    vertical-align: middle;
+}
+
+/* Status Dropdown css starts */
+.statusColors .dropdown-menu li a span.text {
+    display: inline-block;
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+}
+
+.statusColors .filter-option-inner-inner {
+    display: flex;
+    align-items: center;
+}
+
+.statusBox {
+    display: inline-block;
+    border-radius: 50%;
+    min-width: 10px;
+    height: 10px;
+}
+
+.stageBox {
+    display: inline-block;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.statusApproved {
+    background-color: #c8ff00;
+}
+
+.statusCancelled {
+    background-color: #868686;
+}
+
+.statusClosed {
+    background-color: #00a65a;
+}
+
+.statusDraft, .stageDraft {
+    background-color: #f39c12;
+}
+
+.statusReSubmitted {
+    background-color: #3c8dbc;
+}
+
+.statusRejected {
+    background-color: #dd4b39;
+}
+
+.statusSubmitted {
+    background-color: #00c0ef;
+}
+
+.statusOpen {
+    /* background-color: rgb(255, 255, 51); */
+    background-color: #f9e143;
+}
+
+.textOrange {
+    color: #f59300;
+}
+
+.blueAmt{
+    font-size: 14px !important;
+    font-weight: 600;
+    color: #1359a6;
+}
+
+.greenAmt{
+    font-size: 14px !important;
+    font-weight: 600;
+    color: #00a65a;
+}
+.remarkTxt {
+    font-size: 16px !important;
+    color: #f59300;
+    font-weight: 500;
+    line-height: 0;
+}
+
+.listImgIcn {
+    width: 15px;
+    height: auto;
+}
+
+.imgIcon {
+    width: 20px;
+    height: auto;
+}
+
+.iconBlue {
+    font-size: 11.5px;
+    color: #1359a6;
+}
+
+.srchBtn {
+    border-radius: 0;
+    height: 30px;
+}
+
+.IRInvoiceItemsSec {
+    border: 1px solid #ddd;
+}
+
+.IRInvoiceItemsSec ul {
+    border-bottom: 1px solid #ddd;
+}
+
+.IRInvoiceItemsSec ul li {
+    background-color: #1359a6;
+    padding: 7px 10px 5px;
+    border-radius: 5px 5px 0 0;
+}
+
+.IRInvoiceItemsSec ul li a {
+    color: #FFF;
+}
+
+.IRPIR_EdtDetlsTable tfoot {
+    position: sticky;
+    bottom: 0;
+    border: 1px solid #ddd;
+    background-color: white;
+    /* Adjust background color as needed */
+}
+
+.IRPIR_filterSec .bootstrap-select .dropdown-menu li a span.text {
+    display: inline-block;
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+}
+
+.toplinks {
+    border-top: 1px solid #eee;
+}
+
+.topFilters .bootstrap-select .dropdown-menu li a span.text {
+    display: inline-block;
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+}
+
+.nextBtnEditDiv {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+.partiallyUtilized {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ddd;
+    /* background: #e3fdff; */
+    background: #ebdfff;
+}
+.accordionRow td{
+    padding: 0 !important;
+}
+.TS_HoursCol {
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.TS_ProjAmt {
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.info-red{
+    color: #F00;
+}
+.IR_Cards .card{
+    background-color: #fdf6ef;
+}
+
+.IR_Cards label{
+    font-size: 11.5px;
+}
+/* IR-PIR css section ends */
+
+/* Project Profitability css section starts */
+.viewBtnSec {
+    margin-top: -42px;
+}
+
+.profGraph {
+    position: relative;
+    height: 55vh;
+    width: 70vw;
+    margin: auto;
+}
+
+.legendsSec {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.legend-box {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+}
+
+.orange-box {
+    background-color: #f98843;
+}
+
+.yellow-box {
+    background-color: #f9e143;
+}
+
+.sky-box {
+    background-color: #4bc0c0;
+}
+
+.blue-box {
+    background-color: #3c8dbc;
+}
+
+.grey-box {
+    background-color: #868686;
+}
+
+.green-box {
+    background-color: #00a65a;
+}
+.l-name{
+    font-size: 11.5px;
+}
+tfoot {
+    position: sticky;
+    bottom: 0;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+.statusRow {
+    display: flex;
+    justify-content: center;
+}
+
+.statusDiv {
+    width: 110px;
+    text-align: left;
+    margin: auto;
+}
+
+.statusDiv {
+    width: 110px;
+    text-align: left;
+    margin: auto;
+}
+.statusDiv label {
+    font-weight: 400;
+}
+
+.stageDiv {
+    width: 50px;
+    text-align: left;
+    margin: auto;
+}
+.WF_StatusDiv {
+    text-align: center;
+    margin: auto;
+}
+
+.Off_acordian_panel .accordion-button {
+    background-color: #F9F9F9 !important;
+    padding: 10px;
+}
+
+/* Project Profitability css section ends */
+/* Change Request page css section start */
+.margnTop {
+    margin-top: 4.5rem;
+}
+
+.AssTasksBtnDiv {
+    flex-wrap: wrap;
+}
+
+.analysisGraphBar, .analysisGraphPie {
+    position: relative;
+    height: 50vh;
+    width: 36vw;
+}
+
+.TaskAttrSec .accordion-button:not(.collapsed)::after,
+.TaskAttrSec .accordion-button::after {
+  background-image: unset !important;
+}
+
+.DocDescAcc{
+    font-size: 11.5px;
+}
+.DocDescAcc a{
+    font-size: 11.5px !important;
+}
+/* .ui-datepicker-month{
+    pointer-events: none;
+    cursor: default;
+} */
+/* .analysisGraphPie {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+} */
+
+/* #PieChart3D {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateX(50deg) rotateY(20deg);
+} */
+
+/* Change Request page css section end */
+
+@keyframes animate-stripes {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 60px 0;
+    }
+}
+
+@keyframes auto-progress {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.text_bg {
+    color: #4263c1;
+    font-size: 11px !important;
+}
+
+
+/* Site Calender CSS start */
+.clsHeaderSec .clsTRSectionHeader:first-child {
+    background-color: rgb(59 92 128);
+    margin-bottom: 0;
+    /* text-align: center; */
+    height: 50px;
+    font-weight: 500;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.clsTRSectionHeader .prev,
+.clsTRSectionHeader .next {
+    background: none;
+    color: #FFF;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    width: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.clsTRSectionHeader .prev:hover,
+.clsTRSectionHeader .next:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .08), 0 7px 14px rgba(50, 50, 93, .1);
+}
+
+.clsTRSectionHeader td.dayname {
+    border: 1px solid #8f8f93;
+    font-weight: 800;
+    height: 55px;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #7a7a9d;
+    background-color: #efefef;
+}
+
+.clsTRSectionHeader tr.clsTREven {
+    font-weight: 800;
+    height: 55px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #7a7a9d;
+}
+
+.clsTRSectionHeader tr.clsTREven td {
+    border: 1px solid #8f8f93;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: center;
+    /* font-size: 16px; */
+}
+
+.clsTRSectionWeekend {
+    background-image: repeating-linear-gradient(45deg, #fff, #e9e9e9 1px, #fff 3px, #fff 4px);
+}
+
+/* Site Calender CSS end */
+
+/* Backup Plan CSS start */
+
+.pgtitlenew {
+    margin: 6px 0 0;
+    font-weight: 700;
+    color: #4263c1;
+    font-size: 18px;
+    /* Modified By Madhuri.K On 02-04-2026 */
+}
+.font-9{
+    font-size: 7px;
+}
+.backupPlanHeading{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Img-30{
+    width: 30%;
+}
+.Img-40{
+    width: 40%;
+}
+.WF_Img{
+    width: 135px;
+    height: auto;
+}
+/* Backup Plan CSS end */
+
+.shadowBox {
+    box-shadow: 0 .2rem 0.8rem rgba(0,0,0,.1)!important;
+}
+
+.TS_HelpScreen p{
+    margin-bottom: 0.5rem;
+}
+.reportHeading{
+    font-size: 18px;
+    color: #f98843;
+    font-weight: 500;
+}
+.topicList li{
+    list-style-type: disc;
+    /* font-weight: 500; */
+    /* font-size: 16px; */
+}
+.outerList > li{
+    list-style-type: square;
+    font-size: 14px;
+    font-weight: 500;
+}
+.innerList > li{
+    list-style-type: circle;
+    /* font-size: 16px;
+    font-weight: 500; */
+}
+.reportList > li{
+    list-style-type: decimal;
+    color: #5e5e5e;
+    /* line-height: 1.8; */
+}
+/* .reportList > li::marker{
+    font-size: 15px;
+    font-weight: 500;
+    color: #1694c7;
+} */
+.numTitle{
+    font-size: 15px;
+    font-weight: 500;
+    color: #1694c7;
+}
+.numList > li{
+    list-style-type: lower-roman;
+}
+.noteDesc{
+    color: #0e47cb;
+}
+
+/* WorkFlow Approval page css start */
+
+.allWorkflowTabsDiv .nav {
+    justify-content: flex-end;
+    gap: 10px 0;
+}
+
+.allWorkflowTabsDiv .nav-tabs {
+    border-bottom: unset;
+}
+
+.allWorkflowTabsDiv .nav-tabs .nav-link {
+    border-bottom: 1px solid #cdcdcd !important;
+    color: #000;
+}
+
+.allWorkflowTabsDiv .nav-tabs .nav-link.active {
+    border-bottom: 1px solid #000 !important;
+    color: #000;
+}
+
+.allWorkflowTabsDiv .nav-link:focus,
+.allWorkflowTabsDiv .nav-link {
+    color: #464a4c;
+    border: unset !important;
+    /* margin: 0px 10px 10px;
+    padding: 0.1rem; */
+}
+
+.allWorkflowTabsDiv .nav-link:focus,
+.allWorkflowTabsDiv .nav-link:hover {
+    color: #000 !important;
+    border: unset;
+}
+.badgeGreen{
+    color: #269b0b;
+    border: 1px solid #269b0b;
+}
+.badgeOrange{
+    color: #ff851b;
+    border: 1px solid #ff851b;
+}
+.badgeRed{
+    color: #c50008;
+    border: 1px solid #c50008;
+}
+.WFaprovendrejectbtn .btn{
+    border-radius: 50%;
+}
+.WFaprovendrejectbtn i{
+    font-size: 10px;
+}
+
+.WFaprovendrejectbtn .btn-success {
+    padding: 0 5px;
+}
+
+.WFaprovendrejectbtn .btn-red {
+    padding: 0 7px;
+}
+.mobAppRejButns i {
+    font-size: 30px;
+}
+.deskAppRejButns i {
+    font-size: 20px;
+}
+.inboxDiv .btn{
+    padding: 4px 10px;
+    margin-right: 5px;
+}
+.inboxBtn{
+    border: 1px solid #4bc0c0 !important;
+    color: #4bc0c0;
+}
+.inboxBtn:hover, .inboxBtn.active{
+    background-color: #4bc0c0;
+    color: #FFF;
+}
+.watchlistBtn{
+    border: 1px solid #f98843 !important;
+    color: #f98843;
+}
+.watchlistBtn:hover, .watchlistBtn.active{
+    background-color: #f98843;
+    color: #FFF;
+}
+.allBtn{
+    border: 1px solid #0d6efd !important;
+    color: #0d6efd;
+}
+.allBtn:hover, .allBtn.active{
+    background-color: #0d6efd;
+    color: #FFF;
+}
+.projDetailsBtns{
+    line-height: 1;
+    /* margin-top: -10px; */
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+}
+.projDetailsBtns i {
+    background-color: #4bc0c0;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+}
+.WF_TopAccordianPanel .accordion-item{
+    border: none;
+}
+.WF_TopAccordianPanel 
+ .accordion-button {
+    background-color: #FFF !important;
+    border-top: unset;
+    box-shadow: unset;
+    padding: 0 10px;
+    padding-bottom: 0.5rem!important;
+    border-bottom: 1px solid #ddd;
+    /* color: #9838d5 !important; */
+    font-size: 12px;
+}
+.WF_AccordianPanel .accordion-item{
+    border: none;
+}
+.WF_AccordianPanel 
+ .accordion-button {
+    background-color: #FFF !important;
+    border-top: unset;
+    box-shadow: unset;
+    border-bottom: 1px solid #ddd;
+    color: #4263c1 !important;
+    font-size: 14px;
+}
+.bg-green{
+    background-color: #73c247 !important;
+}
+.text-green{
+    color: #73c247 !important;
+}
+.text-brown{
+    color: #bb0c0c;
+}
+.allWorkflowTabsDiv{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.WF_HiddenEntity{
+    display: flex;
+    flex-wrap: wrap;
+}
+.showTabs{
+    display: block;
+}
+/* .hiddenTabs{
+    display: none;
+} */
+.rightArrow{
+    cursor: pointer;
+    /* margin: auto 0; */
+    /* padding-left: 10px; */
+    /* z-index: 1; */
+}
+.card-footer{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #f7f7f7;
+    border-top: unset;
+}
+/* Show Status Starts */
+
+.WF_DetlsDesktop {
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.WF_DetlsDesktop .details-main-sec {
+    display: flex;
+}
+
+.WF_DetlsDesktop .details-main-sec .d-sec1 {
+    width: 50%;
+    border-right: 1px solid #CCCCCC;
+}
+
+.WF_DetlsDesktop .details-main-sec .d-sec2 {
+    width: 50%;
+}
+
+.WF_DetlsDesktop .details-main-sec table td {
+    border: none;
+    padding-bottom: 0;
+}
+
+.WF_DetlsDesktop .details-main-sec table.details-table1 td:nth-child(1),
+.WF_DetlsDesktop .details-main-sec table.details-table2 td:nth-child(1) {
+    width: 40%;
+}
+
+.WF_DetlsDesktop .details-main-sec table.details-table1 td:nth-child(2),
+.WF_DetlsDesktop .details-main-sec table.details-table2 td:nth-child(2) {
+    width: 60%;
+}
+
+/* Initiative details div mobile view style starts */
+.details_table_mob tr{
+    border-style: hidden;
+}
+.details_table_mob tr td{
+    padding: 0 0 10px 10px;
+}
+.details_table_mob tr td:nth-child(1){
+    border-right: 1px solid #ccc;
+}
+
+.IniDetailsDivMob{
+    border-bottom: 1px solid #ccc;
+}
+/* Initiative stages div style starts */
+
+.WFStagesDiv .stage-status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stage-title h5 {
+    font-size: 16px;
+}
+
+.WFStagesDiv .stage-content {
+    display: flex;
+}
+
+.WFStagesDiv .stage-content ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.WFStagesDiv .stage-content ul>li {
+    display: flex;
+}
+
+.WFStagesDiv .stage-content .stage-box {
+    width: 28px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+table tr.cartTblHead>th:nth-child(2) {
+    width: 92px !important;
+}
+
+.WFStagesDiv .green-box {
+    background-color: #03BA28;
+    border: 1px solid #414042;
+}
+
+.WFStagesDiv .yellow-box {
+    background-color: #F5C330;
+    border: 1px solid #414042;
+}
+
+.WFStagesDiv .red-box {
+    background-color: #f55d30;
+    border: 1px solid #414042;
+}
+
+.WFStagesDiv .grey-box {
+    background-color: #b3b3b3;
+    border: 1px solid #414042;
+}
+.statusIcon{
+    font-size: 22px;
+    color: #f39c12 ;
+}
+/* Current stages div style starts */
+.WF_CurrentStage {
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    position: relative;
+    padding: 1rem;
+}
+
+.WF_CurrentStage .c-stage-div .c-stages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.WF_CurrentStage .grey-div {
+    background-color: #f6f6f6;
+    padding: 1rem 1rem 4.5rem;
+}
+
+.WF_CurrentStage .c-stage-process {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.WF_CurrentStage .stageBtnDetails {
+    width: 92%;
+    margin: 0 auto;
+}
+
+.WF_CurrentStage .c-stage-process .process-stages {
+    min-width: 90%;
+    margin: 0 auto;
+    padding-right: 10px;
+}
+
+.WF_CurrentStage .c-stage-process .s-process {
+    border-radius: 15px;
+    margin-right: -10px;
+}
+
+.WF_CurrentStage .c-stage-process .s-green {
+    background-color: #03BA28;
+    border: 1px solid #414042;
+    width: 10%;
+    height: 13px;
+}
+
+.WF_CurrentStage .c-stage-process .s-green1 {
+    z-index: 98;
+}
+
+.WF_CurrentStage .c-stage-process .s-green2 {
+    z-index: 97;
+}
+
+.WF_CurrentStage .c-stage-process .s-green3 {
+    z-index: 96;
+}
+
+.WF_CurrentStage .c-stage-process .s-yellow {
+    background-color: #F5C330;
+    border: 1px solid #414042;
+    width: 35%;
+    height: 24px;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11.5px;
+    font-weight: 500;
+}
+
+.WF_CurrentStage .c-stage-process .s-red {
+    background-color: #f55d30;
+    border: 1px solid #414042;
+    width: 12%;
+    height: 18px;
+    z-index: 98;
+}
+
+.WF_CurrentStage .c-stage-process .s-grey {
+    background-color: #b3b3b3;
+    border: 1px solid #414042;
+    width: 5%;
+    height: 15px;
+}
+
+.WF_CurrentStage .c-stage-process .s-grey1 {
+    z-index: 90;
+}
+
+.WF_CurrentStage .c-stage-process .s-grey2 {
+    z-index: 89;
+}
+
+.WF_CurrentStage .c-stage-process .s-grey3 {
+    z-index: 88;
+}
+
+.WF_CurrentStage .c-stage-process .s-grey4 {
+    z-index: 87;
+}
+
+.WF_CurrentStage .c-stage-process .s-grey5 {
+    z-index: 86;
+}
+.WF_CurrentStage .c-stage-process .s-grey6 {
+    z-index: 85;
+}
+.WF_CurrentStage .c-stage-process .s-grey7 {
+    z-index: 84;
+}
+.DocumentsContent label, .DocumentsContent a{
+    font-weight: 400;
+    font-size: 11.5px !important;
+}
+.DocHeading{
+    font-weight: 600;
+    color: #414042;
+}
+/* Show Status Ends */
+
+/* Progress Bar CSS Start */
+@keyframes growProgressBar {
+    0%, 33% { --pgPercentage: 0; }
+    100% { --pgPercentage: var(--value); }
+  }
+  
+  @property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+  }
+  
+  div[role="progressbar"] {
+    --size: 2rem;
+    --fg: #369;
+    --bg: #def;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: 
+      radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+      conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 3);
+    font-weight: 600;
+    color: var(--fg);
+  }
+  
+  div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage);
+  }
+  /* Updated by Dipali V on 18th Dec 2025 - Display decimal values in progress bar */
+  div[role="progressbar"][aria-valuenow]::before {
+    content: attr(aria-valuenow);
+  }
+/* Progress Bar CSS End */
+
+/* WorkFlow Approval page css end */
+
+/* Card View CSS Starts here */
+
+.WF_Card{
+    padding: 15px 0;
+}
+.WF_Card .card{
+    min-height: 5.5rem;
+}
+.greenBrdr {
+    border-left: 2px solid #00a65a ;
+}
+.yelllowBrdr{
+    border-left: 3px solid #ffd400;
+}
+.redBrdr{
+    border: 1px solid #F55D30;
+}
+.CardViewTxt{
+    font-size: 11.5px;
+}
+.card-img{
+    margin-top: -25px;
+    margin-left: 15px;
+    /* z-index: 100; */
+}
+.card-header {
+    padding: 0;
+    background-color: #FFF;
+}
+.CardViewIniImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 5px;
+}
+.CardViewIconImg {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+}
+.CardViewProfile .CardViewIconImg{
+    border-radius: 50%;
+}
+.cardProjCode{
+    color: #414042;
+    font-size: 11.5px !important;
+}
+.CardView .card-title {
+    min-height: unset;
+    font-size: 15px;
+    color: #4263c1;
+}
+/* .cardLeftImg i{
+    color: #ef750c;
+} */
+.CardViewTitle{
+    font-weight: 600;
+    font-size: 14px;
+    /* color: #ff851b;; */
+    /* color: #ef750c; */
+    color: #ef750c;
+}
+.CardValueTitle{
+    font-weight: 500;
+    font-size: 14px;
+    /* color: #09a1a1; */
+}
+.CardStageTitle{
+    font-weight: 500;
+    font-size: 14px;
+    color: #1088af;
+}
+.card-item{
+    display: flex;
+}
+.CardViewProfile{
+    border-top: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+/* Card View CSS Ends here */
+
+/* Discussion CSS Starts here */
+.os-scrollbar-horizontal {
+    display: none;
+}
+.circle-bgorange {
+    background: #f98843;
+}
+
+.circle-bgyellow {
+    background: #f9e143;
+}
+
+.circle-bgpink {
+    background: #f578cf;
+}
+.circle-bggrey {
+    background: #8b8b8b;
+}
+/* Discussion CSS Ends here */
+
+/* Mobile View CSS Starts here */
+.WF_MobEntList{
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    /* background-color: #fff8ff; */
+    background-color: #f7f7f7;
+    box-shadow: 0 5px 16px 5px rgba(0,0,0,.1)!important;
+    /* text-align: center; */
+    padding: 20px 10px;
+    min-height: 9rem;
+    /* font-weight: 500; */
+    margin: 10px 0;
+    cursor: pointer;
+}
+.WF_MobEntList.active{
+    font-weight: 600;
+}
+.WF_MobImg i{
+    font-size: 18px;
+}
+.mobEntityCnt{
+    font-size: 32px;
+    padding-left: 10px;
+} 
+.mobEntityName{
+    font-size: 18px;
+    line-height: 1.3;
+} 
+.redCircle{
+    color: #c50008;
+}
+.redCard{
+    /* background-color: #fdd9d9; */
+    border-bottom: 6px solid #c50008;
+    /* color: #c50008; */
+}
+.orangeCircle{
+    color: #ff851b;
+}
+.orangeCard{
+    /* background-color: #ffeac5; */
+    border-bottom: 6px solid #ff851b;
+    /* color: #ff851b; */
+}
+.greenCircle{
+    color: #269b0b;
+}
+.greenCard{
+    /* background-color: #e6ffe0; */
+    border-bottom: 6px solid #269b0b;
+    /* color: #269b0b; */
+}
+/* Mobile View CSS Ends here */
+
+
+/* Excel Upload Data page css start */
+
+.scrollTable.table-responsive {
+    scrollbar-width: thin;
+}
+/* .scrollTable{
+    overflow: hidden !important;
+}
+.scrollTable:hover{
+    overflow: auto !important;
+} */
+
+.hideTblTxt {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 110px;
+    /* max-width: 1000px; */
+    white-space: normal !important;
+    /* max-width: 120px;  */
+}
+
+.hideTblTxt .more {
+    cursor: pointer;
+}
+
+.hideTblTxt:hover .more {
+    display: inline;
+}
+/* Excel Upload Data page css end */
+
+.flex-column {
+    flex-direction: column;
+}
+.flex-grow-1 {
+    flex-grow: 1;
+}
+td.sprintCol .selectSprintInput {
+    text-align: center;
+}
+.selectSprintInput {
+    width: 180px !important;
+    margin: auto;
+}
+
+.selectSprintInput+button.dropdown-toggle {
+    border: none;
+    /* border-bottom: 1px solid #ddd; */
+    /* display: block;
+    padding: 0;
+    padding-top: 5px;
+    width: 100%;
+    min-height: 35px;
+    color: #4263c1; */
+}
+.selectSprintInput .dropdown-toggle:focus {
+    outline: none !important;
+}
+.green_bg{
+    background-color: #00a65a;
+    color: #FFF;
+}
+.textrelease {
+    background-color: #0b6f6a !important;
+    color: #FFF !important;
+}
+.bgLight{
+    background-color: #FFF !important;
+    border: none;
+}
+.row_bg{
+    background-color: #fdf6ef !important;
+}
+.topBorderTbl{
+    border-top-color: #FFF;
+}
+.colWidthTArea{
+    min-width: 200px;
+}
+.colWidthDropdown{
+    min-width: 150px;
+}
+
+.colSmall{
+    min-width: 45px;
+    width: 45px;
+}
+.td_iconsDiv1{
+    width: 160px;
+    margin: auto;
+}
+.td_iconsDiv2{
+    width: 135px;
+    margin: auto;
+}
+.td_iconsDiv1 a, .td_iconsDiv2 a{
+    color: #414042 !important;
+}
+.rowHeading td{
+    background-color: #e7f0ec;
+}

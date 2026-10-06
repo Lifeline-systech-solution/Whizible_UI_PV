@@ -1,0 +1,1 @@
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="PublishPoll_CommonPage.aspx.vb" Inherits="Whiz.PublishPoll_CommonPage"%>

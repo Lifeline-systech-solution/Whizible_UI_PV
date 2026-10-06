@@ -1,0 +1,520 @@
+﻿
+@import 'pmlifeline-M.css';
+@import 'pmlifeline-M-responsive.css';
+@import 'ContentMasterStyle.css';
+@import 'ui.jqgrid.css';
+@import 'jquery-ui-1.9.2.custom.css';
+@import 'Chart.css';
+@import 'demo.css';
+@import 'jquery.mmenu.all.css';
+@import 'jquery.weekcalendar.css';
+@import 'timesheet.css';
+@import 'Login.css';
+
+
+@media only screen and (min-width:721px)
+{
+     #divUnAuthorize {
+            display:block !important;
+        }
+	.content-page 
+	{
+		height:auto;
+		max-height:100%;
+		/*overflow: auto !important;*/
+		width: 100%;
+		margin-left: 26px;
+		margin-top:10px;
+	}
+
+	.pHeading
+	{
+        /*margin-left:7% !important;*/
+		display: inline-block;
+		padding: 4px 9px;
+		margin-bottom: 0px;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 1.4285;
+		text-align: left;
+		white-space: nowrap;
+		vertical-align: middle;
+		/*cursor: pointer;*/
+		border: 1px solid transparent;
+		border-radius: 2px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+		color: #000000 !important;
+		background-color: #ffffff !important;
+		/*border-color: #5175B3 !important;*/
+        width: 250px;
+	}
+	/*#graphheaderapproval
+	{
+		display: inline-block;
+		padding: 4px 9px;
+		margin-bottom: 0px;
+		font-size: 12px;
+		font-weight: normal;
+		line-height: 1.4285;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		cursor: pointer;
+		border: 1px solid transparent;
+		border-radius: 2px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+		color: #000000 !important;
+		background-color: #ffffff !important;
+		border-color: #e39321 !important;
+	}*/
+	.btn-primary 
+	{
+    color: #000000 !important;
+    background-color: #ffffff !important;
+    border-color: #5175B3 !important;
+	}
+	.btn 
+	{
+    display: inline-block;
+    padding: 4px 9px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.4285;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+	}
+
+	.fliplabel {
+    line-height: 30px;
+    /*margin: 1%;*/
+    font-size: 12px;
+    padding: 2px;
+    text-align: center;
+    /*background: #3276b1;*/
+	background:#e39321;
+    border: solid 1px #CCC;
+    color: #ffffff;
+    border-radius: 1px;
+	/*display:block;*/
+	cursor: pointer;
+	}
+
+	.content
+	{
+		width:100% !important;
+		/*height:100% !important;*/
+		overflow:auto !important;
+	}
+    .dtSection {
+        background-color: #f6eee4 !important;
+        height: 179px;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+    .DetailssectionH
+	{
+		text-align: left;
+		overflow: auto;
+		width: 97%;
+		border-radius: 4px;
+		border: 0px solid black !important;
+	}
+	#detailsectionhide
+	{
+		background-color: #f6eee4 !important;
+		height: 179px;
+		overflow: auto;
+		overflow-x: hidden;
+	}
+	#Detailssection
+	{
+		text-align: left;
+		overflow: auto;
+		width: 97%;
+		border-radius: 4px;
+		border: 0px solid black !important;
+	}
+    .footbar {
+        display:none;
+    }
+	/*#page
+	{
+		display:block !important;
+	}*/
+	#home
+	{
+		display:none !important;
+	}
+	#Div1
+	{
+		display:none !important;
+	}
+	#project
+	{
+		display:none !important;
+	}
+	#timesheet
+	{
+		display:none !important;
+	}
+	#divfooter
+	{
+		display:none !important;
+	}
+
+	/*Leave Approval*/
+
+	#divLeaveApprovalParent
+	{
+		/*display:block !important;*/
+		/*height:325px;*/
+		/*height:auto;*/
+		width:100% !important ;
+	}
+	#divLeaveApproval
+	{ 
+		/*display:block;*/
+	}
+	#divLeaveApprovalChild
+	{
+		/*display:block !important;*/
+		/*height:200px !important;*/
+		/*height:auto;*/
+		width:100% !important ;
+	}
+	#MyProfile
+	{
+		/*max-height: 200px !important;*/ 
+		/*display: block;*/
+		/*height: 200px !important;*/	
+	}
+	#divdivLeaveApprovalLabel
+	{
+		/*display:block !important;*/
+	}
+
+	.right-Content 
+	{
+		/*margin-left: 10% !important;*/
+		margin-left: 0% !important;
+		z-index: 1;
+		/*width: 77% !important;*/
+		width: 100% !important;
+		border: 1px solid #000;
+		min-height: 200px !important;
+		margin-top: 0.7% !important;
+	}
+	.center-text 
+	{
+		margin-left: 1%;
+		margin-top: 4%;
+		font-weight: bold;
+		border-bottom: 1px solid #ccc;
+		margin-right: 11%;
+		margin-bottom: 9% !important;
+		white-space: nowrap;
+		background-color: #f6eee4 !important;
+	}
+	.DetailSectionMargin
+	{
+		 margin: 1% 0% 1% 1% !important;
+		float: left !important;
+		width: 100% !important;
+	}
+
+
+
+	/*EntityWorkFlow Approval*/
+	#divEntityWorkFlowApprovalParent
+	{
+		/*display:block !important;*/
+		/*height:325px;*/
+		/*height:auto;*/
+		width:100% !important ;
+	}
+	#divEntityWorkFlowApproval
+	{
+		/*display:block;*/
+	}
+	#divEntityWorkFlowApprovalChild
+	{
+		/*display:block !important;*/
+		/*height:300px !important;*/
+		/*height:auto;*/
+		width:100% !important ;
+	}
+	#divdivEntityWorkFlowApprovalLabel
+	{
+		/*display:block !important;*/
+	}
+
+
+	#detailsectionhide1
+	{
+		background-color: #f6eee4 !important;
+		height: 179px;
+		overflow: auto;
+		overflow-x: hidden;
+	}
+	#Detailssection1
+	{
+		text-align: left;
+		overflow: auto;
+		width: 97%;
+		border-radius: 4px;
+		border: 0px solid black !important;
+	}
+
+	.EntityWorkflowApprovalGridData
+	{
+		width:100% !important;
+	}
+	.ui-jqgrid-htable
+	{
+		width:100% !important;
+		background-color:#f0d1a1 !important;
+	}
+	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default 
+	{
+    /*border: 1px solid black;*/
+		border: 1px solid black !important;
+		background: #f0d1a1 url(../images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x !important;
+		font-weight: bold;
+		color: #000;
+	}
+
+	.ui-widget-content 
+	{
+		border: 1px solid #CCC !important;
+		color: #333333;
+	}
+
+	.ui-jqgrid-btable
+	{
+		width:100% !important;
+		
+	}
+	.ui-jqgrid-hbox
+	{
+		width:100% !important;
+	}
+	.ui-jqgrid .ui-jqgrid-hbox 
+	{
+		float: left;
+		padding-right: 0px !important;
+	}
+
+	
+	.ui-jqgrid-bdiv
+	{
+		height: auto !important;
+		max-height:110px !important;
+	}
+
+	#MyProfile1
+	{
+		/*max-height: 200px !important;*/ 
+		/*display: block;*/
+		/*height: 200px !important;*/	
+	}
+	#dinamictbl1
+	{
+		height:200px !important;
+		overflow:auto !important;
+	}
+	/*#Detailssection1
+	{
+		height:140px !important;
+		overflow:auto !important;
+	}*/
+	.myAltRowClassEven
+	{
+		background-color:#f6eee4;
+	}
+	.myAltRowClassOdd
+	{
+		background-color:white;
+	}
+
+
+	/*ResourceTimesheet Approval*/
+	#divResourceTimesheetApprovalParent
+	{
+		/*display:block !important;*/
+		/*height:325px !important;*/
+		/*height:auto;*/
+		width:100% !important ;
+	}
+	#divResourceTimesheetApproval
+	{
+		/*display:block;*/
+	}
+	#divResourceTimesheetApprovalChild
+	{
+		/*display:block !important;*/
+		/*height:300px !important;*/
+		/*height:auto;*/
+		width:100% !important ;
+	}
+	#divdivResourceTimesheetApprovalLabel
+	{
+		/*display:block !important;*/
+	}
+
+
+
+	/*Expense Approval*/
+	#divExpenseApprovalParent
+	{
+		/*display:block !important;*/
+		/*height:325px !important;*/
+		/*height:auto;*/
+		width:100% !important ;
+	}
+	#divExpenseApproval
+	{
+		/*display:block;*/
+	}
+	#divExpenseApprovalChild
+	{
+		/*display:block !important;*/
+		/*height:300px !important;*/
+		/*height:auto;*/
+		width:100% !important ;
+	}
+	#divdivExpenseApprovalLabel
+	{
+		/*display:block !important;*/
+	}
+	.Grid-data 
+	{
+		max-width: 100%;
+		margin-left: 0% !important;
+		margin-bottom: 0% !important;
+		margin-right: 0% !important;
+	}
+	.margin
+	{
+		margin:0px !important;
+	}
+	.Table-Header 
+	{
+		font-weight: bold;
+		margin-top: 1% !important;
+		margin-bottom: 1% !important;
+		display:block !important;
+	}
+	.EntityDropdown
+	{
+		margin-top: -2% !important; 
+	}
+        .shadow1 {
+        box-shadow: 1px 1px 1px 1px #CCC;
+    }
+}
+@media only screen and (max-width:720px) {
+    .pheading {
+        line-height: 30px;
+        /*margin: 2%;*/
+        font-size: 16px;
+        padding: 5px;
+        text-align: center;
+        /*background: #3276b1;
+        border: solid 1px #CCC;*/
+        /*color: #ffffff;*/
+        border-radius: 3px;
+    }
+     #imgEmployee {
+             width: 200px;
+             height: 200px;
+             border-radius: 50%;
+             background-repeat: no-repeat; 
+             background-position: center center;
+             background-size: cover; 
+        }
+     #imgEmployeeHome {
+             width: 50px;
+             height: 50px;
+             border-radius: 50%;
+             background-repeat: no-repeat; 
+             background-position: center center;
+             background-size: cover; 
+        }
+    #InstructNote
+    {
+        border-left: #f0d1a1 4px solid;
+        height: 30px;
+        padding: 2%;
+        background-color: #DFDFDF;
+        width: 100%;
+        border-bottom: 1px solid #f0d1a1;
+    }
+
+    .notifyCount
+    {
+        float: right;
+      
+        background-color: #E04545;
+        width: 30px;
+        height: 30px;
+        color: #fff;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        text-align: center;
+        border: 1px solid #fff;
+    }
+    .shadow {
+        width: 96% !important;
+        margin: 2% !important;
+        box-shadow: 0 5px 5px 0 rgba(0,0,0,.14),0 0px 1px -3px rgba(0,0,-2,.2),0 1px 5px 0 rgba(0,0,0,.12) !important;
+    }
+
+    #divNotification
+    {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 1px;
+            right: 37px;
+            font-size: 10px;
+            cursor: pointer;
+            background: -webkit-linear-gradient(top,#fa3c45,#dc0d17);
+            background: #fa3c45;
+            -webkit-border-radius: 2px;
+            -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.7);
+            font-family: "Helvetica Neue",Helvetica,Arial,"lucida grande",sans-serif;
+            font-size: 10px;
+            -webkit-font-smoothing: antialiased;
+            font-weight: bold;
+            min-width: 12px;
+            padding: 0;
+            text-align: center;
+            text-shadow: 0 -1px 0 rgba(0,0,0,.4);
+            border-bottom: 1px solid #c0311e;
+            border-top: 1px solid #e23923;
+            position: absolute;
+            /* top: -4px; */
+            /* left: 12px; */
+            height: 14px;
+            line-height: 14px
+    }
+}

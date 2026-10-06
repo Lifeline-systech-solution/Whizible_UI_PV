@@ -1,0 +1,162 @@
+﻿
+@media only screen and (min-width:1100px)
+{
+    .panelheight
+    {
+        height:750px;
+    }
+    .panelWidth
+    {
+        width:200px;
+    }
+   
+    .trTopHeight
+    {
+        height:600px;
+    }
+
+    .trBottomHeight
+    {
+        height:150px;
+    }
+    .tdleftwidth
+    {
+        width:239px;
+    }
+
+      .tdMessagewidth
+    {
+        width:650px;
+    }
+
+    .tdrightwidth
+    {
+        width:230px;
+    }
+      
+    .mainTable
+    {
+        width:1200px;
+    }
+
+  
+    .divTeamMember
+    {
+        width:274px;
+    }
+    .divProfile
+    {
+        height:255px;
+    }
+    .divMessage
+    {
+         height:370px;
+    }
+    .divTask
+    {
+         height:205px;
+    }
+    .divCurrentlyOnline
+    {
+        height:300px;
+    }
+    .divLatestMessage
+    {
+         height:132px;
+    }
+     .aligncontent
+    {
+       vertical-align:top;
+    }        
+   .border
+    {
+         border: 1px solid;
+    }
+
+        
+    .tdtitlewidth
+    {
+        width:100%;
+        height:30px;
+    }
+    
+  
+}
+
+@media only screen and (min-width:992px) and (max-width:1099px)
+{
+    .panelheight
+    {
+        height:750px;
+    }
+    .panelWidth
+    {
+        width:200px;
+    }
+     .trTopHeight
+    {
+        /*height:450px;*/
+        height:600px;
+    }
+
+    .trBottomHeight
+    {
+        /*height:150px;*/
+        height:150px;
+    }
+    .tdleftwidth
+    {
+        width:200px;
+    }
+
+      .tdMessagewidth
+    {
+        width:500px;
+    }
+
+    .tdrightwidth
+    {
+        width:245px;
+    }
+      
+    .divTeamMember
+    {
+        width:233px;
+    }
+    .divProfile
+    {
+        height:255px;
+    }
+    .divMessage
+    {
+        height:370px;
+    }
+    .divTask
+    {
+        height:205px;
+    }
+    .divCurrentlyOnline
+    {
+        height:300px;
+    }
+    .divLatestMessage
+    {
+        height:132px;
+    }
+     .aligncontent
+    {
+       vertical-align:top;
+    }        
+   .border
+    {
+         border: 1px solid;
+    }
+
+        
+    .tdtitlewidth
+    {
+        width:100%;
+        height:30px;
+    }
+    
+}

@@ -1,0 +1,1 @@
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="SelectFromQLib_CommonList.aspx.vb" Inherits="Whiz.SelectFromQLib_CommonList"%>

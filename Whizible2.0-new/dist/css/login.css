@@ -1,0 +1,691 @@
+﻿/* cyrillic-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOkCnqEu92Fr1Mu51xFIzIFKw.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOkCnqEu92Fr1Mu51xMIzIFKw.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOkCnqEu92Fr1Mu51xEIzIFKw.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOkCnqEu92Fr1Mu51xLIzIFKw.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOkCnqEu92Fr1Mu51xHIzIFKw.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOkCnqEu92Fr1Mu51xGIzIFKw.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOkCnqEu92Fr1Mu51xIIzI.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../../dist/fonts/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+
+
+/*pradip_Css_start_here_for_the_Login page*/
+
+body {
+    font-family: 'Roboto',sans-serif;
+    font-weight: normal; font-size:14px;
+    color: #464a4c;
+    background: #ffffff;
+}
+.ml-1 {
+    margin-left: 10px;
+}
+
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear {
+    display: none;
+}
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #999;
+    outline: 0;
+    box-shadow: none;
+}
+
+.log_notificationbox h5 {
+    margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 1125px) and (min-width: 1024px) {
+    .Dloginpanel_left .loginform_body {
+    padding: 5em !important;
+}
+}
+
+
+    @media screen and (min-width:1024px) {
+
+     /*loginscreen_css_start_added_by_pradip*/
+        body .fixed{height:100%;left:0;right:0;background:#fff}
+.row-eq-height{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-family:'Roboto',sans-serif}
+.Dloginpanel_left{background:url(../../dist/img/loginbg.jpg) 0 0 no-repeat;background-attachment:fixed;background-size:cover;min-height:100vh; padding:0; position:relative;}
+.Dloginpanel_leftbg{background-image:linear-gradient(to top,#2b56a5,#236db7,#2283c8,#2e9ad6,#42b0e3);width:100%;height:100%;opacity:.9;position:absolute;margin:0 0px}
+.Dloginpanel_left .loginform_body{font-size:14px; z-index:1;position:relative;display:flex;align-items:center;height:100%;padding:6em;}
+.log_notificationbox p{font-weight:300;line-height:20px;font-family:'Roboto',sans-serif}
+        .log_notificationbox {
+            margin: 6em 0;
+            color: #fff;
+            /*text-align: justify;*/
+            min-height: 160px;
+        }
+a{text-decoration: none;}
+
+
+.logcontact{display:flex}
+.logcontact span{font-size:13px;margin:0 6px;display:flex;flex-grow:1;font-weight:300}
+.logcontact span a{color:#fff}
+.logcontact span a:hover{color:#ccc}
+.loginboxleft{width: 100%;}
+
+
+.carousel-inner{/* max-height: 160px;overflow-y: auto; min-height: 160px;*/}
+.carousel-inner>.item{/*overflow-y: scroll;*/
+line-height: 22px;
+    font-size: 14px;
+
+}
+.carousel-indicators {
+    bottom: -40px;
+}
+.carousel-indicators li{margin:0 5px;}
+carousel-control-arrow{ width: 4%; background: none!important; }
+.carousel-control-arrow.left{ left: -80px;}
+.carousel-control-arrow.right{ right: -80px;}
+.carousel-control-arrow .fa-chevron-left, .carousel-control-arrow .fa-chevron-right, .carousel-control-arrow .icon-next, .carousel-control-arrow .icon-prev{position: absolute;top: 50%;z-index: 5;display: inline-block;}
+.carousel-indicators .active{margin: 0 5px;}
+.slimScrollDiv{ padding-right: 15px; margin-bottom:30px; }
+
+        /*loginpanel-left*/
+        /*loginpanel-right*/
+        
+      .loginform_body{padding:60px;}
+.Dloginpanel_right .loginform_body{display:flex;height:100%;align-items:center;flex-wrap:wrap;width:100%}
+.loginboxright{width:100%}
+.loginform{margin:20px auto}
+.loginheader h2{font-weight:300;margin:0;font-family:'Roboto',sans-serif}
+.loginbtn{background:#fbb03b;border:none;font-weight:400;padding:10px 20px;font-size:18px;border-radius:4px;width:100%;min-width:140px;margin:0 0 15px;font-family:'Roboto',sans-serif;cursor:pointer;text-align:center;color:#fff}
+.loginbtn:focus,.loginbtn:hover{color:#fff}
+.loginbtn:hover{background:#e29214}
+.forgotpass{color:#464a4c;font-size:14px;font-family:'Roboto',sans-serif;font-weight:500}
+.forgotpass:hover{color:#1359ac;}
+
+.loginformbox input.form-control::placeholder{color:#fff;text-align:center;font-family:'Roboto',sans-serif;font-weight:300}
+.custom_chckbox.remeberme label:before{margin-right:10px}
+
+.customerlogo {
+    position: absolute;
+    max-width: 80px;
+    right: 65px;
+    top: 20px;
+}
+
+        /*loginpanel-right*/
+        /*loginscreen_css_end_added_by_pradip*/
+        #maindiv > .row-eq-height {
+            width: 100%;
+            height: 100%;
+        }
+
+        }
+
+
+@media screen and (max-width:1024px) {
+    .logcontact span { font-size:12px!important;
+    }
+    .logcontact span:first-child {
+        margin-left: 0!important;
+    }
+    .logcontact span:last-child {
+        margin-right: 0!important;
+    }
+}
+
+    @media screen and (max-width:1023px) {
+
+        .logginwrap {
+            background: url(../../dist/img/loginbg.jpg) 0 0 no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            position: absolute;
+            width: 100%;
+        }
+
+        .logginwrap_inner {
+            background-image: linear-gradient(to top, #2b56a5, #236db7, #2283c8, #2e9ad6, #42b0e3);
+            width: 100%;
+            height: 100%;
+            opacity: 0.9;
+            position: absolute;
+        }
+
+        .wrapper:before, .wrapper:after {
+            content: " ";
+            display: none;
+        }
+
+        .loginform_panel {
+            text-align: center;
+            margin: 100px 0; position:relative;
+        }
+
+        .loginform {
+            margin: 20px auto;
+        }
+
+        .loginformbox {
+            max-width: 450px;
+            margin: 0 auto;
+            border-radius: 16px; /*background-image: linear-gradient(to top, #2b56a5, #236db7, #2283c8, #2e9ad6, #42b0e3);*/
+        }
+
+        .loginform_body {
+            padding: 40px;
+        }
+
+        .loginbtn {
+            background: #fff;
+            border: none;
+            font-weight: 300;
+            padding: 10px 40px;
+            font-size: 18px;
+            border-radius: 26px;
+            width: 100%;
+            max-width: 220px;
+            margin: 0 0 20px;
+            font-family: 'Conv_Roboto-Light';
+            cursor: pointer;
+        }
+
+        .loginformbox .forgotpass {
+            color: #eee;
+            font-size: 16px;
+            font-family: 'Conv_Roboto-Light';
+            font-weight: 300;
+        }
+
+        .loginformbox .form-group {
+            margin: 0 0 40px;
+        }
+
+        .loginformbox input::-moz-placeholder, .loginformbox input::-webkit-input-placeholder {
+            color: #fff;
+            text-align: center;
+            font-family: 'Conv_Roboto-Light';
+            font-weight: 300;
+        }
+
+        .lginform_fooer p strong {
+            font-weight: 400;
+            font-family: 'Conv_Roboto-Regular';
+        }
+
+        .lginform_fooer p {
+            font-family: 'Conv_Roboto-Light';
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        .lginform_fooer {
+            max-width: 600px;
+            margin: 0 auto;
+            width: 100%;
+            color: #fff;
+        }
+
+        .loginbtn:hover, .loginbtn:focus {
+            outline: none !important;
+            background: #fbb03b;
+            color: #fff;
+        }
+
+        /*input focus effects css
+=========================== */
+
+        .loginformbox input:focus {
+            outline: none;
+        }
+
+        .input-effect {
+            width: 100%;
+            margin: 20px 0 40px;
+            position: relative;
+        }
+            /* necessary to give position: relative to parent. */
+            .input-effect input[type="text"], .input-effect input[type="password"] {
+                font-family: 'Conv_Roboto-Regular';
+                font-size: 18px;
+                font-weight: 400;
+                z-index: 1;
+                color: #fff;
+                width: 100%;
+                box-sizing: border-box;
+                letter-spacing: 1px;
+                text-align: center;
+            }
+
+        .effect-16 {
+            border: 0;
+            padding: 4px 0;
+            border-bottom: 2px solid #9ccbe8;
+            background-color: transparent;
+            position: relative;
+        }
+
+            .effect-16 ~ .focus-border {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: #fff;
+                z-index: 1;
+                transition: 0.4s;
+            }
+
+            .effect-16:focus ~ .focus-border,
+            .has-content.effect-16 ~ .focus-border {
+                width: 100%;
+                transition: 0.4s;
+            }
+
+            .effect-16 ~ label {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                top: 4px;
+                color: #eee;
+                transition: 0.3s;
+                z-index: 0;
+                letter-spacing: 0.5px;
+                font-family: 'Conv_Roboto-Light';
+                font-weight: 300;
+                font-size: 18px;
+            }
+
+            .effect-16:focus ~ label, .has-content.effect-16 ~ label {
+                top: -16px !important;
+                font-size: 11.5px !important;
+                font-weight: 300;
+                font-family: 'Conv_Roboto-Light';
+                color: #eee;
+                transition: 0.3s;
+            }
+
+
+
+
+
+        .loginformbox [placeholder]:focus::-webkit-input-placeholder {
+            color: transparent;
+        }
+
+        .loginformbox [placeholder]:focus::-webkit-input-placeholder {
+            transition: none;
+            opacity: 1;
+        }
+
+        .foot_contctno span {
+            font-size: 11.5px;
+            margin: 0 6px;
+            font-weight: 400;
+            font-family: 'Conv_Roboto-Regular';
+        }
+
+            .foot_contctno span a {
+                color: #fff;
+            }
+
+                .foot_contctno span a:hover {
+                    color: #fff;
+                    text-decoration: underline;
+                }
+
+        i#showpass {
+            position: absolute;
+            top: 8px;
+            right: 0px;
+            color: #fff;
+        }
+
+
+        /*New css*/
+        .loginformbox h4 {
+            color: #fff;
+            margin: 0 0 40px;
+        }
+
+        .input-effect .alert-danger {
+            background: none;
+            color: #fecc00 !important;
+            border-color: #fecc00 !important;
+            padding-top: 6px;
+            font-size: 13px !important;
+            display: block;
+        }
+    }
+
+
+.loginform label, .forgotpass{
+    font-weight: 500;
+    margin: 0 0 5px;
+}
+
+@media screen and (max-width:480px) {
+    .loginform_body {
+            padding: 20px;
+        }
+
+        .loginformbox .forgotpass {
+            font-size: 14px;
+        }
+
+        .loginform_panel {
+            text-align: center;
+            margin: 50px 0;
+        }
+    }
+
+
+
+
+
+    /*pradip_Css_end_here_for_the_Login page*/

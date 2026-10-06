@@ -1,0 +1,200 @@
+﻿<?xml version='1.0'?>
+<?mso-application progid='Excel.Sheet'?>
+<s:Workbook xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:s="urn:schemas-microsoft-com:office:spreadsheet">
+  <o:DocumentProperties>
+    <o:Author>SandipL</o:Author>
+    <o:LastAuthor>CarlosAg</o:LastAuthor>
+    <o:Created>2006-08-30T10:19:50</o:Created>
+    <o:LastSaved>2006-09-14T10:38:35</o:LastSaved>
+    <o:Version>10.3501</o:Version>
+  </o:DocumentProperties>
+  <x:ExcelWorkbook>
+    <x:WindowHeight>9345</x:WindowHeight>
+    <x:WindowTopX>120</x:WindowTopX>
+    <x:WindowTopY>60</x:WindowTopY>
+    <x:WindowWidth>15180</x:WindowWidth>
+    <x:ProtectStructure>False</x:ProtectStructure>
+    <x:ProtectWindows>False</x:ProtectWindows>
+  </x:ExcelWorkbook>
+  <s:Styles>
+    <s:Style s:ID="Default" s:Name="Normal">
+      <s:Alignment s:Vertical="Bottom" />
+      <s:Borders />
+      <s:Font />
+      <s:Interior />
+    </s:Style>
+    <s:Style s:ID="s21">
+      <s:Font />
+      <s:NumberFormat s:Format="[$$-409]#,##0.00;[Red]\-[$$-409]#,##0.00" />
+    </s:Style>
+    <s:Style s:ID="s22">
+      <s:Font />
+    </s:Style>
+  </s:Styles>
+  <s:Names>
+    <s:NamedRange s:Name="cboEmployee" s:RefersTo="=Sheet1!R11C52" />
+    <s:NamedRange s:Name="cboTasktype" s:RefersTo="=Sheet1!R11C53" />
+    <s:NamedRange s:Name="cboPriority" s:RefersTo="=Sheet1!R11C54" />
+    <s:NamedRange s:Name="cboPhase" s:RefersTo="=Sheet1!R11C55" />
+    <s:NamedRange s:Name="cboModule" s:RefersTo="=Sheet1!R11C56" />
+    <s:NamedRange s:Name="cboSubProject" s:RefersTo="=Sheet1!R11C57" />
+    <s:NamedRange s:Name="cboDeliverable" s:RefersTo="=Sheet1!R11C58" />
+    <s:NamedRange s:Name="cboMilestone" s:RefersTo="=Sheet1!R11C59" />
+    <s:NamedRange s:Name="cboChangeRequest" s:RefersTo="=Sheet1!R11C60" />
+  </s:Names>
+  <s:Worksheet s:Name="Sheet1">
+    <s:Table s:ExpandedColumnCount="60" s:ExpandedRowCount="10" x:FullColumns="1" x:FullRows="1">
+      <s:Column s:Width="90" />
+      <s:Column s:Width="75" />
+      <s:Column s:Index="6" s:Width="115" />
+      <s:Column s:Width="70" />
+      <s:Column s:Width="93" />
+      <s:Column s:Width="82" />
+      <s:Column s:Width="95" />
+      <s:Column s:Width="92" />
+      <s:Column s:Width="91" />
+      <s:Column s:Width="88" />
+      <s:Column s:Index="52" s:Width="64" />
+      <s:Column s:Width="60" />
+      <s:Column s:Width="48" />
+      <s:Column s:Width="52" />
+      <s:Column s:Width="61" />
+      <s:Column s:Width="69" />
+      <s:Column s:Width="67" />
+      <s:Column s:Width="69" />
+      <s:Column s:Width="91" />
+      <s:Row>
+        <s:Cell s:StyleID="s21">
+          <s:Data s:Type="String">TaskName</s:Data>
+        </s:Cell>
+        <s:Cell s:StyleID="s22">
+          <s:Data s:Type="String">EmployeeName</s:Data>
+        </s:Cell>
+        <s:Cell s:StyleID="s22">
+          <s:Data s:Type="String">StartDate</s:Data>
+        </s:Cell>
+        <s:Cell s:StyleID="s22">
+          <s:Data s:Type="String">EndDate</s:Data>
+        </s:Cell>
+        <s:Cell s:StyleID="s22">
+          <s:Data s:Type="String">Work</s:Data>
+        </s:Cell>
+        <s:Cell s:StyleID="s22">
+          <s:Data s:Type="String">TaskType</s:Data>
+        </s:Cell>
+        <s:Cell s:StyleID="s22">
+          <s:Data s:Type="String">Priority</s:Data>
+        </s:Cell>
+        <s:Cell s:StyleID="s22">
+          <s:Data s:Type="String">Phase</s:Data>
+        </s:Cell>
+        <s:Cell s:StyleID="s22">
+          <s:Data s:Type="String">Module</s:Data>
+        </s:Cell>
+        <s:Cell s:StyleID="s22">
+          <s:Data s:Type="String">SubProject</s:Data>
+        </s:Cell>
+        <s:Cell s:StyleID="s22">
+          <s:Data s:Type="String">Deliverable</s:Data>
+        </s:Cell>
+        <s:Cell s:StyleID="s22">
+          <s:Data s:Type="String">Milestone</s:Data>
+        </s:Cell>
+        <s:Cell s:StyleID="s22">
+          <s:Data s:Type="String">ChangeRequest</s:Data>
+        </s:Cell>
+      </s:Row>
+      <s:Row s:Index="10">
+        <s:Cell s:Index="52">
+          <s:Data s:Type="String">cboEmployee</s:Data>
+        </s:Cell>
+        <s:Cell>
+          <s:Data s:Type="String">cboTasktype</s:Data>
+        </s:Cell>
+        <s:Cell>
+          <s:Data s:Type="String">cboPriority</s:Data>
+        </s:Cell>
+        <s:Cell>
+          <s:Data s:Type="String">cboPhase</s:Data>
+        </s:Cell>
+        <s:Cell>
+          <s:Data s:Type="String">cboModule</s:Data>
+        </s:Cell>
+        <s:Cell>
+          <s:Data s:Type="String">cboSubProject</s:Data>
+        </s:Cell>
+        <s:Cell>
+          <s:Data s:Type="String">cboDeliverable</s:Data>
+        </s:Cell>
+        <s:Cell>
+          <s:Data s:Type="String">cboMilestone</s:Data>
+        </s:Cell>
+        <s:Cell>
+          <s:Data s:Type="String">cboChangeRequest</s:Data>
+        </s:Cell>
+      </s:Row>
+     </s:Table>
+    <x:WorksheetOptions>
+      <x:Selected />
+      <x:ProtectObjects>False</x:ProtectObjects>
+      <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+<DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R2C2:R101C2</Range>
+   <Type>List</Type>
+   <Value>cboEmployee</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R2C6:R101C6</Range>
+   <Type>List</Type>
+   <Value>cboTasktype</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R2C7:R101C7</Range>
+   <Type>List</Type>
+   <Value>cboPriority</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R2C8:R101C8</Range>
+   <Type>List</Type>
+   <Value>cboPhase</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R2C9:R101C9</Range>
+   <Type>List</Type>
+   <Value>cboModule</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R2C10:R101C10</Range>
+   <Type>List</Type>
+   <Value>cboSubProject</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R2C11:R101C11</Range>
+   <Type>List</Type>
+   <Value>cboDeliverable</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R2C12:R101C12</Range>
+   <Type>List</Type>
+   <Value>cboMilestone</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R2C13:R101C13</Range>
+   <Type>List</Type>
+   <Value>cboChangeRequest</Value>
+  </DataValidation>
+  </s:Worksheet>
+  <s:Worksheet s:Name="Sheet2">
+    <x:WorksheetOptions>
+      <x:ProtectObjects>False</x:ProtectObjects>
+      <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+  </s:Worksheet>
+  <s:Worksheet s:Name="Sheet3">
+    <x:WorksheetOptions>
+      <x:ProtectObjects>False</x:ProtectObjects>
+      <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+  </s:Worksheet>
+</s:Workbook>

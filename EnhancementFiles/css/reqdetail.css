@@ -1,0 +1,694 @@
+.affix {
+    top: 50px;
+    width: 100%;
+}
+
+.help-desk {
+    float: left;
+    width: 100%;
+    z-index: 100;
+}
+
+.request-details-pg {
+    min-height: 1000px;
+    float: left;
+    width: 100%;
+    margin-top: 13px;
+}
+
+.reqeust-discu {
+    padding-left: 0;
+    width: 100%;
+    float: left;
+    <!-- box-shadow: 1px 1px 1px #ebedf0; -->
+    min-height: 781px;
+    <!-- border-left: 1px solid; -->
+    <!-- border-bottom: 1px solid; -->
+    <!-- background: red; -->
+}
+
+.req-title {
+    float: left;
+    width: 100%;
+    background: #364660;
+    margin-left: 15px;
+}
+
+.reqeust-discu h2 {
+    color: #fff;
+    line-height: 29px;
+    margin: 0;
+    float: left;
+}
+
+.reqeust-discu .pull-right {
+    float: left !important;
+}
+
+.req-title .col-md-3 {
+    width: 17%;
+}
+
+.quest-info {
+    padding: 18px 0 12px 20px;
+}
+
+    .quest-info p {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .quest-info span {
+        font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+        padding-right: 12px;
+    }
+
+        .quest-info span.request-date {
+            font-weight: 600;
+        }
+
+    .quest-info a {
+        background: #43a047;
+        color: #fff;
+        font-weight: 600;
+        font-size: 8px;
+        padding: 5px 10px;
+        margin-left: 4px;
+    }
+
+.tab {
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+.reqeust-discu .tab-section, .inner-tab-section {
+    float: left;
+    width: 100%;
+    padding: 13px 0 0 0px;
+    border-top: 1px solid #f1f2f4;
+}
+
+    .tab-section button.tablinks, .inner-tab-section button.tablinks1, .v-tabs .h-tabs div.tab button.tablinks1 {
+        font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+        font-weight: 600;
+        border: none;
+        background: none;
+        margin-right: 38px;
+    }
+
+.tablinks.active, .tablinks1.active, .h-tabs div.tab button.tablinks1.active, .h-tabs div.tab button.tablinks2.active, .h-tabs div.tab button.tablinks3.active {
+    color: #4caac0;
+    border: none !important;
+    text-decoration: underline;
+}
+
+.tab-section button:focus, .v-tabs .h-tabs div.tab button {
+    outline: none !important;
+}
+
+button.tablinks.sla-tablink {
+    background: #b3d741;
+    border-radius: 17%;
+    padding: 0px 4px;
+}
+
+.btn-section {
+    float: left;
+    width: 100%;
+    margin-top: 26px;
+}
+
+.add-forwd-btn {
+    float: right;
+}
+
+    .add-forwd-btn button {
+        background: none;
+        font-size: 10px;
+        font-weight: 600;
+        border-right: 1px solid #e5e7ea;
+        height: 17px;
+        line-height: 4px;
+    }
+
+        .add-forwd-btn button.note-btn, button.reply-btn {
+            border: none;
+            text-decoration: underline; /*Added by Vaijat K ON 29/11/2017 For Issue ID - 9470*/ 
+        }
+
+button.reply-btn {
+    border-right: 1px solid #e5e7ea;
+}
+
+.discus-part {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    max-width: 834px;
+    margin-left: 51px;
+}
+
+.odd-discus-part {
+    margin-left: 27px;
+}
+
+.discus-chat {
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    float: left;
+    width: 100%;
+    height: auto;
+    border: 1px solid #bfc5ce;
+    background: #fff;
+    box-shadow: 0px 0 40px -10px #c3c8d1;
+    border-top-left-radius: 0;
+}
+
+    .discus-chat:not(.odd-discus-chat):before {
+        width: 0;
+        height: 0;
+        content: "";
+        top: -8px;
+        left: -31px;
+        position: relative;
+        border-bottom: 20px solid transparent;
+        border-left: 30px solid transparent;
+        background-image: url('../img/shape.png');
+        background-repeat: no-repeat!important;
+        z-index: 192;
+    }
+
+.odd-discus-chat {
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    float: left;
+    width: 100%;
+    height: 124px;
+    border: 1px solid ##cfd8dc;
+    background: #fff;
+    box-shadow: 0px 0 40px -10px #c3c8d1;
+    background: #cfd8dc;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 0;
+}
+
+    .odd-discus-chat:after {
+        width: 0;
+        height: 0;
+        content: "";
+        /*top: 88px;
+    left: 827px;*/
+        position: absolute;
+        border-top: 20px solid transparent;
+        border-right: 37px solid transparent;
+        border-bottom: 10px solid #cfd8dc;
+        border-left: 0 solid;
+        background-image: none;
+    }
+    .internalrequest::after{
+        
+        border-bottom: 10px solid #f6eee4;
+    }
+.internalrequest {
+    border:1px solid #f6eee4;
+}
+.odd-chat {
+    padding-left: 16px;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    padding-right: 10px;
+    margin: 10px 0 5px 0;
+}
+
+.text-l {
+    float: left;
+    padding-right: 10px;
+    width: 100%;
+}
+
+    .text-l p {
+        font-size: 13px;
+        font-style: italic;
+        margin-bottom: 8px;
+    }
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.avatar img {
+    vertical-align: middle;
+}
+
+.avatar-name {
+    font-size: 11px;
+    font-weight: 600;
+    width: 50px;
+}
+
+
+.discus-chat ul li {
+    display: inline;
+}
+
+.request-details-pg .request-detail .form-group input {
+    padding: 5px 0 5px 4px;
+    font-size: 11px;
+    width: 100%;
+}
+
+.updtae-btn {
+    background: #343660;
+    color: #fff;
+    float: right;
+    height: 21px;
+    width: 64px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 9px;
+    margin-bottom: 10px;
+}
+
+.req-title .pull-right .btn {
+    border-radius: 50%;
+    color: #364660;
+    padding: 0px;
+    width: 13px;
+    height: 14px;
+    text-align: center;
+    background-color: #fff;
+    margin: 9px 6px 9px 0;
+}
+
+.discus-chat ul li span {
+    font-size: 9px;
+    font-weight: 600;
+    font-style: italic;
+    margin-right: 10px;
+}
+
+.discus-chat ul li.detali-lnk a {
+    color: #000;
+    background: #b2ebf2;
+    padding: 2px 5px;
+    font-size: 11px;
+    margin-right: 10px;
+}
+
+.discus-chat .fa.fa-envelope {
+    color: #1b5e20;
+}
+
+.discus-chat ul li.envelop-link button:hover {
+    background: none;
+}
+
+.discus-chat ul li.attach-lnk {
+    position: relative;
+    margin-right: 19px;
+}
+
+    .discus-chat ul li.attach-lnk i {
+        color: #b055c1;
+    }
+
+    .discus-chat ul li.attach-lnk span {
+        position: absolute;
+        font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+        font-weight: 600;
+        top: -6px;
+        color: #000;
+    }
+
+.discus-chat ul li.public-link a {
+    color: #fff;
+    background: #0091ea;
+    padding: 2px 5px;
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    margin-right: 19px;
+    border-radius: 20px;
+}
+
+.discus-chat ul li.trash-link i {
+    color: #fe5374;
+    margin-right: 19px;
+}
+
+.discus-chat ul li.trash-link button, .envelop-link button {
+    background: none;
+}
+/** history**/
+div#History, #Activities, #Attachments, #Association, #Type, #Subtype {
+    border: 1px solid #c9c2c2;
+    float: left;
+    width: 100%;
+}
+
+.tab-section h3 {
+    margin: 0;
+    float: left;
+    width: 100%;
+    font-size: 12px; /* Modified By Madhuri.K On 26-03-2026 */
+    font-weight: 600;
+    color: #fff;
+    background: #343660;
+    min-height: 25px;
+    line-height: 23px;
+    padding-left: 10px;
+}
+
+.table-responsive, .histry-src, .activ-top-bar, .attch-top-bar, #Issue, #Task, #deliverable, #Linked, .setting-src, .top-bar {
+    float: left;
+    width: 100%;
+}
+
+.histry-src, .type-top-bar {
+    padding: 11px 17px;
+}
+
+.search-bar {
+    position: relative;
+}
+
+    .search-bar input {
+        border: 1px solid #c8c6c6;
+        border-radius: 50px;
+        float: left;
+        font-size: 11px;
+        font-weight: 600;
+        height: 25px;
+        padding: 5px 5px 5px 30px;
+        width: 230px;
+        margin-bottom: 0;
+    }
+
+    .search-bar button {
+        color: #c8c6c6;
+        font-size: 12px; /* Modified By Madhuri.K On 26-03-2026 */
+        height: 25px;
+        position: absolute;
+        left: 0;
+        width: 30px;
+        border-radius: 50% 0 0 50%;
+        background: #fff;
+        border: 1px solid #c8c6c6;
+        border-right: none;
+    }
+
+.histry-src select {
+    width: 98px;
+    height: 25px;
+    float: left;
+    margin: 0 21px 0 0;
+}
+
+.tab-section .table-responsive tr td {
+    color: #2d6dae;
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+}
+    .tab-section .table-responsive tr td:nth-child(3) {
+        word-break:break-all;
+    }
+.tab-section .table-responsive .old-value {
+    color: #fc0202;
+}
+
+.tab-section .table-responsive .new-value {
+    color: #43a047;
+}
+/*Commented by Dipali V On 21st Dec 2017 For Theme Issue Fixing*/
+
+/*.tab-section .table-responsive thead, .h-tabs .table-responsive thead {
+    background: #cbddfa;
+}*/
+/*End of Commented by Dipali V On 21st Dec 2017 For Theme Issue Fixing*/
+.tab-section .table-responsive td, .h-tabs .table-responsive td {
+    border: none;
+}
+
+    .tab-section .table-responsive td span.date {
+        font-style: italic;
+        padding-right: 14px;
+        font-weight: 600;
+        color: #2d6dae;
+    }
+
+    .tab-section .table-responsive td span.time {
+        font-style: italic;
+        color: #2d6dae;
+    }
+/** Activity**/
+.activ-top-bar ul li, .attch-top-bar ul li, .type-top-bar ul li {
+    float: left;
+    padding: 15px 10px;
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    font-weight: 600;
+}
+
+.activ-top-bar select, .type-top-bar select {
+    width: 118px;
+    margin-bottom: 0;
+}
+
+.activ-top-bar input {
+    width: 65px;
+    height: 25px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.activ-top-bar span i {
+    padding-left: 8px;
+    color: #386dff;
+}
+
+.activ-top-bar button {
+    height: 25px;
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    font-weight: 600;
+    width: 52px;
+    line-height: 11px;
+}
+
+.tab-section #Activities .table-responsive tr td {
+    color: #000;
+}
+
+    .tab-section #Activities .table-responsive tr td i {
+        color: #386dff;
+        padding-right: 8px;
+    }
+
+/** Attachment**/
+.italic {
+    font-style: italic;
+}
+
+#attachments .table-responsive tr td i {
+    width: 32px;
+    text-align: center;
+}
+
+.attch-top-bar ul {
+    float: right;
+}
+
+    .attch-top-bar ul li button.btn.btn-default.download {
+        background: #fff;
+        color: #364660;
+        float: right;
+        font-weight: 600;
+            font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    }
+
+#Attachments p {
+    width: 21px;
+    float: left;
+}
+/**	Association**/
+.assign-drop-grp {
+    max-width: 596px;
+    margin-left: 111px;
+}
+
+.inner-tab-section .reqeustor {
+    padding: 0 15px;
+}
+/**Issue**/
+#Issue .editor form {
+    max-width: 663px;
+}
+
+/**Task**/
+#Task .assign-drop-grp {
+    max-width: 651px;
+}
+
+.sdate {
+    float: left;
+    /*margin-right: 14px;*/
+    font-size: 11px;
+}
+
+    .sdate i {
+        padding-left:5px!important;
+        padding-right:5px!important;
+    }
+
+.inp-date {
+    width: 72px;
+    font-size: 9px;
+    float: left;
+}
+
+.yes {
+    color: green !important;
+    font-weight: 600;
+}
+
+.no {
+    color: red !important;
+    font-weight: 600;
+}
+/**Deliverable**/
+#Deliverable .reqeustor {
+    max-width: 604px !important;
+    margin: 0 auto;
+    float: none;
+}
+
+#Deliverable input {
+    width: 226px;
+}
+
+#Deliverable .assign-drop-grp {
+    margin-left: 0px;
+}
+
+#Deliverable .sdate {
+    margin-left: 10px;
+    font-size: 14px;
+}
+/**----------------------reply/forward and add note pop up-------------------**/
+#id06 .modal-content, #id07 .modal-content, #id08 .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 600px;
+    height: 430px;
+}
+
+#id06 .container, #id07 .container, #id08 .container {
+    padding: 16px;
+    width: 560px;
+}
+
+#id06 input, #id08 input {
+    position: relative;
+    margin-bottom: 0px;
+}
+
+#id06 .fa-times, #id08 .fa-times {
+    font-size: 11px;
+    padding: 1px 2px 2px;
+}
+
+#id06 .cancle-icon-btn, #id08 .cancle-icon-btn {
+    position: absolute;
+    top: -4px;
+    right: 24px;
+    border: none;
+    background: none;
+}
+
+.form-group {
+    float: left;
+    width: 100%;
+}
+
+#id06 .form-group, #id08 .form-group {
+    margin-bottom: 8px;
+    border: none;
+}
+
+.bord {
+    border: none;
+}
+
+#id07 .modal-content {
+    height: 350px;
+}
+/**--------------see more---------------------**/
+.read-more-state {
+    display: none;
+}
+
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+    display:none;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+    display:inline;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+    content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Show less';
+}
+
+.read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: #666;
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: .25em;
+}
+
+.text-l lable.read-more-trigger {
+    width: 13%;
+}
+
+
+@media (max-width:767px) {
+    .discus-chat {
+        margin-bottom: 20px;
+    }
+
+        .discus-chat .right {
+            float: left;
+        }
+
+    .text-l {
+        width: 100%;
+    }
+
+    .request-detail .detail-inner {
+        margin-top: 17px;
+    }
+}

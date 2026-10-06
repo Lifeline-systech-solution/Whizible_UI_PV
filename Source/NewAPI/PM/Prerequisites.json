@@ -1,0 +1,10 @@
+{
+  "Notes": [ 
+"1) Task which marked as onhold through gantt page that will not get displayed on assigned task page",
+"2) Task which has dependency set those will not get displayed on assigned task page",
+"3) Predecessor tasks dates should not be updated through assigned task page "
+ ]
+}
+
+
+

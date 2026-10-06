@@ -1,0 +1,60 @@
+.SectionHeader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.ScrollBorder {
+	border: 1px solid #666699;
+}
+.bodyCopy {
+	font-family: Harrington, Wingdings 2, Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-align: justify;
+	line-height: 17px;
+	list-style-position: outside;
+	list-style-type: square;
+	font-style: normal;
+	text-indent: 0px;
+	list-style-image: url(Images/Bullet.gif);
+}
+.mainmenu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+.news {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}
+.SectionCopy {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-align: left;
+}
+.rightlinks {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666666;
+}
+.Lmenu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #D7EBFF;
+	font-weight: bold;
+}
+.borderbox {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border: 1px solid #CCCCCC;
+}
+.scroll {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-align: left;
+}

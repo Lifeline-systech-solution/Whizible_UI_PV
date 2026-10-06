@@ -1,0 +1,356 @@
+﻿
+/* added by Chetan M on 5th Aug 2020 for set colur to filter icon*/
+.filter button[aria-expanded="true"] {
+	color: #464a4c;
+}
+/* End of added by Chetan M on 5th Aug 2020 for set colur to filter icon*/
+.tooltip-inner {
+	word-wrap: break-word;
+	white-space: pre-line;
+}
+
+.alertify-notifier li {
+	word-break: normal !important;
+	white-space: normal !important;
+}
+
+.alertify-notifier .ajs-message {
+	width: 300px;
+	word-break: break-word;
+}
+
+.alertify-notifier {
+	position: fixed;
+	width: 0;
+	overflow: visible;
+	z-index: 99999;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	word-break: break-all;
+}
+
+.alertify-notifier {
+	font-family: "Open Sans",sans-serif !important;
+	font-size: 14px !important;
+	display: inline-block;
+	word-break: normal;
+	white-space: pre-wrap;
+}
+
+.unsavedHeading {
+	color: red;
+	font-style: italic;
+	font-weight: 900;
+}
+
+.unsavedText {
+	color: red;
+	font-style: italic;
+}
+
+.editFilter {
+	color: #1359a6;
+	border: 1px;
+	border-style: dotted;
+	background: aliceblue;
+}
+
+.searchDate {
+	top: 8px;
+	position: relative;
+	float: left;
+	right: 25px;
+	z-index: 5;
+}
+
+.filterADate {
+	top: -22px;
+	position: relative;
+	float: left;
+	right: -210px;
+	z-index: 5;
+}
+
+.filterBDate {
+	top: 41px;
+	position: absolute;
+	float: right;
+	right: 16px;
+	z-index: 4;
+	left: auto;
+	padding: 4px 8px;
+	background: #ddd;
+	line-height: 20px;
+	height: 28px;
+	cursor: pointer;
+	border-radius: 0 4px 4px 0px;
+}
+
+.issuefilter_container .filterpanelbody {
+	background: #ffffff;
+}
+
+.issuelisttable tr td a {
+	position: relative;
+}
+
+	.issuelisttable tr td a span.badge {
+		position: absolute;
+		right: -10px;
+		top: -6px;
+		padding: 1px 3px;
+		background: none;
+		color: #fff;
+		background: #999;
+		border: none;
+		min-width: 6px;
+	}
+
+#issuelisttblmain_wrapper .dataTables_paginate {
+	margin-top: 20px;
+}
+
+body#bodyIssueList {
+	padding-right: 0 !important;
+}
+
+#issuelisttblmain_wrapper table {
+	width: 100% !important;
+}
+
+#resize_wrapper {
+	position: absolute;
+	top: 0em;
+	left: 0em;
+	right: 0em;
+	bottom: 1em;
+}
+
+
+.table-outer-main {
+	position: relative;
+}
+
+
+/*added by pradip on 15-11-2019*/
+.issuelisttable tr th:last-child, .issuelisttable tr th:nth-last-child(2), .issuelisttable tr th:nth-last-child(3), .issuelisttable tr th:nth-last-child(4), .issuelisttable tr th:nth-last-child(5) {
+	min-width: 34px;
+}
+
+/*start vishal mahajan 04-12-2019*/
+/* Commented and added by Chetan M on 5th Aug 2020 for set colur to filter icon*/
+/*.filter button[aria-expanded="true"] {
+            background: NONE;
+            color: UNSET;
+            padding: 4px 6px;
+            font-size: 12px;
+            border-radius: 4px;
+        }*/
+.filter button[aria-expanded="true"] {
+	background: NONE;
+	color: #464a4c;
+	padding: 4px 6px;
+	font-size: 12px;
+	border-radius: 4px;
+}
+/* End of Commented and added by Chetan M on 5th Aug 2020 for set colur to filter icon*/
+.issuelisttable tr th {
+	vertical-align: middle !important;
+}
+
+.fplist_title.collapsed {
+	display: block;
+}
+/*Commented and Added By Nikhil A on 28-May-2020 for Integrating UX changes*/
+button#btnDelete {
+	padding: 4px 12px;
+	border: 1px solid;
+}
+
+#btnSearchByIcon {
+	border: 1px solid #ddd;
+	border-radius: 4px 0 0 4px;
+}
+/*Commented and Added By Nikhil A on 28-May-2020 for Integrating UX changes*/
+/*Added By Dipali V On 16th May 2020 For Loader Issues*/
+.preloader {
+	position: absolute;
+	margin-top: -25px;
+	margin-left: -400px;
+	top: 50%;
+	left: 50%;
+	padding: 30px 15px 0px;
+	/* border: 3px solid #ababab; */
+	/* box-shadow: 1px 1px 10px #ababab; */
+	border-radius: 15px;
+	background: #ddd;
+	/* background-color: white; */
+	background: url('../../../Whizible2.0-new/dist/img/loading.gif') 100% 100% no-repeat;
+	/* background: url(../../../Whizible2.0/dist/img/loading.gif) rgba( 255, 255, 255, .8 ) 100% 100% no-repeat; */
+	width: 100px;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: -100px 0 0 -100px;
+	z-index: 1002;
+	text-align: center;
+}
+
+.clsShowHide {
+	display: none !important;
+}
+
+
+#Pagination button {
+	/*text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+   
+    border: 1px solid lightgrey;*/
+	border-color: #1359a6;
+	border: 1px solid;
+}
+
+	#Pagination button:hover {
+		background-color: #1359a6;
+		color: white;
+		border: 1px solid #1359a6;
+	}
+
+.previous {
+	background-color: #e9e9e9;
+	color: #1359a6;
+	border: 1px solid lightgrey;
+}
+
+.next {
+	background-color: #e9e9e9;
+	color: #1359a6;
+	border: 1px solid lightgrey;
+}
+
+.divtotal {
+	margin-right: -14px;
+	margin-top: 7px;
+}
+
+.spntotal {
+	float: right;
+}
+/*End of Added By Dipali V On 16th May 2020 For Loader Issues*/
+
+/*Fixed Header*/
+/*body {
+            margin: 0;
+            padding: 2rem;
+        }*/
+/*Added By Dipali V On 4th Sep 2020 For Fixed Header*/
+table {
+	text-align: left;
+	position: relative;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 0.25rem;
+}
+
+th {
+	background: white;
+	position: sticky;
+	top: 0; /* Don't forget this, required for the stickiness */
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+	z-index: 999;
+}
+
+	th > a {
+		padding: 0.25rem;
+		z-index: 999;
+	}
+
+table-fixed-header thead tr th > i, .table thead tr th > i {
+	background: #e7edf0;
+	color: #464a4c;
+}
+/*End of Added By Dipali V On 4th Sep 2020 For Fixed Header*/
+/*Added  By Dipali V On 4th Sep for Add class to display Class Disabled*/
+.fa-disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+/*End of Added  By Dipali V On 4th Sep for Add class to display Class Disabled*/
+
+
+
+.bootstrap-select.btn-group .dropdown-menu {
+	z-index: 9999999 !important;
+}
+
+
+
+.dropdown-menu {
+	z-index: 9999999 !important;
+}
+/*Added By Usha Pandit On 17.09.2020 for IE pagination next prev button disable issue*/
+.clsPaginationEnableDisable {
+	pointer-events: none !important;
+}
+/*End Of Added By Usha Pandit On 17.09.2020 for IE pagination next prev button disable issue*/
+
+.headernavlist {
+	white-space: nowrap;
+}
+
+.form-group.indicatenote {
+	margin: -26px 0 0 2px;
+	position: relative;
+	left: 12rem;
+}
+
+
+.ClearSencondfilter {
+    background: rgb(31, 113, 204);
+    color: white !important;
+    padding: 2px;
+}
+
+.ClsFilterNote {
+    float: right;
+    margin-top: 11px;
+    margin-right: 9px;
+    font-size: 10px;
+}
+
+.ClsFilterNoteRED {
+    float: right;
+    margin-top: 11px;
+    margin-right: 9px;
+    font-size: 10px;
+    color: red;
+}
+/*modified by pradip on 19-5-2021*/
+/*Added style by pradip on 5-1-2021*/
+#cboAccessFilter {
+    max-width: 100px;
+    background: none;
+    color: #1359ac;
+    padding-right: 0px;
+}
+
+#AccessFilter > select:hover {
+    background: #1359ac;
+    color: #fff;
+}
+
+    #AccessFilter > select:hover option {
+        background: #fff;
+        color: #464a4c;
+    }
+
+#cboAccessFilter option {
+    padding: 3px 20px !important;
+}
+
+    #cboAccessFilter option:hover {
+        background: #e1e3e9;
+    }

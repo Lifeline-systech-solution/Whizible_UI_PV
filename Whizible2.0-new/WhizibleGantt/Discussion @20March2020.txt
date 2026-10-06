@@ -1,0 +1,47 @@
+21694 Task gantt view-On create task page it is allowing to change the role of resource while assigning the task.
+
+à There is no project role dependency while creating the task so we can remove role drop down from assigned task page
+- No need to discuss
+
+21754 Test Case Code: 143 Scenario: To verify system creates a new task and existing task is getting marked as inactive if user click on Yes button on the confirmation alert
+- à we need to discuss this, not clear
+
+
+21755 Test Case Code: 145 Scenario: To verify existing task is marked as inactive if child task is left intended
+
+à If  there is one parent and one child then and user is able to make child as parent then existing task will become inactive, and new task will get created in system and if Parent has multiple child tasks and any one of them if left indent then only that child will become inactive task
+-- Need to check, No need to discuss
+
+
+21758 Task Gantt Chart-User able to add multiple child task for assigned task and effort distributed task.
+
+ à User should not allow to add new task for all existing task, we will check the flag ‘hasChild’ in Task API
+
+-- Ok, No need to discuss
+
+
+
+21768 Task gantt view-If selected on hold project and created task on it then it should give alert.
+
+à we will provide you the status in Project API, you need disable publish button if selected project status is onhold or closed
+- Need to discuss
+
+
+21783 Gantt Chart - Tasks created in Gantt Chart are not getting displayed in Time Sheet for Project "Dashboard Pulse"
+
+ à There is no any specific condition to display efforts in Dashboard, we will check this QA
+
+- Need to discuss already said by them 
+
+21707 Gantt View- While creating task on gantt view the alert for OU working days, holiday and leaves is not showing
+
+ à here we can provide you dates where resource have applied for leave and list of holiday, will you be able to give confirmation alert on save button depending upon task start date and end date.
+
+-- Ok Let us know 
+
+21623 Task Gantt chart-Displays page loader if user login contains lots of data.
+
+
+You need to process data in the batches or packets instead of processing all data at once.
+
+- Need to check 

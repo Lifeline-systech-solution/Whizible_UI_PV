@@ -1,0 +1,365 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//EN'><HTML><HEAD>
+<TITLE>Web Form Wizard</TITLE>
+<meta name='GENERATOR' content='Microsoft Visual Studio.NET 7.0'>
+<meta name='CODE_LANGUAGE' content='Visual Basic 7.0'>
+<meta name='vs_defaultClientScript' content='JavaScript'>
+<meta name='vs_targetSchema' content='http://schemas.microsoft.com/intellisense/ie5'>
+<meta http-equiv="Cache-Control" CONTENT="no-cache">
+<meta http-equiv="Pragma" CONTENT="no-cache">
+<link rel='stylesheet' type='text/css' href='../General/StyleSheetChanakya.css'/>
+<link id='lnkWhizStyleSheetImgDir' type='text/plain' href='../../images/cssImages/'/>
+<script language='javascript' src='../General/CommonFunctions.js'></script>
+<script language='javascript' src='../General/CommonValidations.js'></script>
+</HEAD>
+<BODY style='overflow:auto;'  class='clsBody' onload='CL_window_onload()' onresize='CL_window_onresize()' onkeyup='try{OnBodyKeyUp(event);} catch(e){}' ><FORM id='frmCommonList' name='frmCommonList' method=post ><INPUT type=hidden id='MasterTagID' name='MasterTagID' value='315'><INPUT type=hidden id='ParentTagID' name='ParentTagID' value='0'><INPUT type=hidden id='FromWhere' name='FromWhere' value='SM'><INPUT type=hidden id='PagingAlphabet' name='PagingAlphabet' value='-1'><INPUT type=hidden id='SortBy' name='SortBy' value='TagDescription'><INPUT type=hidden id='SortOrder' name='SortOrder' value='ASC'><INPUT type=hidden id='AccessFirstTime' name='AccessFirstTime' value='0'><Input  Type=Textbox  name="thisIsADummyControl" id="thisIsADummyControl" class='clsTextBox' style=' display:none;  ; text-align:Left' value="" TabIndex=-1 ><Table border=0 cellspacing=0 cellpadding=0 width='99.9%' class='clsTable' ><TR class='clsTRMenu'><TD align=Left>Select <A  class='PagingNormal' HREF='JavaScript:Page_Onclick("A")'>A</A>|<A  class='PagingNormal' HREF='JavaScript:Page_Onclick("C")'>C</A>|<A  class='PagingNormal' HREF='JavaScript:Page_Onclick("D")'>D</A>|<A  class='PagingNormal' HREF='JavaScript:Page_Onclick("E")'>E</A>|<A  class='PagingNormal' HREF='JavaScript:Page_Onclick("F")'>F</A>|<A  class='PagingNormal' HREF='JavaScript:Page_Onclick("G")'>G</A>|<A  class='PagingNormal' HREF='JavaScript:Page_Onclick("H")'>H</A>|<A  class='PagingNormal' HREF='JavaScript:Page_Onclick("I")'>I</A>|<A  class='PagingNormal' HREF='JavaScript:Page_Onclick("L")'>L</A>|<A  class='PagingNormal' HREF='JavaScript:Page_Onclick("M")'>M</A>|<A  class='PagingNormal' HREF='JavaScript:Page_Onclick("N")'>N</A>|<A  class='PagingNormal' HREF='JavaScript:Page_Onclick("O")'>O</A>|<A  class='PagingNormal' HREF='JavaScript:Page_Onclick("P")'>P</A>|<A  class='PagingNormal' HREF='JavaScript:Page_Onclick("Q")'>Q</A>|<A  class='PagingNormal' HREF='JavaScript:Page_Onclick("R")'>R</A>|<A  class='PagingNormal' HREF='JavaScript:Page_Onclick("S")'>S</A>|<A  class='PagingNormal' HREF='JavaScript:Page_Onclick("T")'>T</A>|<A  class='PagingNormal' HREF='JavaScript:Page_Onclick("U")'>U</A>|<A  class='PagingNormal' HREF='JavaScript:Page_Onclick("V")'>V</A>|<A  class='PagingNormal' HREF='JavaScript:Page_Onclick("W")'>W</A>|<A   class='PagingSelected' HREF="JavaScript:Page_Onclick('-1')">ALL</A></TD><TD align=right ><script language='javascript' src='../General/DynamicMenu.js'></script><div id='dvMainTbl0315'><table class=clsTable><tr><td><div id='dvMainMnu0315' style='position:relative;'><A id='Action0315' class='Actions' style='TEXT-DECORATION:none'  href="javascript:showmenu('dvMainMnu0315','dvSubMnu0315',1,48,4,'','cboMyViews,view,IsCheckIn','Action0315')" onmouseover="javascript:showmenu('dvMainMnu0315','dvSubMnu0315',1,48,4,'','cboMyViews,view,IsCheckIn','Action0315')"> Actions <Img src='../../Images/DropdownMenuAction.gif' border=0>&nbsp;</A></div></td><td></td></tr></table><div class='DropdownMenu' id='dvSubMnu0315' style='width:120px'><table id='mMnu0315' align=center height='100%' width='100%' cellspacing='0' cellpadding='2'><tr class='MenuSelected_Normal' onMouseOver='this.className="MenuSelected_hover"' onmouseout ='this.className="MenuSelected_Normal"' Title="Export Data     Alt + X" onclick="Javascript:Export_OnClick()"><td class='Mn_LeftFill'><Img Border=0 src='../../Images/cssImages/Link images/ExportData.gif'></td><td>&nbsp;Export Data</td></tr><tr><td class='Mn_LeftFill_hr'></td><td class='Mn_hr'></td></tr><tr class='MenuSelected_Normal' onMouseOver='this.className="MenuSelected_hover"' onmouseout ='this.className="MenuSelected_Normal"' Title="Add     F8" onclick="Javascript:New_OnClick()"><td class='Mn_LeftFill'><Img Border=0 src='../../Images/cssImages/Link images/add.gif'></td><td>&nbsp;Add</td></tr><tr><td class='Mn_LeftFill_hr'></td><td class='Mn_hr'></td></tr><tr class='MenuSelected_Normal' onMouseOver='this.className="MenuSelected_hover"' onmouseout ='this.className="MenuSelected_Normal"' Title="Delete     Delete" onclick="Javascript:Delete_OnClick()"><td class='Mn_LeftFill'><Img Border=0 src='../../Images/cssImages/Link images/Delete.gif'></td><td>&nbsp;Delete</td></tr><tr class='MenuSelected_Normal' onMouseOver='this.className="MenuSelected_hover"' onmouseout ='this.className="MenuSelected_Normal"' Title="Select All     Shift + F2" onclick="Javascript:SelectAll_OnClick()"><td class='Mn_LeftFill'><Img Border=0 src='../../Images/cssImages/Link images/selectall.gif'></td><td>&nbsp;Select All</td></tr><tr><td class='Mn_LeftFill_hr'></td><td class='Mn_hr'></td></tr><tr class='MenuSelected_Normal' onMouseOver='this.className="MenuSelected_hover"' onmouseout ='this.className="MenuSelected_Normal"' Title="Filters     Shift + F7" onclick="Javascript:Filters_OnClick()"><td class='Mn_LeftFill'><Img Border=0 src='../../Images/cssImages/Link images/filter.gif'></td><td>&nbsp;Filters</td></tr><tr><td class='Mn_LeftFill_hr'></td><td class='Mn_hr'></td></tr><tr class='MenuSelected_Normal' onMouseOver='this.className="MenuSelected_hover"' onmouseout ='this.className="MenuSelected_Normal"' Title="Help     Shift + F12" onclick="Javascript:OpenHelpPage(315)"><td class='Mn_LeftFill'><Img Border=0 src='../../Images/cssImages/Link images/help.gif'></td><td>&nbsp;Help</td></tr></table></div></div><script lang=javascript>initializemenu('dvMainMnu0315','dvSubMnu0315',1,48);</script></TD></TR></TABLE>
+<SCRIPT Language=javascript>
+function Export_OnClick()
+{
+
+window.open ("../General/CLCP_ExportData.aspx?ParentTagID=0&TagID=315", "", "resizable=yes,scrollbars=no,left=" + ((window.screen.width - 500)/2) + ",top=" + ((window.screen.height - 300)/2) + ",width=500,height=300");
+
+}
+function New_OnClick()
+{
+    SetModalPopupParams("../SM/PB_TemplateSelection.aspx?Mode=ADD_NEW&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1",750,500,70,'',true,6)
+
+}
+function Delete_OnClick()
+{
+
+
+var blnIsRecordSelected=false;blnIsRecordSelected=IsCheckboxSelected('frmCommonList','chkDelete')
+if (blnIsRecordSelected == false) {return;}
+
+if(confirm("Are you sure, you want to delete the selected records?"))
+{
+    objfrm.action="WAF_CommonList.aspx?Operation=DELETE&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1"
+ShowModalDlgWait("Processing... Please wait !!");
+
+    objfrm.submit()
+}
+
+}
+function SelectAll_OnClick()
+{
+ SelectAllCheckboxs('frmCommonList','chkDelete'); 
+
+}
+function Filters_OnClick()
+{
+
+window.open ("../General/CLCP_AdvanceFilters.aspx?Mode=ADD_NEW&MasterTagID=1017&TagID=315&ParentTagID=0&FromCL=1&ConnectionID=", "", "resizable=yes,scrollbars=no,left=" + ((window.screen.width - 800)/2) + ",top=" + ((window.screen.height - 600)/2) + ",width=800,height=600");
+
+}
+
+</SCRIPT>
+<BR><TABLE id='tblFilter0315' CellSpacing=0 BORDER=0 class='clsTable' width='100%'><TR align=Left class='clsTREven'><TD align= right title="Exact Word">Web Form ID&nbsp;</TD><TD align= Left title="Exact Word"><Input  Type=Textbox  name="TagID" id="TagID" class='clsTextBox' style='width:80px  ; text-align:Left' maxlength=20 value=""  onkeypress="javascript:setFilter('TagID_UserFriendlyValue',event,true)" ><INPUT type='hidden' id='TagID_UserFriendlyValue' name='TagID_UserFriendlyValue' value=""></TD><TD></TD><TD></TD><TD align= right title="">Module&nbsp;</TD><TD align= Left title=""><SELECT  onchange="javascript:setFilter('TemplateID_UserFriendlyValue',event,false)" id=TemplateID name=TemplateID class=clsComboBox style='width:100px ' ><FONT size=1><OPTION value =''></OPTION><OPTION title ="Configuration" value ="SM">Configuration</OPTION><OPTION title ="Masters" value ="MAS">Masters</OPTION><OPTION title ="My Workspace" value ="PRO">My Workspace</OPTION><OPTION title ="Query Builder" value ="MR">Query Builder</OPTION><OPTION title ="Survey" value ="WSRV">Survey</OPTION><OPTION title ="Workflows" value ="IX">Workflows</OPTION></FONT></SELECT><INPUT type='hidden' id='TemplateID_UserFriendlyValue' name='TemplateID_UserFriendlyValue' value=""></TD><TD></TD><TD></TD><TD align= right title="Contains">Data Source&nbsp;</TD><TD align= Left title="Contains"><Input  Type=Textbox  name="TableName" id="TableName" class='clsTextBox' style='width:150px  ; text-align:Left' maxlength=100 value=""  onkeypress="javascript:setFilter('TableName_UserFriendlyValue',event,true)" ><INPUT type='hidden' id='TableName_UserFriendlyValue' name='TableName_UserFriendlyValue' value=""></TD><TD></TD><TD></TD><TD align= right title="Contains">Is Checked in&nbsp;</TD><TD align= Left title="Contains"><SELECT  onchange="javascript:setFilter('IsCheckIn_UserFriendlyValue',event,false)" id=IsCheckIn name=IsCheckIn class=clsComboBox ><FONT size=1><OPTION value =''></OPTION><OPTION title ="Yes" value ="1">Yes</OPTION><OPTION title ="No" value ="0">No</OPTION></FONT></SELECT><INPUT type='hidden' id='IsCheckIn_UserFriendlyValue' name='IsCheckIn_UserFriendlyValue' value=""></TD><TD></TD><TD></TD></TR></Table>
+<Script Laguage=javascript>
+function validateTagFilter() {
+if (disallowNonInteger(GetObjectReference("frmCommonList","TagID"),'Please enter only integer value',true)) { return false; }return true;}
+</Script><BR><TABLE id='tblCap0315'  cellspacing=0 cellpadding=0 Width='99.9%'  class=clsTable><TR class=clsTRPageCaption><TD align=Left>Web Form Wizard</TD></TR></TABLE><BR><TABLE  Width='100%' cellspacing=0 class=clsTable><TR class=clsTRPageHeader><TD align=left><LI>Web Forms locked by Administrator are not allowed to modify/delete. 
+<LI>'Preview' will not be available, if the Web Form has 'Page Filters' defined or if user does not have 'Role / Group level access' of the Web Form.</LI></TD></TR></TABLE><BR><Table id='tblNumericPaging0315' width='100%'  CellSpacing=1 CellPadding=0  class='clsGridTable' ><TR class='clsTRNumericPaging' align=Left ><TD ><A style='TEXT-DECORATION:NONE' HREF="Javascript:numeric_nav_first_click('frmCommonList','../SM/WAF_COMMONLIST.ASPX?MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1',1,'This is the first page')" Title='First Page' onmouseover="window.status='First Page';return true;" onmouseout="window.status=' ';return true;"><Img Border=0 src='../../Images/NumNavFirstEnable.gif' align='top'></A><A style='TEXT-DECORATION:NONE' HREF="Javascript:numeric_nav_prev_click('frmCommonList','../SM/WAF_COMMONLIST.ASPX?MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1',1,3,'txtNumPaging1','Please Enter only positive integer','This is the first page','Please Enter value less than or equal to 3','Please Enter value greater than or equal to 1' )" Title='Previous Page' onmouseover="window.status='Previous Page';return true;" onmouseout="window.status=' ';return true;"><Img Border=0 src='../../Images/NumNavPreviousEnable.gif' align='top'></A><Input  Type=Textbox  name="txtNumPaging1" id="txtNumPaging1" class='clsNewTextBox' style='width:50px  ; text-align:Right' value="1" onkeypress="return numeric_paging_OnKeyPress(event,'frmCommonList','../SM/WAF_COMMONLIST.ASPX?MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1',1,3,'txtNumPaging1','Please Enter only positive integer','Please Enter value greater than or equal to 1','Please Enter value less than or equal to 3')" ><A style='TEXT-DECORATION:NONE' HREF="Javascript:numeric_nav_next_click('frmCommonList','../SM/WAF_COMMONLIST.ASPX?MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1',1,3,'txtNumPaging1','Please Enter only positive integer','This is the last page','Please Enter value less than or equal to 3','Please Enter value greater than or equal to 1' )" Title='Next Page' onmouseover="window.status='Next Page';return true;" onmouseout="window.status=' ';return true;"><Img Border=0 src='../../Images/NumNavNextEnable.gif' align='top'></A><A style='TEXT-DECORATION:NONE' HREF="Javascript:numeric_nav_last_click('frmCommonList','../SM/WAF_COMMONLIST.ASPX?MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1',1,3,'This is the last page')" Title='Last Page' onmouseover="window.status='Last Page';return true;" onmouseout="window.status=' ';return true;"><Img Border=0 src='../../Images/NumNavLastEnable.gif' align='top'></A> Of 3<Input  Type=Textbox  name="thisIsADummyControl" id="thisIsADummyControl" class='clsTextBox' style='WIDTH:0px;HEIGHT:0px ; text-align:Left' value="" TabIndex=-1 ></TD></TR></Table><DIV Id=divListPageTag Style="HEIGHT:450px;OVERFLOW:auto; WIDTH:100%"><div id='divListTag' style='overflow:auto;width:99.9%;z-index=2;height:400px;'  ><STYLE type=text/css>
+{TABLE 
+{TABLE-LAYOUT: fixed;}
+THEAD TH.divListTag {POSITION: relative;}
+THEAD TH.divListTag.locked {POSITION: relative;}
+THEAD TH.divListTag {Z-INDEX: 10; ; TOP:expression(document.getElementById('divListTag').scrollTop -1)}
+THEAD TH.divListTag.locked {Z-INDEX: 30}
+TH.divListTag.locked {Z-INDEX: 10; ; LEFT:expression(document.getElementById('divListTag').scrollLeft); POSITION:relative()}
+}
+ </STYLE>
+<STYLE type=text/css>
+{TABLE 
+{TABLE-LAYOUT: fixed;}
+THEAD TH.Sort_divListTag {POSITION: relative;}
+THEAD TH.Sort_divListTag.locked {POSITION: relative;}
+THEAD TH.Sort_divListTag {Z-INDEX:10; ; TOP:expression(document.getElementById('divListTag').scrollTop -1)}
+THEAD TH.Sort_divListTag.locked {Z-INDEX: 30}
+TH.Sort_divListTag.locked {Z-INDEX: 10; ; LEFT:expression(document.getElementById('divListTag').scrollLeft); POSITION:relative()}
+THEAD TH.Sort_divListTag{border-right: thin; padding-right: 1pt; border-top: thin; padding-left: 1pt; font-weight: normal; font-size: 11px; padding-bottom: 1pt; border-left: thin; color: white; padding-top: 1pt; border-bottom: thin; font-family: Verdana, Arial; height: 22px; background: #3D5FA3; background-image: url(../../Images/cssImages/columnhdr_sel_bg.gif);}}
+ </STYLE>
+<STYLE type=text/css>
+{TABLE 
+{TABLE-LAYOUT: fixed;}
+THEAD TH.Separator_divListTag {POSITION: relative;}
+THEAD TH.Separator_divListTag.locked {POSITION: relative;}
+THEAD TH.Separator_divListTag {Z-INDEX: 10; ; TOP:expression(document.getElementById('divListTag').scrollTop -1)}
+THEAD TH.Separator_divListTag.locked {Z-INDEX: 30}
+TH.Separator_divListTag.locked {Z-INDEX: 10; ; LEFT:expression(document.getElementById('divListTag').scrollLeft); POSITION:relative()}
+THEAD TH.Separator_divListTag {border-right: thin; padding-right: 1pt; border-top: thin; padding-left: 1pt; font-weight: bolder; font-size: 1pt; background-image: none; padding-bottom: 1pt; border-left: thin; width: 1px; color: black; padding-top: 1pt; border-bottom: thin; height: 22px; background-color: #D3E4FB;}
+}
+ </STYLE>
+<STYLE type=text/css>{
+TABLE {TABLE-LAYOUT: fixed;}
+THEAD TH.divListTag_Column {POSITION: relative;}
+THEAD TH.divListTag_Column.locked {POSITION: relative;}
+THEAD TH.divListTag_Column.locked {Z-INDEX: 30}
+THEAD TH.divListTag_Column {Z-INDEX: 20;; TOP: expression(document.getElementById('divListTag').scrollTop -1)}
+TH.divListTag_Column {Z-INDEX: 10;; LEFT: expression(document.getElementById('divListTag').scrollLeft); POSITION:relative()}
+
+ }</STYLE>
+<STYLE type=text/css>{
+TABLE {TABLE-LAYOUT: fixed;}
+THEAD TH.Separator_divListTag_Column {POSITION: relative;}
+THEAD TH.Separator_divListTag_Column.locked {POSITION: relative;}
+THEAD TH.Separator_divListTag_Column.locked {Z-INDEX: 30}
+THEAD TH.Separator_divListTag_Column {Z-INDEX: 20;; TOP: expression(document.getElementById('divListTag').scrollTop -1)}
+TH.Separator_divListTag_Column {Z-INDEX: 10;; LEFT: expression(document.getElementById('divListTag').scrollLeft); POSITION:relative()}
+THEAD TH.Separator_divListTag {border-right: thin; padding-right: 1pt; border-top: thin; padding-left: 1pt; font-weight: bolder; font-size: 1pt; background-image: none; padding-bottom: 1pt; border-left: thin; width: 1px; color: black; padding-top: 1pt; border-bottom: thin; height: 22px; background-color: #D3E4FB;}
+
+ }</STYLE>
+<STYLE type=text/css>{
+TABLE {TABLE-LAYOUT: fixed;}
+THEAD TH.Sort_divListTag_Column {POSITION: relative;}
+THEAD TH.Sort_divListTag_Column.locked {POSITION: relative;}
+THEAD TH.Sort_divListTag_Column.locked {Z-INDEX: 30}
+THEAD TH.Sort_divListTag_Column {Z-INDEX: 20;; TOP: expression(document.getElementById('divListTag').scrollTop -1)}
+TH.Sort_divListTag_Column {Z-INDEX: 10;; LEFT: expression(document.getElementById('divListTag').scrollLeft); POSITION:relative()}
+THEAD TH.Sort_divListTag_Column {border-right: thin; padding-right: 1pt; border-top: thin; padding-left: 1pt; font-weight: normal; font-size: 11px; padding-bottom: 1pt; border-left: thin; color: white; padding-top: 1pt; border-bottom: thin; font-family: Verdana, Arial; height: 22px; background: #3D5FA3; background-image: url(../../Images/cssImages/columnhdr_sel_bg.gif);}
+ }</STYLE>
+
+<STYLE type=text/css>
+Td.Locked, th.Locked {
+
+left: expression(document.getElementById('divListTag').scrollLeft);
+position: relative;
+z-index: 5;
+}
+</STYLE>
+<table id='tblGrid0315' width='99.9%'  CellSpacing=1 CellPadding=0  class='clsGridTable' ><THead class='clsTRColumnHeader'><TH  class='divListTag_Column' align='Left' nowrap ><A Href="JavaScript:SortBy('TagID','ASC')"><IMG Border=0  SRC='../../Images/SortBy.gif'></A>&nbsp;&nbsp;Web Form ID</TH><TH  class='Sort_divListTag' align='Left' nowrap ><A Href="JavaScript:SortBy('TagDescription','DESC')"><IMG Border=0  SRC='../../Images/Sort_Down.gif'></A>&nbsp;&nbsp;Web Form Name</TH><TH  class='divListTag' align='Left' nowrap ><A Href="JavaScript:SortBy('TableName','ASC')"><IMG Border=0  SRC='../../Images/SortBy.gif'></A>&nbsp;&nbsp;Data Source</TH><TH class='divListTag' align='Center'>Generate Script</TH><TH  class='divListTag' align='center'>Delete</TH></THead><tr class='clsTROdd' valign=top><TD class='Locked'  nowrap  align=Left >1896</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=1896&PKToken=8iyy9cuPhIIxXPqtykUYMQ&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;1896&quot;,&quot;8iyy9cuPhIIxXPqtykUYMQ&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','Javascript:Hyperlink1(&quot;../Source/General/SmartNavigation.aspx&quot;,&quot;1896&quot;)','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;1896&quot;,&quot;8iyy9cuPhIIxXPqtykUYMQ&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;1896&quot;,&quot;8iyy9cuPhIIxXPqtykUYMQ&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;1896&quot;,&quot;8iyy9cuPhIIxXPqtykUYMQ&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Aavak maahItI</u></TD><TD   nowrap  align=Left >tbl_Revenue_Details</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;1896&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="1896" ></td></tr><tr class='clsTREvenRow' valign=top><TD class='Locked'  nowrap  align=Left >102</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=102&PKToken=fiUk8FnRe38YPW9makSKOg&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;102&quot;,&quot;fiUk8FnRe38YPW9makSKOg&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;102&quot;,&quot;fiUk8FnRe38YPW9makSKOg&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;102&quot;,&quot;fiUk8FnRe38YPW9makSKOg&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;102&quot;,&quot;fiUk8FnRe38YPW9makSKOg&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Add Survey Questions to Library</u></TD><TD   nowrap  align=Left >v_tbl_WSRV_Survey_Question_AddToLibrary</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;102&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="102" ></td></tr><tr class='clsTROdd' valign=top><TD class='Locked'  nowrap  align=Left >50181</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=50181&PKToken=nLad2TOu1xqNsYSaale7nA&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;50181&quot;,&quot;nLad2TOu1xqNsYSaale7nA&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','Javascript:Hyperlink1(&quot;../Source/WorkFlow/InheritedWorkFlowCommonList.aspx&quot;,&quot;50181&quot;)','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;50181&quot;,&quot;nLad2TOu1xqNsYSaale7nA&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;50181&quot;,&quot;nLad2TOu1xqNsYSaale7nA&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;50181&quot;,&quot;nLad2TOu1xqNsYSaale7nA&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Apply Leave</u></TD><TD   nowrap  align=Left >v_tbl_Demo_LeaveMaster</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;50181&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="50181" ></td></tr><tr class='clsTREvenRow' valign=top><TD class='Locked'  nowrap  align=Left >50090</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=50090&PKToken=0CVoZ/MAMu3v9uJDwFz6Gg&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;50090&quot;,&quot;0CVoZ/MAMu3v9uJDwFz6Gg&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;50090&quot;,&quot;0CVoZ/MAMu3v9uJDwFz6Gg&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;50090&quot;,&quot;0CVoZ/MAMu3v9uJDwFz6Gg&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;50090&quot;,&quot;0CVoZ/MAMu3v9uJDwFz6Gg&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Appraisal Process</u></TD><TD   nowrap  align=Left >tbl_UI_Design_Demo_Value_Drivers</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;50090&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="50090" ></td></tr><tr class='clsTROdd' valign=top><TD class='Locked'  nowrap  align=Left >50146</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','','../../Images/cssImages/Lock.gif','Locked#|#By#|#Admin','Web#|#Form#|#is#|#Locked#|#by#|#Admin','Javascript:Hyperlink1(&quot;../Source/General/SmartNavigation.aspx&quot;,&quot;50146&quot;)','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;50146&quot;,&quot;k24TisDDV83hX2K/nv9rw&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;50146&quot;,&quot;k24TisDDV83hX2K/nv9rw&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;50146&quot;,&quot;k24TisDDV83hX2K/nv9rw&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Lock.gif' border=0 title='Web Form is Locked by Admin'>Area</u></TD><TD   nowrap  align=Left >v_tbl_CNF_City</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;50146&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="50146" disabled  ></td></tr><tr class='clsTREvenRow' valign=top><TD class='Locked'  nowrap  align=Left >1938</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=1938&PKToken=UQjydTdfOs4nnFZ3CHBw&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;1938&quot;,&quot;UQjydTdfOs4nnFZ3CHBw&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','Javascript:Hyperlink1(&quot;../Source/General/SmartNavigation.aspx&quot;,&quot;1938&quot;)','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;1938&quot;,&quot;UQjydTdfOs4nnFZ3CHBw&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;1938&quot;,&quot;UQjydTdfOs4nnFZ3CHBw&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;1938&quot;,&quot;UQjydTdfOs4nnFZ3CHBw&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Arti Survey</u></TD><TD   nowrap  align=Left >v_tbl_WSRV_Survey_Master</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;1938&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="1938" ></td></tr><tr class='clsTROdd' valign=top><TD class='Locked'  nowrap  align=Left >1959</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=1959&PKToken=yrlwOddDkaAfT59TlAExQ&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;1959&quot;,&quot;yrlwOddDkaAfT59TlAExQ&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','Javascript:Hyperlink1(&quot;../Source/General/CommonList.aspx&quot;,&quot;1959&quot;)','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;1959&quot;,&quot;yrlwOddDkaAfT59TlAExQ&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;1959&quot;,&quot;yrlwOddDkaAfT59TlAExQ&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;1959&quot;,&quot;yrlwOddDkaAfT59TlAExQ&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Concurrency Test</u></TD><TD   nowrap  align=Left >v_tbl_Exe_employee</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;1959&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="1959" ></td></tr><tr class='clsTREvenRow' valign=top><TD class='Locked'  nowrap  align=Left >50093</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=50093&PKToken=NYuBE/jShe7w6PG1GWlg&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;50093&quot;,&quot;NYuBE/jShe7w6PG1GWlg&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','Javascript:Hyperlink1(&quot;../Source/General/CommonList.aspx&quot;,&quot;50093&quot;)','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;50093&quot;,&quot;NYuBE/jShe7w6PG1GWlg&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;50093&quot;,&quot;NYuBE/jShe7w6PG1GWlg&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;50093&quot;,&quot;NYuBE/jShe7w6PG1GWlg&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Customer Revenue</u></TD><TD   nowrap  align=Left >v_tbl_Revenue_Details</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;50093&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="50093" ></td></tr><tr class='clsTROdd' valign=top><TD class='Locked'  nowrap  align=Left >1974</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=1974&PKToken=n5RTsfxuySUZPPXQqjnOQ&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;1974&quot;,&quot;n5RTsfxuySUZPPXQqjnOQ&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','Javascript:Hyperlink1(&quot;../Source/General/CommonList.aspx&quot;,&quot;1974&quot;)','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;1974&quot;,&quot;n5RTsfxuySUZPPXQqjnOQ&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;1974&quot;,&quot;n5RTsfxuySUZPPXQqjnOQ&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;1974&quot;,&quot;n5RTsfxuySUZPPXQqjnOQ&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Customer Revenue Test</u></TD><TD   nowrap  align=Left >v_tbl_Revenue_Details</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;1974&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="1974" ></td></tr><tr class='clsTREvenRow' valign=top><TD class='Locked'  nowrap  align=Left >50058</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=50058&PKToken=DXOvpgDiSw9287pqlgOsQ&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;50058&quot;,&quot;DXOvpgDiSw9287pqlgOsQ&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','Javascript:Hyperlink1(&quot;../Source/SaaS/SaaS_CommonList.aspx&quot;,&quot;50058&quot;)','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;50058&quot;,&quot;DXOvpgDiSw9287pqlgOsQ&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;50058&quot;,&quot;DXOvpgDiSw9287pqlgOsQ&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;50058&quot;,&quot;DXOvpgDiSw9287pqlgOsQ&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Customized Demo SaaS</u></TD><TD   nowrap  align=Left >tbl_MultiInsert</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;50058&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="50058" ></td></tr><tr class='clsTROdd' valign=top><TD class='Locked'  nowrap  align=Left >1968</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=1968&PKToken=tyshElDdw/xoFQSzGgfVIg&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;1968&quot;,&quot;tyshElDdw/xoFQSzGgfVIg&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','Javascript:Hyperlink1(&quot;../Source/General/CommonList.aspx&quot;,&quot;1968&quot;)','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;1968&quot;,&quot;tyshElDdw/xoFQSzGgfVIg&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;1968&quot;,&quot;tyshElDdw/xoFQSzGgfVIg&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;1968&quot;,&quot;tyshElDdw/xoFQSzGgfVIg&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>DataUpdates</u></TD><TD   nowrap  align=Left >v_tbl_PM_Customer</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;1968&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="1968" ></td></tr><tr class='clsTREvenRow' valign=top><TD class='Locked'  nowrap  align=Left >50131</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=50131&PKToken=fdEIIxCJa7HYIXzcsZ9hdA&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;50131&quot;,&quot;fdEIIxCJa7HYIXzcsZ9hdA&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','Javascript:Hyperlink1(&quot;../Source/General/CommonList.aspx?Rating=3&quot;,&quot;50131&quot;)','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;50131&quot;,&quot;fdEIIxCJa7HYIXzcsZ9hdA&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;50131&quot;,&quot;fdEIIxCJa7HYIXzcsZ9hdA&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;50131&quot;,&quot;fdEIIxCJa7HYIXzcsZ9hdA&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Demo Page</u></TD><TD   nowrap  align=Left >v_tbl_Revenue_Details</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;50131&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="50131" ></td></tr><tr class='clsTROdd' valign=top><TD class='Locked'  nowrap  align=Left >50033</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=50033&PKToken=pm9I77yZK18uAqYhzo38tQ&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;50033&quot;,&quot;pm9I77yZK18uAqYhzo38tQ&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','Javascript:Hyperlink1(&quot;../Source/SaaS/SaaS_CommonList.aspx&quot;,&quot;50033&quot;)','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;50033&quot;,&quot;pm9I77yZK18uAqYhzo38tQ&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;50033&quot;,&quot;pm9I77yZK18uAqYhzo38tQ&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;50033&quot;,&quot;pm9I77yZK18uAqYhzo38tQ&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Demo SaaS</u></TD><TD   nowrap  align=Left >tbl_MultiInsert</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;50033&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="50033" ></td></tr><tr class='clsTREvenRow' valign=top><TD class='Locked'  nowrap  align=Left >50078</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=50078&PKToken=lfDtEc5TBjZ61mJwecPsA&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;50078&quot;,&quot;lfDtEc5TBjZ61mJwecPsA&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','Javascript:Hyperlink1(&quot;../Source/SaaS/SaaS_CommonList.aspx&quot;,&quot;50078&quot;)','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;50078&quot;,&quot;lfDtEc5TBjZ61mJwecPsA&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;50078&quot;,&quot;lfDtEc5TBjZ61mJwecPsA&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;50078&quot;,&quot;lfDtEc5TBjZ61mJwecPsA&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Demo SaaS</u></TD><TD   nowrap  align=Left >tbl_MultiInsert</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;50078&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="50078" ></td></tr><tr class='clsTROdd' valign=top><TD class='Locked'  nowrap  align=Left >50143</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','','../../Images/cssImages/Lock.gif','Locked#|#By#|#Admin','Web#|#Form#|#is#|#Locked#|#by#|#Admin','Javascript:Hyperlink1(&quot;../Source/General/SmartNavigation.aspx&quot;,&quot;50143&quot;)','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;50143&quot;,&quot;Z6c7eWXyJ7Gg4wf98SLg&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;50143&quot;,&quot;Z6c7eWXyJ7Gg4wf98SLg&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;50143&quot;,&quot;Z6c7eWXyJ7Gg4wf98SLg&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Lock.gif' border=0 title='Web Form is Locked by Admin'>Education</u></TD><TD   nowrap  align=Left >tbl_CNF_Education</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;50143&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="50143" disabled  ></td></tr><tr class='clsTREvenRow' valign=top><TD class='Locked'  nowrap  align=Left >50067</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=50067&PKToken=nLdBbqj0L1val7yInRxPA&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;50067&quot;,&quot;nLdBbqj0L1val7yInRxPA&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;50067&quot;,&quot;nLdBbqj0L1val7yInRxPA&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;50067&quot;,&quot;nLdBbqj0L1val7yInRxPA&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;50067&quot;,&quot;nLdBbqj0L1val7yInRxPA&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Email</u></TD><TD   nowrap  align=Left >tbl_PM_EmailMessages</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;50067&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="50067" ></td></tr><tr class='clsTROdd' valign=top><TD class='Locked'  nowrap  align=Left >1976</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=1976&PKToken=FcrNBp2m02y7shgbqK8zrQ&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;1976&quot;,&quot;FcrNBp2m02y7shgbqK8zrQ&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','Javascript:Hyperlink1(&quot;../Source/General/CommonList.aspx&quot;,&quot;1976&quot;)','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;1976&quot;,&quot;FcrNBp2m02y7shgbqK8zrQ&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;1976&quot;,&quot;FcrNBp2m02y7shgbqK8zrQ&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;1976&quot;,&quot;FcrNBp2m02y7shgbqK8zrQ&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Filter Test</u></TD><TD   nowrap  align=Left >g_tbl_PM_Employee</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;1976&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="1976" ></td></tr><tr class='clsTREvenRow' valign=top><TD class='Locked'  nowrap  align=Left >1781</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=1781&PKToken=FRX4oDPxElsTBEX/XyWWIw&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;1781&quot;,&quot;FRX4oDPxElsTBEX/XyWWIw&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;1781&quot;,&quot;FRX4oDPxElsTBEX/XyWWIw&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;1781&quot;,&quot;FRX4oDPxElsTBEX/XyWWIw&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;1781&quot;,&quot;FRX4oDPxElsTBEX/XyWWIw&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Font Settings</u></TD><TD   nowrap  align=Left >FontSettings_tbl_WSRV_Survey_Master</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;1781&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="1781" ></td></tr><tr class='clsTROdd' valign=top><TD class='Locked'  nowrap  align=Left >1799</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','','../../Images/cssImages/Lock.gif','Locked#|#By#|#Admin','Web#|#Form#|#is#|#Locked#|#by#|#Admin','','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;1799&quot;,&quot;2LCmzm7v6ZG8vptAgRUFoA&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;1799&quot;,&quot;2LCmzm7v6ZG8vptAgRUFoA&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;1799&quot;,&quot;2LCmzm7v6ZG8vptAgRUFoA&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Lock.gif' border=0 title='Web Form is Locked by Admin'>Graph Skins</u></TD><TD   nowrap  align=Left >v_tbl_CDB_GraphSkins</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;1799&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="1799" disabled  ></td></tr><tr class='clsTREvenRow' valign=top><TD class='Locked'  nowrap  align=Left >1648</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','','../../Images/cssImages/Lock.gif','Locked#|#By#|#Admin','Web#|#Form#|#is#|#Locked#|#by#|#Admin','Javascript:Hyperlink1(&quot;../Source/General/CommonList.aspx&quot;,&quot;1648&quot;)','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;1648&quot;,&quot;CUhZvnerOuQkT7JmirXjFA&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;1648&quot;,&quot;CUhZvnerOuQkT7JmirXjFA&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;1648&quot;,&quot;CUhZvnerOuQkT7JmirXjFA&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Lock.gif' border=0 title='Web Form is Locked by Admin'>Hotfixes</u></TD><TD   nowrap  align=Left >v_tbl_WAF_ServicePackHotFixes</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;1648&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="1648" disabled  ></td></tr><tr class='clsTROdd' valign=top><TD class='Locked'  nowrap  align=Left >50066</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=50066&PKToken=TDIkFiXagB1AC0PD3FmPw&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;50066&quot;,&quot;TDIkFiXagB1AC0PD3FmPw&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;50066&quot;,&quot;TDIkFiXagB1AC0PD3FmPw&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;50066&quot;,&quot;TDIkFiXagB1AC0PD3FmPw&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;50066&quot;,&quot;TDIkFiXagB1AC0PD3FmPw&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Insert Fields</u></TD><TD   nowrap  align=Left >e_tbl_UI_ControlTagMaster</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;50066&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="50066" ></td></tr><tr class='clsTREvenRow' valign=top><TD class='Locked'  nowrap  align=Left >50079</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=50079&PKToken=85fnXsKs9FmVmG34h/qmCg&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;50079&quot;,&quot;85fnXsKs9FmVmG34h/qmCg&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','Javascript:Hyperlink1(&quot;../Source/WorkFlow/InheritedWorkFlowCommonList.aspx&quot;,&quot;50079&quot;)','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;50079&quot;,&quot;85fnXsKs9FmVmG34h/qmCg&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;50079&quot;,&quot;85fnXsKs9FmVmG34h/qmCg&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;50079&quot;,&quot;85fnXsKs9FmVmG34h/qmCg&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Loking Test</u></TD><TD   nowrap  align=Left >tbl_Revenue_Details</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;50079&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="50079" ></td></tr><tr class='clsTROdd' valign=top><TD class='Locked'  nowrap  align=Left >1771</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=1771&PKToken=ZIgabcKE7Hld0alHcnbw&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;1771&quot;,&quot;ZIgabcKE7Hld0alHcnbw&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;1771&quot;,&quot;ZIgabcKE7Hld0alHcnbw&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;1771&quot;,&quot;ZIgabcKE7Hld0alHcnbw&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;1771&quot;,&quot;ZIgabcKE7Hld0alHcnbw&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Manage Question</u></TD><TD   nowrap  align=Left >d_tbl_WSRV_Survey_Question</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;1771&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="1771" ></td></tr><tr class='clsTREvenRow' valign=top><TD class='Locked'  nowrap  align=Left >1772</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=1772&PKToken=u2h49c2qBvukMr2AQZfEzA&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;1772&quot;,&quot;u2h49c2qBvukMr2AQZfEzA&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;1772&quot;,&quot;u2h49c2qBvukMr2AQZfEzA&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;1772&quot;,&quot;u2h49c2qBvukMr2AQZfEzA&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;1772&quot;,&quot;u2h49c2qBvukMr2AQZfEzA&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Manage Question</u></TD><TD   nowrap  align=Left >d_tbl_WSRV_Survey_Question</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;1772&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="1772" ></td></tr><tr class='clsTROdd' valign=top><TD class='Locked'  nowrap  align=Left >1773</TD><TD   nowrap  align=Left   onmouseover="SetRolledOverTD(this,'divContextMenuCL315');" onclick=ShowWhizContextMenu(event,this,'window.location.href=&quot;../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=1773&PKToken=UABgnSJ6CsEHWkzrkipUw&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1&quot;','../../Images/cssImages/Link%20images/modify.GIF','Edit#|#Item','Edit#|#Item','Javascript:CheckInCheckOut(&quot;1773&quot;,&quot;UABgnSJ6CsEHWkzrkipUw&quot;)','../../Images/cssImages/Cin.gif','Check#|#In','Check#|#In','','../../Images/cssImages/Link%20images/PreviewInBrowser.gif','Preview','Preview','Javascript:ViewHistory(&quot;1773&quot;,&quot;UABgnSJ6CsEHWkzrkipUw&quot;)','../../Images/cssImages/Link%20images/viewhistory.gif','View#|#History','View#|#History','Javascript:AccessibleTo(&quot;1773&quot;,&quot;UABgnSJ6CsEHWkzrkipUw&quot;)','../../Images/cssImages/Link%20images/access.gif','Accessible#|#To','Accessible#|#To','Javascript:CopyWebForm_OnClick(&quot;1773&quot;,&quot;UABgnSJ6CsEHWkzrkipUw&quot;)','../../Images/cssImages/Link%20images/Copy.gif','Copy#|#Web#|#Form','Copy#|#Web#|#Form') ><u><Img src='../../Images/cssImages/Cout.gif' border=0 title='Checked out to me exclusively'>Manage Question</u></TD><TD   nowrap  align=Left >d_tbl_WSRV_Survey_Question</TD><TD   align=Center ><A href="Javascript:Hyperlink2(&quot;1773&quot;)" >Generate Script</A></TD><td  align=center><Input type=checkbox name="chkDelete" id="chkDelete" class='clsCheckBox' value="1773" ></td></tr></table>
+<div id='divContextMenuCL315' class='ContextMenu' style='display:none;'><table cellspacing='0' cellpadding='3'><tr id='trCtNodedivContextMenuCL3151'>
+<td id='tdImgCtNodedivContextMenuCL3151' class='CtMn_LeftFill'></td><td id='tdCtNodedivContextMenuCL3151'></td></tr><tr><td class='CtMn_LeftFill_Hr'></td><td class='CtMn_Hr'></td></tr><tr id='trCtNodedivContextMenuCL3152'>
+<td id='tdImgCtNodedivContextMenuCL3152' class='CtMn_LeftFill'></td><td id='tdCtNodedivContextMenuCL3152' ></td></tr><tr><td class='CtMn_LeftFill_Hr'></td><td class='CtMn_Hr'></td></tr><tr id='trCtNodedivContextMenuCL3154'>
+<td id='tdImgCtNodedivContextMenuCL3154' class='CtMn_LeftFill'></td><td id='tdCtNodedivContextMenuCL3154' ></td></tr><tr><td class='CtMn_LeftFill_Hr'></td><td class='CtMn_Hr'></td></tr><tr id='trCtNodedivContextMenuCL3155'>
+<td id='tdImgCtNodedivContextMenuCL3155' class='CtMn_LeftFill'></td><td id='tdCtNodedivContextMenuCL3155' ></td></tr><tr><td class='CtMn_LeftFill_Hr'></td><td class='CtMn_Hr'></td></tr><tr id='trCtNodedivContextMenuCL3156'>
+<td id='tdImgCtNodedivContextMenuCL3156' class='CtMn_LeftFill'></td><td id='tdCtNodedivContextMenuCL3156' ></td></tr><tr><td class='CtMn_LeftFill_Hr'></td><td class='CtMn_Hr'></td></tr><tr id='trCtNodedivContextMenuCL3157'>
+<td id='tdImgCtNodedivContextMenuCL3157' class='CtMn_LeftFill'></td><td id='tdCtNodedivContextMenuCL3157' ></td></tr></table></div></div></DIV><BR><INPUT type=hidden id='PagingNumber' name='PagingNumber' value='1'><TABLE class=clsTable cellpadding=0 cellspacing=0 width='100%'><TR class=clsTREven><TD  width='100%' align='right'>Total Records :75</TD></TR></TABLE>
+<div id="dModal" class="clsDivModalDialog" style="display:none;position:absolute;" title="Double Click to Drag" ondragend="ShowMousePos()" ondblclick="SelectText(this)">
+    <table id="tblModal" class="clsTableModalDlg">
+       <tr>
+           <td id="tdFirstRow" width="95%" class="clsTDFirstRow">
+               <span id="wndCaption" class="clsMdlDlgCaption"></span>
+           </td>
+           <td width="5%" class="clsTDClose">
+                <img src='../../Images/mdlclose.gif' onclick="CloseDivForModalPopUp()" />
+           </td>
+       </tr>
+       <tr>
+           <td colspan='2'>
+               <iframe id="iFrmMdl" width=100% frameborder="0" scrolling="no" onload="calcHeight(this)">
+               </iframe>
+           </td>
+       </tr>
+   </table>
+</div>
+<div id="MaskedDiv" class="clsMaskDiv" style="display:none;position:absolute;">
+</div>
+<script language='javascript'>
+function OnBodyKeyUp(eve)
+{
+if (eve.altKey==true && eve.ctrlKey==false && eve.shiftKey==false)
+{
+switch(String.fromCharCode(eve.keyCode))
+{
+
+case 'X':
+return Export_OnClick();
+break;
+}
+}
+if (eve.altKey==false && eve.ctrlKey==false && eve.shiftKey==true)
+{
+switch(eve.keyCode)
+{
+
+case 113:
+return SelectAll_OnClick();
+break;
+case 118:
+return Filters_OnClick();
+break;
+case 123:
+return OpenHelpPage(315);
+break;
+}
+}
+if (eve.altKey==false && eve.ctrlKey==false && eve.shiftKey==false)
+{
+switch(eve.keyCode)
+{
+
+case 119:
+return New_OnClick();
+break;
+case 46:
+return Delete_OnClick();
+break;
+}
+}
+
+}
+</script>
+<SCRIPT Language=javascript>
+
+   var objfrm;
+   var objdivlist;
+   objfrm = GetFormReference('frmCommonList')
+   objdivlistPage=GetObjectReference('frmCommonList','divListPageTag')
+
+   objdivlist=GetObjectReference('frmCommonList','divListTag')
+
+window.status='';
+//window resize for Common list
+var divHeight=0;
+var divHeightFactor=37;
+try{ if(window.parent.blnTabCollectionExists==true) divHeightFactor = divHeightFactor + 7; }catch(ex){}
+	function CL_window_onresize()
+	{
+		var intDivHeight ;
+		var intDivHeightRisk;
+		var intDivListPageHeight ;
+		if (objdivlistPage != null) {
+		if (navigator.appName == 'Microsoft Internet Explorer'){
+		intDivHeight = document.body.offsetHeight - objdivlistPage.offsetTop - divHeightFactor;
+		}
+		else{
+		intDivHeight = window.innerHeight - objdivlistPage.offsetTop - divHeightFactor;
+		}
+		if (intDivHeight < 100)
+			intDivHeight = 100;
+				
+		objdivlistPage.style.height = intDivHeight	;}
+		if (objdivlist != null) {
+		intDivListPageHeight = intDivHeight - 5 ;
+		if (parseFloat(objdivlist.style.height) > intDivListPageHeight){objdivlist.style.height = intDivListPageHeight;}
+		else if(parseFloat(objdivlist.style.height) < intDivListPageHeight)
+		{if(divHeight < intDivListPageHeight){objdivlist.style.height = divHeight;}
+		 else if(divHeight > intDivListPageHeight){objdivlist.style.height = intDivListPageHeight;}}
+		}
+	try{hideAll();} catch(e){}}
+	//window onload for Common list
+	function CL_window_onload()
+	{
+		var intDivHeight ;
+		var intDivListPageHeight ;
+		var intDivHeightRisk;
+		var lc;
+		if (objdivlistPage != null) {
+		if (navigator.appName == 'Microsoft Internet Explorer'){
+		intDivHeight = document.body.offsetHeight - objdivlistPage.offsetTop - divHeightFactor;
+		}
+		else{
+		intDivHeight = window.innerHeight - objdivlistPage.offsetTop - divHeightFactor;
+		}
+		if (intDivHeight < 100)
+			intDivHeight = 100;
+		objdivlistPage.style.height = intDivHeight;}
+		if (objdivlist != null) {
+		intDivListPageHeight = intDivHeight;
+		if(isNaN(parseFloat(objdivlist.style.height))){objdivlist.style.height=intDivListPageHeight;}divHeight=parseFloat(objdivlist.style.height);
+		if (parseFloat(objdivlist.style.height) > intDivListPageHeight){objdivlist.style.height = intDivListPageHeight;}}
+	}
+   SetTabCollectionBodyStyle(0);
+function SortBy(strFieldName,strAscDesc)
+{
+   objfrm.action = "WAF_CommonList.aspx?SortBy=" + strFieldName + "&SortOrder=" + strAscDesc 
+   objfrm.submit();
+}
+function Page_Onclick(strPagingAlphabet)
+{
+   objfrm.action = "WAF_CommonList.aspx?SetPagingAlphabet=1&PagingAlphabet=" +  URLEncode(strPagingAlphabet);
+   objfrm.submit();
+}
+function EditOnclick(strUniqueID,PKToken) {
+     window.location.href="../SM/PB_PageCanvas.aspx?FromElement=Tag&TagID=" + strUniqueID + "&PKToken=" + PKToken  + "&MasterTagID=315&FromWhere=SM&PagingAlphabet=-1&SortBy=TagDescription&SortOrder=ASC&ParentTagID=0&FromCL=1&PagingNumber=1";
+
+}
+
+ function expandSections() { 
+}
+
+function Hyperlink1(PageName,TagID)
+{
+var sChar = '?';
+if (PageName.indexOf("?") != -1)
+{
+sChar = '&';
+}
+window.open('../' + PageName + sChar + 'MasterTagID=' + TagID,"Preview","resizable=yes,scrollbars=no,menubar=no,toolbar=no,statusbar=no,left=" + (window.screen.width - 900)/2 + ",top=" + (window.screen.height - 600)/2 + ",width=900,height=600")
+return;
+window.open ("DummyPage.aspx?PageName=" + PageName + "&TagID=" + TagID,"Preview","resizable=yes,scrollbars=no,menubar=no,toolbar=no,statusbar=no,left=" + (window.screen.width - 900)/2 + ",top=" + (window.screen.height - 600)/2 + ",width=900,height=600");
+}
+function Hyperlink2(TagID)
+{
+
+window.open ("../SM/PB_GeneratedScript.aspx?TagID=" + TagID,"","resizable=yes,scrollbars=yes,menubar=no,toolbar=no,statusbar=no,left=" + (window.screen.width - 900)/2 + ",top=" + (window.screen.height - 700)/2 + ",width=900,height=700");
+}
+function AccessibleTo(lngUniqueID,PKToken) {
+
+window.open ("../SM/WAF_History_CommonList.aspx?MasterTagID=1804&AccessibleTagID=" + lngUniqueID + "&PKToken=" + PKToken + "", "", "resizable=yes,scrollbars=no,menubar=no,toolbar=no,statusbar=no,left=" + (window.screen.width - 500)/2 + ",top=" + (window.screen.height - 400)/2 + ",width=500,height=400");
+
+}
+function CheckInCheckOut(lngUniqueID,PKToken) {
+
+window.open ("../SM/WAF_Comments.aspx?MasterTagID=1727&GridTagID=" + lngUniqueID + "&PKToken=" + PKToken + "&TagID=315", "", "resizable=yes,scrollbars=no,menubar=no,toolbar=no,statusbar=no,left=" + (window.screen.width - 500)/2 + ",top=" + (window.screen.height - 220)/2 + ",width=500,height=220");
+
+}
+function CopyWebForm_OnClick(lngUniqueID,PKToken) {
+if (window.confirm('Are you sure you want to make a copy of the existing Web Form?'))
+alert("This Web Form has been copied successfully");
+else 
+return;
+   objfrm.action = "WAF_CommonPage.aspx?Operation=DYNAMIC_LINK&DYNAMIC_LINK_ID=19195&UniqueValue=" + lngUniqueID + "&PKToken=" + PKToken + "&IsListPageLink=1"
+   objfrm.submit();
+}
+function ViewHistory(lngUniqueID,PKToken) {
+
+window.open ("../SM/WAF_History_CommonList.aspx?MasterTagID=1727&TagID=" + lngUniqueID + "&PKToken=" + PKToken + "", "", "resizable=yes,scrollbars=no,menubar=no,toolbar=no,statusbar=no,left=" + (window.screen.width - 850)/2 + ",top=" + (window.screen.height - 500)/2 + ",width=850,height=500");
+
+}
+function setFilter(strHiddenControlName,e,IsText)
+{
+	if (IsText==false) {
+	    objControl = GetObjectEvent(e);
+	    objHiddenControl = GetObjectReference('frmCommonList',strHiddenControlName);
+	        if(validateTagFilter()==false){return};
+	    if (objHiddenControl != null) 
+			{
+				objHiddenControl.value = objControl.options[objControl.selectedIndex].innerText;
+	        }
+	}
+	else {
+	    var code;
+	    if (e.keyCode) code = e.keyCode;
+	    else if (e.which) code = e.which;
+	    if(code==13) {
+	        if(validateTagFilter()==false){return};
+	    objControl = GetObjectEvent(e);
+	        objHiddenControl = GetObjectReference('frmCommonList',strHiddenControlName);
+	        if (objHiddenControl != null) 
+	        {objHiddenControl.value = objControl.value;}
+	    }
+	    else {return;}
+	}
+   objfrm.action = "WAF_CommonList.aspx?SetFilter=1&PagingAlphabet=-1"
+	objfrm.submit();
+}
+
+var WHIZ_DIV_CtMn=GetObjectReference('','divContextMenuCL315');
+var WHIZ_FORM_frmCommonList=GetFormReference('frmCommonList');
+if(WHIZ_FORM_frmCommonList){WHIZ_FORM_frmCommonList.appendChild(WHIZ_DIV_CtMn);}
+WHIZ_FORM_frmCommonList.appendChild(WHIZ_DIV_CtMn);
+document.onmouseup=function(){HideContextMenu();}
+function ShowWhizContextMenu(ev,obj,funCtNodedivContextMenuCL3151,lnkImgUrlCtNodedivContextMenuCL3151,lnkNameCtNodedivContextMenuCL3151,lnkToolTipCtNodedivContextMenuCL3151,funCtNodedivContextMenuCL3152,lnkImgUrlCtNodedivContextMenuCL3152,lnkNameCtNodedivContextMenuCL3152,lnkToolTipCtNodedivContextMenuCL3152,funCtNodedivContextMenuCL3154,lnkImgUrlCtNodedivContextMenuCL3154,lnkNameCtNodedivContextMenuCL3154,lnkToolTipCtNodedivContextMenuCL3154,funCtNodedivContextMenuCL3155,lnkImgUrlCtNodedivContextMenuCL3155,lnkNameCtNodedivContextMenuCL3155,lnkToolTipCtNodedivContextMenuCL3155,funCtNodedivContextMenuCL3156,lnkImgUrlCtNodedivContextMenuCL3156,lnkNameCtNodedivContextMenuCL3156,lnkToolTipCtNodedivContextMenuCL3156,funCtNodedivContextMenuCL3157,lnkImgUrlCtNodedivContextMenuCL3157,lnkNameCtNodedivContextMenuCL3157,lnkToolTipCtNodedivContextMenuCL3157){
+WHIZ_SetContextMenuNode('trCtNodedivContextMenuCL3151',funCtNodedivContextMenuCL3151,lnkImgUrlCtNodedivContextMenuCL3151,lnkNameCtNodedivContextMenuCL3151,lnkToolTipCtNodedivContextMenuCL3151);
+WHIZ_SetContextMenuNode('trCtNodedivContextMenuCL3152',funCtNodedivContextMenuCL3152,lnkImgUrlCtNodedivContextMenuCL3152,lnkNameCtNodedivContextMenuCL3152,lnkToolTipCtNodedivContextMenuCL3152);
+WHIZ_SetContextMenuNode('trCtNodedivContextMenuCL3154',funCtNodedivContextMenuCL3154,lnkImgUrlCtNodedivContextMenuCL3154,lnkNameCtNodedivContextMenuCL3154,lnkToolTipCtNodedivContextMenuCL3154);
+WHIZ_SetContextMenuNode('trCtNodedivContextMenuCL3155',funCtNodedivContextMenuCL3155,lnkImgUrlCtNodedivContextMenuCL3155,lnkNameCtNodedivContextMenuCL3155,lnkToolTipCtNodedivContextMenuCL3155);
+WHIZ_SetContextMenuNode('trCtNodedivContextMenuCL3156',funCtNodedivContextMenuCL3156,lnkImgUrlCtNodedivContextMenuCL3156,lnkNameCtNodedivContextMenuCL3156,lnkToolTipCtNodedivContextMenuCL3156);
+WHIZ_SetContextMenuNode('trCtNodedivContextMenuCL3157',funCtNodedivContextMenuCL3157,lnkImgUrlCtNodedivContextMenuCL3157,lnkNameCtNodedivContextMenuCL3157,lnkToolTipCtNodedivContextMenuCL3157);
+
+SetPositionForContextMenu(ev,'divContextMenuCL315');
+}
+
+</SCRIPT>
+</FORM></BODY></HTML> 

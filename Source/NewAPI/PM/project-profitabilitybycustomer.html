@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Resource</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../../../../Whizible2.0-new/dist/css/jquery-ui-1.13.2.min.css">
+    <!-- Bootstrap 5.3.2 -->
+    <link rel="stylesheet" href="../../../../Whizible2.0-new/bootstrap/css/bootstrap-5.3.2.min.css">
+    <!-- bootstrap select -->
+    <link rel="stylesheet" href="../../../../Whizible2.0-new/bootstrap/css/bootstrap-select.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../../../Whizible2.0-new/fontawesome/css/all.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../../../Whizible2.0-new/dist/css/AdminLTE.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="../../../../Whizible2.0-new/dist/css/animate.css">
+    <link rel="stylesheet" href="../../../../Whizible2.0-new/dist/css/dataTables.bootstrap5.min.css">
+    <!-- custom style -->
+    <link rel="stylesheet" href="../../../../Whizible2.0-new/dist/css/style_custom.css">
+    <link rel="stylesheet" href="../../../../Whizible2.0-new/dist/css/custom.css">
+    <link rel="stylesheet" href="../../../../Whizible2.0-new/dist/css/style_custom_project.css">
+    <link rel="stylesheet" href="../../../../Whizible2.0-new/dist/css/whiz20_theme.css?v=0.1">
+    <link rel="stylesheet" href="../../../../Whizible2.0-new/dist/css/BS5_migration.css?v=0.1">
+    <!-- media_queries -->
+    <link rel="stylesheet" href="../../../../Whizible2.0-new/dist/css/media_queries.css?v=2">
+    <link rel="stylesheet" href="../../../../Whizible2.0-new/dist/css/adavanced_filter.css?v=0.1">
+    <link rel="stylesheet" href="../../../../Whizible2.0-new/dist/css/Required_Custom.css">
+
+    <style type="text/css">
+        .form-inline{
+            display: flex;
+        }
+        .dataTables_scrollBody thead tr[role="row"] {
+            visibility: collapse !important;
+        }
+
+        a.clearalllink {
+            font-weight: bold;
+            margin: 7px 0px 0 8px;
+            display: none;
+        }
+
+        .filter.pull-right {
+            margin: 2px 0 0 8px;
+        }
+
+        table tr th {
+            vertical-align: middle !important;
+        }
+
+            table tr td:last-child .custom_chckbox label:before, table tr th:last-child .custom_chckbox label:before {
+                margin-right: 0;
+            }
+
+        .notebox {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        .dropdown-submenu .dropdown-submenu > a:after {
+            border-color: transparent transparent transparent #fff;
+            border-style: solid;
+            border-width: 5px 0 5px 5px;
+            content: " ";
+            display: block;
+            float: right;
+            height: 0;
+            margin-right: 10px;
+            margin-top: 5px;
+            width: 0;
+        }
+
+        .dropdown-submenu > .dropdown-submenu:hover a:after {
+            border-color: transparent transparent transparent #464a4c;
+        }
+
+        /*Detailpanel*/
+        .Resourcedetailpanel {
+            margin: 40px 15px 0;
+            display: none;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .pgdetailinner {
+            padding: 10px;
+        }
+
+        .Resourcedetailpanel .tab-pane {
+            padding: 20px 0;
+        }
+
+        tr.rowhiglight {
+            background: #c3dbff;
+        }
+
+        .DisableContent {
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+            .DisableContent:hover {
+                cursor: no-drop;
+            }
+
+        .dataTables_scrollBody.DisableContent {
+            height: auto !important
+        }
+
+        ul.nav.nav-tabs.detailsubtabs {
+            background: #f5f5f5;
+            margin: -11px -11px;
+            padding: 10px 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .nav.detailsubtabs > li > a:hover, .nav.nav.detailsubtabs > li > a:active, .nav.nav.detailsubtabs > li > a:focus {
+            background: #fff;
+            color: #1359ac;
+        }
+
+        h5.pgtitle {
+            margin: 6px 0 0;
+            font-weight: 700;
+            color: #4263c1;
+            font-size: 16px;
+        }
+
+        .dblock {
+            display: block;
+        }
+
+
+
+        /*New css end here*/
+        ul.statustext.hidden-xs {
+            padding: 0;
+        }
+
+        .tblheadingrow td {
+            text-align: left !important;
+            font-weight: 500;
+        }
+
+        tr.totalrow {
+            background: #ccc;
+            font-weight: 500;
+        }
+
+        .ppcTbllist tr td:nth-child(2) {
+            text-align: left;
+        }
+
+        .lightgraybg {
+            background: #f5f5f5;
+        }
+
+        /*Information table start here*/
+        .informationtbl {
+            margin-bottom: 15px;
+        }
+
+            .informationtbl tr th {
+                text-align: right;
+                font-weight: 500;
+            }
+
+        body .informationtbl tr td {
+            text-align: left;
+        }
+
+        .informationtbl th, .informationtbl td {
+            padding: 2px 4px;
+        }
+
+        body .informationtbl tr td.pr-3 {
+            padding-right: 3em;
+        }
+
+        table.informationtbl {
+            width: 100%;
+        }
+
+        td.Agpm {
+            color: #eb1c24;
+        }
+
+        .togglerup .collapseup {
+            display: block;
+        }
+
+        .togglerup .collapsedown {
+            display: none;
+        }
+
+        .togglerdown .collapsedown {
+            display: block;
+        }
+
+        .togglerdown .collapseup {
+            display: none;
+        }
+
+        .infoToggler {
+            margin: 5px 0 0;
+        }
+
+        .hideprofitabilityinfo {
+            position: absolute;
+            right: 10px;
+        }
+
+        .profitabilityinfopanel .panel.panel-default {
+            padding: 0px 0px 0 0;
+            position: relative;
+        }
+
+        .profitabilityinfopanel .panel-default > .panel-heading {
+            padding-right: 35px;
+            background: #e7edf0;
+        }
+
+            .profitabilityinfopanel .panel-default > .panel-heading a:hover, .profitabilityinfopanel .panel-default > .panel-heading a:focus {
+                color: #464a4c;
+            }
+
+            .profitabilityinfopanel .panel-default > .panel-heading a span img {
+                opacity: 0.5;
+            }
+
+                .profitabilityinfopanel .panel-default > .panel-heading a span img:hover {
+                    opacity: 1;
+                }
+        /*Information table End here*/
+        .informationtbl td, .informationtbl th {
+            vertical-align: top !important;
+            font-size: 11.5px;
+            line-height: normal;
+        }
+        /*GPM_tbl*/
+        .GPMtbl tr td[align="right"] {
+            text-align: right;
+        }
+
+        .GPMtbl tr td[align="left"] {
+            text-align: left;
+        }
+
+        .GPMtbl tr td:nth-child(2) {
+            width: 150px;
+        }
+
+        .table .grouprow th {
+            background: #e7edf0;
+        }
+
+        .grossprofitinfo {
+            padding: 15px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+            .grossprofitinfo p {
+                margin: 0 0 5px;
+                font-weight: bold;
+            }
+
+        body .informationtbl tr td.colan {
+            padding: 8px 2px;
+        }
+
+        tr.ttlrow {
+            font-weight: bold;
+        }
+        /*GPM_tbl*/
+
+        /*Menu style End here*/
+        .borderbox {
+            border: 1px solid #ddd;
+            margin: 15px;
+            background: #f7f7f7;
+        }
+
+        .statustext {
+            padding-bottom: 0;
+        }
+
+
+.gpmpositivelbl .fa-flag{ color:#9dd824;}
+.gpmnegativelbl .fa-flag{ color:#eb1c24;}
+.gpmalllbl .fa-flag{ color:#fbb03b;}
+.GPMfiltr.mr-1{display:inline-block;float:right;background:transparent;padding:5px 10px;border:1px solid transparent;border-radius:5px}
+.GPMfiltr:hover{background:#fff;padding:5px 10px;border:1px solid #ddd;border-radius:5px}
+.GPMfiltr label{margin-bottom:0}
+.custom_radio input[type="radio"]{display:none}
+.custom_radio input[type="radio"] + label span{display:inline-block;width:15px;height:15px;background:transparent;vertical-align:middle;border:1px solid #464a4c;border-radius:50%;padding:2px;margin:0 3px}
+.custom_radio input[type="radio"]:checked + label span{width:15px;height:15px;background:#464a4c;background-clip:content-box} 
+    
+        .management-dashboard-page {
+            background: #f5f7fb;
+            min-height: 100vh;
+        }
+
+        .management-dashboard-header {
+            align-items: center;
+            background: #fff;
+            border-bottom: 1px solid #eef2f7;
+            box-shadow: rgba(0, 0, 0, 0.06) 0 5px 5px -3px, rgba(0, 0, 0, 0.043) 0 8px 10px 1px, rgba(0, 0, 0, 0.035) 0 3px 14px 2px;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 1.25rem;
+        }
+
+        .management-dashboard-title {
+            align-items: center;
+            color: #1e40af;
+            display: flex;
+            font-size: 18px;
+            font-weight: 600;
+            gap: 0.75rem;
+            margin: 0 0 0.25rem;
+        }
+
+        .management-dashboard-title i {
+            color: #1e40af;
+            font-size: 1.5rem;
+        }
+
+        .management-dashboard-subtitle {
+            color: #6b7280;
+            font-size: 0.72rem;
+            margin: 0;
+        }
+
+        .management-dashboard-tabs-wrapper {
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            margin: 0 2px 15px;
+            padding: 0 15px;
+        }
+
+        .management-dashboard-tabs {
+            border-bottom: 0;
+            gap: 5px;
+            margin-bottom: 0;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .management-dashboard-tabs .nav-link {
+            align-items: center;
+            background: transparent;
+            border: 0;
+            border-bottom: 2px solid transparent;
+            color: #666;
+            display: flex;
+            font-weight: 400;
+            gap: 0.4rem;
+            padding: 8px 10px;
+        }
+
+        .management-dashboard-tabs .nav-link:hover {
+            background: #f8fbff;
+            color: #1359a6;
+        }
+
+        .management-dashboard-tabs .nav-link.active {
+            background: #f0f7ff;
+            border-bottom-color: #1359a6;
+            color: #1359a6;
+        }
+
+        .management-dashboard-tabs .nav-link[href="project-resource-utilization.html"] {
+            font-size: 13px;
+        }
+
+        .management-dashboard-actions {
+            align-items: center;
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .management-dashboard-actions .clearalllink {
+            margin: 0;
+        }
+
+        .management-dashboard-filter-btn {
+            background: #fff;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            color: #1359a6;
+            padding: 6px 10px;
+        }
+    
+        .management-dashboard-current-page {
+            align-items: center;
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+            display: flex;
+            justify-content: space-between;
+            margin: 0 15px 14px;
+            padding: 14px 16px;
+        }
+
+        .management-dashboard-current-title {
+            align-items: center;
+            color: #1e40af;
+            display: flex;
+            font-size: 16px;
+            font-weight: 600;
+            gap: 0.65rem;
+            margin: 0 0 0.25rem;
+        }
+
+        .management-dashboard-current-title i {
+            color: #1e40af;
+            font-size: 1.2rem;
+        }
+
+        .management-dashboard-current-note {
+            color: #6b7280;
+            font-size: 0.72rem;
+            margin: 0;
+        }
+
+        @media (max-width: 767px) {
+            .management-dashboard-current-page {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="hold-transition skin-blue-light sidebar-mini fixed">
+
+    <div class="bgwhite management-dashboard-page">
+
+                <div class="management-dashboard-header">
+            <div>
+                <h2 class="management-dashboard-title">
+                    <i class="fas fa-tachometer-alt" data-bs-toggle="tooltip" title="Management Dashboard (High Level)"></i>
+                    Management Dashboard (High Level)
+                </h2>
+                <p class="management-dashboard-subtitle">High-level view of project health, profitability, resource utilization, calendar, and billing metrics.</p>
+            </div>
+        </div>
+            <div class="management-dashboard-tabs-wrapper">
+                <ul class="nav nav-tabs management-dashboard-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" href="project-health.html">
+                            <i class="fas fa-heartbeat"></i> Project Health
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project-profitabilityByBGOU.html">
+                            <i class="fas fa-chart-line"></i> Project Profitability
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="project-profitabilitybycustomer.html">
+                            <i class="fas fa-users"></i> Profitability By Customer
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project-resource-utilization.html">
+                            <i class="fas fa-user-clock"></i> Resource Utilization
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resource-calendarview.html">
+                            <i class="fas fa-calendar-alt"></i> Resource Calendar View
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="management-dashboard-billing.html">
+                            <i class="fas fa-file-invoice-dollar"></i> Project Billing
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="management-dashboard-current-page">
+                <div>
+                    <h3 class="management-dashboard-current-title">
+                        <i class="fas fa-users" data-bs-toggle="tooltip" title="Project Profitability By Customer"></i>
+                        Project Profitability By Customer
+                    </h3>
+                    <p class="management-dashboard-current-note">Compare customer-level profitability and gross profit movement.</p>
+                </div>
+            </div>
+
+
+
+       
+            
+            <div class="innerpgiframe">
+                <!--filter panel-->
+                <div id="filterpanel" class="filterpanel collapse">
+                    <div class="bglightgray container-fluid pt-1 pb-1 headertopp filterpanelheader">
+
+                        <div class="cust_tabpanel">
+                            <ul class="nav nav-tabs">
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">My Filters  <span class="caret"></span></a>
+                                    <ul id="MyFiltersdropdown" class="dropdown-menu MyFiltersdropdown" role="menu">
+                                        <li>
+                                            <label class="customradio">
+                                                <input class="myfilter_selectprocheckbox" data-bs-toggle="tooltip" data-bs-placement="bottom" id="project2" type="checkbox" name="project2" onchange="cbChange(this)" data-bs-original-title="" title=""> <span data-bs-toggle="tooltip" data-bs-placement="right" title="" class="checkmark" data-bs-original-title="Set Default filter"></span>
+                                            </label>
+                                            <label class="">
+                                                <span for="project2" class="radiotextsty filtername">Project 2 and 3</span>
+                                            </label>
+
+                                            <div class="issfilter_actiondropdown">
+                                                <div class="custom_chckbox_markblue">
+                                                    <input id="IssueselproOne" type="checkbox" name="">
+                                                    <label data-bs-toggle="tooltip" data-bs-container="body" data-bs-placement="bottom" title="" for="IssueselproOne" data-bs-original-title="Apply filter"></label>
+                                                </div> <span class="edit_filter"><img src="../../../../Whizible2.0-new/dist/img/edit.svg" width="16px" data-bs-toggle="tooltip" data-bs-container="body" data-bs-placement="bottom" title="" data-bs-original-title="Edit filter"></span>
+                                                <span><i data-bs-toggle="tooltip" data-bs-container="body" data-bs-placement="bottom" title="" class="far fa-trash-alt" data-bs-original-title="Delete filter"></i></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <label class="customradio">
+                                                <input class="myfilter_selectprocheckbox" data-bs-toggle="tooltip" data-bs-placement="bottom" id="task" type="checkbox" name="task" onchange="cbChange(this)" data-bs-original-title="" title=""> <span data-bs-toggle="tooltip" data-bs-placement="right" title="" class="checkmark" data-bs-original-title="Set Default filter"></span>
+                                            </label>
+                                            <label class="">
+                                                <span for="task" class="radiotextsty">Task and milestones</span>
+                                            </label>
+
+                                            <div class="issfilter_actiondropdown">
+                                                <div class="custom_chckbox_markblue">
+                                                    <input id="IssueselproTwo" type="checkbox" name="">
+                                                    <label data-bs-toggle="tooltip" data-bs-container="body" data-bs-placement="bottom" title="" for="IssueselproTwo" data-bs-original-title="Apply filter"></label>
+                                                </div> <span class="edit_filter"><img src="../../../../Whizible2.0-new/dist/img/edit.svg" width="16px" data-bs-toggle="tooltip" data-bs-container="body" data-bs-placement="bottom" title="" data-bs-original-title="Edit filter"></span>
+                                                <span><i data-bs-toggle="tooltip" data-bs-container="body" data-bs-placement="bottom" title="" class="far fa-trash-alt" data-bs-original-title="Delete filter"></i></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <label class="customradio">
+                                                <input class="myfilter_selectprocheckbox" data-bs-toggle="tooltip" data-bs-placement="bottom" id="groupcompany" type="checkbox" name="groupcompany" onchange="cbChange(this)" data-bs-original-title="" title=""> <span data-bs-toggle="tooltip" data-bs-placement="right" title="" class="checkmark" data-bs-original-title="Set Default filter"></span>
+                                            </label>
+                                            <label class="">
+                                                <span for="groupcompany" class="radiotextsty">For group company</span>
+                                            </label>
+
+                                            <div class="issfilter_actiondropdown">
+                                                <div class="custom_chckbox_markblue">
+                                                    <input id="IssueselproThree" type="checkbox" name="">
+                                                    <label data-bs-container="body" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" for="IssueselproThree" data-bs-original-title="Apply filter"></label>
+                                                </div> <span class="edit_filter"><img src="../../../../Whizible2.0-new/dist/img/edit.svg" width="16px" data-bs-toggle="tooltip" data-bs-container="body" data-bs-placement="bottom" title="" data-bs-original-title="Edit filter"></span>
+                                                <span><i data-bs-toggle="tooltip" data-bs-container="body" data-bs-placement="bottom" title="" class="far fa-trash-alt" data-bs-original-title="Delete filter"></i></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                    <a href="#basicfilters" data-bs-toggle="tab" aria-expanded="true">Basic Filters</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                        <div class="Fwrapper">
+                            <div class="tab-content">
+                                <div id="basicfilters" class="tab-pane">
+                                    <div class="filterpanelbody">
+                                        <div class="text-center hidden-xs centerbtn">
+                                            <button class="btn btnyellow" id="svfilterbtn" data-bs-toggle="modal" data-bs-target="#Issuesavefilter" data-bs-dismiss="modal">Save and Apply</button>
+                                            <button class="btn btnyellow">Apply</button>
+                                        </div>
+                                        <br />
+
+                                        <div class="row">
+                                            <div class="col-sm-4 form-group">
+                                                <label>Parameter Group</label>
+                                                <div class="row">
+                                                    <div class="col-xs-4">
+                                                        <select class="form-control input-sm">
+                                                            <option>=</option>
+                                                            <option><></option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-8 pl-0">
+                                                        <select class="form-control input-sm">
+                                                            <option>&nbsp;</option>
+                                                            <option>Work Profile</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4 form-group">
+                                                <label>Parameter Value</label>
+                                                <div class="row">
+                                                    <div class="col-xs-4">
+                                                        <select class="form-control input-sm">
+                                                            <option>Contains</option>
+                                                            <option>End With</option>
+                                                            <option>Exact Word</option>
+                                                            <option>Not Contains</option>
+                                                            <option>Start With</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-8 pl-0">
+                                                        <input class="form-control input-sm" type="text" id="Fparavalue" />
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4 form-group">
+                                                <label>Order Number</label>
+                                                <div class="row">
+                                                    <div class="col-xs-4">
+                                                        <select class="form-control input-sm">
+                                                            <option>=</option>
+                                                            <option><=</option>
+                                                            <option><></option>
+                                                            <option>></option>
+                                                            <option>>=</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-8 pl-0">
+                                                        <input id="FOrdrNo" type="text" class="form-control" />
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-4 form-group">
+                                                <label>Description</label>
+                                                <div class="row">
+                                                    <div class="col-xs-4">
+                                                        <select class="form-control input-sm">
+                                                            <option>Contains</option>
+                                                            <option>End With</option>
+                                                            <option>Exact Word</option>
+                                                            <option>Not Contains</option>
+                                                            <option>Start With</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-8 pl-0">
+                                                        <textarea class="form-control">&nbsp;</textarea>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--end filter panel-->
+                <!--<div class="container-fluid pt-1 pb-1 text-end">
+            <button class="btn borderbtn addbtn mr-5" id="" onclick="addWp()"><i class="fa fa-plus" aria-hidden="true"></i> Add</button>
+            <a href="resource-plan-index.html" class="btn borderbtn backbtn" id="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Back to Resource Configuration">Back</a>
+            <button class="btn borderbtn deletebtn" id="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete">Delete</button>
+        </div>-->
+                <div class="clearfix"></div>
+                <div class=" container-fluid pt-1 pb-1 borderbox">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <div class="form-inline">
+                                <div class="form-group">
+                                    <label for="email">Project : </label>
+                                    <select id="PPCselectPro" class="form-control" style="width:200px">
+                                        <option>Select Project</option>
+                                        <option>Timesheet</option>
+                                        <option>Whizible</option>
+                                        <option>Helpdesk</option>
+                                        <option>Agile</option>
+                                        <option>Knowladge</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Customer : </label>
+                                    <select id="PPCustmrselect" class="form-control" style="width:200px">
+                                        <option>Select Customer</option>
+                                        <option>Customer 01</option>
+                                        <option>Customer 02</option>
+                                        <option>Customer 03</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-5 text-end">
+                            <!--<ul class="statustext hidden-xs">
+        <li><strong>GPM :</strong> </li>
+        <li data-bs-toggle="tooltip" data-bs-placement="top" title="" class=" greenstatuslbl active" data-bs-original-title="Negative GPM"><a href="javascript:;"><span class="statustextno"><i class="far fa-flag"></i></span>Positive GPM</a></li>
+        <li data-bs-toggle="tooltip" data-bs-placement="top" title="" class="criticle" data-bs-original-title="Negative GPM"><a href="javascript:;"><span class="statustextno"><i class="far fa-flag"></i></span>Negative GPM</a></li>
+        <li data-bs-toggle="tooltip" data-bs-placement="top" title="" class="pending" data-bs-original-title="All GPM"><a href="javascript:;"><span class="statustextno"><i class="far fa-flag"></i></span>All GPM</a></li>
+    </ul>-->
+                            <div class="GPMfiltr mr-1">
+                                <div class="d-inline-block">
+                                    <div class="custom_radio d-inline-block gpmpositivelbl" data-bs-toggle="tooltip" data-bs-title="Positive GPM" data-bs-container="body">
+                                        <input id="GPMpositive" name="Rgroup1" value="GPM1" type="radio" checked="checked">
+                                        <label for="GPMpositive"><span></span> <i class="far fa-flag"></i></label>
+                                    </div>
+                                </div>
+                                <div class="d-inline-block  ml-1">
+                                    <div class="custom_radio d-inline-block gpmnegativelbl" data-bs-toggle="tooltip" data-bs-title="Negative GPM" data-bs-container="body">
+                                        <input id="GPMNegative" name="Rgroup1" value="GPM2" type="radio">
+                                        <label for="GPMNegative"><span></span> <i class="far fa-flag"></i></label>
+                                    </div>
+                                </div>
+                                <div class="d-inline-block  ml-1">
+                                    <div class="custom_radio d-inline-block gpmalllbl" data-bs-toggle="tooltip" data-bs-title="All GPM" data-bs-container="body">
+                                        <input id="GPMAll" name="Rgroup1" value="GPM3" type="radio">
+                                        <label for="GPMAll"><span></span> <i class="far fa-flag"></i></label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content pt-0">
+                    <div>
+                        <strong></strong> <span class="text-end pull-right"><small>( All Figures In : Rs )</small></span>
+
+                    </div>
+                    <table id="PPCTbl" class="table table-bordered ppcTbllist" style="width:100%;">
+                        <thead>
+                            <tr>
+                                <th class="">Customer</th>
+                                <th>Project Name</th>
+                                <th>As On Date</th>
+                                <th>Accrued Revenue</th>
+                                <th>Accrued Cost</th>
+                                <th>Accrued GPM</th>
+                                <th>Accrued GPM %</th>
+                                <th>Invoice Revenue</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tblheadingrow graybg">
+                                <td colspan="8">British Telecommunication</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#PPCGrossProfittmodal">Agile-Suntec</a></td>
+                                <td>30 Jun 2021</td>
+                                <td>0.00</td>
+                                <td>2,200.00</td>
+                                <td>-2,200.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#PPCGrossProfittmodal">Dashboard Testing</a></td>
+                                <td>30 Oct 2021</td>
+                                <td>0.00</td>
+                                <td>3,200.00</td>
+                                <td>-3,200.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#PPCGrossProfittmodal">Fix bid</a></td>
+                                <td>30 Nov 2021</td>
+                                <td>0.00</td>
+                                <td>1,200.00</td>
+                                <td>-1,200.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#PPCGrossProfittmodal">Project Commercial Dashboard2021</a></td>
+                                <td>30 Sep 2021</td>
+                                <td>0.00</td>
+                                <td>4,200.00</td>
+                                <td>-4,200.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#PPCGrossProfittmodal">test DB</a></td>
+                                <td>30 Jul 2021</td>
+                                <td>0.00</td>
+                                <td>2,200.00</td>
+                                <td>-2,200.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#PPCGrossProfittmodal">Waterfall-Fixed Bid-New Product Development</a></td>
+                                <td>30 Dec 2021</td>
+                                <td>0.00</td>
+                                <td>2,200.00</td>
+                                <td>-2,200.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#PPCGrossProfittmodal">Waterfall-T&M by Resource-New Product Development</a></td>
+                                <td>30 Jun 2021</td>
+                                <td>0.00</td>
+                                <td>2,200.00</td>
+                                <td>-2,200.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr class="totalrow">
+                                <td>Total</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>Rs 07,400.00</td>
+                                <td>Rs 37,400.00</td>
+                                <td>Rs -37,400.00</td>
+                                <td>-706.06</td>
+                                <td>Rs 165.000</td>
+                            </tr>
+                            <tr class="tblheadingrow graybg">
+                                <td colspan="8">Hitech Systems</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#PPCGrossProfittmodal">Project Dashboard Test</a></td>
+                                <td>30 Jun 2021</td>
+                                <td>0.00</td>
+                                <td>2,200.00</td>
+                                <td>-2,200.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr class="totalrow">
+                                <td>Total</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>Rs 07,400.00</td>
+                                <td>Rs 37,400.00</td>
+                                <td>Rs -37,400.00</td>
+                                <td>-706.06</td>
+                                <td>Rs 165.000</td>
+                            </tr>
+                            <tr class="totalrow">
+                                <td>Grand Total</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>Rs 07,400.00</td>
+                                <td>Rs 37,400.00</td>
+                                <td>Rs -37,400.00</td>
+                                <td>-706.06</td>
+                                <td>Rs 165.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="clearfix"></div>
+
+
+
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+      
+
+        <!-- Save filter Modal start here-->
+        <div class="modal custmodal Issuesave_filter fade" id="Issuesavefilter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-dismiss="modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="">Save Filter As</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="Issuesavrefilterbox" class="box-panel">
+
+                            <div class="box-body graybg">
+                                <div class="form-group mb-0">
+                                    <div class="row">
+                                        <div class="col-md-12 row">
+                                            <label class="control-label col-md-4 p-0 text-end">Filter Name :</label>
+                                            <div class="col-md-8">
+                                                <input type="text" class="form-control" name=""><br />
+                                                <div class="btnrow">
+                                                    <button id="savefilterbtn" class="btn btnyellow pull-left">Save</button>
+                                                    <button data-bs-dismiss="modal" class="btn canclesaveasbtn borderbtn pull-right">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Save filter Modal End here-->
+        <!-- Project people cost Modal start here-->
+        <div class="modal custmodal fade" id="PPCGrossProfittmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-dismiss="modal">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="">Gross Profit Margin</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="modal-body">
+
+                        <div id="TabGrossProfit" class="tab-pane">
+                            <!--Information table start here-->
+                            <div class="panel-group profitabilityinfopanel" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default panel-horizontal lightgraybg">
+                                    <div class="panel-heading" role="tab" id="headingThree">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-bs-toggle="collapse" data-bs-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                <span class="hideprofitabilityinfo pull-right ml-1">
+                                                    <img class="" data-bs-toggle="tooltip" data-bs-placement="top" title="" src="../../../../Whizible2.0-new/dist/img/close-black.svg" alt="" width="12px" data-bs-original-title="Close Details">
+                                                </span>
+                                                <span class="infoToggler togglerdown pull-right">
+                                                    <img data-bs-toggle="tooltip" data-bs-placement="top" title="" src="../../../../Whizible2.0-new/dist/img/down.svg" alt="" class="collapsedown" width="15px" data-bs-original-title="View Details">
+                                                    <img class="collapseup" data-bs-toggle="tooltip" data-bs-placement="top" title="" src="../../../../Whizible2.0-new/dist/img/up.svg" alt="" width="15px" data-bs-original-title="Hide Details">
+                                                </span>
+                                                Project Details
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                        <div class="panel-body">
+                                            <table class="informationtbl mb-0">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Project Name</th>
+                                                        <td class="colan">:</td>
+                                                        <td class="pr-3"><span class="lmtname">2013-14 - WhizibleSEM 13 Product Enhancement</span></td>
+
+
+                                                        <th>Project Value</th>
+                                                        <td class="colan">:</td>
+                                                        <td class="pr-3">Rs. 1.00</td>
+
+                                                        <th>Commercial Type</th>
+                                                        <td class="colan">:</td>
+                                                        <td>&M by Resource</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Start Date</th>
+                                                        <td class="colan">:</td>
+                                                        <td class="pr-3"> 29 Jul 2013</td>
+
+                                                        <th>End Date</th>
+                                                        <td class="colan">:</td>
+                                                        <td class="pr-3">31 Oct 2013</td>
+
+                                                        <th>Cost Method</th>
+                                                        <td class="colan">:</td>
+                                                        <td>Standard Resource Cost</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Actual Start Date</th>
+                                                        <td class="colan">:</td>
+                                                        <td class="pr-3"> 28 Jun 2014</td>
+
+                                                        <th>Actual End Date</th>
+                                                        <td class="colan">:</td>
+                                                        <td class="pr-3">31 Jun 2014</td>
+
+                                                        <td>&nbsp;</td>
+                                                        <td class="colan">&nbsp;</td>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Information table End here-->
+
+                            <div class="table-responsive">
+                                <table class="table table-bordered GPMtbl">
+
+                                    <tr class="grouprow">
+                                        <th align="left">Accrued Revenue</th>
+                                        <th>Project Currency(Rs)</th>
+                                        <th class="text-end">Corporate Base Currency(Rs)</th>
+
+                                    </tr>
+                                    <tr>
+                                        <td align="left">People Revenue</td>
+                                        <td align="right">0.00</td>
+                                        <td align="right">0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">Accured Billable Expenses</td>
+                                        <td align="right">0.00</td>
+                                        <td align="right">0.00</td>
+                                    </tr>
+                                    <tr class="ttlrow">
+                                        <td align="left">Total Revenue</td>
+                                        <td align="right">Rs. 0.00</td>
+                                        <td align="right">0.00</td>
+                                    </tr>
+                                    <tr class="grouprow">
+                                        <th align="left">Accrued Cost</th>
+                                        <th>&nbsp;</th>
+                                        <th>&nbsp;</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">People Cost</td>
+                                        <td align="right">0.00</td>
+                                        <td align="right">0.00</td>
+                                    </tr>
+                                    <tr class="ttlrow">
+                                        <td align="left">Total Cost</td>
+                                        <td align="right">Rs. 0.00</td>
+                                        <td align="right">0.00</td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                            <div class="grossprofitinfo graybg">
+                                <p>Gross Profit Margin (as on : 08/31/2013 ) = Total Revenue - Total Cost</p>
+                                <!--<p>Gross Profit Margin = Rs. 0.00 - Rs. 28,000.00 = <font color="red">(Rs. -28,000.00)</font></p>
+                                <p>Gross Profit Margin % = 0</p>-->
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div>
+            </div>
+        </div>
+    <!-- Project people cost Modal End here-->
+
+
+
+
+    <div class="clearfix"></div>
+    </div>
+
+
+    <!-- REQUIRED JS SCRIPTS -->
+    <!-- jQuery 3.7.1 -->
+    <script src="../../../../Whizible2.0-new/plugins/jQuery/jquery-3.7.1.min.js"></script>
+    <!-- jqueryUI js -->
+    <script src="../../../../Whizible2.0-new/plugins/jQueryUI/jquery-ui-1.13.2.min.js"></script>
+    <!-- Bootstrap 5.3.2 -->
+    <script src="../../../../Whizible2.0-new/bootstrap/js/bootstrap-select.min.js"></script>
+    <!-- Bootstrap 5.3.2 -->
+    <script src="../../../../Whizible2.0-new/bootstrap/js/bootstrap.bundle-5.3.2.min.js"></script>
+
+    <!-- Bootstrap 5.3.2 -->
+    <script src="../../../../Whizible2.0-new/dist/js/jquery.dataTables-1.13.1.min.js"></script>
+    <script src="../../../../Whizible2.0-new/dist/js/dataTables.bootstrap5.min.js"></script>
+
+    <!--chart js-->
+    <script src="../../../../Whizible2.0-new/plugins/chartjs/chart.min.js"></script>
+    <script src="../../../../Whizible2.0-new/plugins/chartjs/chartjs-plugin-datalabels.js"></script>
+
+    <script>
+
+        $("[data-bs-toggle='tooltip'], [data-bs-toggle='collapse'], [data-bs-toggle='dropdown']").tooltip();
+
+        function editPHSDetail() {
+            //$(".dataTables_scrollBody").css("height", "auto!important");
+            $(".Resourcedetailpanel").show();
+            $('html,body').animate({
+                scrollTop: $(".Resourcedetailpanel").offset().top - 20
+            }, 'slow');
+            //used for disable grid
+            $("#healthshetprojectList_wrapper .dataTables_scrollBody, .profiencyTbllist, .backbtn, .addbtn, .paginate_button, .deletebtn, .filter").addClass("DisableContent").parent().css("cursor", "no-drop");
+        }
+        $(".BGdetalilink").click(function () {
+            $(this).closest('tr').addClass('rowhiglight');
+        });
+
+
+        $('.canceldetailpanel').click(function () {
+            $('table tr').removeClass('rowhiglight');
+            $(".Resourcedetailpanel").hide();
+            $("#healthshetprojectList_wrapper .dataTables_scrollBody, .profiencyTbllist, .backbtn, .addbtn, .paginate_button, .deletebtn, .filter").removeClass("DisableContent").parent().css("cursor", "auto");
+
+        });
+
+        function initDashboardSelectPicker() {
+            $('select').each(function () {
+                var $select = $(this);
+                if (!$select.hasClass('selectpicker')) {
+                    $select.addClass('selectpicker');
+                }
+                $select.attr('data-live-search', 'true');
+            });
+            if ($.fn.selectpicker) {
+                $('.selectpicker').selectpicker('render');
+            }
+        }
+
+
+        $(document).ready(function () {
+            initDashboardSelectPicker();
+        });
+
+
+        //datatable
+        $('#healthshetprojectList').dataTable({
+            "scrollY": true,
+            "scrollX": true,
+            "pageLength": 10,
+            "lengthChange": false,
+            "bFilter": false,
+            "ordering": false,
+            "responsive": true,
+            "destroy": false,
+            "retrieve": true,
+            "responsive": true,
+
+        });
+
+        setTimeout(function () {
+            $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
+        }, 0);
+        $('#healthshetprojectList').DataTable().columns.adjust().draw();
+
+        $(".collapse").on('show.bs.collapse', function (e) {
+            $(".table").resize();
+        });
+        $(".collapse").on('hidden.bs.collapse', function (e) {
+            $(".table").resize();
+        });
+
+        $('a[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+            $(".table").resize();
+        });
+
+        $('#TskMngmentTblID_wrapper').on('draw.dt', function () {
+            $(".table").resize();
+        });
+        $('.paginate_button').on('draw.dt', function () {
+            $(".table").resize();
+        });
+        
+        //$('#next').on('click', function () {
+        //    table.page('next').draw('page');
+        //});
+
+        //$('#previous').on('click', function () {
+        //    table.page('previous').draw('page');
+        //});
+
+        function resizeSection() {
+            var tblheight = $(window).height();
+            $('#healthshetprojectList_wrapper .dataTables_scrollBody').css({ 'height': tblheight - 450, "overflow-y": "auto" });
+
+            var tblheight = $(window).height();
+            $('.Resourcedetailpanel').css({ 'height': tblheight - 80 });
+        }
+        $(window).on("load resize scroll", function (e) {
+            resizeSection(this);
+
+        });
+
+
+
+
+        $("#filterpanel").on("show.bs.collapse", function () {
+            $(".clearalllink").css("display", "inline-block");
+        });
+        $("#filterpanel").on("hide.bs.collapse", function () {
+            $(".clearalllink").hide();
+        });
+
+        //check and uncheck checkbox
+        // Check or Uncheck All checkboxes
+        $(".chckHead").change(function () {
+            var checked = $(this).is(':checked');
+            if (checked) {
+                $(".chcktbl").each(function () {
+                    $(this).prop("checked", true);
+                });
+            } else {
+                $(".chcktbl").each(function () {
+                    $(this).prop("checked", false);
+                });
+            }
+        });
+
+        // Changing state of CheckAll checkbox
+        $(".chcktbl").click(function () {
+
+            if ($(".chcktbl").length == $(".chcktbl:checked").length) {
+                $(".chckHead").prop("checked", true);
+            } else {
+                $(".chckHead").removeAttr("checked");
+            }
+
+        });
+
+
+
+        //Graph script start Frome Here
+
+        //Total Task vs Completion Status
+        var ctx1 = document.getElementById("CompletionstatusGraph");
+        var myChart = new Chart(ctx1, {
+            type: 'doughnut',
+            data: {
+                labels: ["10%", "20%", "30%", "40%", "50%"],
+                datasets: [{
+                    label: '# 1',
+                    data: [8, 7, 10, 15, 12],
+                    backgroundColor: [
+                        'rgba(235, 28, 36, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        '#afd037',
+                        '#4bc0c0',
+
+                    ],
+                    borderColor: [
+                        '#fff',
+                        '#fff',
+                        '#fff',
+                        '#fff',
+                        '#fff',
+
+                    ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                cutoutPercentage: 60,
+                responsive: false,
+                segmentShowStroke: true,
+                legend: {
+                    display: true,
+                    position: 'right',
+                    labels: {
+                        fontColor: "#000080",
+                    }
+                },
+
+            }
+        });
+        //End Graph
+
+        //Delay in days graph start
+        var ctx = document.getElementById("DelayinDayschart").getContext("2d");
+
+        var data = {
+            labels: ["1Day", "3Day", "5Day", "7Day", "9Day"],
+            datasets: [{
+                label: "Delay Count",
+                text: "label",
+                backgroundColor: "#fbb03b",
+                data: [2, 3, 6, 0, 1]
+            }]
+        };
+
+        var tooltipsLabel = ['1Day', '3Day', '5Day', '7Day', '9Day']
+        var myBarChart = new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: {
+                title: {
+                    display: true,
+                    responsive: true,
+                    //text: ''
+                },
+                barValueSpacing: 20,
+                scales: {
+                    xAxes: [{
+                        maxBarThickness: 50,
+                        barPercentage: 0.6,
+                    }],
+                    yAxes: [{
+                        maxBarThickness: 20,
+                        ticks: {
+                            max: 10,
+                            min: 0
+                        }
+                    }]
+                },
+                responsive: true,
+
+
+                plugins: {
+                    datalabels: {
+                        align: 'end',
+                        anchor: 'end',
+                        //backgroundColor: function (context) {
+                        //    return context.dataset.backgroundColor;
+                        //},
+                        borderRadius: 4,
+                        color: 'white',
+                        formatter: function (value) {
+                            return value + " % ";
+                        }
+                    }
+                }
+            }
+        });
+
+        //delay in days graph end
+
+        //Monthly Resource Cost graph start
+        var ctx = document.getElementById("MonthlyResourceCostChart").getContext("2d");
+
+        var data = {
+            labels: ["Feb19", "Nov20", "Dec21"],
+            datasets: [{
+                label: "Resource Cost",
+                text: "label",
+                backgroundColor: "#fbb03b",
+                data: [1100, 2100, 250]
+            }]
+        };
+
+        var tooltipsLabel = ['Dhaka', 'Rajshahi', 'NewYork', 'London']
+        var myBarChart = new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: {
+                title: {
+                    display: true,
+                    responsive: true,
+                    //text: ''
+                },
+                barValueSpacing: 20,
+                scales: {
+                    xAxes: [{
+                        maxBarThickness: 50,
+                        barPercentage: 0.6,
+                    }],
+                    yAxes: [{
+                        maxBarThickness: 20,
+                        ticks: {
+                            max: 500,
+                            min: 0
+                        }
+                    }]
+                },
+                responsive: true,
+
+
+                plugins: {
+                    datalabels: {
+                        align: 'end',
+                        anchor: 'end',
+                        //backgroundColor: function (context) {
+                        //    return context.dataset.backgroundColor;
+                        //},
+                        borderRadius: 4,
+                        color: 'white',
+                        formatter: function (value) {
+                            return value + " % ";
+                        }
+                    }
+                }
+
+            }
+        });
+
+                        //Monthly Resource Cost graph end
+
+
+
+
+
+                        //Graph script end here
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,2726 @@
+/*INPUT.clsTextBox
+{
+	border-right: #cccccc 1px solid;
+	border-top: #cccccc 1px solid;
+	font-size: 8pt;
+	border-left: #cccccc 1px solid;
+	border-bottom: #cccccc 1px solid;
+	
+	background-color: #000000;
+}*/
+
+/*******TreeBody styling Start*****/
+/*Added By Vaijat K ON 28/11/2015*/
+#PageDiv #divControls .clsTable a
+{
+    text-decoration: underline !important; /*Added By Vaijat K ON 21/12/2015*/
+}
+ .gridFootable tr td a {
+        text-decoration:underline !important;           /* ADDED BY PUNEET M ON 24-11-2015 ANCHOR UNDERLINE IN GRID */
+    }
+     .clsPageBody .clsGridTable tr td a
+    {
+        text-decoration:underline !important; /* ADDED BY Vaijat K ON 18/12/2015 ANCHOR UNDERLINE IN GRID */
+    }
+     #divItems .clsGridTable tr td a
+    {
+        text-decoration:underline !important; /* ADDED BY Vaijat K ON 18/12/2015 ANCHOR UNDERLINE IN GRID */
+       white-space: pre-wrap !important; /* ADDED BY dIPALI v oN 8TH jUNE 2020 fOR DATA SHOULD BE display proper in grid */
+      word-break: break-word !important;
+    }
+
+
+ #divItems .clsGridTable tr td 
+    {
+        text-decoration:underline !important; /* ADDED BY Vaijat K ON 18/12/2015 ANCHOR UNDERLINE IN GRID */
+       white-space: pre-wrap !important; /* ADDED BY dIPALI v oN 8TH jUNE 2020 fOR DATA SHOULD BE display proper in grid */
+      word-break: break-word !important;
+    }
+
+
+#divListTag .clsGridTable tr td a {
+    text-decoration: underline !important; /* ADDED BY Vaijat K ON 18/12/2015 ANCHOR UNDERLINE IN GRID */
+    white-space: pre-wrap !important; /* ADDED BY dIPALI v oN 8TH jUNE 2020 fOR DATA SHOULD BE display proper in grid */
+    word-break: break-word !important;
+}
+
+
+
+#divListTag .clsGridTable tr td  {
+    text-decoration: underline !important; /* ADDED BY Vaijat K ON 18/12/2015 ANCHOR UNDERLINE IN GRID */
+    white-space: pre-wrap !important; /* ADDED BY dIPALI v oN 8TH jUNE 2020 fOR DATA SHOULD BE display proper in grid */
+    word-break: break-word !important;
+}
+
+/*Added By Usha Pandit On 31.12.2020 For removing unnecessary extra dash*/
+#divListTag .clsGridTable tr .footable-first-column {
+    text-decoration: none !important;
+    white-space: pre-wrap !important;
+    /*Commented By Reshma Chavan on 10th Feb 2021 For UI Issue On Microlink*/
+    /*word-break: break-word !important;*/
+    /*End of Commented By Reshma Chavan on 10th Feb 2021 For UI Issue On Microlink*/
+}
+/*End Of Added By Usha Pandit On 31.12.2020 For removing unnecessary extra dash*/
+
+#divListTag .clsGridTable tr td a :hover{
+    text-decoration: underline !important; /* ADDED BY Vaijat K ON 18/12/2015 ANCHOR UNDERLINE IN GRID */
+    white-space: pre-wrap !important; /* ADDED BY dIPALI v oN 8TH jUNE 2020 fOR DATA SHOULD BE display proper in grid */
+    word-break: break-word !important;
+}
+/*form
+{
+    margin:0px;
+}*/
+/*Added by Dhanashri S on 7 Dec 2015 For IssueID:1863*/
+
+#thisIsADummyControl
+{
+		display:none !important;
+}
+/*End of Addition by Dhanashri S on 7 Dec 2015*/
+#txtPageNumber
+{
+    height:20px !important;
+    margin:0px !important;
+    /*Added by Shamkant S on 5 Dec 2015*/
+    vertical-align:bottom;
+    /*Ended by Shamkant S on 5 Dec 2015*/
+}
+/*End of Addition By Vaijat K ON 28/11/2015*/
+body
+{
+	margin:0px;
+    overflow: hidden;
+}
+
+BODY.clsBody
+{
+	/*margin: 0px !important;*/
+	padding: 0px 2px 0px 2px !important;
+	border: 0px;
+}
+
+#tree
+{
+    
+    font-size: 11.5px !important;
+    font-weight:700;
+}
+
+#tree a
+{
+    
+    font-size: 11.5px !important;
+    font-weight: normal !important;
+}
+
+.footable
+{
+	border-spacing: 0px !important;
+}
+
+
+.footable thead tr th
+{
+	padding:3px !important;
+}
+
+.iframeLinks
+{
+	float: left;
+	width: 100%;
+	height:30px;
+	display: block;
+	border:none;
+}
+#tblGrid01034 a 
+{
+	font-size:11.5px;
+}
+
+/*.iframeTreeMain
+{
+    float:left;
+    width:20%;
+    display:block;
+	border:none;
+}*/
+/*Added by Dhanashri S for Test*/
+.iframeSub
+{
+    float:left;
+    /*width:69.7%;*/
+	width:100%;
+    display:block;
+	border:none;
+}
+/*End of Addition by Dhanashri S*/
+.hideTree
+{
+    width: 100% !important;
+}
+
+.clsTableBannerFrame
+{
+	margin-right:10px;
+}
+
+#tree
+{
+/*	overflow-y:hidden !important;
+	overflow-x:hidden !important;
+*/
+	height:100%;
+}
+
+#divListPageTag
+{
+    /*margin-top: 1%;*/
+}
+
+/*Added by Dhanashri 4 Mar 2015*/
+.clsGridTable td
+{
+    
+    padding: 3px !important;
+    border-right: 1px solid #d6d5d7;
+}
+/*Ended by Dhanashri*/
+.clsGridTable th
+{
+    border-right: 1px solid #c2c2c2 !important;
+}
+
+/*Context Menu hover */
+tr.CtMn_Node_Hover
+{
+    background: #F9D49F !important;
+}
+
+/*******TreeBody styling END *****/
+@media only screen and (min-width:1241px)
+{
+	/*Added by Dhanashri S on 13 Mar 2015*/
+	.tdTree_Inner_Height
+	{
+		vertical-align:top;
+        /*Commented by miiint*/
+		/*height:620px;*/
+	}
+	/* End of Addition*/
+	/*Added by Dhanashri S on 17 Mar 2015*/
+	.clsDivDB_Height
+	{
+		height:620px;
+	}
+	/*End of Addition*/
+	/*Added by Dhanashri S on 14 Mar 2015*/
+	.TD_clsTDBlank_width
+	{
+		width:35%;
+	}
+	.TD_clsTDBlank_width_SwitchProject
+	{
+		width: 20%;
+	}
+	/*End of Addition*/
+	/*Added by Dhanashri S on 16 Mar 2015 for Fav Tabs*/
+	.TD_clsTDBlank_width_FavTabs
+	{
+		width:35%;
+	}
+	.TD_clsTDBlank_width_PrevButton
+	{
+		width:10%;
+	}
+	.TD_clsTDBlank_width_NextRightButton
+	{
+		width:30%;
+	}
+	.clsWindow_Height_Width
+	{
+		height:80%;
+	}
+
+	/*End of Addition by Dhanashri S on 16 Mar 2015*/
+    /*Login page styling starts*/
+    #frmLogin table
+    {
+        width: 100%;
+        float: left;
+    }
+
+    #frmLogin .loginPageFooter
+    {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    #frmLogin #loginBox
+    {
+        width: 5%;
+        float:right;
+        cursor: pointer;
+        padding-right: 24px;
+    }
+
+    #frmLogin #divList
+    {
+        float:left;
+        width:100%;
+    }
+	/*Added by Dhanashri S on 9 Mar 2015*/
+    a.clsNavTab
+    {
+        
+        /*font-size: 11.5px !important;
+        font-weight: normal !important;*/
+		font-size:11.5px;
+		font-weight:bolder;
+    }
+	/*Ended by Dhanashri*/
+
+    a.clsNavTab:visited
+    {
+        
+        font-size: 11.5px !important;
+        font-weight: normal !important;
+    }
+    /*#frmLogin table .clsLinkPageHeader */
+
+
+    /***** Data Page styling Start****/
+
+    .clsTREvenRow td
+    {
+        
+        font-size: 11.5px !important;
+    }
+    .clsTREvenRow a
+    {
+        
+        font-size: 11.5px !important;
+        text-decoration: none !important;
+        color: #000000 !important;
+    }
+    .clsTROdd td
+    {
+        
+        font-size: 11.5px !important;
+    }
+
+    .clsTROdd a
+    {
+        
+        font-size: 11.5px !important;
+        text-decoration: none !important;
+        color: #000000 !important;
+    }
+
+    .clsTRColumnHeader th
+    {
+        
+        font-size: 11.5px !important;
+        font-weight:bold !important;
+    }
+	 #divListTag #tblGrid03109 thead tr th
+{
+	text-align:center !important;
+}
+    /***** Data Page styling END****/
+
+    /*Inner Page Header Link Starts*/
+	/*Added by Dhanashri S on 9 Mar 2015*/
+    .clsLinkPageHeaderInner
+    {
+        
+        /*font-weight: normal !important;*/
+		font-weight:bolder;
+    }
+	/*Ended by Dhanashri*/
+    .clsLinkPageHeaderInner b
+    {
+        
+        font-weight: normal !important;
+    }
+	/*Added by Dhanashri on 5 Mar 2015*/
+    .clsLinkPageHeaderInner a
+    {
+        
+        /*font-weight: normal !important;*/
+		font-weight:bolder;
+    }
+	/*Ended by Dhanashri*/
+
+    /*Inner Page Header Link Ends*/
+
+    /*Table Menu Starts*/
+
+    .clsTable .clsTRMenu td
+    {
+        
+        vertical-align: middle;
+    }
+
+    .clsTable .clsTRMenu td a
+    {
+        /* Modified By Puneet M on 29-06-2015 */
+		
+		font-size:11px;
+    }
+
+
+    .clsTable td
+    {
+        
+    }
+    .clsTRMenu ul
+    {
+        list-style-type: none;
+    }
+    .responsive_clsTRMenu:first-child
+    {
+        /*width:100%;*/
+        display: table-cell !important;
+        padding-right: 5px;
+        padding-left: 0px;
+    }
+    .responsive_clsTRMenu li
+    {
+        border-right:1px solid #000000;
+    }
+    .responsive_clsTRMenu a
+    {
+        font-size: 11.5px !important;
+    }
+    .clsBody .additional_clsTRMenu
+    {
+        right: 3px !important;
+        top: 22px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .clsPageBody .additional_clsTRMenu
+    {
+        right: 1px !important;
+        top: 22px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .clsHorizontalNavBody .additional_clsTRMenu
+    {
+        right: 7px !important;
+        top: 22px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+
+
+    .additional_clsTRMenu li
+    {
+        width:100%;
+        float:left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color:#e39321;
+        text-align: right;
+        padding-right: 5px;
+
+    }
+
+    .additional_clsTRMenu a
+    {
+        
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        float:left;
+        width: 100%;
+        color: #ffffff !important;
+    }
+    /*Table Menu Ends*/
+
+    /*Detail Footer Table Menu Starts*//*
+
+    .detail_responsive_clsTRMenu:first-child
+    {
+        width:100%;
+        display: table-cell !important;
+        padding-right: 5px;
+        padding-left: 0px;
+    }
+    .detail_responsive_clsTRMenu li
+    {
+        border-right:1px solid #000000;
+    }
+    .detail_responsive_clsTRMenu a
+    {
+        font-size: 11.5px !important;
+    }
+    .detail_additional_clsTRMenu
+    {
+        right: 3px !important;
+        bottom: 36px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .detail_additional_clsTRMenu li
+    {
+        width:100%;
+        float:left;
+        border-bottom: 1px solid gray;
+        line-height: 1.6;
+        background-color:#9abbea;
+    }
+    *//*Detail Footer Table Menu Ends*/
+
+    /*Table Grid Starts*/
+    .clsGridTable
+    {
+        border: none !important;
+    }
+    .clsGridTable .clsTRColumnHeader th
+    {
+        /*background: #f0d1a1 !important;*/
+       /* background-image:none !important;*/
+        /*border: none !important;*/
+        border-bottom: none !important;
+        border-top: none !important;
+        border-left: none !important;
+    }
+    .clsGridTable td
+    {
+        
+        padding: 3px !important;
+    }
+    /*Table Grid Starts*/
+    #frmDown #Main .clsTreeBody #frmTree
+    {
+        border: 1px solid red;
+    }
+    #frmDown #Main .clsTreeBody #frmTree #tree
+    {
+        width: 100%;
+        float: left;
+    }
+	/*dhanashri*/
+    .iframeSub
+    {
+        float:left;
+		width: 100%;
+        display:block;
+        border:none;
+    }
+
+    .hideTree
+    {
+        width: 100% !important;
+    }
+
+    .clsTable .clsTRMenu td:first-child
+    {
+        /*width: 54% !important;*/
+        font-size: 11.5px !important;
+    }
+
+	/*Added by Dhanashri on 5 Mar 2015*/
+    .clsTable .clsTRMenu td:nth-child(2)
+    {
+        /*width: 45% !important;*/
+		/*width:80%;*/
+    }
+	/*Ended by Dhanashri*/
+
+    .clsTable .clsTRMenu td:nth-child(2) a
+    {
+        /*font-size: 11.5px !important;*/
+		font-size: 11.5px !important;
+    }
+
+    .menu_arrow_img
+    {
+        padding: 3px 0px 3px 4px !important;
+        background-color: #e39321;
+        float: right !important;
+        width: 23px !important;
+    }
+
+    .additional_clsTRMenu a
+    {
+        font-size: 11.5px !important;
+        padding-left: 5px !important
+    }
+
+    #clsTRMenu_ul li a
+    {
+        font-size:11.5px;
+    }
+
+    #tblGrid0713 .clsTROdd td
+    {
+        font-size: 11.5px;
+    }
+
+    #tblGrid0713 .clsTREvenRow td
+    {
+        font-size: 11.5px;
+    }
+
+	
+
+    /* Sub Table Menu styling Starts*/
+    .additional_subClsTRMenu
+    {
+        padding-left: 0px !important;
+        width: 200px;
+        top:140px;
+    }
+    .additional_subClsTRMenu li
+    {
+        width: 100%;
+        float: left;
+        border-bottom: 1px solid gray;
+        line-height: 1.6;
+        background-color: #9abbea;
+    }
+    .subTagTableMenu a
+    {
+        font-size: 11.5px !important;
+    }
+    .responsive_subClsTRMenu:first-child
+    {
+        margin: 0%;
+        width: 100%;
+        display: table-cell !important;
+        padding-right: 5px;
+        padding-left: 0px;
+    }
+    .responsive_subClsTRMenu li
+    {
+        border-right: 1px solid #000000;
+    }
+    /*.subTagTableMenu .clsTRMenu
+    {
+        width: 100%;
+        float: left;
+        margin: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }*/
+   /* .subTagTableMenu .clsTRMenu td:first-child
+    {
+        width: 31% !important;
+    }*/
+
+    .clsTROdd td
+    {
+        font-size:11.5px !important;
+        border-top: 0px solid #f6eee4 !important;
+    }
+
+    .clsTREvenRow td
+    {
+        font-size: 11.5px !important;
+        border-top: 0px solid #f6eee4 !important;
+    }
+
+    #frmCommonList .clsTRMenu td a
+    {
+        font-size: 11.5px !important;
+        vertical-align: bottom;
+        color:black!important;
+    }
+    /* Sub Table Menu styling Ends*/
+
+    .additional_clsTRMenu a
+    {
+        
+        font-size: 11.5px !important;
+        padding-left: 5px !important
+
+    }
+	/*dhanashri*/
+    .clsTable td
+    {
+        
+        font-size: 11.5px !important;
+		/*font-size:9px !important;*/
+    }
+	/*Ended by Dhanashri*/
+    /*Footer Table Menu Starts*/
+    .footer_menu_arrow
+    {
+        padding: 4px 6px 2px 3px !important;
+        background-color: #e39321;
+        margin-top: 1px;
+        float: right !important;
+        width: 23px !important;
+    }
+    .footer_responsive_clsTRMenu:first-child
+    {
+        width:100%;
+        display: table-cell !important;
+        padding-right: 5px;
+        padding-left: 0px;
+    }
+    .footer_responsive_clsTRMenu li
+    {
+        border-right:1px solid #000000;
+    }
+    .footer_responsive_clsTRMenu a
+    {
+        font-size: 11.5px !important;
+    }
+    .footer_additional_clsTRMenu
+    {
+        right: 0px !important;
+        bottom: 23px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .footer_additional_clsTRMenu li
+    {
+        width: 100%;
+        float: left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color: #e39321;
+        text-align: right;
+        padding-right: 5px;
+    }
+    .footer_additional_clsTRMenu a
+    {
+        
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        color:#ffffff !important;
+
+    }
+
+    /*Footer Table Menu Ends*/
+
+    /*Sub Table Footer */
+
+    .footerMenu td:nth-child(2)
+    {
+        width: 60%!important;
+    }
+    .footer_responsive_subClsTRMenu:first-child
+    {
+        width: 100%;
+        display: table-cell !important;
+        padding-right: 5px;
+        padding-left: 0px;
+    }
+    .subTableFooterMenuArrow
+    {
+        padding: 4px 6px 2px 3px !important;
+        background-color: #e39321;
+        margin-top: 1px;
+        float: left !important;
+        width: 23px !important;
+    }
+    .footer_additional_subClsTRMenu
+    {
+        right: 3px !important;
+        bottom: 36px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .footer_additional_subClsTRMenu li
+    {
+        width:100%;
+        float:left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color:#e39321;
+        text-align: right;
+        padding-right: 5px;
+    }
+    .footer_responsive_subClsTRMenu li
+    {
+        border-right: 1px solid #000000;
+    }
+    .footer_additional_subClsTRMenu a
+    {
+        
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        width: 100%;
+        float: left;
+        color: #ffffff;
+
+    }
+    /*Sub Table Footer */
+
+    /* Customer Detail Menu starts*//*
+    .detail_menu_arrow
+    {
+        padding: 4px 6px 2px 3px !important;
+        background-color: #e39321;
+        margin-top: 1px;
+        float: left !important;
+        width: 23px !important;
+    }
+    .detail_additional_clsTRMenu
+    {
+        right: 3px !important;
+        bottom: 36px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .detail_additional_clsTRMenu li
+    {
+        width:100%;
+        float:left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color:#e39321;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .detail_additional_clsTRMenu a
+    {
+        font-family: 'HELVETICA';
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        width: 100%;
+        float: left;
+        color: #ffffff !important;
+    }
+    *//* Customer Detail Menu ends*/
+
+    /* Sub Table Menu starts*/
+    .subTableMenuArrow
+    {
+        padding: 2px 0px 2px 4px !important;
+        background-color: #e39321;
+        /*margin-top: 1px;*/
+        float: left !important;
+        width: 23px !important;
+    }
+    .additional_subClsTRMenu
+    {
+        right: 3px !important;
+        bottom: 36px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .additional_subClsTRMenu li
+    {
+        width:100%;
+        float:left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color:#e39321;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .additional_subClsTRMenu a
+    {
+        
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        width: 100%;
+        float: left;
+        color: #ffffff;
+
+    }
+    /* Sub Table Menu ends*/
+}
+
+
+@media only screen and (min-width:992px) and (max-width:1240px)
+{
+	/*Added by Dhanashri S on 13 Mar 2015*/
+	.tdTree_Inner_Height
+	{
+		vertical-align:top;
+		/*Updated by Dhanashri S on 16 Mar 2015*/
+		/*height:550px;*/
+		/*height:300px;*/
+		/*End of Updation*/
+	}
+	/* End of Addition*/
+	/*Added by Dhanashri S on 17 Mar 2015*/
+	.clsDivDB_Height
+	{
+		height:300px;
+	}
+	/*End of Addition*/
+	/*Added by Dhanashri S on 14 Mar 2015*/
+	.TD_clsTDBlank_width
+	{
+		width:30%;
+	}
+	.TD_clsTDBlank_width_SwitchProject
+	{
+		width:15%;
+	}
+	/*End of Addition*/
+	/*Added by Dhanashri S on 16 Mar 2015*/
+	.TD_clsTDBlank_width_FavTabs
+	{
+		width:25%;
+	}
+	.TD_clsTDBlank_width_PrevButton
+	{
+		width:3%;
+	}
+	.TD_clsTDBlank_width_NextRightButton
+	{
+		width:20%;
+	}
+	.clsWindow_Height_Width
+	{
+		height:80%;
+	}
+	/*End of Addition by Dhanashri S on 16 Mar 2015*/
+    /*Login page styling starts*/
+
+    #frmLogin #loginBox
+    {
+        width: 5%;
+        float:right;
+        cursor: pointer;
+        padding-right: 24px;
+    }
+
+    #frmLogin .loginPageFooter
+    {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    #frmLogin #divList
+    {
+        float:left;
+        width:100%;
+    }
+	/*Added by Dhanashri on 5 Mar 2015*/
+    a.clsNavTab
+    {
+        
+        /*font-size: 11.5px !important;
+        font-weight: normal !important;*/
+		font-size:11px;
+		font-weight:bolder;
+    }
+
+    a.clsNavTab:visited
+    {
+        
+         /*font-size: 11.5px !important;
+        font-weight: normal !important;*/
+		 font-size:11px;
+		 font-weight:bolder;
+
+    }
+	/*Ended by Dhanashri*/
+    /*#frmLogin table .clsLinkPageHeader */
+    /***** Data Page styling Start****/
+
+    .clsTREvenRow a
+    {
+        /*			Modified By Puneet 29-06-2015
+        font-size: 11.5px !important;*/
+	
+        font-size: 11.5px !important;
+        text-decoration: none !important;
+        color: #000000 !important;
+    }
+	/*Added by Dhanashri S on 30 Nov 2015*/
+	.clsTREven a
+    {
+        /*			Modified By Puneet 29-06-2015
+        font-size: 11.5px !important;*/
+		
+        font-size: 11.5px !important;
+        text-decoration: none !important;
+        color: #000000 !important;
+    }
+	/*End of Addition by Dhanashri S on 30 Nov 2015*/
+    .clsTROdd a
+    {
+        /*			Modified By Puneet 29-06-2015
+        font-size: 11.5px !important;*/
+		
+        font-size: 11.5px !important;
+        text-decoration: none !important;
+        color: #000000 !important;
+    }
+    .clsTREvenRow td
+    {
+        /*			Modified By Puneet 29-06-2015
+        font-size: 11.5px !important;*/
+		
+        font-size: 11.5px !important;
+        border-top: 0px solid #f6eee4 !important;
+white-space:normal;/*added by pradip on 21-10-2020 for JD Issue*/
+    }
+
+    .clsTROdd td
+    {
+        /*			Modified By Puneet 29-06-2015
+        font-size: 11.5px !important;*/
+		
+        font-size: 11.5px !important;
+        border-top: 0px solid #f6eee4 !important;
+		white-space:normal;/*added by pradip on 21-10-2020 for JD Issue*/
+    }
+
+
+    .clsTRColumnHeader th
+    {
+        
+        font-size: 11.5px !important;
+        font-weight:bold !important;
+    }
+
+    /***** Data Page styling END****/
+
+    /*Inner Page Header Link Starts*/
+    .clsLinkPageHeaderInner
+    {
+        
+        font-weight: normal !important;
+    }
+    .clsLinkPageHeaderInner b
+    {
+        
+        font-weight: normal !important;
+    }
+    .clsLinkPageHeaderInner a
+    {
+        
+        font-weight: normal !important;
+    }
+
+    /*Inner Page Header Link Ends*/
+
+    /*Table Menu Starts*/
+
+    #frmCommonList .clsTRMenu td
+    {
+        padding: 4px 0px 2px 0px !important;
+    }
+
+
+    .clsTable .clsTRMenu td:first-child
+    {
+        /*width: 54% !important;*/
+        font-size: 11.5px !important;
+    }
+    .clsTable .clsTRMenu td:nth-child(2) a
+    {
+        /*font-size: 11.5px !important;		Modidified By Puneet 29-06-2015		*/
+		font-size: 11.5px !important;
+    }
+
+    .menu_arrow_img
+    {
+       /* padding: 4px 6px 2px 3px !important;*/
+        padding: 3px 0px 3px 4px !important;
+        background-color: #e39321;
+        float: right !important;
+        width: 23px !important;
+    }
+
+    #frmCommonList .clsTRMenu td a
+    {
+        /*font-size: 11.5px !important;*/		/* Commented & Modified By Puneet on 29-06-2015 */
+		font-size: 11.5px !important;
+        vertical-align: bottom;
+    }
+
+    .clsTable .clsTRMenu td
+    {
+        
+        vertical-align: middle;
+    }
+
+    .clsTable .clsTRMenu td a
+    {
+        /* Modified By Puneet M on 29-06-2015*/
+		
+      /*Added And Commented By Vidya J ON 1-12-2015*/  
+		/*font-size:11px;*/
+        font-size:11.5px !important;
+        /*End Of Added And Commented By Vidya J ON 1-12-2015*/  
+    }
+    .clsTable td
+    {
+        /*		Modified By Puneet on 29-06-2015
+        font-size: 11.5px;*/
+		
+        font-size: 11.5px;
+    }
+    .clsTRMenu ul
+    {
+        list-style-type: none;
+    }
+    .responsive_clsTRMenu:first-child
+    {
+        /*width:100%;*/
+        display: table-cell !important;
+        /*padding-right: 5px;    Commented By Shamkant S ON 09/12/2015*/
+        padding-left: 0px;
+    }
+    .responsive_clsTRMenu li
+    {
+        border-right:1px solid #000000;
+    }
+    .responsive_clsTRMenu a
+    {
+        font-size: 11.5px !important;
+    }
+    .clsBody .additional_clsTRMenu
+    {
+        right: 3px !important;
+        top: 22px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .clsPageBody .additional_clsTRMenu
+    {
+        right: 1px !important;
+        top: 22px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .clsHorizontalNavBody .additional_clsTRMenu
+    {
+        right: 7px !important;
+        top: 22px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .additional_clsTRMenu li
+    {
+        width:100%;
+        float:left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color:#e39321;
+        text-align: right;
+        padding-right: 5px;
+
+    }
+
+    .additional_clsTRMenu a
+    {
+        
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        float:left;
+        width: 100%;
+        color: #ffffff !important;
+    }
+    /*Table Menu Ends*/
+
+    /*Table Grid Starts*/
+    .clsGridTable
+    {
+        border: none !important;
+    }
+    .clsGridTable .clsTRColumnHeader th
+    {
+        /*background: #f0d1a1 !important;*/
+        color:#000!important;
+       /* background-image:none !important;*/
+        /*border: none !important;*/
+        border-left: none !important;
+        border-top: none !important;
+        border-bottom: none !important;
+		/*text-align :center !important*/
+    }
+	#tblGrid03109 .clsGridTable .clsTRColumnHeader th 
+	{
+   	text-align :center !important
+	}
+	/*Added by Dhanashri*/
+    .clsGridTable td
+    {
+       
+        padding: 3px !important;
+        border-right: 1px solid #d6d5d7;
+    }
+	/*Ended by Dhanashri*/
+
+    .clsGridTable th
+    {
+        border-right: 1px solid #c2c2c2 !important;
+    }
+    /*Table Grid Starts*/
+	/*dhanashri*/
+    .iframeSub
+    {
+        float:left;
+        width:100%;
+        display:block;
+        border:none;
+		font-size:11.5px;
+    }
+
+    .hideTree
+    {
+        width: 100% !important;
+    }
+
+    #clsTRMenu_ul li a
+    {
+        font-size:11.5px;
+    }
+
+    #tblGrid0713 .clsTROdd td
+    {
+        font-size: 11.5px;
+    }
+
+    #tblGrid0713 .clsTREvenRow td
+    {
+        font-size: 11.5px;
+    }
+    /* Sub Table Menu styling Starts*/
+    .additional_subClsTRMenu
+    {
+        padding-left: 0px !important;
+        width: 200px;
+        top:140px;
+    }
+    .additional_subClsTRMenu li
+    {
+        width: 100%;
+        float: left;
+        border-bottom: 1px solid gray;
+        line-height: 1.6;
+        background-color: #9abbea;
+    }
+    .subTagTableMenu a
+    {
+        font-size: 11.5px !important;
+    }
+    .responsive_subClsTRMenu:first-child
+    {
+        margin: 0%;
+        width: 100%;
+        display: table-cell !important;
+        padding-right: 5px;
+        padding-left: 0px;
+    }
+    .responsive_subClsTRMenu li
+    {
+        border-right: 1px solid #000000;
+    }
+    /*.subTagTableMenu .clsTRMenu
+    {
+        width: 100%;
+        float: left;
+        margin: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }*/
+   /* .subTagTableMenu .clsTRMenu td:first-child
+    {
+        width: 29% !important;
+    }*/
+
+    /* Sub Table Menu styling Ends*/
+   /* #Sub table:last-child
+    {
+        display:none !important;
+        background-color: red !important;
+    }*/
+
+    /*Footer Table Menu Starts*/
+
+
+    .footer_menu_arrow
+    {
+        padding: 4px 6px 2px 3px !important;
+        background-color: #e39321;
+        margin-top: 1px;
+        float: right !important;
+        width: 23px !important;
+    }
+
+    .footer_responsive_clsTRMenu:first-child
+    {
+        width:100%;
+        display: table-cell !important;
+        /*padding-right: 5px;   Commented By Shamkant S ON 09/12/2015*/
+        padding-left: 0px;
+    }
+    .footer_responsive_clsTRMenu li
+    {
+        border-right:1px solid #000000;
+    }
+    .footer_responsive_clsTRMenu a
+    {
+        font-size: 11.5px !important;
+    }
+    .footer_additional_clsTRMenu
+    {
+        right: 3px !important;
+        bottom: 23px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .footer_additional_clsTRMenu li
+    {
+        width: 100%;
+        float: left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color: #e39321;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .footer_additional_clsTRMenu a
+    {
+        
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        color:#ffffff !important;
+
+    }
+    /*Footer Table Menu Ends*/
+
+    /*Detail Footer Table Menu Starts*//*
+
+    .detail_menu_arrow
+    {
+        padding: 4px 6px 2px 3px !important;
+        background-color: #e39321;
+        margin-top: 1px;
+        float: left !important;
+        width: 23px !important;
+    }
+
+    .detail_responsive_clsTRMenu:first-child
+    {
+        width:100%;
+        display: table-cell !important;
+        padding-right: 5px;
+        padding-left: 0px;
+    }
+    .detail_responsive_clsTRMenu li
+    {
+        border-right:1px solid #000000;
+    }
+    .detail_responsive_clsTRMenu a
+    {
+        font-size: 11.5px !important;
+    }
+    .detail_additional_clsTRMenu
+    {
+        right: 3px !important;
+        bottom: 36px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .detail_additional_clsTRMenu li
+    {
+        width:100%;
+        float:left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color:#e39321;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .detail_additional_clsTRMenu a
+    {
+        font-family: 'HELVETICA';
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        width: 100%;
+        float: left;
+        color: #ffffff !important;
+
+    }
+    *//*Detail Footer Table Menu Ends*/
+    /*Sub Table Footer */
+
+    .footerMenu td:first-child
+    {
+        width:37% !important;
+    }
+    .footerMenu td:nth-child(2)
+    {
+        width: 62% !important;
+    }
+    .footer_responsive_subClsTRMenu:first-child
+    {
+        width: 100%;
+        display: table-cell !important;
+        padding-right: 5px;
+        padding-left: 0px;
+    }
+    .subTableFooterMenuArrow
+    {
+        padding: 4px 6px 2px 3px !important;
+        background-color: #e39321;
+        margin-top: 1px;
+        float: left !important;
+        width: 23px !important;
+    }
+    .footer_additional_subClsTRMenu
+    {
+        right: 3px !important;
+        bottom: 36px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .footer_additional_subClsTRMenu li
+    {
+        width:100%;
+        float:left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color:#e39321;
+        text-align: right;
+        padding-right: 5px;
+    }
+    .footer_responsive_subClsTRMenu li
+    {
+        border-right: 1px solid #000000;
+    }
+    .footer_additional_subClsTRMenu a
+    {
+        
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        width: 100%;
+        float: left;
+        color: #ffffff;
+
+    }
+    /*Sub Table Footer */
+    /* Sub Table Menu starts*/
+    .subTableMenuArrow
+    {
+        padding: 2px 0px 2px 4px !important;
+        background-color: #e39321;
+        /*margin-top: 1px;*/
+        float: left !important;
+        width: 23px !important;
+    }
+    .additional_subClsTRMenu
+    {
+        right: 3px !important;
+        bottom: 36px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .additional_subClsTRMenu li
+    {
+        width:100%;
+        float:left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color:#e39321;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .additional_subClsTRMenu a
+    {
+        
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        width: 100%;
+        float: left;
+        color: #ffffff;
+
+    }
+    /* Sub Table Menu ends*/
+
+}
+
+@media only screen and (min-width:768px) and (max-width:991px)
+{
+	/*Added by Dhanashri S on 13 Mar 2015*/
+	.tdTree_Inner_Height
+	{
+		vertical-align:top;
+		/*Updated by Dhanashri S on 16 Mar 2015*/
+		/*height:540px;*/
+		/*height:300px;*/
+		/*End of Updation*/
+	}
+	/* End of Addition*/
+	/*Added by Dhanashri S on 17 Mar 2015*/
+	.clsDivDB_Height
+	{
+		height:300px;
+	}
+	/*End of Addition*/
+	/*Added by Dhanashri S on 14 Mar 2015*/
+	.TD_clsTDBlank_width
+	{
+		width:30%;
+	}
+	.TD_clsTDBlank_width_SwitchProject
+	{
+		width:12%;
+	}
+	/*End of Addition */
+	/*Added by Dhanashri S on 16 Mar 2015*/
+	.TD_clsTDBlank_width_FavTabs
+	{
+		width:30%;
+	}
+	.TD_clsTDBlank_width_PrevButton
+	{
+		width:3%;
+	}
+	.TD_clsTDBlank_width_NextRightButton
+	{
+		width:10%;
+	}
+	/*Height and Width of Window responsive*/
+	.clsWindow_Height_Width
+	{
+		height:80%;
+	}
+	/*End of Addition by Dhanashri S on 16 Mar 2015*/
+
+   /*Commented by Dhanashri S on 16 Mar 2015 to display Fav tab*/
+	 /*.clsBody table.clsTable:nth-last-child(2)
+    {
+        position: absolute;
+        bottom: 0px;
+    }*/
+	 /*End of Comment by Dhanashri S*/
+
+
+/*Login Page styling starts*/
+    #frmLogin #loginBox
+    {
+        width: 5%;
+        float:right;
+        cursor: pointer;
+        padding-right: 24px;
+    }
+
+
+    #frmLogin .loginPageFooter
+    {
+        position: absolute;
+        bottom: 0px;
+    }
+
+
+    #frmCommonList .clsTRMenu td
+    {
+        padding: 4px 0px 2px 0px !important;
+    }
+
+    .menu_arrow_img
+    {
+       /* padding: 4px 6px 2px 3px !important;*/
+        padding: 3px 0px 3px 4px !important;
+        background-color: #e39321;
+        float: right !important;
+        width: 23px !important;
+    }
+
+    #frmCommonList .clsTRMenu td a
+    {
+        /*font-size: 11.5px !important;		Modified By Puneet 29-06-2015		*/
+		font-size: 11.5px !important;
+        vertical-align: bottom;
+    }
+
+    #frmLogin table
+    {
+        width: 100% !important;
+        float: left !important;
+        /*display: block !important;*/
+       /* table-layout: fixed !important;*/
+
+    }
+    #frmLogin #divList
+    {
+        float:left;
+        width:100%;
+    }
+
+    a.clsNavTab
+    {
+        
+        font-size: 11.5px !important;
+        font-weight: normal !important;
+    }
+
+    a.clsNavTab:visited
+    {
+        
+        font-size: 11.5px !important;
+        font-weight: normal !important;
+    }
+    /*#frmLogin table .clsLinkPageHeader */
+    /***** Data Page styling Start****/
+
+    .clsTREvenRow a
+    {
+        
+        font-size: 11.5px !important;
+        text-decoration: none !important;
+        color: #000000 !important;
+    }
+
+    .clsTROdd a
+    {
+        
+        font-size: 11.5px !important;
+        text-decoration: none !important;
+        color: #000000 !important;
+    }
+
+    .clsTRColumnHeader th
+    {
+        
+        font-size: 11.5px !important;
+        font-weight:bold !important;
+    }
+
+    /***** Data Page styling END****/
+
+    /*Inner Page Header Link Starts*/
+	/*Added by Dhanashri on 5 Mar 2015*/
+    .clsLinkPageHeaderInner
+    {
+        
+      
+		font-size:11.5px;
+		font-weight:bolder;
+    }
+    .clsLinkPageHeaderInner b
+    {
+
+		font-size:11.5px;
+		font-weight:bolder;
+    }
+    .clsLinkPageHeaderInner a
+    {
+
+		font-size:11.5px;
+		font-weight:bolder
+    }
+	/*Ended by Dhanashri*/
+
+    /*Inner Page Header Link Ends*/
+
+
+    /*Styling of login page table starts*/
+    #frmLogin .clsTable .clsTRMenu td
+    {
+
+        width: 100% !important;
+        /*float: left !important;*/
+
+    }
+
+    /*Styling of login page table ends*/
+    /*Table Menu Starts*/
+    .clsTable .clsTRMenu td
+    {
+;
+       /* width: 100%;*/
+        /*float: left;*/
+        vertical-align: middle;
+    }
+    .clsTable .clsTRMenu td a
+    {
+
+		font-size:11px;
+    }
+    .clsTable td
+    {
+        
+        font-size: 11.5px !important;
+    }
+
+    .clsTRMenu ul
+    {
+        list-style-type: none;
+    }
+    .responsive_clsTRMenu:first-child
+    {
+        /*width:100%;*/
+        display: table-cell !important;
+        padding-right: 5px;
+        padding-left: 0px;
+    }
+    .responsive_clsTRMenu li
+    {
+        border-right:1px solid #000000;
+    }
+    .responsive_clsTRMenu a
+    {
+        font-size: 11.5px !important;
+    }
+    .clsBody .additional_clsTRMenu
+    {
+        right: 3px !important;
+        top: 22px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .clsPageBody .additional_clsTRMenu
+    {
+        right: 1px !important;
+        top: 22px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .clsHorizontalNavBody .additional_clsTRMenu
+    {
+        right: 7px !important;
+        top: 22px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .additional_clsTRMenu li
+    {
+        width:100%;
+        float:left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color:#e39321;
+        text-align: right;
+        padding-right: 5px;
+
+    }
+
+    .additional_clsTRMenu a
+    {
+        
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        float:left;
+        width: 100%;
+        color: #ffffff !important;
+    }
+    /*Table Menu Ends*/
+
+   /* *//* Detail Footer Table *//*
+    .detail_responsive_clsTRMenu:first-child
+    {
+        width:100%;
+        display: table-cell !important;
+        padding-right: 5px;
+        padding-left: 0px;
+    }
+    .detail_responsive_clsTRMenu li
+    {
+        border-right:1px solid #000000;
+    }
+    .detail_responsive_clsTRMenu a
+    {
+        font-size: 11.5px !important;
+    }
+    .detail_additional_clsTRMenu
+    {
+        right: 3px !important;
+        bottom: 36px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .detail_additional_clsTRMenu li
+    {
+        width:100%;
+        float:left;
+        border-bottom: 1px solid gray;
+        line-height: 1.6;
+        background-color:#9abbea;
+    }
+    *//*Detail Footer Table Menu Ends*/
+
+
+    /*Table Grid Starts*/
+    .clsGridTable
+    {
+        border: none !important;
+    }
+    .clsGridTable .clsTRColumnHeader th
+    {
+        /*background: #f0d1a1 !important;*/
+       /* background-image:none !important;*/
+        /*border: none !important;*/
+    }
+    .clsGridTable td
+    {
+        
+        padding: 3px !important;
+        border-top: 0px solid #f6eee4 !important;
+    }
+    /*Table Grid ends*/
+
+    .additional_clsTRMenu a
+    {
+        font-size:11.5px !important;
+        padding-left: 5px !important;
+    }
+
+    #clsTRMenu_ul li a
+    {
+        font-size:11.5px;
+    }
+	/*Added by Dhanashri S on 13 Mar 2015*/
+    .iframeSub
+    {
+        float:left;
+        /*width:69.6%;*/
+		width:100%;
+        display:block;
+        border:none;
+    }
+	/*End of Addition*/
+
+    .hideTree
+    {
+        width: 100% !important;
+    }
+
+    #tree
+    {
+        
+        font-size: 11.5px !important;
+        font-weight:700;
+    }
+
+    #tree a
+    {
+        
+        font-size: 11.5px !important;
+        font-weight: normal !important;
+    }
+    .clsTable .clsTRMenu td:first-child
+    {
+        /*width: 60% !important;*/
+         /*width: 61% !important;*/
+    }
+  /*  .clsTable .clsTRMenu td:nth-child(2)
+    {
+        width: 38% !important;
+    }*/
+
+    #tblGrid0713 .clsTROdd td
+    {
+        font-size: 11.5px;
+    }
+
+    #tblGrid0713 .clsTREvenRow td
+    {
+        font-size: 11.5px;
+    }
+    /* Sub Table Menu styling Starts*/
+    .additional_subClsTRMenu
+    {
+        padding-left: 0px !important;
+        width: 200px;
+        top:140px;
+    }
+    .additional_subClsTRMenu li
+    {
+        width: 100%;
+        float: left;
+        border-bottom: 1px solid gray;
+        line-height: 1.6;
+        background-color: #9abbea;
+    }
+    .subTagTableMenu a
+    {
+        font-size: 11.5px !important;
+    }
+    .responsive_subClsTRMenu:first-child
+    {
+        margin: 0%;
+        width: 100%;
+        display: table-cell !important;
+        padding-right: 5px;
+        padding-left: 0px;
+    }
+    .responsive_subClsTRMenu li
+    {
+        border-right: 1px solid #000000;
+    }
+    /*.subTagTableMenu .clsTRMenu
+    {
+        width: 100%;
+        float: left;
+        margin: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }*/
+   /* .subTagTableMenu .clsTRMenu td:first-child
+    {
+        width: 29% !important;
+    }*/
+
+    /* Sub Table Menu styling Ends*/
+   /* #Sub table:last-child
+    {
+        display:none !important;
+       background-color: red !important;
+    }*/
+
+
+    /*Footer Table Menu Starts*/
+    .footer_menu_arrow
+    {
+        padding: 4px 6px 2px 3px !important;
+        background-color: #e39321;
+        margin-top: 1px;
+        float: right !important;
+        width: 23px !important;
+    }
+    .footer_responsive_clsTRMenu:first-child
+    {
+        width:100%;
+        display: table-cell !important;
+        padding-right: 5px;
+        padding-left: 0px;
+    }
+    .footer_responsive_clsTRMenu li
+    {
+        border-right:1px solid #000000;
+    }
+    .footer_responsive_clsTRMenu a
+    {
+        font-size: 11.5px !important;
+    }
+    .footer_additional_clsTRMenu
+    {
+        right: 3px !important;
+        bottom: 29px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .footer_additional_clsTRMenu li
+    {
+        width: 100%;
+        float: left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color: #e39321;
+        text-align: right;
+        padding-right: 5px;
+    }
+    .footer_additional_clsTRMenu a
+    {
+        
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        color:#ffffff !important;
+
+    }
+    /*Footer Table Menu Ends*/
+
+/*
+    #divSection1 .clsTable td
+    {
+        display:block;
+    }
+
+    #divSection1 .clsTable tr
+    {
+        display:block;
+    }
+*/
+
+    /*Sub Table Footer */
+
+    .footerMenu td:nth-child(2)
+    {
+        width: 64%!important;
+    }
+    .footer_responsive_subClsTRMenu:first-child
+    {
+        width: 100%;
+        display: table-cell !important;
+        padding-right: 5px;
+        padding-left: 0px;
+    }
+    .subTableFooterMenuArrow
+    {
+        padding: 4px 6px 2px 3px !important;
+        background-color: #e39321;
+        margin-top: 1px;
+        float: left !important;
+        width: 23px !important;
+    }
+    .footer_additional_subClsTRMenu
+    {
+        right: 3px !important;
+        bottom: 36px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .footer_additional_subClsTRMenu li
+    {
+        width:100%;
+        float:left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color:#e39321;
+        text-align: right;
+        padding-right: 5px;
+    }
+    .footer_responsive_subClsTRMenu li
+    {
+        border-right: 1px solid #000000;
+    }
+    .footer_additional_subClsTRMenu a
+    {
+        
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        width: 100%;
+        float: left;
+        color: #ffffff;
+
+    }
+    /*Sub Table Footer */
+  /*  *//* Customer Detail Menu starts*//*
+    .detail_menu_arrow
+    {
+        padding: 4px 6px 2px 3px !important;
+        background-color: #e39321;
+        margin-top: 1px;
+        float: left !important;
+        width: 23px !important;
+    }
+    .detail_additional_clsTRMenu
+    {
+        right: 3px !important;
+        bottom: 36px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .detail_additional_clsTRMenu li
+    {
+        width:100%;
+        float:left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color:#e39321;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .detail_additional_clsTRMenu a
+    {
+        font-family: 'HELVETICA';
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        width: 100%;
+        float: left;
+        color: #ffffff !important;
+
+    }
+    *//* Customer Detail Menu ends*/
+    /* Sub Table Menu starts*/
+    .subTableMenuArrow
+    {
+        padding: 2px 0px 2px 4px !important;
+        background-color: #e39321;
+       /* margin-top: 1px;*/
+        float: left !important;
+        width: 23px !important;
+    }
+    .additional_subClsTRMenu
+    {
+        right: 3px !important;
+        bottom: 36px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .additional_subClsTRMenu li
+    {
+        width:100%;
+        float:left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color:#e39321;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .additional_subClsTRMenu a
+    {
+        
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        width: 100%;
+        float: left;
+        color: #ffffff;
+
+    }
+    /* Sub Table Menu ends*/
+}
+
+
+@media only screen and (max-width:767px)
+{
+	/*Added by Dhanashri S on 13 Mar 2015*/
+	.tdTree_Inner_Height
+	{
+		vertical-align:top;
+		/*Updated by Dhanashri S on 16 Mar 2015*/
+		/*height:500px;*/
+		/*height:300px;*/
+		/*End of Updation*/
+	}
+	/*Added by Dhanashri S on 17 Mar 2015*/
+	.clsDivDB_Height
+	{
+		height:300px;
+	}
+	/*End of Addition*/
+	/*Added by Dhanashri S on 14 Mar 2015*/
+	.TD_clsTDBlank_width
+	{
+		width:35%;
+	}
+	.TD_clsTDBlank_width_SwitchProject
+	{
+		width:15%;
+	}
+	/*End of Addition*/
+	/* End of Addition*/
+	/*Added by Dhanashri S on 16 Mar 2015*/
+	.TD_clsTDBlank_width_FavTabs
+	{
+		width:25%;
+	}
+	.TD_clsTDBlank_width_PrevButton
+	{
+		width:3%;
+	}
+	.TD_clsTDBlank_width_NextRightButton
+	{
+		width:10%;
+	}
+	.clsWindow_Height_Width
+	{
+		height:80%;
+	}
+	/*End of Addition by Dhanashri S on 16 mar 2015*/
+    /*Login page footer styling starts*/
+    #frmLogin #loginBox
+    {
+        width: 5%;
+        float:right;
+        cursor: pointer;
+        padding-right: 24px;
+    }
+
+    #frmLogin .loginPageFooter
+    {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    /*Login page footer styling ends*/
+    /*Inner Page Header Link Starts*/
+    .clsLinkPageHeaderInner
+    {
+        
+        font-weight: normal !important;
+        font-size: 10px !important;
+    }
+
+    .clsLinkPageHeaderInner a
+    {
+        
+        font-weight: normal !important;
+    }
+
+    .clsLinkPageHeaderInner b
+    {
+        
+        font-weight: normal !important;
+    }
+
+    /*Inner Page Header Link ends*/
+
+    #frmCommonList .clsTRMenu td
+    {
+        padding: 4px 0px 2px 0px !important;
+    }
+
+    #frmCommonList .clsTRMenu td a
+    {
+        font-size: 11.5px !important;
+        vertical-align: bottom;
+    }
+
+    #frmLogin table
+    {
+        width: 100% !important;
+        float: left !important;
+        /*display: block !important;*/
+       /* table-layout: fixed !important;*/
+
+    }
+    #frmLogin #divList
+    {
+        float:left;
+        width:100%;
+    }
+
+    a.clsNavTab
+    {
+        
+        font-size: 11.5px !important;
+        font-weight: normal !important;
+    }
+
+    a.clsNavTab:visited
+    {
+        
+        font-size: 11.5px !important;
+        font-weight: normal !important;
+    }
+    /*#frmLogin table .clsLinkPageHeader */
+    /***** Data Page styling Start****/
+
+    .clsTREvenRow a
+    {
+        
+        font-size: 11.5px !important;
+        text-decoration: none !important;
+        color: #000000 !important;
+    }
+
+    .clsTROdd a
+    {
+        
+        font-size: 11.5px !important;
+        text-decoration: none !important;
+        color: #000000 !important;
+    }
+
+    .clsTRColumnHeader th
+    {
+        
+        font-size: 11.5px !important;
+        font-weight:bold !important;
+    }
+
+    /***** Data Page styling END****/
+
+    /*Inner Page Header Link Starts*/
+    .clsLinkPageHeaderInner
+    {
+        
+        font-weight: normal !important;
+    }
+    .clsLinkPageHeaderInner b
+    {
+        
+        font-weight: normal !important;
+    }
+    .clsLinkPageHeaderInner a
+    {
+        
+        font-weight: normal !important;
+    }
+
+    /*Inner Page Header Link Ends*/
+
+
+    /*Styling of login page table starts*/
+    #frmLogin .clsTable .clsTRMenu td
+    {
+        
+        width: 100% !important;
+       /* float: left !important;*/
+    }
+
+    /*Styling of login page table ends*/
+
+    /*Table Menu Starts*/
+    .clsTable .clsTRMenu td
+    {
+        
+        /*width: 100%;*/
+        /*float: left;*/
+        vertical-align: middle;
+    }
+    .clsTable .clsTRMenu td a
+    {
+        
+    }
+    .clsTable td
+    {
+        
+        font-size: 11.5px !important;
+    }
+    .clsTRMenu ul
+    {
+        list-style-type: none;
+    }
+    .responsive_clsTRMenu:first-child
+    {
+        /*width:100%;*/
+        display: table-cell !important;
+        padding-right: 5px;
+        padding-left: 0px;
+
+    }
+    .responsive_clsTRMenu li
+    {
+        border-right:1px solid #000000;
+    }
+    .responsive_clsTRMenu a
+    {
+        font-size: 11.5px !important;
+    }
+    .clsBody .additional_clsTRMenu
+    {
+        right: 3px !important;
+        top: 22px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .clsPageBody .additional_clsTRMenu
+    {
+        right: 1px !important;
+        top: 22px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .clsHorizontalNavBody .additional_clsTRMenu
+    {
+        right: 7px !important;
+        top: 22px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .additional_clsTRMenu li
+    {
+        width:100%;
+        float:left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color:#e39321;
+        text-align: right;
+        padding-right: 5px;
+
+    }
+
+    .additional_clsTRMenu a
+    {
+        
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        float:left;
+        width: 100%;
+        color: #ffffff !important;
+    }
+    /*Table Menu Ends*/
+
+    /* Detail Footer Table*//*
+    .detail_responsive_clsTRMenu:first-child
+    {
+        width:100%;
+        display: table-cell !important;
+        padding-right: 5px;
+        padding-left: 0px;
+
+    }
+    .detail_responsive_clsTRMenu li
+    {
+        border-right:1px solid #000000;
+    }
+    .detail_responsive_clsTRMenu a
+    {
+        font-size: 11.5px !important;
+    }
+    .detail_additional_clsTRMenu
+    {
+        right: 3px !important;
+        padding-left: 0px !important;
+        bottom: 36px;
+        margin: 0px;
+        width: 200px;
+    }
+    .detail_additional_clsTRMenu li
+    {
+        width:100%;
+        float:left;
+        border-bottom: 1px solid gray;
+        line-height: 1.6;
+        background-color:#9abbea;
+    }
+    *//*Detail Footer Table Menu Ends*//*
+*/
+    /*Table Grid Starts*/
+    .clsGridTable
+    {
+        border: none !important;
+    }
+    .clsGridTable .clsTRColumnHeader th
+    {
+       /* background: #f0d1a1 !important;*/
+       /* background-image:none !important;*/
+        /*border: none !important;*/
+    }
+    .clsGridTable td
+    {
+        
+        padding: 3px !important;
+        /*border-top: 0px solid #f6eee4 !important;*/
+    }
+    /*Table Grid Starts*/
+
+    #tree
+    {
+        
+        font-size: 11.5px !important;
+        font-weight:700;
+        line-height: 1.5;
+    }
+
+    #tree a
+    {
+        
+        font-size: 11.5px !important;
+        font-weight: normal !important;
+        line-height: 1.5;
+    }
+
+    .additional_clsTRMenu a
+    {
+        font-size:11.5px !important;
+        
+        padding-left: 5px !important;
+    }
+
+    #clsTRMenu_ul li a
+    {
+        font-size:11.5px;
+    }
+    .clsTable .clsTRMenu td:first-child
+    {
+        /*width: 35%;*/
+        /*width: 70%;*/
+        font-size: 11.5px !important;
+    }
+    .clsTable .clsTRMenu td:nth-child(2)
+    {
+       /* width: 65% ;*/
+       /* width: 0% ;*/
+        /*width: 30% ;*/
+
+    }
+
+    .menu_arrow_img
+    {
+      /*  padding: 4px 6px 2px 3px !important;*/
+        padding: 3px 0px 3px 4px !important;
+        background-color: #e39321;
+        float: right !important;
+        width: 23px !important;
+    }
+
+    #tblGrid0713 .clsTROdd td
+    {
+        font-size: 11.5px;
+    }
+
+    #tblGrid0713 .clsTREvenRow td
+    {
+        font-size: 11.5px;
+    }
+    /* Sub Table Menu styling Starts*/
+    .additional_subClsTRMenu
+    {
+        padding-left: 0px !important;
+        width: 200px;
+        top:140px;
+    }
+    .additional_subClsTRMenu li
+    {
+        width: 100%;
+        float: left;
+        border-bottom: 1px solid gray;
+        line-height: 1.6;
+        background-color: #9abbea;
+    }
+    .subTagTableMenu a
+    {
+        font-size: 11.5px !important;
+    }
+    .responsive_subClsTRMenu:first-child
+    {
+        margin: 0%;
+        width: 100%;
+        display: table-cell !important;
+        padding-right: 5px;
+        padding-left: 0px;
+    }
+    .responsive_subClsTRMenu li
+    {
+        border-right: 1px solid #000000;
+    }
+   /* .subTagTableMenu .clsTRMenu
+    {
+        width: 100%;
+        float: left;
+        margin: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }*/
+    /*.subTagTableMenu .clsTRMenu td:first-child
+    {
+        width: 31% !important;
+    }
+*/
+    /* Sub Table Menu styling Ends*/
+    /* #Sub table:last-child
+     {
+         display:none !important;
+         background-color: red !important;
+     }*/
+
+
+    /*Footer Table Menu Starts*/
+    .footer_menu_arrow
+    {
+        padding: 4px 6px 2px 3px !important;
+        background-color: #e39321;
+        margin-top: 1px;
+        float: right !important;
+        width: 23px !important;
+    }
+    .footer_responsive_clsTRMenu:first-child
+    {
+        width:100%;
+        display: table-cell !important;
+        padding-right: 5px;
+        padding-left: 0px;
+
+    }
+    .footer_responsive_clsTRMenu li
+    {
+        border-right:1px solid #000000;
+    }
+    .footer_responsive_clsTRMenu a
+    {
+        font-size: 11.5px !important;
+    }
+    .footer_additional_clsTRMenu
+    {
+        right: 0px !important;
+        padding-left: 0px !important;
+        bottom: 23px;
+        margin: 0px;
+        width: 200px;
+    }
+    .footer_additional_clsTRMenu li
+    {
+        width: 100%;
+        float: left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color: #e39321;
+        text-align: right;
+        padding-right: 5px;
+    }
+    .footer_additional_clsTRMenu a
+    {
+        
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        color:#ffffff !important;
+
+    }
+    /*Footer Table Menu Ends*/
+
+
+    /*#divSection1 .clsTable td
+    {
+        display:block;
+    }
+
+    #divSection1 .clsTable tr
+    {
+        display:block;
+    }
+*/
+    /*Sub Table Footer */
+    .footerMenu td:first-child
+    {
+        width:15%;
+    }
+    .footerMenu td:nth-child(2)
+    {
+        width: 63%!important;
+    }
+    .footer_responsive_subClsTRMenu:first-child
+    {
+        width: 100%;
+        display: table-cell !important;
+        padding-right: 5px;
+        padding-left: 0px;
+    }
+    .subTableFooterMenuArrow
+    {
+        padding: 4px 6px 2px 3px !important;
+        background-color: #e39321;
+        margin-top: 1px;
+        float: left !important;
+        width: 23px !important;
+    }
+    .footer_additional_subClsTRMenu
+    {
+        right: 3px !important;
+        bottom: 36px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .footer_additional_subClsTRMenu li
+    {
+        width:100%;
+        float:left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color:#e39321;
+        text-align: right;
+        padding-right: 5px;
+    }
+    .footer_responsive_subClsTRMenu li
+    {
+        border-right: 1px solid #000000;
+    }
+    .footer_additional_subClsTRMenu a
+    {
+        
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        width: 100%;
+        float: left;
+        color: #ffffff;
+
+    }
+    /*Sub Table Footer */
+    /* Customer Detail Menu starts*//*
+    .detail_menu_arrow
+    {
+        padding: 4px 6px 2px 3px !important;
+        background-color: #e39321;
+        margin-top: 1px;
+        float: left !important;
+        width: 23px !important;
+    }
+    .detail_additional_clsTRMenu
+    {
+        right: 3px !important;
+        bottom: 36px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .detail_additional_clsTRMenu li
+    {
+        width:100%;
+        float:left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color:#e39321;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .detail_additional_clsTRMenu a
+    {
+        font-family: 'HELVETICA';
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        width: 100%;
+        float: left;
+        color: #ffffff !important;
+
+    }
+    *//* Customer Detail Menu ends*/
+    /* Sub Table Menu starts*/
+    .subTableMenuArrow
+    {
+        padding: 2px 0px 2px 4px !important;
+        background-color: #e39321;
+        /*margin-top: 1px;*/
+        float: left !important;
+        width: 23px !important;
+    }
+    .additional_subClsTRMenu
+    {
+        right: 3px !important;
+        bottom: 36px;
+        margin: 0px;
+        width: 150px;
+        padding-left: 0px !important;
+    }
+    .additional_subClsTRMenu li
+    {
+        width:100%;
+        float:left;
+        border-bottom: 1px solid #c9c9c9;
+        line-height: 1.6;
+        background-color:#e39321;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .additional_subClsTRMenu a
+    {        
+        font-size: 11.5px !important;
+        padding-left: 5px !important;
+        width: 100%;
+        float: left;
+        color: #ffffff;
+
+    }
+    /* Sub Table Menu ends*/
+}
+
+
+
+
+
+

@@ -1,0 +1,155 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+#taskbystatuschart{ height:500px;}
+.chartcolum_panel { column-count: 2;}
+.chartcolum_panel .col-sm-6{ position: relative;float: none;display: inline-block; width: 100%; padding: 0 5px 0 0;}
+
+.box-panel .table{ border-top: 1px solid #ddd; }
+.wizardcontent {min-height: 200px;}
+.form-group.last{ margin-bottom: 0; }
+.borderbtngray {background: #fff;border-color: #ddd;color: #464a4c;font-weight: 500;font-family: 'Roboto', sans-serif; border-radius: 4px;}
+.borderbtngray:hover{ background: #f1f1f1; }
+.dashpanel .bootstrap-select{ width:auto!important; }
+.dashpanel .box-body{ padding: 15px;}
+.chartboxheader {font-size: 11.5px;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd; padding: 10px 10px; background: #f5f5f5;}
+.chartboxaction{ padding: 0;}
+.chartboxaction .borderbtngray {padding: 0 8px;}
+/*.chart-legend i.fas.text-red {width: 45px;background: #ddd;height: 15px;border-radius: 4px;margin-right: 5px;}*/
+.customformpanel .form-group .control-label{ padding: 0; }
+.borderbtnblack{border-color: #464a4c;color: #464a4c;}
+.borderbtnblack:hover{ background:#464a4c; color:#fff;}
+
+.borderbtnblack button.btn.dropdown-toggle.btn-default {border-color: #464a4c;}
+.borderbtnblack.bootstrap-select.open > .dropdown-toggle.btn-default:hover{ color:#fff;}
+.borderbtn.bootstrap-select.open > .dropdown-toggle.btn-default:hover{ color:#fff;}
+
+a.canvasjs-chart-credit {display: none;}
+#chartdiv {width: 100%;height: 500px;}
+
+.headernavlisttab {border-bottom: none; float:left;}
+.headernavlisttab li{ margin-bottom:0;}
+.headernavlisttab li a{ padding:6px 20px; border-radius:4px 4px 4px 4px; cursor:pointer;}
+.headernavlist li:hover a, .headernavlist li:focus a, .headernavlist li.active a, .headernavlist li.active a {
+    background: #1359a6!important;color: #fff!important;}
+.chartboxheader button.btn.dropdown-toggle.btn-default {font-size: 11.5px;}
+
+.chartboxaction .btn {padding: 6px 8px;border-color: #464a4c; height:30px;}
+
+
+/*project_module_new_end_here*/
+span.chartinfotext {
+    float: right;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.modal-header .close
+.chartinfotext .far {
+    font-size: 16px;
+    margin-right: 5px;
+    cursor: pointer; 
+}
+
+.close {
+    background: transparent;
+    opacity: 2;
+}
+
+/*Newcss_after_integrated_code_in_solution*/
+
+.dashpanel .bootstrap-select {width: auto !important;}
+.chartboxheader select.form-control {width: auto !important; display:inline-block; vertical-align:top; border-color:#464a4c; border-radius:4px; font-size:11.5px; /* Modified By Madhuri.K On 26-03-2026 */ height:30px;}
+
+.Dashboardmodule_main .box-header{ padding:10px 15px;}
+.Dashboardmodule_main .box-header h3{ margin:0; color:#fff; font-size:14px; /* Modified By Madhuri.K On 26-03-2026 */}
+.boxheaderblue{ background:#4263c1;}
+
+/*Newcss_after_integrated_code_end_in_solution*/
+
+
+
+@media only screen and (max-width: 767px) {
+    body { padding-top:50px;
+    }
+    .dashmain .box {
+        text-align: center;
+    }
+
+    .chartboxaction .btn {
+        text-align: left;
+        width: 24.6%;
+    }
+    .chartboxaction #redograph { text-align:center;
+    }
+
+    .btn .caret {
+        margin-top: 5px;
+        float: right;
+    }
+
+    .headernavlisttab {
+        text-align: center; float:none;
+    }
+
+        .headernavlisttab li {
+            float: none;
+            display: inline-block;
+        }
+
+    .Issuemodulewrap_main {
+        text-align: center;
+    }
+
+    .col-md-12.dashpanel {
+        margin-bottom: 40px;
+    }
+
+    .graybg.container-fluid.pt-1.pb-1.headertopp {
+        margin-bottom: 15px;         
+        width: 100%;       
+         padding-top:15px; padding-bottom:15px;
+        box-shadow: 0 0 6px 0px #909ea5; 
+    }
+
+
+    .chartboxaction {
+        padding: 0;
+        display: block;
+        float: none !important;
+        margin: 10px 10px 0;
+        clear: both; text-align:right;
+    }
+
+    .chartboxheader select.form-control, body #CboSkill, body #CboRevProject, body #CboSurSkill {
+        width: 48% !important;
+        margin: 0 3px 3px;
+        float: left !important;
+    }
+
+    span.chartinfotext {
+        margin: 12px 0 0;
+        float: none;
+        text-align: center;
+        display: block; clear:both;
+    }
+
+
+    }
+
+@media only screen and (max-width: 360px) {
+    .chartboxheader select.form-control, body #CboSkill, body #CboRevProject, body #CboSurSkill {
+        width: 46%;
+    }
+}
+    
+  
+
+
+
+
+
+
+
+
+

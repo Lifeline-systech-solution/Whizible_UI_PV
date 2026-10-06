@@ -1,0 +1,301 @@
+﻿body,div,ul {
+-ms-overflow-style:none;
+}
+/*::-webkit-scrollbar {
+display: none;
+}*/ /*commented by pradip on 15-10-20*/
+.sprint-name {
+    color: gray;
+     font-size: 15px;
+}
+.no_padding {
+padding-left: 0px;
+    padding-right: 0px;
+}
+.date-section {
+color: gray;
+     font-size: 13px;
+}
+.sprint-header{
+margin-top: 30px;
+}
+.sprint-progress-text {
+    font-size:15px!important;
+    font-weight:600;
+}
+.Stages{
+    color:#fff;
+    font-size:12px;
+    text-align:center;
+    padding:5px;
+}
+
+.fa-icon {
+font-size:22px!important;
+}
+.assignees,.stage,.second-row,.category-wise-graph {
+margin-top:10px;
+}
+.assignees-img {
+    width: 30px;
+    height: 30px;
+        border-radius: 12px;
+}
+.canvasborder {
+border: 1px solid #9E9E9E;
+}
+
+.sprint_card {
+        padding-right: 0px!important;
+       background: #fff;
+    margin: 9px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.07), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.sprint_card_detail {
+
+    color: #575757;
+}
+.sprint_card:hover {
+     -webkit-transform:translateY(-3px);
+     transform:translateY(-3px);
+      box-shadow: 0 4px 6px 0 rgba(0,0,0,0.07), 0 6px 10px 0 rgba(0,0,0,0.19);
+       -webkit-box-shadow: 0 4px 6px 0 rgba(0,0,0,0.07), 0 6px 10px 0 rgba(0,0,0,0.19);
+}
+.task_name {
+color: gray!important;
+font-size:13px;
+font-weight:600;
+}
+.task-content {
+color: gray!important;
+font-size:13px;
+}
+.team_name {
+color:#26A69A;
+font-size:13px;
+font-weight:600;
+}
+.sprint_date {
+background:#477aaf;
+color:#fff;
+font-size:11px;
+font-weight:600;
+padding:11PX;
+    text-align: center;
+}
+.fixed-top {
+    position: fixed !important;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background: #e7edf0; /*modified by pradip on 6-10-2020*/
+    padding: 10px;
+    margin-top: -10px;
+}
+
+.align-top {
+    margin-top: 40px;
+}
+
+ #filter-dropdown {
+            top: auto !important;
+            max-height: 420px !important;
+            width: 310px;
+            padding: 0px;
+            right: 0px !important;
+            left: auto !important;
+        }
+
+        #tblAdvHeader {
+            text-align: left;
+            /*border-bottom: 1px solid #ccc;*/
+            padding-top: 1%;
+            color: black !important;
+        }
+
+            #tblAdvHeader p {
+                margin: 8px 0 10px !important;
+                font-size: 14px;
+                margin-left: 8px;
+            }
+
+            #tblAdvHeader .fa {
+                margin: 8px 0 10px !important;
+            }
+
+        #btnClear, #btnApply {
+            width: 100px;
+            float: right;
+            margin: 0px;
+            margin-right: 5px;
+            color: white;
+            background-color: #275482;
+        }
+
+        .dropdown-menu table {
+            width: 100%;
+            color: black;
+        }
+
+
+        #dropdown-content {
+            padding: 8px!important;
+        }
+
+        .grey-text {
+            color: #888888e0;
+            font-weight: normal;
+        }
+
+        #hr_line {
+            margin-top: 1px;
+        }
+.open > .dropdown-menu {
+    background: #fff !important;
+    opacity: 1 !important;
+    display: block;
+    margin-top: 5px !important;
+    border-radius: 4px;
+}
+
+.fa {
+    cursor: pointer;
+}
+.fullscreen_icon {
+    width: 30px;
+    height: 30px;
+    float: right;
+    cursor:pointer;
+}
+.sprint-dashboard {
+font-size:17px;
+color:gray;
+}
+.btn-info {
+    text-transform: Capitalize!important;
+    color: #fff!important;
+    background-color: #01579B!important;
+    border-color: #01579B!important;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,188,212,.14), 0 3px 1px -2px rgba(0,188,212,.2), 0 1px 5px 0 rgba(0,188,212,.12)!important;
+    box-shadow: 0 2px 2px 0 rgba(0,188,212,.14), 0 3px 1px -2px rgba(0,188,212,.2), 0 1px 5px 0 rgba(0,188,212,.12)!important;
+}
+.btn.btn-info:hover {
+    color: #fff !important;
+    background-color: #00aec5 !important;
+    border-color: #004b55 !important;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,188,212,.14),0 3px 1px -2px rgba(0,188,212,.2),0 1px 5px 0 rgba(0,188,212,.12) !important;
+    box-shadow: 0 2px 2px 0 rgba(0,188,212,.14),0 3px 1px -2px rgba(0,188,212,.2),0 1px 5px 0 rgba(0,188,212,.12) !important;
+}
+
+.days_left {
+background: #ea5757;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 0px;
+}
+.days_plus {
+background: #1fbf26;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 0px;
+        opacity: 0.8;
+}
+.story_count {
+font-size:12px;
+text-decoration:none;
+}
+.story_count:hover {
+ text-decoration:none;
+}
+.Activity {
+overflow-x:hidden!important;
+height:440px;
+}
+.fullscreeicon {
+    float: right;
+    position: initial;
+    margin-left: 9px;
+}
+.graph_header {
+    text-align: left;
+    font-size: 17px;
+}
+#tblSchedule th {
+    padding: 5px;
+    font-size: 12px;
+    background-color: #3385ff!important;
+    color: white;
+}
+#tblResourceFooter td:first-child {
+    text-align: left;
+}
+#emplistUL{
+    height: 90px;
+    overflow-x: hidden!important;
+    left: 0;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+#tblSchedule{
+    width:100%
+}
+#divmain_sprint {
+    overflow: hidden !important;
+    /*overflow-x: hidden !important;
+    width: 102% !important;*/
+    overflow-x: auto !important;
+    width: 100% !important;
+    margin-top: 10px;
+}
+/*modified by pradip on 15-10-2020*/
+.container-fluid {
+     overflow-x: hidden!important;
+    height: 781px!important;
+    overflow-y: auto!important;
+}
+.assignee_i {
+   
+    white-space:nowrap;
+}
+.carousel-control.left {
+    background-image:none!important;
+}
+.carousel-control.right {
+    background-image:none!important;
+}
+
+/*.assignees {
+    border:1px solid #ddd!important;
+}*/
+/*Added By Yasmin on 3rd May 2018*/
+
+.clsDivHeader {
+    color: #888888b8;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 4px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.dropdown-menu > li {
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+    .dropdown-menu > li:focus, .dropdown-menu > li:hover {
+        color: #fff !important;
+        text-decoration: none !important;
+        background-color: #007bff !important;
+    }
+    .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+        color: #fff !important;
+        background-color: transparent !important;
+        text-decoration: none;
+    }

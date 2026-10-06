@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Tree</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel='StyleSheet' href='../Source/General/StyleSheetChanakya_Blue.css' type='text/css'>
+<meta http-equiv='Cache-Control' CONTENT='no-cache'>
+<meta http-equiv='Pragma' CONTENT='no-cache'>
+<script type='text/javascript' src='../Source/General/Tree.js'></script>
+<script type='text/javascript' src='../Source/General/CommonFunctions.js'></script>
+<script type='text/javascript'>
+<!--
+var Tree = new Array;
+// nodeId | parentNodeId | nodeName | nodeUrl |Tooltip |IsParent |TreeNodeImagePath
+Tree[0]="1|0|Resource||Resource|-1|page.gif";
+Tree[1]="2|1|Plan||Plan|-1|page.gif";
+Tree[2]="3|2|Resource Pool||Resource Pool|-1|page.gif";
+Tree[3]="4|3|Overview|../NewAPI/Resources/HR_LandingPage.aspx?FromWhere=RM&amp;MasterTagId=22610|Overview|0|page.gif";
+Tree[4]="5|3|Global Resource Pool|../General/CommonList.aspx?FromWhere=RM&amp;MasterTagId=2056|Global Resource Pool|0|page.gif";
+Tree[5]="6|3|Business Group|../Source/General/CommonList.aspx?FromWhere=RM&amp;MasterTagId=2075|Business Group|0|page.gif";
+Tree[6]="7|3|Organization Unit|../Source/General/CommonList.aspx?FromWhere=RM&amp;MasterTagId=2059|Organization Unit|0|page.gif";
+Tree[7]="8|3|Delivery Unit|../Source/General/CommonList.aspx?FromWhere=RM&amp;MasterTagId=2057|Delivery Unit|0|page.gif";
+Tree[8]="9|3|Delivery Team|../Source/General/CommonList.aspx?FromWhere=RM&amp;MasterTagId=2055|Delivery Team|0|page.gif";
+Tree[9]="10|3|Resource Pool Master|../Source/HR/HR_CommonList.aspx?FromWhere=RM&amp;MasterTagId=3900|Resource Pool Master|0|page.gif";
+Tree[10]="11|2|Grade Master|../Source/General/CommonList.aspx?FromWhere=RM&amp;MasterTagId=716|Grade Master|0|page.gif";
+Tree[11]="12|2|Visa Type Master|../Source/General/CommonList.aspx?FromWhere=RM&amp;MasterTagId=719|Visa Type Master|0|page.gif";
+Tree[12]="13|2|Certification|../Source/General/CommonList.aspx?show=0&amp;FromWhere=RM&amp;MasterTagId=461|Certification|0|page.gif";
+Tree[13]="14|2|Resource Demand Status|../Source/General/CommonList.aspx?FromWhere=RM&amp;MasterTagId=3862|Resource Demand Status|0|page.gif";
+Tree[14]="15|2|Skills|../Source/General/CommonList.aspx?FromWhere=RM&amp;MasterTagId=1262|Skills|0|page.gif";
+Tree[15]="16|2|Proficiency|../Source/General/CommonList.aspx?FromWhere=RM&amp;MasterTagId=573|Proficiency|0|page.gif";
+Tree[16]="17|2|Work Profile|../Source/General/CommonList.aspx?FromWhere=RM&amp;MasterTagId=512|Work Profile|0|page.gif";
+Tree[17]="18|2|Qualification||Qualification|-1|page.gif";
+Tree[18]="19|18|Group|../Source/General/CommonList.aspx?FromWhere=RM&amp;MasterTagId=718|Group|0|page.gif";
+Tree[19]="20|18|Qualification|../Source/General/CommonList.aspx?show=0&amp;FromWhere=RM&amp;MasterTagId=460|Qualification|0|page.gif";
+Tree[20]="21|2|Designation|../Source/General/CommonList.aspx?FromWhere=RM&amp;MasterTagId=727|Designation|0|page.gif";
+Tree[21]="22|2|Leave||Leave|-1|page.gif";
+Tree[22]="23|22|Type|../Source/General/CommonList.aspx?FromWhere=RM&amp;MasterTagId=1204|Type|0|page.gif";
+Tree[23]="24|22|Employee Leaves|../Source/HR/EmployeeLeaves_CommonList.aspx?FromWhere=RM&amp;MasterTagId=1209|Employee Leaves|0|page.gif";
+Tree[24]="25|22|Employee Leave Master|../Source/General/CommonList.aspx?FromWhere=RM&amp;MasterTagId=1207|Employee Leave Master|0|page.gif";
+Tree[25]="26|22|Leave Proxy Mapping|../Source/General/CommonList.aspx?FromWhere=RM&amp;MasterTagId=3631|Leave Proxy Mapping|0|page.gif";
+Tree[26]="27|2|Skill Category|../Source/General/CommonList.aspx?FromWhere=RM&amp;MasterTagId=3848|Skill Category|0|page.gif";
+Tree[27]="28|1|Manage||Manage|-1|page.gif";
+Tree[28]="29|28|Employee|../Source/General/CommonList.aspx?show=0&amp;FromWhere=RM&amp;MasterTagId=23|Employee|0|page.gif";
+Tree[29]="30|28|Search (Employee Skills)|../Source/PM/PM_EmployeeSkillsSearch.aspx?FromWhere=RM&amp;MasterTagId=426|Search (Employee Skills)|0|page.gif";
+Tree[30]="31|28|Resource Allocation|../Source/PM/PM_ResourceAllocation.aspx?FromWhere=RM&amp;MasterTagId=1225|Resource Allocation|0|page.gif";
+Tree[31]="32|28|Resource Skill View|../Source/HR/HR_ResourceSkillDetails_CommonList.aspx?FromWhere=RM&amp;MasterTagId=3861|Resource Skill View|0|page.gif";
+Tree[32]="33|28|Resource Allocation|../NewAPI/Resources/RM_ResourceAllocation.aspx?FromWhere=RM&amp;MasterTagId=36015|Resource Allocation|0|page.gif";
+Tree[33]="34|1|Reports||Reports|-1|page.gif";
+Tree[34]="35|34|Management||Management|-1|page.gif";
+Tree[35]="36|35|Skill Summary|../Source/HR/HR_ResourceSkill_Summary.aspx?FromWhere=RM&amp;MasterTagId=430|Skill Summary|0|page.gif";
+Tree[36]="37|35|Skills (Organization Unit)|../Source/HR/HR_ResourceSkills_ByLocation.aspx?FromWhere=RM&amp;MasterTagId=436|Skills (Organization Unit)|0|page.gif";
+Tree[37]="38|35|Inventory|../Source/HR/HR_EnterpriseSkillInventory.aspx?FromWhere=RM&amp;MasterTagId=439|Inventory|0|page.gif";
+Tree[38]="39|35|Availability|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=904&amp;FromWhere=RM&amp;MasterTagId=501|Availability|0|page.gif";
+Tree[39]="40|35|Employee Leave Report|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=1802&amp;FromWhere=RM&amp;MasterTagId=1216|Employee Leave Report|0|page.gif";
+Tree[40]="41|34|Information||Information|-1|page.gif";
+Tree[41]="42|41|Resource List|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=317&amp;FromWhere=RM&amp;MasterTagId=576|Resource List|0|page.gif";
+Tree[42]="43|41|List Of Birthdays|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=342&amp;FromWhere=RM&amp;MasterTagId=579|List Of Birthdays|0|page.gif";
+Tree[43]="44|41|Resource List(Department/Organization Unit)|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=315&amp;FromWhere=RM&amp;MasterTagId=564|Resource List(Department/Organization Unit)|0|page.gif";
+Tree[44]="45|41|Resource Allocation (By Resource)|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=906&amp;FromWhere=RM&amp;MasterTagId=502|Resource Allocation (By Resource)|0|page.gif";
+Tree[45]="46|41|Project Allocation(Resource Allocation By Project)|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=905&amp;FromWhere=RM&amp;MasterTagId=503|Project Allocation(Resource Allocation By Project)|0|page.gif";
+Tree[46]="47|41|Attrition Status|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=331&amp;FromWhere=RM&amp;MasterTagId=563|Attrition Status|0|page.gif";
+Tree[47]="48|41|Resource Allocation View|../Source/HR/ResourceAllocationDashbaord.aspx?FromWhere=RM&amp;MasterTagId=3982|Resource Allocation View|0|page.gif";
+Tree[48]="49|1|Manage Infrastructure||Manage Infrastructure|-1|page.gif";
+Tree[49]="50|49|Infrastructure Group|?FromWhere=RM&amp;MasterTagId=35001|Infrastructure Group|0|page.gif";
+Tree[50]="51|49|Infrastructure Status|../NewAPI/Resources/RM_InfraStatus.aspx?FromWhere=RM&amp;MasterTagId=35002|Infrastructure Status|0|page.gif";
+Tree[51]="52|49|Infrastructure Type|../NewAPI/Resources/RM_InfraType.aspx?FromWhere=RM&amp;MasterTagId=35003|Infrastructure Type|0|page.gif";
+Tree[52]="53|49|Infrastructure Resource Management|../NewAPI/Resources/RM_ResourceManagementInfra.aspx?FromWhere=RM&amp;MasterTagId=35004|Infrastructure Resource Management|0|page.gif";
+Tree[53]="54|49|Infrastructure Request Approval|../NewAPI/Resources/RM_IrRequestApproval.aspx?FromWhere=RM&amp;MasterTagId=35005|Infrastructure Request Approval|0|page.gif";
+Tree[54]="55|49|Project Infrastructure Resource|../NewAPI/Resources/RM_ResourceManagementInfra.aspx?FromWhere=RM&amp;MasterTagId=35006|Project Infrastructure Resource|0|page.gif";
+Tree[55]="56|1|Resource Demand Management||Resource Demand Management|-1|page.gif";
+Tree[56]="57|56|Opportunity Request|../Source/HR/HR_Opportunity_CommonList.aspx?FromWhere=RM&amp;MasterTagId=3851|Opportunity Request|0|page.gif";
+Tree[57]="58|56|Resource Joining Pool|../Source/HR/HR_CommonList.aspx?FromWhere=RM&amp;MasterTagId=3873|Resource Joining Pool|0|page.gif";
+Tree[58]="59|56|Resource Demand Verification|../Source/HR/HR_Opportunity_CommonList.aspx?FromWhere=RM&amp;MasterTagId=3865|Resource Demand Verification|0|page.gif";
+Tree[59]="60|56|Staffing Plan|../Source/HR/HR_ResourceDeamnd_ActivityPlan.aspx?FromWhere=RM&amp;MasterTagId=3899|Staffing Plan|0|page.gif";
+Tree[60]="61|56|Reports||Reports|-1|page.gif";
+Tree[61]="62|61|Resource Demand Details|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=2501&amp;FromWhere=RM&amp;MasterTagId=3916|Resource Demand Details|0|page.gif";
+Tree[62]="63|61|Resource  List|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=2521&amp;FromWhere=RM&amp;MasterTagId=3917|Resource  List|0|page.gif";
+Tree[63]="64|61|Resource List - Qualification &amp; Certification w...|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=2522&amp;FromWhere=RM&amp;MasterTagId=3918|Resource List - Qualification &amp; Certification w...|0|page.gif";
+Tree[64]="65|61|Resource Demand Progress|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=2512&amp;FromWhere=RM&amp;MasterTagId=3919|Resource Demand Progress|0|page.gif";
+Tree[65]="66|61|Execution wise Staffing plan|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=2514&amp;FromWhere=RM&amp;MasterTagId=3920|Execution wise Staffing plan|0|page.gif";
+Tree[66]="67|61|Staffing Plan Report|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=2516&amp;FromWhere=RM&amp;MasterTagId=3921|Staffing Plan Report|0|page.gif";
+Tree[67]="68|61|Staffing Plan Availability Report|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=2518&amp;FromWhere=RM&amp;MasterTagId=3922|Staffing Plan Availability Report|0|page.gif";
+Tree[68]="69|61|Resource Availability Matrix|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=2502&amp;FromWhere=RM&amp;MasterTagId=3923|Resource Availability Matrix|0|page.gif";
+Tree[69]="70|61|Resource Joining Pool Report|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=2503&amp;FromWhere=RM&amp;MasterTagId=3924|Resource Joining Pool Report|0|page.gif";
+Tree[70]="71|61|Resource-Wise Pool List|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=2507&amp;FromWhere=RM&amp;MasterTagId=3925|Resource-Wise Pool List|0|page.gif";
+Tree[71]="72|61|Pool-wise Project Allocation|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=2509&amp;FromWhere=RM&amp;MasterTagId=3926|Pool-wise Project Allocation|0|page.gif";
+Tree[72]="73|56|Resource Demand Progress1|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=2512&amp;FromWhere=RM&amp;MasterTagId=22608|Resource Demand Progress1|0|page.gif";
+//-->
+</script>
+</head>
+<body class=clsTreeBody>
+<form id='frmTree'>
+<div id='tree'>
+<script type='text/javascript'>
+<!--
+ var objfrm;
+ var objdivlist;
+ objfrm = GetFormReference('frmTree');
+ objdivlist=GetObjectReference('frmTree','tree');
+ if(navigator.appName != 'Microsoft Internet Explorer')
+ {
+     objdivlist.style.overflow='auto';
+     objdivlist.style.height=document.body.clientHeight-document.body.offsetHeight-0.5;
+ }
+createTree(Tree);
+var arrNode0Values=Tree[0].split("|");
+oc(1,0,arrNode0Values[6]);
+var arrNode1Values=Tree[48].split("|");
+oc(49,0,arrNode1Values[6]);
+//--></script>
+</div>
+</form>
+</body>
+</html>

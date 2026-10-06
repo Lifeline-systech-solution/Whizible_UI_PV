@@ -1,0 +1,52 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body{font-family: 'Roboto', sans-serif; font-weight: 500;color: #464a4c; }
+
+/*navframe*/
+/*default-color-style*/
+.skin-blue-light .wrapper, .skin-blue-light .main-sidebar, .skin-blue-light .left-side{background-color: #4263c1;}
+.skin-blue-light .sidebar a{ color:#fff;}
+.skin-blue-light .sidebar-menu > li:hover > a, .skin-blue-light .sidebar-menu > li.active > a{ color:#ffffff;}
+.skin-blue-light .main-header .navbar .nav > li > a{ color:#464a4c;}
+.skin-blue-light .main-header .navbar .nav > li > a:hover, .skin-blue-light .main-header .navbar .nav > li > a:active, .skin-blue-light .main-header .navbar .nav > li > a:focus, .skin-blue-light .main-header .navbar .nav .open > a, .skin-blue-light .main-header .navbar .nav .open > a:hover, .skin-blue-light .main-header .navbar .nav .open > a:focus, .skin-blue-light .main-header .navbar .nav > .active > a{ color:#464a4c; background: #f0f0f0;}
+.skin-blue-light .main-header .navbar {background-color: #fff;}
+.skin-blue-light .sidebar-menu > li:hover > a, .skin-blue-light .sidebar-menu > li.active > a{ background:#2e52a3;}
+.skin-blue-light .main-header li.user-header{ background: #4263c2; }
+.skin-blue-light .main-header .logo{background-color: #fff;}
+.skin-blue-light .main-header .logo:hover {background-color: #ffffff;}
+
+.skin-blue-light .main-header .navbar .nav > li > a i{ font-size: 16px; }
+
+.sidebar-menu>li>a>.fa{ line-height:normal; margin-bottom: 0;}
+.skin-blue-light .main-header .navbar{padding: 0;}
+
+
+
+
+li.topli {
+    margin-right: 10px;
+    width: 280px;
+    padding-top: 8px;
+    float: left;
+}
+li.topli span{display:inline-block; color:#fff; float:left; margin-right:20px; padding-top:8px }
+li.topli select {width: 80%; float: inherit; max-width:180px;background: transparent;
+    border-color: #fff;color: #fff;}
+li.topli select option{ color:#000;}
+li.topli select:focus{border-color: #fff;color: #fff;}
+button.btn.submitbtn {background: #f5f5f5;}
+button.btn.submitbtn:hover{ background:#ddd;}
+.main-header .logo .logo-mini{ display:block;}
+
+.main-header .navbar .nav > li > a {
+    padding-top: 12px;
+    padding-bottom: 10px;
+    line-height: 28px;
+    max-height: 50px;
+}
+.navbar-expand-lg .navbar-nav{align-items: center;}
+.sidebar-menu > li > a > .fa img{ max-width:100%; margin-top:3px;}
+.sidebar-menu .treeview-menu > li > a:hover {color: #fff; border-radius: 24px;}
+#treeMenu:hover {overflow: auto;}
+/*default-color-style-end*/

@@ -1,0 +1,674 @@
+#floating-label {
+    margin-top: 20px;
+}
+
+.form-control {
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    line-height: 0.72857143 !important;
+    padding: 6px 2px !important;
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+textarea {
+    -ms-overflow-style: none !important;
+}
+/*.select-label{
+  
+      font-size: 17px!important;
+}*/
+
+
+#floating-label .control-label {
+    font-size: 11.5px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    font-weight: 400;
+    /*  opacity: 0.4;*/
+    pointer-events: none;
+    position: absolute;
+    /*transform: translate3d(6px, -6px, 0) scale(1);*/
+    transform: translate3d(6px, 9px, 0) scale(1);
+    transform-origin: left top;
+    transition: 240ms;
+}
+
+#floating-label .form-group.focused .control-label {
+    opacity: 1;
+    transform: translateY(-1px) scale(.94);
+    margin-top: -19px;
+    margin-bottom: 10px;
+    font-size: 11.5px !important;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    color: #878787 !important;
+}
+
+#floating-label .form-group1.focused .control-label {
+    opacity: 1;
+    transform: scale(0.80);
+    margin-top: -12PX;
+    margin-bottom: 10px;
+}
+
+#floating-label .form-control {
+    align-self: flex-start;
+}
+
+    #floating-label .form-control::-webkit-input-placeholder {
+        color: transparent;
+        transition: 240ms;
+    }
+
+    #floating-label .form-control:focus::-webkit-input-placeholder {
+        transition: none;
+    }
+
+#floating-label .form-group.focused .form-control::-webkit-input-placeholder {
+    color: #bbb;
+    border-bottom: 2px solid #398bf7 !important;
+}
+
+.form-control:focus {
+    border-bottom: 2px solid #398bf7 !important;
+}
+
+.focus {
+    border-bottom: 2px solid #398bf7;
+}
+/*           #floating-label .bar:before, #floating-label .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #398bf7;
+    -o-transition: 0.2s ease all;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}*/
+.btn-default {
+    color: gray;
+}
+
+.btn-success {
+    color: #fff !important;
+    /* background-color: #45ccc3!important;*/
+    background: #11bdb2 !important;
+    border-color: transparent !important;
+    padding: 4px 12px !important;
+}
+
+.form-group {
+    margin-bottom: 30px !important;
+}
+
+.required {
+    color: red;
+}
+/*.btn-primary {
+    color: #fff;
+    background-color: #00a9a9!important;
+    border-color: #00a9a9!important;
+}*/
+.modal-footer {
+    border-top: 0px !important;
+}
+
+.modal-header {
+    margin-bottom: 11px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.checkbox .control-label {
+    font-size: 11.5px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    font-weight: 400;
+    /* opacity: 0.4; */
+    pointer-events: none;
+    position: relative !important;
+    transform: none !important;
+    transform-origin: unset !important;
+    transition: 0 !important;
+}
+
+#txtTaskNotes {
+    overflow: hidden !important;
+    resize: vertical !important;
+}
+
+#countTaskNote, #countTaskNames {
+    float: right;
+    margin-bottom: -19px;
+}
+
+.modal-body {
+    position: relative;
+    padding: 20px;
+    padding-bottom: 42px !important;
+}
+
+@media (min-width: 1400px) {
+    .width {
+        margin-left: 94px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .width.col-lg-6 {
+        width: 47% !important;
+    }
+
+    .width {
+        margin-left: 82px !important;
+    }
+
+    .width1 {
+        margin-left: 58px;
+    }
+
+    .modalwidth {
+        margin-left: 53px !important;
+    }
+
+        .modalwidth.col-lg-6 {
+            width: 43.4% !important;
+        }
+
+        .modalwidth.col-md-6 {
+            width: 43.4% !important;
+        }
+
+    .col-lg-6 {
+        width: 50% !important;
+    }
+
+    .sprintwisetask .form-group {
+        margin-bottom: 14px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-11 {
+        width: 91.06666667% !important;
+    }
+
+    .width1 .col-md-6 {
+        width: 47.2% !important;
+    }
+
+    .modalwidth.col-lg-6 {
+        width: 43.4% !important;
+    }
+
+    .modalwidth.col-md-6 {
+        width: 43.4% !important;
+    }
+
+    .checkboxgroup {
+        margin-left: -79px;
+    }
+
+    .col-sm-5 {
+        width: 23.666667% !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .checkbox .col-sm-offset-1 {
+        margin-left: 10.333333%;
+    }
+
+    .checkbox .col-sm-3 {
+        width: 27% !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .width .col-md-6 {
+        width: 47% !important;
+    }
+
+    .center {
+        transform: translate(10%,0%);
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .width {
+        margin-left: 79px;
+    }
+}
+
+@media(max-width:1130px) {
+    .width; {
+        margin-left: 66px;
+    }
+
+    .col-md-11 {
+        width: 92.066667% !important;
+    }
+
+    .center {
+        transform: translate(12%,0%);
+    }
+}
+
+@media (max-width: 1065px) {
+    .on-hold-label, .billable-label; {
+        width: 115px !important;
+    }
+
+    .center {
+        transform: translate(15%,0%);
+    }
+}
+
+@media (max-width: 991px) {
+    .width {
+        margin-left: -14px;
+    }
+
+        .width .col-sm-12 {
+            width: 102% !important;
+        }
+
+    .center {
+        transform: translate(14%,0%);
+    }
+
+    #chkBillable {
+        margin-left: 10px;
+    }
+    /*.collapsedetails{
+  width: 58%!important;
+  margin: auto!important;
+}*/
+}
+/*Added By yasmin on 19-3-19*/
+:focus {
+    outline: 0 !important;
+}
+
+.fixed-top {
+    position: fixed !important;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background: #e5e5e5;
+    padding: 16px !important;
+    padding-bottom: 8px !important;
+    margin-top: -25px;
+    line-height: 0;
+}
+
+.searchsprint {
+    margin-top: 50px;
+}
+
+.btn-default:hover {
+    background-color: #fff !important;
+    border-color: #ccc !important;
+}
+
+.go {
+    color: #fff !important;
+    background-color: #0288d1 !important;
+}
+
+    .go:hover {
+        color: #fff !important;
+        background-color: #0288d1 !important;
+    }
+
+#search_table:hover {
+    border-bottom: 1px solid #ccc !important;
+}
+
+#btnSaveTask {
+    margin-right: 10px;
+}
+
+.align-right {
+    float: right;
+    margin-right: 5px;
+}
+
+select {
+    margin-left: -3px !important;
+}
+
+.user-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.Sprintdetail .user-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.btnwidth {
+    width: 80px;
+}
+
+.planstartdate, .createdate {
+    color: #878787 !important;
+    font-size: 11.5px !important;
+    /* Modified By Madhuri.K On 26-03-2026 */
+}
+
+.results > tbody > tr:nth-of-type(even) {
+    background-color: #fff;
+}
+
+.modal-content {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.modal-header {
+    background: #0288d1;
+    color: #fff;
+}
+
+.modal-title {
+    line-height: 1.1 !important;
+}
+
+.close {
+    color: #fff !important;
+    opacity: 1 !important;
+}
+
+    .close:hover {
+        color: #fff !important;
+        opacity: 1 !important;
+    }
+
+.morecontent span {
+    display: none;
+}
+
+.morelink {
+    display: inline-block;
+    font-size: 11.5px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+}
+
+    .morelink:hover {
+        text-decoration: none !important;
+    }
+/*.viewdetails {
+    background-color: #d7dadc;
+    padding: 20px;
+     margin-top: 10px; 
+    box-shadow: 0px 1px 9px 1px #ddd;
+}*/
+.viewdetails label {
+    color: #000 !important;
+}
+
+.align-top {
+    margin-top: 20px;
+}
+
+#doughnut-chart {
+    width: 100% !important;
+}
+/*.even {background: #CCC}*/
+/*.tbodyTaskList tr:nth-child(odd) {background: #FFF}*/
+.status {
+    vertical-align: middle !important;
+}
+/*tr.even:nth-child(odd){
+    
+}
+tr.even:nth-child(even){
+    background-color:white;
+}*/
+
+#tbodyTaskList tr:nth-child(4n+1) {
+    background: #f9f9f9 !important;
+}
+
+#tbodyTaskList tr:nth-child(2n+2) {
+    background: transparent;
+}
+
+#btnRefresh {
+    margin-right: 5px;
+}
+
+.edittask {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+
+.Sprintdetail .userimg {
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50% !important;
+}
+
+#spanSprintName, #spanRealeaseName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.closetask {
+    margin-right: 10px;
+}
+
+#leftDivEditTask #floating-label .form-group.focused .control-label {
+    opacity: 1;
+    transform: translateY(-1px) scale(.94);
+    margin-top: -12px;
+    margin-bottom: 10px;
+    font-size: 11.5px !important;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    color: #878787 !important;
+}
+
+.page-title {
+    color: #292828 !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    margin-top: 6px;
+}
+
+.sprintwisetask .form-group {
+    margin-bottom: 20px !important;
+}
+
+.taskdropdown {
+    margin-left: 10px;
+    float: right;
+    clear: both;
+}
+
+.fa-angle-down {
+    font-size: 14px;
+    vertical-align: middle;
+    background: #337ab7;
+    color: #fff;
+    padding: 1px 4.5px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        width: 750px !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .center {
+        transform: translate(18%,0%) !important;
+    }
+}
+
+@media (max-width:800px) {
+    .collapsedetails {
+        width: 98% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #chkHold {
+        margin-left: 16px;
+    }
+
+    .center {
+        transform: translate(0%,0%) !important;
+    }
+    /*.on-hold-label{
+  width: 87px!important;
+}*/
+    .table-responsive {
+        overflow-y: auto !important;
+    }
+
+    .collapsedetails {
+        width: 84% !important;
+        padding-right: 30px;
+    }
+
+    .sprintwisetask .form-group {
+        margin-bottom: 7px !important;
+    }
+}
+
+@media (max-width: 730px) {
+    .collapsedetails {
+        width: 83% !important;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .collapsedetails {
+        width: 81% !important;
+        padding-right: 36px;
+    }
+}
+
+@media (max-width: 680px) {
+    .collapsedetails {
+        width: 75% !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .collapsedetails {
+        width: 71% !important;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .collapsedetails {
+        width: 69% !important;
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 585px) {
+    .collapsedetails {
+        width: 66% !important;
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 540px) {
+    .collapsedetails {
+        width: 63% !important;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 525px) {
+    .collapsedetails {
+        width: 58% !important;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .collapsedetails {
+        width: 54% !important;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 475px) {
+    .collapsedetails {
+        width: 53% !important;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 440px) {
+    .collapsedetails {
+        width: 48% !important;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    .collapsedetails {
+        width: 44% !important;
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+}
+
+@media (max-width: 400px) {
+    .collapsedetails {
+        width: 43% !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .collapsedetails {
+        width: 39% !important;
+    }
+
+    .on-hold-label {
+        width: auto !important;
+    }
+
+    .billabel {
+        margin-left: 22px !important;
+    }
+}
+
+@media (max-width: 355px) {
+    .collapsedetails {
+        width: 35% !important;
+        padding-left: 1%;
+    }
+}
+
+@media (max-width: 330px) {
+    .collapsedetails {
+        width: 26% !important;
+        padding-left: 1%;
+    }
+}

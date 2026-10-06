@@ -1,0 +1,95 @@
+.MenuGroup
+{
+	border-right: black 1px solid;
+	padding-right: 1px;
+	
+	padding-left: 1px;
+
+	border-left: black 1px solid;
+	cursor: hand;
+	padding-top: 1px;
+	border-bottom: black 1px solid;
+	background-color: #ffff66;
+}
+
+.MenuItem
+{
+	border-right:#ffff66 1px solid;
+	border-top: #ffff66 1px solid;
+	font-weight: bold;
+	font-size: 11px;
+	border-left: #ffff66 1px solid;
+	color: darkgreen;
+	border-bottom: #ffff66 1px solid;
+	font-family: Tahoma;
+	background-color: #ffff66;
+}
+
+.MenuItemOver
+{
+	border-right: #f5f5f5 1px solid;
+	border-top: #f5f5f5 1px solid;
+	font-weight: bold;
+	font-size: 11px;
+	border-left: #f5f5f5 1px solid;
+	color: yellow;
+	border-bottom: #f5f5f5 1px solid;
+	font-family: Tahoma;
+	background-color: green;
+}
+
+.Separator
+{
+	background-color: Transparent; 
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.MenuScroll
+{
+	border-right: black 1px solid;
+	border-top: black 1px solid;
+	border-left: black 1px solid;
+	cursor: hand;
+	border-bottom: black 1px solid;
+	background-color: #ffff66;
+}
+
+.MenuScrollOver
+{
+	border-right: black 1px solid;
+	border-top: black 1px solid;
+	border-left: black 1px solid;
+	cursor: hand;
+	color: #ffff66;
+	border-bottom: black 1px solid;
+	background-color: activeborder;
+}
+
+.InputBox
+{
+	border-right: black 1px solid;
+	border-top: black 1px solid;
+	font-weight: normal;
+	font-size: 11px;
+	border-left: black 1px solid;
+	width: 50px;
+	cursor: hand;
+	color: black;
+	border-bottom: black 1px solid;
+	font-family: Arial;
+	height: 19px;
+	background-color: black;
+}
+
+.MenuItemToolTip
+{
+	background-color: #fffacd;
+	border-style:solid;
+	border-width:1px;
+	border-color: black; 
+	font-family: Arial;	
+	padding: 3px;
+	font-size:8pt;
+	text-align: left;
+}

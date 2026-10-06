@@ -1,0 +1,188 @@
+﻿	
+A.HeaderMenu { FONT-WEIGHT: lighter; FONT-SIZE: 10px; Z-INDEX: 99; BACKGROUND: #f7f7f7; FONT-FAMILY: Verdana, Arial; POSITION: relative }
+
+TD.clsTDBlankNEW { PADDING-RIGHT: 2pt; PADDING-LEFT: 2pt; FONT-SIZE: 8pt; PADDING-BOTTOM: 2pt; MARGIN: 2pt; PADDING-TOP: 2pt; BACKGROUND-REPEAT: repeat; FONT-FAMILY: Verdana, Arial; BACKGROUND-COLOR: #f7f7f7 }
+TR.clsTRBlankNEW { PADDING-RIGHT: 2pt; PADDING-LEFT: 2pt; FONT-SIZE: 8pt; PADDING-BOTTOM: 2pt; MARGIN: 2pt; PADDING-TOP: 2pt; BACKGROUND-REPEAT: repeat; FONT-FAMILY: Verdana, Arial; BACKGROUND-COLOR: #f7f7f7 }
+thead.clsTheadBlankNEW { PADDING-RIGHT: 2pt; PADDING-LEFT: 2pt; FONT-SIZE: 8pt; PADDING-BOTTOM: 2pt; MARGIN: 2pt; PADDING-TOP: 2pt; BACKGROUND-REPEAT: repeat; FONT-FAMILY: Verdana, Arial; BACKGROUND-COLOR:  #f7f7f7 }
+
+
+A.clsHfButton { FONT-WEIGHT: bolder; FONT-SIZE: 10px; Z-INDEX: 99; BACKGROUND:floralwhite; FONT-FAMILY: Verdana, Arial; POSITION: relative; text-decoration: none;border-right: black 1px outset;border-top: black 1px outset;border-left: black 1px outset;border-bottom: black 1px outset;}
+
+DIV.HeaderAlert { BORDER-RIGHT: black 1px outset; BORDER-TOP: black 1px outset; FONT-WEIGHT: lighter; FONT-SIZE: 10px; Z-INDEX: 20; BACKGROUND: lightyellow; BORDER-LEFT: black 1px outset; BORDER-BOTTOM: black 1px outset; FONT-FAMILY: Verdana, Arial; POSITION: relative }
+
+
+a.NEWnavtab
+{
+    /*COLOR: #3D5FA3;*/
+	COLOR: white;
+    BORDER-RIGHT: #C0C0FF 1px outset; BORDER-TOP: #C0C0FF 1px outset;BORDER-LEFT: #C0C0FF 1px outset; BORDER-BOTTOM: #C0C0FF 1px outset; 
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    PADDING-BOTTOM: 4px;
+    MARGIN: 1px 0px 0px 0px;
+    LINE-HEIGHT: 11px;
+    PADDING-TOP: 4px;
+    POSITION: relative;
+    HEIGHT: 10px;
+    width: 20px;
+    TEXT-DECORATION: none;
+	background:  #C0C0FF;
+	cursor:hand;/* Added By Shrikant on 1 July 2008 ReqID WAF3_PB_64*/
+}
+/* Added by PrashantSJ on 23rd Jan 2009 */
+TD.clsTDBlank
+{
+    
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	/*color: #000000;*/
+	padding-top: 2pt;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	/*background-color: #BED5F4;*/
+}
+TR.clsTRBlank
+{
+    
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	/*color: #000000;*/
+	padding-top: 2pt;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	/*background-color: #BED5F4;*/
+}
+ TH.divPage { PADDING-RIGHT: 2pt; PADDING-LEFT: 2pt; FONT-SIZE: 8pt; PADDING-BOTTOM: 2pt; MARGIN: 2pt; PADDING-TOP: 2pt; BACKGROUND-REPEAT: repeat; FONT-FAMILY: Verdana, Arial; BACKGROUND-COLOR: #f7f7f7 }
+ /*TD.navMenu { BORDER-RIGHT: lightblue 1px outset; BORDER-TOP: lightblue 1px outset;BORDER-LEFT: lightblue 1px outset; BORDER-BOTTOM: lightblue 1px outset; BACKGROUND-COLOR: lightblue; BACKGROUND-REPEAT: repeat; FONT-FAMILY: Verdana, Arial;}*/
+
+ #select
+
+{
+    BORDER-RIGHT: #C0C0FF 1px outset; BORDER-TOP: #C0C0FF 1px outset;BORDER-LEFT: #C0C0FF 1px outset; BORDER-BOTTOM: #C0C0FF 1px outset; 
+	padding-right: 2px;
+	padding-left: 2px;
+	font-weight: bold;
+	font-size: 10px;
+	padding-bottom: 4px;
+	color: black;
+	padding-top: 4px;
+	font-family: Verdana, Arial;
+	MARGIN: 1px -1px -1px 0px;
+	height: 11px;
+	width: 20px;
+	text-decoration: none;
+	background: white repeat-x;  
+}
+/*----------------------------------------------------------------------*/
+BODY {
+	 FONT: 100% verdana, arial, sans-serif; BACKGROUND-COLOR: #fff
+}
+UL#tabnav {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 3px; MARGIN: 1em 0px; FONT: bold 11px verdana, arial, sans-serif; PADDING-TOP: 3px; BORDER-BOTTOM: #C0C0FF 1px outset; LIST-STYLE-TYPE: none; TEXT-ALIGN: left
+}
+UL#tabnav LI {
+	DISPLAY: inline
+}
+UL#tabnav LI.tabSelected {
+	BORDER-BOTTOM: #fff 1px solid; BACKGROUND-COLOR: #fff;FONT: bold 11px verdana, arial, sans-serif;
+}
+/*BODY#tab2 LI.tab2 {
+	BORDER-BOTTOM: #fff 1px solid; BACKGROUND-COLOR: #fff
+}
+BODY#tab3 LI.tab3 {
+	BORDER-BOTTOM: #fff 1px solid; BACKGROUND-COLOR: #fff
+}
+BODY#tab4 LI.tab4 {
+	BORDER-BOTTOM: #fff 1px solid; BACKGROUND-COLOR: #fff
+}
+BODY#tab1 LI.tab1 A {
+	COLOR: #000; PADDING-TOP: 4px; POSITION: relative; TOP: 1px; BACKGROUND-COLOR: #fff
+}*/
+UL#tabnav LI.tabSelected A {
+	COLOR: #000; PADDING-TOP: 4px; POSITION: relative; TOP: 1px; BACKGROUND-COLOR: #fff;FONT: bold 11px verdana, arial, sans-serif;cursor:default;
+}
+/*BODY#tab3 LI.tab3 A {
+	COLOR: #000; PADDING-TOP: 4px; POSITION: relative; TOP: 1px; BACKGROUND-COLOR: #fff
+}
+BODY#tab4 LI.tab4 A {
+	COLOR: #000; PADDING-TOP: 4px; POSITION: relative; TOP: 1px; BACKGROUND-COLOR: #fff
+}*/
+
+UL#tabnav LI A {
+	BORDER-RIGHT: #C0C0FF 1px outset; PADDING-RIGHT: 4px; BORDER-TOP: #C0C0FF 1px outset; PADDING-LEFT: 4px; PADDING-BOTTOM: 3px; BORDER-LEFT: #C0C0FF 1px outset; COLOR: #000; MARGIN-RIGHT: 3px; PADDING-TOP: 3px; BORDER-BOTTOM: #C0C0FF 1px ; BACKGROUND-COLOR: #C0C0FF; TEXT-DECORATION: none;FONT: normal 11px verdana, arial, sans-serif;cursor:hand;
+}
+UL#tabnav A:hover {
+	BACKGROUND: #fff
+}
+
+/*---------------------------------------------------------------------------------------------------------11 -----*/
+UL#subtabnav {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 3px; MARGIN: 1em 0px; FONT: bold 9px verdana, arial, sans-serif; PADDING-TOP: 3px; BORDER-BOTTOM: #C0C0FF 1px outset; LIST-STYLE-TYPE: none; TEXT-ALIGN: left
+}
+UL#subtabnav LI {
+	DISPLAY: inline;
+}
+UL#subtabnav LI.tabSelected {
+	BORDER-BOTTOM: #fff 1px solid; BACKGROUND-COLOR: #fff;FONT: bold 9px verdana, arial, sans-serif;
+}
+/*BODY#tab2 LI.tab2 {
+	BORDER-BOTTOM: #fff 1px solid; BACKGROUND-COLOR: #fff
+}
+BODY#tab3 LI.tab3 {
+	BORDER-BOTTOM: #fff 1px solid; BACKGROUND-COLOR: #fff
+}
+BODY#tab4 LI.tab4 {
+	BORDER-BOTTOM: #fff 1px solid; BACKGROUND-COLOR: #fff
+}
+BODY#tab1 LI.tab1 A {
+	COLOR: #000; PADDING-TOP: 4px; POSITION: relative; TOP: 1px; BACKGROUND-COLOR: #fff
+}*/
+UL#subtabnav LI.tabSelected A {
+	COLOR: #000; PADDING-TOP: 4px; POSITION: relative; TOP: 1px; BACKGROUND-COLOR: #fff;FONT: bold 9px verdana, arial, sans-serif;cursor:default;
+}
+/*BODY#tab3 LI.tab3 A {
+	COLOR: #000; PADDING-TOP: 4px; POSITION: relative; TOP: 1px; BACKGROUND-COLOR: #fff
+}
+BODY#tab4 LI.tab4 A {
+	COLOR: #000; PADDING-TOP: 4px; POSITION: relative; TOP: 1px; BACKGROUND-COLOR: #fff
+}*/
+
+UL#subtabnav LI A {
+	  BORDER-RIGHT: #C0C0FF 1px outset; PADDING-RIGHT: 4px; BORDER-TOP: #C0C0FF 1px outset; PADDING-LEFT: 4px; PADDING-BOTTOM: 3px; BORDER-LEFT: #C0C0FF 1px outset; COLOR: #000; MARGIN-RIGHT: 3px; PADDING-TOP: 3px; BORDER-BOTTOM: #C0C0FF 1px ; BACKGROUND-COLOR: #C0C0FF; TEXT-DECORATION: none;FONT: normal 9px verdana, arial, sans-serif;cursor:hand;
+	  /*BORDER-RIGHT: #C0C0FF 1px outset; PADDING-RIGHT: 4px; BORDER-TOP: #C0C0FF 1px outset; PADDING-LEFT: 4px; PADDING-BOTTOM: 3px; BORDER-LEFT: #C0C0FF 1px outset; COLOR: #000; MARGIN-RIGHT: 0px; PADDING-TOP: 3px; BORDER-BOTTOM: #C0C0FF 1px ; background:url('../../Images/tabimages/IconImages/72.gif') #C0C0FF ; background-repeat:no-repeat;width:30;height:30;   TEXT-DECORATION: none;FONT: normal 11px verdana, arial, sans-serif;cursor:hand;*/
+}
+UL#subtabnav A:hover {
+	BACKGROUND: #fff
+}
+/*----------------------------------------------------------------------------------*/
+
+a.navtabMenu
+{
+    /*COLOR: #3D5FA3;*/
+	COLOR: white;
+    BORDER-RIGHT: #C0C0FF 1px outset; BORDER-TOP: #C0C0FF 1px outset;BORDER-LEFT: #C0C0FF 1px outset; BORDER-BOTTOM: #C0C0FF 1px outset; 
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial;
+    PADDING-BOTTOM: 4px;
+    MARGIN: 1px 0px 0px 0px;
+    LINE-HEIGHT: 11px;
+    PADDING-TOP: 4px;
+    POSITION: relative;
+    HEIGHT: 15px;
+    width: 30px;
+    TEXT-DECORATION: none;
+	background:  white;
+	cursor:hand;/* Added By Shrikant on 1 July 2008 ReqID WAF3_PB_64*/
+}

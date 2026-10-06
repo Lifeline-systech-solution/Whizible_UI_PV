@@ -1,0 +1,636 @@
+﻿h5.pgtitle {
+    margin: 0px 0 0;
+    font-weight: 700;
+    color: #4263c1;
+    font-size: 14px;
+}
+.TabsSec {
+    padding: 0 12px;
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    box-shadow: 0 0 0.9rem rgba(0, 0, 0, .1);
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+.font-weight-600 {
+    font-weight: 600;
+}
+.profileImg {
+    width: 190px;
+    height: auto;
+    border-radius: 15px;
+    margin-left: auto;
+}
+
+.card {
+    background-color: #fff;
+    /*            margin: 0 20px 20px 20px;*/
+}
+.inner_allstatus {
+    font-size: 35px;
+    color: #ffb300;
+    font-weight: 500;
+    /*background-color: #fffad4;*/
+    padding: 5px;
+    border-radius: 50%;
+}
+.inner_all_openstatus {
+    font-size: 25px; 
+    /* Modified By Madhuri.K On 26-03-2026 */
+    color: #ff0000;
+    font-weight: 500;
+    padding: 5px;
+}
+.inner_onlinestatus {
+    font-size: 16px; /* Modified By Madhuri.K On 26-03-2026 */
+    /* Modified By Madhuri.K On 26-03-2026 */
+    color: #0ebf3c;
+    font-weight: 500;
+    padding: 5px;
+}
+.inner_leave_status {
+    font-size: 16px; /* Modified By Madhuri.K On 26-03-2026 */
+    color: #ff9900;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.inner_all_blue_status {
+    font-size: 25px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    color: #2B55CE;
+    font-weight: 500;
+    padding: 5px;
+}
+.inner_all_topPro_status {
+    font-size: 25px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    color: #b200ff;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.inner_all_top_pink_status {
+    font-size: 25px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    /*            color: #d5068a;*/
+    font-weight: 500;
+    padding: 5px;
+}
+.open_text {
+    color: #ff0000;
+    font-weight: 500;
+    font-size: 14px;
+}
+.top_red_text {
+    font-size: 25px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    color: #ff0000;
+    font-weight: 500;
+    padding: 3px;
+}
+
+.red_text {
+    font-size: 19px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    color: #ff0000;
+    font-weight: 500;
+    padding: 2px;
+}
+.online_text {
+    color: #0ebf3c;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.leave_text {
+    color: #ff9900;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.CR_text {
+    color: #2B55CE;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.topPro_text {
+    color: #b200ff;
+    font-weight: 500;
+    font-size: 14px;
+}
+.top_pink_text {
+    color: #d5068a;
+    font-weight: 500;
+}
+.legends-div .legends {
+    display: flex;
+    padding: 10px;
+}
+
+.legends-div .yellow-box {
+    background-color: #F5C330;
+}
+
+.legends-div .legends .l-name {
+    margin-left: 4px;
+    width: 70px;
+    flex-grow: 1;
+}
+
+.legends-div .legend-box {
+    width: 25px;
+    height: 20px;
+    background-color: #2B55CE;
+}
+.legends-div .yellow-box {
+    width: 25px;
+    height: 20px;
+    background-color: #ff9900;
+}
+.legends-div .orange-box {
+    width: 25px;
+    height: 20px;
+    background-color: #ec7103d9;
+}
+
+.legends-div .voi-box {
+    width: 25px;
+    height: 20px;
+    background-color: #0ad97a;
+}
+
+.legends-div .inter-box {
+    width: 25px;
+    height: 20px;
+    background-color: #0ad97a;
+}
+
+.legends-div .exter-box {
+    width: 25px;
+    height: 20px;
+    background-color: #2B55CE;
+}
+
+.legends-div .Closer-box {
+    width: 25px;
+    height: 20px;
+    background-color: #ec7103d9;
+}
+
+.small_blu_text {
+    font-size: 11.5px;
+    color: #2B55CE;
+    margin-left: 35px;
+}
+.project_graphSection {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+/*    padding-top: 48px;*/
+}
+
+.Tickets_graphSection {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.speed_graphSection {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.card-img {
+    margin-top: -25px;
+    /*            margin-bottom: 18px;*/
+    margin-left: 5px;
+    z-index: 100;
+}
+.Card_View_whiz {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: 5px;
+}
+.clearedStage1 {
+    background-color: #ff6161;
+    text-align: center;
+    color: #fff;
+    font-size: 7px;
+}
+.OnlineStage {
+    background-color: #0ebf3c;
+    text-align: center;
+    color: #fff;
+    font-size: 7px;
+}
+
+.blueStage1 {
+    background-color: #2B55CE;
+    text-align: center;
+    color: #fff;
+    font-size: 7px;
+}
+.clearedStage_orange {
+    background-color: #ffb300;
+    text-align: center;
+    color: #fff;
+    font-size: 7px;
+}
+.tabcontent_body {
+    padding: 18px !important;
+}
+.table-fixed-header thead tr th, .table thead tr th {
+    background: #e7edf0;
+    color: #464a4c;
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    font-weight: 400;
+}
+.table-fixed-header tbody tr th, .table tbody tr td {
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+}
+.Breached_detailtbl tbody tr td, .Breached_detailtbl tbody tr td a {
+    color: #ff0000;
+}
+.table-border-none tbody tr td {
+    border: none !important;
+}
+.like_thum {
+    color: #fff;
+    background-color: #2B55CE;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.yellow_like_thum {
+    color: #fff;
+    background-color: #eb9429;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.green_like_thum {
+    color: #fff;
+    background-color: #0ebf3c;
+    padding: 5px;
+    border-radius: 50%;
+}
+.CardsAcc_flex{
+    flex: 1;
+}
+.flex_display {
+    display: flex;
+    /* vertical-align: middle; */
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: start;
+    margin-top: 24px
+}
+.span_text {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1748d5;
+}
+.span_bluetext {
+    font-size: 15px;
+    font-weight: 500;
+    color: #8da2f1;
+}
+.span_pinktext {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ec23ed;
+}
+
+.canvas-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*            min-height: 365px;*/
+    position: relative;
+}
+.medium_center_text {
+    position: absolute;
+    margin-top: 35px;
+    font-size: 11.5px !important;
+}
+
+.Score_1InnerDiv_section {
+    position: absolute;
+    left: 21%;
+    top: 40%;
+    width: 59%;
+    /* height: 60%; */
+    border-top-left-radius: 360px;
+    border-top-right-radius: 360px;
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+.user_outlook {
+    background-color: #ddd;
+    color: #a9a6a6;
+    border-radius: 50%;
+    padding: 6px;
+    margin-right: 4px;
+}
+
+.offcanvas-85 {
+    --bs-offcanvas-width: 85%;
+}
+.offcanvas-75 {
+    --bs-offcanvas-width: 75%;
+}
+.statusBox {
+    display: inline-block;
+    border-radius: 50%;
+    min-width: 10px;
+    height: 10px;
+}
+
+.statusDiv {
+    width: unset;
+}
+
+    .statusDiv label {
+        font-weight: 400;
+    }
+.statusRejected {
+    background-color: #dd4b39;
+}
+.CardView_icon {
+    width: 32px;
+    height: auto;
+    border-radius: 50%;
+    padding: 6px;
+}
+.text_red {
+    color: red;
+}
+
+.text_green {
+    color: green;
+}
+
+.text_orange {
+    color: #ff9900;
+}
+
+.rating_Fstar {
+    color: #ffb300;
+    font-size:12px;
+}
+
+.stickyTblHeader {
+    position: sticky;
+    top: -2px;
+    z-index: 5;
+    background-color: #e7edf0;
+}
+/*.dataTables_scroll:hover {
+    overflow: auto !important;
+}*/
+
+.dataTables_scroll {
+    scrollbar-width: thin;
+}
+
+/*    .dataTables_scroll .scrollTable {
+        overflow: hidden !important;
+    }*/
+.card_border {
+    border: none !important;
+}
+
+.card_header_border {
+    border: 1px solid #ddd;
+}
+.carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #ddd;
+}
+
+.btn_carousel {
+    width: 11px !important;
+    height: 10px !important;
+    border-radius: 100%;
+    background-color: #000000 !important;
+}
+
+.carousel_height {
+    height: 350px;
+}
+
+.carousel__min_height {
+    height: 210px;
+}
+
+.carousel-inner {
+    position: static;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -34px;
+}
+
+/* Style Wired */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 15px;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border: 4px solid transparent;
+    overflow: hidden;
+    transition: .4s;
+    background: #ddd
+}
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        border-radius: 30px;
+        transform: translateX(-20px);
+        transition: .4s
+    }
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+    background: #fff
+}
+
+input:checked + .slider {
+    border: 4px solid #4263c1;
+    background: #4263c1
+}
+
+.score_count {
+/*    position: absolute;
+    top: 66px;
+    left: 42px;*/
+    font-size: 18px;
+    font-weight: 500;
+    color: #1b8915;
+}
+.main_profile {
+    border: 1px dotted #ddd;
+    padding: 17px;
+    margin: 01px;
+    border-radius: 18px;
+}
+.smallImg {
+    width: 20px;
+    height: auto;
+}
+.checkIcn {
+    position: absolute;
+    left: 196px;
+    top: 45%;
+    font-size: 11px;
+    color: #248aff;
+}
+
+.badgeIcn {
+    color: #badaff;
+    /* position: relative; */
+    font-size: 18px;
+}
+
+.smallTxt {
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    color: #9ea3b7;
+}
+
+.leve_div {
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    color: #ff6a00;
+}
+
+.pageHeading {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.logo_section {
+    display: flex;
+    align-items: center;
+}
+.top_blue_text {
+    font-size: 25px; /* Modified By Madhuri.K On 26-03-2026 */
+    color: #2B55CE;
+    font-weight: 500;
+    padding: 3px;
+}
+
+.blue_text {
+    font-size: 16px; /* Modified By Madhuri.K On 26-03-2026 */
+    color: #2B55CE;
+    font-weight: 500;
+    padding: 2px;
+}
+
+.top_yellow_text {
+    font-size: 25px; /* Modified By Madhuri.K On 26-03-2026 */
+    color: #ff9900;
+    font-weight: 500;
+    padding: 3px;
+}
+
+.top_voil_text {
+    font-size: 25px; /* Modified By Madhuri.K On 26-03-2026 */
+    color: #ec23ed;
+    font-weight: 500;
+    padding: 3px;
+}
+
+.yellow_text {
+    font-size: 19px;
+    color: #ff9900;
+    font-weight: 500;
+    padding: 2px;
+}
+
+.voil_text {
+    font-size: 19px;
+    color: #ec23ed;
+    font-weight: 500;
+    padding: 2px;
+}
+
+.top_black_text {
+    font-size: 25px; /* Modified By Madhuri.K On 26-03-2026 */
+    font-weight: 500;
+}
+
+.bg_light_red {
+    background-color: #fff4f4;
+}
+
+.bg_light_blue {
+    background-color: #edecfd;
+}
+
+.bg_light_orange {
+    background-color: #fffcdd;
+}
+
+.space_word {
+    word-spacing: 3px;
+    padding-left: 15px;
+}
+.red_txt {
+    color: #ff0000;
+    font-weight: 500;
+}
+.card_bottom {
+    border-bottom: 1px dotted #ddd;
+}
+
+.aline_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.span_Orgtext {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ff9900;
+}
+
+.span_green_text {
+    font-size: 15px;
+    font-weight: 500;
+    color: #0da31a;
+}
+.bgGreen {
+    background-color: #52c273;
+}
+
+.bgblue {
+    background-color: #4881fb;
+}
+.text_green {
+    color: green;
+}

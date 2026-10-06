@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whizible — Project Hours Report</title>
+<script type="text/javascript">
+  window.location.replace('../PM/PM_UnderConstruction.aspx');
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="preview">
+<div class="app no-sidebar">
+
+  <!-- ============ MAIN ============ -->
+  <div class="main">
+    <header class="topbar">
+      <div class="crumbs"><span>Whizible</span><span>›</span><b id="crumbPage">Project Hours Report</b></div>
+      <div class="top-search"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="nlq" placeholder="Ask anything — “projects at risk in Banking”, “revenue by customer”…">
+        <span class="kbd">⌘K</span>
+      </div>
+      <button class="icon-btn" id="themeBtn" title="Toggle dark / light mode" aria-label="Toggle theme">◐</button>
+      <button class="icon-btn" title="Notification Center" onclick="toast('3 alerts: 2 SLA breaches, 1 budget threshold crossed')"><span class="dot"></span>🔔</button>
+      <button class="icon-btn" title="Export / Share / Schedule" onclick="shareMenu(event)">⇪</button>
+      <div class="role-pill">
+        <div class="avatar" id="roleAvatar">VM</div>
+        <select id="roleSel" title="Switch persona">
+          <option value="ceo">Vishwas Mahajan · CEO</option>
+          <option value="dd">Saji Unni · Delivery Director</option>
+          <option value="dm">Anwar Shaikh · Delivery Manager</option>
+          <option value="cfo">Mayuresh Deosthale · CFO</option>
+          <option value="cfo2">Sambasivan · CFO (Group)</option>
+          <option value="pm1">Jagdish · Project Manager</option>
+          <option value="pm2">Nikhil · Project Manager</option>
+          <option value="pm3">Syamantak · Project Manager</option>
+        </select>
+      </div>
+      <button class="ai-cta" id="copilotBtn">✦ Copilot</button>
+    </header>
+
+    <!-- ============ GLOBAL FILTERS ============ -->
+    <div class="filterbar" id="filterbar">
+      <button class="datebtn" id="dateBtn">📅 <span id="dateLabel">Current Quarter</span> <small id="dateRangeTxt">Apr 1 – Jun 30, 2026</small> ▾</button>
+      <span class="compare-tag" id="compareTag" style="display:none">vs previous period</span>
+      <!-- filter chips injected here -->
+      <span id="chips"></span>
+      <button class="chipbtn" onclick="toast('27 more dimensions available: Program, BU, Practice, Skill, Contract Type, Vendor, Currency…')">＋ More filters</button>
+      <button class="filter-clear" id="clearFilters">Reset all</button>
+      <span style="flex:1"></span>
+      <button class="ghostbtn" onclick="toast('View saved to “My Views” — pinned for CEO persona')">☆ Save view</button>
+    </div>
+
+    <!-- drill trail (signature element) -->
+    <div class="trail" id="trail">
+      <span class="trail-label">Drill trail</span>
+      <span class="t-chip" style="cursor:default;color:var(--faint)">Click any KPI or chart to start a cross-module drill-through →</span>
+    </div>
+
+    <!-- ============ PAGE (preview) ============ -->
+    <main>
+      <section class="content active" id="page-preview"></section>
+    </main>
+  </div>
+</div>
+
+<!-- ============ DRILL MODAL ============ -->
+<div class="overlay" id="overlay">
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="m-hd">
+      <div style="flex:1">
+        <h3 id="mTitle">Drill-down</h3>
+        <div class="m-crumbs" id="mCrumbs"></div>
+      </div>
+      <button class="icon-btn" onclick="exportDrillMenu(event)" title="Export this view">⤓</button>
+      <button class="icon-btn" onclick="closeModal()" title="Close">✕</button>
+    </div>
+    <div class="m-body" id="mBody"></div>
+  </div>
+</div>
+
+<!-- ============ AI COPILOT ============ -->
+<aside class="copilot" id="copilot" aria-label="AI Copilot">
+  <div class="cp-hd">
+    <div class="logo-mark">✦</div>
+    <div style="flex:1"><b style="font-size:13.5px">Whizible Copilot</b><div style="font-size:11px;color:var(--muted)">Grounded in your filtered data · Fable-5 class model</div></div>
+    <button class="icon-btn" onclick="document.getElementById('copilot').classList.remove('open')">✕</button>
+  </div>
+  <div class="cp-log" id="cpLog"></div>
+  <div class="cp-quick">
+    <button onclick="askCopilot('Why did profitability drop this quarter?')">Why did profitability drop?</button>
+    <button onclick="askCopilot('Show projects at risk in the Banking portfolio')">At-risk in Banking</button>
+    <button onclick="askCopilot('Where is my bench and what should I do with it?')">Bench strategy</button>
+    <button onclick="askCopilot('Forecast revenue for next quarter')">Revenue forecast</button>
+  </div>
+  <div class="whatif">
+    <h4>Scenario planner · What-if</h4>
+    <div class="wi-row">Add hires <input type="range" id="wiHires" min="0" max="25" value="0"><b id="wiHiresV">0</b></div>
+    <div class="wi-row">Bill-rate change <input type="range" id="wiRate" min="-10" max="15" value="0"><b id="wiRateV">0%</b></div>
+    <div class="wi-out">
+      <div><b id="wiUtil">—</b><span>Utilization</span></div>
+      <div><b id="wiRev">—</b><span>Qtr revenue</span></div>
+      <div><b id="wiMargin">—</b><span>Margin</span></div>
+    </div>
+  </div>
+  <div class="cp-in">
+    <input id="cpInput" placeholder="Ask in natural language…">
+    <button onclick="sendCopilot()">Send</button>
+  </div>
+</aside>
+
+<div class="toasts" id="toasts"></div>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whizible - CXO Dashboard</title>
+<!-- <script type="text/javascript">
+  window.location.replace('../PM/PM_UnderConstruction.aspx');
+</script> -->
+<script src="../../../Whizible2.0-new/plugins/chartjs/chart.min.js"></script>
+<link rel="stylesheet" href="../../../Whizible2.0-new/bootstrap/css/bootstrap-5.3.2.min.css">
+<link rel="stylesheet" href="../../../Whizible2.0-new/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="../../../Whizible2.0-new/fontawesome/css/v4-shims.min.css">
+<link rel="stylesheet" href="css/styles.css?v=14">
+<link rel="stylesheet" href="css/cxo-pva.css?v=40">
+</head>
+<body data-page="exec" class="analytics-pva">
+<div id="AnalyticsPreloader" class="preloader" aria-label="Loading"></div>
+<div class="loader-overlay" id="loaderOverlay" style="display:none;"><div class="loader"></div></div>
+<div class="bgwhite" id="AnalyticsWrapper" style="display:none;">
+  <!-- Page header aligned with Plan_VS_Actual_Dashboard.aspx -->
+  <div class="page-header-section" style="background:white;">
+    <div class="graybg" style="padding:0.4rem 1rem; margin-left:0;">
+      <h2 style="color:#1e40af; font-weight:600; font-size:18px; margin:0 0 0.25rem 0; display:flex; align-items:center;">
+        <i class="fas fa-chart-pie" style="color:#1e40af; font-size:1.5rem; margin-right:0.75rem;"></i>
+        CXO Dashboard
+      </h2>
+      <p style="color:#6b7280; margin:0;">Executive overview &middot; Revenue, margin, utilization &amp; portfolio health</p>
+    </div>
+  </div>
+
+  <div class="app no-sidebar">
+    <div class="main">
+      <!-- Global filters (action-bar style) -->
+      <div class="filterbar" id="filterbar">
+        <div class="filterbar-date">
+          <button class="datebtn" id="dateBtn" type="button">
+            <i class="far fa-calendar-alt"></i>
+            <span id="dateLabel">Current Quarter</span>
+            <small id="dateRangeTxt">Loading...</small>
+            <i class="fas fa-chevron-down" style="font-size:10px;margin-left:4px;"></i>
+          </button>
+          <span class="compare-tag" id="compareTag">vs previous period</span>
+          <span class="filterbar-spacer"></span>
+          <!--
+          <div class="exec-role-wrap">
+            <button type="button" class="role-pill exec-role-pill" id="execRoleBtn" title="Switch persona">
+              <span id="roleLabel">CEO</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <select id="roleSel" hidden aria-hidden="true" tabindex="-1">
+              <option value="ceo">CEO</option>
+              <option value="dd">Delivery Director</option>
+              <option value="dm">Delivery Manager</option>
+              <option value="cfo">CFO</option>
+              <option value="cfo2">CFO (Group)</option>
+              <option value="pm1">Project Manager</option>
+            </select>
+          </div>
+          -->
+        </div>
+        <div class="filterbar-row">
+          <span id="chips"></span>
+          <button class="chipbtn" type="button" onclick="toast('27 more dimensions available: Program, BU, Practice, Skill, Contract Type, Vendor, Currency...')">
+            <i class="fas fa-plus"></i> More filters
+          </button>
+          <button class="filter-clear" id="clearFilters" type="button">Reset all</button>
+          <span class="filterbar-spacer"></span>
+          <button class="ghostbtn" type="button" id="execSaveViewBtn" title="Save the current filters as a view">
+            <i class="far fa-save"></i> Save View
+          </button>
+          <button class="ghostbtn" type="button" id="execMyViewsBtn" title="Open your saved views">
+            <i class="fas fa-star"></i> My Views
+          </button>
+        </div>
+      </div>
+
+      <main>
+        <section class="content active" id="page-exec"></section>
+      </main>
+    </div>
+  </div>
+</div>
+
+<!-- Drill modal -->
+<div class="overlay" id="overlay">
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="m-hd">
+      <div style="flex:1">
+        <h3 id="mTitle">Drill-down</h3>
+        <div class="m-crumbs" id="mCrumbs"></div>
+      </div>
+      <button class="icon-btn" type="button" onclick="exportDrillMenu(event)" title="Export / Share"><i class="fas fa-share-alt"></i></button>
+      <button class="icon-btn" type="button" onclick="closeModal()" title="Close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="m-body" id="mBody"></div>
+  </div>
+</div>
+
+<!-- AI Copilot -->
+<aside class="copilot" id="copilot" aria-label="AI Copilot">
+  <div class="cp-hd">
+    <div class="logo-mark"><img src="../../../Whizible2.0-new/dist/img/Whizkidlogo.png" alt="Whizkid"></div>
+    <div style="flex:1">
+      <b style="font-size:13px">Whizible Copilot</b>
+      <div style="font-size:11px;color:var(--muted)">Grounded in your filtered data</div>
+    </div>
+    <button class="icon-btn" type="button" onclick="document.getElementById('copilot').classList.remove('open')"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="cp-log" id="cpLog"></div>
+  <div class="cp-quick">
+    <button type="button" onclick="askCopilot('Why did profitability drop this quarter?')">Why did profitability drop?</button>
+    <button type="button" onclick="askCopilot('Show projects at risk in the Banking portfolio')">At-risk in Banking</button>
+    <button type="button" onclick="askCopilot('Where is my bench and what should I do with it?')">Bench strategy</button>
+    <button type="button" onclick="askCopilot('Forecast revenue for next quarter')">Revenue forecast</button>
+  </div>
+  <div class="cp-in">
+    <input id="cpInput" placeholder="Ask in natural language...">
+    <button type="button" onclick="sendCopilot()">Send</button>
+  </div>
+</aside>
+
+<!-- Save View modal -->
+<div class="exec-save-modal-wrap" id="execSaveModal" hidden>
+  <div class="exec-save-modal" role="dialog" aria-modal="true" aria-labelledby="execSaveModalTitle">
+    <div class="exec-oc-hd">
+      <h5 class="exec-oc-title" id="execSaveModalTitle">Save View</h5>
+      <button type="button" class="btn-close" id="execSaveModalClose" aria-label="Close" title="Close"></button>
+    </div>
+    <div class="exec-save-modal-body">
+      <label class="exec-oc-label" for="execViewName">Filter View Name</label>
+      <input type="text" class="form-control exec-oc-input" id="execViewName" maxlength="80" placeholder="Enter a name for this view" autocomplete="off">
+      <div class="exec-applied" id="execAppliedFilters"></div>
+      <label class="exec-oc-check">
+        <input type="checkbox" id="execViewSetDefault">
+        <span>Set as Default</span>
+      </label>
+      <div class="exec-oc-actions">
+        <button type="button" class="ghostbtn exec-oc-primary" id="execViewSaveBtn">Save</button>
+        <button type="button" class="ghostbtn" id="execSaveModalCancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- My Views list -->
+<div class="offcanvas offcanvas-end exec-view-offcanvas" tabindex="-1" id="execSavedViewsOffcanvas" aria-labelledby="execSavedViewsOffcanvasLabel">
+  <div class="exec-oc-hd">
+    <div>
+      <h5 class="exec-oc-title" id="execSavedViewsOffcanvasLabel">My Views</h5>
+      <p class="exec-oc-sub">CXO Dashboard</p>
+    </div>
+    <button type="button" class="btn-close" data-exec-oc-close="execSavedViewsOffcanvas" aria-label="Close" title="Close"></button>
+  </div>
+  <div class="offcanvas-body exec-oc-body">
+    <p class="exec-oc-hint">Your views are private to this login. Click a name to apply, or Edit in this list.</p>
+    <div id="execSavedViewsList"></div>
+  </div>
+</div>
+<div class="exec-oc-backdrop" id="execViewBackdrop" hidden></div>
+
+<div class="toasts" id="toasts"></div>
+<script src="js/app.js?v=39"></script>
+</body>
+</html>

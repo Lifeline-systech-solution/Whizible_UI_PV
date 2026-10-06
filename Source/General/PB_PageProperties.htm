@@ -1,0 +1,1982 @@
+<Input  Type=hidden  name="fromElement" id="fromElement" class='clsTextBox' style='text-align:Left' value="Tag"  >
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+	
+<HEAD>
+	<TITLE>Page Properties</TITLE>
+	<meta name='GENERATOR' content='Microsoft Visual Studio.NET 7.0'>
+	<meta name='CODE_LANGUAGE' content='Visual Basic 7.0'>
+	<meta name='vs_defaultClientScript' content='JavaScript'>
+	<meta name='vs_targetSchema' content='http://schemas.microsoft.com/intellisense/ie5'>
+	<meta http-equiv="Cache-Control" CONTENT="no-cache">
+	<meta http-equiv="Pragma" CONTENT="no-cache">
+	<link rel='stylesheet' type='text/css' href='../General/StyleSheetChanakya_Green.css' />
+	<link id='lnkWhizStyleSheetImgDir' type='text/plain' href='../../images/green/' />
+	<script language='javascript' src='../General/CommonFunctions.js'></script>
+	<script src="../../General/CommonValidations.js?date=<%=DateTime.Now %>"></script>
+</HEAD>
+
+	<body class="clsBody" onunload ="CheckRefresh()" onresize="window_onresize()" onload="window_onload()" MS_POSITIONING="GridLayout">
+	<form name="frmPageProperties" method="post" action="PB_PageProperties.aspx?FromWhere=Control&amp;FromElement=Tag&amp;TagID=50093&amp;SubTagID=&amp;DisplaySection=PT&amp;TITLE=&amp;ElementName=" id="frmPageProperties">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTI2NjE1MjkyOGRkUIdh76LcsE8Fu8KMHKND6us4DAA=" />
+</div>
+
+	<script language=javascript>
+	var IsRefreshParent = true;
+	function CheckRefresh(){
+	        if (IsRefreshParent==true){RefreshWebFormDesigner(1);}	
+    }
+	</script>  
+	<Table class=clsTable cellspacing=0 cellpadding=0 width='100%'><TR class=clsTRMenu><TD align=Right> | <A  class='Menu' style='' onmouseover="this.style.backgroundColor='#FFD695'" onmouseout="this.style.backgroundColor=''"  onclick="Javascript:DMScript_OnClick(0,50093)" Title="Data Management Scripts" ><Img Border=0 src='../../Images/cssImages/Link images/DataScript.gif'>&nbsp;Data Management Scripts</A> | <A  class='Menu' style='' onmouseover="this.style.backgroundColor='#FFD695'" onmouseout="this.style.backgroundColor=''"  onclick="Javascript:Save_OnClick('SAVE')" Title="Save" ><Img Border=0 src='../../Images/cssImages/Link images/save.gif'>&nbsp;Save</A> | <A  class='Menu' style='' onmouseover="this.style.backgroundColor='#FFD695'" onmouseout="this.style.backgroundColor=''"  onclick="Javascript:Save_OnClick('SAVEANDCLOSE')" Title="Save and Close" ><Img Border=0 src='../../Images/cssImages/Link images/saveclose.gif'>&nbsp;Save and Close</A> | <A  class='Menu' style='' onmouseover="this.style.backgroundColor='#FFD695'" onmouseout="this.style.backgroundColor=''"  onclick="Javascript:Close_Onclick()" Title="Close" ><Img Border=0 src='../../Images/cssImages/Link images/close.gif'>&nbsp;Close</A> |</TD></TR></TABLE>
+<TABLE id='tblPL00' CellSpacing=0 width='100%' class=clsTable><TR class=clsTRBlank><TD align='right'><B>(<IMG src="../../Images/Star.gif" border=0> Mandatory)</B></TD></TR></TABLE>
+<TABLE id='tblCap00'  cellspacing=0 cellpadding=0 Width='99.9%'  class=clsTable><TR class=clsTRPageCaption><TD align=Left>Page Properties for Customer Revenue</TD><TD align=Right>Data Source: v_tbl_Revenue_Details</TD></TR></TABLE><BR>
+<div id='myDiv' style='OVERFLOW: auto; HEIGHT: 360px'>
+<div id='divMainProperties'>
+<TABLE class="clsTable" id="tblMainProperties" border="0" width="100%" cellpadding="0" cellspacing="0">
+<TR Width="25%" Class="clsTREven">
+<TD align="right" width="25%">
+Page Title&nbsp;
+</TD>
+<TD align="left" width="75%">
+<Input  Type=Textbox  name="txtTitle" id="txtTitle" class='clsTextBox' style='width:400px  ; text-align:Left' maxlength=50 value="Customer Revenue"  ><IMG src="../../Images/Star.gif" border=0></TD>
+</TR>
+<TR Width="100%" Class="clsTREven">
+<TD align="right" width="25%">
+Module Name&nbsp;
+</TD>
+<TD align="left" width="75%">
+<SELECT Language=javascript OnChange=Module_OnChange() id=cboModules name=cboModules class=clsComboBox style='width:150px ' ><FONT size=1><OPTION value =''></OPTION><OPTION value ="20021">Concurrency</OPTION><OPTION selected value ="SM">Configuration</OPTION><OPTION value ="MAS">Masters</OPTION><OPTION value ="PRO">My Workspace</OPTION><OPTION value ="MR">Query Builder</OPTION><OPTION value ="WSRV">Survey</OPTION><OPTION value ="IX">Workflows</OPTION></FONT></SELECT></TD>
+</TR>
+<TR Width="100%" Class="clsTREven">
+<TD align="right" width="25%">
+Parent Node&nbsp;
+</TD>
+<TD align="left" width="75%">
+<SELECT Language=javascript OnChange=Parent_OnChange() id=cboParentTag name=cboParentTag class=clsComboBox style='width:150px ' ><FONT size=1><OPTION selected value ="1">Configuration</OPTION><OPTION value ="1918">Culture Data</OPTION><OPTION value ="1928">Culture Report</OPTION><OPTION value ="544">Custom Report Writer</OPTION><OPTION value ="1604">General</OPTION><OPTION value ="1603">Navigation</OPTION><OPTION value ="585">Query Builder</OPTION><OPTION value ="806">Reports</OPTION><OPTION value ="442">Security</OPTION><OPTION value ="8">UI &amp; Navigation</OPTION><OPTION value ="1602">Web Form Builder</OPTION></FONT></SELECT></TD>
+</TR>
+<Input  Type=hidden  name="isOrderNumberMandatory" id="isOrderNumberMandatory" class='clsTextBox' style='text-align:Left' value="True"  ><TR Width="25%" Class="clsTREven">
+<TD align="right" width="25%">
+Order Number&nbsp;
+</TD>
+<TD align="left" width="75%">
+<Input  Type=Textbox  name="txtOrderNumber" id="txtOrderNumber" class='clsTextBox' style='width:80px  ; text-align:Right' value="7"  ><IMG src="../../Images/Star.gif" border=0></TD>
+</TR>
+<TR Width="25%" Class="clsTREven">
+<TD align="right" width="25%">
+Show Record Count&nbsp;
+</TD>
+<TD align="left" width="75%">
+<Input type=checkbox name="chkShowRecordCount" id="chkShowRecordCount" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR Width="25%" Class="clsTREven">
+<TD align="right" width="25%">
+Tab Display Type&nbsp;
+</TD>
+<TD align="left" width="75%">
+<SELECT  id=cboSubTagDisplayType name=cboSubTagDisplayType class=clsComboBox style='width:150px ' ><FONT size=1><OPTION value =''></OPTION><OPTION selected value ="T">Tabular</OPTION><OPTION value ="C">Columnar</OPTION></FONT></SELECT><IMG src="../../Images/Star.gif" border=0> </TD>
+</TR>
+<TR Width="25%" Class="clsTREven">
+<TD align="right" width="25%">
+Stored Procedure For Deletion&nbsp;
+</TD>
+<TD align="left" width="75%">
+<SELECT  id=cboDeletionSPName name=cboDeletionSPName class=clsComboBox ><FONT size=1><OPTION value =''></OPTION><OPTION value ="usp_del_tbl_PM_Dashboard">usp_del_tbl_PM_Dashboard</OPTION><OPTION value ="usp_Del_tbl_PM_ProjectGroup">usp_Del_tbl_PM_ProjectGroup</OPTION><OPTION value ="usp_Del_tbl_PM_ReviewStatistics_New">usp_Del_tbl_PM_ReviewStatistics_New</OPTION><OPTION value ="usp_Del_tbl_PM_Qualifications">usp_Del_tbl_PM_Qualifications</OPTION><OPTION value ="usp_Del_tbl_UI_TagMaster_UserAccess">usp_Del_tbl_UI_TagMaster_UserAccess</OPTION><OPTION value ="usp_Del_tbl_PM_ReportControlMaster">usp_Del_tbl_PM_ReportControlMaster</OPTION><OPTION value ="usp_Del_tbl_PM_SystemModules_User">usp_Del_tbl_PM_SystemModules_User</OPTION><OPTION value ="usp_Del_tbl_PM_Vertical_Master">usp_Del_tbl_PM_Vertical_Master</OPTION><OPTION value ="usp_Del_tbl_PM_ReportTagDetail_Control">usp_Del_tbl_PM_ReportTagDetail_Control</OPTION><OPTION value ="usp_Del_tbl_PM_SystemModules">usp_Del_tbl_PM_SystemModules</OPTION><OPTION value ="usp_Del_PB_tbl_UI_SubTagRelatedData">usp_Del_PB_tbl_UI_SubTagRelatedData</OPTION><OPTION value ="usp_Del_tbl_PM_ReportTagMasterDetail_Report">usp_Del_tbl_PM_ReportTagMasterDetail_Report</OPTION><OPTION value ="usp_Del_tbl_PM_Role">usp_Del_tbl_PM_Role</OPTION><OPTION value ="usp_Del_PB_tbl_UI_SubControlTagMaster">usp_Del_PB_tbl_UI_SubControlTagMaster</OPTION><OPTION value ="usp_del_tbl_QRB_CrossTabQuery_Master">usp_del_tbl_QRB_CrossTabQuery_Master</OPTION><OPTION value ="usp_del_tbl_UI_Module_OtherLinks_RoleMapping">usp_del_tbl_UI_Module_OtherLinks_RoleMapping</OPTION><OPTION value ="usp_Del_tbl_PM_TaskDelegation">usp_Del_tbl_PM_TaskDelegation</OPTION><OPTION value ="usp_Del_PB_tbl_UI_SubControlTagMaster_User">usp_Del_PB_tbl_UI_SubControlTagMaster_User</OPTION><OPTION value ="usp_Del_tbl_QRB_CT_SharedQueries">usp_Del_tbl_QRB_CT_SharedQueries</OPTION><OPTION value ="usp_Del_tbl_PM_OutSourceCompanyMaster">usp_Del_tbl_PM_OutSourceCompanyMaster</OPTION><OPTION value ="usp_Del_tbl_PM_Event">usp_Del_tbl_PM_Event</OPTION><OPTION value ="usp_Del_tbl_PM_EventParticipants">usp_Del_tbl_PM_EventParticipants</OPTION><OPTION value ="usp_Del_tbl_PM_ToolParameters">usp_Del_tbl_PM_ToolParameters</OPTION><OPTION value ="usp_Del_tbl_PM_Tools">usp_Del_tbl_PM_Tools</OPTION><OPTION value ="usp_Del_tbl_UI_Basic_PageFilters">usp_Del_tbl_UI_Basic_PageFilters</OPTION><OPTION value ="usp_Del_PB_ListOfSubTags">usp_Del_PB_ListOfSubTags</OPTION><OPTION value ="usp_del_tbl_QRB_EB_Variables">usp_del_tbl_QRB_EB_Variables</OPTION><OPTION value ="usp_Del_Temp_Tables_Contents">usp_Del_Temp_Tables_Contents</OPTION><OPTION value ="usp_Del_WSRUploadFile">usp_Del_WSRUploadFile</OPTION><OPTION value ="usp_Del_PB_tbl_UI_SubTag_Graph">usp_Del_PB_tbl_UI_SubTag_Graph</OPTION><OPTION value ="usp_Del_tbl_QRB_AttributeAccess">usp_Del_tbl_QRB_AttributeAccess</OPTION><OPTION value ="usp_Del_PB_ListOfActionLinks">usp_Del_PB_ListOfActionLinks</OPTION><OPTION value ="usp_Del_tbl_QRB_EntityAccess">usp_Del_tbl_QRB_EntityAccess</OPTION><OPTION value ="usp_Del_tbl_QRB_Query_Access">usp_Del_tbl_QRB_Query_Access</OPTION><OPTION value ="usp_Del_tbl_UI_OptionButtonControlDetails">usp_Del_tbl_UI_OptionButtonControlDetails</OPTION><OPTION value ="usp_Del_tbl_UI_TagMaster_Custom_Parent_WebForm">usp_Del_tbl_UI_TagMaster_Custom_Parent_WebForm</OPTION><OPTION value ="usp_Del_tbl_UI_CLCPDynamicExtensionTypeMaster">usp_Del_tbl_UI_CLCPDynamicExtensionTypeMaster</OPTION><OPTION value ="usp_Del_tbl_QRB_UIControlMaster">usp_Del_tbl_QRB_UIControlMaster</OPTION><OPTION value ="usp_Del_tbl_PM_ReviewObservations">usp_Del_tbl_PM_ReviewObservations</OPTION><OPTION value ="usp_Del_PB_tbl_UI_ControlTagMaster_User">usp_Del_PB_tbl_UI_ControlTagMaster_User</OPTION><OPTION value ="usp_Del_tbl_PM_CompanyMaster">usp_Del_tbl_PM_CompanyMaster</OPTION><OPTION value ="usp_Del_tbl_PM_ROUMaster">usp_Del_tbl_PM_ROUMaster</OPTION><OPTION value ="usp_Del_tbl_UI_XLS_Queue">usp_Del_tbl_UI_XLS_Queue</OPTION><OPTION value ="usp_Del_tbl_PM_EarmarkedProjectResources">usp_Del_tbl_PM_EarmarkedProjectResources</OPTION><OPTION value ="usp_Del_PB_tbl_UI_TagRelatedData">usp_Del_PB_tbl_UI_TagRelatedData</OPTION><OPTION value ="usp_Del_PB_tbl_UI_TagRelatedData_User">usp_Del_PB_tbl_UI_TagRelatedData_User</OPTION><OPTION value ="usp_Del_tbl_PM_CurrencyMaster">usp_Del_tbl_PM_CurrencyMaster</OPTION><OPTION value ="usp_Del_tbl_PM_QualificationGroupMaster">usp_Del_tbl_PM_QualificationGroupMaster</OPTION><OPTION value ="usp_Del_PB_ListOfActionLinks_User">usp_Del_PB_ListOfActionLinks_User</OPTION><OPTION value ="usp_del_tbl_CDB_Palette_Details_ForPalette">usp_del_tbl_CDB_Palette_Details_ForPalette</OPTION><OPTION value ="usp_Del_tbl_PM_DesignationMaster">usp_Del_tbl_PM_DesignationMaster</OPTION><OPTION value ="usp_del_tbl_CRW_Report_UIControlMaster">usp_del_tbl_CRW_Report_UIControlMaster</OPTION><OPTION value ="usp_Del_tbl_PM_HRRMaster">usp_Del_tbl_PM_HRRMaster</OPTION><OPTION value ="usp_Del_tbl_PM_ProjectGroupResources">usp_Del_tbl_PM_ProjectGroupResources</OPTION><OPTION value ="usp_Del_tbl_PM_EarmarkedReferredMaster">usp_Del_tbl_PM_EarmarkedReferredMaster</OPTION><OPTION value ="usp_Del_tbl_UI_CLCPDynamicExtensionMaster">usp_Del_tbl_UI_CLCPDynamicExtensionMaster</OPTION><OPTION value ="usp_Del_tbl_PM_GradeMaster">usp_Del_tbl_PM_GradeMaster</OPTION><OPTION value ="usp_Del_tbl_PM_DomainMaster">usp_Del_tbl_PM_DomainMaster</OPTION><OPTION value ="usp_Del_tbl_PM_ReviewStatistics">usp_Del_tbl_PM_ReviewStatistics</OPTION><OPTION value ="usp_Del_tbl_PM_CountryMaster">usp_Del_tbl_PM_CountryMaster</OPTION><OPTION value ="usp_Del_tbl_PM_Employee">usp_Del_tbl_PM_Employee</OPTION><OPTION value ="usp_Del_tbl_PM_VisaTypeMaster">usp_Del_tbl_PM_VisaTypeMaster</OPTION><OPTION value ="usp_Del_Wiz_tbl_CRW_Report_Detail">usp_Del_Wiz_tbl_CRW_Report_Detail</OPTION><OPTION value ="usp_Del_SaaS_tbl_PM_Login_SubTenant">usp_Del_SaaS_tbl_PM_Login_SubTenant</OPTION><OPTION value ="usp_Del_SaaS_tbl_PM_Login_Tenant">usp_Del_SaaS_tbl_PM_Login_Tenant</OPTION><OPTION value ="usp_Del_tbl_WF_ProcessStage">usp_Del_tbl_WF_ProcessStage</OPTION><OPTION value ="usp_del_tbl_CDB_Alert_Links">usp_del_tbl_CDB_Alert_Links</OPTION><OPTION value ="usp_Del_tbl_WSRV_Library_Question">usp_Del_tbl_WSRV_Library_Question</OPTION><OPTION value ="usp_del_ProjectAccess">usp_del_ProjectAccess</OPTION><OPTION value ="usp_Del_tbl_WSRV_QuestionCategory">usp_Del_tbl_WSRV_QuestionCategory</OPTION><OPTION value ="usp_Del_tbl_WSRV_QuestionSource">usp_Del_tbl_WSRV_QuestionSource</OPTION><OPTION value ="usp_Del_tbl_WSRV_SurveyCategory">usp_Del_tbl_WSRV_SurveyCategory</OPTION><OPTION value ="usp_Del_tbl_UI_TabControls">usp_Del_tbl_UI_TabControls</OPTION><OPTION value ="usp_Del_tbl_WSRV_Survey_Master">usp_Del_tbl_WSRV_Survey_Master</OPTION><OPTION value ="usp_Del_tbl_QRB_DataDictionary_Master">usp_Del_tbl_QRB_DataDictionary_Master</OPTION><OPTION value ="usp_Del_tbl_WF_StageAction">usp_Del_tbl_WF_StageAction</OPTION><OPTION value ="usp_del_tbl_WSRV_Survey_Question_DeleteQuestion">usp_del_tbl_WSRV_Survey_Question_DeleteQuestion</OPTION><OPTION value ="usp_del_tbl_WSRV_Survey_Response_Detail">usp_del_tbl_WSRV_Survey_Response_Detail</OPTION><OPTION value ="usp_Del_tbl_UI_TabCollecton">usp_Del_tbl_UI_TabCollecton</OPTION><OPTION value ="usp_Del_CLCPExtension">usp_Del_CLCPExtension</OPTION><OPTION value ="usp_Del_tbl_PM_ReviewActions">usp_Del_tbl_PM_ReviewActions</OPTION><OPTION value ="usp_Del_PB_tbl_UI_SubTag_Dynamic_Links_User">usp_Del_PB_tbl_UI_SubTag_Dynamic_Links_User</OPTION><OPTION value ="usp_Del_tbl_PM_Role_Multiple_Dashboards">usp_Del_tbl_PM_Role_Multiple_Dashboards</OPTION><OPTION value ="usp_Del_PB_tbl_UI_SubTagRelatedData_User">usp_Del_PB_tbl_UI_SubTagRelatedData_User</OPTION><OPTION value ="usp_Del_tbl_UI_UserPreferences">usp_Del_tbl_UI_UserPreferences</OPTION><OPTION value ="usp_Del_tbl_PM_UnitMaster">usp_Del_tbl_PM_UnitMaster</OPTION><OPTION value ="usp_Del_Wiz_tbl_CRW_Report_Detail_User">usp_Del_Wiz_tbl_CRW_Report_Detail_User</OPTION><OPTION value ="usp_del_tbl_CDB_Links">usp_del_tbl_CDB_Links</OPTION><OPTION value ="usp_Del_tbl_PM_URLRequests">usp_Del_tbl_PM_URLRequests</OPTION><OPTION value ="usp_Del_PB_ListOfActionLinksOfTab">usp_Del_PB_ListOfActionLinksOfTab</OPTION><OPTION value ="usp_del_tbl_CDB_Item_Master">usp_del_tbl_CDB_Item_Master</OPTION><OPTION value ="usp_Del_tbl_UI_AdvanceFilters">usp_Del_tbl_UI_AdvanceFilters</OPTION><OPTION value ="usp_Del_PB_ListOfActionLinksOfTab_User">usp_Del_PB_ListOfActionLinksOfTab_User</OPTION><OPTION value ="usp_del_tbl_CDB_Item_Details">usp_del_tbl_CDB_Item_Details</OPTION><OPTION value ="usp_Del_tbl_CDB_DefaultDashboard">usp_Del_tbl_CDB_DefaultDashboard</OPTION><OPTION value ="usp_Del_tbl_PM_GlobalProjectRole">usp_Del_tbl_PM_GlobalProjectRole</OPTION><OPTION value ="usp_Del_DoNotAllowToDelete">usp_Del_DoNotAllowToDelete</OPTION><OPTION value ="usp_Del_PB_ListOfSubTags_User">usp_Del_PB_ListOfSubTags_User</OPTION><OPTION value ="usp_Del_tbl_PM_Modules">usp_Del_tbl_PM_Modules</OPTION><OPTION value ="usp_del_MonitoringFields">usp_del_MonitoringFields</OPTION><OPTION value ="usp_Del_tbl_UI_EmployeeFilterSettings">usp_Del_tbl_UI_EmployeeFilterSettings</OPTION><OPTION value ="usp_Del_tbl_PM_BusinessMaster">usp_Del_tbl_PM_BusinessMaster</OPTION><OPTION value ="usp_Del_PB_tbl_UI_SubTag_Dynamic_Links">usp_Del_PB_tbl_UI_SubTag_Dynamic_Links</OPTION><OPTION value ="usp_Del_tbl_PM_EarlyWarnings">usp_Del_tbl_PM_EarlyWarnings</OPTION><OPTION value ="usp_Del_DraftProcess">usp_Del_DraftProcess</OPTION><OPTION value ="usp_Del_tbl_PM_DepartmentMaster">usp_Del_tbl_PM_DepartmentMaster</OPTION><OPTION value ="Usp_Del_tbl_UI_SubTagMaster_Culture_1576">Usp_Del_tbl_UI_SubTagMaster_Culture_1576</OPTION><OPTION value ="usp_del_tbl_QRB_EB_Expressions">usp_del_tbl_QRB_EB_Expressions</OPTION><OPTION value ="usp_del_CRW_tbl_UI_Subreport_FieldMapping">usp_del_CRW_tbl_UI_Subreport_FieldMapping</OPTION><OPTION value ="usp_del_ProjectType">usp_del_ProjectType</OPTION><OPTION value ="usp_Del_tbl_PM_ResourceStatus">usp_Del_tbl_PM_ResourceStatus</OPTION><OPTION value ="usp_del_CDB_UserDashboards">usp_del_CDB_UserDashboards</OPTION><OPTION value ="usp_del_Wiz_CRW_tbl_UI_Subreport_FieldMapping">usp_del_Wiz_CRW_tbl_UI_Subreport_FieldMapping</OPTION><OPTION value ="usp_Del_tbl_QRB_Metrics">usp_Del_tbl_QRB_Metrics</OPTION><OPTION value ="usp_Del_PB_tbl_UI_ControlTagMaster">usp_Del_PB_tbl_UI_ControlTagMaster</OPTION><OPTION value ="usp_Del_tbl_UI_EmployeeFilterSettings_FieldDetails">usp_Del_tbl_UI_EmployeeFilterSettings_FieldDetails</OPTION><OPTION value ="usp_Del_tbl_CRW_Report_Master_UserAccess">usp_Del_tbl_CRW_Report_Master_UserAccess</OPTION><OPTION value ="usp_del_tbl_CDB_Palette_Master">usp_del_tbl_CDB_Palette_Master</OPTION><OPTION value ="usp_Del_tbl_CRW_Graph_FieldMapping">usp_Del_tbl_CRW_Graph_FieldMapping</OPTION><OPTION value ="usp_Del_tbl_QRB_SharedQueries_Customers">usp_Del_tbl_QRB_SharedQueries_Customers</OPTION><OPTION value ="usp_Del_tbl_CDB_Item_DrillDown_Details">usp_Del_tbl_CDB_Item_DrillDown_Details</OPTION><OPTION value ="usp_Del_tbl_CRW_DynamicDataGrid_Mapping">usp_Del_tbl_CRW_DynamicDataGrid_Mapping</OPTION><OPTION value ="usp_Del_tbl_PM_Certifications">usp_Del_tbl_PM_Certifications</OPTION><OPTION value ="usp_Del_tbl_PM_Customer">usp_Del_tbl_PM_Customer</OPTION><OPTION value ="usp_Del_tbl_QRB_SharedQueries">usp_Del_tbl_QRB_SharedQueries</OPTION><OPTION value ="usp_Del_tbl_PM_CustomerContacts">usp_Del_tbl_PM_CustomerContacts</OPTION><OPTION value ="usp_Del_PB_tbl_UI_Graph">usp_Del_PB_tbl_UI_Graph</OPTION><OPTION value ="usp_Del_tbl_PM_CustomerEmployee">usp_Del_tbl_PM_CustomerEmployee</OPTION><OPTION value ="usp_Del_PB_tbl_UI_FormVariables">usp_Del_PB_tbl_UI_FormVariables</OPTION><OPTION value ="usp_Del_PB_tbl_UI_Dynamic_Links_User">usp_Del_PB_tbl_UI_Dynamic_Links_User</OPTION><OPTION value ="usp_Del_PB_tbl_UI_Graph_User">usp_Del_PB_tbl_UI_Graph_User</OPTION><OPTION value ="usp_del_tbl_QRB_EB_SharedExpressions_ForUser">usp_del_tbl_QRB_EB_SharedExpressions_ForUser</OPTION><OPTION value ="usp_Del_tbl_UI_TagMaster">usp_Del_tbl_UI_TagMaster</OPTION><OPTION value ="usp_Del_PB_tbl_UI_Dynamic_Links">usp_Del_PB_tbl_UI_Dynamic_Links</OPTION><OPTION value ="usp_Del_tbl_PM_DocumentCategory">usp_Del_tbl_PM_DocumentCategory</OPTION><OPTION value ="usp_Del_tbl_PM_Project">usp_Del_tbl_PM_Project</OPTION><OPTION value ="usp_Del_tbl_PM_EmployeeVisaDetails">usp_Del_tbl_PM_EmployeeVisaDetails</OPTION><OPTION value ="usp_Del_tbl_PM_EmployeeCertificationMatrix">usp_Del_tbl_PM_EmployeeCertificationMatrix</OPTION><OPTION value ="usp_del_tbl_ui_subnodeaccess">usp_del_tbl_ui_subnodeaccess</OPTION><OPTION value ="usp_Del_tbl_PM_EmployeeHistory">usp_Del_tbl_PM_EmployeeHistory</OPTION><OPTION value ="usp_Del_tbl_PM_EmployeeQualificationMatrix">usp_Del_tbl_PM_EmployeeQualificationMatrix</OPTION><OPTION value ="usp_Del_tbl_PM_EmployeeSkillMatrix">usp_Del_tbl_PM_EmployeeSkillMatrix</OPTION><OPTION value ="usp_Del_tbl_PM_Hardware">usp_Del_tbl_PM_Hardware</OPTION><OPTION value ="usp_Del_tbl_UI_Dynamic_Links">usp_Del_tbl_UI_Dynamic_Links</OPTION><OPTION value ="usp_Del_tbl_CRW_Report_Detail_DynamicDataGrid">usp_Del_tbl_CRW_Report_Detail_DynamicDataGrid</OPTION><OPTION value ="usp_Del_tbl_CRW_Report_Master">usp_Del_tbl_CRW_Report_Master</OPTION><OPTION value ="usp_Del_tbl_PM_Location">usp_Del_tbl_PM_Location</OPTION><OPTION value ="usp_Del_tbl_PM_Login">usp_Del_tbl_PM_Login</OPTION><OPTION value ="usp_Del_tbl_PM_ReviewStatistics_Reviewers">usp_Del_tbl_PM_ReviewStatistics_Reviewers</OPTION><OPTION value ="usp_Del_tbl_PM_SubProject">usp_Del_tbl_PM_SubProject</OPTION><OPTION value ="usp_Del_Wiz_tbl_CRW_subreport_mapping">usp_Del_Wiz_tbl_CRW_subreport_mapping</OPTION><OPTION value ="usp_Del_tbl_UI_GridFormattingRules">usp_Del_tbl_UI_GridFormattingRules</OPTION><OPTION value ="usp_Del_tbl_PM_SizeUnits">usp_Del_tbl_PM_SizeUnits</OPTION><OPTION value ="usp_del_tbl_CDB_Item_Series_Master">usp_del_tbl_CDB_Item_Series_Master</OPTION><OPTION value ="usp_Del_RoleDefaultProject">usp_Del_RoleDefaultProject</OPTION><OPTION value ="usp_Del_tbl_WF_Process">usp_Del_tbl_WF_Process</OPTION><OPTION value ="usp_del_tbl_CDB_Item_Series_Detail">usp_del_tbl_CDB_Item_Series_Detail</OPTION><OPTION value ="usp_Del_tbl_QRB_Connection_Master">usp_Del_tbl_QRB_Connection_Master</OPTION><OPTION value ="usp_Del_tbl_PM_ProjectEmployeeRole">usp_Del_tbl_PM_ProjectEmployeeRole</OPTION></FONT></SELECT></TD>
+</TR>
+<TR Width="25%" Class="clsTREven">
+<TD align="right" width="25%">
+Relative View&nbsp;
+</TD>
+<TD align="left" width="75%">
+<SELECT  id=cboView name=cboView class=clsComboBox ><FONT size=1><OPTION value =''></OPTION><OPTION value ="CheckedOutForms_tbl_UI_TagMaster">CheckedOutForms_tbl_UI_TagMaster</OPTION><OPTION value ="Culture_SubTag_tbl_UI_ControlComparisonValidations">Culture_SubTag_tbl_UI_ControlComparisonValidations</OPTION><OPTION value ="Culture_SubTag_tbl_UI_OptionButtonControlDetails">Culture_SubTag_tbl_UI_OptionButtonControlDetails</OPTION><OPTION value ="Culture_tbl_CRW_Report_Master">Culture_tbl_CRW_Report_Master</OPTION><OPTION value ="Culture_tbl_CRW_Report_Master_Culture">Culture_tbl_CRW_Report_Master_Culture</OPTION><OPTION value ="Culture_tbl_CRW_UI_Link_Master">Culture_tbl_CRW_UI_Link_Master</OPTION><OPTION value ="Culture_tbl_CRW_UI_Link_Master_Culture">Culture_tbl_CRW_UI_Link_Master_Culture</OPTION><OPTION value ="Culture_tbl_PM_SystemModules">Culture_tbl_PM_SystemModules</OPTION><OPTION value ="Culture_tbl_PM_SystemModules_Culture">Culture_tbl_PM_SystemModules_Culture</OPTION><OPTION value ="Culture_tbl_UI_ControlComparisonValidations">Culture_tbl_UI_ControlComparisonValidations</OPTION><OPTION value ="Culture_tbl_UI_ControlComparisonValidations_Culture">Culture_tbl_UI_ControlComparisonValidations_Culture</OPTION><OPTION value ="Culture_tbl_UI_ControlTagMaster">Culture_tbl_UI_ControlTagMaster</OPTION><OPTION value ="Culture_tbl_UI_ControlTagMaster_Culture">Culture_tbl_UI_ControlTagMaster_Culture</OPTION><OPTION value ="Culture_tbl_UI_Dynamic_Links">Culture_tbl_UI_Dynamic_Links</OPTION><OPTION value ="Culture_tbl_UI_Dynamic_Links_Culture">Culture_tbl_UI_Dynamic_Links_Culture</OPTION><OPTION value ="Culture_tbl_UI_OptionButtonControlDetails">Culture_tbl_UI_OptionButtonControlDetails</OPTION><OPTION value ="Culture_tbl_UI_OptionButtonControlDetails_Culture">Culture_tbl_UI_OptionButtonControlDetails_Culture</OPTION><OPTION value ="Culture_tbl_UI_SubControlTagMaster">Culture_tbl_UI_SubControlTagMaster</OPTION><OPTION value ="Culture_tbl_UI_SubControlTagMaster_Culture">Culture_tbl_UI_SubControlTagMaster_Culture</OPTION><OPTION value ="Culture_tbl_UI_SubTag_Dynamic_Links">Culture_tbl_UI_SubTag_Dynamic_Links</OPTION><OPTION value ="Culture_tbl_UI_SubTag_Dynamic_Links_Culture">Culture_tbl_UI_SubTag_Dynamic_Links_Culture</OPTION><OPTION value ="Culture_tbl_UI_SubTagMaster">Culture_tbl_UI_SubTagMaster</OPTION><OPTION value ="Culture_tbl_UI_SubTagMaster_Culture">Culture_tbl_UI_SubTagMaster_Culture</OPTION><OPTION value ="Culture_tbl_UI_SystemLinks">Culture_tbl_UI_SystemLinks</OPTION><OPTION value ="Culture_tbl_UI_SystemLinks_Culture">Culture_tbl_UI_SystemLinks_Culture</OPTION><OPTION value ="Culture_tbl_UI_TabControls">Culture_tbl_UI_TabControls</OPTION><OPTION value ="Culture_tbl_UI_TabControls_Culture">Culture_tbl_UI_TabControls_Culture</OPTION><OPTION value ="Culture_tbl_Ui_TagMaster">Culture_tbl_Ui_TagMaster</OPTION><OPTION value ="Culture_tbl_UI_TagMaster_Culture">Culture_tbl_UI_TagMaster_Culture</OPTION><OPTION value ="Culture_tbl_UI_Validation">Culture_tbl_UI_Validation</OPTION><OPTION value ="Culture_tbl_UI_Validation_Culture">Culture_tbl_UI_Validation_Culture</OPTION><OPTION value ="CultureSubTag_tbl_UI_TabControls">CultureSubTag_tbl_UI_TabControls</OPTION><OPTION value ="d_tbl_EXE_Employee_Revenue">d_tbl_EXE_Employee_Revenue</OPTION><OPTION value ="d_tbl_PM_Dashboard">d_tbl_PM_Dashboard</OPTION><OPTION value ="d_tbl_PM_Employee">d_tbl_PM_Employee</OPTION><OPTION value ="d_tbl_PM_Login">d_tbl_PM_Login</OPTION><OPTION value ="d_tbl_PM_Role">d_tbl_PM_Role</OPTION><OPTION value ="d_tbl_PM_Role_Multiple_Dashboards">d_tbl_PM_Role_Multiple_Dashboards</OPTION><OPTION value ="d_tbl_UI_CLCPDynamicExtensionMaster">d_tbl_UI_CLCPDynamicExtensionMaster</OPTION><OPTION value ="d_tbl_UI_CLCPDynamicExtensionParameterMaster">d_tbl_UI_CLCPDynamicExtensionParameterMaster</OPTION><OPTION value ="d_tbl_UI_CLCPExtensionMaster">d_tbl_UI_CLCPExtensionMaster</OPTION><OPTION value ="d_tbl_UI_CLCPExtensionParameterMaster">d_tbl_UI_CLCPExtensionParameterMaster</OPTION><OPTION value ="d_tbl_UI_CLCPExtensionParameters">d_tbl_UI_CLCPExtensionParameters</OPTION><OPTION value ="d_tbl_UI_ControlComparisonValidations">d_tbl_UI_ControlComparisonValidations</OPTION><OPTION value ="d_tbl_UI_ControlTagMaster">d_tbl_UI_ControlTagMaster</OPTION><OPTION value ="d_tbl_UI_EventRouter">d_tbl_UI_EventRouter</OPTION><OPTION value ="d_tbl_UI_OptionButtonControlDetails">d_tbl_UI_OptionButtonControlDetails</OPTION><OPTION value ="d_tbl_UI_SystemLinks">d_tbl_UI_SystemLinks</OPTION><OPTION value ="d_tbl_UI_TagDefaultFilters">d_tbl_UI_TagDefaultFilters</OPTION><OPTION value ="d_tbl_UI_TagMaster">d_tbl_UI_TagMaster</OPTION><OPTION value ="d_tbl_WF_ProcessStage">d_tbl_WF_ProcessStage</OPTION><OPTION value ="d_tbl_WF_StageAction">d_tbl_WF_StageAction</OPTION><OPTION value ="d_tbl_WSRV_Survey_Question">d_tbl_WSRV_Survey_Question</OPTION><OPTION value ="dbo.d_tbl_EXE_Employee_Revenue">dbo.d_tbl_EXE_Employee_Revenue</OPTION><OPTION value ="Demo_tbl_ASI_SportmanPerformance">Demo_tbl_ASI_SportmanPerformance</OPTION><OPTION value ="Demo_tbl_ASI_SportmanPerformance_Detail">Demo_tbl_ASI_SportmanPerformance_Detail</OPTION><OPTION value ="demo_tbl_EXE_Employee">demo_tbl_EXE_Employee</OPTION><OPTION value ="Demo_tbl_EXE_EmployeeProject">Demo_tbl_EXE_EmployeeProject</OPTION><OPTION value ="e_tbl_PM_Employee">e_tbl_PM_Employee</OPTION><OPTION value ="e_tbl_PM_Login">e_tbl_PM_Login</OPTION><OPTION value ="e_tbl_PM_Role">e_tbl_PM_Role</OPTION><OPTION value ="e_tbl_PM_Role_SaaS">e_tbl_PM_Role_SaaS</OPTION><OPTION value ="e_tbl_UI_ControlTagMaster">e_tbl_UI_ControlTagMaster</OPTION><OPTION value ="e_tbl_UI_TagDefaultFilters">e_tbl_UI_TagDefaultFilters</OPTION><OPTION value ="e_tbl_UI_TagMaster">e_tbl_UI_TagMaster</OPTION><OPTION value ="e_tbl_UI_UserGroup">e_tbl_UI_UserGroup</OPTION><OPTION value ="f_tbl_PM_Login">f_tbl_PM_Login</OPTION><OPTION value ="f_tbl_PM_Role">f_tbl_PM_Role</OPTION><OPTION value ="f_tbl_UI_TagMaster">f_tbl_UI_TagMaster</OPTION><OPTION value ="FontSettings_tbl_WSRV_Survey_Master">FontSettings_tbl_WSRV_Survey_Master</OPTION><OPTION value ="g_tbl_UI_TagMaster">g_tbl_UI_TagMaster</OPTION><OPTION value ="h_tbl_CRW_Report_Master">h_tbl_CRW_Report_Master</OPTION><OPTION value ="h_tbl_UI_TagMaster">h_tbl_UI_TagMaster</OPTION><OPTION value ="i_tbl_CRW_Report_Master">i_tbl_CRW_Report_Master</OPTION><OPTION value ="i_tbl_PM_Employee">i_tbl_PM_Employee</OPTION><OPTION value ="i_tbl_QRB_QueriesOnDashboards">i_tbl_QRB_QueriesOnDashboards</OPTION><OPTION value ="i_tbl_UI_TagMaster">i_tbl_UI_TagMaster</OPTION><OPTION value ="i_tbl_WF_Instance">i_tbl_WF_Instance</OPTION><OPTION value ="j_tbl_UI_TagMaster">j_tbl_UI_TagMaster</OPTION><OPTION value ="List_tbl_WSRV_Survey_Publish">List_tbl_WSRV_Survey_Publish</OPTION><OPTION value ="OnBehalfAvailableSurvey_tbl_WSRV_Survey_Publish">OnBehalfAvailableSurvey_tbl_WSRV_Survey_Publish</OPTION><OPTION value ="SaaS_tbl_PM_Employee">SaaS_tbl_PM_Employee</OPTION><OPTION value ="tbl_ASI_Discipline_Parameter">tbl_ASI_Discipline_Parameter</OPTION><OPTION value ="tbl_ASI_SportmanPerformance">tbl_ASI_SportmanPerformance</OPTION><OPTION value ="tbl_ASI_SportmanPerformance_Detail">tbl_ASI_SportmanPerformance_Detail</OPTION><OPTION value ="tbl_CDB_Alert_Links">tbl_CDB_Alert_Links</OPTION><OPTION value ="tbl_CDB_Alerts">tbl_CDB_Alerts</OPTION><OPTION value ="tbl_CDB_DashboardSections">tbl_CDB_DashboardSections</OPTION><OPTION value ="tbl_CDB_DashboardSettings">tbl_CDB_DashboardSettings</OPTION><OPTION value ="tbl_CDB_DefaultDashboard">tbl_CDB_DefaultDashboard</OPTION><OPTION value ="tbl_CDB_GraphSkins">tbl_CDB_GraphSkins</OPTION><OPTION value ="tbl_CDB_GraphTypes">tbl_CDB_GraphTypes</OPTION><OPTION value ="tbl_CDB_Item_Details">tbl_CDB_Item_Details</OPTION><OPTION value ="tbl_CDB_Item_DrillDown_Details">tbl_CDB_Item_DrillDown_Details</OPTION><OPTION value ="tbl_CDB_Item_DrillDown_Master">tbl_CDB_Item_DrillDown_Master</OPTION><OPTION value ="tbl_CDB_Item_Master">tbl_CDB_Item_Master</OPTION><OPTION value ="tbl_CDB_Item_Series_Detail">tbl_CDB_Item_Series_Detail</OPTION><OPTION value ="tbl_CDB_Item_Series_Master">tbl_CDB_Item_Series_Master</OPTION><OPTION value ="tbl_CDB_LegendStyles">tbl_CDB_LegendStyles</OPTION><OPTION value ="tbl_CDB_Links">tbl_CDB_Links</OPTION><OPTION value ="tbl_CDB_Palette_Details">tbl_CDB_Palette_Details</OPTION><OPTION value ="tbl_CDB_Palette_Master">tbl_CDB_Palette_Master</OPTION><OPTION value ="tbl_CDB_Project_Parameters">tbl_CDB_Project_Parameters</OPTION><OPTION value ="tbl_CDB_Update_Schedule">tbl_CDB_Update_Schedule</OPTION><OPTION value ="tbl_CNF_City">tbl_CNF_City</OPTION><OPTION value ="tbl_CNF_District">tbl_CNF_District</OPTION><OPTION value ="tbl_CNF_Education">tbl_CNF_Education</OPTION><OPTION value ="tbl_CNF_MaritalStatus">tbl_CNF_MaritalStatus</OPTION><OPTION value ="tbl_CNF_MonthlyIncomeClass">tbl_CNF_MonthlyIncomeClass</OPTION><OPTION value ="tbl_CNF_Nationality">tbl_CNF_Nationality</OPTION><OPTION value ="tbl_CNF_Occupation">tbl_CNF_Occupation</OPTION><OPTION value ="tbl_CNF_Religion">tbl_CNF_Religion</OPTION><OPTION value ="tbl_CNF_WorkSector">tbl_CNF_WorkSector</OPTION><OPTION value ="tbl_CRW_Access">tbl_CRW_Access</OPTION><OPTION value ="tbl_CRW_DateRanges">tbl_CRW_DateRanges</OPTION><OPTION value ="tbl_CRW_DynamicDataGrid_Mapping">tbl_CRW_DynamicDataGrid_Mapping</OPTION><OPTION value ="tbl_CRW_Graph_FieldMapping">tbl_CRW_Graph_FieldMapping</OPTION><OPTION value ="tbl_CRW_MasterTable_Relation_Master">tbl_CRW_MasterTable_Relation_Master</OPTION><OPTION value ="tbl_CRW_MasterTables">tbl_CRW_MasterTables</OPTION><OPTION value ="tbl_CRW_MasterTables_User">tbl_CRW_MasterTables_User</OPTION><OPTION value ="tbl_CRW_Months">tbl_CRW_Months</OPTION><OPTION value ="tbl_CRW_ProjectDetailType">tbl_CRW_ProjectDetailType</OPTION><OPTION value ="tbl_CRW_Report_Detail">tbl_CRW_Report_Detail</OPTION><OPTION value ="tbl_CRW_Report_Detail_Culture">tbl_CRW_Report_Detail_Culture</OPTION><OPTION value ="tbl_CRW_Report_Detail_User">tbl_CRW_Report_Detail_User</OPTION><OPTION value ="tbl_CRW_Report_EmptyValueReplacement">tbl_CRW_Report_EmptyValueReplacement</OPTION><OPTION value ="tbl_CRW_Report_EmptyValueReplacement_User">tbl_CRW_Report_EmptyValueReplacement_User</OPTION><OPTION value ="tbl_CRW_Report_Master">tbl_CRW_Report_Master</OPTION><OPTION value ="tbl_CRW_Report_Master_CheckIn_CheckOut">tbl_CRW_Report_Master_CheckIn_CheckOut</OPTION><OPTION value ="tbl_CRW_Report_Master_Culture">tbl_CRW_Report_Master_Culture</OPTION><OPTION value ="tbl_CRW_Report_Master_User">tbl_CRW_Report_Master_User</OPTION><OPTION value ="tbl_CRW_Report_Master_UserAccess">tbl_CRW_Report_Master_UserAccess</OPTION><OPTION value ="tbl_CRW_Report_UIControlMaster">tbl_CRW_Report_UIControlMaster</OPTION><OPTION value ="tbl_CRW_Report_UIControlMaster_Culture">tbl_CRW_Report_UIControlMaster_Culture</OPTION><OPTION value ="tbl_CRW_Report_UIControlMaster_User">tbl_CRW_Report_UIControlMaster_User</OPTION><OPTION value ="tbl_CRW_Subreport_FieldMapping">tbl_CRW_Subreport_FieldMapping</OPTION><OPTION value ="tbl_CRW_Subreport_Mapping">tbl_CRW_Subreport_Mapping</OPTION><OPTION value ="tbl_CRW_TPMonth">tbl_CRW_TPMonth</OPTION><OPTION value ="tbl_CRW_TPWeek">tbl_CRW_TPWeek</OPTION><OPTION value ="tbl_CRW_UI_Link_Master">tbl_CRW_UI_Link_Master</OPTION><OPTION value ="tbl_CRW_UI_Link_Master_Culture">tbl_CRW_UI_Link_Master_Culture</OPTION><OPTION value ="tbl_CRW_UI_Template_Conversion">tbl_CRW_UI_Template_Conversion</OPTION><OPTION value ="tbl_CRW_UI_Template_Link">tbl_CRW_UI_Template_Link</OPTION><OPTION value ="tbl_CRW_UI_Template_Master">tbl_CRW_UI_Template_Master</OPTION><OPTION value ="tbl_CRW_UI_Template_Master_Culture">tbl_CRW_UI_Template_Master_Culture</OPTION><OPTION value ="tbl_CRW_UI_TemplateGroup_Master">tbl_CRW_UI_TemplateGroup_Master</OPTION><OPTION value ="tbl_CRW_UI_TemplateGroup_Master_Culture">tbl_CRW_UI_TemplateGroup_Master_Culture</OPTION><OPTION value ="tbl_CRW_Years">tbl_CRW_Years</OPTION><OPTION value ="tbl_Duration">tbl_Duration</OPTION><OPTION value ="tbl_EmpAgeDetails_Abhijeet">tbl_EmpAgeDetails_Abhijeet</OPTION><OPTION value ="tbl_EmpDetails_Abhijeet">tbl_EmpDetails_Abhijeet</OPTION><OPTION value ="tbl_EXE_Employee">tbl_EXE_Employee</OPTION><OPTION value ="tbl_EXE_Employee_Revenue">tbl_EXE_Employee_Revenue</OPTION><OPTION value ="tbl_EXE_EmployeeProject">tbl_EXE_EmployeeProject</OPTION><OPTION value ="tbl_EXE_Location">tbl_EXE_Location</OPTION><OPTION value ="tbl_EXE_Project">tbl_EXE_Project</OPTION><OPTION value ="tbl_EXE_Role">tbl_EXE_Role</OPTION><OPTION value ="tbl_FI_BM_Beneficiary">tbl_FI_BM_Beneficiary</OPTION><OPTION value ="tbl_Keyboard_Shortcuts">tbl_Keyboard_Shortcuts</OPTION><OPTION value ="tbl_MultiInsert">tbl_MultiInsert</OPTION><OPTION value ="tbl_MultiInsert_SubTag">tbl_MultiInsert_SubTag</OPTION><OPTION value ="tbl_MultiInsert_SubTag_Project">tbl_MultiInsert_SubTag_Project</OPTION><OPTION value ="tbl_PBN_Debugging">tbl_PBN_Debugging</OPTION><OPTION value ="tbl_PBN_Help">tbl_PBN_Help</OPTION><OPTION value ="tbl_PBN_Help_Culture">tbl_PBN_Help_Culture</OPTION><OPTION value ="tbl_PBN_Help_RelatedTopic">tbl_PBN_Help_RelatedTopic</OPTION><OPTION value ="tbl_PBN_URL">tbl_PBN_URL</OPTION><OPTION value ="tbl_PM_AuditTrail">tbl_PM_AuditTrail</OPTION><OPTION value ="tbl_PM_Certifications">tbl_PM_Certifications</OPTION><OPTION value ="tbl_PM_CompanyInformation">tbl_PM_CompanyInformation</OPTION><OPTION value ="tbl_PM_Customer">tbl_PM_Customer</OPTION><OPTION value ="tbl_PM_CustomerContact">tbl_PM_CustomerContact</OPTION><OPTION value ="tbl_PM_CustomerLoginProject">tbl_PM_CustomerLoginProject</OPTION><OPTION value ="tbl_PM_Dashboard">tbl_PM_Dashboard</OPTION><OPTION value ="tbl_PM_Data_Master">tbl_PM_Data_Master</OPTION><OPTION value ="tbl_PM_DateFormats">tbl_PM_DateFormats</OPTION><OPTION value ="tbl_PM_DefaultTabProject">tbl_PM_DefaultTabProject</OPTION><OPTION value ="tbl_PM_DepartmentMaster">tbl_PM_DepartmentMaster</OPTION><OPTION value ="tbl_PM_EmailMessages">tbl_PM_EmailMessages</OPTION><OPTION value ="tbl_PM_Employee">tbl_PM_Employee</OPTION><OPTION value ="tbl_PM_EmployeeCertificationMatrix">tbl_PM_EmployeeCertificationMatrix</OPTION><OPTION value ="tbl_PM_Inherited_Dashboard_Elements">tbl_PM_Inherited_Dashboard_Elements</OPTION><OPTION value ="tbl_PM_Location">tbl_PM_Location</OPTION><OPTION value ="tbl_PM_Login">tbl_PM_Login</OPTION><OPTION value ="tbl_PM_Project">tbl_PM_Project</OPTION><OPTION value ="tbl_PM_ProjectEmployeeRole">tbl_PM_ProjectEmployeeRole</OPTION><OPTION value ="tbl_PM_ProjectGroup">tbl_PM_ProjectGroup</OPTION><OPTION value ="tbl_PM_ReportingToMiddleLevel">tbl_PM_ReportingToMiddleLevel</OPTION><OPTION value ="tbl_PM_Role">tbl_PM_Role</OPTION><OPTION value ="tbl_PM_Role_Culture">tbl_PM_Role_Culture</OPTION><OPTION value ="tbl_PM_Role_Dashboard">tbl_PM_Role_Dashboard</OPTION><OPTION value ="tbl_PM_Role_Multiple_Dashboards">tbl_PM_Role_Multiple_Dashboards</OPTION><OPTION value ="tbl_PM_RoleDefaultProject">tbl_PM_RoleDefaultProject</OPTION><OPTION value ="tbl_PM_SearchMaster">tbl_PM_SearchMaster</OPTION><OPTION value ="tbl_PM_SystemModules">tbl_PM_SystemModules</OPTION><OPTION value ="tbl_PM_SystemModules_Culture">tbl_PM_SystemModules_Culture</OPTION><OPTION value ="tbl_PM_SystemModules_User">tbl_PM_SystemModules_User</OPTION><OPTION value ="tbl_PM_TaskDelegation">tbl_PM_TaskDelegation</OPTION><OPTION value ="tbl_PM_TaskDelegation_Details">tbl_PM_TaskDelegation_Details</OPTION><OPTION value ="tbl_PM_TaskDelegation_SubTag">tbl_PM_TaskDelegation_SubTag</OPTION><OPTION value ="tbl_PM_TransactionHistory">tbl_PM_TransactionHistory</OPTION><OPTION value ="tbl_QRB_AttributeAccess">tbl_QRB_AttributeAccess</OPTION><OPTION value ="tbl_QRB_Connection_Master">tbl_QRB_Connection_Master</OPTION><OPTION value ="tbl_QRB_CrossTabQuery_Graphs">tbl_QRB_CrossTabQuery_Graphs</OPTION><OPTION value ="tbl_QRB_CrossTabQuery_Master">tbl_QRB_CrossTabQuery_Master</OPTION><OPTION value ="tbl_QRB_CT_SharedQueries">tbl_QRB_CT_SharedQueries</OPTION><OPTION value ="tbl_QRB_DataDictionary_Details">tbl_QRB_DataDictionary_Details</OPTION><OPTION value ="tbl_QRB_DataDictionary_Master">tbl_QRB_DataDictionary_Master</OPTION><OPTION value ="tbl_QRB_DefaultRoleEntityFilters">tbl_QRB_DefaultRoleEntityFilters</OPTION><OPTION value ="tbl_QRB_EB_Expressions">tbl_QRB_EB_Expressions</OPTION><OPTION value ="tbl_QRB_EB_SharedExpressions">tbl_QRB_EB_SharedExpressions</OPTION><OPTION value ="tbl_QRB_EB_Variables">tbl_QRB_EB_Variables</OPTION><OPTION value ="tbl_QRB_EntityAccess">tbl_QRB_EntityAccess</OPTION><OPTION value ="tbl_QRB_EntityHelp">tbl_QRB_EntityHelp</OPTION><OPTION value ="tbl_QRB_Favorites">tbl_QRB_Favorites</OPTION><OPTION value ="tbl_QRB_Formula_Master">tbl_QRB_Formula_Master</OPTION><OPTION value ="tbl_QRB_GroupDetails">tbl_QRB_GroupDetails</OPTION><OPTION value ="tbl_QRB_GroupMaster">tbl_QRB_GroupMaster</OPTION><OPTION value ="tbl_QRB_Metrics">tbl_QRB_Metrics</OPTION><OPTION value ="tbl_QRB_QueriesOnDashboards">tbl_QRB_QueriesOnDashboards</OPTION><OPTION value ="tbl_QRB_Query_Access">tbl_QRB_Query_Access</OPTION><OPTION value ="tbl_QRB_Query_Master">tbl_QRB_Query_Master</OPTION><OPTION value ="tbl_QRB_SharedQueries">tbl_QRB_SharedQueries</OPTION><OPTION value ="tbl_QRB_UIControlMaster">tbl_QRB_UIControlMaster</OPTION><OPTION value ="tbl_Revenue_Details">tbl_Revenue_Details</OPTION><OPTION value ="tbl_Revenue_Details_Topic">tbl_Revenue_Details_Topic</OPTION><OPTION value ="tbl_SaaS_ContractTypes">tbl_SaaS_ContractTypes</OPTION><OPTION value ="tbl_SAAS_Employee">tbl_SAAS_Employee</OPTION><OPTION value ="Tbl_SAAS_Employee_Activity">Tbl_SAAS_Employee_Activity</OPTION><OPTION value ="tbl_SAAS_Master_Data">tbl_SAAS_Master_Data</OPTION><OPTION value ="tbl_SAAS_MovieCollection">tbl_SAAS_MovieCollection</OPTION><OPTION value ="tbl_SaaS_QRB_TenantEntityWebForm">tbl_SaaS_QRB_TenantEntityWebForm</OPTION><OPTION value ="tbl_SaaS_TenantContracts">tbl_SaaS_TenantContracts</OPTION><OPTION value ="tbl_SaaS_UI_RegistrationImages">tbl_SaaS_UI_RegistrationImages</OPTION><OPTION value ="tbl_SaaS_UI_SubTagMaster_Tenant">tbl_SaaS_UI_SubTagMaster_Tenant</OPTION><OPTION value ="tbl_SaaS_UI_SubTenantAccess">tbl_SaaS_UI_SubTenantAccess</OPTION><OPTION value ="tbl_SaaS_UI_TagMaster">tbl_SaaS_UI_TagMaster</OPTION><OPTION value ="tbl_SaaS_UI_TagMaster_Tenant">tbl_SaaS_UI_TagMaster_Tenant</OPTION><OPTION value ="tbl_SH_PerformanceCounterLog">tbl_SH_PerformanceCounterLog</OPTION><OPTION value ="tbl_SH_PerformanceCounters">tbl_SH_PerformanceCounters</OPTION><OPTION value ="tbl_SH_PerformanceCounters_Schedule">tbl_SH_PerformanceCounters_Schedule</OPTION><OPTION value ="tbl_Test_Attachment">tbl_Test_Attachment</OPTION><OPTION value ="tbl_Test_CRW_DBCSinPDF">tbl_Test_CRW_DBCSinPDF</OPTION><OPTION value ="tbl_test_ddl_trigger">tbl_test_ddl_trigger</OPTION><OPTION value ="tbl_Test_NeedleGraph">tbl_Test_NeedleGraph</OPTION><OPTION value ="tbl_test_NumericPaging">tbl_test_NumericPaging</OPTION><OPTION value ="tbl_Test_PrimaryKey">tbl_Test_PrimaryKey</OPTION><OPTION value ="tbl_Test_PrimaryKey_Subtag">tbl_Test_PrimaryKey_Subtag</OPTION><OPTION value ="tbl_Test_SMP_Sampling_Master">tbl_Test_SMP_Sampling_Master</OPTION><OPTION value ="tbl_Test_SMP_SamplingSet_Master">tbl_Test_SMP_SamplingSet_Master</OPTION><OPTION value ="tbl_Test_TR">tbl_Test_TR</OPTION><OPTION value ="tbl_test_YesNo">tbl_test_YesNo</OPTION><OPTION value ="tbl_Transaction_pages">tbl_Transaction_pages</OPTION><OPTION value ="tbl_UI_AdvanceFilters">tbl_UI_AdvanceFilters</OPTION><OPTION value ="tbl_UI_AdvanceFilters_Culture">tbl_UI_AdvanceFilters_Culture</OPTION><OPTION value ="tbl_UI_Basic_PageFilters">tbl_UI_Basic_PageFilters</OPTION><OPTION value ="tbl_UI_CLCPDynamicExtensionCustomCode">tbl_UI_CLCPDynamicExtensionCustomCode</OPTION><OPTION value ="tbl_UI_CLCPDynamicExtensionInputDefinition">tbl_UI_CLCPDynamicExtensionInputDefinition</OPTION><OPTION value ="tbl_UI_CLCPDynamicExtensionMaster">tbl_UI_CLCPDynamicExtensionMaster</OPTION><OPTION value ="tbl_UI_CLCPDynamicExtensionOutputDefinition">tbl_UI_CLCPDynamicExtensionOutputDefinition</OPTION><OPTION value ="tbl_UI_CLCPDynamicExtensionParameterMaster">tbl_UI_CLCPDynamicExtensionParameterMaster</OPTION><OPTION value ="tbl_UI_CLCPDynamicExtensionTypeMaster">tbl_UI_CLCPDynamicExtensionTypeMaster</OPTION><OPTION value ="tbl_UI_CLCPEventClassMaster">tbl_UI_CLCPEventClassMaster</OPTION><OPTION value ="tbl_UI_CLCPEventMaster">tbl_UI_CLCPEventMaster</OPTION><OPTION value ="tbl_UI_CLCPExtensionCustomCode">tbl_UI_CLCPExtensionCustomCode</OPTION><OPTION value ="tbl_UI_CLCPExtensionMappedClasses">tbl_UI_CLCPExtensionMappedClasses</OPTION><OPTION value ="tbl_UI_CLCPExtensionMappedProperties">tbl_UI_CLCPExtensionMappedProperties</OPTION><OPTION value ="tbl_UI_CLCPExtensionMaster">tbl_UI_CLCPExtensionMaster</OPTION><OPTION value ="tbl_UI_CLCPExtensionParameterMaster">tbl_UI_CLCPExtensionParameterMaster</OPTION><OPTION value ="tbl_UI_CLCPExtensionParameterTypeMaster">tbl_UI_CLCPExtensionParameterTypeMaster</OPTION><OPTION value ="tbl_UI_CLCPExtensionTypeMaster">tbl_UI_CLCPExtensionTypeMaster</OPTION><OPTION value ="tbl_UI_CLCPTagEventMapping">tbl_UI_CLCPTagEventMapping</OPTION><OPTION value ="tbl_UI_CLCPTagExtensionTypeMapping">tbl_UI_CLCPTagExtensionTypeMapping</OPTION><OPTION value ="tbl_UI_ControlComparisonValidations">tbl_UI_ControlComparisonValidations</OPTION><OPTION value ="tbl_UI_ControlComparisonValidations_Culture">tbl_UI_ControlComparisonValidations_Culture</OPTION><OPTION value ="tbl_UI_ControlLevelUserAccess">tbl_UI_ControlLevelUserAccess</OPTION><OPTION value ="tbl_UI_ControlTagMaster">tbl_UI_ControlTagMaster</OPTION><OPTION value ="tbl_UI_ControlTagMaster_Culture">tbl_UI_ControlTagMaster_Culture</OPTION><OPTION value ="tbl_UI_ControlTagMaster_User">tbl_UI_ControlTagMaster_User</OPTION><OPTION value ="tbl_UI_ControlType">tbl_UI_ControlType</OPTION><OPTION value ="tbl_UI_Culture">tbl_UI_Culture</OPTION><OPTION value ="tbl_UI_Customizations">tbl_UI_Customizations</OPTION><OPTION value ="tbl_UI_DeletionParameters">tbl_UI_DeletionParameters</OPTION><OPTION value ="tbl_UI_Design_Demo_Value_Drivers">tbl_UI_Design_Demo_Value_Drivers</OPTION><OPTION value ="tbl_UI_DirectoryMaster">tbl_UI_DirectoryMaster</OPTION><OPTION value ="tbl_UI_Dynamic_Links">tbl_UI_Dynamic_Links</OPTION><OPTION value ="tbl_UI_Dynamic_Links_Culture">tbl_UI_Dynamic_Links_Culture</OPTION><OPTION value ="tbl_UI_Dynamic_Links_User">tbl_UI_Dynamic_Links_User</OPTION><OPTION value ="tbl_UI_DynamicMenuGroupStyleMaster">tbl_UI_DynamicMenuGroupStyleMaster</OPTION><OPTION value ="tbl_UI_DynamicMenuItemStyleMaster">tbl_UI_DynamicMenuItemStyleMaster</OPTION><OPTION value ="tbl_UI_DynamicMenuStyleMaster">tbl_UI_DynamicMenuStyleMaster</OPTION><OPTION value ="tbl_UI_EmailMessages">tbl_UI_EmailMessages</OPTION><OPTION value ="tbl_UI_EmployeeFilterSettings">tbl_UI_EmployeeFilterSettings</OPTION><OPTION value ="tbl_UI_EmployeeFilterSettings_FieldDetails">tbl_UI_EmployeeFilterSettings_FieldDetails</OPTION><OPTION value ="tbl_UI_EventRouter">tbl_UI_EventRouter</OPTION><OPTION value ="tbl_UI_FieldDataTypes">tbl_UI_FieldDataTypes</OPTION><OPTION value ="tbl_UI_FormStaticVariablesNIU">tbl_UI_FormStaticVariablesNIU</OPTION><OPTION value ="tbl_UI_FormVariables">tbl_UI_FormVariables</OPTION><OPTION value ="tbl_UI_FrameworkSettings">tbl_UI_FrameworkSettings</OPTION><OPTION value ="tbl_UI_Graph">tbl_UI_Graph</OPTION><OPTION value ="tbl_UI_Graph_Culture">tbl_UI_Graph_Culture</OPTION><OPTION value ="tbl_UI_Graph_User">tbl_UI_Graph_User</OPTION><OPTION value ="tbl_UI_GridFormattingRules">tbl_UI_GridFormattingRules</OPTION><OPTION value ="tbl_UI_GridFormattingRules_Actions">tbl_UI_GridFormattingRules_Actions</OPTION><OPTION value ="tbl_UI_GridFormattingRules_Actions_Culture">tbl_UI_GridFormattingRules_Actions_Culture</OPTION><OPTION value ="tbl_UI_GridFormattingRules_Culture">tbl_UI_GridFormattingRules_Culture</OPTION><OPTION value ="tbl_UI_InvalidAccess">tbl_UI_InvalidAccess</OPTION><OPTION value ="tbl_UI_InvalidAccess_Log">tbl_UI_InvalidAccess_Log</OPTION><OPTION value ="tbl_UI_InvalidRecordAccess_Log">tbl_UI_InvalidRecordAccess_Log</OPTION><OPTION value ="tbl_UI_Module_OtherLinks">tbl_UI_Module_OtherLinks</OPTION><OPTION value ="tbl_UI_Module_OtherLinks_Culture">tbl_UI_Module_OtherLinks_Culture</OPTION><OPTION value ="tbl_UI_Module_OtherLinks_RoleMapping">tbl_UI_Module_OtherLinks_RoleMapping</OPTION><OPTION value ="tbl_UI_Module_OtherLinks_User">tbl_UI_Module_OtherLinks_User</OPTION><OPTION value ="tbl_UI_NavigationMenu_Favorites">tbl_UI_NavigationMenu_Favorites</OPTION><OPTION value ="tbl_UI_NodeAccess">tbl_UI_NodeAccess</OPTION><OPTION value ="tbl_UI_OptionButtonControlDetails">tbl_UI_OptionButtonControlDetails</OPTION><OPTION value ="tbl_UI_OptionButtonControlDetails_Culture">tbl_UI_OptionButtonControlDetails_Culture</OPTION><OPTION value ="tbl_UI_Organization_Master">tbl_UI_Organization_Master</OPTION><OPTION value ="tbl_UI_PB_ActionForControl">tbl_UI_PB_ActionForControl</OPTION><OPTION value ="tbl_UI_PB_ApplicationSettings">tbl_UI_PB_ApplicationSettings</OPTION><OPTION value ="tbl_UI_PB_CanvasElementMaster">tbl_UI_PB_CanvasElementMaster</OPTION><OPTION value ="tbl_UI_PB_CanvasElementMaster_Culture">tbl_UI_PB_CanvasElementMaster_Culture</OPTION><OPTION value ="tbl_UI_PB_PropertyGroupMaster">tbl_UI_PB_PropertyGroupMaster</OPTION><OPTION value ="tbl_UI_PB_PropertyGroupMaster_Culture">tbl_UI_PB_PropertyGroupMaster_Culture</OPTION><OPTION value ="tbl_UI_PB_PropertyMaster">tbl_UI_PB_PropertyMaster</OPTION><OPTION value ="tbl_UI_PB_PropertyMaster_Culture">tbl_UI_PB_PropertyMaster_Culture</OPTION><OPTION value ="tbl_UI_PB_TemplateCanvasElementPGMapping">tbl_UI_PB_TemplateCanvasElementPGMapping</OPTION><OPTION value ="tbl_UI_PB_TemplateGroupMaster">tbl_UI_PB_TemplateGroupMaster</OPTION><OPTION value ="tbl_UI_PB_TemplateGroupMaster_Culture">tbl_UI_PB_TemplateGroupMaster_Culture</OPTION><OPTION value ="tbl_UI_PB_TemplateMaster">tbl_UI_PB_TemplateMaster</OPTION><OPTION value ="tbl_UI_PB_TemplateMaster_Culture">tbl_UI_PB_TemplateMaster_Culture</OPTION><OPTION value ="tbl_UI_PB_TemplateSectionMapping">tbl_UI_PB_TemplateSectionMapping</OPTION><OPTION value ="tbl_UI_PB_TemplateSubGroupMaster">tbl_UI_PB_TemplateSubGroupMaster</OPTION><OPTION value ="tbl_UI_PB_TemplateSubGroupMaster_Culture">tbl_UI_PB_TemplateSubGroupMaster_Culture</OPTION><OPTION value ="tbl_UI_PlaceHolders">tbl_UI_PlaceHolders</OPTION><OPTION value ="tbl_UI_ProjectAccess">tbl_UI_ProjectAccess</OPTION><OPTION value ="tbl_UI_SectionMaster">tbl_UI_SectionMaster</OPTION><OPTION value ="tbl_UI_SectionMaster_Culture">tbl_UI_SectionMaster_Culture</OPTION><OPTION value ="tbl_UI_SessionMaster">tbl_UI_SessionMaster</OPTION><OPTION value ="tbl_UI_StyleSheets">tbl_UI_StyleSheets</OPTION><OPTION value ="tbl_UI_SubControlLevelUserAccess">tbl_UI_SubControlLevelUserAccess</OPTION><OPTION value ="tbl_UI_SubControlTagMaster">tbl_UI_SubControlTagMaster</OPTION><OPTION value ="tbl_UI_SubControlTagMaster_Culture">tbl_UI_SubControlTagMaster_Culture</OPTION><OPTION value ="tbl_UI_SubControlTagMaster_User">tbl_UI_SubControlTagMaster_User</OPTION><OPTION value ="tbl_UI_SubNodeAccess">tbl_UI_SubNodeAccess</OPTION><OPTION value ="tbl_UI_SubTag_Dynamic_Links">tbl_UI_SubTag_Dynamic_Links</OPTION><OPTION value ="tbl_UI_SubTag_Dynamic_Links_Culture">tbl_UI_SubTag_Dynamic_Links_Culture</OPTION><OPTION value ="tbl_UI_SubTag_Dynamic_Links_User">tbl_UI_SubTag_Dynamic_Links_User</OPTION><OPTION value ="tbl_UI_SubTag_EmployeeFilterSettings">tbl_UI_SubTag_EmployeeFilterSettings</OPTION><OPTION value ="tbl_UI_SubTag_EmployeeFilterSettings_FieldDetails">tbl_UI_SubTag_EmployeeFilterSettings_FieldDetails</OPTION><OPTION value ="tbl_UI_SubTag_Graph">tbl_UI_SubTag_Graph</OPTION><OPTION value ="tbl_UI_SubTag_Graph_culture">tbl_UI_SubTag_Graph_culture</OPTION><OPTION value ="tbl_UI_SubTag_Graph_User">tbl_UI_SubTag_Graph_User</OPTION><OPTION value ="tbl_UI_SubTagMaster">tbl_UI_SubTagMaster</OPTION><OPTION value ="tbl_UI_SubTagMaster_Culture">tbl_UI_SubTagMaster_Culture</OPTION><OPTION value ="tbl_UI_SubTagMaster_User">tbl_UI_SubTagMaster_User</OPTION><OPTION value ="tbl_UI_SubTagRelatedData">tbl_UI_SubTagRelatedData</OPTION><OPTION value ="tbl_UI_SubTagRelatedData_Culture">tbl_UI_SubTagRelatedData_Culture</OPTION><OPTION value ="tbl_UI_SubTagRelatedData_User">tbl_UI_SubTagRelatedData_User</OPTION><OPTION value ="tbl_UI_SubTagSections">tbl_UI_SubTagSections</OPTION><OPTION value ="tbl_UI_SubTagSections_Culture">tbl_UI_SubTagSections_Culture</OPTION><OPTION value ="tbl_UI_SystemLinks">tbl_UI_SystemLinks</OPTION><OPTION value ="tbl_UI_SystemLinks_Culture">tbl_UI_SystemLinks_Culture</OPTION><OPTION value ="tbl_UI_TabCollecton">tbl_UI_TabCollecton</OPTION><OPTION value ="tbl_UI_TabCollecton_Tabs_Details">tbl_UI_TabCollecton_Tabs_Details</OPTION><OPTION value ="tbl_UI_TabControls">tbl_UI_TabControls</OPTION><OPTION value ="tbl_UI_TabControls_Culture">tbl_UI_TabControls_Culture</OPTION><OPTION value ="tbl_UI_TagDefaultFilters">tbl_UI_TagDefaultFilters</OPTION><OPTION value ="tbl_UI_TagDeleteFromTables">tbl_UI_TagDeleteFromTables</OPTION><OPTION value ="tbl_UI_TagDeletionDependencies">tbl_UI_TagDeletionDependencies</OPTION><OPTION value ="tbl_UI_TagDeletionMessages">tbl_UI_TagDeletionMessages</OPTION><OPTION value ="tbl_UI_TagDeletionParameters">tbl_UI_TagDeletionParameters</OPTION><OPTION value ="tbl_UI_TagDeletionSP">tbl_UI_TagDeletionSP</OPTION><OPTION value ="tbl_UI_TagFormVariablesDetail">tbl_UI_TagFormVariablesDetail</OPTION><OPTION value ="tbl_UI_TagFormVariablesMaster">tbl_UI_TagFormVariablesMaster</OPTION><OPTION value ="tbl_UI_TagMaster">tbl_UI_TagMaster</OPTION><OPTION value ="tbl_UI_TagMaster_CheckIn_CheckOut">tbl_UI_TagMaster_CheckIn_CheckOut</OPTION><OPTION value ="tbl_UI_TagMaster_Culture">tbl_UI_TagMaster_Culture</OPTION><OPTION value ="tbl_UI_TagMaster_PushkarK">tbl_UI_TagMaster_PushkarK</OPTION><OPTION value ="tbl_UI_TagMaster_User">tbl_UI_TagMaster_User</OPTION><OPTION value ="tbl_UI_TagMaster_UserAccess">tbl_UI_TagMaster_UserAccess</OPTION><OPTION value ="tbl_UI_TagRelatedData">tbl_UI_TagRelatedData</OPTION><OPTION value ="tbl_UI_TagRelatedData_Culture">tbl_UI_TagRelatedData_Culture</OPTION><OPTION value ="tbl_UI_TagRelatedData_User">tbl_UI_TagRelatedData_User</OPTION><OPTION value ="tbl_UI_TagSections">tbl_UI_TagSections</OPTION><OPTION value ="tbl_UI_TagSections_Culture">tbl_UI_TagSections_Culture</OPTION><OPTION value ="tbl_UI_User_Tree_Caching">tbl_UI_User_Tree_Caching</OPTION><OPTION value ="tbl_UI_UserGroup">tbl_UI_UserGroup</OPTION><OPTION value ="tbl_UI_UserPreferences">tbl_UI_UserPreferences</OPTION><OPTION value ="tbl_UI_UserSettings">tbl_UI_UserSettings</OPTION><OPTION value ="tbl_UI_Validation">tbl_UI_Validation</OPTION><OPTION value ="tbl_UI_Validation_Culture">tbl_UI_Validation_Culture</OPTION><OPTION value ="tbl_UI_Views">tbl_UI_Views</OPTION><OPTION value ="tbl_UI_XLS_Queue">tbl_UI_XLS_Queue</OPTION><OPTION value ="tbl_UserAccess">tbl_UserAccess</OPTION><OPTION value ="tbl_vsw_DiffDetails">tbl_vsw_DiffDetails</OPTION><OPTION value ="tbl_vsw_FilesCheckedInOrAdded">tbl_vsw_FilesCheckedInOrAdded</OPTION><OPTION value ="tbl_WAF_AlertScheduleFrequencies">tbl_WAF_AlertScheduleFrequencies</OPTION><OPTION value ="tbl_WAF_ApplicationErrorLog">tbl_WAF_ApplicationErrorLog</OPTION><OPTION value ="tbl_WAF_Font">tbl_WAF_Font</OPTION><OPTION value ="tbl_WAF_FontSize">tbl_WAF_FontSize</OPTION><OPTION value ="tbl_WAF_GenericAlerts">tbl_WAF_GenericAlerts</OPTION><OPTION value ="tbl_WAF_GenericAlerts_Access">tbl_WAF_GenericAlerts_Access</OPTION><OPTION value ="tbl_WAF_HotfixItems">tbl_WAF_HotfixItems</OPTION><OPTION value ="tbl_WAF_RoleLevelAccessFilter_Attributes">tbl_WAF_RoleLevelAccessFilter_Attributes</OPTION><OPTION value ="tbl_WAF_ServicePack">tbl_WAF_ServicePack</OPTION><OPTION value ="tbl_WAF_ServicePackHotfixes">tbl_WAF_ServicePackHotfixes</OPTION><OPTION value ="tbl_WAF_SPHotfixDependency">tbl_WAF_SPHotfixDependency</OPTION><OPTION value ="tbl_WAF_SystemObjects">tbl_WAF_SystemObjects</OPTION><OPTION value ="tbl_WAF_UserAlerts">tbl_WAF_UserAlerts</OPTION><OPTION value ="tbl_WebService_Errors">tbl_WebService_Errors</OPTION><OPTION value ="tbl_WebService_Security">tbl_WebService_Security</OPTION><OPTION value ="tbl_WF_Event">tbl_WF_Event</OPTION><OPTION value ="tbl_WF_Event_Archive">tbl_WF_Event_Archive</OPTION><OPTION value ="tbl_WF_Inbox">tbl_WF_Inbox</OPTION><OPTION value ="tbl_WF_Inbox_Archive">tbl_WF_Inbox_Archive</OPTION><OPTION value ="tbl_WF_Instance">tbl_WF_Instance</OPTION><OPTION value ="tbl_WF_Process">tbl_WF_Process</OPTION><OPTION value ="tbl_WF_Process_Attachment">tbl_WF_Process_Attachment</OPTION><OPTION value ="tbl_WF_Process_Role_Access">tbl_WF_Process_Role_Access</OPTION><OPTION value ="tbl_WF_ProcessStage">tbl_WF_ProcessStage</OPTION><OPTION value ="tbl_WF_ProcessStage_Old">tbl_WF_ProcessStage_Old</OPTION><OPTION value ="tbl_WF_StageAction">tbl_WF_StageAction</OPTION><OPTION value ="tbl_WF_StageAction_Detail">tbl_WF_StageAction_Detail</OPTION><OPTION value ="tbl_WF_StageAction_Detail_Old">tbl_WF_StageAction_Detail_Old</OPTION><OPTION value ="tbl_WF_StageAction_Old">tbl_WF_StageAction_Old</OPTION><OPTION value ="tbl_WF_Version">tbl_WF_Version</OPTION><OPTION value ="tbl_WSRV_Library_Question">tbl_WSRV_Library_Question</OPTION><OPTION value ="tbl_WSRV_Library_Question_Option">tbl_WSRV_Library_Question_Option</OPTION><OPTION value ="tbl_WSRV_Library_Question_Row">tbl_WSRV_Library_Question_Row</OPTION><OPTION value ="tbl_WSRV_QuestionCategory">tbl_WSRV_QuestionCategory</OPTION><OPTION value ="tbl_WSRV_QuestionSource">tbl_WSRV_QuestionSource</OPTION><OPTION value ="tbl_WSRV_QuestionType">tbl_WSRV_QuestionType</OPTION><OPTION value ="tbl_WSRV_Survey_Master">tbl_WSRV_Survey_Master</OPTION><OPTION value ="tbl_WSRV_Survey_Publish">tbl_WSRV_Survey_Publish</OPTION><OPTION value ="tbl_WSRV_Survey_Question">tbl_WSRV_Survey_Question</OPTION><OPTION value ="tbl_WSRV_Survey_Question_Option">tbl_WSRV_Survey_Question_Option</OPTION><OPTION value ="tbl_WSRV_Survey_Question_Row">tbl_WSRV_Survey_Question_Row</OPTION><OPTION value ="tbl_WSRV_Survey_Response">tbl_WSRV_Survey_Response</OPTION><OPTION value ="tbl_WSRV_Survey_Response_Detail">tbl_WSRV_Survey_Response_Detail</OPTION><OPTION value ="tbl_WSRV_SurveyCategory">tbl_WSRV_SurveyCategory</OPTION><OPTION value ="tbl_WSRV_SurveySettings">tbl_WSRV_SurveySettings</OPTION><OPTION value ="tbl_WSRV_SurveySubCategory">tbl_WSRV_SurveySubCategory</OPTION><OPTION value ="tbl_WSRV_Validation">tbl_WSRV_Validation</OPTION><OPTION value ="test_tbl_Test_SMP_Sampling_Master">test_tbl_Test_SMP_Sampling_Master</OPTION><OPTION value ="Tree_tbl_UI_TagMaster">Tree_tbl_UI_TagMaster</OPTION><OPTION value ="u_tbl_UI_TagMaster">u_tbl_UI_TagMaster</OPTION><OPTION value ="v_CRW_MPH_EarmarkedAndReferredProjects">v_CRW_MPH_EarmarkedAndReferredProjects</OPTION><OPTION value ="v_CRW_tbl_PBN_Debugging">v_CRW_tbl_PBN_Debugging</OPTION><OPTION value ="v_CRW_UserNamesAndCustomerLoginNames">v_CRW_UserNamesAndCustomerLoginNames</OPTION><OPTION value ="v_QRB_Attribute">v_QRB_Attribute</OPTION><OPTION value ="v_QRB_AttributeAccess">v_QRB_AttributeAccess</OPTION><OPTION value ="v_QRB_EmployeeView">v_QRB_EmployeeView</OPTION><OPTION value ="v_QRB_Entity">v_QRB_Entity</OPTION><OPTION value ="v_QRB_EntityAccess">v_QRB_EntityAccess</OPTION><OPTION value ="v_QRB_FavoritesQueries">v_QRB_FavoritesQueries</OPTION><OPTION value ="v_QRB_Group">v_QRB_Group</OPTION><OPTION value ="v_QRB_Query">v_QRB_Query</OPTION><OPTION value ="v_QRB_QueryAccess">v_QRB_QueryAccess</OPTION><OPTION value ="v_QRB_Report">v_QRB_Report</OPTION><OPTION value ="v_QRB_Roleview">v_QRB_Roleview</OPTION><OPTION value ="v_QRB_SharedQueries">v_QRB_SharedQueries</OPTION><OPTION value ="v_QRB_tbl_PBN_Debugging">v_QRB_tbl_PBN_Debugging</OPTION><OPTION value ="v_QRB_tbl_PM_Employee">v_QRB_tbl_PM_Employee</OPTION><OPTION value ="v_QRB_tbl_PM_Login">v_QRB_tbl_PM_Login</OPTION><OPTION value ="v_SH_PerformanceInformation">v_SH_PerformanceInformation</OPTION><OPTION value ="v_Sub_tbl_UI_ControlTagMaster_Culture">v_Sub_tbl_UI_ControlTagMaster_Culture</OPTION><OPTION value ="v_Sub_tbl_UI_Dynamic_Links_Culture">v_Sub_tbl_UI_Dynamic_Links_Culture</OPTION><OPTION value ="v_Sub_tbl_UI_Dynamic_Links_Culture_Master">v_Sub_tbl_UI_Dynamic_Links_Culture_Master</OPTION><OPTION value ="v_Sub_tbl_UI_SubControlTagMaster_Culture">v_Sub_tbl_UI_SubControlTagMaster_Culture</OPTION><OPTION value ="v_Sub_tbl_UI_SubDynamic_Links_Culture">v_Sub_tbl_UI_SubDynamic_Links_Culture</OPTION><OPTION value ="v_Sub_tbl_UI_SubTag_Dynamic_Links_Culture">v_Sub_tbl_UI_SubTag_Dynamic_Links_Culture</OPTION><OPTION value ="v_Sub_tbl_UI_SubTagMaster_Culture">v_Sub_tbl_UI_SubTagMaster_Culture</OPTION><OPTION value ="v_Sub_tbl_UI_SystemLinks_Culture">v_Sub_tbl_UI_SystemLinks_Culture</OPTION><OPTION value ="v_Sub_tbl_UI_TagMaster_Culture">v_Sub_tbl_UI_TagMaster_Culture</OPTION><OPTION value ="v_Sub_tbl_UI_Validation_Culture">v_Sub_tbl_UI_Validation_Culture</OPTION><OPTION value ="v_tbl_CDB_GraphSkins">v_tbl_CDB_GraphSkins</OPTION><OPTION value ="v_tbl_CDB_Palette_Details">v_tbl_CDB_Palette_Details</OPTION><OPTION value ="v_tbl_CDB_Palette_Master">v_tbl_CDB_Palette_Master</OPTION><OPTION value ="v_tbl_CDB_Project_Parameters">v_tbl_CDB_Project_Parameters</OPTION><OPTION value ="v_tbl_CDB_Update_Schedule">v_tbl_CDB_Update_Schedule</OPTION><OPTION value ="v_tbl_CNF_City">v_tbl_CNF_City</OPTION><OPTION value ="v_tbl_CNF_District">v_tbl_CNF_District</OPTION><OPTION value ="v_tbl_CNF_Nationality">v_tbl_CNF_Nationality</OPTION><OPTION value ="v_tbl_CRW_MasterTables">v_tbl_CRW_MasterTables</OPTION><OPTION value ="v_tbl_CRW_Report_Detail">v_tbl_CRW_Report_Detail</OPTION><OPTION value ="v_tbl_CRW_Report_EmptyValueReplacement">v_tbl_CRW_Report_EmptyValueReplacement</OPTION><OPTION value ="v_tbl_CRW_Report_Master">v_tbl_CRW_Report_Master</OPTION><OPTION value ="v_tbl_CRW_Report_Master_CheckIn_CheckOut">v_tbl_CRW_Report_Master_CheckIn_CheckOut</OPTION><OPTION value ="v_tbl_CRW_Report_Master_UserAccess">v_tbl_CRW_Report_Master_UserAccess</OPTION><OPTION value ="v_tbl_CRW_Report_Master_UserAccess_ReportUserAccess">v_tbl_CRW_Report_Master_UserAccess_ReportUserAccess</OPTION><OPTION value ="v_tbl_CRW_Report_UIControlMaster">v_tbl_CRW_Report_UIControlMaster</OPTION><OPTION value ="v_tbl_EmpAgeDetails_Abhijeet">v_tbl_EmpAgeDetails_Abhijeet</OPTION><OPTION value ="v_tbl_EmpDetails_Abhijeet">v_tbl_EmpDetails_Abhijeet</OPTION><OPTION value ="v_tbl_Exe_employee">v_tbl_Exe_employee</OPTION><OPTION value ="v_tbl_EXE_Employee_Project">v_tbl_EXE_Employee_Project</OPTION><OPTION value ="v_tbl_EXE_Employee_RealData">v_tbl_EXE_Employee_RealData</OPTION><OPTION value ="v_tbl_MultiInsert_SubTag">v_tbl_MultiInsert_SubTag</OPTION><OPTION value ="v_tbl_PM_AuditTrail">v_tbl_PM_AuditTrail</OPTION><OPTION value ="v_tbl_PM_CompanyInormation">v_tbl_PM_CompanyInormation</OPTION><OPTION value ="v_tbl_PM_Customer">v_tbl_PM_Customer</OPTION><OPTION value ="v_tbl_PM_CustomerLoginProject">v_tbl_PM_CustomerLoginProject</OPTION><OPTION value ="v_tbl_PM_Dashboard">v_tbl_PM_Dashboard</OPTION><OPTION value ="v_tbl_PM_EmailMessages">v_tbl_PM_EmailMessages</OPTION><OPTION value ="v_tbl_PM_Employee">v_tbl_PM_Employee</OPTION><OPTION value ="v_tbl_PM_Login">v_tbl_PM_Login</OPTION><OPTION value ="v_tbl_PM_Role">v_tbl_PM_Role</OPTION><OPTION value ="v_tbl_PM_Role_Multiple_Dashboards">v_tbl_PM_Role_Multiple_Dashboards</OPTION><OPTION value ="v_tbl_PM_SystemModules">v_tbl_PM_SystemModules</OPTION><OPTION value ="v_tbl_QRB_CrossTabQuery_Master">v_tbl_QRB_CrossTabQuery_Master</OPTION><OPTION value ="v_tbl_QRB_EB_Variables">v_tbl_QRB_EB_Variables</OPTION><OPTION value ="v_tbl_QRB_QueriesOnDashboards">v_tbl_QRB_QueriesOnDashboards</OPTION><OPTION value ="v_tbl_Revenue_Details">v_tbl_Revenue_Details</OPTION><OPTION value ="v_tbl_Revenue_Details_Marathi">v_tbl_Revenue_Details_Marathi</OPTION><OPTION value ="v_tbl_Revenue_Details_New">v_tbl_Revenue_Details_New</OPTION><OPTION value ="v_tbl_SaaS_UI_SubTenantAccess_Security">v_tbl_SaaS_UI_SubTenantAccess_Security</OPTION><OPTION value ="v_tbl_System_Tables">v_tbl_System_Tables</OPTION><OPTION value ="v_tbl_Test_NeedleGraph">v_tbl_Test_NeedleGraph</OPTION><OPTION value ="v_tbl_Test_TR">v_tbl_Test_TR</OPTION><OPTION value ="v_tbl_Transaction_pages">v_tbl_Transaction_pages</OPTION><OPTION value ="v_tbl_UI_AdvanceFilters">v_tbl_UI_AdvanceFilters</OPTION><OPTION value ="v_tbl_UI_CLCPDynamicExtensionCustomCode">v_tbl_UI_CLCPDynamicExtensionCustomCode</OPTION><OPTION value ="v_tbl_UI_CLCPDynamicExtensionInputDefinition">v_tbl_UI_CLCPDynamicExtensionInputDefinition</OPTION><OPTION value ="v_tbl_UI_CLCPDynamicExtensionInputParameterDefinition">v_tbl_UI_CLCPDynamicExtensionInputParameterDefinition</OPTION><OPTION value ="v_tbl_UI_CLCPDynamicExtensionOutputDefinition">v_tbl_UI_CLCPDynamicExtensionOutputDefinition</OPTION><OPTION value ="v_tbl_UI_CLCPDynamicExtensionTypeMaster">v_tbl_UI_CLCPDynamicExtensionTypeMaster</OPTION><OPTION value ="v_tbl_UI_CLCPEventMaster">v_tbl_UI_CLCPEventMaster</OPTION><OPTION value ="v_tbl_UI_CLCPExtensionCustomCode">v_tbl_UI_CLCPExtensionCustomCode</OPTION><OPTION value ="v_tbl_UI_ControlComparisonValidations">v_tbl_UI_ControlComparisonValidations</OPTION><OPTION value ="v_tbl_UI_ControlTagMaster">v_tbl_UI_ControlTagMaster</OPTION><OPTION value ="V_tbl_UI_ControlTagMaster_Culture">V_tbl_UI_ControlTagMaster_Culture</OPTION><OPTION value ="v_tbl_UI_ControlTagMaster_ExtraColumns">v_tbl_UI_ControlTagMaster_ExtraColumns</OPTION><OPTION value ="v_tbl_UI_ControlTagMaster_List_Links">v_tbl_UI_ControlTagMaster_List_Links</OPTION><OPTION value ="v_tbl_UI_ControlTagMaster_PageFilters">v_tbl_UI_ControlTagMaster_PageFilters</OPTION><OPTION value ="v_tbl_UI_ControlTagMaster_Security">v_tbl_UI_ControlTagMaster_Security</OPTION><OPTION value ="v_tbl_UI_ControlTagMasterforSM">v_tbl_UI_ControlTagMasterforSM</OPTION><OPTION value ="v_tbl_UI_Dynamic_Links">v_tbl_UI_Dynamic_Links</OPTION><OPTION value ="v_tbl_UI_Dynamic_Links_Culture">v_tbl_UI_Dynamic_Links_Culture</OPTION><OPTION value ="v_tbl_UI_DynamicMenuStyleMaster">v_tbl_UI_DynamicMenuStyleMaster</OPTION><OPTION value ="v_tbl_UI_EventRouter">v_tbl_UI_EventRouter</OPTION><OPTION value ="v_tbl_UI_Graph">v_tbl_UI_Graph</OPTION><OPTION value ="v_tbl_UI_Module_OtherLinks">v_tbl_UI_Module_OtherLinks</OPTION><OPTION value ="v_tbl_UI_OptionButtonControlDetails">v_tbl_UI_OptionButtonControlDetails</OPTION><OPTION value ="v_tbl_UI_PB_SubTagGridFormattingRules">v_tbl_UI_PB_SubTagGridFormattingRules</OPTION><OPTION value ="v_tbl_UI_PB_TagGridFormattingRules">v_tbl_UI_PB_TagGridFormattingRules</OPTION><OPTION value ="v_tbl_UI_PlaceHolders">v_tbl_UI_PlaceHolders</OPTION><OPTION value ="v_tbl_UI_SessionMaster_For_DM_Script">v_tbl_UI_SessionMaster_For_DM_Script</OPTION><OPTION value ="v_tbl_UI_SubControlTagMaster">v_tbl_UI_SubControlTagMaster</OPTION><OPTION value ="V_tbl_UI_SubControlTagMaster_Culture">V_tbl_UI_SubControlTagMaster_Culture</OPTION><OPTION value ="v_tbl_UI_SubControlTagMaster_ExtraColumns">v_tbl_UI_SubControlTagMaster_ExtraColumns</OPTION><OPTION value ="v_tbl_UI_SubControlTagMaster_List_Links">v_tbl_UI_SubControlTagMaster_List_Links</OPTION><OPTION value ="v_tbl_UI_SubControlTagMaster_PageFilters">v_tbl_UI_SubControlTagMaster_PageFilters</OPTION><OPTION value ="v_tbl_UI_SubControlTagMaster_Security">v_tbl_UI_SubControlTagMaster_Security</OPTION><OPTION value ="v_tbl_UI_SubDynamic_Links_Culture">v_tbl_UI_SubDynamic_Links_Culture</OPTION><OPTION value ="v_tbl_UI_SubTag_Dynamic_Links">v_tbl_UI_SubTag_Dynamic_Links</OPTION><OPTION value ="v_tbl_UI_SubTag_Dynamic_Links_Culture">v_tbl_UI_SubTag_Dynamic_Links_Culture</OPTION><OPTION value ="v_tbl_UI_SubTag_Graph">v_tbl_UI_SubTag_Graph</OPTION><OPTION value ="v_tbl_UI_SubTagDefaultFilters">v_tbl_UI_SubTagDefaultFilters</OPTION><OPTION value ="v_tbl_UI_SubTagMaster">v_tbl_UI_SubTagMaster</OPTION><OPTION value ="v_tbl_UI_SubTagMaster_Culture">v_tbl_UI_SubTagMaster_Culture</OPTION><OPTION value ="v_tbl_UI_SubTagMaster_Security">v_tbl_UI_SubTagMaster_Security</OPTION><OPTION value ="v_tbl_UI_SubTagRelatedData">v_tbl_UI_SubTagRelatedData</OPTION><OPTION value ="v_tbl_UI_SystemLinks">v_tbl_UI_SystemLinks</OPTION><OPTION value ="v_tbl_UI_SystemLinks_Culture">v_tbl_UI_SystemLinks_Culture</OPTION><OPTION value ="v_tbl_UI_TabCollecton">v_tbl_UI_TabCollecton</OPTION><OPTION value ="v_tbl_UI_TabCollecton_Tabs_Details">v_tbl_UI_TabCollecton_Tabs_Details</OPTION><OPTION value ="v_tbl_UI_TagDefaultFilters">v_tbl_UI_TagDefaultFilters</OPTION><OPTION value ="v_tbl_UI_TagMaster">v_tbl_UI_TagMaster</OPTION><OPTION value ="v_tbl_UI_TagMaster_CheckIn_CheckOut">v_tbl_UI_TagMaster_CheckIn_CheckOut</OPTION><OPTION value ="v_tbl_Ui_TagMaster_Culture">v_tbl_Ui_TagMaster_Culture</OPTION><OPTION value ="v_tbl_UI_TagMaster_For_TabCollection">v_tbl_UI_TagMaster_For_TabCollection</OPTION><OPTION value ="v_tbl_UI_TagMaster_ForNavMenuNodes">v_tbl_UI_TagMaster_ForNavMenuNodes</OPTION><OPTION value ="v_tbl_UI_TagMaster_Security">v_tbl_UI_TagMaster_Security</OPTION><OPTION value ="v_tbl_UI_TagMaster_UserAccess">v_tbl_UI_TagMaster_UserAccess</OPTION><OPTION value ="v_tbl_UI_TagMaster_UserAccess_WebFormsUserAccess">v_tbl_UI_TagMaster_UserAccess_WebFormsUserAccess</OPTION><OPTION value ="v_tbl_UI_TagRelatedData">v_tbl_UI_TagRelatedData</OPTION><OPTION value ="v_tbl_UI_UserGroup">v_tbl_UI_UserGroup</OPTION><OPTION value ="v_tbl_UI_UserSettings">v_tbl_UI_UserSettings</OPTION><OPTION value ="v_tbl_UI_Validation_Culture">v_tbl_UI_Validation_Culture</OPTION><OPTION value ="v_tbl_UI_Views">v_tbl_UI_Views</OPTION><OPTION value ="v_tbl_UI_XLS_Queue">v_tbl_UI_XLS_Queue</OPTION><OPTION value ="v_tbl_UserAccess">v_tbl_UserAccess</OPTION><OPTION value ="v_tbl_WAF_GenericAlerts">v_tbl_WAF_GenericAlerts</OPTION><OPTION value ="v_tbl_WAF_GenericAlerts_Access">v_tbl_WAF_GenericAlerts_Access</OPTION><OPTION value ="v_tbl_WAF_HotFixItems">v_tbl_WAF_HotFixItems</OPTION><OPTION value ="v_tbl_WAF_ServicePackHotFixes">v_tbl_WAF_ServicePackHotFixes</OPTION><OPTION value ="v_tbl_WAF_UserAlerts">v_tbl_WAF_UserAlerts</OPTION><OPTION value ="v_tbl_WF_Event">v_tbl_WF_Event</OPTION><OPTION value ="v_tbl_WF_Inbox">v_tbl_WF_Inbox</OPTION><OPTION value ="v_tbl_WF_Process">v_tbl_WF_Process</OPTION><OPTION value ="v_tbl_WF_Process_All_Active">v_tbl_WF_Process_All_Active</OPTION><OPTION value ="v_tbl_WF_ProcessStage">v_tbl_WF_ProcessStage</OPTION><OPTION value ="v_tbl_WF_ProcessStage_Old">v_tbl_WF_ProcessStage_Old</OPTION><OPTION value ="v_tbl_WF_StageAction">v_tbl_WF_StageAction</OPTION><OPTION value ="v_tbl_WF_StageAction_Detail">v_tbl_WF_StageAction_Detail</OPTION><OPTION value ="v_tbl_WF_StageAction_Detail_Old">v_tbl_WF_StageAction_Detail_Old</OPTION><OPTION value ="v_tbl_WF_StageAction_Old">v_tbl_WF_StageAction_Old</OPTION><OPTION value ="v_tbl_WSRV_Library_Question">v_tbl_WSRV_Library_Question</OPTION><OPTION value ="v_tbl_WSRV_Library_Question_Option">v_tbl_WSRV_Library_Question_Option</OPTION><OPTION value ="v_tbl_WSRV_Library_Question_Row">v_tbl_WSRV_Library_Question_Row</OPTION><OPTION value ="v_tbl_WSRV_QuestionCategory">v_tbl_WSRV_QuestionCategory</OPTION><OPTION value ="v_tbl_WSRV_QuestionSource">v_tbl_WSRV_QuestionSource</OPTION><OPTION value ="v_tbl_WSRV_QuestionType">v_tbl_WSRV_QuestionType</OPTION><OPTION value ="v_tbl_WSRV_Survey_Master">v_tbl_WSRV_Survey_Master</OPTION><OPTION value ="v_tbl_WSRV_Survey_Publish">v_tbl_WSRV_Survey_Publish</OPTION><OPTION value ="v_tbl_WSRV_Survey_Question">v_tbl_WSRV_Survey_Question</OPTION><OPTION value ="v_tbl_WSRV_Survey_Question_AddToLibrary">v_tbl_WSRV_Survey_Question_AddToLibrary</OPTION><OPTION value ="v_tbl_WSRV_Survey_Question_Option">v_tbl_WSRV_Survey_Question_Option</OPTION><OPTION value ="v_tbl_WSRV_Survey_Question_Row">v_tbl_WSRV_Survey_Question_Row</OPTION><OPTION value ="v_tbl_WSRV_SurveyCategory">v_tbl_WSRV_SurveyCategory</OPTION><OPTION value ="v_tbl_WSRV_SurveySettings">v_tbl_WSRV_SurveySettings</OPTION><OPTION value ="v_tbl_WSRV_SurveySubCategory">v_tbl_WSRV_SurveySubCategory</OPTION><OPTION value ="v_tbl_XGrid_Employee">v_tbl_XGrid_Employee</OPTION><OPTION value ="v_tbl_XGrid_Employee_Demo">v_tbl_XGrid_Employee_Demo</OPTION><OPTION value ="v_TestRow_tbl_PM_Project">v_TestRow_tbl_PM_Project</OPTION><OPTION value ="View_Report_tbl_Exe_Employee">View_Report_tbl_Exe_Employee</OPTION><OPTION value ="WAF_tbl_PM_Employee">WAF_tbl_PM_Employee</OPTION><OPTION value ="Whiz3IssueTest_tbl_PM_Employee">Whiz3IssueTest_tbl_PM_Employee</OPTION></FONT></SELECT></TD>
+</TR>
+<TR Width="25%" Class="clsTREven">
+<TD align="right" width="25%">
+Apply Role Level Security&nbsp;
+</TD>
+<TD align="left" width="75%">
+<Input type=checkbox name="chkRoleLevelSecurity" id="chkRoleLevelSecurity" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR Width="25%" Class="clsTREven">
+<TD align="right" width="25%">
+Tab Preferences&nbsp;
+</TD>
+<TD align="left" width="75%">
+<Input type=checkbox name="chkTabPreference" id="chkTabPreference" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR Width="25%" Class="clsTREven">
+<TD align="right" width="25%">
+Page Level Stylesheet&nbsp;
+</TD>
+<TD align="left" width="75%">
+<SELECT  id=cboStyleSheet name=cboStyleSheet class=clsComboBox ><FONT size=1><OPTION value =''></OPTION><OPTION value ="1">Default</OPTION><OPTION value ="2">New Style</OPTION><OPTION value ="3">Brick Red</OPTION><OPTION value ="4">BurntSienna</OPTION><OPTION value ="5">Green</OPTION><OPTION value ="6">GYellow</OPTION><OPTION value ="7">Purple</OPTION><OPTION value ="8">Turquoise</OPTION></FONT></SELECT></TD>
+</TR>
+<TR Width="25%" Class="clsTREven">
+<TD align="right" width="25%">
+Author&nbsp;
+</TD>
+<TD align="left" width="75%">
+<SELECT enabled=true id=cboAuthorID name=cboAuthorID class=clsComboBox ><FONT size=1><OPTION value ="482">a</OPTION><OPTION selected value ="61">Admin</OPTION><OPTION value ="417">Andy</OPTION><OPTION value ="481">aNul</OPTION><OPTION value ="473">bala</OPTION><OPTION value ="487">DadaD</OPTION><OPTION value ="448">DarshanK@compulink.co.in</OPTION><OPTION value ="419">NinadP</OPTION><OPTION value ="423">NinadP@compulink.co.in</OPTION><OPTION value ="450">Piyush</OPTION><OPTION value ="479">PPP</OPTION><OPTION value ="418">PushkarK</OPTION><OPTION value ="475">PushkarK@compulink.co.in</OPTION><OPTION value ="480">QQQ</OPTION><OPTION value ="490">Robert</OPTION><OPTION value ="488">SandipD</OPTION><OPTION value ="422">ShrikantB</OPTION><OPTION value ="416">Smith</OPTION><OPTION value ="445">SubTenant1@yahoo.com</OPTION><OPTION value ="446">SubTenant2@yahoo.com</OPTION><OPTION value ="440">SumitS@compulink.co.in</OPTION><OPTION value ="444">Tenant1@yahoo.com</OPTION><OPTION value ="451">Tenant2@yahoo.com</OPTION><OPTION value ="485">Test</OPTION><OPTION value ="435">TusharL@compulink.co.in</OPTION><OPTION value ="420">UmeshJ</OPTION><OPTION value ="484">VinayB</OPTION></FONT></SELECT></TD>
+</TR>
+<TR Width="25%" Class="clsTREven">
+<TD align="right" width="25%">
+Connection String&nbsp;
+</TD>
+<TD align="left" width="75%">
+<SELECT  id=cboConnectionID name=cboConnectionID class=clsComboBox style='width:400px ' ><FONT size=1><OPTION value =''></OPTION><OPTION value ="2">Test's</OPTION><OPTION value ="1">Whizible Sem Production Backup</OPTION></FONT></SELECT></TD>
+</TR>
+</TABLE>
+</div>
+<TABLE cellspacing=0 cellpadding=0 Width='99.9%' class=clsTable><TR class=clsTRSectionHeader><TD  align=left width='1%'><A onclick="Javascript:ShowHide_Section1()"><Img Border=0 id=tdShowHide_ShowHide_Section1 Src='../../Images/minus.gif' title='Collapse Section'></A></TD><TD align=Left>General Properties</TD><TD align=RIGHT><Div id='SecLinksSection1'></Div></TD></TR></TABLE>
+
+<script language=javascript>
+
+
+ function ShowHide_Section1() {
+var objtdShowHide_ShowHide_Section1 = document.getElementById("tdShowHide_ShowHide_Section1");
+var objSection1 = document.getElementById("Section1");
+var strDisplay=(arguments.length>0)?arguments[0]:objSection1.style.display;
+if (strDisplay != "none") {
+objSection1.style.display="none";
+objtdShowHide_ShowHide_Section1.title="Expand Section";
+objtdShowHide_ShowHide_Section1.src='../../Images/plus.gif';
+}
+else
+{
+objSection1.style.display="";
+objtdShowHide_ShowHide_Section1.title="Collapse Section";
+objtdShowHide_ShowHide_Section1.src='../../Images/minus.gif';
+}
+}
+
+</script>
+
+<div id='Section1'>
+<TABLE id='tblSection1' Class='clsTable' Width=100% cellSpacing='0' cellPadding='0'>
+<TR id='trInsertInHEADTag' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+Insert in Head Tag&nbsp;
+</TD>
+<TD width='75%'>
+<Textarea wrap="off"  name="InsertInHEADTag" id="InsertInHEADTag" class='clsTextArea' style='width:400px  ; text-align:Left' tabindex="-1"   ></Textarea><A style="cursor:hand;" onclick="JavaScript:opentextdialog(&quot;frmPageProperties&quot;,&quot;InsertInHEADTag&quot;,&quot;Insert in Head Tag&quot;,&quot;False&quot;,&quot;&quot;,0,2000)" tabindex="-1"  onFocus="this.style.backgroundColor='#316ac5';" onblur=" this.style.backgroundColor='';"  ><img Border=0 valign=Top src='../../images/zoomin.gif' alt='Click to add more text'></img></a></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Is Web Service Exposed&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="IsWebServiceExposed" id="IsWebServiceExposed" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Is Excel Upload Allowed&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="IsExcelUploadAllowed" id="IsExcelUploadAllowed" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Tree Show&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="Treeshow" id="Treeshow" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR id='trTreeNodeImagePath' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+Tree Node Image Name&nbsp;
+</TD>
+<TD width='75%'>
+<Input  Type=Textbox  name="TreeNodeImagePath" id="TreeNodeImagePath" class='clsTextBox' style='width:400px  ; text-align:Left ' maxlength=250 value=""  ></TD>
+</TR>
+<TR id='trPageName' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+Page Name&nbsp;
+</TD>
+<TD width='75%'>
+<Input  Type=Textbox  name="PageName" id="PageName" class='clsTextBox' style='width:400px  ; text-align:Left ' maxlength=500 value="../Source/General/CommonList.aspx"  ><IMG src="../../Images/Star.gif" border=0></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Is Smart Navigation Enabled&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="SmartNavigation_IsEnabled" id="SmartNavigation_IsEnabled" class='clsCheckBox' value="1" onClick='SmartNavigation_Enabled()'></TD>
+</TR>
+<TR id='trSmartNavigation_Schema' class='clsTREven' width='100%'
+>
+<TD vAlign='top' align='right' width='25%'>
+Smart Navigation Schema&nbsp;
+</TD>
+<TD width='75%'>
+<SELECT  id=SmartNavigation_Schema name=SmartNavigation_Schema class=clsComboBox style='width:100px ' ><FONT size=1><OPTION value =''></OPTION><OPTION value ="H">Horizontal</OPTION><OPTION selected value ="V">Vertical</OPTION></FONT></SELECT></TD>
+</TR>
+<TR id='trSmartNavigation_ListFrameSize' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+Smart Navigation List Frame Size(%)&nbsp;
+</TD>
+<TD width='75%'>
+<Input  Type=Textbox  name="SmartNavigation_ListFrameSize" id="SmartNavigation_ListFrameSize" class='clsTextBox' style='width:50px  ; text-align:Right' maxlength=5 value="50"  >&nbsp;&nbsp;Will be considered as <I>List Frame Width (%)</I> for the Vertical Navigation Schema and <I>List Frame Height (%)</I> for the Horizontal Navigation Schema
+</TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Enable Context Menu&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="EnableContextMenu" id="EnableContextMenu" class='clsCheckBox' value="1" ></TD>
+</TR>
+<TR id='trDynamicAction_NavigationSchema' class='clsTREven' width='100%'
+>
+<TD vAlign='top' align='right' width='25%'>
+Action Links Schema&nbsp;
+</TD>
+<TD width='75%'>
+<SELECT  id=DynamicAction_NavigationSchema name=DynamicAction_NavigationSchema class=clsComboBox style='width:100px ' ><FONT size=1><OPTION selected value ="1">Classical</OPTION><OPTION value ="2">Dropdown</OPTION></FONT></SELECT><IMG src="../../Images/Star.gif" border=0> </TD>
+</TR>
+</table>
+</div>
+<TABLE cellspacing=0 cellpadding=0 Width='99.9%' class=clsTable><TR class=clsTRSectionHeader><TD  align=left width='1%'><A onclick="Javascript:ShowHide_Section13()"><Img Border=0 id=tdShowHide_ShowHide_Section13 Src='../../Images/minus.gif' title='Collapse Section'></A></TD><TD align=Left>List Properties</TD><TD align=RIGHT><Div id='SecLinksSection13'></Div></TD></TR></TABLE>
+
+<script language=javascript>
+
+
+ function ShowHide_Section13() {
+var objtdShowHide_ShowHide_Section13 = document.getElementById("tdShowHide_ShowHide_Section13");
+var objSection13 = document.getElementById("Section13");
+var strDisplay=(arguments.length>0)?arguments[0]:objSection13.style.display;
+if (strDisplay != "none") {
+objSection13.style.display="none";
+objtdShowHide_ShowHide_Section13.title="Expand Section";
+objtdShowHide_ShowHide_Section13.src='../../Images/plus.gif';
+}
+else
+{
+objSection13.style.display="";
+objtdShowHide_ShowHide_Section13.title="Collapse Section";
+objtdShowHide_ShowHide_Section13.src='../../Images/minus.gif';
+}
+}
+
+</script>
+
+<div id='Section13'>
+<TABLE id='tblSection13' Class='clsTable' Width=100% cellSpacing='0' cellPadding='0'>
+<TR id='trPageHeader' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+Header Text&nbsp;
+</TD>
+<TD width='75%'>
+<Textarea wrap="off"  name="PageHeader" id="PageHeader" class='clsTextArea' style='display:none  ; width:400px  ; text-align:Left'  >&lt;FONT color=#ff0000&gt;Ninad&lt;/FONT&gt;</Textarea><TABLE id='tblPageHeader' name='tblPageHeader' class='clsTable' ><TR  class='clsTRBody'><TD><Div class=clsDivTextArea id='divPageHeader' name='divPageHeader' style=' height=45px; width=400px; text-align:Left'  ><FONT color=#ff0000>Ninad</FONT></div></TD><TD valign=bottom><A style="cursor:hand;" onclick="JavaScript:callHTMLEditor(&quot;frmPageProperties&quot;,&quot;PageHeader&quot;,&quot;Header Text&quot;,&quot;&quot;,0,500)" id='ancPageHeader' name='ancPageHeader'  tabindex="-1"  onFocus="this.style.backgroundColor='#316ac5';" onblur=" this.style.backgroundColor='';"  ><img Border=0 valign=Top src='../../Images/HTMLEditor.gif' alt='Show HTML Editor'></img></a></TD></TR></TABLE></TD>
+</TR>
+<TR id='trCLPageLegend' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+Page Legend&nbsp;
+</TD>
+<TD width='75%'>
+<Input  Type=Textbox  name="CLPageLegend" id="CLPageLegend" class='clsTextBox' style='width:400px  ; text-align:left ' maxlength=200 value=""  ></TD>
+</TR>
+<TR id='trPageFooter' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+Footer Text&nbsp;
+</TD>
+<TD width='75%'>
+<Textarea wrap="off"  name="PageFooter" id="PageFooter" class='clsTextArea' style='display:none  ; width:400px  ; text-align:Left'  ></Textarea><TABLE id='tblPageFooter' name='tblPageFooter' class='clsTable' ><TR  class='clsTRBody'><TD><Div class=clsDivTextArea id='divPageFooter' name='divPageFooter' style=' height=45px; width=400px; text-align:Left'  ></div></TD><TD valign=bottom><A style="cursor:hand;" onclick="JavaScript:callHTMLEditor(&quot;frmPageProperties&quot;,&quot;PageFooter&quot;,&quot;Footer Text&quot;,&quot;&quot;,0,200)" id='ancPageFooter' name='ancPageFooter'  tabindex="-1"  onFocus="this.style.backgroundColor='#316ac5';" onblur=" this.style.backgroundColor='';"  ><img Border=0 valign=Top src='../../Images/HTMLEditor.gif' alt='Show HTML Editor'></img></a></TD></TR></TABLE></TD>
+</TR>
+<TR id='trAddNewMode_UIPage' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+Add New Mode Page Path&nbsp;
+</TD>
+<TD width='75%'>
+<Input  Type=Textbox  name="AddNewMode_UIPage" id="AddNewMode_UIPage" class='clsTextBox' style='width:400px  ; text-align:Left ' maxlength=200 value=""  ></TD>
+</TR>
+<TR id='trEditMode_UIPage' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+Edit Mode Page Path&nbsp;
+</TD>
+<TD width='75%'>
+<Input  Type=Textbox  name="EditMode_UIPage" id="EditMode_UIPage" class='clsTextBox' style='width:400px  ; text-align:Left ' maxlength=200 value=""  ></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Add New Mode - Open in Window&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="AddNewMode_UIPageOpenInWindow" id="AddNewMode_UIPageOpenInWindow" class='clsCheckBox' value="1" ></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Edit Mode - Open in Window&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="EditMode_UIPageOpenInWindow" id="EditMode_UIPageOpenInWindow" class='clsCheckBox' value="1" ></TD>
+</TR>
+<TR id='trWindow_Height' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+Window Height&nbsp;
+</TD>
+<TD width='75%'>
+<Input  Type=Textbox  name="Window_Height" id="Window_Height" class='clsTextBox' style='width:50px  ; text-align:Right' maxlength=4 value="400"  ></TD>
+</TR>
+<TR id='trWindow_Width' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+Window Width&nbsp;
+</TD>
+<TD width='75%'>
+<Input  Type=Textbox  name="Window_Width" id="Window_Width" class='clsTextBox' style='width:50px  ; text-align:Right' maxlength=4 value="600"  ></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Show Delete Column&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="ShowDeleteColumn" id="ShowDeleteColumn" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Show Delete Column First&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="ShowDeleteColumnFirst" id="ShowDeleteColumnFirst" class='clsCheckBox' value="1" ></TD>
+</TR>
+<TR id='trCaptionForDeleteColumn' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+Caption For Delete Column&nbsp;
+</TD>
+<TD width='75%'>
+<Input  Type=Textbox  name="CaptionForDeleteColumn" id="CaptionForDeleteColumn" class='clsTextBox' style='width:250px  ; text-align:Left ' maxlength=30 value="Delete"  ></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Show Confirmation Message For Delete&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="ShowConfirmationMsgForDelete" id="ShowConfirmationMsgForDelete" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Enable HTML Encode&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="EnableHTMLEncode" id="EnableHTMLEncode" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Enable Sorting&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="EnableSorting" id="EnableSorting" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Sorting Preferences&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="SortingPreferences" id="SortingPreferences" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Filter Preferences&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="FilterPreferences" id="FilterPreferences" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR id='trSummaryTotalTitle' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+Summary Total Title&nbsp;
+</TD>
+<TD width='75%'>
+<Input  Type=Textbox  name="SummaryTotalTitle" id="SummaryTotalTitle" class='clsTextBox' style='width:400px  ; text-align:Left ' maxlength=50 value=""  ></TD>
+</TR>
+<TR id='trSummaryGroupTitle' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+Summary Group Title&nbsp;
+</TD>
+<TD width='75%'>
+<Input  Type=Textbox  name="SummaryGroupTitle" id="SummaryGroupTitle" class='clsTextBox' style='width:400px  ; text-align:Left ' maxlength=50 value=""  ></TD>
+</TR>
+<TR id='trFilterControlsInARow' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+No of filter controls in a row&nbsp;
+</TD>
+<TD width='75%'>
+<Input  Type=Textbox  name="FilterControlsInARow" id="FilterControlsInARow" class='clsTextBox' style='width:50px  ; text-align:Right' maxlength=1 value="3"  ></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Show Column Tooltip&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="ShowColumnTooltip" id="ShowColumnTooltip" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Allow Numeric Paging&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="AllowNumericPaging" id="AllowNumericPaging" class='clsCheckBox' value="1" checked  onClick='NumericPaging_Enabled()'></TD>
+</TR>
+<TR id='trPageSize' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+Page Size&nbsp;
+</TD>
+<TD width='75%'>
+<Input  Type=Textbox  name="PageSize" id="PageSize" class='clsTextBox' style='width:50px  ; text-align:Right' maxlength=2 value="10"  ></TD>
+</TR>
+<TR id='trNumericPagingAlignment' class='clsTREven' width='100%'
+>
+<TD vAlign='top' align='right' width='25%'>
+Numeric Paging Alignment&nbsp;
+</TD>
+<TD width='75%'>
+<SELECT  id=NumericPagingAlignment name=NumericPagingAlignment class=clsComboBox style='width:100px ' ><FONT size=1><OPTION value =''></OPTION><OPTION value ="2">Center</OPTION><OPTION selected value ="0">Left</OPTION><OPTION value ="1">Right</OPTION></FONT></SELECT></TD>
+</TR>
+<TR id='trNumericPagingDisplayPosition' class='clsTREven' width='100%'
+>
+<TD vAlign='top' align='right' width='25%'>
+Numeric Paging Display Position&nbsp;
+</TD>
+<TD width='75%'>
+<SELECT  id=NumericPagingDisplayPosition name=NumericPagingDisplayPosition class=clsComboBox style='width:100px ' ><FONT size=1><OPTION value =''></OPTION><OPTION selected value ="2">Both</OPTION><OPTION value ="1">Down</OPTION><OPTION value ="0">Top</OPTION></FONT></SELECT></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Is Grid Static Header&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="IsStaticHeader" id="IsStaticHeader" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Enable Views&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="EnableViews" id="EnableViews" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Apply Filters On Database&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="ApplyFiltersOnDB" id="ApplyFiltersOnDB" class='clsCheckBox' value="1" onClick='ApplyFiltersOnDB_OnClick()'></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Show Records For Database Filters&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="ShowRecordsForDBFilters" id="ShowRecordsForDBFilters" class='clsCheckBox' value="1" ></TD>
+</TR>
+</table>
+</div>
+<TABLE cellspacing=0 cellpadding=0 Width='99.9%' class=clsTable><TR class=clsTRSectionHeader><TD  align=left width='1%'><A onclick="Javascript:ShowHide_Section42()"><Img Border=0 id=tdShowHide_ShowHide_Section42 Src='../../Images/minus.gif' title='Collapse Section'></A></TD><TD align=Left>Form Properties</TD><TD align=RIGHT><Div id='SecLinksSection42'></Div></TD></TR></TABLE>
+
+<script language=javascript>
+
+
+ function ShowHide_Section42() {
+var objtdShowHide_ShowHide_Section42 = document.getElementById("tdShowHide_ShowHide_Section42");
+var objSection42 = document.getElementById("Section42");
+var strDisplay=(arguments.length>0)?arguments[0]:objSection42.style.display;
+if (strDisplay != "none") {
+objSection42.style.display="none";
+objtdShowHide_ShowHide_Section42.title="Expand Section";
+objtdShowHide_ShowHide_Section42.src='../../Images/plus.gif';
+}
+else
+{
+objSection42.style.display="";
+objtdShowHide_ShowHide_Section42.title="Collapse Section";
+objtdShowHide_ShowHide_Section42.src='../../Images/minus.gif';
+}
+}
+
+</script>
+
+<div id='Section42'>
+<TABLE id='tblSection42' Class='clsTable' Width=100% cellSpacing='0' cellPadding='0'>
+<TR id='trUIPageHeader' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+Header Text&nbsp;
+</TD>
+<TD width='75%'>
+<Textarea wrap="off"  name="UIPageHeader" id="UIPageHeader" class='clsTextArea' style='display:none  ; width:400px  ; text-align:Left'  ></Textarea><TABLE id='tblUIPageHeader' name='tblUIPageHeader' class='clsTable' ><TR  class='clsTRBody'><TD><Div class=clsDivTextArea id='divUIPageHeader' name='divUIPageHeader' style=' height=45px; width=400px; text-align:Left'  ></div></TD><TD valign=bottom><A style="cursor:hand;" onclick="JavaScript:callHTMLEditor(&quot;frmPageProperties&quot;,&quot;UIPageHeader&quot;,&quot;Header Text&quot;,&quot;&quot;,0,500)" id='ancUIPageHeader' name='ancUIPageHeader'  tabindex="-1"  onFocus="this.style.backgroundColor='#316ac5';" onblur=" this.style.backgroundColor='';"  ><img Border=0 valign=Top src='../../Images/HTMLEditor.gif' alt='Show HTML Editor'></img></a></TD></TR></TABLE></TD>
+</TR>
+<TR id='trCPPageLegend' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+Page Legend&nbsp;
+</TD>
+<TD width='75%'>
+<Input  Type=Textbox  name="CPPageLegend" id="CPPageLegend" class='clsTextBox' style='width:250px  ; text-align:left ' maxlength=200 value=""  ></TD>
+</TR>
+<TR id='trUIPageFooter' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+Footer Text&nbsp;
+</TD>
+<TD width='75%'>
+<Textarea wrap="off"  name="UIPageFooter" id="UIPageFooter" class='clsTextArea' style='display:none  ; width:400px  ; text-align:Left'  ></Textarea><TABLE id='tblUIPageFooter' name='tblUIPageFooter' class='clsTable' ><TR  class='clsTRBody'><TD><Div class=clsDivTextArea id='divUIPageFooter' name='divUIPageFooter' style=' height=45px; width=400px; text-align:Left'  ></div></TD><TD valign=bottom><A style="cursor:hand;" onclick="JavaScript:callHTMLEditor(&quot;frmPageProperties&quot;,&quot;UIPageFooter&quot;,&quot;Footer Text&quot;,&quot;&quot;,0,200)" id='ancUIPageFooter' name='ancUIPageFooter'  tabindex="-1"  onFocus="this.style.backgroundColor='#316ac5';" onblur=" this.style.backgroundColor='';"  ><img Border=0 valign=Top src='../../Images/HTMLEditor.gif' alt='Show HTML Editor'></img></a></TD></TR></TABLE></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Is Identity On&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="IsIdentityOn" id="IsIdentityOn" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Show Navigation Links&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="ShowNavigationLinks" id="ShowNavigationLinks" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR id='trControlsInARow' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+No of controls in a row&nbsp;
+</TD>
+<TD width='75%'>
+<Input  Type=Textbox  name="ControlsInARow" id="ControlsInARow" class='clsTextBox' style='width:50px  ; text-align:Right' maxlength=2 value="3"  ><IMG src="../../Images/Star.gif" border=0></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Show record saved message&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="ShowRecordSavedMsg" id="ShowRecordSavedMsg" class='clsCheckBox' value="1" ></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Show Navigation Alert&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="ShowNavigationAlert" id="ShowNavigationAlert" class='clsCheckBox' value="1" ></TD>
+</TR>
+<TR id='trUIDesignTemplate' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+UI Design Header Template&nbsp;
+</TD>
+<TD width='75%'>
+<Textarea wrap="off"  name="UIDesignTemplate" id="UIDesignTemplate" class='clsTextArea' style='width:400px  ; text-align:Left' tabindex="-1"   >&lt;TABLE id='tblForm500930' CellSpacing=0 class='clsTable' width='99.9%'&gt;&lt;TR class='clsTRBody'&gt;&lt;TD title=&quot;&quot; valign=top align=right&gt;#WHIZ:DROPDOWNCTRLCAPTION:POTENTIALCUSTOMER#&lt;/TD&gt;&lt;TD valign=top title=&quot;&quot; colspan='5'  &gt;&amp;nbsp;#WHIZ:DROPDOWNCTRL:POTENTIALCUSTOMER#&lt;/TD&gt;&lt;TR class='clsTRBody'&gt;&lt;TD title=&quot;&quot; valign=top align=right&gt;#WHIZ:DATECTRLCAPTION:ESTCLOSEDATE#&lt;/TD&gt;&lt;TD valign=top title=&quot;&quot; colspan='1'  &gt;&amp;nbsp;#WHIZ:DATECTRL:ESTCLOSEDATE#&lt;/TD&gt;&lt;TD title=&quot;&quot; valign=top align=right&gt;#WHIZ:TEXTCTRLCAPTION:PRICE#&lt;/TD&gt;&lt;TD valign=top title=&quot;&quot; colspan='3'  &gt;&amp;nbsp;#WHIZ:TEXTCTRL:PRICE#&lt;/TD&gt;&lt;/TR&gt;&lt;TR class='clsTRBody'&gt;&lt;TD title=&quot;Email&quot; valign=top align=right&gt;#WHIZ:TEXTCTRLCAPTION:PROBABILITY#&lt;/TD&gt;&lt;TD valign=top title=&quot;Email&quot; colspan='1'  &gt;&amp;nbsp;#WHIZ:TEXTCTRL:PROBABILITY#&lt;/TD&gt;&lt;TD title=&quot;&quot; valign=top align=right&gt;#WHIZ:DROPDOWNCTRLCAPTION:RATING#&lt;/TD&gt;&lt;TD valign=top title=&quot;&quot; colspan='3'  &gt;&amp;nbsp;#WHIZ:DROPDOWNCTRL:RATING#&lt;/TD&gt;&lt;/TR&gt;&lt;TR class='clsTRBody'&gt;&lt;TD title=&quot;&quot; valign=top align=right&gt;#WHIZ:OPTIONBUTTONSCTRLCAPTION:REVENUE#&lt;/TD&gt;&lt;TD valign=top title=&quot;&quot; colspan='1'  &gt;&amp;nbsp;#WHIZ:OPTIONBUTTONSCTRL:REVENUE#&lt;/TD&gt;&lt;TD title=&quot;&quot; valign=top align=right&gt;#WHIZ:TEXTCTRLCAPTION:TOPIC#&lt;/TD&gt;&lt;TD valign=top title=&quot;&quot; colspan='3'  &gt;&amp;nbsp;#WHIZ:TEXTCTRL:TOPIC#&lt;/TD&gt;&lt;/TR&gt;&lt;TR class='clsTRBody'&gt;&lt;TD title=&quot;&quot; valign=top align=right&gt;#WHIZ:TEXTAREACTRLCAPTION:DESCRIPTION#&lt;/TD&gt;&lt;TD valign=top title=&quot;&quot; colspan='5' NoWrap &gt;#WHIZ:TEXTAREACTRL:DESCRIPTION#&lt;/TD&gt;&lt;/TR&gt;&lt;TR class='clsTRBody'&gt;&lt;TD title=&quot;&quot; valign=top align=right&gt;&lt;/TD&gt;&lt;TD valign=top title=&quot;&quot; colspan='5'  &gt;#WHIZ:HTMLTAGCTRL:HTML TAG1#&lt;/TD&gt;&lt;/TR&gt;&lt;TR class='clsTRBody'&gt;&lt;TD title=&quot;&quot; valign=top align=right&gt;#WHIZ:TEXTCTRLCAPTION:NONDATABASE2#&lt;/TD&gt;&lt;TD valign=top title=&quot;&quot; colspan='5'  &gt;&amp;nbsp;#WHIZ:TEXTCTRL:NONDATABASE2#&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;</Textarea><A style="cursor:hand;" onclick="JavaScript:opentextdialog(&quot;frmPageProperties&quot;,&quot;UIDesignTemplate&quot;,&quot;UI Design Header Template&quot;,&quot;False&quot;,&quot;&quot;,0,20000)" tabindex="-1"  onFocus="this.style.backgroundColor='#316ac5';" onblur=" this.style.backgroundColor='';"  ><img Border=0 valign=Top src='../../images/zoomin.gif' alt='Click to add more text'></img></a>&nbsp;<a href="javascript:GenerateUIDesignTemplate('50093','0','1')" title="Generate User Interface Design Header Template">Generate</a>
+</TD>
+</TR>
+<TR id='trUIDesignFooterTemplate' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+UI Design Footer Template&nbsp;
+</TD>
+<TD width='75%'>
+<Textarea wrap="off"  name="UIDesignFooterTemplate" id="UIDesignFooterTemplate" class='clsTextArea' style='width:400px  ; text-align:Left' tabindex="-1"   ></Textarea><A style="cursor:hand;" onclick="JavaScript:opentextdialog(&quot;frmPageProperties&quot;,&quot;UIDesignFooterTemplate&quot;,&quot;UI Design Footer Template&quot;,&quot;False&quot;,&quot;&quot;,0,20000)" tabindex="-1"  onFocus="this.style.backgroundColor='#316ac5';" onblur=" this.style.backgroundColor='';"  ><img Border=0 valign=Top src='../../images/zoomin.gif' alt='Click to add more text'></img></a>&nbsp;<a href="javascript:GenerateUIDesignTemplate('50093','0','5')" title="Generate User Interface Design Footer Template">Generate</a>
+</TD>
+</TR>
+</table>
+</div>
+<TABLE cellspacing=0 cellpadding=0 Width='99.9%' class=clsTable><TR class=clsTRSectionHeader><TD  align=left width='1%'><A onclick="Javascript:ShowHide_Section52()"><Img Border=0 id=tdShowHide_ShowHide_Section52 Src='../../Images/minus.gif' title='Collapse Section'></A></TD><TD align=Left>MultiInsetGrid Related Properties</TD><TD align=RIGHT><Div id='SecLinksSection52'></Div></TD></TR></TABLE>
+
+<script language=javascript>
+
+
+ function ShowHide_Section52() {
+var objtdShowHide_ShowHide_Section52 = document.getElementById("tdShowHide_ShowHide_Section52");
+var objSection52 = document.getElementById("Section52");
+var strDisplay=(arguments.length>0)?arguments[0]:objSection52.style.display;
+if (strDisplay != "none") {
+objSection52.style.display="none";
+objtdShowHide_ShowHide_Section52.title="Expand Section";
+objtdShowHide_ShowHide_Section52.src='../../Images/plus.gif';
+}
+else
+{
+objSection52.style.display="";
+objtdShowHide_ShowHide_Section52.title="Collapse Section";
+objtdShowHide_ShowHide_Section52.src='../../Images/minus.gif';
+}
+}
+
+</script>
+
+<div id='Section52'>
+<TABLE id='tblSection52' Class='clsTable' Width=100% cellSpacing='0' cellPadding='0'>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Batch Process To Save Data&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="MultiInsetGridSaveBatchProcessEnabled" id="MultiInsetGridSaveBatchProcessEnabled" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR class='clsTREven' width='100%' 
+>
+<TD vAlign='top' align='right' width='25%'>
+Show MultiInset Index Number&nbsp;
+</TD>
+<TD width='75%'>
+<Input type=checkbox name="MultiInsetShowIndexNumber" id="MultiInsetShowIndexNumber" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR id='trMultiInsetRowNumber' class='clsTREven' width='100%'>
+<TD vAlign='top' align='right' width='25%'>
+No. of Rows In MultiInsetGrid&nbsp;
+</TD>
+<TD width='75%'>
+<Input  Type=Textbox  name="MultiInsetRowNumber" id="MultiInsetRowNumber" class='clsTextBox' style='width:50px  ; text-align:Right' maxlength=3 value="3"  ></TD>
+</TR>
+</table>
+</div>
+<TABLE cellspacing=0 cellpadding=0 Width='99.9%' class=clsTable><TR class=clsTRSectionHeader><TD  align=left width='1%'><A onclick="Javascript:SECTION_AuditTrail_OnClick()"><Img Border=0 id=tdShowHide_SECTION_AuditTrail_OnClick Src='../../Images/minus.gif' title='Collapse Section'></A></TD><TD align=Left>Audit Trail</TD><TD align=RIGHT><Div id='SecLinksSECTION_AuditTrail'></Div></TD></TR></TABLE>
+
+<script language=javascript>
+
+
+ function SECTION_AuditTrail_OnClick() {
+var objtdShowHide_SECTION_AuditTrail_OnClick = document.getElementById("tdShowHide_SECTION_AuditTrail_OnClick");
+var objSECTION_AuditTrail = document.getElementById("SECTION_AuditTrail");
+var strDisplay=(arguments.length>0)?arguments[0]:objSECTION_AuditTrail.style.display;
+if (strDisplay != "none") {
+objSECTION_AuditTrail.style.display="none";
+objtdShowHide_SECTION_AuditTrail_OnClick.title="Expand Section";
+objtdShowHide_SECTION_AuditTrail_OnClick.src='../../Images/plus.gif';
+}
+else
+{
+objSECTION_AuditTrail.style.display="";
+objtdShowHide_SECTION_AuditTrail_OnClick.title="Collapse Section";
+objtdShowHide_SECTION_AuditTrail_OnClick.src='../../Images/minus.gif';
+}
+}
+
+</script>
+
+<div id='SECTION_AuditTrail'>
+<TABLE class="clsTable" id="tblMainProperties" border="0" width="100%" cellpadding="0" cellspacing="0">
+<TR Width="100%" Class="clsTREven">
+<td align="right" width="25%">Enable Transaction History&nbsp;
+</td><td align="left" width="25%"><Input type=checkbox name="chkTransHistory" id="chkTransHistory" class='clsCheckBox' value="1" checked  Language = javascript onClick = chkTransHistory_OnClick('50093','0')></td><td class="clsTdPB" id="tdTransHistoryLinks" align="center" width="50%">|&nbsp;<a title="Generate Script" href="Javascript:TransHistoryScript_Click('50093','0','TRANSACTION_HISTORY_GENERATE_SCRIPT');">Generate Script</a>&nbsp;|&nbsp;<a title="Show Script" href="Javascript:TransHistoryScript_Click('50093','0','TRANSACTION_HISTORY_SHOW_SCRIPT');">Show Script</a>&nbsp;|</td></TR>
+<TR Width="100%" Class="clsTREven">
+<td align="right" width="25%">Enable Audit Trail&nbsp;
+</td><td align="left" width="25%"><Input type=checkbox name="chkAuditTrail" id="chkAuditTrail" class='clsCheckBox' value="1" checked  Language = javascript onClick = chkAuditTrail_OnClick()></td><td class="clsTdPB" id="tdAuditTrailLinks" align="center" width="50%">|&nbsp;<a title="Generate Script" href="Javascript:AuditTrailScript_Click('50093','0','AUDIT_TRAIL_GENERATE_SCRIPT');">Generate Script</a>&nbsp;|&nbsp;<a title="Show Script" href="Javascript:AuditTrailScript_Click('50093','0','AUDIT_TRAIL_SHOW_SCRIPT');">Show Script</a>&nbsp;|</td></TR>
+<TR Width="100%" Class="clsTREven">
+<td align="right" width="25%">Created By&nbsp;
+</td><td align="left" width="75%" colspan=2><SELECT  id=cboAuditTrail_CreatedBy name=cboAuditTrail_CreatedBy class=clsComboBox style='width:150px ' ><FONT size=1><OPTION value =''></OPTION><OPTION selected value ="CreatedBy">CreatedBy</OPTION><OPTION value ="UpdatedBy">UpdatedBy</OPTION></FONT></SELECT><Input  Type=hidden  name="createdBySelValue" id="createdBySelValue" class='clsTextBox' style='text-align:Left' value="CreatedBy"  ></td></TR>
+<TR Width="100%" Class="clsTREven">
+<td align="right" width="25%">Created Date&nbsp;
+</td><td align="left" width="75%" colspan=2><SELECT  id=cboAuditTrail_CreatedDate name=cboAuditTrail_CreatedDate class=clsComboBox style='width:150px ' ><FONT size=1><OPTION value =''></OPTION><OPTION selected value ="CreatedDate">CreatedDate</OPTION><OPTION value ="UpdatedDate">UpdatedDate</OPTION></FONT></SELECT><Input  Type=hidden  name="createdDateSelValue" id="createdDateSelValue" class='clsTextBox' style='text-align:Left' value="CreatedDate"  ></td></TR>
+<TR Width="100%" Class="clsTREven">
+<td align="right" width="25%">Updated By&nbsp;
+</td><td align="left" width="75%" colspan=2><SELECT  id=cboAuditTrail_UpdatedBy name=cboAuditTrail_UpdatedBy class=clsComboBox style='width:150px ' ><FONT size=1><OPTION value =''></OPTION><OPTION value ="CreatedBy">CreatedBy</OPTION><OPTION selected value ="UpdatedBy">UpdatedBy</OPTION></FONT></SELECT><Input  Type=hidden  name="updatedBySelValue" id="updatedBySelValue" class='clsTextBox' style='text-align:Left' value="UpdatedBy"  ></td></TR>
+<TR Width="100%" Class="clsTREven">
+<td align="right" width="25%" >Updated Date&nbsp;
+</td><td align="left" width="75%" colspan=2><SELECT  id=cboAuditTrail_UpdatedDate name=cboAuditTrail_UpdatedDate class=clsComboBox style='width:150px ' ><FONT size=1><OPTION value =''></OPTION><OPTION value ="CreatedDate">CreatedDate</OPTION><OPTION selected value ="UpdatedDate">UpdatedDate</OPTION></FONT></SELECT><Input  Type=hidden  name="updatedDateSelValue" id="updatedDateSelValue" class='clsTextBox' style='text-align:Left' value="UpdatedDate"  ></td></TR>
+</TABLE>
+</div>
+<TABLE cellspacing=0 cellpadding=0 Width='99.9%' class=clsTable><TR class=clsTRSectionHeader><TD  align=left width='1%'><A onclick="Javascript:SECTION_Concurrency_OnClick()"><Img Border=0 id=tdShowHide_SECTION_Concurrency_OnClick Src='../../Images/minus.gif' title='Collapse Section'></A></TD><TD align=Left>Concurrency</TD><TD align=RIGHT><Div id='SecLinksSECTION_Concurrency'></Div></TD></TR></TABLE>
+
+<script language=javascript>
+
+
+ function SECTION_Concurrency_OnClick() {
+var objtdShowHide_SECTION_Concurrency_OnClick = document.getElementById("tdShowHide_SECTION_Concurrency_OnClick");
+var objSECTION_Concurrency = document.getElementById("SECTION_Concurrency");
+var strDisplay=(arguments.length>0)?arguments[0]:objSECTION_Concurrency.style.display;
+if (strDisplay != "none") {
+objSECTION_Concurrency.style.display="none";
+objtdShowHide_SECTION_Concurrency_OnClick.title="Expand Section";
+objtdShowHide_SECTION_Concurrency_OnClick.src='../../Images/plus.gif';
+}
+else
+{
+objSECTION_Concurrency.style.display="";
+objtdShowHide_SECTION_Concurrency_OnClick.title="Collapse Section";
+objtdShowHide_SECTION_Concurrency_OnClick.src='../../Images/minus.gif';
+}
+}
+
+</script>
+
+<div id='SECTION_Concurrency'>
+<TABLE class="clsTable" id="tblMainProperties" border="0" width="100%" cellpadding="0" cellspacing="0">
+<TR Width="100%" Class="clsTREven">
+<td align="right" width="25%">Enable Concurrency&nbsp;
+</td><td align="left" width="25%"><Input type=checkbox name="chkConcurrency" id="chkConcurrency" class='clsCheckBox' value="1" checked  Language = javascript onClick = chkConcurrency_OnClick()></td><TR Width="100%" Class="clsTREven">
+<td align="right" width="25%">Timestamp&nbsp;
+</td><td align="left" width="75%" colspan=2><SELECT  id=cboTimestamp name=cboTimestamp class=clsComboBox style='width:150px ' ><FONT size=1><OPTION value =''></OPTION><OPTION selected value ="UpdateTimestamp">UpdateTimestamp</OPTION></FONT></SELECT><Input  Type=hidden  name="TimestampSelValue" id="TimestampSelValue" class='clsTextBox' style='text-align:Left' value="UpdateTimestamp"  ></td></TR>
+<TR Width="100%" Class="clsTREven">
+<td align="right" width="25%">Updated By&nbsp;
+</td><td align="left" width="75%" colspan=2><SELECT  id=cboConcurrency_UpdatedBy name=cboConcurrency_UpdatedBy class=clsComboBox style='width:150px ' ><FONT size=1><OPTION value =''></OPTION><OPTION selected value ="UpdatedBy">UpdatedBy</OPTION></FONT></SELECT><Input  Type=hidden  name="conupdatedBySelValue" id="conupdatedBySelValue" class='clsTextBox' style='text-align:Left' value="UpdatedBy"  ></td></TR>
+</TABLE>
+</div>
+<TABLE cellspacing=0 cellpadding=0 Width='99.9%' class=clsTable><TR class=clsTRSectionHeader><TD  align=left width='1%'><A onclick="Javascript:SECTION_SecuritySettings_OnClick()"><Img Border=0 id=tdShowHide_SECTION_SecuritySettings_OnClick Src='../../Images/minus.gif' title='Collapse Section'></A></TD><TD align=Left>Security Settings</TD><TD align=RIGHT><Div id='SecLinksSECTION_SecuritySettings'></Div></TD></TR></TABLE>
+
+<script language=javascript>
+
+
+ function SECTION_SecuritySettings_OnClick() {
+var objtdShowHide_SECTION_SecuritySettings_OnClick = document.getElementById("tdShowHide_SECTION_SecuritySettings_OnClick");
+var objSECTION_SecuritySettings = document.getElementById("SECTION_SecuritySettings");
+var strDisplay=(arguments.length>0)?arguments[0]:objSECTION_SecuritySettings.style.display;
+if (strDisplay != "none") {
+objSECTION_SecuritySettings.style.display="none";
+objtdShowHide_SECTION_SecuritySettings_OnClick.title="Expand Section";
+objtdShowHide_SECTION_SecuritySettings_OnClick.src='../../Images/plus.gif';
+}
+else
+{
+objSECTION_SecuritySettings.style.display="";
+objtdShowHide_SECTION_SecuritySettings_OnClick.title="Collapse Section";
+objtdShowHide_SECTION_SecuritySettings_OnClick.src='../../Images/minus.gif';
+}
+}
+
+</script>
+
+<div id='SECTION_SecuritySettings'>
+<TABLE class="clsTable" id="tblMainProperties" border="0" width="100%" cellpadding="0" cellspacing="0">
+<TR Width="100%" Class="clsTREven">
+<TD align="right" width="25%">
+Apply Primary Key Security&nbsp;
+</TD>
+<TD align="left" width="75%">
+<Input type=checkbox name="EnablePKSecurity" id="EnablePKSecurity" class='clsCheckBox' value="1" checked  ></TD>
+</TR>
+<TR Width="25%" Class="clsTREven">
+<TD align="right" width="25%">
+Security Settings&nbsp;
+</TD>
+<TD align="left" width="75%">
+<Input type=radio name="rdoNoSecurity" id="rdoNoSecurity" class='' value="N" >No Security
+</TD>
+</TR>
+<TR Width="100%" Class="clsTREven">
+<TD align="right" width="25%">
+</TD>
+<TD align="left" width="75%">
+<Input type=radio name="rdoNoSecurity" id="rdoNoSecurity" class='' value="C" >Apply Page Security Consider Control Level Security
+</TD>
+</TR>
+<TR Width="100%" Class="clsTREven">
+<TD align="right" width="25%">
+</TD>
+<TD align="left" width="75%">
+<Input type=radio name="rdoNoSecurity" id="rdoNoSecurity" class='' value="P" checked  >Apply Page Security Ignore Control Level Security
+</TD>
+</TR>
+</TABLE>
+</div>
+<TABLE cellspacing=0 cellpadding=0 Width='99.9%' class=clsTable><TR class=clsTRSectionHeader><TD  align=left width='1%'><A onclick="Javascript:SectionPositioning()"><Img Border=0 id=tdShowHide_SectionPositioning Src='../../Images/minus.gif' title='Collapse Section'></A></TD><TD align=Left>Section Positioning</TD><TD align=RIGHT><Div id='SecLinksSectionPositioning'></Div></TD></TR></TABLE>
+
+<script language=javascript>
+
+
+ function SectionPositioning() {
+var objtdShowHide_SectionPositioning = document.getElementById("tdShowHide_SectionPositioning");
+var objSectionPositioning = document.getElementById("SectionPositioning");
+var strDisplay=(arguments.length>0)?arguments[0]:objSectionPositioning.style.display;
+if (strDisplay != "none") {
+objSectionPositioning.style.display="none";
+objtdShowHide_SectionPositioning.title="Expand Section";
+objtdShowHide_SectionPositioning.src='../../Images/plus.gif';
+}
+else
+{
+objSectionPositioning.style.display="";
+objtdShowHide_SectionPositioning.title="Collapse Section";
+objtdShowHide_SectionPositioning.src='../../Images/minus.gif';
+}
+}
+
+</script>
+
+<div id='SectionPositioning'>
+<TABLE id='tblGraph' class='clsTable'border='0' width='100%' cellpadding='1' cellspacing='1'>
+<TR class='clsTRColumnHeader'>
+<TD align='left'>Page Section</TD>
+<TD align='left'>Section Title</TD>
+<TD align='left'>Order Number</TD>
+<TD align='left'>Height</TD>
+<TD align='center'>Show Section Title</TD>
+<TD align='center'>Active</TD>
+</TR>
+<TR class='clsTRGroupHeader' Width='100%'>
+<TD align='left' colspan = 6> <B>Form Page Section</B></TD>
+<TR class='clsTREven' Width='100%'>
+<TD align='left'>
+Header
+</TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtSectionTitle1" id="txtSectionTitle1" class='clsTextBox' style='width:350px  ; text-align:Left' maxlength=200 value="Header"  ></TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtSectionOrderNumber1" id="txtSectionOrderNumber1" class='clsTextBox' style='width:50px  ; text-align:right' maxlength=2 value="1"  ></TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtHeight1" id="txtHeight1" class='clsTextBox' style='width:50px  ; text-align:Right' maxlength=4 value=""  ></TD>
+<TD align='center'>
+<Input type=checkbox name="chkHideSectionTitle1" id="chkHideSectionTitle1" class='clsCheckBox' value="1" checked  ></TD>
+<TD align='center'>
+<Input type=checkbox name="chkIsActive1" id="chkIsActive1" class='clsCheckBox' value="1" checked  ></TD>
+<Input  Type=hidden  name="txtTagSectionID1" id="txtTagSectionID1" class='clsTextBox' style='text-align:Left' value="2412"  ></TR>
+<TR class='clsTROdd' Width='100%'>
+<TD align='left'>
+Sub Tags
+</TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtSectionTitle2" id="txtSectionTitle2" class='clsTextBox' style='width:350px  ; text-align:Left' maxlength=200 value="SubTags"  ></TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtSectionOrderNumber2" id="txtSectionOrderNumber2" class='clsTextBox' style='width:50px  ; text-align:right' maxlength=2 value="2"  ></TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtHeight2" id="txtHeight2" class='clsTextBox' style='width:50px  ; text-align:Right' maxlength=4 value=""  ></TD>
+<TD align='center'>
+<Input type=checkbox name="chkHideSectionTitle2" id="chkHideSectionTitle2" class='clsCheckBox' value="1" ></TD>
+<TD align='center'>
+<Input type=checkbox name="chkIsActive2" id="chkIsActive2" class='clsCheckBox' value="1" checked  ></TD>
+<Input  Type=hidden  name="txtTagSectionID2" id="txtTagSectionID2" class='clsTextBox' style='text-align:Left' value="2413"  ></TR>
+<TR class='clsTREven' Width='100%'>
+<TD align='left'>
+Graphs
+</TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtSectionTitle3" id="txtSectionTitle3" class='clsTextBox' style='width:350px  ; text-align:Left' maxlength=200 value="Graphs"  ></TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtSectionOrderNumber3" id="txtSectionOrderNumber3" class='clsTextBox' style='width:50px  ; text-align:right' maxlength=2 value="3"  ></TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtHeight3" id="txtHeight3" class='clsTextBox' style='width:50px  ; text-align:Right' maxlength=4 value=""  ></TD>
+<TD align='center'>
+<Input type=checkbox name="chkHideSectionTitle3" id="chkHideSectionTitle3" class='clsCheckBox' value="1" ></TD>
+<TD align='center'>
+<Input type=checkbox name="chkIsActive3" id="chkIsActive3" class='clsCheckBox' value="1" ></TD>
+<Input  Type=hidden  name="txtTagSectionID3" id="txtTagSectionID3" class='clsTextBox' style='text-align:Left' value="2414"  ></TR>
+<TR class='clsTROdd' Width='100%'>
+<TD align='left'>
+Related Data
+</TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtSectionTitle4" id="txtSectionTitle4" class='clsTextBox' style='width:350px  ; text-align:Left' maxlength=200 value="RD"  ></TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtSectionOrderNumber4" id="txtSectionOrderNumber4" class='clsTextBox' style='width:50px  ; text-align:right' maxlength=2 value="2"  ></TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtHeight4" id="txtHeight4" class='clsTextBox' style='width:50px  ; text-align:Right' maxlength=4 value=""  ></TD>
+<TD align='center'>
+<Input type=checkbox name="chkHideSectionTitle4" id="chkHideSectionTitle4" class='clsCheckBox' value="1" ></TD>
+<TD align='center'>
+<Input type=checkbox name="chkIsActive4" id="chkIsActive4" class='clsCheckBox' value="1" ></TD>
+<Input  Type=hidden  name="txtTagSectionID4" id="txtTagSectionID4" class='clsTextBox' style='text-align:Left' value="2415"  ></TR>
+<TR class='clsTREven' Width='100%'>
+<TD align='left'>
+Footer
+</TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtSectionTitle5" id="txtSectionTitle5" class='clsTextBox' style='width:350px  ; text-align:Left' maxlength=200 value="dasdasfsfsfsdf"  ></TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtSectionOrderNumber5" id="txtSectionOrderNumber5" class='clsTextBox' style='width:50px  ; text-align:right' maxlength=2 value="4"  ></TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtHeight5" id="txtHeight5" class='clsTextBox' style='width:50px  ; text-align:Right' maxlength=4 value=""  ></TD>
+<TD align='center'>
+<Input type=checkbox name="chkHideSectionTitle5" id="chkHideSectionTitle5" class='clsCheckBox' value="1" ></TD>
+<TD align='center'>
+<Input type=checkbox name="chkIsActive5" id="chkIsActive5" class='clsCheckBox' value="1" ></TD>
+<Input  Type=hidden  name="txtTagSectionID5" id="txtTagSectionID5" class='clsTextBox' style='text-align:Left' value="2416"  ></TR>
+<TR class='clsTRGroupHeader' Width='100%'>
+<TD align='left' colspan = 6> <B>List Page Section</B></TD>
+<TR class='clsTREven' Width='100%'>
+<TD align='left'>
+Header
+</TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtSectionTitleCL1" id="txtSectionTitleCL1" class='clsTextBox' style='width:350px  ; text-align:Left' maxlength=200 value="Header"  ></TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtSectionOrderNumberCL1" id="txtSectionOrderNumberCL1" class='clsTextBox' style='width:50px  ; text-align:right' maxlength=2 value="1"  ></TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtHeightCL1" id="txtHeightCL1" class='clsTextBox' style='width:50px  ; text-align:Right' maxlength=4 value=""  ></TD>
+<TD align='center'>
+<Input type=checkbox name="chkHideSectionTitleCL1" id="chkHideSectionTitleCL1" class='clsCheckBox' value="1" ></TD>
+<TD align='center'>
+<Input type=checkbox name="chkIsActiveCL1" id="chkIsActiveCL1" class='clsCheckBox' value="1" checked  ></TD>
+<Input  Type=hidden  name="txtTagSectionIDCL1" id="txtTagSectionIDCL1" class='clsTextBox' style='text-align:Left' value="2412"  ></TR>
+<TR class='clsTROdd' Width='100%'>
+<TD align='left'>
+Graphs
+</TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtSectionTitleCL2" id="txtSectionTitleCL2" class='clsTextBox' style='width:350px  ; text-align:Left' maxlength=200 value="Graphs"  ></TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtSectionOrderNumberCL2" id="txtSectionOrderNumberCL2" class='clsTextBox' style='width:50px  ; text-align:right' maxlength=2 value="3"  ></TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtHeightCL2" id="txtHeightCL2" class='clsTextBox' style='width:50px  ; text-align:Right' maxlength=4 value=""  ></TD>
+<TD align='center'>
+<Input type=checkbox name="chkHideSectionTitleCL2" id="chkHideSectionTitleCL2" class='clsCheckBox' value="1" ></TD>
+<TD align='center'>
+<Input type=checkbox name="chkIsActiveCL2" id="chkIsActiveCL2" class='clsCheckBox' value="1" ></TD>
+<Input  Type=hidden  name="txtTagSectionIDCL2" id="txtTagSectionIDCL2" class='clsTextBox' style='text-align:Left' value="2414"  ></TR>
+<TR class='clsTREven' Width='100%'>
+<TD align='left'>
+Related Data
+</TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtSectionTitleCL3" id="txtSectionTitleCL3" class='clsTextBox' style='width:350px  ; text-align:Left' maxlength=200 value="RD"  ></TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtSectionOrderNumberCL3" id="txtSectionOrderNumberCL3" class='clsTextBox' style='width:50px  ; text-align:right' maxlength=2 value="4"  ></TD>
+<TD align='left'>
+<Input  Type=Textbox  name="txtHeightCL3" id="txtHeightCL3" class='clsTextBox' style='width:50px  ; text-align:Right' maxlength=4 value=""  ></TD>
+<TD align='center'>
+<Input type=checkbox name="chkHideSectionTitleCL3" id="chkHideSectionTitleCL3" class='clsCheckBox' value="1" ></TD>
+<TD align='center'>
+<Input type=checkbox name="chkIsActiveCL3" id="chkIsActiveCL3" class='clsCheckBox' value="1" ></TD>
+<Input  Type=hidden  name="txtTagSectionIDCL3" id="txtTagSectionIDCL3" class='clsTextBox' style='text-align:Left' value="2415"  ></TR>
+</TABLE>
+</div>
+<Input  Type=hidden  name="rowCount" id="rowCount" class='clsTextBox' style='text-align:Left' value="6"  ><Input  Type=hidden  name="rowCountCL" id="rowCountCL" class='clsTextBox' style='text-align:Left' value="4"  ><script language=javascript> 
+function Validate_OnClick()
+{
+
+if (disallowMaxlengthViolation(GetObjectReference("frmPageProperties","InsertInHEADTag"),2000,'Max Length of &#39;Insert in Head Tag&#39; is 2000 characters.\r\nYou have entered <L> characters.',true))
+{ return false; }
+
+if (disallowMaxlengthViolation(GetObjectReference("frmPageProperties","TreeNodeImagePath"),250,'Max Length of &#39;Tree Node Image Name&#39; is 250 characters.\r\nYou have entered <L> characters.',true))
+{ return false; }
+
+if (disallowSpecialCharacters(GetObjectReference("frmPageProperties","TreeNodeImagePath"),'A &#39;Tree Node Image Name&#39; cannot contain any of these /\\:*?<>|,"+- characters.',true))
+{ return false; }
+
+if (disallowBlank(GetObjectReference("frmPageProperties","PageName"),'&#39;Page Name&#39; should not be left blank.',true) )
+{ return false; }
+
+if (disallowMaxlengthViolation(GetObjectReference("frmPageProperties","PageName"),500,'Max Length of &#39;Page Name&#39; is 500 characters.\r\nYou have entered <L> characters.',true))
+{ return false; }
+
+if (disallowValueRangeViolation(GetObjectReference("frmPageProperties","SmartNavigation_ListFrameSize"),30,70,'The value of &#39;Smart Navigation List Frame Size(%)&#39; should be in the range of (30-70).',true))
+{ return false; }
+
+if (disallowBlank(GetObjectReference("frmPageProperties","DynamicAction_NavigationSchema"),'&#39;Action Links Schema&#39; should not be left blank.',true) )
+{ return false; }
+
+if (disallowMaxlengthViolation(GetObjectReference("frmPageProperties","PageHeader"),500,'Max Length of &#39;Header Text&#39; is 500 characters.\r\nYou have entered <L> characters.',true))
+{ return false; }
+
+if (disallowMaxlengthViolation(GetObjectReference("frmPageProperties","PageFooter"),200,'Max Length of &#39;Footer Text&#39; is 200 characters.\r\nYou have entered <L> characters.',true))
+{ return false; }
+
+if (disallowMaxlengthViolation(GetObjectReference("frmPageProperties","AddNewMode_UIPage"),200,'Max Length of &#39;Add New Mode Page Path&#39; is 200 characters.\r\nYou have entered <L> characters.',true))
+{ return false; }
+
+if (disallowMaxlengthViolation(GetObjectReference("frmPageProperties","EditMode_UIPage"),200,'Max Length of &#39;Edit Mode Page Path&#39; is 200 characters.\r\nYou have entered <L> characters.',true))
+{ return false; }
+
+if (disallowNegativeInteger(GetObjectReference("frmPageProperties","Window_Height"),'Please enter only positive Integer',true))
+{ return false; }
+
+if (disallowNegativeInteger(GetObjectReference("frmPageProperties","Window_Width"),'Please enter only positive Integer',true))
+{ return false; }
+
+if (disallowMaxlengthViolation(GetObjectReference("frmPageProperties","CaptionForDeleteColumn"),30,'Max Length of &#39;Caption For Delete Column&#39; is 30 characters.\r\nYou have entered <L> characters.',true))
+{ return false; }
+
+if (disallowMaxlengthViolation(GetObjectReference("frmPageProperties","SummaryTotalTitle"),50,'Max Length of &#39;Summary Total Title&#39; is 50 characters.\r\nYou have entered <L> characters.',true))
+{ return false; }
+
+if (disallowMaxlengthViolation(GetObjectReference("frmPageProperties","SummaryGroupTitle"),50,'Max Length of &#39;Summary Group Title&#39; is 50 characters.\r\nYou have entered <L> characters.',true))
+{ return false; }
+
+if (disallowNegativeInteger(GetObjectReference("frmPageProperties","FilterControlsInARow"),'Please enter only positive Integer',true))
+{ return false; }
+
+if (disallowMaxlengthViolation(GetObjectReference("frmPageProperties","FilterControlsInARow"),1,'Max Length of &#39;No of filter controls in a row&#39; is 1 characters.\r\nYou have entered <L> characters.',true))
+{ return false; }
+
+if (disallowValueRangeViolation(GetObjectReference("frmPageProperties","FilterControlsInARow"),1,4,'The value of &#39;No of filter controls in a row&#39; should be in the range of (1-4).',true))
+{ return false; }
+
+if (disallowNegativeInteger(GetObjectReference("frmPageProperties","PageSize"),'Please enter only positive Integer',true))
+{ return false; }
+
+if (disallowMinValueViolation(GetObjectReference("frmPageProperties","PageSize"),1,'The value of &#39;Page Size&#39; should not be less than 1.',true))
+{ return false; }
+
+if (disallowMaxlengthViolation(GetObjectReference("frmPageProperties","UIPageHeader"),500,'Max Length of &#39;Header Text&#39; is 500 characters.\r\nYou have entered <L> characters.',true))
+{ return false; }
+
+if (disallowMaxlengthViolation(GetObjectReference("frmPageProperties","UIPageFooter"),200,'Max Length of &#39;Footer Text&#39; is 200 characters.\r\nYou have entered <L> characters.',true))
+{ return false; }
+
+if (disallowBlank(GetObjectReference("frmPageProperties","ControlsInARow"),'&#39;No of controls in a row&#39; should not be left blank.',true) )
+{ return false; }
+
+if (disallowNegativeInteger(GetObjectReference("frmPageProperties","ControlsInARow"),'Please enter only positive Integer',true))
+{ return false; }
+
+if (disallowMaxlengthViolation(GetObjectReference("frmPageProperties","ControlsInARow"),2,'Max Length of &#39;No of controls in a row&#39; is 2 characters.\r\nYou have entered <L> characters.',true))
+{ return false; }
+
+if (disallowValueRangeViolation(GetObjectReference("frmPageProperties","ControlsInARow"),1,10,'The value of &#39;No of controls in a row&#39; should be in the range of (1-10).',true))
+{ return false; }
+
+if (disallowNegativeInteger(GetObjectReference("frmPageProperties","MultiInsetRowNumber"),'Please enter only positive Integer',true))
+{ return false; }
+
+if (disallowMaxlengthViolation(GetObjectReference("frmPageProperties","MultiInsetRowNumber"),3,'Max Length of &#39;No. of Rows In MultiInsetGrid&#39; is 3 characters.\r\nYou have entered <L> characters.',true))
+{ return false; }
+
+if (disallowValueRangeViolation(GetObjectReference("frmPageProperties","MultiInsetRowNumber"),1,999,'The value of &#39;No. of Rows In MultiInsetGrid&#39; should be in the range of (1-999).',true))
+{ return false; }
+ return true;
+}
+</script><Input  Type=hidden  name="hdPageID" id="hdPageID" class='clsTextBox' style='text-align:Left' value="50093"  ><Input  Type=hidden  name="txtChange" id="txtChange" class='clsTextBox' style='text-align:Left' value="False"  ><Input  Type=hidden  name="txtSubmit" id="txtSubmit" class='clsTextBox' style='text-align:Left' value="False"  ><Input  Type=hidden  name="paramFocus" id="paramFocus" class='clsTextBox' style='text-align:Left' value="PT"  ></DIV>
+<BR><Table class=clsTable cellspacing=0 cellpadding=0 width='100%'><TR class=clsTRMenu><TD align=Right> | <A  class='Menu' style='' onmouseover="this.style.backgroundColor='#FFD695'" onmouseout="this.style.backgroundColor=''"  onclick="Javascript:DMScript_OnClick(0,50093)" Title="Data Management Scripts" ><Img Border=0 src='../../Images/cssImages/Link images/DataScript.gif'>&nbsp;Data Management Scripts</A> | <A  class='Menu' style='' onmouseover="this.style.backgroundColor='#FFD695'" onmouseout="this.style.backgroundColor=''"  onclick="Javascript:Save_OnClick('SAVE')" Title="Save" ><Img Border=0 src='../../Images/cssImages/Link images/save.gif'>&nbsp;Save</A> | <A  class='Menu' style='' onmouseover="this.style.backgroundColor='#FFD695'" onmouseout="this.style.backgroundColor=''"  onclick="Javascript:Save_OnClick('SAVEANDCLOSE')" Title="Save and Close" ><Img Border=0 src='../../Images/cssImages/Link images/saveclose.gif'>&nbsp;Save and Close</A> | <A  class='Menu' style='' onmouseover="this.style.backgroundColor='#FFD695'" onmouseout="this.style.backgroundColor=''"  onclick="Javascript:Close_Onclick()" Title="Close" ><Img Border=0 src='../../Images/cssImages/Link images/close.gif'>&nbsp;Close</A> |</TD></TR></TABLE><Input  Type=hidden  name="action" id="action" class='clsTextBox' style='text-align:Left' value=""  ></form>
+
+
+<script language="javascript">
+	var objAuditTrail;  // ReqID - WAF3_PB_46 NinadP
+	var objTDAuditTrailLinks; // ReqID - WAF3_PB_46 NinadP
+	var objdivlist;
+	var objFrm;
+	var sessionComboExpanded = false;
+	var queryComboExpanded = false;
+	var defaultTextExpanded = true;
+	var objConcurrency;	
+	var objTransHistory;
+	var objTDTransHistoryLinks ;
+	
+	objFrm=GetFormReference('frmPageProperties')
+	objdivlist=GetObjectReference('frmPageProperties','myDiv')
+
+	function window_onresize()		
+	{
+		var x,b;
+		var intDivHeight ;
+		var intDivHeightRisk;
+		intDivHeight = document.body.offsetHeight - objdivlist.offsetTop - 40;
+		if (intDivHeight < 100)
+		intDivHeight = 100;
+		objdivlist.style.height = intDivHeight	;		
+	}
+			
+	function window_onload()
+	{
+
+			var intDivHeight ;
+			var intDivHeightRisk;
+			var objDataHeader;
+			var objDataHeaderAlignment;
+			//Added By ShrikantB For Transaction History
+			var valTagID =50093;
+			var valIsSubtag =0;
+			//Addition End By ShrikantB For Transaction History
+			intDivHeight = document.body.offsetHeight - objdivlist.offsetTop - 40;
+			if (intDivHeight < 100)
+			intDivHeight = 100;
+			objdivlist.style.height = intDivHeight;	
+			//Addition ReqID - WAF3_PB_46 NinadP
+			objAuditTrail = GetObjectReference('frmPageProperties','chkAuditTrail'); 
+			if (objAuditTrail!=null)
+			{
+			    objTDAuditTrailLinks = GetObjectReference('frmPageProperties','tdAuditTrailLinks'); 
+		        if (objAuditTrail.checked == false)
+    			    objTDAuditTrailLinks.style.display="none";
+    	    }
+			// End Addition ReqID - WAF3_PB_46 NinadP
+			//Added By ShrikantB For Transaction History
+			objTransHistory = GetObjectReference('frmPageProperties','chkTransHistory'); 
+			if (objTransHistory !=null)
+			{
+			    objTDTransHistoryLinks = GetObjectReference('frmPageProperties','tdTransHistoryLinks'); 
+		        if (objTransHistory.checked == false)
+    			    objTDTransHistoryLinks.style.display="none";
+			}
+			//Addition End By ShrikantB For Transaction History
+			
+			var framesetQuery = "";
+			objConcurrency =GetObjectReference('frmPageProperties','chkConcurrency'); //Added By ShrikantB On 19-JUL-2010 For Concurrency Control
+			if(window.location.search != 0)
+			{
+				framesetQuery=window.location.search;
+			} 
+			else
+			{
+				framesetQuery = "?OpenFrameset";
+			}
+			var paramFromElement=getParameter(framesetQuery,'FromElement');
+			var paramDisplaySection=getParameter(framesetQuery,'DisplaySection');
+			if(paramFromElement=='Tag')
+			{
+				if(paramDisplaySection=='LE')
+				{
+					SECTION_AuditTrail_OnClick();
+					SECTION_SecuritySettings_OnClick();
+					objLegend = GetObjectReference('frmPageProperties', 'CPPageLegend');
+					objLegend.focus();
+				}
+				if (paramDisplaySection=='HT')
+				{
+					SECTION_AuditTrail_OnClick();
+					SECTION_SecuritySettings_OnClick();
+					objHeader = GetObjectReference('frmPageProperties', 'PageHeader');
+					objHeader.focus();
+				}
+				
+				//Added By NileshD on 06/09/2004
+				expandcollapse('trSessionVariable');
+				expandcollapse('trQueryString');
+				objDefaultValueType = GetObjectReference('frmPageProperties','defaultValueType');
+				objDefaultValue = GetObjectReference('frmPageProperties','rdoDefaultValue',1);
+				if (objDefaultValueType != null)
+				{
+					defaultValueType = getInputValue(objDefaultValueType);
+					if (defaultValueType == '2')
+					{
+						showHideSessionCombo('trSessionVariable');
+						objDefaultValue[2].checked = true;
+					}
+					else if (defaultValueType == '3')
+					{
+						showHideSessionCombo('trQueryString');
+						objDefaultValue[3].checked = true;
+					}
+					else if (defaultValueType == '1')
+						objDefaultValue[1].checked = true;
+					else if (defaultValueType == '0')
+						objDefaultValue[0].checked = true; 
+						
+				}
+				//End Of Addition
+				//Added By Ninad on 8 June 2009 - WAF3_PB_73
+				var oApplyFiltersOnDB=document.getElementById('ApplyFiltersOnDB');
+		        if (oApplyFiltersOnDB!=null && oApplyFiltersOnDB.checked==false)
+                {
+                    document.getElementById('ShowRecordsForDBFilters').checked=false;
+                    document.getElementById('ShowRecordsForDBFilters').disabled=true;
+                }
+               //End Addition By Ninad on 8 June 2009 - WAF3_PB_73
+			}
+			else if(paramFromElement=='SubTag')
+			{
+				if(paramDisplaySection=='LE')
+				{
+					SECTION_AuditTrail_OnClick();
+					SECTION_SecuritySettings_OnClick();
+					objLegend = GetObjectReference('frmPageProperties', 'SCPLegend');
+					objLegend.focus();
+				}
+				if (paramDisplaySection=='HT')
+				{
+					SECTION_AuditTrail_OnClick();
+					SECTION_SecuritySettings_OnClick();
+					objHeader = GetObjectReference('frmPageProperties', 'UIPageHeader');
+					objHeader.focus();
+				}
+			}
+			//Addition ReqID - WAF3_PB_46 NinadP
+			if (objAuditTrail!=null)
+					chkAuditTrail_OnClick();
+			//Added By ShrikantB ON 19-JUL-2010 For Concurrency Control		
+    		if (objConcurrency!=null)
+                   chkConcurrency_OnClick();
+             if (objTransHistory!=null)
+              {
+                 chkTransHistory_OnClick(valTagID,valIsSubtag);              
+              }
+                  
+            //Addition End By ShrikantB ON 19-JUL-2010 For Concurrency Control
+			if(GetObjectReference('frmPageProperties', 'SmartNavigation_IsEnabled')!=null)
+			    SmartNavigation_Enabled();
+			if(window.location.search.indexOf('&FocusOn=') != -1)
+				{
+				    if(window.location.search.indexOf('&FocusOn=txtTitle') != -1)
+				    {
+				        if(document.getElementById('txtTitle')==null) return;
+				        document.getElementById('txtTitle').scrollIntoView();
+				        document.getElementById('txtTitle').focus();
+				    }
+				}
+	}
+	
+	//Req ID    :   WAF3_PB_34
+	function DMScript_OnClick(IsSubTag,TagID)
+	{
+			window.open ("../SM/PB_DataManagementScripts.aspx?IsSubTag=" + IsSubTag + "&TagID=" + TagID, "", "resizable=no,scrollbars=no,left=" + ((window.screen.width - 600)/2) + ",top=" + ((window.screen.height - 350)/2) + ",width=600,height=350");//Modified By - Ninad : Issue ID - 14876 : Dt 6 Sept 2007
+	}	
+	//Req ID    :   WAF3_PB_42 
+	function ActionLinksSchema_OnClick(IsSubTag,TagID)
+	{
+			window.open ("../SM/PB_DropdownMenu.aspx?IsSubTag=" + IsSubTag + "&TagID=" + TagID, "", "resizable=no,scrollbars=no,left=" + ((window.screen.width - 630)/2) + ",top=" + ((window.screen.height - 300)/2) + ",width=630,height=300");	 
+	}	
+	function Close_Onclick()
+	{
+		window.close();
+	}	
+	function Save_OnClick(Operation)
+	{
+		var validateflag;
+		var arrValues = new Array();
+		var objCreatedBy;
+		var objCreatedDate;
+		var objUpdatedBy;
+		var objUpdatedDate;
+		var objAuditTrail;
+		var objOrderNumber;
+
+		objCreatedBy = GetObjectReference('frmPageProperties','cboAuditTrail_CreatedBy');
+		objCreatedDate = GetObjectReference('frmPageProperties','cboAuditTrail_CreatedDate');
+		objUpdatedBy = GetObjectReference('frmPageProperties','cboAuditTrail_UpdatedBy');
+		objUpdatedDate = GetObjectReference('frmPageProperties','cboAuditTrail_UpdatedDate');
+		objAuditTrail = GetObjectReference('frmPageProperties','chkAuditTrail');
+		objOrderNumber = GetObjectReference('frmPageProperties','txtOrderNumber');
+		objIsOrderNumberMandatory = GetObjectReference('frmPageProperties','isOrderNumberMandatory');
+				
+		
+		validateflag=Validate_OnClick();
+		if (ValidateStaticGroups() == true && validateflag==true)
+		{
+		    IsRefreshParent = false;
+		    objcboAuthorID = GetObjectReference('frmPageProperties','cboAuthorID');
+		    if (objcboAuthorID!=null) {objcboAuthorID.disabled=false;}
+			var objform;
+			var objPageID;
+			var objAction = GetObjectReference('frmPageProperties', 'action');
+			objAction.value = Operation; 	//Addition ReqID - WAF3_PB_48 NinadP
+			objPageID=GetObjectReference('frmPageProperties','hdPageID');
+			objSubmit=GetObjectReference('frmPageProperties','txtSubmit');
+			objSubmit.value="True";
+			objform=GetFormReference('frmPageProperties');
+			objform.submit();
+		}
+	}
+	function ValidateStaticGroups()
+	{
+		var objIsOrderNumberMandatory = GetObjectReference('frmPageProperties','isOrderNumberMandatory');
+		var orderNumber = GetObjectReference('frmPageProperties', 'txtOrderNumber').value;
+		var objOrderNumber = GetObjectReference('frmPageProperties','txtOrderNumber');
+		var objSubTagDisplayType = GetObjectReference('frmPageProperties','cboSubTagDisplayType');
+		var objTitle = GetObjectReference('frmPageProperties','txtTitle');
+		var objFromElement = GetObjectReference('frmPageProperties', 'fromElement');
+		var objWindowWidth = GetObjectReference('frmPageProperties', 'txtWindowWidth');
+		var objWindowHeight = GetObjectReference('frmPageProperties', 'txtWindowHeight');
+		var objDivHeight = GetObjectReference('frmPageProperties', 'txtDivHeight');
+		
+		//var objRegExp=/^([0-9]+\.[0-9])+$/;
+		//alert(objRegExp.test('11.11.1'));
+		
+		/*var objRegExp= /^[0-9]\.[0-9]$/;
+		alert(objRegExp.test('1.1'));*/
+		
+		if (objTitle != null && disallowBlank(objTitle, "&#39;Title&#39; should not be left blank.") == true)
+			return false;
+		// Req ID  :   2.0.42-SP4-WAF
+		if (objTitle != null && disallowSpecialCharacters(objTitle, 'Field cannot contain any of these /\:*?<>|,"+ characters.',true,'[:*?+\"><|,\\\\]')== true)
+			return false;
+		/*if (objTitle != null && objFromElement.value == 'Tag' && disallowDuplicates(objTitle, arrTagDescription, 'This value already exists.', true)== true)
+			return false;*/
+		if (objOrderNumber != null && disallowSpecialCharacters(objOrderNumber, 'Field cannot contain any of these /\:*?<>|,"+ characters.',true,'[/:*?+\"><|,\\\\]+')== true)
+			return false;
+		/*if (orderNumber.indexOf('-') != -1)
+		{
+			alert(replaceSubstring('Field cannot contain &#39;-&#39; character', "&#39;", "'"));
+			setFocus(GetObjectReference('frmPageProperties', 'txtOrderNumber'));
+			return false;
+		}*/
+		if (ValidateOrderNumber(objOrderNumber) == false)
+		{
+			alert('Order Number is not valid');
+			setFocus(objOrderNumber);
+			return false;
+		}
+		if (objIsOrderNumberMandatory != null && objIsOrderNumberMandatory.value == 'True')
+		{
+		    
+			if (objOrderNumber != null && disallowBlank(objOrderNumber, "&#39;Order Number&#39; should not be left blank.") == true)
+				return false
+		}
+		//Added by Ninad 23 April 2007 HotfixID - 2.0.10-SP7-WAF 
+		if (objIsOrderNumberMandatory==null)
+		 {
+		 	if (disallowBlank(objOrderNumber, "&#39;Order Number&#39; should not be left blank.") == true)
+				return false;
+			if (disallowNegativeInteger(objOrderNumber, 'Please enter only positive integer value') == true)
+			    return false;
+		 }		
+		 //End Addition by Ninad 23 April 2007 HotfixID - 2.0.10-SP7-WAF 
+		if (objWindowWidth != null && disallowNegativeInteger(objWindowWidth, 'Please enter only positive integer value') == true)
+			return false;
+		if (objWindowHeight != null && disallowNegativeInteger(objWindowHeight, 'Please enter only positive integer value') == true)
+			return false;
+		if (objDivHeight != null && disallowNegativeInteger(objDivHeight, 'Please enter only positive integer value') == true)
+			return false;
+        			
+		if (objSubTagDisplayType != null && disallowBlank(objSubTagDisplayType, "&#39;Tab Display Type&#39; should not be left blank.") == true)
+			return false
+		//Added by Ninad Req ID   :   WAF3_PB_42
+		if(objFromElement.value=='SubTag')
+		    {
+		        if (disallowBlank(GetObjectReference('frmPageProperties', 'DynamicAction_NavigationSchema'), "Field should not be left blank.") == true)
+			    return false;
+		    }
+		if (ValidateAuditTrail() == false)
+			return false;
+			//Added By ShrikantB On 19-JUL-2010 For Concurrency Control
+		if (ValidateConcurrency() == false)
+			return false;
+		if (ValidateTransHistory()== false)
+			return false;
+			//Addition End By ShrikantB On 19-JUL-2010 For Concurrency Control
+		if (ValidateSectionPositioning() == false)
+			return false;
+		//Added by Ninad Req ID   :   WAF3_PB_41
+		if(GetObjectReference('frmPageProperties', 'SmartNavigation_IsEnabled')!=null)
+		{
+		if (GetObjectReference('frmPageProperties', 'SmartNavigation_IsEnabled').checked)
+		{ 
+		    
+		   if (disallowBlank(GetObjectReference('frmPageProperties', 'SmartNavigation_Schema'), "&#39;Smart Navigation Schema&#39; should not be left blank.") == true)
+		   return false;
+		   
+		    if (disallowBlank(GetObjectReference('frmPageProperties', 'SmartNavigation_ListFrameSize'), "&#39;Smart Navigation List Frame Size&#39; should not be left blank.") == true)
+		   return false;
+		}
+		}	
+		//Added By NileshD on 23 Sep 2005 REQID-WAF3_PB_10
+		if (ValidateNumericPaging() == false)
+			return false;
+		//End Of Addition By NileshD on 23 Sep 2005 REQID-WAF3_PB_10
+		return true;
+	}
+	//Added By NileshD on 23 Sep 2005 REQID-WAF3_PB_10
+	function ValidateNumericPaging ()
+	{
+		var objAllowNumericPaging = GetObjectReference('frmPageProperties','AllowNumericPaging');
+		var objPageSize = GetObjectReference('frmPageProperties','PageSize');
+		var objNumericPagingAlignment = GetObjectReference('frmPageProperties','NumericPagingAlignment');
+		var objNumericPagingDisplayPosition = GetObjectReference('frmPageProperties','NumericPagingDisplayPosition');
+		
+		if (objAllowNumericPaging != null)
+			{
+				if (objAllowNumericPaging.checked == true)
+				{
+					if (objPageSize.value == "")
+						{
+							alert('Please enter the page size');
+							objPageSize.focus();
+							return false;
+						}
+					if (objNumericPagingAlignment.value == "")
+						{
+							alert('Please select the Numeric Paging Alignment');
+							objNumericPagingAlignment.focus();
+							return false;
+						}
+					if (objNumericPagingDisplayPosition.value == "")
+						{
+							alert('Please select the Numeric Paging Display Position');
+							objNumericPagingDisplayPosition.focus();
+							return false;
+						}
+					return true;
+				}
+			}
+		else
+			{
+			 return true;
+			}
+		
+	}
+	//End Of Addition By NileshD on 23 Sep 2005 REQID-WAF3_PB_10
+	function ValidateAuditTrail()
+	{
+		var objCreatedBy;
+		var objCreatedDate;
+		var objUpdatedBy;
+		var objUpdatedDate;
+		var objAuditTrail;
+		var arrValues = new Array();
+    	objCreatedBy = GetObjectReference('frmPageProperties','cboAuditTrail_CreatedBy');
+		objCreatedDate = GetObjectReference('frmPageProperties','cboAuditTrail_CreatedDate');
+		objUpdatedBy = GetObjectReference('frmPageProperties','cboAuditTrail_UpdatedBy');
+		objUpdatedDate = GetObjectReference('frmPageProperties','cboAuditTrail_UpdatedDate');
+		objAuditTrail = GetObjectReference('frmPageProperties','chkAuditTrail');
+		
+		if (objAuditTrail != null && objAuditTrail.checked == true)
+		{
+		    
+		    //Addition By : Ninad : Requirement Tag - WAF3_PB_46 
+		    
+		    if (disallowBlank(objCreatedBy, "&#39;Created By&#39; should not be left blank.") == true)
+			    return false;
+			    
+			if (disallowBlank(objCreatedDate, "&#39;Created Date&#39; should not be left blank.") == true)
+			    return false;
+			//Addition End By : Ninad   Req Id : WAF3_PB_46 
+			var selIndexUpdatedBy = objUpdatedBy.selectedIndex;
+			var selIndexUpdatedDate = objUpdatedDate.selectedIndex;
+			var selIndexCreatedBy = objCreatedBy.selectedIndex;
+			var selIndexCreatedDate = objCreatedDate.selectedIndex;
+			arrValues[0] = objUpdatedBy[selIndexUpdatedBy].value; 
+			arrValues[1] = objUpdatedDate[selIndexUpdatedDate].value;
+			arrValues[2] = objCreatedDate[selIndexCreatedDate].value; 
+			if (disallowDuplicates(objCreatedBy, arrValues, 'This value already exists.',true) == true)
+				return false;
+			arrValues[0] = objUpdatedBy[selIndexUpdatedBy].value; 
+			arrValues[1] = objUpdatedDate[selIndexUpdatedDate].value;
+			arrValues[2] = objCreatedBy[selIndexCreatedBy].value; 
+			if (disallowDuplicates(objCreatedDate, arrValues, 'This value already exists.',true) == true)
+				return false;
+			arrValues[0] = objCreatedBy[selIndexCreatedBy].value; 
+			arrValues[1] = objCreatedDate[selIndexCreatedDate].value; 
+			arrValues[2] = objUpdatedDate[selIndexUpdatedDate].value;
+			if (disallowDuplicates(objUpdatedBy, arrValues, 'This value already exists.',true) == true)
+				return false;
+			arrValues[0] = objCreatedDate[selIndexCreatedDate].value; 
+			arrValues[1] = objCreatedBy[selIndexCreatedBy].value; 
+			arrValues[2] = objUpdatedBy[selIndexUpdatedBy].value;
+			if (disallowDuplicates(objUpdatedDate, arrValues, 'This value already exists.',true) == true)
+				return false;
+		}
+		return true;
+	}
+	function ValidateSectionPositioning()
+	{
+		var objRowCount = GetObjectReference('frmPageProperties', 'rowCount');
+		if (objRowCount != null)
+		{
+			for(var rowCounter=1; rowCounter<objRowCount.value; rowCounter++)
+			{
+				if (disallowNegativeInteger(GetObjectReference('frmPageProperties','txtSectionOrderNumber'+rowCounter), 'Please enter only positive integer value') == true)
+					return false;
+				if (disallowNegativeInteger(GetObjectReference('frmPageProperties','txtHeight'+rowCounter), 'Please enter only positive integer value') == true)
+					return false;
+				//Added by Ninad 23 April 2007 HotfixID - 2.0.10-SP7-WAF 
+				if (disallowNegativeInteger(GetObjectReference('frmPageProperties','txtSectionOrderNumberCL'+rowCounter), 'Please enter only positive integer value') == true)
+					return false;
+				if (disallowNegativeInteger(GetObjectReference('frmPageProperties','txtHeightCL'+rowCounter), 'Please enter only positive integer value') == true)
+					return false;
+				//End Addition by Ninad 23 April 2007 HotfixID - 2.0.10-SP7-WAF 
+			}	
+		}
+		return true;
+	}
+	
+	function Module_OnChange()
+	{
+		objChange = GetObjectReference('frmPageProperties','txtChange');
+		objChange.value='True';
+		objForm=GetFormReference('frmPageProperties');
+		objForm.submit();
+		objChange.value = 'False';
+	}
+	
+	function Parent_OnChange()
+	{
+		objChange = GetObjectReference('frmPageProperties','txtChange');
+		objChange.value='True';
+		objForm=GetFormReference('frmPageProperties');
+		objForm.submit();
+		objChange.value = 'False';
+	}
+	 //Added by Ninad on 10 Aug 2007 IssueID - 14684
+	
+	var blnShowAuditTrailMsg=false;
+	var blnShowConcurrencyMsg=false;
+	var blnShowTransHistoryMsg=false;
+	function chkAuditTrail_OnClick()
+	{
+	
+	    var objCreatedBy;
+		var objCreatedDate;
+		var objUpdatedBy;
+		var objUpdatedDate;
+		objCreatedBy = GetObjectReference('frmPageProperties','cboAuditTrail_CreatedBy');
+		objCreatedDate = GetObjectReference('frmPageProperties','cboAuditTrail_CreatedDate');
+		objUpdatedBy = GetObjectReference('frmPageProperties','cboAuditTrail_UpdatedBy');
+		objUpdatedDate = GetObjectReference('frmPageProperties','cboAuditTrail_UpdatedDate');
+		
+		if (objAuditTrail != null)
+		{
+			if (objAuditTrail.checked == true)
+			{
+			    //Added by Ninad on 10 Aug 2007 IssueID - 14684
+			    if (blnShowAuditTrailMsg) alert("You have chosen to enable the 'Audit Trail' for this Web Form. The Audit Trail Trigger will insert each fields audit trail entry into the 'tbl_PM_AuditTrail' table, for maintaining the audit trail. The Audit Trail will be maintained for each item, for each field.\n\nThe mapping fields, Created By, Created Date, Updated By, Updated Date, will be used by the 'Audit Trail Trigger'.\nIt is recommended to map all the four fields.\nCreated By - Logged in User's Name when creating new item\nCreated Date - System Date Time when creating new item\nUpdated By - Logged in User's Name when modifying existing item\nUpdated Date - System Date Time when modifying existing item\nIf the 'Updated By' and 'Updated Date' fields are not mapped then the 'Created By' and 'Created Date' fields will be used by the Audit Trail Trigger.\n\n'Created By' and 'Updated By' dropdowns will show data source fields\n  1. of data type varchar and nvarchar\n  2. having length greater than or equal to 50\n  3. not added as Controls for the Web Form\n'Created Date' and 'Updated Date' dropdowns will show data source fields\n  1. of data type datetime\n  2. not added as Controls for the Web Form\n\nSave the 'Page Properties' to enable the 'Generate Script' action link, for creating the Audit Trail Trigger.\n\nThe 'Show History' action link will be available to view the Audit Trail."); 
+			     objTDAuditTrailLinks.style.display="";
+				objCreatedBy.disabled = false;
+				objCreatedDate.disabled = false;
+				objUpdatedBy.disabled = false;
+				objUpdatedDate.disabled = false 
+			}
+			else
+			{
+			    //Added by Ninad on 10 Aug 2007 IssueID - 14684
+			    if (blnShowAuditTrailMsg) alert("You have chosen to disable the 'Audit Trail' for this Web Form. The system will perform following tasks:\n     1. The display position of 'Show History' action link will be set to blank.\n     2. The 'Audit Trail Trigger' will be dropped.\n\nSave the 'Page Properties' to apply these changes."); 
+			    objTDAuditTrailLinks.style.display="none";
+			    objCreatedBy.disabled = true;
+				objCreatedDate.disabled = true;
+				objUpdatedBy.disabled = true;
+				objUpdatedDate.disabled = true; 
+			}
+		}
+		blnShowAuditTrailMsg=true;
+	}
+	function getParameter(queryString,parameterName)
+	{
+		// Add "=" to the parameter name (i.e. parameterName=value)
+		var parameterName = parameterName + "=";
+		if ( queryString.length > 0 )
+		{
+					// Find the beginning of the string
+					begin = queryString.indexOf ( parameterName );
+					// If the parameter name is not found, skip it, otherwise return the value
+					if ( begin != -1 )
+					{
+						// Add the length (integer) to the beginning
+						begin += parameterName.length;
+						// Multiple parameters are separated by the "&" sign
+						end = queryString.indexOf ( "&" , begin );
+						if ( end == -1 )
+						{
+							end = queryString.length
+						}
+						// Return the string
+						return unescape ( queryString.substring ( begin, end ) );
+					}
+						// Return "null" if no parameter has been found
+						return "null";
+		}
+	}
+	function ValidateOrderNumber(obj)
+	{
+		var i,j;
+		var valid=true;
+		var found=false;
+		var orderNumber = obj.value;
+		var str = "0123456789.";
+		if(orderNumber.charAt(0) == '.' || orderNumber.charAt(orderNumber.length-1) == '.')
+			return false;
+		if(isSubstringExists(orderNumber,'..')==true)
+			return false;
+		for(i=0;i < orderNumber.length;i++)
+		{
+			for(j=0;j<str.length;j++)
+			{
+				if(orderNumber.charAt(i) == str.charAt(j))	
+				{
+					found=true;
+					break;
+				}
+			}		
+			if(found==true)
+				found=false;
+			else
+				return false;
+			return true;
+		}
+	}
+
+	//Added By NilehsD on 06/09/2004
+		function expandcollapse(trchildid)
+	{
+		var coll=document.getElementsByName(trchildid);
+		
+		for(i=0;i<coll.length;i++)
+		{
+			var elementstyle=coll(i).style.display;
+			if(elementstyle!='none')
+			{	
+				coll(i).style.display = 'none';
+			}
+			else
+			{
+				coll(i).style.display = 'block';
+			}
+		}
+	}
+	
+		function showHideSessionCombo(trID)
+	{
+		if (trID == 'trSessionVariable')
+		{
+			if (sessionComboExpanded == false)
+			{
+				expandcollapse(trID);
+				if (defaultTextExpanded == true)
+					expandcollapse('trDefaultValue');
+				if (queryComboExpanded == true)
+					expandcollapse('trQueryString');
+				sessionComboExpanded = true;
+				queryComboExpanded = false;
+				defaultTextExpanded = false
+			}
+		}
+		else if (trID == 'trDefaultValue')
+		{
+			if (defaultTextExpanded == false)
+			{
+				expandcollapse(trID);
+				if (sessionComboExpanded == true)
+					expandcollapse('trSessionVariable');
+				if (queryComboExpanded == true)
+					expandcollapse('trQueryString');
+				sessionComboExpanded = false;
+				queryComboExpanded = false;
+				defaultTextExpanded = true;
+			}
+		}
+		else if (trID == 'trQueryString')
+		{
+			if (queryComboExpanded == false)
+			{
+				expandcollapse(trID);
+				if (sessionComboExpanded == true)
+					expandcollapse('trSessionVariable');
+				if (defaultTextExpanded == true)
+					expandcollapse('trDefaultValue');
+				sessionComboExpanded = false;
+				queryComboExpanded = true;
+				defaultTextExpanded = false
+			}
+		}
+	}  
+	
+	//End Of Addition
+	
+	//Function Added By Ninad Req ID   :   WAF3_PB_41
+	function SmartNavigation_Enabled()
+	{
+	    var objSN_Enb = GetObjectReference('frmPageProperties', 'SmartNavigation_IsEnabled');
+	    var LeftFrameWidth = 40;
+	    var objEditMode_UIPageOpenInWindow = GetObjectReference('frmPageProperties', 'EditMode_UIPageOpenInWindow');
+	    var objAddNewMode_UIPageOpenInWindow = GetObjectReference('frmPageProperties', 'AddNewMode_UIPageOpenInWindow');
+	    if (objSN_Enb.checked==true)
+	    {
+	        if(GetObjectReference('frmPageProperties', 'EditMode_UIPageOpenInWindow').checked || GetObjectReference('frmPageProperties', 'AddNewMode_UIPageOpenInWindow').checked ) 	
+	        {
+	            alert("To enable the feature 'Smart Navigation', please reset the options for 'Add New Mode - Open in Window' and 'Edit Mode - Open in Window'.");
+	            objSN_Enb.checked=false;
+	        }
+	        else
+	        {
+	            var objListFrameSize =GetObjectReference('frmPageProperties', 'SmartNavigation_ListFrameSize');
+	            if (objListFrameSize.value=='') {objListFrameSize.value=LeftFrameWidth;}
+	            if (GetObjectReference('frmPageProperties', 'SmartNavigation_Schema').selectedIndex==0)
+	            GetObjectReference('frmPageProperties', 'SmartNavigation_Schema').selectedIndex=2;
+	            if (objEditMode_UIPageOpenInWindow!=null)
+					objEditMode_UIPageOpenInWindow.disabled=true;
+				if (objAddNewMode_UIPageOpenInWindow!=null)
+					objAddNewMode_UIPageOpenInWindow.disabled=true;
+	        }
+	    }
+	   else
+	    {
+			if (objEditMode_UIPageOpenInWindow!=null)
+				objEditMode_UIPageOpenInWindow.disabled=false;
+			if (objAddNewMode_UIPageOpenInWindow!=null)
+				objAddNewMode_UIPageOpenInWindow.disabled=false;
+	    }
+	}
+	//Function Added By Ninad ReqID - WAF3_PB_48
+	function NumericPaging_Enabled()
+	{
+	    if (GetObjectReference('frmPageProperties', 'AllowNumericPaging').checked==true)
+	    {
+	            var objPageSize =GetObjectReference('frmPageProperties', 'PageSize');
+	            if (objPageSize.value=='') {objPageSize.value=20;}
+	            if (GetObjectReference('frmPageProperties', 'NumericPagingAlignment').selectedIndex==0)
+	                GetObjectReference('frmPageProperties', 'NumericPagingAlignment').selectedIndex=2;
+	            if (GetObjectReference('frmPageProperties', 'NumericPagingDisplayPosition').selectedIndex==0)
+	                GetObjectReference('frmPageProperties', 'NumericPagingDisplayPosition').selectedIndex=3;
+        }
+	}
+	//End Addition By Ninad ReqID - WAF3_PB_48
+    
+    //Function Added By Ninad Req ID   :   WAF3_PB_46
+	function AuditTrailScript_Click(TagID,IsSubTag,Operation)
+	{
+	    if (Operation=='AUDIT_TRAIL_GENERATE_SCRIPT')
+	    {
+	        if(confirm("Are you sure, you want to create trigger for maintaining 'Audit Trail'?\r\n\r\nNote: The trigger will insert the history data into the 'Audit Trail' system table.\r\nThe trigger will be created by the name 'trg_Upd_tbl_Revenue_Details_AuditTrail'. If the trigger already exists then it will be overwritten by the system.\n\nThe current Control Definition will be considered for generating the Audit Trail Trigger. If in case, any control is added, modified or deleted then this trigger needs to be regenerated.")==false) 
+	            return ;
+		}   
+	    window.open ("../SM/PB_DataManagementScripts.aspx?Operation=" + Operation + "&IsSubTag=" + IsSubTag + "&TagID=" + TagID, "", "scrollbars=1,resizable=1,menubar=yes,left=" + ((window.screen.width - 900)/2) + ",top=" + ((window.screen.height - 500)/2) + ",width=900,height=500");	 
+    }
+    //Function Added By PushkarK Req ID   :   WAF3_WF_2
+	function IsWorkFlowEnable_Click()
+	{
+	    var objWorkFlowEnable = GetObjectReference('frmPageProperties', 'IsWorkFlowEnable');
+	    if (objWorkFlowEnable)
+	    {
+            var objPageName = GetObjectReference('frmPageProperties', 'PageName');
+            var objAddNewMode_UIPage = GetObjectReference('frmPageProperties', 'AddNewMode_UIPage');
+            var objEditMode_UIPage = GetObjectReference('frmPageProperties', 'EditMode_UIPage');
+	        if (objWorkFlowEnable.checked==true)
+	        {
+	            if (objPageName) {objPageName.value = '../Source/Workflow/InheritedWorkFlowCommonList.aspx';}
+	            if (objAddNewMode_UIPage) {objAddNewMode_UIPage.value = '../Workflow/InheritedWorkFlowCommonPage.aspx';}
+	            if (objEditMode_UIPage) {objEditMode_UIPage.value = '../Workflow/InheritedWorkFlowCommonPage.aspx';}
+                alert("Change in the workflow setting has caused modification in the page properties - Page Name, Add New Mode Page Path,Edit Mode Page Path. Please make sure that these page properties are appropriate.");
+	        }
+	       else
+	        {
+                if (objPageName) {objPageName.value = '../Source/General/CommonList.aspx';}
+                if (objAddNewMode_UIPage) {objAddNewMode_UIPage.value = '';}
+                if (objEditMode_UIPage) {objEditMode_UIPage.value = '';}
+                alert("Change in the workflow setting has caused modification in the page properties - Page Name, Add New Mode Page Path,Edit Mode Page Path. Please make sure that these page properties are appropriate.");
+	        }
+        }
+    }    
+    //Added By Ninad on 20 Mar 2008, WAF3_PB_62 - UI Design Template
+    var objXHttp;
+    // Modified By Shrikant B On 22 May 2008 
+    //Purpose :Pass The New Parameter  SectionId To Function GenerateUIDesignTemplate
+     function GenerateUIDesignTemplate(TagID,IsSubTag,SectionId)
+	{
+	    //try catch block is required bcoz ActiveX scripting may be disabled on client, in that case UI Design temlate will not be generated
+	
+	    try
+        {
+        
+            var strUrl="../SM/PB_XMLHttpRequestHandler.aspx?operation=GENERATEUIDESIGNTEMPLATE&IsSubTag=" + IsSubTag + "&TagID=" + TagID + "&SECTIONID=" + SectionId ;
+	        objXHttp = new ActiveXObject("Msxml2.XMLHTTP"); 
+	        objXHttp.onreadystatechange = function()// Modified By Shrikant B On 22 May 2008
+	          {
+                    
+               if (objXHttp.readyState==4)
+                   {
+                        if (objXHttp.responseText != null)
+                        {
+                            if(objXHttp.responseText.substring(0,8)=="INFOMSG:")
+                                alert(objXHttp.responseText.substring(8));
+                            else
+                             {
+                              if (SectionId==1)
+                                document.getElementById('UIDesignTemplate').value=objXHttp.responseText;
+                              else
+                                document.getElementById('UIDesignFooterTemplate').value=objXHttp.responseText;
+                             }
+                        }
+                 }
+              }
+	                              
+            objXHttp.open("GET",strUrl, false); 
+            objXHttp.send();
+	    }
+	    catch(e){}
+	}
+    //End Addition By Ninad on 20 Mar 2008, WAF3_PB_62 - UI Design Template
+    //Added By Ninad on 8 June 2009 - WAF3_PB_73
+    function ApplyFiltersOnDB_OnClick()
+    {
+        if (document.getElementById('ApplyFiltersOnDB').checked)
+        {
+            document.getElementById('ShowRecordsForDBFilters').disabled=false;
+        }
+        else
+        {
+            document.getElementById('ShowRecordsForDBFilters').checked=false;
+            document.getElementById('ShowRecordsForDBFilters').disabled=true;
+        }
+    }
+    // End Addition By Ninad on 8 June 2009 - WAF3_PB_73
+    // Added By ShrikantB On 21-JUL-2010 For Concurrency Control
+    function chkConcurrency_OnClick()
+	{
+	    var objTimeStamp;
+		var objConUpdatedBy;
+		var objConcurrency;
+		objConcurrency =GetObjectReference('frmPageProperties','chkConcurrency'); 
+		objTimeStamp = GetObjectReference('frmPageProperties','cboTimestamp');
+		objconUpdatedBy = GetObjectReference('frmPageProperties','cboConcurrency_UpdatedBy');		
+		
+		if (objConcurrency != null)
+		{
+			if (objConcurrency.checked == true)
+			{
+			  
+			    if (blnShowConcurrencyMsg) alert("You have chosen to enable the 'Concurrency' for this Web Form.\n\nThe mapping fields Timestamp, Updated By will be used by the 'Concurrency'.\nIt is recommended to map two fields.\nTimestamp - Timestamp when modifying existing item\nUpdated By - Logged in User's Name when modifying existing item.\n\nSave the 'Page Properties' to apply these changes."); 
+			    objTimeStamp.disabled = false;
+				objconUpdatedBy.disabled = false;
+				
+			}
+			else
+			{
+			    if (blnShowConcurrencyMsg) alert("You have chosen to disable the 'Concurrency' for this Web Form. \n\nSave the 'Page Properties' to apply these changes."); 
+			    objTimeStamp.disabled = true;
+				objconUpdatedBy.disabled = true;
+				
+			}
+		}
+		blnShowConcurrencyMsg=true;
+	}
+	
+	function ValidateConcurrency()
+	{
+	     var objTimeStamp;
+		var objConUpdatedBy;
+		var objConcurrency;
+		var arrValues = new Array();
+    	objConcurrency =GetObjectReference('frmPageProperties','chkConcurrency'); 
+		objTimeStamp = GetObjectReference('frmPageProperties','cboTimestamp');
+		objconUpdatedBy = GetObjectReference('frmPageProperties','cboConcurrency_UpdatedBy');	
+		
+		if (objConcurrency != null && objConcurrency.checked == true)
+		{
+		    	   
+		    if (disallowBlank(objTimeStamp, "&#39;Timestamp&#39; should not be left blank.") == true)
+			    return false;
+			   
+			if (disallowBlank(objconUpdatedBy, "&#39;Updated By&#39; should not be left blank.") == true)
+			    return false;			
+		}
+		return true;
+	}
+	
+	 function chkIsMultiInsertSubTag_OnClick()
+	{
+	
+	    var objMultiInsertSubTag;
+		var objConUpdatedBy;
+		var objConcurrency;
+		objMultiInsertSubTag = GetObjectReference('frmPageProperties','chkIsMultiInsertSubTag'); 
+		objConcurrency =GetObjectReference('frmPageProperties','chkConcurrency'); 
+		objTimeStamp = GetObjectReference('frmPageProperties','cboTimestamp');
+		objconUpdatedBy = GetObjectReference('frmPageProperties','cboConcurrency_UpdatedBy');		
+		if (objMultiInsertSubTag != null)
+		{
+			if (objMultiInsertSubTag.checked == true)
+			{
+			   if (objConcurrency!= null )
+			    {
+			      objConcurrency.checked =false;
+			      objConcurrency.disabled = true;
+		          objTimeStamp.disabled = true;
+			      objconUpdatedBy.disabled = true;
+			    } 
+	       }
+	       else
+	        {
+	           objConcurrency.disabled = false;
+	        }
+	    }
+	}
+	 
+	 function chkTransHistory_OnClick(TagID,IsSubTag)
+	 {
+ 
+	   var objUpdatedBy;		
+	    objTransHistory =GetObjectReference('frmPageProperties','chkTransHistory'); 
+		objUpdatedBy = GetObjectReference('frmPageProperties','cboAuditTrail_UpdatedBy');
+		
+		if (objTransHistory != null)
+		{
+			if (objTransHistory.checked == true)
+			{
+			    if (ValidateLinkColumn(TagID,IsSubTag))
+			     {
+			        if (blnShowTransHistoryMsg) alert("You have chosen to enable the 'Transaction History' for this Web Form. The Transaction History Trigger will insert each deleted data into the 'tbl_PM_TransactionHistory' table, for maintaining the deleted Transaction History. The Transaction History will be maintained for Insert, Delete, Update Operation.\n\nThe mapping field Updated By will be used by the 'Transaction History Trigger'.\nIt is recommended to map  the \nUpdated By - Logged in User's Name when deleting existing item .\n\nSave the 'Page Properties' to apply these changes."); 
+			        objTDTransHistoryLinks.style.display="";
+				    objUpdatedBy.disabled = false;
+				 } 
+				 else
+				   {
+				     alert("None of the controls added in Control Properties has its 'Show As Link' property set.\n\n Please set the 'Show As Link' property for any of the controls to enable Transaction History.")
+				     objTransHistory.checked =false;
+				   }
+		    }
+			else
+			{
+			    if (blnShowTransHistoryMsg) alert("You have chosen to disable the 'Transaction History' for this Web Form. The system will perform following tasks:\n 1. The 'Transaction History Trigger' will be dropped.\n\nSave the 'Page Properties' to apply these changes."); 
+			    objTDTransHistoryLinks.style.display="none";
+			    if (objAuditTrail !=null)
+			       {
+			          if (objAuditTrail.checked ==true)
+			             objUpdatedBy.disabled = false;
+			          else
+			            objUpdatedBy.disabled = true;			          
+			       }	    
+			   
+			}
+		}
+		blnShowTransHistoryMsg=true;
+	 }
+
+	function TransHistoryScript_Click(TagID,IsSubTag,Operation)
+	{
+	
+	    if (Operation=='TRANSACTION_HISTORY_GENERATE_SCRIPT')
+	    {
+	        if(confirm("Are you sure, you want to create trigger for maintaining 'Transaction History' for deleted records?\r\n\r\nNote: The trigger will insert the history data into the 'Transaction History' system table.\r\nThe trigger will be created by the name 'trg_Del_<TABLE_NAME>_TransactionHistory'. If the trigger already exists then it will be overwritten by the system.\n\nThe current Control Definition will be considered for generating the Transaction History Trigger. If in case,'Show As Link' property of any control is  modified then this trigger needs to be regenerated.")==false) 
+	            return ;
+		}   
+	    window.open ("../SM/PB_DataManagementScripts.aspx?Operation=" + Operation + "&IsSubTag=" + IsSubTag + "&TagID=" + TagID, "", "scrollbars=1,resizable=1,menubar=yes,left=" + ((window.screen.width - 900)/2) + ",top=" + ((window.screen.height - 500)/2) + ",width=900,height=500");	 
+    }
+ 
+    function ValidateTransHistory()
+	{
+	    var objUpdatedBy;
+		var objConcurrency;
+   	    objTransHistory =GetObjectReference('frmPageProperties','chkTransHistory'); 
+		objUpdatedBy = GetObjectReference('frmPageProperties','cboAuditTrail_UpdatedBy');
+		
+		if (objTransHistory != null && objTransHistory.checked == true)
+		{
+		       
+		      
+		   if (disallowBlank(objUpdatedBy, "&#39;Updated By&#39; should not be left blank.") == true)
+		    return false;			
+		}
+		return true;
+	}
+	  function ValidateLinkColumn(TagID,IsSubTag)
+	{
+	  var IsLinkColumn =false;
+	    try
+        {
+        
+            var strUrl="../SM/PB_XMLHttpRequestHandler.aspx?operation=GENERATETRANSHISTORY&IsSubTag=" + IsSubTag + "&TagID=" + TagID;
+	        objXHttp = new ActiveXObject("Msxml2.XMLHTTP"); 
+	        objXHttp.onreadystatechange = function()
+	          {
+                    
+               if (objXHttp.readyState==4)
+                   {
+                        if (objXHttp.responseText != null)
+                        {
+                            if(objXHttp.responseText.substring(0,8)=="INFOMSG:")
+                                alert(objXHttp.responseText.substring(8));
+                            else
+                             {
+                                IsLinkColumn = objXHttp.responseText;
+                                if (IsLinkColumn==1 )
+                                 IsLinkColumn =true;                                 
+                                 else 
+                                   IsLinkColumn =false;       
+                             }
+                        }
+                 }
+              }
+	                              
+            objXHttp.open("GET",strUrl, false); 
+            objXHttp.send();
+	    }
+	    catch(e){ }
+	    return IsLinkColumn; 
+	    
+	}
+	
+	// Addition End By ShrikantB On 21-JUL-2010 For Concurrency Control
+	</script>
+    
+	</body>
+</HTML>
+

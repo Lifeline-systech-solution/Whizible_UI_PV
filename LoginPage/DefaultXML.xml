@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CompanyInformation>
+  <CustomLoginPage>
+    <CustomHeaderSection>
+      <HeaderSection>LoginPage/CustomHeader.html</HeaderSection>
+      <LoginImage>
+        <Name>LoginImages/Logo.jpg</Name>
+      </LoginImage>
+      <LoginText>
+        <Name>Login</Name></LoginText>
+    </CustomHeaderSection>
+    <DefaultHeaderSection>
+      <HeaderSection>LoginPage/Header.html</HeaderSection>
+      <LoginImage>
+        <Name>LoginImages/Logo.jpg</Name>
+      </LoginImage>
+      <LoginText>
+        <Name>Login</Name>
+    </LoginText>
+    </DefaultHeaderSection>
+    <CustomSliderSection>
+      <SliderSection>LoginPage/CustomSlider.html</SliderSection>
+    </CustomSliderSection>
+    <DefaultSliderSection>
+      <SliderSection>LoginPage/slider.html</SliderSection>
+    </DefaultSliderSection>
+    <CustomTabs>
+      <Tabs>LoginPage/CustomTabs.html</Tabs>
+    </CustomTabs>
+    <DefaultTabs>
+      <Tabs>LoginPage/Tab.html</Tabs>
+    </DefaultTabs>
+    <CustomFooterSection>
+      <!--<FooterSection>LoginPage/CustomFooter.html</FooterSection>-->
+    </CustomFooterSection>
+    <DefaultFooterSection>
+      <FooterSection>LoginPage/Footer.html</FooterSection>
+    </DefaultFooterSection>
+  </CustomLoginPage>
+  <DefaultLoginPage>
+    <DefaultPage>LoginPage/DefaultHtml.aspx</DefaultPage>
+  </DefaultLoginPage>
+</CompanyInformation>
+

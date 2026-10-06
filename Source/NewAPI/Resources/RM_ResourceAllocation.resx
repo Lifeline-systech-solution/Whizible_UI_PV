@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="A_EffectiveDateGreterEndDate" xml:space="preserve">
+    <value>Please enter 'New Effective Date ' greater than 'End Date'</value>
+  </data>
+  <data name="A_EffectiveDateGreterEndDate1" xml:space="preserve">
+    <value>Please enter 'New Effective Date ' greater than 'End Date'</value>
+  </data>
+  <data name="A_NewAllocation" xml:space="preserve">
+    <value>Please enter value for 'New Allocation'</value>
+  </data>
+  <data name="A_NewAllocation1" xml:space="preserve">
+    <value>Please enter value for 'New Allocation'</value>
+  </data>
+  <data name="A_NewAllocationGetMaxUniits" xml:space="preserve">
+    <value>New Allocation should be less than or equal to</value>
+  </data>
+  <data name="A_NewAllocationGetMaxUniits1" xml:space="preserve">
+    <value>New Allocation should be less than or equal to</value>
+  </data>
+  <data name="A_NewAllocationGraterzero" xml:space="preserve">
+    <value>New Allocation should be greater than 0</value>
+  </data>
+  <data name="A_NewAllocationGraterzero1" xml:space="preserve">
+    <value>New Allocation should be greater than 0</value>
+  </data>
+  <data name="A_NewAllocationPercenteage" xml:space="preserve">
+    <value>New Allocation Percentage should be in the range of 1 To</value>
+  </data>
+  <data name="A_NewAllocationPercenteage1" xml:space="preserve">
+    <value>New Allocation Percentage should be in the range of 1 To</value>
+  </data>
+  <data name="A_NewEffectiveDate" xml:space="preserve">
+    <value>Please enter a value for 'New Effective Date '</value>
+  </data>
+  <data name="A_NewEffectiveDate1" xml:space="preserve">
+    <value>Please enter a value for 'New Effective Date '</value>
+  </data>
+  <data name="A_NewEndDate" xml:space="preserve">
+    <value>Please enter a value for 'New End Date'</value>
+  </data>
+  <data name="A_NewEndDate1" xml:space="preserve">
+    <value>Please enter a value for 'New End Date'</value>
+  </data>
+  <data name="A_NewEndDateGraterThanEffectiveDate" xml:space="preserve">
+    <value>Please enter 'New End Date' greater than 'New Effective Date'</value>
+  </data>
+  <data name="A_NewEndDateGraterThanEffectiveDate1" xml:space="preserve">
+    <value>Please enter 'New End Date' greater than 'New Effective Date'</value>
+  </data>
+  <data name="A_PositiveNumericValueForNewAllocation" xml:space="preserve">
+    <value>Please enter only positive numeric value for 'New Allocation'</value>
+  </data>
+  <data name="A_PositiveNumericValueForNewAllocation1" xml:space="preserve">
+    <value>Please enter only positive numeric value for 'New Allocation'</value>
+  </data>
+  <data name="A_ReqEndDate" xml:space="preserve">
+    <value>New End Date should not be left   blank</value>
+  </data>
+  <data name="A_ReqEndDateLessEndDate" xml:space="preserve">
+    <value>'New End Date' should be less 'End Date'.</value>
+  </data>
+  <data name="A_ReqEndDateLessStartDate" xml:space="preserve">
+    <value>'New End Date' should not be less than 'Allocation Start Date'.</value>
+  </data>
+  <data name="A_ReqEndDateNotLessStartDate" xml:space="preserve">
+    <value>'New End Date' should not be less than ' Allocation  Start Date'.</value>
+  </data>
+  <data name="A_ReqEndgreThanStartDate" xml:space="preserve">
+    <value>New End Date should  be greater than request start date.</value>
+  </data>
+  <data name="A_ResourcePercentage" xml:space="preserve">
+    <value>'Resource' Percentage should not be left blank.</value>
+  </data>
+  <data name="A_Resourcepercentagebetween" xml:space="preserve">
+    <value>Resource percentage should be between (0-100)</value>
+  </data>
+  <data name="A_ResourcepercentageRange" xml:space="preserve">
+    <value>Resource percentage should be in the range of 1-</value>
+  </data>
+  <data name="A_ResourcePercentageZero" xml:space="preserve">
+    <value>Resource Percentage should not be less than or equal to zero (0)</value>
+  </data>
+  <data name="CPRD" xml:space="preserve">
+    <value>Prepone Release Details</value>
+  </data>
+  <data name="C_AED" xml:space="preserve">
+    <value>Allocation End Date</value>
+  </data>
+  <data name="C_ALLOCATED" xml:space="preserve">
+    <value>Allocated</value>
+  </data>
+  <data name="C_ALLOCATENOTE" xml:space="preserve">
+    <value>Number of days after which resources should be made available if not assigned to any project.</value>
+  </data>
+  <data name="C_ALLOCATIONTYPE" xml:space="preserve">
+    <value>Allocation Type</value>
+  </data>
+  <data name="C_ALLVALIDATEDAYS" xml:space="preserve">
+    <value>Resource request validity Days</value>
+  </data>
+  <data name="C_AR" xml:space="preserve">
+    <value>Assigned Resources</value>
+  </data>
+  <data name="C_ARR" xml:space="preserve">
+    <value>Allocated Resources</value>
+  </data>
+  <data name="C_ASD" xml:space="preserve">
+    <value>Allocation Start Date</value>
+  </data>
+  <data name="C_ASSIGNED" xml:space="preserve">
+    <value>Assigned</value>
+  </data>
+  <data name="C_AT" xml:space="preserve">
+    <value>Allocation Type</value>
+  </data>
+  <data name="C_AV" xml:space="preserve">
+    <value>Allocation Value</value>
+  </data>
+  <data name="C_BG" xml:space="preserve">
+    <value>Business Group</value>
+  </data>
+  <data name="C_CANCEL" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="C_CANCEL1" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="C_CHANGEALLOCATION" xml:space="preserve">
+    <value>Change Allocation</value>
+  </data>
+  <data name="C_CLOSE" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="C_COMMENTS" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="C_CONFIDAYS" xml:space="preserve">
+    <value>Configure Days</value>
+  </data>
+  <data name="C_DECLINEREQ" xml:space="preserve">
+    <value>Decline Request</value>
+  </data>
+  <data name="C_DECLINE_REQ" xml:space="preserve">
+    <value>Decline Request</value>
+  </data>
+  <data name="C_DETAILS" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="C_EM" xml:space="preserve">
+    <value>Employee Name</value>
+  </data>
+  <data name="C_EM1" xml:space="preserve">
+    <value>Exact Match</value>
+  </data>
+  <data name="C_EN" xml:space="preserve">
+    <value>Employee Name</value>
+  </data>
+  <data name="C_ESCALATETOGRP" xml:space="preserve">
+    <value>Escalate To GRP</value>
+  </data>
+  <data name="C_ETOBP" xml:space="preserve">
+    <value>Escalate To BG Pool</value>
+  </data>
+  <data name="C_FD" xml:space="preserve">
+    <value>From Date</value>
+  </data>
+  <data name="C_FROMDATE" xml:space="preserve">
+    <value>From Date</value>
+  </data>
+  <data name="C_FT" xml:space="preserve">
+    <value>To Date</value>
+  </data>
+  <data name="C_HOURS" xml:space="preserve">
+    <value>Work Hours</value>
+  </data>
+  <data name="C_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="C_MANDATORY" xml:space="preserve">
+    <value>Mandatory</value>
+  </data>
+  <data name="C_NA" xml:space="preserve">
+    <value>New Allocation</value>
+  </data>
+  <data name="C_NED" xml:space="preserve">
+    <value>New End Date</value>
+  </data>
+  <data name="C_NNED" xml:space="preserve">
+    <value>New Effective Date</value>
+  </data>
+  <data name="C_NTWH" xml:space="preserve">
+    <value>New Total Work Hours</value>
+  </data>
+  <data name="C_ONHOLDCLOSED" xml:space="preserve">
+    <value>On Hold/Closed</value>
+  </data>
+  <data name="C_OU" xml:space="preserve">
+    <value>Organization Unit</value>
+  </data>
+  <data name="C_PAGENAME" xml:space="preserve">
+    <value>Resource Allocation</value>
+  </data>
+  <data name="C_PD" xml:space="preserve">
+    <value>Per Day Workhours</value>
+  </data>
+  <data name="C_PR" xml:space="preserve">
+    <value>Probable Resources</value>
+  </data>
+  <data name="C_PRDETAILS" xml:space="preserve">
+    <value>Prepone Release Details</value>
+  </data>
+  <data name="C_PRENOTE" xml:space="preserve">
+    <value>If you want to change allocation, please enter following details</value>
+  </data>
+  <data name="C_PREPONE" xml:space="preserve">
+    <value>Prepone</value>
+  </data>
+  <data name="C_PROJECT" xml:space="preserve">
+    <value>Project:</value>
+  </data>
+  <data name="C_PROJECT1" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="C_PROJECTNAME" xml:space="preserve">
+    <value>Project Name</value>
+  </data>
+  <data name="C_PROJECTSTATUS" xml:space="preserve">
+    <value>Project Status</value>
+  </data>
+  <data name="C_RBY" xml:space="preserve">
+    <value>Requested By</value>
+  </data>
+  <data name="C_REQID" xml:space="preserve">
+    <value>Request ID</value>
+  </data>
+  <data name="C_REQON" xml:space="preserve">
+    <value>Requested On</value>
+  </data>
+  <data name="C_REQUESTDATE" xml:space="preserve">
+    <value>Request Date</value>
+  </data>
+  <data name="C_REQUESTED" xml:space="preserve">
+    <value>Requested</value>
+  </data>
+  <data name="C_REQUESTFROMDATE" xml:space="preserve">
+    <value>Request From Date:</value>
+  </data>
+  <data name="C_REQUESTID" xml:space="preserve">
+    <value>Request ID:</value>
+  </data>
+  <data name="C_REQUESTOR" xml:space="preserve">
+    <value>Requestor</value>
+  </data>
+  <data name="C_REQUESTSTATUS" xml:space="preserve">
+    <value>Request Status</value>
+  </data>
+  <data name="C_REQUESTTODATE" xml:space="preserve">
+    <value>Request To Date:</value>
+  </data>
+  <data name="C_REQVALIDATE" xml:space="preserve">
+    <value>Request To Date should be greater than Request From Date.</value>
+  </data>
+  <data name="C_REQVALIDATETO" xml:space="preserve">
+    <value>Request Valid to</value>
+  </data>
+  <data name="C_ROLE" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="C_RR" xml:space="preserve">
+    <value>Requested Resource</value>
+  </data>
+  <data name="C_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="C_SHOW" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="C_SIMILARREQ" xml:space="preserve">
+    <value>Similar Requests</value>
+  </data>
+  <data name="C_SKILLS" xml:space="preserve">
+    <value>Skills</value>
+  </data>
+  <data name="C_SR" xml:space="preserve">
+    <value>Special Request</value>
+  </data>
+  <data name="C_TABSCLOSED" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+  <data name="C_TABSDECLINE" xml:space="preserve">
+    <value>Declined</value>
+  </data>
+  <data name="C_TABSEXTND" xml:space="preserve">
+    <value>Extend</value>
+  </data>
+  <data name="C_TODATE" xml:space="preserve">
+    <value>To Date</value>
+  </data>
+  <data name="C_WH" xml:space="preserve">
+    <value>Work Hours</value>
+  </data>
+  <data name="C_WHP" xml:space="preserve">
+    <value>Work Hours on Project</value>
+  </data>
+  <data name="C_WP" xml:space="preserve">
+    <value>Workhours Percent</value>
+  </data>
+  <data name="s" xml:space="preserve">
+    <value />
+  </data>
+</root>

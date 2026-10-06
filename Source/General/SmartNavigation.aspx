@@ -1,0 +1,1 @@
+<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="SmartNavigation.aspx.vb" Inherits="Whiz.SmartNavigation" %>

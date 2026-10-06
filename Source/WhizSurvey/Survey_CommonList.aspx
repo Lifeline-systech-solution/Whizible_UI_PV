@@ -1,0 +1,1 @@
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="Survey_CommonList.aspx.vb" Inherits="Whiz.Survey_CommonList"%>

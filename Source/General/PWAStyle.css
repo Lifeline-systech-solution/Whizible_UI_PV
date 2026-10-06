@@ -1,0 +1,630 @@
+.ms-inputformdescription {
+	PADDING-RIGHT: 9px; WIDTH: 275px
+}
+.ms-inputformcontrols {
+	WIDTH: 575px
+}
+.ms-stdtxt {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+BUTTON {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+FIELDSET {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+INPUT {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+SELECT {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+TABLE {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+TH {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+.pwa-ExitDesignModeControl {
+	FONT-SIZE: 8pt; COLOR: #3966bf; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.pwa-toolbar {
+	FONT-SIZE: 8pt; COLOR: #003399; FONT-FAMILY: Tahoma; TEXT-DECORATION: none
+}
+.pwa-viewtoolbar {
+	FONT-SIZE: 8pt; COLOR: #003399; FONT-FAMILY: Tahoma; TEXT-DECORATION: none
+}
+.pwa-formtoolbar {
+	FONT-SIZE: 8pt; COLOR: #003399; FONT-FAMILY: Tahoma; TEXT-DECORATION: none
+}
+.pwa-formtoolbar {
+	MARGIN-BOTTOM: 4px
+}
+.pwa-toolbar-togglebutton-on {
+	BORDER-RIGHT: #2254b1 1px solid; BORDER-TOP: #2254b1 1px solid; BORDER-LEFT: #2254b1 1px solid; BORDER-BOTTOM: #2254b1 1px solid; BACKGROUND-COLOR: #ffeec2
+}
+TABLE.pwa-toolbar {
+	BACKGROUND-IMAGE: url(/_layouts/images/listheadergrad.gif); BACKGROUND-REPEAT: repeat-x; HEIGHT: 27px; BACKGROUND-COLOR: #afd2ff
+}
+TABLE.pwa-viewtoolbar {
+	BACKGROUND-IMAGE: url(/_layouts/images/listheadergrad.gif); BACKGROUND-REPEAT: repeat-x; HEIGHT: 27px; BACKGROUND-COLOR: #afd2ff
+}
+TABLE.pwa-toolbar {
+	BORDER-RIGHT: #6f9dd9 1px solid; BORDER-TOP: #6f9dd9 1px solid; BORDER-LEFT: #6f9dd9 1px solid; BORDER-BOTTOM: #6f9dd9 1px solid
+}
+TABLE.pwa-viewtoolbar {
+	BORDER-TOP: #6f9dd9 1px solid; BORDER-BOTTOM: #6f9dd9 1px solid
+}
+.pwa-separator {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 8pt; PADDING-BOTTOM: 0px; COLOR: #003399; PADDING-TOP: 0px
+}
+.pwa-toolbar2 {
+	FONT-SIZE: 8pt; COLOR: #003399; FONT-FAMILY: Tahoma; TEXT-DECORATION: none
+}
+TABLE.pwa-toolbar2 {
+	BACKGROUND-IMAGE: url(/_layouts/images/toolgrad.gif); BACKGROUND-REPEAT: repeat-x; HEIGHT: 27px; BACKGROUND-COLOR: #dbe0eb
+}
+TABLE.pwa-toolbar2 {
+	BORDER-RIGHT: #a2a9bd 1px solid; BORDER-TOP: #a2a9bd 1px solid; BORDER-LEFT: #a2a9bd 1px solid; BORDER-BOTTOM: #a2a9bd 1px solid
+}
+.SectionContents {
+	MARGIN-TOP: 6px; COLOR: windowtext; FONT-FAMILY: Tahoma, Arial, Helvetica; BACKGROUND-COLOR: white
+}
+.DisplayTable {
+	COLOR: windowtext; FONT-FAMILY: Tahoma, Arial, Helvetica
+}
+.InputText {
+	BORDER-RIGHT: #4d4a46 1px solid; BORDER-TOP: #4d4a46 1px solid; BORDER-LEFT: #4d4a46 1px solid; COLOR: windowtext; BORDER-BOTTOM: #4d4a46 1px solid; FONT-FAMILY: Tahoma, Arial, Helvetica; BACKGROUND-COLOR: white
+}
+.InputButton {
+	BORDER-RIGHT: #4d4a46 1px solid; BORDER-TOP: #4d4a46 1px solid; FONT-SIZE: 100%; BORDER-LEFT: #4d4a46 1px solid; COLOR: buttontext; BORDER-BOTTOM: #4d4a46 1px solid; FONT-FAMILY: Tahoma, Arial, Helvetica; BACKGROUND-COLOR: buttonface
+}
+.AlertText {
+	COLOR: red; FONT-FAMILY: Tahoma, Arial, Helvetica
+}
+.link1 {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+.link1 A {
+	COLOR: #070f42; TEXT-DECORATION: none
+}
+.link1 A:hover {
+	COLOR: #070f42; TEXT-DECORATION: underline
+}
+.link2 {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+.link2 A {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.link2 A:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.link3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+.trailnav {
+	FONT-SIZE: 8pt; COLOR: #070f42; FONT-FAMILY: Tahoma
+}
+.NavTable {
+	FONT-SIZE: 8pt; WIDTH: 100%; FONT-FAMILY: Tahoma; BORDER-COLLAPSE: collapse
+}
+.PageTitle {
+	FONT-SIZE: 1.7em; FONT-FAMILY: Arial
+}
+.PageSubTitle {
+	
+}
+.TitleArea {
+	BORDER-TOP: #ffd275 3px solid; BORDER-BOTTOM: #5a6b8c 1px solid
+}
+.BreadCrumbText {
+	FONT-SIZE: 11px; COLOR: #a0a0a0; FONT-FAMILY: Arial
+}
+.BreadCrumbText A {
+	COLOR: #a0a0a0; TEXT-DECORATION: none
+}
+.BreadCrumbText A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.TopBannerTable {
+	WIDTH: 100%; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #4f6589
+}
+.TopNavQuickLinks {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; WIDTH: 100%; BORDER-BOTTOM: 0px; BORDER-COLLAPSE: collapse
+}
+.TopNavToolbar {
+	BACKGROUND-IMAGE: url(/_layouts/pwa/images/TopNavBG.gif); WIDTH: 100%; BACKGROUND-REPEAT: repeat-x
+}
+.ToolbarOption {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 5px; WHITE-SPACE: nowrap
+}
+.ToolbarOptionSel {
+	BORDER-RIGHT: #566684 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #566684 1px solid; PADDING-LEFT: 5px; BACKGROUND-IMAGE: url(/_layouts/pwa/images/TopNavSel.gif); BORDER-LEFT: #566684 1px solid; BORDER-BOTTOM: #566684 1px solid; BACKGROUND-REPEAT: repeat-x; WHITE-SPACE: nowrap; HEIGHT: 18px; TEXT-ALIGN: left
+}
+.SidePaneTable {
+	BORDER-RIGHT: #3c3c3c 2px solid; PADDING-RIGHT: 10px; BACKGROUND: #475a80; VERTICAL-ALIGN: top; PADDING-TOP: 25px
+}
+.SidePaneInnerTable {
+	PADDING-RIGHT: 10px; PADDING-BOTTOM: 5px; WIDTH: 130px
+}
+.SidePaneHeaderItem {
+	BORDER-RIGHT: white 1px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 3px; CURSOR: default; COLOR: white; PADDING-TOP: 3px; FONT-FAMILY: Tahoma; TEXT-ALIGN: left
+}
+.SidePaneHeaderItem A {
+	COLOR: white; TEXT-DECORATION: none
+}
+.SidePaneHeaderLink {
+	BORDER-RIGHT: white 1px solid; BORDER-TOP: #bfc8d8 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 8pt; BACKGROUND: #bfc8d8; PADDING-BOTTOM: 5px; BORDER-LEFT: #bfc8d8 1px solid; CURSOR: default; COLOR: #3b5075; PADDING-TOP: 5px; BORDER-BOTTOM: #bfc8d8 1px solid; FONT-FAMILY: Tahoma
+}
+.SidePaneHeaderLink A {
+	COLOR: #3b5075; TEXT-DECORATION: none
+}
+.SidePaneHeaderLinkSel {
+	BORDER-RIGHT: white 1px solid; BORDER-TOP: #bfc8d8 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 8pt; BACKGROUND-IMAGE: url(/_layouts/pwa/images/SideNavSel.gif); PADDING-BOTTOM: 5px; BORDER-LEFT: #bfc8d8 1px solid; CURSOR: default; COLOR: #3b5075; PADDING-TOP: 5px; BORDER-BOTTOM: #bfc8d8 1px solid; BACKGROUND-REPEAT: repeat-x; FONT-FAMILY: Tahoma
+}
+.SidePaneHeaderLinkSel A {
+	COLOR: #3b5075; TEXT-DECORATION: none
+}
+.SidePaneHeaderDropdown {
+	BORDER-RIGHT: white 1px solid; BORDER-TOP: #919191 1px inset; PADDING-LEFT: 5px; BACKGROUND: #bfc8d8; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+.SidePaneHeaderDropdown SELECT {
+	FONT-SIZE: 8pt; WIDTH: 95%; FONT-FAMILY: Tahoma
+}
+.SidePaneHeaderFooter {
+	BORDER-RIGHT: white 1px solid; BACKGROUND: #bfc8d8; FILTER: progid:DXImageTransform.Microsoft.Alpha(opacity=100, style=1, startY=0, finishY=100. startX=0, finishX=0)
+}
+.DropdownMenu {
+	BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; FONT-WEIGHT: bold; FONT-SIZE: 8pt; BACKGROUND: #efde9c; FILTER: progid:DXImageTransform.Microsoft.Alpha(opacity=75); BORDER-LEFT: black 2px solid; WIDTH: 150px; CURSOR: hand; COLOR: black; BORDER-BOTTOM: black 2px solid; POSITION: absolute
+}
+.DropdownLink A {
+	TEXT-DECORATION: none
+}
+TD.ContentCell {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 1px; PADDING-TOP: 10px
+}
+.CopyrightText {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+.CopyrightText A {
+	FONT-SIZE: 8pt; COLOR: blue; FONT-FAMILY: Tahoma; TEXT-DECORATION: none
+}
+.header_text {
+	FONT-WEIGHT: bold; FONT-SIZE: 13pt; COLOR: #384173; FONT-FAMILY: Tahoma
+}
+.Header_Table {
+	WIDTH: 100%; BORDER-BOTTOM: #8d93af 2px solid
+}
+.section_border {
+	BORDER-BOTTOM: blue 1px solid
+}
+.section_text {
+	FONT-WEIGHT: bolder; COLOR: blue; FONT-FAMILY: Tahoma; TEXT-DECORATION: none
+}
+.section_text_nolink {
+	FONT-WEIGHT: bolder; COLOR: blue; FONT-FAMILY: Tahoma; TEXT-DECORATION: none
+}
+.normal_text {
+	COLOR: windowtext; FONT-FAMILY: Tahoma
+}
+A.normal_text {
+	COLOR: blue; FONT-FAMILY: Tahoma; TEXT-DECORATION: none
+}
+A.normal_text:hover {
+	COLOR: blue; FONT-FAMILY: Tahoma; TEXT-DECORATION: underline
+}
+.link2 {
+	COLOR: #0000ff; FONT-FAMILY: Tahoma; TEXT-DECORATION: none
+}
+.CaptionText {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: black; FONT-FAMILY: Tahoma
+}
+.ErrorMsgBox {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #ff4810; FONT-FAMILY: Tahoma
+}
+.ModifyPageLink {
+	PADDING-RIGHT: 10px; FONT-SIZE: 8pt; CURSOR: hand; COLOR: #737fad; FONT-FAMILY: Tahoma; TEXT-ALIGN: right
+}
+.LinkPageDescription {
+	FONT-FAMILY: Tahoma
+}
+.LinkPageGoBack A {
+	COLOR: #003399; FONT-FAMILY: Tahoma; TEXT-DECORATION: none
+}
+.LinkPageGoBack A:hover {
+	COLOR: #ff3300; FONT-FAMILY: Tahoma; TEXT-DECORATION: underline
+}
+.SectionPlaceholder {
+	PADDING-BOTTOM: 1.5em; WIDTH: 100%
+}
+.SectionHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #003399; BORDER-BOTTOM: #2254b1 1px solid; FONT-FAMILY: arial
+}
+.SectionHR {
+	COLOR: #d2daa4
+}
+.SectionIcon {
+	VERTICAL-ALIGN: top; PADDING-TOP: 0.5em
+}
+.SectionSummary {
+	VERTICAL-ALIGN: top; WIDTH: 100%; PADDING-TOP: 0.5em
+}
+.SectionLink A {
+	COLOR: #003399; FONT-FAMILY: Tahoma; TEXT-DECORATION: none
+}
+.SectionLink A:hover {
+	COLOR: #ff3300; FONT-FAMILY: Tahoma; TEXT-DECORATION: underline
+}
+.SettingsInfoPanel {
+	PADDING-RIGHT: 0.5em; BORDER-TOP: #2254b1 1px solid; PADDING-BOTTOM: 1.5em; VERTICAL-ALIGN: top; WIDTH: 50%; PADDING-TOP: 0.35em
+}
+.SettingsDetailsPanel {
+	BORDER-TOP: #2254b1 1px solid; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 1em; VERTICAL-ALIGN: top; WIDTH: 50%; PADDING-TOP: 0.35em; BACKGROUND-COLOR: #f2f2f2
+}
+.SettingsHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 1.5em; PADDING-BOTTOM: 0.5em; COLOR: #003399; FONT-FAMILY: arial
+}
+.MoreInfoLink A {
+	COLOR: #003399; FONT-FAMILY: Tahoma; TEXT-DECORATION: none
+}
+.MoreInfoLink A:hover {
+	COLOR: #ff3300; FONT-FAMILY: Tahoma; TEXT-DECORATION: underline
+}
+.ToolbarButton {
+	BORDER-RIGHT: transparent 1px; BORDER-TOP: transparent 1px; FONT-SIZE: 8pt; MARGIN: 0px; BORDER-LEFT: transparent 1px; CURSOR: hand; COLOR: #003399; BORDER-BOTTOM: transparent 1px; FONT-FAMILY: Tahoma; HEIGHT: 26px; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+.ToolbarButtonHover {
+	BORDER-RIGHT: white 1px solid; BORDER-TOP: white 1px solid; FONT-SIZE: 8pt; BACKGROUND-IMAGE: url(/_layouts/images/menubuttonhover.gif); MARGIN: 0px; BORDER-LEFT: white 1px solid; CURSOR: hand; BORDER-BOTTOM: white 1px solid; FONT-FAMILY: Tahoma; HEIGHT: 26px; TEXT-DECORATION: none
+}
+.ToolbarButtonDisabled {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 2px; FONT-SIZE: 8pt; BORDER-LEFT: 0px; CURSOR: default; COLOR: windowtext; BORDER-BOTTOM: 0px; FONT-FAMILY: Tahoma; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+.ToolbarButtonImage {
+	WIDTH: 16px; MARGIN-RIGHT: 3px; HEIGHT: 16px
+}
+.ToolbarButtonImageDisabled {
+	FILTER: Gray alpha(enabled='true', opacity=45); WIDTH: 16px; CURSOR: default; HEIGHT: 16px
+}
+SELECT.ToolbarDropdown {
+	FONT-SIZE: 8pt; COLOR: #003399; FONT-FAMILY: Tahoma
+}
+v\:* {
+	BEHAVIOR: url(#default#VML)
+}
+.GanttViewTable {
+	BORDER-RIGHT: #c0c0c0 2px solid; TABLE-LAYOUT: fixed; BORDER-TOP: #c0c0c0 2px solid; ; FILTER: expression((screen.colorDepth > 8) ? "progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#F0F4FA, endColorstr=#FFFFFF)" : ""); BORDER-LEFT: #c0c0c0 2px solid; BORDER-BOTTOM: #c0c0c0 2px solid
+}
+.GanttViewTable TH {
+	BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; FONT-SIZE: 8pt; BORDER-LEFT: black 0px solid; WIDTH: 200px; COLOR: #000000; BORDER-BOTTOM: black 0px solid; FONT-FAMILY: Tahoma
+}
+.GanttViewTable TD {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Tahoma; HEIGHT: 20px
+}
+.GanttDetailHead TD {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; TEXT-ALIGN: center
+}
+.GanttChartDiv {
+	BORDER-RIGHT: 1px solid; OVERFLOW-Y: auto; OVERFLOW-X: scroll; BORDER-LEFT: black 1px solid; WIDTH: 100%; HEIGHT: 100%
+}
+.GanttTitleRow {
+	BACKGROUND: #f0f4fa; HEIGHT: 18px
+}
+.XmlGridGroupHeader {
+	BACKGROUND: #d0d0d0; HEIGHT: 100%
+}
+.XmlGridDiv {
+	OVERFLOW-Y: hidden; OVERFLOW-X: scroll; WIDTH: 100%; HEIGHT: 100%
+}
+.XmlGridTable TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 10px; FONT-SIZE: 8pt; VERTICAL-ALIGN: top; COLOR: #0066aa; FONT-FAMILY: Tahoma; WHITE-SPACE: nowrap; HEIGHT: 2.1em
+}
+.XmlGridTable A {
+	COLOR: #62709c; TEXT-DECORATION: none
+}
+.XmlGridTable A:hover {
+	COLOR: #8f1890; TEXT-DECORATION: underline
+}
+.XmlGridTitleRow TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; BACKGROUND: #eef2f8; VERTICAL-ALIGN: middle; FONT-FAMILY: Tahoma; WHITE-SPACE: nowrap
+}
+.XmlGridTitleRow A {
+	COLOR: #0066aa; TEXT-DECORATION: none
+}
+.XmlGridTitleRow IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; MARGIN-LEFT: 5px; VERTICAL-ALIGN: middle; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.XmlGridTable {
+	BORDER-RIGHT: #c0c0c0 2px solid; BORDER-TOP: #c0c0c0 2px solid; BORDER-LEFT: #c0c0c0 2px solid; BORDER-BOTTOM: #c0c0c0 2px solid
+}
+.XmlGridSelectorCell {
+	BORDER-RIGHT: #c0c0c0 1px solid; BORDER-TOP: white 1px solid; BACKGROUND: #edebeb; BORDER-LEFT: white 1px solid; WIDTH: 20px; BORDER-BOTTOM: white 1px solid
+}
+.XmlGridSelectorCell A {
+	WIDTH: 0px
+}
+.XmlGridGroupRowTextCell {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; TEXT-ALIGN: left
+}
+.XmlGridPageSelector TD {
+	PADDING-LEFT: 10px; FONT-SIZE: 8pt; BACKGROUND: #dfe6f2; VERTICAL-ALIGN: middle; FONT-FAMILY: Tahoma
+}
+.XmlGridPageSelector SPAN {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-WEIGHT: bold; BACKGROUND: #efde9c; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid
+}
+.XmlGridPageSelector A {
+	BORDER-RIGHT: #dfe6f2 1px solid; BORDER-TOP: #dfe6f2 1px solid; FONT-WEIGHT: bold; BACKGROUND: #dfe6f2; BORDER-LEFT: #dfe6f2 1px solid; COLOR: #000000; MARGIN-RIGHT: 5px; BORDER-BOTTOM: #dfe6f2 1px solid; TEXT-DECORATION: none
+}
+.XmlGridPageSelector A:hover {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-WEIGHT: bold; BACKGROUND: #efde9c; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid; TEXT-DECORATION: none
+}
+.XmlGridSelRow TD {
+	BORDER-TOP: #909090 2px solid; COLOR: #000000; BORDER-BOTTOM: #909090 2px solid; BACKGROUND-COLOR: #efde9c
+}
+.XmlGridSoftSelRow TD {
+	BORDER-TOP: #909090 2px dotted; BORDER-BOTTOM: #909090 2px dotted; BACKGROUND-COLOR: #f0f0f0
+}
+.XmlGridTable IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; VERTICAL-ALIGN: text-bottom; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.XmlGridSortLink {
+	WIDTH: 100%
+}
+IMG.XmlGridGroupIcon {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; VERTICAL-ALIGN: text-bottom; BORDER-LEFT: 0px; CURSOR: hand; BORDER-BOTTOM: 0px
+}
+IMG.XmlGridContextMenuImage {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; VISIBILITY: hidden; VERTICAL-ALIGN: top; BORDER-LEFT: 0px; CURSOR: hand; BORDER-BOTTOM: 0px
+}
+TD.XmlGridWrappedCell {
+	WHITE-SPACE: normal; HEIGHT: 100%; WORD-WRAP: break-word
+}
+TD.XmlGridSelCell {
+	COLOR: #000000; BACKGROUND-COLOR: #efde9c
+}
+TD.XmlGridSelWrappedCell {
+	PADDING-BOTTOM: 6px; COLOR: #000000; WHITE-SPACE: normal; HEIGHT: 100%; BACKGROUND-COLOR: #efde9c; WORD-WRAP: break-word
+}
+TABLE.TimephasedGrid {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.TimephasedGrid TH {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: navy
+}
+TABLE.NotesControl {
+	WIDTH: 100%
+}
+DIV.NotesControl {
+	BORDER-RIGHT: #7d8189 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #7d8189 1px solid; OVERFLOW-Y: auto; PADDING-LEFT: 5px; SCROLLBAR-FACE-COLOR: #efef6b; PADDING-BOTTOM: 5px; SCROLLBAR-HIGHLIGHT-COLOR: #ffffe7; BORDER-LEFT: #7d8189 1px solid; WIDTH: 100%; SCROLLBAR-SHADOW-COLOR: #efef6b; SCROLLBAR-ARROW-COLOR: #0760a2; PADDING-TOP: 5px; SCROLLBAR-TRACK-COLOR: #ffffce; BORDER-BOTTOM: #7d8189 1px solid; SCROLLBAR-DARKSHADOW-COLOR: #efef6b; HEIGHT: 200px; BACKGROUND-COLOR: #ffffcc
+}
+TEXTAREA.NotesControl {
+	BORDER-RIGHT: #7d8189 1px solid; BORDER-TOP: #7d8189 1px solid; SCROLLBAR-FACE-COLOR: #efef6b; FONT-SIZE: 8pt; SCROLLBAR-HIGHLIGHT-COLOR: #ffffe7; BORDER-LEFT: #7d8189 1px solid; WIDTH: 100%; SCROLLBAR-SHADOW-COLOR: #efef6b; SCROLLBAR-ARROW-COLOR: #0760a2; SCROLLBAR-TRACK-COLOR: #ffffce; BORDER-BOTTOM: #7d8189 1px solid; FONT-FAMILY: Tahoma; SCROLLBAR-DARKSHADOW-COLOR: #efef6b; BACKGROUND-COLOR: #ffffcc
+}
+TABLE.AssnHistoryControl {
+	FONT-SIZE: 12px; WIDTH: 100%; FONT-FAMILY: Tahoma; BACKGROUND-COLOR: white
+}
+TR.AssnHistoryControl_TitleRow {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #a9ac7d; COLOR: white
+}
+TR.AssnHistoryControl_DetailsRow {
+	BACKGROUND: #f6f6f6; COLOR: black
+}
+.TabBackground {
+	BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; FONT-SIZE: 8pt; ; FILTER: expression((screen.colorDepth > 8) ? "progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#F7FAFF, endColorstr=#9EBFF6)" : ""); BORDER-LEFT: 1px solid; WIDTH: 100%; COLOR: windowtext; BORDER-BOTTOM: 1px solid; FONT-FAMILY: Tahoma, Arial, Helvetica
+}
+.TabCell {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma, Arial, Helvetica
+}
+.TabCellHighlight {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 8pt; BORDER-LEFT: 0px; CURSOR: hand; LINE-HEIGHT: 1.6em; BORDER-BOTTOM: 0px; FONT-FAMILY: Tahoma, Arial, Helvetica; BACKGROUND-COLOR: transparent; TEXT-ALIGN: center
+}
+.TabCellHighlightCollapsed {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 8pt; BORDER-LEFT: 0px; CURSOR: hand; LINE-HEIGHT: 1.6em; BORDER-BOTTOM: 0px; FONT-FAMILY: Tahoma, Arial, Helvetica; BACKGROUND-COLOR: transparent; TEXT-ALIGN: center
+}
+.TabCellHover {
+	FONT-SIZE: 8pt; CURSOR: hand
+}
+.TabInputButton {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 8pt; BORDER-LEFT: 0px; COLOR: #003399; BORDER-BOTTOM: 0px; FONT-FAMILY: Tahoma, Arial, Helvetica; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+.TabPage {
+	MARGIN-TOP: 1.25em; FONT-SIZE: 8pt; MARGIN-LEFT: 1.25em; MARGIN-RIGHT: 1.25em
+}
+.TabPageContainer {
+	BORDER-RIGHT: #d1d8e9 1px solid; FONT-SIZE: 8pt; Z-INDEX: -1; OVERFLOW: hidden; BORDER-LEFT: #d1d8e9 1px solid; WIDTH: 100%; BORDER-BOTTOM: #d1d8e9 1px solid; FONT-FAMILY: Tahoma, Arial, Helvetica; BACKGROUND-COLOR: #e7efff
+}
+.TabSelected {
+	BORDER-RIGHT: #2254b1 1px solid; BORDER-TOP: #2254b1 1px solid; FONT-SIZE: 8pt; BORDER-LEFT: #2254b1 1px solid; BORDER-BOTTOM: #2254b1 1px solid; FONT-FAMILY: Tahoma, Arial, Helvetica; BACKGROUND-COLOR: #fee197
+}
+.TabSpacer {
+	FONT-SIZE: 8pt; WIDTH: 0.15em
+}
+.TabTopBorder {
+	PADDING-RIGHT: 4px; MARGIN-TOP: 3px; PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 1px; PADDING-BOTTOM: 1px; WIDTH: 100%; COLOR: #ffffff; PADDING-TOP: 1px; FONT-FAMILY: Tahoma; HEIGHT: 4px; ; BACKGROUND-COLOR: expression((screen.colorDepth > 8) ? "#6275A2" : "#336699")
+}
+.TabUnselected {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 1px; BORDER-TOP: 0px; PADDING-LEFT: 1px; FONT-SIZE: 8pt; PADDING-BOTTOM: 1px; BORDER-LEFT: 0px; PADDING-TOP: 1px; BORDER-BOTTOM: 0px; FONT-FAMILY: Tahoma, Arial, Helvetica
+}
+.TaskPart_ActionBar {
+	BORDER-RIGHT: #dedede 2px solid; PADDING-RIGHT: 0px; BORDER-TOP: #b0b0b0 1px solid; PADDING-LEFT: 0px; BACKGROUND: #eaeaea; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+.TaskPart_ActionBar TABLE {
+	WIDTH: 100%
+}
+.TaskPart_ActionBar TD {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; COLOR: #6d7b8e; PADDING-TOP: 0px; FONT-FAMILY: Tahoma; TEXT-ALIGN: center
+}
+.TaskPart_ActionBar A {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: black; FONT-FAMILY: Tahoma; TEXT-DECORATION: none
+}
+.TaskPart_ActionBar A:hover {
+	TEXT-DECORATION: underline
+}
+.TaskPart_ActionBar IMG {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; VERTICAL-ALIGN: middle; BORDER-LEFT: medium none; MARGIN-RIGHT: 5px; BORDER-BOTTOM: medium none
+}
+.TaskPart_ActionBar INPUT {
+	VERTICAL-ALIGN: middle
+}
+.AppStatusWP_Table {
+	BORDER-RIGHT: #566992 1px solid; BORDER-TOP: #566992 1px solid; BACKGROUND: white; BORDER-LEFT: #566992 1px solid; BORDER-BOTTOM: #566992 1px solid
+}
+.AppStatusWP_Table IMG {
+	VERTICAL-ALIGN: middle
+}
+.AppStatusWP_Table TH {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #8f9fbf; COLOR: white; FONT-FAMILY: Tahoma
+}
+.AppStatusWP_InnerTable {
+	BORDER-RIGHT: #a3a3a3 1px solid; BORDER-TOP: #a3a3a3 1px solid; BORDER-LEFT: #a3a3a3 1px solid; WIDTH: 100%; BORDER-BOTTOM: #a3a3a3 1px solid
+}
+.AppStatusWP_InnerTable TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 11px; BACKGROUND: #eaeaea; PADDING-BOTTOM: 5px; COLOR: black; PADDING-TOP: 5px; FONT-FAMILY: Tahoma; TEXT-ALIGN: left
+}
+.AppStatusWP_InnerTable TD {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 12px; PADDING-BOTTOM: 10px; VERTICAL-ALIGN: top; COLOR: #62709c; PADDING-TOP: 10px; FONT-FAMILY: arial
+}
+.SRSectionContainer {
+	PADDING-TOP: 1em
+}
+.SRSectionTable {
+	BORDER-TOP: blue 1px solid
+}
+.SRSectionName {
+	FONT-WEIGHT: bold; PADDING-BOTTOM: 0.5em; COLOR: blue; PADDING-TOP: 0.25em
+}
+.SRSectionDescription {
+	FONT-SIZE: 8pt; PADDING-BOTTOM: 0.5em; FONT-STYLE: italic
+}
+.SRToolbarImgBtn {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 100%; BORDER-LEFT: 0px; WIDTH: 26px; CURSOR: hand; BORDER-BOTTOM: 0px; FONT-FAMILY: Tahoma, Arial, Helvetica; BACKGROUND-COLOR: transparent
+}
+.SRToolbarTextImageButton {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 9.25pt; BORDER-LEFT: 0px; WIDTH: 26px; CURSOR: hand; BORDER-BOTTOM: 0px; FONT-FAMILY: Elephant, "Times New Roman", Tahoma, Arial; BACKGROUND-COLOR: transparent
+}
+.SRToolbarContainer {
+	VISIBILITY: visible; HEIGHT: 21px
+}
+.SRSectionText {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-SIZE: 8pt; BORDER-LEFT: black 1px solid; WIDTH: 100%; BORDER-BOTTOM: black 1px solid; HEIGHT: 100px
+}
+.clsFixedPitchSelect {
+	FONT-SIZE: 115%; FONT-FAMILY: "Lucida Console", Courier
+}
+.SrSentText {
+	PADDING-LEFT: 1em; PADDING-BOTTOM: 1em
+}
+.SrDateSubhead {
+	FONT-WEIGHT: bold; PADDING-BOTTOM: 0.5em; COLOR: orange; PADDING-TOP: 0.5em
+}
+.XmlGridNonWorkingDay {
+	BACKGROUND-COLOR: #f8f8ff
+}
+.XmlGridPlannedWork {
+	BACKGROUND-COLOR: #fffff0
+}
+.XmlGridOverTimeWork {
+	BACKGROUND-COLOR: #fffcea
+}
+.XmlGridNonBillableRegularWork {
+	BACKGROUND-COLOR: #f4f4ce
+}
+.XmlGridNonBillableOvertimeWork {
+	BACKGROUND-COLOR: #f0f0d0
+}
+.pwaTabStrip {
+	BACKGROUND-IMAGE: url(/_layouts/pwa/images/PwaTabStrip.gif); COLOR: #5e6537; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #d2daa6
+}
+.pwaTabStripRow {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; HEIGHT: 28px
+}
+.pwaTabStripTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt
+}
+.pwaTabStripBanner {
+	WIDTH: 100%; HEIGHT: 4px; BACKGROUND-COLOR: #ffd275
+}
+.pwaTabDivider {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 8pt
+}
+.pwaTabCell {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 8pt; VERTICAL-ALIGN: middle
+}
+.pwaTabCellSelected {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 8pt; BACKGROUND-IMAGE: url(/_layouts/pwa/images/PwaTabCellSelected.gif); VERTICAL-ALIGN: middle; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #fddd98
+}
+.pwaTabCellHover {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; VERTICAL-ALIGN: middle; BACKGROUND-COLOR: #ffeec2
+}
+.pwaTabLink {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: black; TEXT-DECORATION: none
+}
+.pwaTabLinkImageDisabled {
+	FILTER: Gray alpha(opacity=35)
+}
+.pwaTabViewSelectorContainer {
+	FONT-SIZE: 8pt
+}
+.pwaTabViewSelectorLabel {
+	FONT-SIZE: 8pt; COLOR: #697042
+}
+.pwaTabPageContainer {
+	BORDER-TOP: #ffd275 4px solid; VERTICAL-ALIGN: top
+}
+.pwaTabPage {
+	BORDER-RIGHT: #a2a9bd 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #a2a9bd 1px solid; PADDING-LEFT: 10px; FONT-SIZE: 8pt; PADDING-BOTTOM: 10px; BORDER-LEFT: #a2a9bd 1px solid; WIDTH: 100%; COLOR: windowtext; PADDING-TOP: 10px; BORDER-BOTTOM: #a2a9bd 1px solid; HEIGHT: 100%; BACKGROUND-COLOR: #f2f2f2
+}
+TABLE.WebPartPropertyPanel TD {
+	PADDING-RIGHT: 20px
+}
+TABLE.WebPartPropertyPanel LABEL {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.lwpAlert {
+	BORDER-RIGHT: #ff0000 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #ff0000 1px solid; PADDING-LEFT: 10px; FONT-SIZE: 10pt; PADDING-BOTTOM: 10px; BORDER-LEFT: #ff0000 1px solid; WIDTH: 100%; COLOR: windowtext; PADDING-TOP: 10px; BORDER-BOTTOM: #ff0000 1px solid
+}
+.DlgMainTable {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 5px; BORDER-TOP: 0px; PADDING-LEFT: 5px; BACKGROUND: #d6e8ff; PADDING-BOTTOM: 5px; BORDER-LEFT: 0px; WIDTH: 100%; PADDING-TOP: 5px; BORDER-BOTTOM: 0px; HEIGHT: 100%
+}
+.DlgContainer {
+	BACKGROUND: #f2f8ff; VERTICAL-ALIGN: top; HEIGHT: 100%; TEXT-ALIGN: center
+}
+.CustomFilterButton {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; MARGIN: 0px; BORDER-LEFT: 0px; WIDTH: 16px; CURSOR: hand; BORDER-BOTTOM: 0px; HEIGHT: 16px; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+.CustomFilterButtonImage {
+	WIDTH: 16px; HEIGHT: 16px
+}
+.AssnDetails_HeaderStatusText {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #ff0000; FONT-FAMILY: Arial
+}
+.MyWork_TopTabStrip {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #47588b; FONT-FAMILY: Arial
+}
+.MyWork_TopTabStrip TD {
+	BORDER-RIGHT: #687cac 2px solid; BORDER-TOP: #687cac 2px solid; BORDER-LEFT: #687cac 2px solid
+}
+.MyWork_TopTabStrip A {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; BACKGROUND: #eaeaea; COLOR: #47588b; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.MyWork_TopTabStrip A:hover {
+	BACKGROUND: white; COLOR: #98a4c8
+}
+.MyWork_ZoneTable {
+	BORDER-RIGHT: #536893 2px solid; BORDER-TOP: #536893 2px solid; BACKGROUND: #7083ac; BORDER-LEFT: #536893 2px solid; BORDER-BOTTOM: #536893 2px solid
+}
+.MyWork_TopMenuPane TD {
+	COLOR: white; FONT-FAMILY: Arial
+}
+.MyWork_TopMenuTitle {
+	PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: white
+}
+.MyWork_MainZoneTable {
+	BACKGROUND: white
+}
+.MyWork_FilterOps {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #e0e0e0; FONT-FAMILY: Arial
+}
+.MyWork_FilterOps IMG {
+	MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px
+}

@@ -1,0 +1,24 @@
+.MenuGroup
+{
+	padding: 0px;
+}
+
+.MenuItem
+{ 
+	padding: 0px;
+	cursor:default;    
+}
+
+.MenuItemOver
+{ 
+	cursor:hand;	
+}
+
+
+
+.Separator
+{
+	background-color:white; 
+	margin-left: 10px;
+	margin-right: 10px;
+}

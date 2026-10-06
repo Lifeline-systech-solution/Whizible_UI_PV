@@ -1,0 +1,12 @@
+TD.Locked, TH.Locked
+
+{
+
+background-color: #D3E4FB;
+
+font-weight: bold;
+
+border-right: 1px solid silver;
+
+}
+

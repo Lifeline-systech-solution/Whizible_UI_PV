@@ -1,0 +1,408 @@
+﻿LI {
+	MARGIN-TOP: 3px; FONT-SIZE: 83%; MARGIN-LEFT: 3px; FONT-FAMILY: arial, verdana, helvetica, lucida, sans-serif
+}
+
+LI LI {
+	FONT-SIZE: 100%
+}
+
+#nav {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 15px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 12px; 
+}
+#nav LI {
+	PADDING-BOTTOM: 10px; LIST-STYLE-TYPE:none;
+}
+#nav LI.selected A {
+	FONT-WEIGHT: bold; COLOR: #333; TEXT-DECORATION: none
+}
+.tr {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; 
+VERTICAL-ALIGN: top; WIDTH: 4px; PADDING-TOP: 0px; TEXT-ALIGN: right
+}
+/*A:link {
+	COLOR: #0000cc
+}
+A.blue {
+	COLOR: #0000cc
+}
+A.blue:visited {
+	COLOR: #0000cc
+}
+A:visited {
+	COLOR: #551a8b
+}*/
+/*.br {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; 
+VERTICAL-ALIGN: bottom; WIDTH: 4px; PADDING-TOP: 0px; TEXT-ALIGN: right
+}*/
+.header1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+
+a.clstagGroup
+{
+    /*COLOR: #3D5FA3;*/
+	COLOR: black;
+    BORDER-RIGHT: #C0C0FF 1px outset; 
+    BORDER-TOP: #C0C0FF 1px outset;
+    BORDER-LEFT: #C0C0FF 1px outset;
+    BORDER-BOTTOM: #C0C0FF 1px outset; 
+	PADDING-RIGHT: 4px;
+    PADDING-LEFT: 0px;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    PADDING-BOTTOM: 4px;
+    MARGIN: 0px 0px 0px 0px;
+    LINE-HEIGHT: 11px;
+    PADDING-TOP: 4px;
+    POSITION: relative;
+    HEIGHT: 20px;
+    width: 100%;
+    TEXT-DECORATION: none;
+	background:  #C0C0FF;
+	cursor:default;/* Added By Shrikant on 1 July 2008 ReqID WAF3_PB_64*/
+	
+	
+	
+}
+
+
+   SPAN.ProjectSpan {
+	BORDER-RIGHT: #000 1px solid ; 
+	PADDING-RIGHT: 3px; 
+	BORDER-TOP:  #000 1px solid ; 
+	PADDING-LEFT: 10px; 
+	BACKGROUND: #484848;
+	PADDING-BOTTOM: 0px; 
+	BORDER-LEFT:  #000 1px solid ; 
+	COLOR: #fff; 
+	PADDING-TOP: 0px; 
+	BORDER-BOTTOM:  #000 1px solid ;
+	background-image:url(../../Images/demoChartBg12.gif);
+	cursor:hand;
+	font-size:15;
+	color:Black ;
+	vertical-align:middle ; 
+	height:50px;
+	width:375px
+   }
+
+a.navtabFilter
+{
+    /*COLOR: #3D5FA3;*/
+	COLOR: white;
+    BORDER-RIGHT: black 1px outset; BORDER-TOP: black 1px outset;BORDER-LEFT: black 1px outset; BORDER-BOTTOM: black 1px outset; 
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    PADDING-BOTTOM: 4px;
+    MARGIN: 1px 0px 0px 0px;
+    LINE-HEIGHT: 11px;
+    PADDING-TOP: 4px;
+    POSITION: relative;
+    text-align:left;  
+    /*HEIGHT: 5px;*/
+    width: 120px;
+    TEXT-DECORATION: none;
+	background:  white;
+	cursor:hand;/* Added By Shrikant on 1 July 2008 ReqID WAF3_PB_64*/
+}
+
+div.cxtMenu
+{
+	border-right: black 1px outset ;
+	border-top: black 1px outset;
+	font-weight: lighter;
+	font-size: 10px;
+	z-index: 20;
+	border-left: black 1px outset;
+	border-bottom: black 1px outset;
+	font-family: Verdana, Arial, sans-serif;
+	background:  white;/*#f7f7f7;*/
+	position: absolute;
+}
+div.transparent 
+{
+	
+    background-color: E0EFFF;
+	color: #000000;
+	background-repeat: repeat;
+	SCROLLBAR-FACE-COLOR: E0EFFF; 
+	SCROLLBAR-HIGHLIGHT-COLOR: E0EFFF; 
+	SCROLLBAR-SHADOW-COLOR: E0EFFF; 
+	SCROLLBAR-ARROW-COLOR: #3D5FA3; 
+	SCROLLBAR-TRACK-COLOR: transparent; 
+	SCROLLBAR-BASE-COLOR: #E0E7EF; 
+	scrollbar-darkshadow-color: E0EFFF;
+	scrollbar-3dLight-Color: E0EFFF;
+    
+ 
+}
+
+
+/* ######### CSS for Shade Tabs. ######### */
+
+.shadetabs{
+margin-left: 0px;
+margin-top: 1px;
+margin-bottom: 5px;
+font: 14px  Verdana, Arial;
+list-style-type: none;
+text-align: right; /*set to left, center, or right to align the menu as desired*/
+text-decoration:none;
+}
+
+.shadetabs li{
+margin: 0;
+text-decoration:none;
+}
+
+.shadetabs li a{
+position: relative;
+z-index: 100;
+padding: 3px 0px -20px 0px;
+height:60;
+width:10;
+vertical-align:middle;
+margin-right: 0px;
+margin-left: 0px;
+color: #2d2b2b;
+font: 12px Verdana,Arial;
+}
+
+.shadetabs li a:visited{
+color: #2d2b2b;
+font: 12px Verdana;
+
+}
+
+.shadetabs li a:hover{
+font: 12px Verdana;
+background-image: none;
+background-color: #FF8C00 ;
+}
+
+.shadetabs li a.selected{ /*selected main tab style */
+position: relative;
+top: 1px;
+background-image:none;
+font: 13px Verdana;
+border: solid 1px black;
+border-right :1px solid white;
+background-color:#FF8C00;
+}
+
+.shadetabs li a.selected:visited{ /*selected main tab style */
+background-image: none;
+color:black;
+font: 13px Verdana;
+}
+
+.shadetabs li a.selected:hover{ /*selected main tab style */
+border-right-color: white;
+}
+
+.tabcontent{
+display:none;
+text-decoration:none
+}
+
+@media print {
+.tabcontent {
+display:block !important;
+text-decoration:none
+}
+}
+
+	
+
+.tabview{
+margin-left: 0px;
+margin-top: 1px;
+margin-bottom: 5px;
+font: 14px  Verdana, Arial;
+list-style-type: none;
+text-align:center ; /*set to left, center, or right to align the menu as desired*/
+text-decoration:none;
+display:inline ;
+}
+
+.tabview li
+{
+display: inline;
+margin: 0;
+text-decoration:none;
+text-align:center ;
+}
+
+.tabview li a{
+position: relative;
+z-index: 100;
+padding: 0px 1px 0px 1px;
+height:20;
+width:160;
+vertical-align:middle;
+margin-right: 0px;
+margin-left: 0px;
+color: #2d2b2b;
+font: 11px Verdana,Arial;
+text-align:center ;
+}
+
+.tabview li a:visited{
+color: #2d2b2b;
+font: 11px Verdana;
+
+}
+
+.tabview li a:hover{
+font: 11px Verdana;
+background-image: none;
+background-color: white ;
+}
+
+.tabview li a.selectedtab{ /*selected main tab style */
+position: relative;
+top: 1px;
+background-image:none;
+font: 12px Verdana;
+border: solid 1px black;
+border-bottom :1px solid white;
+background-color:white;
+}
+
+.tabview li a.selected:visited{ /*selected main tab style */
+background-image: none;
+color:black;
+font: 13px Verdana;
+}
+
+.tabview li a.selected:hover{ /*selected main tab style */
+border-bottom-color: white;
+}
+
+/* added By purvaj on 24 Jul 2009 Show selected module in orange color*/
+
+/* Commented By Vaijat K on 29/09/2016 For Dynamic Theme
+TR.clsTRMenuMouseOver
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-weight: bolder;
+	font-size: 8pt;
+	background: url('../../Images/Home/MenuSelected.gif');
+    background-image: url('../../Images/Home/MenuSelected.gif'); 
+	padding-bottom: 2pt;
+	margin: 2pt;
+	color: black;
+	padding-top: 2pt;
+	font-family: Arial, Verdana;
+	height: 15px;
+}
+    */
+a.clsLinkHome
+{
+	COLOR: #003091;
+    TEXT-DECORATION: none;
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Tahoma;
+    /*POSITION: relative;  */
+    text-decoration:none;
+    vertical-align:bottom ;
+    text-align:right;
+    /*z-index:100;*/
+    border: #C0C0FF 1px outset;
+    padding: 1px 2px 2px 2px;
+    background:  white;
+}
+
+TD.clsTopLeftCorner_Home
+{
+	width: 14px;
+	height: 14px;
+	background-image: url(../../Images/Home/rounded_corner1.gif); 
+	background-repeat:no-repeat; 
+}
+
+TD.clsTopRightCorner_Home
+{
+	width: 14px;
+	height: 14px;
+	background-image: url(../../Images/Home/rounded_corner2.gif); 
+	background-repeat:no-repeat; 
+	
+}
+TD.clsBottomLeftCorner_Home
+{
+	width: 14px;
+	height: 14px;
+	background-image: url(../../Images/Home/rounded_corner4.gif); 
+	background-repeat:no-repeat; 
+}
+
+TD.clsBottomRightCorner_Home
+{
+	width: 14px;
+	height: 14px;
+	background-image: url(../../Images/Home/rounded_corner3.gif); 
+	background-repeat:no-repeat; 
+	
+}
+
+
+TR.cSelected
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #FFD695;
+	
+}
+/*End addition purvaj*/
+
+div.clsInfoNote
+{
+	border-right: black 1px outset;
+	border-top: black 1px outset;
+	font-weight: lighter;
+	font-size: 8pt;
+	z-index: 20;
+	background:lightyellow; /* #f7f7f7;*/
+	border-left: black 1px outset;
+	border-bottom: black 1px outset;
+	font-family: Verdana, Arial;
+	
+	/*position: relative;*/
+}
+
+TR.clsTRNote
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background: lightyellow ;
+}

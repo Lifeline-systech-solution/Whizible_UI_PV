@@ -1,0 +1,503 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//EN'><HTML><HEAD>
+<TITLE>Concurrency Test</TITLE>
+<meta name='GENERATOR' content='Microsoft Visual Studio.NET 7.0'>
+<meta name='CODE_LANGUAGE' content='Visual Basic 7.0'>
+<meta name='vs_defaultClientScript' content='JavaScript'>
+<meta name='vs_targetSchema' content='http://schemas.microsoft.com/intellisense/ie5'>
+<meta http-equiv="Cache-Control" CONTENT="no-cache">
+<meta http-equiv="Pragma" CONTENT="no-cache">
+<link rel='stylesheet' type='text/css' href='../General/StyleSheetChanakya_BrickRed.css'/>
+<link id='lnkWhizStyleSheetImgDir' type='text/plain' href='../../images/BrickRed/'/>
+<script language='javascript' src='../General/CommonFunctions.js'></script>
+<script language='javascript' src='../General/CommonValidations.js'></script>
+
+<SCRIPT Language=javascript>
+var blnShowNavigationAlert = false;
+var strControlsToExcludeFrmNavigationAlert='';
+var blnNavigate = null;
+var strContainerDivs='';
+
+</SCRIPT>
+<!--  Font Installer Code  -->
+<OBJECT classid="CLSID:6B75915E-2E66-46B9-B2C1-F6CED11B872A" codeBase="../../IE/Cab/DVDataU.Cab" 
+id=DGInstaller1 style="LEFT: 0px; TOP: 0px" VIEWASTEXT>
+
+<PARAM NAME="_Version" VALUE="65536">
+<PARAM NAME="_ExtentX" VALUE="2646">
+<PARAM NAME="_ExtentY" VALUE="1323">
+<PARAM NAME="_StockProps" VALUE="0">
+</OBJECT>
+
+<OBJECT classid=CLSID:5220cb21-c88d-11cf-b347-00aa00a28331 id=Microsoft_Licensed_Class_Manager_1_0>
+<PARAM NAME="LPKPath" VALUE="../../IE/iPluginU.lpk">
+</OBJECT>
+
+
+<!--iPlugin-->
+<OBJECT id=IPlugin1 style="LEFT: 0px; TOP: 0px" codeBase=../../IE/Cab/iPluginU.cab
+classid=clsid:863F1335-1E76-4E41-BA34-CDAFCCE6F561 name=IPlugin1 VIEWASTEXT>
+
+<PARAM NAME="_Version" VALUE="65536">
+<PARAM NAME="_ExtentX" VALUE="2646">
+<PARAM NAME="_ExtentY" VALUE="1323">
+<PARAM NAME="_StockProps" VALUE="0">
+<PARAM NAME="KeyBoard" VALUE="">
+<PARAM NAME="Script" VALUE="">
+<PARAM NAME="ScriptKey" VALUE="">
+</OBJECT>
+
+<!--Tool bar-->
+<OBJECT classid=clsid:A4831898-C67F-4E66-9D2E-739AD89A1CC7	codeBase=../../IE/Cab/iToolbar.Cab id=Toolbar name=Toolbar style="LEFT: 0px; TOP: 0px" VIEWASTEXT>
+<PARAM NAME="_Version" VALUE="131072">
+<PARAM NAME="_ExtentX" VALUE="2646">
+<PARAM NAME="_ExtentY" VALUE="1323">
+<PARAM NAME="_StockProps" VALUE="0">
+</OBJECT>
+</HEAD>
+<BODY style='overflow:auto;' class='clsPageBody' onload='CP_window_onload()' onresize='CP_window_onresize()'  onresize='CL_window_onresize()' onkeyup='try{OnBodyKeyUp(event);} catch(e){}' ><FORM  id='frmCommonPage' name='frmCommonPage'  method=post><INPUT type=hidden id='MasterTagID' name='MasterTagID' value='1959'><INPUT type=hidden id='ParentTagID' name='ParentTagID' value='0'><INPUT type=hidden id='FromWhere' name='FromWhere' value='PRO'><INPUT type=hidden id='FromCL' name='FromCL' value='1'><INPUT type=hidden id='EmployeeID_PK' name='EmployeeID_PK' value='107'><INPUT type=hidden id='PagingAlphabet' name='PagingAlphabet' value='-1'><INPUT type=hidden id='ForeignKey' name='ForeignKey' value=''><INPUT type=hidden id='SubTagFromCL' name='SubTagFromCL' value=''><INPUT type=hidden id='STAccessFirstTime' name='STAccessFirstTime' value='0'><Input  Type=Textbox  name="thisIsADummyControl" id="thisIsADummyControl" class='clsTextBox' style=' display:none;  ; text-align:Left' value="" TabIndex=-1 ><Input Type='hidden' id='PKToken' name='PKToken' value='t/nP0iotDlVGd4DxIqR1Q'><Table border=0 cellspacing=0 cellpadding=0 width='99.9%' class='clsTable' ><TR class='clsTRMenu'><TD align=left> <A  style='TEXT-DECORATION:NONE ; FONT-SIZE: 9px; TEXT-DECORATION: underline; cursor:pointer;' onmousemove="this.style.color='blue'" onmouseout="this.style.color='black'" onclick="Javascript:" Title="You are currently on the first record." onmouseover="window.status='You are currently on the first record.';return true;" onmouseout="window.status=' ';return true;"><Img Border=0 src='../../Images/NavFirstDisable.gif'></A><A  style='TEXT-DECORATION:NONE ; FONT-SIZE: 9px; TEXT-DECORATION: underline; cursor:pointer;' onmousemove="this.style.color='blue'" onmouseout="this.style.color='black'" onclick="Javascript:" Title="You are currently on the first record." onmouseover="window.status='You are currently on the first record.';return true;" onmouseout="window.status=' ';return true;"><Img Border=0 src='../../Images/NavPreviousDisable.gif'></A><A  style='TEXT-DECORATION:NONE ; FONT-SIZE: 9px; TEXT-DECORATION: underline; cursor:pointer;' onmousemove="this.style.color='blue'" onmouseout="this.style.color='black'" onclick="Javascript:" Title="You are currently on the last record." onmouseover="window.status='You are currently on the last record.';return true;" onmouseout="window.status=' ';return true;"><Img Border=0 src='../../Images/NavNextDisable.gif'></A><A  style='TEXT-DECORATION:NONE ; FONT-SIZE: 9px; TEXT-DECORATION: underline; cursor:pointer;' onmousemove="this.style.color='blue'" onmouseout="this.style.color='black'" onclick="Javascript:" Title="You are currently on the last record." onmouseover="window.status='You are currently on the last record.';return true;" onmouseout="window.status=' ';return true;"><Img Border=0 src='../../Images/NavLastDisable.gif'></A></TD><TD align=right ><A  class='Menu' style='TEXT-DECORATION:NONE' onmouseover="this.style.backgroundColor='#FFD695'" onmouseout="this.style.backgroundColor=''"  onclick="Javascript:Save_OnClick()" Title="Save     F2" id='SAVEUI_HEAD0-1959'> | <Img Border=0 src='../../Images/cssImages/Link images/save.gif'>&nbsp;Save</A><A  class='Menu' style='TEXT-DECORATION:NONE' onmouseover="this.style.backgroundColor='#FFD695'" onmouseout="this.style.backgroundColor=''"  onclick="Javascript:SaveAdd_OnClick()" Title="Save and Add     F9" id='SAVE_ADDUI_HEAD0-1959'> | <Img Border=0 src='../../Images/cssImages/Link images/saveadd.gif'>&nbsp;Save and Add</A><A  class='Menu' style='TEXT-DECORATION:NONE' onmouseover="this.style.backgroundColor='#FFD695'" onmouseout="this.style.backgroundColor=''"  onclick="Javascript:Back_OnClick()" Title="Back     F12" id='BACKUI_HEAD0-1959'> | <Img Border=0 src='../../Images/cssImages/Link images/back.gif'>&nbsp;Back</A><A  class='Menu' style='TEXT-DECORATION:NONE' onmouseover="this.style.backgroundColor='#FFD695'" onmouseout="this.style.backgroundColor=''"  onclick="Javascript:DesignMode(&quot;107&quot;)" Title="Open in User Mode     Alt + J" id='DesignModeUI_HEAD0-1959'> | <Img Border=0 src='../../Images/cssImages/Link images/UserWebForm.gif'>&nbsp;Open in User Mode</A><A  class='Menu' style='TEXT-DECORATION:NONE' onmouseover="this.style.backgroundColor='#FFD695'" onmouseout="this.style.backgroundColor=''"  onclick="Javascript:Configure_OnClick()" Title="Configure     Alt + K" id='CONFIGUREUI_HEAD0-1959'> | <Img Border=0 src='../../Images/cssImages/Link images/config.gif'>&nbsp;Configure</A><A  class='Menu' style='TEXT-DECORATION:NONE' onmouseover="this.style.backgroundColor='#FFD695'" onmouseout="this.style.backgroundColor=''"  onclick="Javascript:OpenHelpPage(1959)" Title="Help     Shift + F12" id='HELPUI_HEAD0-1959'> | <Img Border=0 src='../../Images/cssImages/Link images/help.gif'>&nbsp;Help</A> |<a id='TagDesignMode' name='TagDesignMode' href="javascript:OpenProperties('ACTIONLINKPROPERTIES',1959,'','Tag','','')" style='TEXT-DECORATION:none' title="Configure" >&nbsp;<Img src='../../Images/cssImages/Link Images/Configure.gif' height=11 border=0></a></TD></TR></TABLE>
+<SCRIPT Language=javascript>
+
+</SCRIPT>
+
+<SCRIPT Language=javascript>
+function Save_OnClick()
+{
+strFunctionCallFromDisallowDuplicatesUsingAjax='Save_OnClick()'; 
+
+if (!ValidateForm_HeaderSection()) { return;}
+
+EnableControlsHeaderSection();
+var L1 = GetObjectReference('frmCommonPage','SAVEUI_HEAD0-1959');if (L1 != null) { L1.style.display= "none";}var L2 = GetObjectReference('frmCommonPage','SAVE_ADDUI_HEAD0-1959');if (L2 != null) { L2.style.display= "none";}var L3 = GetObjectReference('frmCommonPage','SAVE_CLOSEUI_HEAD0-1959');if (L3 != null) { L3.style.display= "none";}var L1 = GetObjectReference('frmCommonPage','SAVEUI_FOOT0-1959');if (L1 != null) { L1.style.display= "none";}var L2 = GetObjectReference('frmCommonPage','SAVE_ADDUI_FOOT0-1959');if (L2 != null) { L2.style.display= "none";}var L3 = GetObjectReference('frmCommonPage','SAVE_CLOSEUI_FOOT0-1959');if (L3 != null) { L3.style.display= "none";}
+objfrm.action="CommonPage.aspx?Operation=SAVE&Mode=&EmployeeID=107&PKToken=t/nP0iotDlVGd4DxIqR1Q&MasterTagID=1959&FromWhere=PRO&PagingAlphabet=-1&AccessFirstTime=0&ParentTagID=0&PagingNumber=1"
+blnNavigate = false;
+
+ShowModalDlgWait("Processing... Please wait !!");
+
+objfrm.submit()
+
+}
+function SaveAdd_OnClick()
+{
+strFunctionCallFromDisallowDuplicatesUsingAjax='SaveAdd_OnClick()'; 
+
+if (!ValidateForm_HeaderSection()) { return;}
+
+EnableControlsHeaderSection();
+var L1 = GetObjectReference('frmCommonPage','SAVEUI_HEAD0-1959');if (L1 != null) { L1.style.display= "none";}var L2 = GetObjectReference('frmCommonPage','SAVE_ADDUI_HEAD0-1959');if (L2 != null) { L2.style.display= "none";}var L3 = GetObjectReference('frmCommonPage','SAVE_CLOSEUI_HEAD0-1959');if (L3 != null) { L3.style.display= "none";}var L1 = GetObjectReference('frmCommonPage','SAVEUI_FOOT0-1959');if (L1 != null) { L1.style.display= "none";}var L2 = GetObjectReference('frmCommonPage','SAVE_ADDUI_FOOT0-1959');if (L2 != null) { L2.style.display= "none";}var L3 = GetObjectReference('frmCommonPage','SAVE_CLOSEUI_FOOT0-1959');if (L3 != null) { L3.style.display= "none";}
+objfrm.action="CommonPage.aspx?Operation=SAVE&SubOperation=ADD&Mode=&EmployeeID=107&PKToken=t/nP0iotDlVGd4DxIqR1Q&MasterTagID=1959&FromWhere=PRO&PagingAlphabet=-1&AccessFirstTime=0&ParentTagID=0&PagingNumber=1"
+blnNavigate = false;
+
+ShowModalDlgWait("Processing... Please wait !!");
+
+objfrm.submit()
+
+}
+function Back_OnClick()
+{
+
+if(ShowNavigationAlert()==false) return;
+
+ShowModalDlgWait("Processing... Please wait !!");
+window.location.href="CommonList.aspx?Mode=&EmployeeID=107&PKToken=t/nP0iotDlVGd4DxIqR1Q&MasterTagID=1959&FromWhere=PRO&PagingAlphabet=-1&AccessFirstTime=0&ParentTagID=0&PagingNumber=1"
+
+}
+function DesignMode(intUniqueID)
+{
+
+EnableControlsHeaderSection();
+objfrm.action="CommonPage.aspx?Operation=DYNAMIC_LINK&DYNAMIC_LINK_ID=22170&UniqueValue=" + intUniqueID + "&IsListPageLink=0&Mode=&EmployeeID=107&PKToken=t/nP0iotDlVGd4DxIqR1Q&MasterTagID=1959&FromWhere=PRO&PagingAlphabet=-1&AccessFirstTime=0&ParentTagID=0&PagingNumber=1"
+if(ShowNavigationAlert()==false) return;
+
+ShowModalDlgWait("Processing... Please wait !!");
+
+objfrm.submit()
+}
+function Configure_OnClick()
+{
+
+window.open ("../SM/PB_PageCanvas.aspx?FromUI=1&FromElement=Tag&MasterTagID=315&FromWhere=SM&TagID=1959", "", "resizable=yes,scrollbars=no,left=" + ((window.screen.width - 950)/2) + ",top=" + ((window.screen.height - 650)/2) + ",width=950,height=650");
+
+}
+
+</SCRIPT>
+<TABLE id='tblPL01959' CellSpacing=0 width='100%' class=clsTable><TR class=clsTRBlank><TD align='right'><B>(<IMG src="../../Images/Star.gif" border=0> Mandatory)</B></TD></TR></TABLE><TABLE id='tblCap01959'  cellspacing=0 cellpadding=0 Width='99.9%'  class=clsTable><TR class=clsTRPageCaption><TD align=Left>Concurrency Test<a id='TagDesignMode' name='TagDesignMode' href="javascript:OpenProperties('PAGEPROPERTIES',1959,'','Tag','','')" style='TEXT-DECORATION:none' title="Configure" >&nbsp;<Img src='../../Images/cssImages/Link Images/Configure.gif' height=11 border=0></a></TD></TR></TABLE><BR><DIV Id=divPage Style="HEIGHT:500px;OVERFLOW:auto; WIDTH:100%"><DIV Id=divSection1 Style="OVERFLOW:auto; WIDTH:100%;"><TABLE id='tblForm01959' CellSpacing=0 class='clsTable' width='99.9%'><TR class='clsTRBody'></TD></TR><TR class='clsTRBody'><TD title="" valign=top align= right >Employee Name</TD><TD valign=top title="" colspan='5'  >&nbsp;<Input  Type=Textbox  name="EmployeeName" id="EmployeeName" class='clsTextBox' style='width:200px  ; text-align:left' maxlength=200 value="1"  ><IMG src="../../Images/Star.gif" border=0><a id='EmployeeName_PageControl_DesignMode' name='EmployeeName_PageControl_DesignMode' href="javascript:OpenProperties('CONTROLPROPERTIES',1959,'','Tag','EmployeeName','')" style='TEXT-DECORATION:none' title="Configure" >&nbsp;<Img src='../../Images/cssImages/Link Images/Configure.gif' height=11 border=0></a></TD></TR><TR class='clsTRBody'><TD title="" valign=top align= right >Email ID</TD><TD valign=top title="" colspan='5'  >&nbsp;<Input  Type=Textbox  name="EmailID" id="EmailID" class='clsTextBox' style='width:200px  ; text-align:left' maxlength=200 value=""  ><a id='EmailID_PageControl_DesignMode' name='EmailID_PageControl_DesignMode' href="javascript:OpenProperties('CONTROLPROPERTIES',1959,'','Tag','EmailID','')" style='TEXT-DECORATION:none' title="Configure" >&nbsp;<Img src='../../Images/cssImages/Link Images/Configure.gif' height=11 border=0></a></TD></TR><TR class='clsTRBody'><TD title="" valign=top align= right >Role</TD><TD valign=top title="" colspan='5'  >&nbsp;<SELECT    id=RoleId name=RoleId class=clsComboBox style='width:150px ' ><FONT size=1><OPTION value =''></OPTION><OPTION value ="1">سيببسي</OPTION><OPTION selected value ="2">ADMIN</OPTION><OPTION value ="3">DEVELOPER</OPTION><OPTION value ="7">شسيشسي</OPTION><OPTION value ="8">Technical training</OPTION><OPTION value ="9">Technical Support</OPTION><OPTION value ="14">HR1</OPTION></FONT></SELECT><A style="cursor:hand;" onclick="javascript:DisplayLookup('frmCommonPage','RoleId','Role','0','1959','22865','True','','','True')"  Title='Select Role'><IMG src='../../Images/Lookup.gif' id='RoleId' border=0></A><Input  Type=hidden  name="hdRoleId" id="hdRoleId" class='clsTextBox' style='text-align:Left' value="84-72-81-76-76-95-45-97-128-127-122-96-93-59-73-63-115-146-145-140-119-140-154-148-81-121-135-134-134-91-177-161-173-162-138-159-142-170-159-190-189-184-117-174-162-175-165-135-175-178-177-182-172-182-150"  ><a id='RoleId_PageControl_DesignMode' name='RoleId_PageControl_DesignMode' href="javascript:OpenProperties('CONTROLPROPERTIES',1959,'','Tag','RoleId','')" style='TEXT-DECORATION:none' title="Configure" >&nbsp;<Img src='../../Images/cssImages/Link Images/Configure.gif' height=11 border=0></a></TD></TR><TR class='clsTRBody'><TD title="" valign=top align= right >Project</TD><TD valign=top title="" colspan='5'  >&nbsp;<SELECT    id=ProjectID name=ProjectID class=clsComboBox style='width:150px ' ><FONT size=1><OPTION value =''></OPTION><OPTION value ="1">Bhagirath3</OPTION><OPTION value ="2">Support</OPTION><OPTION value ="3">HRMS</OPTION><OPTION value ="4">Strategy</OPTION><OPTION value ="5">ESPMS</OPTION></FONT></SELECT><a id='ProjectID_PageControl_DesignMode' name='ProjectID_PageControl_DesignMode' href="javascript:OpenProperties('CONTROLPROPERTIES',1959,'','Tag','ProjectID','')" style='TEXT-DECORATION:none' title="Configure" >&nbsp;<Img src='../../Images/cssImages/Link Images/Configure.gif' height=11 border=0></a></TD></TR><TR class='clsTRBody'><TD title="" valign=top align= right >Location</TD><TD valign=top title="" colspan='5'  >&nbsp;<SELECT    id=LocationID name=LocationID class=clsComboBox style='width:150px ' ><FONT size=1><OPTION value =''></OPTION><OPTION selected value ="1">&lt;script&gt;alert(1);&lt;/script&gt;</OPTION><OPTION value ="2">Bombay</OPTION><OPTION value ="3">Nashik</OPTION><OPTION value ="4">Chennai</OPTION></FONT></SELECT><a id='LocationID_PageControl_DesignMode' name='LocationID_PageControl_DesignMode' href="javascript:OpenProperties('CONTROLPROPERTIES',1959,'','Tag','LocationID','')" style='TEXT-DECORATION:none' title="Configure" >&nbsp;<Img src='../../Images/cssImages/Link Images/Configure.gif' height=11 border=0></a></TD></TR><TR class='clsTRBody'><TD title="" valign=top align= right >Is On Bench</TD><TD valign=top title="" colspan='5'  >&nbsp;<Input type=checkbox name="IsOnBench" id="IsOnBench" class='clsCheckBox' ><a id='IsOnBench_PageControl_DesignMode' name='IsOnBench_PageControl_DesignMode' href="javascript:OpenProperties('CONTROLPROPERTIES',1959,'','Tag','IsOnBench','')" style='TEXT-DECORATION:none' title="Configure" >&nbsp;<Img src='../../Images/cssImages/Link Images/Configure.gif' height=11 border=0></a></TD></TR><TR class='clsTRBody'><TD title="" valign=top align= right ></TD><TD valign=top title="" colspan='5'  >&nbsp;<A  style=' ; FONT-SIZE: 9px; TEXT-DECORATION: underline; cursor:pointer;' onmousemove="this.style.color='blue'" onmouseout="this.style.color='black'" onclick="Javascript:Hyperlink101959(&quot;&quot;)" Title=""  tabindex="-9999">Mozilla Test</A><a id='Hyperlink1_PageControl_DesignMode' name='Hyperlink1_PageControl_DesignMode' href="javascript:OpenProperties('CONTROLPROPERTIES',1959,'','Tag','Hyperlink1','')" style='TEXT-DECORATION:none' title="Configure" >&nbsp;<Img src='../../Images/cssImages/Link Images/Configure.gif' height=11 border=0></a></TD></TR></TABLE><input type=hidden id="ForeignKeyValue" name="ForeignKeyValue" value="107" /><TABLE class=clsTable cellspacing=0 width='99.9%' cellpadding=0><TR class='clsTRBody'><TD valign=bottom align=right><TABLE  BORDER=0 cellspacing=0   class=clsTable><TR class='clsTRBody'><TD id ="ignoreRight"></TD><TD  id='RecordCountOnTab6028' name='RecordCountOnTab6028'  align=center noWrap Title=""><A id='AncSubTagTab6028' name='AncSubTagTab6028' onmouseover="SetTabBG(this)" onmouseout="ResetTabBG(this)" onclick='JavaScript:MultiInsertSubTabOnClick(&quot;6028&quot;)'  class='clsTabSelected' >Project Details (0)</A></TD></TR></TABLE></TD></TR></TABLE><Table  width='99.9%' class='clsSubTagTable' id='clsSubTagTable6028' name='clsSubTagTable6028' cellspacing='0' ><TR><TD><Table border=0 cellspacing=0 cellpadding=0 width='99.9%' class='clsTable' ><TR class='clsTRMenu'><TD align=right ><script language='javascript' src='../General/DynamicMenu.js'></script><div id='dvMainTbl19596028'><table class=clsTable><tr><td><div id='dvMainMnu19596028' style='position:relative;'><A id='Action19596028' class='Actions' style='TEXT-DECORATION:none'  href="javascript:showmenu('dvMainMnu19596028','dvSubMnu19596028',154,50,4,'divPage','','Action19596028')" onmouseover="javascript:showmenu('dvMainMnu19596028','dvSubMnu19596028',154,50,4,'divPage','','Action19596028')"> Actions <Img src='../../Images/DropdownMenuAction.gif' border=0>&nbsp;</A></div></td><td><a id='SubTagDesignMode' name='SubTagDesignMode' href="javascript:OpenProperties('ACTIONLINKPROPERTIES',1959,6028,'SubTag','','')" style='TEXT-DECORATION:none' title="Configure" >&nbsp;<Img src='../../Images/cssImages/Link Images/Configure.gif' height=11 border=0></a></td></tr></table><div class='DropdownMenu' id='dvSubMnu19596028' style='width:120px'><table id='mMnu19596028' align=center height='100%' width='100%' cellspacing='0' cellpadding='2'><tr class='MenuSelected_Normal' onMouseOver='this.className="MenuSelected_hover"' onmouseout ='this.className="MenuSelected_Normal"' Title="Add     F8" onclick="Javascript:New_OnClick_Tab6028()" id='ADD_NEWLIST_HEAD1959-6028' ><td class='Mn_LeftFill'><Img Border=0 src='../../Images/cssImages/Link images/add.gif'></td><td>&nbsp;Add</td></tr><tr><td class='Mn_LeftFill_hr'></td><td class='Mn_hr'></td></tr><tr class='MenuSelected_Normal' onMouseOver='this.className="MenuSelected_hover"' onmouseout ='this.className="MenuSelected_Normal"' Title="Delete     Delete" onclick="Javascript:Delete_OnClick_Tab6028()" id='DELETELIST_HEAD1959-6028' ><td class='Mn_LeftFill'><Img Border=0 src='../../Images/cssImages/Link images/delete.gif'></td><td>&nbsp;Delete</td></tr><tr class='MenuSelected_Normal' onMouseOver='this.className="MenuSelected_hover"' onmouseout ='this.className="MenuSelected_Normal"' Title="Select All     Shift + F2" onclick="Javascript:SelectAllOnClickTab6028()" id='SELECT_ALLLIST_HEAD1959-6028' ><td class='Mn_LeftFill'><Img Border=0 src='../../Images/cssImages/Link images/selectall.gif'></td><td>&nbsp;Select All</td></tr><tr><td class='Mn_LeftFill_hr'></td><td class='Mn_hr'></td></tr><tr class='MenuSelected_Normal' onMouseOver='this.className="MenuSelected_hover"' onmouseout ='this.className="MenuSelected_Normal"' Title="MultiInset     Alt + I" onclick="Javascript:MultiInsetOnClick6028(&quot;&quot;)" id='MultiInsetOnClickLIST_HEAD1959-6028' ><td class='Mn_LeftFill'><Img Border=0 src='../../Images/cssImages/Link images/multiinset.gif'></td><td>&nbsp;MultiInset</td></tr><tr class='MenuSelected_Normal' onMouseOver='this.className="MenuSelected_hover"' onmouseout ='this.className="MenuSelected_Normal"' Title="Configure     Alt + K" onclick="Javascript:ConfigureOnClickTab6028()" id='CONFIGURELIST_HEAD1959-6028' ><td class='Mn_LeftFill'><Img Border=0 src='../../Images/cssImages/Link images/config.gif'></td><td>&nbsp;Configure</td></tr><tr><td class='Mn_LeftFill_hr'></td><td class='Mn_hr'></td></tr><tr class='MenuSelected_Normal' onMouseOver='this.className="MenuSelected_hover"' onmouseout ='this.className="MenuSelected_Normal"' Title="Help     Shift + F12" onclick="Javascript:OpenHelpPage('1959-6028')" id='HELPLIST_HEAD1959-6028' ><td class='Mn_LeftFill'><Img Border=0 src='../../Images/cssImages/Link images/help.gif'></td><td>&nbsp;Help</td></tr></table></div></div><script lang=javascript>initializemenu('dvMainMnu19596028','dvSubMnu19596028',154,50);</script></TD></TR></TABLE>
+<SCRIPT Language=javascript>
+function New_OnClick_Tab6028()
+{
+
+
+var ControlDef_EProjectID_6028='';
+var ControlDef_CreatedBy_6028='';
+try{ControlDef_EProjectID_6028=document.getElementById('ControlDef_EProjectID_6028').value;} catch (e) {}
+try{ControlDef_CreatedBy_6028=document.getElementById('ControlDef_CreatedBy_6028').value;} catch (e) {}
+AddNewRow_MultiInsertGrid('6028','tblGrid19596028',ControlDef_EProjectID_6028,ControlDef_CreatedBy_6028);
+
+}
+function Delete_OnClick_Tab6028()
+{
+
+
+var blnIsRecordSelected=false;blnIsRecordSelected=IsCheckboxSelected('frmCommonList','chkDelete6028')
+if (blnIsRecordSelected == false) {return;}
+
+if(confirm("Are you sure, you want to delete the selected records?"))
+{
+var table =  document.getElementById('tblGrid19596028');
+var len;
+var Subtract;
+if(document.getElementById('tblGrid19596028_SummaryExists')==null)
+{
+len=table.rows.length;
+Subtract=1;
+}
+else
+{
+len=table.rows.length-1;
+Subtract=2;
+}
+
+var RecordCount=len-1;
+for (var i = 1; i < len; i++) 
+{
+var objDelete;
+if(document.getElementById('ShowDeleteColumnFirst6028').value=='True')
+objDelete=table.rows[i].cells[0].firstChild;
+else
+objDelete=table.rows[i].cells[table.rows[i].cells.length-1].firstChild;
+if(objDelete.checked==true && objDelete.id=='chkDelete6028')
+{
+table.deleteRow(i);
+i=i-1;
+len=len-1;
+}
+}
+
+try
+{
+document.getElementById('RecordCountOnTab6028').innerHTML=document.getElementById('RecordCountOnTab6028').innerHTML.replace('(' + (RecordCount) + ')' ,'(' + (table.rows.length - Subtract) + ')');
+} catch (e) {}
+
+try
+{
+document.getElementById('RecordCountOnGrid6028').innerHTML=document.getElementById('RecordCountOnGrid6028').innerHTML.replace(' :' + (RecordCount) ,' :' + (table.rows.length - Subtract));
+} catch (e) {}
+if(document.getElementById('tblGrid19596028_SummaryExists')!=null)
+SetMultiInsertSubtagSummaryTotal(document.getElementById('tblGrid19596028_SummaryExists').value);
+ResetMultiInsertSubtagControls('19596028');
+
+}
+
+}
+function SelectAllOnClickTab6028()
+{
+
+if(document.getElementsByName('chkDelete6028')==null)
+return;
+var len=document.getElementsByName('chkDelete6028').length;
+for(intCnt = 0;intCnt<len;intCnt++)
+{
+if (document.getElementsByName('chkDelete6028')[intCnt].disabled == false )
+document.getElementsByName('chkDelete6028')[intCnt].checked = true
+}
+
+}
+function MultiInsetOnClick6028(intUniqueID)
+{
+
+if(ShowNavigationAlert()==false) return;
+window.open ("../General/MultiInsetGrid.aspx?MasterTagID=6028&ParentTagID=1959&ConnectionID=&ForeignKeyValue=107", "", "resizable=yes,scrollbars=no,menubar=no,toolbar=no,statusbar=no,left=" + (window.screen.width - 600)/2 + ",top=" + (window.screen.height - 400)/2 + ",width=600,height=400");
+}
+function ConfigureOnClickTab6028()
+{
+
+window.open ("../SM/PB_PageCanvas.aspx?FromUI=1&FromElement=SubTag&MasterTagID=315&FromWhere=SM&SubTagID=6028", "", "resizable=yes,scrollbars=no,left=" + ((window.screen.width - 950)/2) + ",top=" + ((window.screen.height - 650)/2) + ",width=950,height=650");
+
+}
+
+</SCRIPT>
+<BR><div id='divListTag6028' style='overflow:auto;width:99.9%;z-index=2;height:px;'  ><STYLE type=text/css>
+{TABLE 
+{TABLE-LAYOUT: fixed;}
+THEAD TH.divListTag6028 {POSITION: relative;}
+THEAD TH.divListTag6028.locked {POSITION: relative;}
+THEAD TH.divListTag6028 {Z-INDEX: 10; ; TOP:expression(document.getElementById('divListTag6028').scrollTop -1)}
+THEAD TH.divListTag6028.locked {Z-INDEX: 30}
+TH.divListTag6028.locked {Z-INDEX: 10; ; LEFT:expression(document.getElementById('divListTag6028').scrollLeft); POSITION:relative()}
+}
+ </STYLE>
+<STYLE type=text/css>
+{TABLE 
+{TABLE-LAYOUT: fixed;}
+THEAD TH.Sort_divListTag6028 {POSITION: relative;}
+THEAD TH.Sort_divListTag6028.locked {POSITION: relative;}
+THEAD TH.Sort_divListTag6028 {Z-INDEX:10; ; TOP:expression(document.getElementById('divListTag6028').scrollTop -1)}
+THEAD TH.Sort_divListTag6028.locked {Z-INDEX: 30}
+TH.Sort_divListTag6028.locked {Z-INDEX: 10; ; LEFT:expression(document.getElementById('divListTag6028').scrollLeft); POSITION:relative()}
+THEAD TH.Sort_divListTag6028{border-right: thin; padding-right: 1pt; border-top: thin; padding-left: 1pt; font-weight: normal; font-size: 11px; padding-bottom: 1pt; border-left: thin; color: white; padding-top: 1pt; border-bottom: thin; font-family: Verdana, Arial; height: 22px; background: #ECBAB6; background-image: url(../../Images/BrickRed/header.gif);}}
+ </STYLE>
+<STYLE type=text/css>
+{TABLE 
+{TABLE-LAYOUT: fixed;}
+THEAD TH.Separator_divListTag6028 {POSITION: relative;}
+THEAD TH.Separator_divListTag6028.locked {POSITION: relative;}
+THEAD TH.Separator_divListTag6028 {Z-INDEX: 10; ; TOP:expression(document.getElementById('divListTag6028').scrollTop -1)}
+THEAD TH.Separator_divListTag6028.locked {Z-INDEX: 30}
+TH.Separator_divListTag6028.locked {Z-INDEX: 10; ; LEFT:expression(document.getElementById('divListTag6028').scrollLeft); POSITION:relative()}
+THEAD TH.Separator_divListTag6028 {border-right: thin; padding-right: 1pt; border-top: thin; padding-left: 1pt; font-weight: bolder; font-size: 1pt; background-image: none; padding-bottom: 1pt; border-left: thin; width: 1px; color: black; padding-top: 1pt; border-bottom: thin; height: 22px; background-color: #E4A586;}
+}
+ </STYLE>
+<STYLE type=text/css>{
+TABLE {TABLE-LAYOUT: fixed;}
+THEAD TH.divListTag6028_Column {POSITION: relative;}
+THEAD TH.divListTag6028_Column.locked {POSITION: relative;}
+THEAD TH.divListTag6028_Column.locked {Z-INDEX: 30}
+THEAD TH.divListTag6028_Column {Z-INDEX: 20;; TOP: expression(document.getElementById('divListTag6028').scrollTop -1)}
+TH.divListTag6028_Column {Z-INDEX: 10;; LEFT: expression(document.getElementById('divListTag6028').scrollLeft); POSITION:relative()}
+
+ }</STYLE>
+<STYLE type=text/css>{
+TABLE {TABLE-LAYOUT: fixed;}
+THEAD TH.Separator_divListTag6028_Column {POSITION: relative;}
+THEAD TH.Separator_divListTag6028_Column.locked {POSITION: relative;}
+THEAD TH.Separator_divListTag6028_Column.locked {Z-INDEX: 30}
+THEAD TH.Separator_divListTag6028_Column {Z-INDEX: 20;; TOP: expression(document.getElementById('divListTag6028').scrollTop -1)}
+TH.Separator_divListTag6028_Column {Z-INDEX: 10;; LEFT: expression(document.getElementById('divListTag6028').scrollLeft); POSITION:relative()}
+THEAD TH.Separator_divListTag6028 {border-right: thin; padding-right: 1pt; border-top: thin; padding-left: 1pt; font-weight: bolder; font-size: 1pt; background-image: none; padding-bottom: 1pt; border-left: thin; width: 1px; color: black; padding-top: 1pt; border-bottom: thin; height: 22px; background-color: #E4A586;}
+
+ }</STYLE>
+<STYLE type=text/css>{
+TABLE {TABLE-LAYOUT: fixed;}
+THEAD TH.Sort_divListTag6028_Column {POSITION: relative;}
+THEAD TH.Sort_divListTag6028_Column.locked {POSITION: relative;}
+THEAD TH.Sort_divListTag6028_Column.locked {Z-INDEX: 30}
+THEAD TH.Sort_divListTag6028_Column {Z-INDEX: 20;; TOP: expression(document.getElementById('divListTag6028').scrollTop -1)}
+TH.Sort_divListTag6028_Column {Z-INDEX: 10;; LEFT: expression(document.getElementById('divListTag6028').scrollLeft); POSITION:relative()}
+THEAD TH.Sort_divListTag6028_Column {border-right: thin; padding-right: 1pt; border-top: thin; padding-left: 1pt; font-weight: normal; font-size: 11px; padding-bottom: 1pt; border-left: thin; color: white; padding-top: 1pt; border-bottom: thin; font-family: Verdana, Arial; height: 22px; background: #ECBAB6; background-image: url(../../Images/BrickRed/header.gif);}
+ }</STYLE>
+
+<STYLE type=text/css>
+Td.Locked, th.Locked {
+
+left: expression(document.getElementById('divListTag6028').scrollLeft);
+position: relative;
+z-index: 5;
+}
+</STYLE>
+<table id='tblGrid19596028' width='99.9%'  CellSpacing=1 CellPadding=0  class='clsGridTable' ><THead class='clsTRColumnHeader'><TH class='divListTag6028' align='Center'>Project<a id='EProjectID_GridCol_DesignMode' name='EProjectID_GridCol_DesignMode' href="javascript:OpenProperties('CONTROLPROPERTIES',1959,'6028','SubTag','EProjectID','')" style='TEXT-DECORATION:none' title="Configure" >&nbsp;<Img src='../../Images/cssImages/Link Images/Configure.gif' height=11 border=0></a></TH><TH class='divListTag6028' align='Center'>CreatedBy<a id='CreatedBy_GridCol_DesignMode' name='CreatedBy_GridCol_DesignMode' href="javascript:OpenProperties('CONTROLPROPERTIES',1959,'6028','SubTag','CreatedBy','')" style='TEXT-DECORATION:none' title="Configure" >&nbsp;<Img src='../../Images/cssImages/Link Images/Configure.gif' height=11 border=0></a></TH><TH  class='divListTag6028' align='center'>Delete</TH></THead><tr class='clsTROdd' valign=top><Input  Type=hidden  name="EmployeeID" id="EmployeeID" class='clsTextBox' style='text-align:Left' value="107"  ><TD align='Center'  valign='top'  ><SELECT  title=''    id=EProjectID name=EProjectID class=clsComboBox ><FONT size=1><OPTION value =''></OPTION><OPTION value ="1">Bhagirath3</OPTION><OPTION value ="2">Support</OPTION><OPTION selected value ="3">HRMS</OPTION><OPTION value ="4">Strategy</OPTION><OPTION value ="5">ESPMS</OPTION></FONT></SELECT><A Href="#" onclick="DisplayLookup('frmCommonPage','EProjectID','Project','1959','6028','15876','True','','','True',GetContainerRowIndex(this))"  Title='Select Project'><IMG src='../../Images/Lookup.gif' id='EProjectID_LookUp' border=0 /></A><Input  Type=hidden  name="hdEProjectID" id="hdEProjectID" class='clsTextBox' style='text-align:Left' value="84-72-81-76-76-95-45-95-131-130-127-124-124-143-102-99-65-79-117-153-152-149-146-146-165-129-150-164-158-91-131-145-144-144-101-187-171-183-172-148-169-152-180-167-203-202-199-196-196-215-133-190-178-191-181-151-191-194-193-198-188-198-166"  ></TD><TD align='Center'  valign='top'  ><Input  Type=Textbox  name="CreatedBy" id="CreatedBy" class='clsTextBox' style='text-align:left' maxlength=50 value=""  title=''  ><input type='hidden' id='EmployeeProjectId' name='EmployeeProjectId' value='189' /></TD><td  align='Center'  valign='top' ><Input type=checkbox name="chkDelete6028" id="chkDelete6028" class='clsCheckBox' value="189" ></td></tr><tr class='clsTREvenRow' valign=top><Input  Type=hidden  name="EmployeeID" id="EmployeeID" class='clsTextBox' style='text-align:Left' value="107"  ><TD align='Center'  valign='top'  ><SELECT  title=''    id=EProjectID name=EProjectID class=clsComboBox ><FONT size=1><OPTION value =''></OPTION><OPTION selected value ="1">Bhagirath3</OPTION><OPTION value ="2">Support</OPTION><OPTION value ="3">HRMS</OPTION><OPTION value ="4">Strategy</OPTION><OPTION value ="5">ESPMS</OPTION></FONT></SELECT><A Href="#" onclick="DisplayLookup('frmCommonPage','EProjectID','Project','1959','6028','15876','True','','','True',GetContainerRowIndex(this))"  Title='Select Project'><IMG src='../../Images/Lookup.gif' id='EProjectID_LookUp' border=0 /></A><Input  Type=hidden  name="hdEProjectID" id="hdEProjectID" class='clsTextBox' style='text-align:Left' value="84-72-81-76-76-95-45-95-131-130-127-124-124-143-102-99-65-79-117-153-152-149-146-146-165-129-150-164-158-91-131-145-144-144-101-187-171-183-172-148-169-152-180-167-203-202-199-196-196-215-133-190-178-191-181-151-191-194-193-198-188-198-166"  ></TD><TD align='Center'  valign='top'  ><Input  Type=Textbox  name="CreatedBy" id="CreatedBy" class='clsTextBox' style='text-align:left' maxlength=50 value=""  title=''  ><input type='hidden' id='EmployeeProjectId' name='EmployeeProjectId' value='194' /></TD><td  align='Center'  valign='top' ><Input type=checkbox name="chkDelete6028" id="chkDelete6028" class='clsCheckBox' value="194" ></td></tr><tr class='clsTROdd' valign=top><Input  Type=hidden  name="EmployeeID" id="EmployeeID" class='clsTextBox' style='text-align:Left' value="107"  ><TD align='Center'  valign='top'  ><SELECT  title=''    id=EProjectID name=EProjectID class=clsComboBox ><FONT size=1><OPTION value =''></OPTION><OPTION value ="1">Bhagirath3</OPTION><OPTION value ="2">Support</OPTION><OPTION value ="3">HRMS</OPTION><OPTION selected value ="4">Strategy</OPTION><OPTION value ="5">ESPMS</OPTION></FONT></SELECT><A Href="#" onclick="DisplayLookup('frmCommonPage','EProjectID','Project','1959','6028','15876','True','','','True',GetContainerRowIndex(this))"  Title='Select Project'><IMG src='../../Images/Lookup.gif' id='EProjectID_LookUp' border=0 /></A><Input  Type=hidden  name="hdEProjectID" id="hdEProjectID" class='clsTextBox' style='text-align:Left' value="84-72-81-76-76-95-45-95-131-130-127-124-124-143-102-99-65-79-117-153-152-149-146-146-165-129-150-164-158-91-131-145-144-144-101-187-171-183-172-148-169-152-180-167-203-202-199-196-196-215-133-190-178-191-181-151-191-194-193-198-188-198-166"  ></TD><TD align='Center'  valign='top'  ><Input  Type=Textbox  name="CreatedBy" id="CreatedBy" class='clsTextBox' style='text-align:left' maxlength=50 value=""  title=''  ><input type='hidden' id='EmployeeProjectId' name='EmployeeProjectId' value='195' /></TD><td  align='Center'  valign='top' ><Input type=checkbox name="chkDelete6028" id="chkDelete6028" class='clsCheckBox' value="195" ></td></tr><tr class='clsTREvenRow' valign=top><Input  Type=hidden  name="EmployeeID" id="EmployeeID" class='clsTextBox' style='text-align:Left' value="107"  ><TD align='Center'  valign='top'  ><SELECT  title=''    id=EProjectID name=EProjectID class=clsComboBox ><FONT size=1><OPTION value =''></OPTION><OPTION value ="1">Bhagirath3</OPTION><OPTION selected value ="2">Support</OPTION><OPTION value ="3">HRMS</OPTION><OPTION value ="4">Strategy</OPTION><OPTION value ="5">ESPMS</OPTION></FONT></SELECT><A Href="#" onclick="DisplayLookup('frmCommonPage','EProjectID','Project','1959','6028','15876','True','','','True',GetContainerRowIndex(this))"  Title='Select Project'><IMG src='../../Images/Lookup.gif' id='EProjectID_LookUp' border=0 /></A><Input  Type=hidden  name="hdEProjectID" id="hdEProjectID" class='clsTextBox' style='text-align:Left' value="84-72-81-76-76-95-45-95-131-130-127-124-124-143-102-99-65-79-117-153-152-149-146-146-165-129-150-164-158-91-131-145-144-144-101-187-171-183-172-148-169-152-180-167-203-202-199-196-196-215-133-190-178-191-181-151-191-194-193-198-188-198-166"  ></TD><TD align='Center'  valign='top'  ><Input  Type=Textbox  name="CreatedBy" id="CreatedBy" class='clsTextBox' style='text-align:left' maxlength=50 value=""  title=''  ><input type='hidden' id='EmployeeProjectId' name='EmployeeProjectId' value='211' /></TD><td  align='Center'  valign='top' ><Input type=checkbox name="chkDelete6028" id="chkDelete6028" class='clsCheckBox' value="211" ></td></tr></table><Input  Type=hidden  name="EmployeeID" id="EmployeeID" class=&#39;clsTextBox&#39; style=&#39;text-align:Left&#39; value=""  ><input type='hidden' id='ControlDef_EProjectID_6028' name='ControlDef_EProjectID_6028' value='<SELECT  title=&#39;&#39;    id=EProjectID name=EProjectID class=clsComboBox ><FONT size=1><OPTION value =&#39;&#39;></OPTION><OPTION value ="1">Bhagirath3</OPTION><OPTION value ="2">Support</OPTION><OPTION value ="3">HRMS</OPTION><OPTION value ="4">Strategy</OPTION><OPTION value ="5">ESPMS</OPTION></FONT></SELECT><A Href="#" onclick="DisplayLookup(&#39;frmCommonPage&#39;,&#39;EProjectID&#39;,&#39;Project&#39;,&#39;1959&#39;,&#39;6028&#39;,&#39;15876&#39;,&#39;False&#39;,&#39;&#39;,&#39;&#39;,&#39;True&#39;,GetContainerRowIndex(this))"  Title=&#39;Select Project&#39;><IMG src=&#39;../../Images/Lookup.gif&#39; id=&#39;EProjectID_LookUp&#39; border=0 /></A><Input  Type=hidden  name="hdEProjectID" id="hdEProjectID" class=&#39;clsTextBox&#39; style=&#39;text-align:Left&#39; value="84-72-81-76-76-95-45-95-131-130-127-124-124-143-102-99-65-79-117-153-152-149-146-146-165-129-150-164-158-91-131-145-144-144-101-187-171-183-172-148-169-152-180-167-203-202-199-196-196-215-133-190-178-191-181-151-191-194-193-198-188-198-166"  >' /><input type='hidden' id='ControlDef_CreatedBy_6028' name='ControlDef_CreatedBy_6028' value='<Input  Type=Textbox  name="CreatedBy" id="CreatedBy" class=&#39;clsTextBox&#39; style=&#39;text-align:left&#39; maxlength=50 value=""  title=&#39;&#39;  ><input type="hidden" id="EmployeeProjectId" name="EmployeeProjectId" value="" />' /></div><INPUT type=hidden id='ShowDeleteColumnFirst6028' name='ShowDeleteColumnFirst6028' value='False'><BR><TABLE class=clsTable cellpadding=0 cellspacing=0 width='100%'><TR class=clsTREven><TD id='RecordCountOnGrid6028' name='RecordCountOnGrid6028' width='100%' align='right'>Total Records :4</TD></TR></TABLE>
+<BR></TD></TR></Table><input type=hidden id="SubTagIDs" name="SubTagIDs" value="6028" /><script language=javascript> strControlsToExcludeFrmNavigationAlert=strControlsToExcludeFrmNavigationAlert + ',,chkDelete6028'; </script></DIV></DIV><BR><div id="dModal" class="clsDivModalDialog" style="display:none;position:absolute;" title="Double Click to Drag" ondragend="ShowMousePos()" ondblclick="SelectText(this)">
+    <table id="tblModal" class="clsTableModalDlg">
+       <tr>
+           <td id="tdFirstRow" width="95%" class="clsTDFirstRow">
+               <span id="wndCaption" class="clsMdlDlgCaption"></span>
+           </td>
+           <td width="5%" class="clsTDClose">
+                <img src='../../Images/mdlclose.gif' onclick="CloseDivForModalPopUp()" />
+           </td>
+       </tr>
+       <tr>
+           <td colspan='2'>
+               <iframe id="iFrmMdl" width=100% frameborder="0" scrolling="no" onload="calcHeight(this)">
+               </iframe>
+           </td>
+       </tr>
+   </table>
+</div>
+<div id="MaskedDiv" class="clsMaskDiv" style="display:none;position:absolute;">
+</div>
+
+<SCRIPT Language=javascript>
+
+   var objfrm;
+   var objdivlist;
+   objfrm = GetFormReference('frmCommonPage')
+   objdivlist=GetObjectReference('frmCommonPage','divPage')
+
+window.status='';
+//window resize for Common Page
+var divHeightFactor=7;
+try{ if(window.parent.blnTabCollectionExists==true) divHeightFactor = divHeightFactor + 12; }catch(ex){}
+	function CP_window_onresize()
+	{
+		var intDivHeight ;
+		var intDivHeightRisk;
+		if (navigator.appName == 'Microsoft Internet Explorer'){
+		intDivHeight = document.body.offsetHeight - objdivlist.offsetTop - divHeightFactor;
+		}
+		else{
+		intDivHeight = window.innerHeight - objdivlist.offsetTop - divHeightFactor;
+		}
+		if (intDivHeight < 100)
+			intDivHeight = 100;
+				
+		objdivlist.style.height = intDivHeight;
+	try{hideAll();} catch(e){}}
+	//window onload for Common list
+	function CP_window_onload()
+	{
+		var intDivHeight ;
+		var intDivHeightRisk;
+		var lc;
+		if (navigator.appName == 'Microsoft Internet Explorer'){
+		intDivHeight = document.body.offsetHeight - objdivlist.offsetTop - divHeightFactor;
+		}
+		else{
+		intDivHeight = window.innerHeight - objdivlist.offsetTop - divHeightFactor;
+		}
+		if (intDivHeight < 100)
+			intDivHeight = 100;
+		objdivlist.style.height = intDivHeight	;
+	}
+   SetTabCollectionBodyStyle(0);
+
+ function expandSections() { 
+}
+
+
+ function EnableControlsHeaderSection() {
+
+}
+
+
+function ValidateForm_HeaderSection() {
+
+
+if (disallowBlank(GetObjectReference("frmCommonPage","EmployeeName"),'&#39;Employee Name&#39; should not be left blank.',true) )
+{return false; }
+
+if (disallowSpecialCharacters(GetObjectReference("frmCommonPage","EmployeeName"),'A &#39;Employee Name&#39; cannot contain any of these /\\:*?<>|,"+- characters.',true))
+{return false; }
+
+
+
+
+
+
+
+try
+{
+if (SubTagValidateFormHeaderSection6028()==false)
+return false;
+} catch (e) {}
+
+ return true; }
+
+function Hyperlink101959()
+{
+
+window.open ("http://www.MySite.Com");
+}
+var strCheckBoxControls19596028='';
+var strOptionButtonControls19596028='';
+function SubTagValidateFormHeaderSection6028() {
+var table =  document.getElementById('tblGrid19596028');
+var len;
+if(document.getElementById('tblGrid19596028_SummaryExists')==null)
+len=table.rows.length-1;
+else
+len=table.rows.length-2;
+for (var i = 0; i < len; i++){
+
+
+if (CheckDuplicate_MultiInsertGrid('EProjectID','&#39;Project&#39; already exists.',i,false,false)==false)return false;
+
+}
+ return true; }
+
+SetMultiInsertSubTabInitialRecordCount();
+
+
+</SCRIPT>
+<script language='javascript'>
+function OnBodyKeyUp(eve)
+{
+if (eve.altKey==true && eve.ctrlKey==false && eve.shiftKey==false)
+{
+switch(String.fromCharCode(eve.keyCode))
+{
+
+case 'J':
+return DesignMode('107');
+break;
+case 'K':
+return Configure_OnClick();
+break;
+}
+}
+if (eve.altKey==false && eve.ctrlKey==false && eve.shiftKey==true)
+{
+switch(eve.keyCode)
+{
+
+case 123:
+return OpenHelpPage(1959);
+break;
+}
+}
+if (eve.altKey==false && eve.ctrlKey==false && eve.shiftKey==false)
+{
+switch(eve.keyCode)
+{
+
+case 113:
+return Save_OnClick();
+break;
+case 120:
+return SaveAdd_OnClick();
+break;
+case 123:
+return Back_OnClick();
+break;
+}
+}
+if (eve.altKey==true && eve.ctrlKey==false && eve.shiftKey==false)
+{
+switch(String.fromCharCode(eve.keyCode))
+{
+
+case 'I':
+if(document.getElementById('clsSubTagTable6028').style.display!='none')
+return MultiInsetOnClick6028('');
+break;
+case 'K':
+if(document.getElementById('clsSubTagTable6028').style.display!='none')
+return ConfigureOnClickTab6028();
+break;
+}
+}
+if (eve.altKey==false && eve.ctrlKey==false && eve.shiftKey==true)
+{
+switch(eve.keyCode)
+{
+
+case 113:
+if(document.getElementById('clsSubTagTable6028').style.display!='none')
+return SelectAllOnClickTab6028();
+break;
+case 123:
+if(document.getElementById('clsSubTagTable6028').style.display!='none')
+return OpenHelpPage('1959-6028');
+break;
+}
+}
+if (eve.altKey==false && eve.ctrlKey==false && eve.shiftKey==false)
+{
+switch(eve.keyCode)
+{
+
+case 119:
+if(document.getElementById('clsSubTagTable6028').style.display!='none')
+return New_OnClick_Tab6028();
+break;
+case 46:
+if(document.getElementById('clsSubTagTable6028').style.display!='none')
+return Delete_OnClick_Tab6028();
+break;
+}
+}
+
+}
+</script></FORM></BODY></HTML>
+<SCRIPT Language=javascript>
+
+window.status='';
+</SCRIPT> = tl脯C（ɔ 1 

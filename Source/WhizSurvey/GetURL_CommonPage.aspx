@@ -1,0 +1,1 @@
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="GetURL_CommonPage.aspx.vb" Inherits="Whiz.GetURL_CommonPage"%>

@@ -1,0 +1,373 @@
+﻿/*UI chnages done by Yasmin on 2nd May*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 53px;
+    height: 27px;
+}
+
+    .switch input {
+        display: none;
+    }
+
+.tabcontentChart {
+    float: left;
+    padding: 0px 12px;
+    /* border: 1px solid #ccc; */
+    width: 81%;
+    border-left: none;
+    /*height: 300px;*/
+    /* border-radius: 4px; */
+    margin-top: 2%;
+}
+.fiexed-top {
+    position: fixed !important;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background: #e5e5e5;
+    padding: 15px;
+    margin-top: -10px;
+}
+
+.clsDivHeader {
+    color: #292828 !important;
+    font-weight: 500;
+    font-size: 16px !important;
+    margin-top: 2px !important;
+    margin-left: 29px !important;
+}
+#myScrollspy .nav-pills > li > a:hover {
+    -webkit-box-shadow: -100px 0 0 #5bc0de inset;
+    border-right: 4px solid rgb(51, 122, 183);
+    color: black !important;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: linear;
+    box-shadow: 0px 0 0rgb(51, 122, 183) inset;
+    /*//box-shadow: 0 0 1px #ccc;*/
+}
+
+/*#myScrollspy .nav-pills > li > a{
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: linear;
+   box-shadow: 0 0 1px #ccc;
+}*/
+
+.scrollspy-example {
+    position: relative;
+    height: 330px;
+    margin-top: 10px;
+    overflow: auto;
+    padding-bottom: 200px;
+}
+
+#myScrollspy .nav-pills > li > a {
+    width: 120px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 23px;
+}
+
+    .slider.round:before {
+        border-radius: 42%;
+    }
+
+.label-success {
+    background-color: white;
+    border-radius: 21px;
+    font-size: 110%;
+    color: #ccc;
+}
+
+.scrum-stories {
+    /*width: 95% !important;*/
+}
+
+.bootbox .btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    float: right !important;
+    margin-left: 1% !important;
+}
+
+#filter-dropdown {
+    top: auto !important;
+    max-height: 420px !important;
+    width: 310px;
+    padding: 0px;
+    right: 0px !important;
+    left: auto !important;
+}
+
+#tblAdvHeader {
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding-top: 1%;
+    color: black !important;
+}
+
+    #tblAdvHeader p {
+        margin: 8px 0 10px !important;
+        font-size: 14px;
+        margin-left: 8px;
+    }
+
+    #tblAdvHeader .fa {
+        margin: 8px 0 10px !important;
+    }
+
+#btnClear, #btnApply {
+    width: 100px;
+    float: right;
+    margin: 0px;
+    margin-right: 5px;
+    color: white;
+    background-color: #1359ac; /*modified by pradip on 6-10-2020*/
+}
+
+.dropdown-menu table {
+    width: 100%;
+    color: black;
+}
+
+
+#dropdown-content {
+    padding: 8px !important;
+}
+
+.grey-text {
+    color: #888888e0;
+    font-weight: normal;
+}
+
+#hr_line {
+    margin-top: 1px;
+}
+
+::-webkit-scrollbar {
+    background: transparent; /* optional: just make scrollbar invisible */
+    width: 0px;
+}
+
+#sidebar {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    left: 0;
+   
+}
+
+#div2 {
+    width: 20px;
+    color: red;
+}
+
+#emplistUL :hover {
+    background-color: #428bca;
+    color: white;
+}
+
+#toggle {
+    padding: 10px 0 0 35px;
+    color: black;
+    text-align: center;
+    width: 88px;
+    height: 71px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    font-size: 20px;
+}
+
+.sortable.grid {
+    overflow: hidden;
+}
+
+.sortable-placeholder {
+    border: 2px dashed #CCC;
+    padding: 40px;
+    background: none;
+}
+
+.scrum-header {
+    width: auto;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+#userstories:focus {
+    outline: none !important;
+}
+
+#Tasktodolist:focus {
+    outline: none !important;
+}
+
+#mytaskprogress:focus {
+    outline: none !important;
+}
+
+#completedtask:focus {
+    outline: none !important;
+}
+
+.scrum-stories-list {
+    padding: 10px 3px 21px 6px !important;
+}
+
+.completed-list {
+    padding: 10px 3px 21px 6px !important;
+}
+
+
+.todolist:hover {
+    background: #e4e4e4;
+    cursor: all-scroll;
+}
+
+.progresslist :hover {
+    background: #e4e4e4;
+    cursor: all-scroll;
+    box-shadow: none;
+}
+
+#clsdivcompletedlist :hover {
+    background: #e4e4e4;
+    cursor: all-scroll;
+    box-shadow: none;
+}
+
+.todolist .scrum-stories-list p span {
+    cursor: pointer;
+}
+
+.progresslist .scrum-stories-list p span {
+    cursor: pointer;
+}
+
+.taskname {
+    cursor: pointer !important;
+}
+
+span {
+    cursor: pointer !important;
+}
+
+p {
+    cursor: pointer !important;
+}
+
+/*Css for Task Detail*/
+.task-form {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border-bottom: 1px solid #ccc;
+    box-shadow: none !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0;
+    border-radius: 0 !important;
+}
+
+    .task-form:focus {
+        outline: none;
+    }
+
+#countTaskName, #countTaskNote {
+    border-style: None;
+    float: Right;
+    margin-top: 0 !important;
+    margin-right: 2px !important;
+    font-size: 11px !important;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 500 !important;
+    font-size: 13px !important;
+}
+
+.modal-footer {
+    border-top: 0 !important;
+}
+
+
+#taskpopup ul li {
+    list-style-type: none !important;
+}
+
+.alertify-notifier ul li {
+    list-style-type: none !important;
+}
+.fixed-top {
+    position: fixed !important;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background: #e5e5e5;
+    padding: 13px;
+    margin-top: -10px;
+}
+.fa-filter {
+    font-size: 22px !important;
+    color: #34495e;
+}

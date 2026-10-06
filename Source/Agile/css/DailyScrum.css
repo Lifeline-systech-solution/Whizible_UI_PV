@@ -1,0 +1,1194 @@
+﻿
+.col-xs-6 {
+    width: auto !important;
+}
+
+.complete {
+    display: none;
+}
+.fa-search {
+    z-index: 9999;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+    background: #fff;
+    padding: 10px;
+}
+
+#divrow {
+    margin-top: 50px;
+}
+
+#divweekdates {
+    padding-top: 120px !important;
+}
+
+.fixed-top {
+    position: fixed !important;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+      /* Changed by Madhuri.K on 09-03-2026 */
+    background: #F8FAFC;
+    /* background: #e7edf0; modified by pradip on 6-10-2020 */
+    padding: 10px;
+    padding-bottom: 15px;
+    margin-top: -10px;
+}
+
+.clsDivHeader {
+    color: #292828 !important;
+    font-weight: 500;
+    font-size: 14px !important;
+    /* Modified By Madhuri.K On 01-04-2026 */
+    margin-left: 34px;
+    margin-top: 10px !important;
+}
+#DivDailyScurmList table tr td:nth-child(1) {
+    width: 10% !important;
+}
+
+#DivDailyScurmList table tr td:nth-child(2) {
+    width: 10% !important;
+}
+
+#DivDailyScurmList table tr td:nth-child(3) {
+    width: 10% !important;
+}
+
+#DivDailyScurmList table tr td:nth-child(4) {
+    width: 50% !important;
+}
+
+#DivDailyScurmList table tr td:nth-child(5) {
+    width: 10% !important;
+}
+
+#DivDailyScurmList table tr td:nth-child(6) {
+    width: 10% !important;
+}
+
+#DivDailyScurmList table tr td:nth-child(7) {
+    width: 10% !important;
+}
+
+#DivDailyScurmList table tr td:nth-child(8) {
+    width: 10% !important;
+}
+
+#DivDailyScurmList table tr td:nth-child(9) {
+    width: 10% !important;
+}
+
+#DivDailyScurmList table tr td:nth-child(10) {
+    width: 10% !important;
+}
+
+
+.vl {
+    border-left: 1px solid #cccccc;
+    /*height: 424px;*/
+    position: absolute;
+    left: 50%;
+    margin-left: 3px;
+    /*top: 63px;*/
+}
+
+.right {
+    float: right;
+}
+
+
+
+
+.vl1 {
+    border-left: 1px solid #cccccc;
+    /*height: 424px;*/
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+    /*top: 63px;*/
+}
+
+#mainBody {
+    overflow: hidden;
+}
+
+
+
+.modal-footer {
+    border-top: 1px solid white !important;
+}
+
+.modal-header {
+    /*border-bottom: 1px solid white!important;*/
+    display: flex;
+}
+
+.checkboxcls {
+    float: right;
+    margin-right: 2%;
+}
+/*.cardNewCls {
+        margin-top:5%;
+        margin-bottom:5%;
+     }*/
+.card {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+}
+
+
+
+
+
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: -12px !important;
+}
+
+
+
+
+.card-text {
+    margin-top: 3%;
+}
+
+.clsmappendSprint {
+    margin-top: 0%;
+    width: 492px;
+    /* margin-left: 8%; */
+}
+
+.container-fluid {
+    overflow: auto;
+    /*height: 510px;*/
+}
+
+
+a {
+    cursor: pointer;
+}
+
+/*.fa { cursor: pointer; }*/
+
+button {
+    cursor: pointer;
+}
+
+.clsrightdiv :not(.clsmappendSprint) {
+}
+
+.fa-border {
+    border: none;
+}
+
+.modal-title {
+    color: #808080 !important;
+}
+
+.fa {
+    font-size: 11.5px !important;
+    /* Modified By Madhuri.K On 26-03-2026 */
+}
+
+.clsRemark {
+    float: right;
+    margin-right: 24%;
+}
+
+.clsterminate {
+    margin-right: 7% !important;
+    margin-top: 10% !important;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: white;
+    border-bottom: 1px solid white;
+    border-top: 1px solid lightgrey;
+}
+
+.clsstatus {
+    float: right;
+    margin-right: -17%;
+    margin-top: 1%;
+}
+
+.clsTextArea {
+    width: 100%;
+    border: 1px solid #ddd;
+    float: left;
+}
+
+.clsSpanRemark {
+    border-style: None;
+    float: right;
+    margin-top: 8%;
+}
+
+
+.lblIDS {
+    display: none;
+}
+
+
+.ClsPageheader {
+    font-size: 14px;
+    /* Modified By Madhuri.K On 01-04-2026 */
+    font-weight: 100;
+    color: grey;
+    margin-left: 5px;
+}
+/*//For Release Datatable*/
+
+
+
+
+#txtSearchDS {
+    margin-right: -12%;
+    box-shadow: none !important;
+    width: 47% !important;
+    border: none !important;
+    border-bottom: 1px solid #ddd !important;
+    text-align: left;
+    height: 32px;
+    font-weight: 100;
+}
+
+#DivRelaseList table tr td:nth-child(4) {
+    text-align: center !important;
+}
+
+.Sprint {
+    float: right;
+    margin-right: -31% !important;
+    margin-top: 2% !important;
+    color: white;
+}
+
+#txtSearchSprint {
+    margin-right: 0%;
+    box-shadow: none !important;
+    width: 34% !important;
+    border: none !important;
+    border-bottom: 1px solid white !important;
+    text-align: left;
+    height: 32px;
+    font-weight: 100 !important;
+    background-color: lightgray;
+    color: white;
+}
+
+#DivRelaseList {
+    height: 316px;
+    overflow: hidden !important;
+}
+
+    #DivRelaseList .dataTables_empty {
+        text-align: center !important;
+    }
+
+#DivRelaseList {
+    font-size: 11.5px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+}
+
+.Release {
+    float: right;
+    margin-right: -49%;
+    margin-top: 2%;
+}
+
+/*//End of For Releas<e Datatable*/
+.dropdown-menu a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/*//For US*/
+#divDSbody {
+    padding-top: 23px !important;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.control-label {
+    font-weight: 500;
+    color: #969696;
+    white-space: nowrap;
+    font-size: 11.5px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    margin-top: 11px;
+    text-align: right;
+}
+
+.clsBox {
+    min-height: 500px;
+    /* background-color: #ddd; */
+    margin-bottom: 10px;
+    /* overflow: auto; */
+}
+
+input.form-control:not([type=button]) {
+    /*width: 100% !important;*/
+    /*margin-left: 26%;*/
+}
+/*.control-label {
+     margin-left:26%;
+
+}*/
+
+
+/*Commented And Added By Usha Pandit On 25.04.2020 For hovering parent only if child is not hover*/
+/*.dropdown-menu li:hover {
+    background-color: #007bff !important;
+    color: white;
+}*/
+.dropdown-menu li:not(.no-hover):hover {
+    background-color: #007bff !important;
+    color: white;
+}
+/*End Of Added By Usha Pandit On 25.04.2020 For hovering parent only if child is not hover*/
+
+/**:not(.fa):not(small) {
+    font-family: helvetica !important;
+    font-size: 14px;
+}*/
+
+input, textarea {
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    box-shadow: none !important;
+}
+
+#divBody {
+    margin-top: -5%;
+}
+
+select {
+    display: inline-block !important;
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    box-shadow: none !important;
+}
+
+/*Commented By Yasmin on 12-3-19*/
+/*#DSmodalcontent {
+    position: relative;
+    top: 10%;
+    right: 10px;
+    bottom: 0;
+    left: -128px;
+    border: 2px solid #3c7dcf;
+     border-radius: 0; 
+    box-shadow: none;
+    height: 79% !important;
+    width: 1040px;
+}*/
+
+
+.clsTextArea {
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    box-shadow: none !important;
+}
+
+.fa-trash-o {
+    color: red;
+}
+
+
+.fa-certificate {
+    font-size: 50px !important;
+}
+
+ul li {
+    display: inline;
+}
+
+.Filter {
+    position: absolute;
+    top: 100%;
+    left: -273% !important;
+    z-index: 1000;
+    display: none;
+    /* min-width: 160px; */
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.dropdown-menu li {
+    list-style: none;
+    cursor: pointer;
+    float: left;
+    width: 100%;
+    padding: 6px;
+    font-weight: normal;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .vl {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 776px) {
+    /*Commented By Yasmin on 12-3-19*/
+    /*.clsTextArea {
+        width: 230px;
+        height: 50px;
+        border: 1px solid #ddd;
+        float: left;
+    }*/
+
+
+    .clsSpanRemark {
+        border-style: None;
+        float: none;
+        margin-top: 8%;
+    }
+
+    .modal-content {
+        margin-right: -12%;
+    }
+
+    .clsterminate {
+        margin-right: 12% !important;
+        margin-top: 10% !important;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .vl1 {
+        display: none !important;
+    }
+}
+
+.dropdown-menu {
+    right: 0px !important;
+    left: auto !important;
+}
+
+    .dropdown-menu li {
+        list-style: none;
+        cursor: pointer;
+        float: left;
+        width: 100%;
+        padding: 6px;
+        font-weight: normal;
+    }
+
+/*ul li {
+            display: inline !important;
+        }*/
+
+.btn-Green {
+    background-color: #22B14C;
+    color: #fff;
+    border-radius: 0px;
+    padding: 4px 12px;
+}
+/*UI chnages done by Yasmin on 2nd May*/
+#divMain {
+    margin-left: 8px;
+    margin-top: 8px;
+    /* overflow: hidden; */
+    overflow-x: auto;
+    padding-left: 12px;
+    width: 99%;
+    -ms-scrollbar-arrow-color: white !important;
+    -ms-scrollbar-base-color: white !important;
+    -ms-scrollbar-shadow-color: white !important;
+    -moz-scrollbar-arrow-color: white !important;
+    -moz-scrollbar-base-color: white !important;
+    -moz-scrollbar-shadow-color: white !important;
+}
+
+#date_status {
+    white-space: nowrap;
+}
+
+::-webkit-scrollbar {
+    background: transparent; /* optional: just make scrollbar invisible */
+    width: 0px;
+}
+
+/*Changed By Yasmin on 12-3-19*/
+.scrum_date {
+    font-weight: 600;
+    height: 42px;
+    width: 300px;
+    color: #428bca;
+    text-align: center;
+    /*padding-left: 30px !important;*/
+}
+
+td {
+    color: #888888;
+    font-weight: 500;
+}
+
+.img-circle {
+    width: 25px;
+}
+
+@media only screen and (max-width:1024px) {
+    .scrum_date {
+        font-weight: 600;
+        height: 50px;
+        width: 941px;
+        color: #428bca;
+        text-align: center;
+        /*padding-left: 441px !important;*/
+    }
+}
+
+.selected {
+    background-color: #f5f5f5;
+    color: white !important;
+    text-decoration: underline;
+}
+
+/*Commented And Added By Usha Pandit On 25.04.2020 For hovering parent only if child is not hover*/
+/*.dropdown-menu li:hover {
+    background-color: #428bca;
+    color: white !important;
+}*/
+.dropdown-menu li:not(.no-hover):hover {
+    background-color: #428bca;
+    color: white !important;
+}
+/*End Of Added By Usha Pandit On 25.04.2020 For hovering parent only if child is not hover*/
+
+#divDSbody {
+    padding-top: 23px !important;
+}
+
+/**:not(.fa):not(small) {
+            font-family: helvetica !important;
+            font-size: 14px;
+        }*/
+
+
+.col-form-label {
+    font-weight: 100;
+    /* color: #88888880; */
+    white-space: nowrap;
+    font-size: 14px;
+    margin-top: 15px;
+    color: gray;
+    text-align: right;
+}
+
+@media (min-width: 992px) {
+    #container_impediment {
+        /*width:1287px;*/
+    }
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+#txtAssignedTo {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 14px;
+    /*padding: 12px 20px 12px 40px;*/
+    border: 1px solid #ddd;
+    /*margin-bottom: 12px;*/
+}
+
+
+
+#emplistUL, .clsRequestStatusList {
+    height: 300px;
+    overflow: auto;
+}
+
+.clsAssignToList a {
+    margin-left: 5px;
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee;
+}
+
+.clsAssignedListItem a {
+    padding: 0px !important;
+}
+
+.ui-datepicker {
+    z-index: 99999 !important;
+}
+/*ul li {
+    display: inline !important;
+}*/
+
+
+#DivDailyScurmList {
+    height: 100%;
+}
+
+/*Changed By Yasmin on 12-3-19*/
+/*Commented And Added By Usha Pandit On 25.04.2020 For hovering parent only if child is not hover*/
+/*#UlFilter > li:hover {
+    background-color: #007bff !important;
+    color: #fff !important;
+}*/
+#UlFilter > li:not(.no-hover):hover {
+    background-color: #007bff !important;
+    color: #fff !important;
+}
+/*End Of Added By Usha Pandit On 25.04.2020 For hovering parent only if child is not hover*/
+.clsFilterDiv li {
+    white-space: nowrap;
+}
+/*Commented By Yasmin on 12-3-19*/
+#UlFilter {
+    /*max-height: 400px;*/
+    overflow: auto;
+    /*margin-top: -12PX;*/
+    width: 200px !important;
+    font-size: 11.5px !important;
+    /* Modified By Madhuri.K On 01-04-2026 */
+}
+
+.clsFilterDiv {
+    margin-left: -15px;
+}
+
+#DivDailyScurmList .clsTRColumnHeader {
+    display: none;
+}
+
+#DivDailyScurmList .dataTables_length {
+    display: none;
+}
+
+#DivDailyScurmList .dataTables_scrollHead {
+    display: none;
+}
+
+#DivDailyScurmList .dataTables_filter {
+    display: none;
+}
+
+#DivDailyScurmList .dataTables_paginate {
+    float: right;
+    margin-top: -5%;
+}
+
+#DivDailyScurmList .dataTables_scrollBody {
+    padding-top: 50px;
+}
+
+#DivDailyScurmList table td {
+    border: none;
+}
+
+#DivDailyScurmList table {
+    border: none;
+}
+
+    #DivDailyScurmList table tr {
+        border-bottom: 1px solid #ddd;
+    }
+
+#txtSearchDailyScrum {
+    border: none !important;
+}
+/*#divfilterDropdown:hover #UlFilter{
+         display: block !important;
+        }*/
+
+
+#tblweekdates tr td {
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle !important;
+}
+
+
+#tblweekdates th {
+    border-bottom: none;
+}
+
+.selecteddate {
+    background-color: #428bca;
+}
+
+    .selecteddate a {
+        color: white !important;
+    }
+
+.btn-Green:hover, .btn-Green:visited {
+    background-color: #22B14C !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    /*border:none;*/
+}
+
+#filterDropdown {
+    font-size: 20px !important;
+    color: #01579b;
+}
+
+#filterClear {
+    font-size: 18px !important;
+    color: red;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+#UlFilter .fa-plus-circle {
+    font-size: 14px !important;
+    /* Modified By Madhuri.K On 01-04-2026 */
+}
+
+#UlFilter .fa-minus-circle {
+    font-size: 14px !important;
+    /* Modified By Madhuri.K On 01-04-2026 */
+}
+
+#DSFilterSprint {
+    border: 1px solid #CCC !important;
+}
+
+#DivfilterClear {
+    margin-left: 0px !important;
+}
+
+
+.tooltip {
+    position: fixed !important;
+}
+/*Added by Yasmin On 29.07.2019*/
+.large.tooltip-inner {
+    max-width: 400px;
+    width: auto;
+    max-height: 320px;
+    height: auto !important;
+    margin-top: 30px;
+    word-wrap: break-word !important;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+/*End Of Added by Yasmin On 29.07.2019*/
+
+/*Added by Kashish*/
+#DivList {
+    border: 1px solid #ddd !important;
+}
+
+#DivDailyScurmList .dataTables_scrollBody {
+    height: 668px !important;
+}
+/*End of Added by Kashish*/
+
+/*#txtSearchHistory {
+    margin-right: -10%;
+    box-shadow: none!important;
+    width: 47%!important;
+    border: none!important;
+    border-bottom: 1px solid #ddd!important;
+    text-align: left;
+    height: 32px;
+    font-weight: 100;
+}*/
+
+#txtSearchHistory {
+    border: 1px solid #ccc !important;
+}
+
+
+#DivGridShowHistory {
+    -ms-scrollbar-arrow-color: white !important;
+    -ms-scrollbar-base-color: white !important;
+    -ms-scrollbar-shadow-color: white !important;
+}
+
+    #DivGridShowHistory .dataTables_scrollHead {
+        display: none;
+    }
+
+    #DivGridShowHistory table tr th .dataTables_sizing {
+        height: 36px !important;
+    }
+
+    #DivGridShowHistory table tr th {
+        padding-top: 10px !important;
+        font-weight: normal !important;
+        text-align: center !important;
+    }
+
+    #DivGridShowHistory .dataTables_length {
+        display: none;
+    }
+
+    #DivGridShowHistory .dataTables_filter {
+        display: none;
+    }
+
+#DivShowhistory .modal-header {
+    border-bottom: none !important;
+}
+
+#DivShowhistory .odd {
+    background-color: #f7f7f7;
+}
+
+#DivShowhistory .dataTables_paginate {
+    float: right;
+    /*margin-top: -5%;*/
+}
+
+#DivShowhistory .modal-header {
+    border-bottom: none !important;
+}
+
+#DivShowhistory .odd {
+    background-color: #f7f7f7;
+}
+
+#DivShowhistory .dataTables_paginate {
+    float: right;
+    /*margin-top: -5%;*/
+}
+
+#DivShowHistory {
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    margin-top: 1%;
+    height: 430PX;
+    overflow-x: hidden;
+    margin-left: 1%;
+    font-weight: 100 !important;
+}
+
+.fa-angle-down, .fa-angle-up {
+    font-size: 18px !important;
+}
+
+/*Added by Usha on 12 April 2018 for Impediment Modal Popup*/
+.alertify-notifier li {
+    word-break: normal !important;
+    white-space: normal !important;
+}
+
+.alertify-notifier .ajs-message {
+    width: 300px;
+    word-break: break-word;
+    padding-left: 5px !important;
+}
+
+    .alertify-notifier .ajs-message > ul {
+        padding-left: 5px !important;
+    }
+
+/*for chrome search clear*/
+/*input[type="search"] {
+    -webkit-appearance: searchfield;
+}
+
+    input[type="search"]::-webkit-search-cancel-button {
+        -webkit-appearance: searchfield-cancel-button;
+    }*/
+/*for chrome search clear*/
+
+@media (max-width: 909px) /* The minimum width of the display area, such as a browser window*/
+{
+    .modal-dialog {
+        width: 550px;
+        /*overflow: hidden;*/
+    }
+
+    #h1 {
+        color: maroon;
+        font-size: 17px;
+        font-weight: 500;
+        color: grey !important;
+        width: 520px;
+    }
+}
+
+@media (max-width: 780px) /* The minimum width of the display area, such as a browser window*/
+{
+    .modal-dialog {
+        width: 400px;
+        /*overflow: hidden;*/
+    }
+
+    #h1 {
+        color: maroon;
+        font-size: 17px;
+        font-weight: 500;
+        color: grey !important;
+        width: 350px;
+    }
+
+    /*Added By Yasmin on 12-3-19*/
+    .remarkdiv {
+        margin-left: -12px !important;
+    }
+    /*Commented By Yasmin on 12-3-19*/
+    /*#txtActionItems {
+        height: 40px;
+        text-align: Left;
+        margin-left: 45px;
+        overflow: hidden;
+        width: 55% !important;
+    }*/
+
+    /*#DSSprint {
+        width: 38%;
+        margin-left: 45px;
+    }*/
+
+    /*#DSActualStartDateDate {
+        margin-left: 43px;
+        text-align: Left;
+        width: 50%;
+    }*/
+
+    /*#txtRemark {
+        height: 40px;
+        text-align: Left;
+        margin-left: 45px;
+        overflow: hidden;
+        width: 60%;
+    }*/
+}
+
+@media only screen and (max-width:1024px) {
+    #container_impediment {
+        left: 0;
+        height: 420px !important;
+        overflow: scroll;
+    }
+}
+
+#DivGridShowHistory THEAD.clsTRColumnHeader {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 1pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 1pt;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    BACKGROUND-IMAGE: url(../../Images/Blue/columnhdr_bg.gif);
+    PADDING-BOTTOM: 1pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 1pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 22px;
+    BACKGROUND-COLOR: #aec2ce;
+}
+
+#DivGridShowHistory TR.clsTROdd {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 18px;
+    BACKGROUND-COLOR: #F2F3F3;
+}
+
+#DivGridShowHistory TR.clsTREvenRow {
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 18px;
+    BACKGROUND-COLOR: white;
+}
+
+/*Commented By Yasmin on 12-3-19*/
+/*#divAddDS .modal-content {
+    height: 45% !important;
+}*/
+
+.clsShow {
+    display: none;
+}
+
+.datepicker-dropdown {
+    margin-right: 41% !important;
+}
+
+.btn.btn-info.active.focus, .btn.btn-info.active:focus, .btn.btn-info.active:hover, .btn.btn-info:active.focus, .btn.btn-info:active:focus, .btn.btn-info:active:hover, .open > .btn.btn-info.dropdown-toggle.focus, .open > .btn.btn-info.dropdown-toggle:focus, .open > .btn.btn-info.dropdown-toggle:hover, .show > .btn.btn-info.dropdown-toggle.focus, .show > .btn.btn-info.dropdown-toggle:focus, .show > .btn.btn-info.dropdown-toggle:hover {
+    color: #fff !important;
+    background-color: #00aec5 !important;
+    border-color: #004b55 !important;
+}
+
+.btn.btn-info:hover {
+    color: #fff !important;
+    background-color: #00aec5 !important;
+    border-color: #004b55 !important;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,188,212,.14),0 3px 1px -2px rgba(0,188,212,.2),0 1px 5px 0 rgba(0,188,212,.12) !important;
+    box-shadow: 0 2px 2px 0 rgba(0,188,212,.14),0 3px 1px -2px rgba(0,188,212,.2),0 1px 5px 0 rgba(0,188,212,.12) !important;
+}
+
+.btn.btn-info {
+    text-transform: Capitalize !important;
+    color: #fff !important;
+    background-color: #01579B !important;
+    border-color: #01579B !important;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,188,212,.14), 0 3px 1px -2px rgba(0,188,212,.2), 0 1px 5px 0 rgba(0,188,212,.12) !important;
+    box-shadow: 0 2px 2px 0 rgba(0,188,212,.14), 0 3px 1px -2px rgba(0,188,212,.2), 0 1px 5px 0 rgba(0,188,212,.12) !important;
+}
+
+.pagination > li > a:hover {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: #1bb4c7 !important;
+    border: none !important;
+    border-radius: 20px;
+}
+
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #1bb4c7;
+    text-decoration: none;
+    background-color: #fff;
+    border: none !important;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #1bb4c7 !important;
+    border-color: #1bb4c7 !important;
+    border-radius: 20px !important;
+}
+
+.page-item.disabled .page-link {
+    color: #12b8cc !important;
+    pointer-events: none;
+    background-color: #fff !important;
+    border: 1px solid #12b8cc !important;
+    margin-right: 3px;
+}
+
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+    color: #fff !important;
+    background-color: #1bb4c7;
+    border-color: #ddd;
+    border-radius: 20px;
+}
+
+.clsDisableColor {
+    background-color: white !important;
+}
+
+
+
+/*Added by YAsmin on 6th June 2018*/
+textarea {
+    overflow-y: auto;
+    /*padding-bottom: 50px !important;*/
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+/*Commented By Yasmin on 12-3-19*/
+
+/*#PreventiveAction {
+    height: 0px !important;
+}*/
+#DSRemark {
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+}
+/*Added By Yasmin on 12-3-19*/
+
+#ActionItems, #DSRemark {
+    font-size: 11.5px !important;
+    color: #887d7d !important;
+}
+
+.form-group {
+    margin-bottom: 5px !important;
+}
+
+#IsConvertedToImpediment {
+    margin-left: 0px !important;
+    margin-top: 20px !important;
+}
+
+.form-control {
+    border-radius: 0px !important;
+}
+
+#PreventiveAction, #CorrectiveAction, #ImpedimentDescription {
+    font-size: 11.5px !important;
+    color: #887d7d !important;
+}
+
+.remarkdiv {
+    margin-left: -22px;
+}
+
+.modal-title {
+    font-size: 14px !important;
+    text-align: center !important;
+}
+.fa-remove {
+    background: red !important;
+    color: #fff !important;
+    border-radius: 15px;
+    padding: 1.5px 2.5px;
+    font-size: 8px !important;
+  
+}
+#divDSbody .form-control[readonly], #divImpedimentbody .form-control[readonly] {
+    cursor: auto !important;
+    background: transparent !important;
+}

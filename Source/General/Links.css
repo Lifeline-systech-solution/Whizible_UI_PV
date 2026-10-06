@@ -1,0 +1,735 @@
+BODY.clsBody
+{
+    BORDER-RIGHT: #660000 6px solid;
+    PADDING-LEFT: 0px;
+    FONT-SIZE: 7pt;
+    MARGIN: 5pt;
+    LINE-HEIGHT: 1;
+   SCROLLBAR-ARROW-COLOR: #999999;
+    BORDER-BOTTOM: #660000 6px solid;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    SCROLLBAR-DARKSHADOW-COLOR: #cccccc;
+    SCROLLBAR-BASE-COLOR: #e0e7ef;
+    BACKGROUND-COLOR: white
+}
+TABLE.clsTable
+{
+    FONT-SIZE: 10pt;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: transparent;
+    cellspacing: 0px
+}
+TR.clsTRSectionHeader
+{
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #dcc1be
+}
+TR.clsTRColumnHeader
+{
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #ecd9c6
+}
+TR.clsTRBlank
+{
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 7pt;
+    BACKGROUND-IMAGE: none;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    COLOR: #000000;
+    PADDING-TOP: 2pt;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #ffffff
+}
+TR.clsTREven
+{
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    BACKGROUND-IMAGE: none;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    COLOR: #000000;
+    PADDING-TOP: 2pt;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #fef7f1
+}
+TR.clsTROdd
+{
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #fef7f1
+}
+TR.clsTRPageHeader
+{
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    COLOR: white;
+    PADDING-TOP: 2pt;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #e4cbcb
+}
+TD.clsTDLabel
+{
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    BACKGROUND-IMAGE: none;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt 4pt 2pt 2pt;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #e6e6e6;
+    TEXT-ALIGN: right
+}
+TD.clsTDBulleted
+{
+    BACKGROUND: #8aabcd
+}
+TD.clsTDEven
+{
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    BACKGROUND-IMAGE: none;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    COLOR: #000000;
+    PADDING-TOP: 2pt;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #fef7f1
+}
+TD.clsTDOdd
+{
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #fef7f1
+}
+TD.clsTDHeader
+{
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 0pt;
+    BORDER-TOP: thin;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    BORDER-BOTTOM: thin;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: lightgrey
+}
+A:active:unknown
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: transparent
+}
+A:visited:unknown
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+A:link:unknown
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+A:hover:unknown
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: red;
+    FONT-FAMILY: Verdana, Arial
+}
+TD.clsTDColumnHeader
+{
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #99ccff
+}
+TD.clsTDGroupFooter
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 8pt;
+    BACKGROUND-IMAGE: none;
+    COLOR: black;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #bbddff
+}
+.ButtonStyle
+{
+    FONT-SIZE: 8pt! important;
+    TEXT-TRANSFORM: capitalize;
+    WIDTH: 60pt;
+    COLOR: black! important;
+    FONT-FAMILY: Arial;
+    HEIGHT: 18pt;
+    TEXT-ALIGN: center
+}
+TD.clsGraphHeading
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #6699cc
+}
+TR.clsTRSelected
+{
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 1px;
+    MARGIN: 1px;
+    COLOR: #000000;
+    PADDING-TOP: 1px;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #e0e7ef
+}
+TD.clsTDTreeHeader
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+TEXTAREA.clsTextArea
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana, Arial
+}
+INPUT.clsTextBox
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana, Arial
+}
+SELECT.clsComboBox
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana, Arial
+}
+TD.clsTDWhiteBG
+{
+    PADDING-RIGHT: 1pt;
+    PADDING-LEFT: 1pt;
+    FONT-SIZE: 7pt;
+    PADDING-BOTTOM: 1pt;
+    MARGIN: 1pt;
+    COLOR: #000000;
+    PADDING-TOP: 1pt;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: white;
+    TEXT-ALIGN: left
+}
+TD.clsHeader
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #336699
+}
+BODY.clsHelpBody
+{
+    BACKGROUND-IMAGE: url(../../images/Q1.gif)
+}
+TD.clsTDHelp
+{
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: white
+}
+INPUT.clsButtonColor
+{
+    FONT-SIZE: 8pt;
+    TEXT-TRANSFORM: capitalize;
+    WIDTH: 60pt;
+    COLOR: tomato;
+    FONT-FAMILY: Arial;
+    HEIGHT: 18pt;
+    TEXT-ALIGN: center
+}
+TD.clsTDUSER
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Verdana;
+    TEXT-DECORATION: none
+}
+TD.clsTDPageHeader
+{
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    COLOR: white;
+    PADDING-TOP: 2pt;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #3366cc
+}
+TD.clsTDOddLabel
+{
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;
+    FONT-SIZE: 7pt;
+    PADDING-BOTTOM: 1px;
+    MARGIN: 1px;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #fef7f1;
+    TEXT-ALIGN: right
+}
+TD.clsTDEvenLabel
+{
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;
+    FONT-SIZE: 7pt;
+    PADDING-BOTTOM: 1px;
+    MARGIN: 1px;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: white;
+    TEXT-ALIGN: right
+}
+TABLE.clsBorderTable
+{
+    BORDER-RIGHT: thin inset;
+    BORDER-TOP: thin inset;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: thin inset;
+    BORDER-BOTTOM: thin inset;
+    FONT-FAMILY: Verdana, Arial
+}
+A.clsHrefButton
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-STYLE: oblique;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: lightcyan;
+    TEXT-DECORATION: none
+}
+TD.clsTDNormal
+{
+	font-weight: bold;
+	font-size: 10px;
+	background-image: url(../../Images/cssImages/TabNormal.gif);
+	color: white;
+	font-family: Verdana, Arial;
+	background-color: #b9a091;
+	text-align: center;
+}
+TD.clsTDSelected
+{
+	font-weight: bolder;
+	font-size: 10px;
+	background-image: url(../../images/cssImages/TabSelected.gif);
+	color: white;
+	font-family: Verdana, Arial;
+	background-color: #660000;
+	text-align: center;
+}
+TD.clsTDMouseOver
+{
+	font-weight: bolder;
+	font-size: 10px;
+	background-image: url(../../Images/cssImages/Tabmouseover.gif);
+	color: white;
+	font-family: Verdana, Arial;
+	background-color: #eac0ae;
+	text-align: center;
+}
+DIV.clsDivKM
+{
+    BACKGROUND-COLOR: #ffffe8
+}
+TD.clsLinkPageHeader
+{
+	font-weight: bolder;
+	font-size: 10px;
+	color: white;
+	font-family: Verdana, Arial;
+	background-color: #660000;
+}
+BODY.clsTreeBody
+{
+    MARGIN-TOP: 18px;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE: none;
+    MARGIN-LEFT: 2px;
+    BORDER-LEFT: #660000 6px solid;
+    COLOR: black;
+    SCROLLBAR-ARROW-COLOR: #999999;
+    BORDER-BOTTOM: #660000 6px solid;
+    FONT-FAMILY: arial, helvetica, sans-serif;
+    SCROLLBAR-DARKSHADOW-COLOR: #cccccc;
+    SCROLLBAR-BASE-COLOR: #e0e7ef;
+    BACKGROUND-COLOR: white
+}
+BODY.clsTreeBody A.clTocHeading:active
+{
+    FONT-SIZE: 10px;
+    COLOR: maroon;
+    FONT-FAMILY: Verdana;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocHeading:hover
+{
+    FONT-SIZE: 10px;
+    COLOR: red;
+    FONT-FAMILY: Verdana;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocHeading:link
+{
+    FONT-SIZE: 10px;
+    COLOR: maroon;
+    FONT-FAMILY: Verdana;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocHeading:visited
+{
+    FONT-SIZE: 10px;
+    COLOR: maroon;
+    FONT-FAMILY: Verdana;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocItem:active
+{
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocItem:link
+{
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocItem:visited
+{
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocItem:hover
+{
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+TD.clsTDMPPTasks
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: tan
+}
+TD.clsTDAllTasks
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: thistle
+}
+TD.clsTDAssignedTasks
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: darkturquoise
+}
+TD.clsTDOverAllocate
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #d8c4c8
+}
+TD.clsTDOverAllocateMPPTasks
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: peachpuff
+}
+TD.clsTDOverAllocateAssignedTasks
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #adc8d6
+}
+TD.clsTDCritical
+{
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: red;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #e0e7ef
+}
+TD.clsTDCritical A
+{
+    COLOR: red
+}
+TD.clsTDCritical A:active
+{
+    COLOR: red
+}
+TD.clsTDCritical A:link
+{
+    COLOR: red
+}
+TD.clsTDCritical A:visited
+{
+    COLOR: red
+}
+DIV.clsDivDB
+{
+    OVERFLOW: auto;
+    WIDTH: 100%;
+    BACKGROUND-COLOR: #f5f5f5
+}
+TR.clsTREven
+{
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    COLOR: #000000;
+    PADDING-TOP: 2pt;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #d2e9ff
+}
+TR.clsTROdd
+{
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    COLOR: #000000;
+    PADDING-TOP: 2pt;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #e0e7ef
+}
+TR.clsTRPageCaption
+{
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: black;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #e4cbcb
+}
+TR.clsTRMenu
+{
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    COLOR: white;
+    PADDING-TOP: 2pt;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #996666
+}
+A.SetAsDefault:link
+{
+	font-weight: bolder;
+	font-size: 10px;
+	color: white;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+A.SetAsDefault:hover
+{
+	font-weight: bolder;
+	font-size: 10px;
+	color: white;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+A.SetAsDefault:visited
+{
+	font-weight: bolder;
+	font-size: 10px;
+	color: white;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+A.SetAsDefault:active
+{
+	font-weight: bolder;
+	font-size: 10px;
+	color: white;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+
+	/*The "selected" class is used by velocity to render the tab of the page you're on*/
+#selected
+{
+	padding-right: 2px;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 10px;
+	background-image: url(../../Images/cssImages/SelectedTab.gif);
+	background: url(../../images/cssImages/Selected.gif) #660000 no-repeat left top;
+	padding-bottom: 4px;
+	color: white;
+	padding-top: 4px;
+	font-family: Verdana, Arial;
+	MARGIN: 1px -2px -5px 0px;
+	height: 10px;
+	text-decoration: none;
+}
+		
+	/*The remaining tabs are actually links, so they need their own classes*/	
+		a.navtab
+{
+    COLOR: #ffffff;
+    BORDER-RIGHT: navy 1px solid;
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 5px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND: url(../../images/cssImages/link.gif) #b9a091 no-repeat left top;
+	PADDING-BOTTOM: 4px;
+    MARGIN: 1px -2px -5px 0px;
+    LINE-HEIGHT: 11px;
+    PADDING-TOP: 4px;
+    POSITION: relative;
+    HEIGHT: 10px;
+    TEXT-DECORATION: none
+}
+a.navtab:hover
+{
+	color:black;
+	border-right: 1px solid black;
+	background: url("../../images/cssImages/hover.gif") #eac0ae no-repeat top left;
+}
+		
+a.navtab:visited
+{
+    COLOR: #ffffff;
+    BORDER-RIGHT: black 1px solid;
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 5px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND: url(../../images/cssImages/link.gif) #b9a091 no-repeat left top;
+	PADDING-BOTTOM: 4px;
+    MARGIN: 1px -2px -5px 0px;
+    LINE-HEIGHT: 11px;
+    PADDING-TOP: 4px;
+    POSITION: relative;
+    HEIGHT: 10px;
+    TEXT-DECORATION: none
+}

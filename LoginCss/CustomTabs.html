@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <!-- it works the same with all jquery version from 1.x to 2.x -->
+    <!--<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>-->
+    <!--Commented And Added By Usha Pandit On 14 Dec 2020 For Jquery Change Version 3.5.1-->
+    <!--<script src="../Source/General/responsive/jquery/jquery-2.1.3.min.js"></script>-->
+    <script src="../Source/General/responsive/jquery/jquery-3.5.1.min.js"></script>
+    <!--End Of Added By Usha Pandit On 14 Dec 2020 For Jquery Change Version 3.5.1-->
+    <link rel="stylesheet" type="text/css" href="../images/NewHomePage2/TransitionsForFirefox/demos/demos.css" media="screen,projection" />
+    <link href="DefaultCSS.css" rel="stylesheet" />
+    <script src="../Source/General/CommonFunctions.js"></script>
+    <script src="../js/cbpFWTabs.js"></script>
+    <script src="../js/Pmlifeline.js"></script>
+
+    <style>
+        .captionOrange, .captionBlack {
+            color: #fff;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .captionOrange {
+            background: #EB5100;
+            background-color: rgba(235, 81, 0, 0.6);
+        }
+
+        .captionBlack {
+            font-size: 16px;
+            background: #000;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        a.captionOrange, A.captionOrange:active, A.captionOrange:visited {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+            a.captionOrange:hover {
+                color: #eb5100;
+                text-decoration: underline;
+                background-color: #eeeeee;
+                background-color: rgba(238, 238, 238, 0.7);
+            }
+
+        .bricon {
+            background: url(img/browser-icons.png);
+        }
+
+        div.logbox {
+            width: 21%;
+            display: block;
+            background: #FFFFFF;
+            /* float: left; */
+            border: 1px solid #d5d5d5;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            z-index: 1;
+            height: 300px;
+            position: absolute;
+            right: 12%;
+        }
+
+        input.loginbutton {
+            cursor: pointer;
+            border: 1px solid #000000;
+            background-color: #FFFFFF;
+            FONT-SIZE: 12px;
+            padding-top: 1pt;
+            padding-bottom: 1pt;
+            padding-left: 0pt;
+            padding-right: 0pt;
+            text-decoration: none;
+            font-family: Verdana, Arial;
+            position: absolute;
+            color: #000000;
+        }
+
+        #imgheight3 {
+            display: block !important;
+        }
+
+        #menu li {
+            display: inline;
+            padding: 5px;
+        }
+
+        .link {
+            cursor: pointer;
+            border: 1px solid #FFFFFF;
+            background-color: #FFFFFF;
+            border-radius: 15px;
+            FONT-SIZE: 12px;
+            padding-top: 1pt;
+            padding-bottom: 1pt;
+            padding-left: 2pt;
+            padding-right: 2pt;
+            text-decoration: none;
+            font-family: Verdana, Arial;
+            /*  border-right: black 1px solid;
+                border-top: black 1px solid;
+                border-left: black 1px solid;
+                border-bottom: black 1px solid;*/
+            color: #000000;
+        }
+
+        #linkstyle {
+            font-family: Arial,Helvatica,sans-serif;
+            font-size: 17px;
+            color: #454545;
+        }
+
+        #LoginBtn {
+            font-family: Arial,Helvatica,sans-serif;
+            font-size: 17px;
+            color: #454545;
+        }
+
+        #imgheight {
+            height: 460px !important;
+        }
+
+        .mediabox:hover {
+            height: 310px;
+            overflow: auto;
+        }
+
+
+        .modal-login {
+            box-shadow: none;
+            /*font-size: 1em; Commented and added by Nilesh G on 19/11/2015 for issue id 1669*/
+            font-size: 12px;
+            font-weight: 300;
+            font-style: normal;
+            padding: 0 .5em;
+            background: transparent;
+            color: #101010;
+            border: 0;
+            border-radius: 0;
+            border-bottom: 1px solid #cfd2d5;
+        }
+
+        @media (max-width:961px) {
+            #divContent {
+                margin-bottom: 2% !important; /* Added By Vaijat K ON 23/11/2015*/
+            }
+        }
+
+        #divModal {
+            max-height: none !important; /* Added By Vaijat K ON 23/11/2015*/
+        }
+
+        .HoverDiv:hover {
+            overflow: auto;
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+   <div class="HoverDiv" style="height:420px">
+       <table>
+         <tr style="vertical-align:top;">
+            <td>
+               <div class="container">
+			
+		        	<div id="tabs" class="tabs">
+				    <nav>
+					    <ul>
+						    <li><a href="#section-1"><img src="../img/1920/download (1)_s.jpg" style="height:15px;width:15px"><span>Alert/Notification</span></a></li>
+						    <li><a href="#section-2"><img src="../img/1920/TrainingIcon.png" style="height:30px;width:30px"><span>Training</span></a></li>
+						    <li><a href="#section-3"><img src="../img/1920/ProductIcon.jpg" style="height:30px;width:30px"> <span>Product</span></a></li>						  
+					    </ul>
+				    </nav>
+				    <div class="content" style="border:1px solid #47a3da">
+					<section id="section-1">
+						<div class="mediabox">
+							<img src="../img/Message.jpg" alt="Message" />
+							<h3>Message</h3>
+							<p>Wish You Happy New Year 20156
+                            <p>Wish you very Happy Makar Sankranti!!!!!!!!!!</p>
+                          
+						</div>
+						<div class="mediabox">
+							<img src="../img/Support.jpg" alt="Support" />
+							<h3>Support Desk</h3>
+							<p>Support Desk numbers +91 20 30200777 / 778
+                            <p>In case the above numbers are not operational call on +91 855 498 331</p>
+                            
+						</div>
+						<div class="mediabox">
+							<img src="../img/Alert.jpg" alt="img03" />
+							<h3>Alert</h3>
+                            <p>
+							Folowing Days' Support Desk will not avilable</p>
+
+<p>1) 01-Jan-2016 (New Year)</p>
+
+<p>2) 26-Jan-2016 (Republic Day)</p>
+
+<p>3) 24-Mar-2016 (Holi)</p>
+
+<p>4) 08-April-2016 (Gudi Padwa)</p>
+
+<p>5) 15-Aug-2016 (Independence day)</p>
+
+<p>6) 05-Sep-2016 (Ganesh Chaturthi)</p>
+
+<p>7) 16-Sep-2016 (Ananth Chaturdashi)</p>
+
+<p>8) 11-Oct-2016 (Dasara)</p>
+
+<p>9) 28-Oct-2016 (Diwali)</p>
+
+<p>10)31-Oct-2016 (Diwali)</p>
+						</div>
+					</section>
+					<section id="section-2">
+						<div class="mediabox">
+							<img src="../img/training.jpg" alt="training" />
+							<h3>Training</h3>
+							<p>Lifeline Systech Solutions  provides regular training to its customers to train new employees in customer organization, to refresh the existing customer team members.</p>
+
+<p>If you are a Project Manager, Whzible Administrator or Quality Professional, attending the 2 day Intensive Training program scheduled for 23rd and 24th January is a must for you to leverage Whizible better and provide extra value to your organization.</p>
+
+ 
+
+<p>The dates : Please contact the Support Desk</p>
+
+<p>Location : Pune</p>
+
+ 
+
+<p>Customers in AMC may qualify for Free training. Please contact us immediately.</p>
+
+ 
+						</div>
+						<div class="mediabox">
+							<img src="../img/WEBINAR.jpg" alt="WEBINAR" />
+							<h3>WEBINAR</h3>
+							<p>Please contact the Support Desk</p>
+                            <p>Request A Demo</p>
+                            <p>Please contact the Support Desk</p>
+						</div>
+					
+					</section>
+					<section id="section-3">
+						<div class="mediabox">
+							<img src="../img/WhiziblesemTab.jpg" alt="WhiziblesemTab" />
+							<h3>Whizible Execution</h3>
+							<p>The information framework that powers the Services Business.</p>
+                            <p>The key to success in the services business is a seamless and integrated execution model. A model that enables improved decision making and proactive performance</p>
+                            <p>management at all levels through real time visibility into project performance. Developing such a flexible and configurable model needs a powerful framework. Whizible Execution is this information framework for a service centric organization.</p>
+
+     
+                          <ul>
+                              <li> Provides an integrated platform to manage operations and collaboration between dispersed teams.</li>
+                               <li> Effective project management prevents operational delays and overruns that affect profitability.</li>
+                               <li>  Critical information for business decisions that would otherwise have to be collated from disparate sources.</li>
+                               <li>  Optimizes time and efforts of human resources.</li>
+                               <li> Improves customer satisfaction by giving customers a real time visibility into their projects.</li>
+                               <li> Facilitates quality process compliance and institutionalization.</li>
+                          </ul>
+                          <p><b>RESOURCE MANAGEMENT</b></p>
+                            <p>Important it is to have appropriate resources the way you use them is even more critical.Many organizations do not have sufficient information about the utilization of resources or an ability to plan their future activities. While resource shortfall is often a reality optimizing the resources available is the way out.</p>
+                            <p>Whizible Execution helps the resource manager to accurately assess the resource availability and utilization. Shortfalls can be overcome by reassignment of existing resources wherever possible or fresh resources can be requested. An individual’s utilization of time and adherence to a given schedule can be analyzed.</p>
+
+<p>Whizible Execution maintains a database of the entire resource pool and tracks their progress on projects. Resource details, including qualifications, project experience ,skill sets etc. are constantly updated to present a true picture.</p>
+
+<p>View detailed records of resources segmented by skill sets, qualifications, project experience, current availability, billing rates and certifications at a glance.</p>
+
+                            <p><b>PROJECT MANAGEMENT</b></p>
+                        <p>Managing Projects successfully and profitably is at the core of your organization’s success .You need to plan for success and then manage all aspects of execution until completion of the project.</p>
+                        <p>In Whizible Execution you can create a project plan ,allocate resources ,schedule tasks and track schedules and costs using EVM. It also gives you the right information infrastructure to manage project documentation ,customer communication and change requests.</p>
+                            <p>Create a project management plan detailing phases ,modules, resources, quantitative objectives, training plans, risk management plans, milestones and change management.</p>
+                            <p>For scheduling, Whizible Execution offers multiple choices either using the assigned tasks feature of the application or for complex and critical scheduling needs, users can use Microsoft Project. The two way integration
+with MS Project ensures that the Project Plan is kept live through the execution process.</p>
+                            <p>Adherences to plans can be monitored closely and reports generated on project progress and milestone analysis. During project execution, lessons learnt can be published to the Knowledge base.</p>
+
+                            <p><b>Timesheets</b></p>
+                            <p>The timesheets in WHIZIBLE Execution capture the time spent and tasks completed by resources and process this data to deliver a variety of information related to project status and resource utilization. Whizible Execution can track activity based as well as task based timesheets. Resources can request for additional time to complete tasks ( ETC Request .) By capturing the time taken for issue resolution the cost of quality can be analyzed. A resource timesheet approval function helps to authenticate the timesheet data.</p>
+
+
+                              <p><b>eDashboards</b></p>
+                            <p>Whizible Execution allows you to see further and closer than ever before. Need the broad picture on the status of the various projects or the effort variance of an individual project ? With the eDashboards,you can view the information that you need to the required level of detail.</p>
+                            <p>Whizible Execution eDashboards provide an integrated view of operations up to the organization level and down to individual contributing factors presenting the critical operating parameters in a visual and easy to understand format.</p>
+                            <p>The eDashboards are role based and fully configurable allowing a CEO to view corporate level resource, project status etc.The project manager can see the status of his own project, open issues, reviews etc.,while a developer can see his own pending tasks.An individual’s frequently used reports can be added to his dashboard for quick access.
+
+The information can be presented using graphs of 11 different types and alerts generated by events moving into critical ranges .These alerts can be in the form of an email.
+
+The eDashboard ensure the availability of critical information for business decision making.</p>
+
+                             <p><b>Issues</b></p>
+
+
+						</div>
+						<div class="mediabox">
+							<img src="../img/WhizibleInitiativesTab.jpg" alt="WhizibleInitiativesTab" />
+							<h3>Whizible Initiatives</h3>
+							<p>Organizations recognize that innovation is a key source of competitive advantage ,and the basis of future performance. Creating and managing innovation has therefore emerged as a top management priority in recent years.</p>
+                            <p>The challenge lies in capturing the ideas and innovations of all team members and being able to evaluate,approve, prioritize, communicate and execute them.</p>
+                            <p>Whizible Initiatives provides a solution where the need is to evaluate path-breaking innovations, or initiatives related to better ways of working. Whizible Initiative provides the platform that ensures that all the ideas are properly documented and analyzed.</p>
+                            <p>Innovative ideas and initiatives arise through the organization .Some of them are path-breaking concepts and strategic suggestions, such as developing a new product ,while others are more tactical ,such as investing in some additional equipment.</p>
+                            <p>Organizations are faced with a number of questions</p>
+                            <p>Which Initiative should get more priority ?</p>
+                            <p>How do we differentiate strategic initiatives from operational one’s ?</p>
+                            <p>How much money has already been spent ? What stage are we at ?</p>
+                            <p>What happened to the program that John sponsored?</p>
+                            <p>How do I give visibility into the execution progress of initiatives to my business users?</p>
+                            <p>Didn’t we propose a similar initiative last year and discussed it a lot before dropping it?</p>
+                            <p>The way information about a corporate initiative is captured and communicated throughout the approval process is a challenge for organizations. Critical information is often missing at the time of decision-making. This can cause strategic mix-up, where projects with questionable business value can get approved while the next big move may be delayed or shelved.</p>
+                                
+                            <p><b>WHAT IS WHIZIBLE INTIATIVES?</b></p>
+                            <p>Whizible Initiatives is a web based system that ideas and initiatives are properly captured, evaluated and tracked. It provides a platform for standardization, stage-gate approval workflow and conversion of approved initiatives into projects. Whizible Initiatives adopts the Stage- Gate methodologies and facilitates multiple and extensive reviews of any project.</p>
+                            <p><b>•Standardize Initiatives:</b></p>
+                            <p>Whizible Initiatives provides intitutive, easy to use and configurable templates to capture all of the relevant information about an initiative. It also routes this to the stakeholders, based on a configurable business rule to engine to facilitate uniform communication and gain common understanding of the importance. Any supporting documentation , such as business cases ,design specifications or SWOT analysis, can also be attached to the initiative.</p>
+                            <p><b>•Categorize, Prioritize and Stage-Gate Initiatives</b></p>
+                            <p>As the number of initiatives increases, it becomes vital to categorize initiatives based on their impact, e.g. strategic initiatives, business initiatives, operational initiatives and so on. Whizible Initiatives facilitates categorization of initiatives using any number of criteria, which enables appropriate filtering and management of the portfolio of initiatives. In Whizible Initiatives, prioritization can be done based on business parameters like resource availability, risks identified, costs and ROI.</p>
+                            <p>Whizible Initiatives follows the Stage-Gate Methodology ,which ensures that the initiatives progress through the various phases or decision points in a planned manner based on defined workflow. This is supported by weighted checklist.</p>
+                            <p><b>STAGE GATE METHODOLOGY</b></p>
+                            <p>Whizible Initiatives uses this Stage-Gate methodology to ensure that critical information is captured and validated at every stage of the evaluation of an initiative .It is vital that there be an online repository of all the initiatives, which can be reviewed through check lists at appropriate stages.</p>
+                            <p><b>MONITOR Initiatives with Dashboards</b></p>
+                            <p>Whizible Initiatives provides a convenient dashboard functionally to graphically show all the initiatives in a variety ways. This provides key visibility to senior management and all stake holders; aiding evaluation; approval or withdrawal of initiatives. The execution status of the initiatives and programs can also be monitored through the dashboard, The reporting feature has effective dashboards like Initiative Tracking Dashboard, PMO Dashboard and Stage Delay Dashboard.</p>
+                            <p>While Whizible Initiatives allows organizations to capture, prioritize and choose the right initiatives ,Whizible Execution System enable the management of the complete life cycle of execution of programs and projects including issues, quality processes, stake holder collaboration and dashboarding.</p>
+						</div>
+						<div class="mediabox">
+							<img src="../img/WhizibleStrategytab.jpg" alt="WhizibleStrategytab" />
+							<h3>Whizible Strategy</h3>
+							<p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut wasabi tofu broccoli mixture soup.</p>
+						</div>
+					</section>
+					
+                    
+                          
+				</div><!-- /content -->
+		        	</div><!-- /tabs -->
+			
+		        </div>
+		
+		        <script>
+		            new CBPFWTabs(document.getElementById('tabs'));
+		        </script>       
+            </td>
+        </tr>
+   </table>
+   </div>
+   
+</body>
+</html>

@@ -1,0 +1,94 @@
+﻿
+    .chart {
+    height: 206px;
+    width: 87%;
+    
+}
+ .chart-section {
+    margin-left: 3%;
+    background-color: #F0F0F0;
+    border-radius: 15px 15px 15px 15px;
+    height: 230px;
+	width:88%;
+}
+
+  
+  .chart li {
+    display: inline-block;
+    margin-left:5%; 
+    width: 8%; 
+  padding: emCalc(25px) 0;
+  position: relative;
+  text-align: center;
+  vertical-align: bottom;
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px;
+  border-radius: 4px 4px 0 0;
+  -moz-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.6);
+  } 
+  .chart .axis {
+    display: inline-block;
+  } 
+.chart .label {
+ // background: #cccccc;
+  margin: -9px 0 71px 0;
+  color:black;
+}
+ 
+ 
+  .chart .percent {
+    position: absolute;
+    
+  } 
+ 
+.chart .red {
+  background: #FF0000;
+  border: 1px solid #FF0000;
+  background-image: -moz-linear-gradient(#FF0033, #FF0000 70%);
+  background-image: -webkit-linear-gradient(#FF0033, #FF0000 70%);
+  background-image: linear-gradient(#FF0033, #FF0033 70%);
+}
+.chart .salmon {
+  background: #FFA500;
+  border: 1px solid #FFA500;
+  
+}
+.chart .lime {
+  background: #006633;
+  border: 1px solid #006633;
+  
+} 
+.graph-axis-line
+{
+	border-bottom:2px solid #ccc;
+	margin-left:6%;
+	margin-right:25%;
+}
+.shortcolumns
+{
+	margin-left:30%!important;
+}
+ @media (max-width: 720px) 
+{
+ .chart li {
+    display: inline-block;
+    margin-left:5%; 
+    width: 6%;
+  } 
+   .chart { 
+  width:100%;
+  margin-left:0px;
+    
+  }
+  .chart-section {
+    
+    background-color: #F0F0F0;
+    border-radius: 15px 15px 15px 15px;
+    height: 230px;
+	margin-left:0px;
+	width:99%;
+	
+}
+}

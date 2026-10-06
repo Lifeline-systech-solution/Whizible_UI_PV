@@ -1,0 +1,1 @@
+<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="XMLResponse.aspx.vb" Inherits="Whiz.XMLResponse" %>

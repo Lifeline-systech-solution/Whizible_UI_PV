@@ -1,0 +1,165 @@
+table
+{
+font-size:100%;
+background-color: #ffffff;
+}
+body
+{
+font-size:100%;
+background-color: #ffffff;
+}
+
+.Body
+{
+padding-right: 1px;
+	padding-left: 1px;
+	padding-bottom: 1px;
+	margin-right: 18pt;
+	overflow: hidden;
+	line-height: 30px;
+	padding-top: 1px;
+	font-family: Arial, Helvetica;
+	background-color: #ffffff;
+	color: #666666;
+	font-size: 10pt;
+}
+a.BcLink:link
+{
+text-decoration:none;
+color:#6e6e6e;
+font-family: Arial, sans-serif;
+background-color: #ffffff;
+font-weight:normal;
+font-size: 10pt;
+}
+a.BcLink:visited
+{
+text-decoration:none;
+color:#6e6e6e;
+font-family: Arial, sans-serif;
+background-color: #ffffff;
+font-weight:normal;
+font-size: 10pt;
+}
+
+a.BcLink:hover
+{
+text-decoration:underline;
+color:#6e6e6e;
+font-family: Arial;
+background-color: #ffffff;
+font-weight:bold;
+}
+a.glossterm:link {
+	color: #800000;
+	cursor: hand;
+	text-decoration: none;
+	background-color: #ffffff;
+	font-size: 10pt;
+}
+
+a.glossterm:visited {
+	color: #800000;
+	cursor: hand;
+	text-decoration: none;
+	background-color: #ffffff;
+	font-size: 10pt;
+}
+a.glossterm:hover {
+	color: #800000;
+	cursor: hand;
+	text-decoration: none;
+	background-color: #ffffff;
+	font-size: 10pt;
+	font-weight:bold;
+}
+
+a:link
+{
+text-decoration: none;
+font-family: Arial; 
+font-size: 10pt; 
+color: #0033cc;
+}
+a:visited
+{
+text-decoration: none;
+font-family: Arial; 
+font-size: 10pt; 
+color: #0033cc;
+}
+a:hover
+{
+text-decoration: underline; font-family: Arial; font-size: 10pt; font-weight: normal;
+}
+
+SPAN.glosstext {
+	font-style: italic;
+	font-weight: normal;
+	text-decoration: none;
+	background-color: #ffffff;
+	color: #800000;
+}
+P.SectionHD {
+	font-size: 18pt;
+	font-family: Verdana, sans-serif;
+	background-color: #ffffff;
+	color: #FF9933;
+}
+
+
+P.ListItem {
+	font-size: 10pt;
+	font-family: Arial, sans-serif;
+	color: #666666;
+	background-color: #ffffff;
+	line-height: 150%;
+	margin-right: 18pt;
+}
+LI.ListItem {
+	font-size: 10pt;
+	font-family: Arial, sans-serif;
+	color: #666666;
+	background-color: #ffffff;
+	line-height: 150%;
+	margin-right: 18pt;
+}
+
+
+Span.Note {
+	x-text-overline: Normal;
+	font-family: Arial, sans-serif;
+	background-color: #666666;
+	color: #ffffff;
+	text-underline: Normal;
+	text-overline: normal;
+	text-transform: uppercase;
+	line-height: 150%;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 10pt;
+}
+P.WhatDo {
+	font-weight: bold;
+	color: #ffcc66;
+	font-style: normal;
+	font-family: Arial;
+	background-color: #ffffff;
+	font-size:12pt;
+}
+
+
+P.HPMainTitle {
+	font-weight: bold;
+	font-style: normal;
+	font-family: Verdana;
+	font-size:12pt;
+	background-color: #ffffff;
+}
+.HorizontalRule
+{
+
+border-bottom-style:solid;
+border-bottom-color:#003399;
+background-color: #ffffff;
+}

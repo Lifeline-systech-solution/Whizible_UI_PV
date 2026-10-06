@@ -1,0 +1,25 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Help.master.vb" Inherits="PbNIT.Help1" %>
+<!DOCTYPE html>
+<html>
+<head runat="server"> 
+   <link rel="stylesheet" href="../../../Whizible2.0-new/bootstrap/css/bootstrap-5.2.2.min.css" />
+    <link href="../../Whizible2.0-new/dist/css/help.css" rel="stylesheet"/>
+    <link href="../../Whizible2.0-new/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="../../Whizible2.0-new/dist/css/fonts.css" rel="stylesheet"/>
+    <link href="../../Whizible2.0-new/plugins/alertify/css/alertify.css" rel="stylesheet" />
+    <link href="../../Whizible2.0-new/dist/css/style_custom_project.css" rel="stylesheet"/>
+    <asp:ContentPlaceHolder ID="head" runat="server"/>
+</head>
+<body id="body-Progressbar">
+ <script src="../../../Whizible2.0-new/plugins/jQuery/jquery-3.6.1.min.js"></script>
+    <script src="../../../Whizible2.0-new/dist/js/help.js"></script>
+<script src="../../../Whizible2.0-new/bootstrap/js/bootstrap.bundle-5.2.2.min.js"></script>
+    <script src="../../../Whizible2.0-new/plugins/alertify/alertify.js"></script>
+<script src="../../../Whizible2.0-new/dist/js/jquery.dataTables-1.13.1.min.js"></script>
+    <script src="../../../Whizible2.0-new/dist/js/loadingoverlay.min.js"></script>
+    <script src="../../../Whizible2.0-new/dist/js/loadingoverlay_progress.js"></script>
+    <script src="../../../Whizible2.0-new/dist/js/issues_custom.js"></script>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> </asp:ContentPlaceHolder>
+</body>
+</html>

@@ -1,0 +1,1992 @@
+﻿/* PM_BulkResAllocation — styles moved from PM_BulkResAllocation.aspx inline <style> blocks */
+/* Edit this file; do not add page-level <style> blocks in the aspx. */
+:root {
+      --primary: #2563eb;
+      --primary-light: #eff6ff;
+      --primary-border: #bfdbfe;
+      --danger: #ef4444;
+      --text-muted: #6b7280;
+      --border: #e5e7eb;
+      --bg: #f4f6f9;
+      --white: #ffffff;
+      --header-bg: #f8fafc;
+      overflow:hidden;
+    }
+    html, body, input, select, textarea, button, table, th, td, .form-control, .form-select, .btn {
+      font-size: 11.5px !important;
+      font-family: 'Roboto', sans-serif !important;
+    }
+    body { background: var(--bg); color: #1f2937; }
+
+    /* Modified by Nikhil Mane on 05-May-2026 — sticky so header stays visible below
+       the outer Navigation.aspx frame header; z-index keeps it above grid content */
+    .page-header { background: #F8FAFC; border-bottom: 1px solid #F8FAFC; padding: 14px 7px;
+                   display: flex; align-items: center; gap: 14px;
+                   position: sticky; top: 0; z-index: 200; }
+    .page-header .icon-wrap { width: 42px; height: 42px; background: 
+                                  #1e40af;
+                              border-radius: 10px; display: flex; align-items: center; justify-content: center; 
+
+    }
+    .page-header .icon-wrap i { color: #fff; font-size: 18px; }
+    h1.pgtitle {
+        margin: 0;
+        font-weight: 600;
+        /*Commented & Added By Dipali V On 25th May 2026 for Make consistency in font Color*/
+/*color: #6b7280;*/
+color: #1e40af;
+/*End of Commented & Added By Dipali V On 25th May 2026 for Make consistency in font Color*/
+        font-size: 16px;
+        line-height: 1.2;
+        font-family: arial !important;
+    }
+      .pgsubtitle {
+          /*Commented & Added By Dipali V On 25th May 2026 for Make consistency in font size*/
+          /*font-size: 13px;*/
+          font-size: 11.5px;
+          /*End of Commented & Added By Dipali V On 25th May 2026 for Make consistency in font size*/
+          color: #6b7280;
+          font-weight: 400;
+          margin: 2px 0 0 0;
+      }
+
+    .main-content { padding: 24px 28px; }
+
+    /* Added By Dipali V On 27th May 2026 — Project row + Notes (PM_BulkResourceReq.aspx pattern) */
+    .project-note-row {
+      display: flex; align-items: flex-start; gap: 12px 20px; margin-bottom: 16px;
+    }
+    .project-note-toolbar-row {
+      flex: 1 1 640px;
+      padding: 12px 16px;
+      background: var(--white); border: 1px solid var(--border); border-radius: 10px;
+    }
+    .project-toolbar-left {
+      display: flex; align-items: center; flex-wrap: wrap; gap: 16px 40px;
+      flex: 1 1 320px; min-width: 0;
+    }
+    .note-wrap { flex: 0 1 clamp(300px, 42vw, 520px); 
+                 /*max-width: 560px;*/ 
+
+    }
+    .note-bar {
+      min-width: 260px;
+      background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px;
+      padding: 8px 12px; box-shadow: 0 1px 3px rgba(146, 64, 14, 0.06);
+      transition: box-shadow .2s ease, border-color .2s ease;
+    }
+    .note-bar:hover { box-shadow: 0 3px 10px rgba(146, 64, 14, 0.10); border-color: #facc15; }
+    .note-header { display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none; }
+    .note-left { display: flex; align-items: center; gap: 8px; color: #92400e; }
+    .note-left strong { font-weight: 600; font-size: 12px; }
+    .note-chevron { color: #92400e; display: flex; align-items: center; transition: transform 0.2s; }
+    .note-chevron.open { transform: rotate(180deg); }
+    .note-expanded { display: none; margin-top: 8px; padding: 8px 2px 2px 2px; border-top: 1px solid #fde68a; color: #92400e; max-height: 118px; overflow: auto; scrollbar-width: thin; scrollbar-color: #d1a655 #fff7df; }
+    .note-expanded::-webkit-scrollbar { width: 5px; height: 5px; }
+    .note-expanded::-webkit-scrollbar-track { background: #fff7df; border-radius: 999px; }
+    .note-expanded::-webkit-scrollbar-thumb { background: #d1a655; border-radius: 999px; }
+    .note-expanded::-webkit-scrollbar-thumb:hover { background: #b7791f; }
+    .note-bullets-always { margin: 0; padding-left: 18px; color: #92400e; font-size: 11.5px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 16px; row-gap: 4px; }
+    .note-bullets-always li { margin: 0; line-height: 1.4; padding-right: 4px; }
+    @media (max-width: 992px) {
+      .project-note-row { flex-wrap: wrap; }
+      .project-note-toolbar-row, .note-wrap { flex: 1 1 100%; }
+      .note-bar { min-width: 0; }
+      .note-expanded { max-height: 104px; }
+      .note-bullets-always { grid-template-columns: 1fr; }
+    }
+    /* End of Added By Dipali V On 27th May 2026 */
+    .note-filter-item { display: flex; align-items: center; gap: 10px; min-height: 34px; }
+    .note-inline-label {
+      font-size: 11.5px !important; font-weight: 600; color: #374151;
+      margin: 0; white-space: nowrap; line-height: 34px;
+    }
+    .note-filter-project .note-filter-control { width: 240px; min-width: 200px; max-width: 280px; }
+    .note-filter-project .bootstrap-select { width: 100% !important; }
+    .note-filter-project .bootstrap-select > .dropdown-toggle {
+      height: 34px; font-size: 11.5px !important; padding-top: 6px; padding-bottom: 6px;
+    }
+    .note-filter-skill .note-filter-control { display: flex; align-items: center; gap: 8px; min-width: 0; }
+    .note-filter-skill .form-check.form-switch { display: flex; align-items: center; gap: 8px; margin: 0; padding: 0; min-height: 34px; }
+   .note-filter-skill .form-check-input {
+    width: 4.5em;
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+    .note-filter-skill .skill-switch-state {
+      font-size: 11.5px !important; font-weight: 600; color: var(--primary); min-width: 24px;
+    }
+    .note-filter-skill .skill-switch-state.off { color: var(--text-muted); }
+    .field-inline-error { color: #dc2626; font-size: 11px; margin-top: 4px; line-height: 1.35; display: none; }
+    /* Main page tabs — Bulk Allocation / Reallocation */
+    .bulk-alloc-tabs { border-bottom: 1px solid var(--border); margin-bottom: 0; }
+    .bulk-alloc-tabs .nav-link {
+      font-size: 12px !important; font-weight: 600; color: #64748b;
+      border: none; border-bottom: 2px solid transparent; border-radius: 0; padding: 10px 18px;
+    }
+    .bulk-alloc-tabs .nav-link.active {
+      color: var(--primary); background: transparent;
+      border-bottom-color: var(--primary);
+    }
+    .bulk-alloc-tab-content {
+        padding-top: 16px;
+        flex: 1 1 auto;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    /* Added By Dipali V On 26th May - Freeze note/filters/tabs; scroll role rows below */
+    .bulk-alloc-layout { display: flex; flex-direction: column; min-height: 0; max-height: calc(100vh - 72px); }
+    .bulk-alloc-sticky-top {
+      flex: 0 0 auto; position: sticky; top: 0; z-index: 180;
+      background: var(--bg); padding-bottom: 4px;
+    }
+    .bulk-alloc-scroll-body {
+      flex: 1 1 auto; min-height: 0;
+      overflow-y: auto; overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+    /* Added By Dipali V On 5th Jun 2026 — allow horizontal scroll so Select/Delete action column is not clipped */
+   /* .bulk-alloc-scroll-body:not(.is-realloc-tab-active) {
+      overflow-x: auto;
+    }*/
+    .bulk-alloc-scroll-body .card-section { margin-bottom: 12px; }
+    /* Tab-1 action bar (Add More + Allocate) frozen together */
+    .bulk-alloc-action-bar {
+      position: sticky;
+      top: 0;
+      z-index: 176;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 8px 2px 10px;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 8px;
+    }
+    .bulk-alloc-action-left,
+    .bulk-alloc-action-right {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    /* End of Added By Dipali V On 26th May - sticky top + scrollable role area */
+    .reallocation-tab-intro {
+      font-size: 11.5px; color: var(--text-muted); padding: 0 20px 12px;
+    }
+    .reallocation-empty {
+      text-align: center; color: #9ca3af; padding: 32px 20px; font-size: 12px;
+    }
+    /* Generic inline info note — 11px; use with .rrl-actions-row (note left, actions right) */
+      .inline-info-note {
+          display: flex;
+          align-items: flex-start;
+          gap: 3px;
+          font-size: 11px;
+          line-height: 1;
+          color: #1e40af;
+          background: #eff6ff;
+          border: 1px solid #bfdbfe;
+          border-radius: 8px;
+          padding: 8px 10px;
+      
+    }
+    .inline-info-note i { margin-top: 1px; color: #2563eb; flex-shrink: 0; font-size: 11px; }
+    .inline-info-note.d-none { display: none !important; }
+    .rrl-actions-row {
+      display: flex; align-items: flex-start; justify-content: space-between;
+      gap: 12px; padding: 8px 0 6px;
+    }
+    .rrl-actions-row .inline-info-note { flex: 1 1 auto; min-width: 0; }
+    .rrl-actions-row .rrl-save-block { flex: 0 0 auto; margin-left: auto; }
+    .resource-group-rrl { margin: 0 16px 16px; }
+    /* End of Added 26-May-2026 */
+    .btn-allocate { color: #fff; border: none; border-radius: 8px; padding: 9px 22px; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+    .btn-allocate:hover { color:#fff; }
+
+    .card-section { background: var(--white); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 20px; overflow: hidden; }
+    #tabBulkAllocation > .card-section { overflow: visible; }
+    .card-section .section-title { font-weight: 700; font-size: 15px; padding: 16px 20px 14px; 
+                                   /*border-bottom: 1px solid var(--border);*/
+
+    }
+    /* Added 26-May-2026 — single Allocated Resources tab caption (icon + count) */
+    .rrl-tab-section-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: nowrap; }
+    .rrl-tab-section-caption { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; 
+                               font-weight: 700; color: #374151; 
+                               flex: 1 1 auto;
+                               min-width: 0; 
+                               margin-top:-14px!important;
+
+    }
+    .rrl-tab-section-title .rrl-save-block { flex: 0 0 auto; margin-left: auto; }
+    .rrl-tab-section-caption .rrl-icon { color: var(--primary); font-size: 14px; }
+    .resource-group-rrl + .resource-group-rrl { border-top: 1px solid var(--border); margin-top: 4px; padding-top: 8px; }
+
+    .project-info-row { background: var(--primary-light); border: 1px solid var(--primary-border); 
+                        border-radius: 8px; padding: 10px 14px; margin: 16px; display: flex; align-items: center; gap: 24px;
+                        flex-wrap: nowrap; 
+                        overflow-x: hidden!important;
+                        width:1177px;
+
+    }
+    .project-info-row .info-item { display: inline-flex; align-items: center; gap: 8px; min-width: 0; white-space: nowrap; }
+    .project-info-row .info-item label { font-size: 11.5px; color: var(--text-muted); margin: 0; }
+    .project-info-row .info-item span { font-weight: 600; color: var(--primary); font-size: 11.5px; }
+    .project-info-row .info-item.name-item { flex: 1 1 auto; min-width: 260px; }
+    .project-info-row .info-item.date-item { flex: 0 0 auto; min-width: 220px; }
+
+    .resource-group { border: 1px solid var(--border); border-radius: 10px; margin: 0 16px 16px; overflow: visible; position: relative; }
+    /* Added By Dipali V On 9th Jun 2026 — unified parent grid: header + every row share one column layout */
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid {
+      display: grid;
+      grid-template-columns: var(--ba-rg-grid-cols, minmax(110px, 1.5fr) minmax(52px, 0.5fr) minmax(95px, 1fr) minmax(95px, 1fr) minmax(70px, 0.55fr) minmax(76px, 76px));
+      grid-auto-rows: minmax(38px, auto);
+      column-gap: 8px;
+      row-gap: 0;
+      padding: 0 10px 10px;
+      margin: 0 16px 16px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow-x: auto;
+      overflow-y: visible;
+      -webkit-overflow-scrolling: touch;
+      box-sizing: border-box;
+      min-width: 0;
+    }
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid.ba-has-dyn-cols {
+      min-width: var(--ba-rg-grid-min-w, 720px);
+    }
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid > .resource-group {
+      display: contents;
+    }
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .ba-rg-grid-surface,
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .rg-header,
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .rg-row {
+      display: contents;
+    }
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .ba-rg-group-tail {
+      grid-column: 1 / -1;
+      display: block;
+      min-width: 0;
+    }
+    /* Full-width row bands — header / data / highlight (not per-cell backgrounds) */
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .ba-rg-grid-band {
+      grid-column: 1 / -1;
+      min-height: 48px;
+      z-index: 0;
+      pointer-events: none;
+      margin: 0 -10px;
+      width: calc(100% + 20px);
+      box-sizing: border-box;
+    }
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .ba-rg-grid-band-hdr {
+      background: var(--header-bg);
+      border-bottom: 1px solid var(--border);
+      min-height: 40px;
+    }
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .ba-rg-grid-band-data {
+      background: #fff;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .ba-rg-grid-band-data.ba-rg-band-unallocated {
+      background: #fffbeb;
+      border-bottom-color: #fde68a;
+    }
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .resource-group.ba-role-unallocated .rg-row > div,
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .resource-group.ba-role-unallocated .rg-action-cell {
+      cursor: help;
+    }
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .rg-hdr-col,
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .rg-header .ba-rg-dyn-th.ba-rg-dyn-visible,
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .rg-hdr-action {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: .3px;
+      line-height: 1.25;
+      min-width: 0;
+      padding: 10px 0 8px;
+      background: transparent;
+      border-bottom: none;
+      align-self: end;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+    }
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .rg-hdr-action {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      white-space: nowrap;
+      font-size: 11px;
+    }
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .rg-row > div,
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .rg-action-cell {
+      min-width: 0;
+      padding: 10px 0;
+      box-sizing: border-box;
+      align-self: center;
+      background: transparent;
+      position: relative;
+      z-index: 1;
+    }
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .rg-action-cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      flex-wrap: nowrap;
+      overflow: hidden;
+    }
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .rg-hdr-action,
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .rg-action-cell {
+      grid-column: auto;
+    }
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .rg-row .ba-rg-dyn-td.ba-rg-dyn-visible {
+      display: block;
+    }
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .resource-group.ba-role-unallocated .rg-header,
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .resource-group.ba-role-unallocated .rg-row,
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .resource-group.ba-role-unallocated .rg-action-cell {
+      background: transparent !important;
+    }
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .rg-header .ba-rg-dyn-th.col-bill,
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .rg-header .ba-rg-dyn-th.col-approver {
+      text-align: center;
+    }
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .rg-row .ba-rg-dyn-td.col-bill,
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .rg-row .ba-rg-dyn-td.col-approver {
+      justify-self: stretch;
+    }
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .rg-row .ba-rg-dyn-td.ba-rg-dyn-visible.rg-chk-cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+    }
+    #bulkAllocationGroupsContainer.ba-rg-unified-grid .bulk-skill-section {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    #tabBulkAllocation .resource-group { overflow: visible; }
+    /* Legacy: continuation groups no longer render a duplicate header */
+    #bulkAllocationGroupsContainer .resource-group:not(:first-child) > .rg-header { display: none !important; }
+    #bulkAllocationGroupsContainer:not(.ba-rg-unified-grid) .resource-group:not(:first-child) {
+        border-top: none;
+        border-radius: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #bulkAllocationGroupsContainer:not(.ba-rg-unified-grid) .resource-group:first-child:not(:last-child) {
+        border-radius: 10px 10px 0 0;
+        margin-bottom: 0;
+    }
+    #bulkAllocationGroupsContainer:not(.ba-rg-unified-grid) .resource-group:last-child:not(:first-child) {
+        border-radius: 0 0 10px 10px;
+        margin-bottom: 16px;
+    }
+    #bulkAllocationGroupsContainer:not(.ba-rg-unified-grid) .resource-group:only-child {
+        border-radius: 10px;
+        margin-bottom: 16px;
+    }
+    #tabBulkAllocation .resource-group.ba-has-dyn-cols .rg-header,
+    #tabBulkAllocation .resource-group.ba-has-dyn-cols .rg-row,
+    #bulkAllocationGroupsContainer.ba-has-dyn-cols > .resource-group > .rg-header,
+    #bulkAllocationGroupsContainer.ba-has-dyn-cols > .resource-group > .rg-row { min-width: var(--ba-rg-grid-min-w, 720px); }
+    #tabBulkAllocation .resource-group.ba-role-unallocated { border-color: #fde68a; }
+    #tabBulkAllocation .resource-group.ba-role-unallocated .rg-header,
+    #tabBulkAllocation .resource-group.ba-role-unallocated .rg-row { background: #fffbeb; }
+    #bulkAllocationGroupsContainer:not(.ba-rg-unified-grid) .resource-group.ba-role-unallocated .rg-row { cursor: help; }
+    #tabBulkAllocation .rg-header,
+    #tabBulkAllocation .rg-row {
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+    /* Shared column template — legacy nested grid only (unified grid uses parent container columns) */
+    #bulkAllocationGroupsContainer:not(.ba-rg-unified-grid) > .resource-group > .rg-header,
+    #bulkAllocationGroupsContainer:not(.ba-rg-unified-grid) > .resource-group > .rg-row,
+    #tabBulkAllocation .resource-group > .rg-header,
+    #tabBulkAllocation .resource-group > .rg-row {
+      grid-template-columns: var(--ba-rg-grid-cols, minmax(110px, 1.5fr) minmax(52px, 0.5fr) minmax(95px, 1fr) minmax(95px, 1fr) minmax(70px, 0.55fr) minmax(76px, 76px));
+      width: 100%;
+      box-sizing: border-box;
+    }
+    #bulkAllocationGroupsContainer:not(.ba-rg-unified-grid) .rg-hdr-action {
+      display: flex; align-items: center; justify-content: center;
+      text-align: center; min-width: 0; overflow: hidden;
+      white-space: nowrap; font-size: 11px;
+      grid-column: -1;
+      grid-row: 1;
+      align-self: end;
+    }
+    #bulkAllocationGroupsContainer:not(.ba-rg-unified-grid) .rg-action-cell {
+      display: flex; align-items: center; justify-content: center;
+      gap: 4px; flex-wrap: nowrap; min-width: 0; max-width: 100%;
+      overflow: hidden; box-sizing: border-box;
+      grid-column: -1;
+      grid-row: 1;
+      align-self: center;
+    }
+    #tabBulkAllocation .resource-group.ba-role-unallocated .rg-action-cell { background: #fffbeb; }
+    #tabBulkAllocation .btn-action-add,
+    #tabBulkAllocation .btn-action-delete {
+      width: 28px; height: 28px; font-size: 14px; flex-shrink: 0;
+    }
+    /* First row keeps delete slot width so continuation rows line up with header */
+    #tabBulkAllocation .btn-action-delete.ba-role-remove-hidden {
+      visibility: hidden;
+      pointer-events: none;
+    }
+    #tabBulkAllocation .rg-row .datefielddiv { width: 100%; min-width: 0; }
+    #tabBulkAllocation .rg-row .datefielddiv .form-control { padding-left: 6px; padding-right: 6px; font-size: 12px; }
+    #tabBulkAllocation .rg-row .rg-count { padding-left: 6px; padding-right: 6px; }
+
+    /* Modified by Nikhil Mane on 05-May-2026 — widened Action column for Add + Remove role buttons */
+    .rg-header { display: grid; grid-template-columns: minmax(110px, 1.5fr) minmax(52px, 0.5fr) minmax(95px, 1fr) minmax(95px, 1fr) minmax(70px, 0.55fr) minmax(76px, 76px); background: var(--header-bg); border-bottom: 1px solid var(--border); padding: 8px 14px; gap: 10px; align-items: end; }
+    .rg-header > span,
+    .rg-header .ba-rg-dyn-th {
+        font-size: 11.5px; font-weight: 600; color: var(--text-muted); letter-spacing: .3px;
+        min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; line-height: 1.25;
+    }
+
+    /* Modified by Nikhil Mane on 05-May-2026 — widened Action column */
+    .rg-row { display: grid; grid-template-columns: minmax(110px, 1.5fr) minmax(52px, 0.5fr) minmax(95px, 1fr) minmax(95px, 1fr) minmax(70px, 0.55fr) minmax(76px, 76px); padding: 10px 14px; gap: 10px; align-items: center; }
+    /* Each direct child cell must have min-width:0 — without this a grid cell can blow out past its track when content is wider (e.g. long bootstrap-select value) */
+    .rg-row > div { min-width: 0; overflow: hidden; }
+    .rg-row .form-control, .rg-row .form-select { font-size: 13px; border: 1px solid #d1d5db; border-radius: 6px; padding: 7px 10px; height: 38px; }
+    .rg-row .form-control:focus, .rg-row .form-select:focus { border-color: #111827; box-shadow: none; outline: none; }
+    /* Constrain the bootstrap-select toggle to its grid cell — prevents layout break on long values */
+    .rg-row .bootstrap-select { width: 100% !important; max-width: 100%; }
+    .rg-row .bootstrap-select > button { width: 100% !important; overflow: hidden; }
+    .rg-row .bootstrap-select > button .filter-option-inner-inner { font-size:11.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; max-width: 100%; }
+    /* ── Allocation wrapper — mirrors PM_BulkResourceReq.aspx ── */
+    .rg-alloc-wrapper { display: flex; align-items: center; border: 1px solid #d1d5db; border-radius: 6px; overflow: hidden; height: 38px; width: 100%; max-width: 100%; }
+    .rg-alloc-wrapper .rg-alloc { border: none !important; padding: 4px 6px; width: 100%; min-width: 0; flex: 1 1 auto; outline: none; height: 100%; font-size: 11.5px !important; background: #fff; box-shadow: none !important; }
+    .rg-alloc-wrapper .rg-alloc:focus { background: #fff; }
+    .rg-alloc-wrapper:focus-within { border-color: #111827; box-shadow: none; }
+    .rg-alloc-wrapper .rg-alloc:disabled { background: #f1f5f9 !important; color: #64748b !important; cursor: not-allowed !important; }
+    .rg-alloc-wrapper .rg-alloc-pct-label { padding: 4px 8px; background: #f9fafb; border-left: 1px solid #e5e7eb; color: #6b7280; font-size: 13px; white-space: nowrap; flex-shrink: 0; }
+    /* Error highlight on wrapper */
+    .rg-alloc-wrapper.val-error { border-color: #ef4444 !important; background: #fff5f5 !important; }
+    .rg-alloc-wrapper.val-error .rg-alloc { background: #fff5f5 !important; }
+    /* No of Resources input */
+    .rg-row .rg-count.val-error { border: 1.5px solid #ef4444 !important; background-color: #fff5f5 !important; }
+
+    /* ── Validation error highlight — identical to PM_BulkResourceReq.aspx ── */
+    .val-error { border: 1.5px solid #ef4444 !important; background-color: #fff5f5 !important; border-radius: 4px; }
+    .val-error:focus { box-shadow: 0 0 0 2px rgba(239,68,68,.2) !important; }
+    /* Alertify notifier z-index — identical to PM_BulkResourceReq.aspx */
+    .alertify-notifier { z-index: 99999 !important; }
+    .alertify-notifier .ajs-message { z-index: 99999 !important; }
+
+    /* ── Offcanvas field validation error styles — Added by Nikhil Mane on 15-04-2026 ── */
+    /* selectpicker button error state inside offcanvas */
+    #selectResourceOffcanvas .bootstrap-select.oc-val-error > button,
+    #selectResourceOffcanvas .bootstrap-select.oc-val-error > .dropdown-toggle {
+        border: 1.5px solid #ef4444 !important;
+        background-color: #fff5f5 !important;
+        border-radius: 4px;
+    }
+    /* plain input error state inside offcanvas */
+    #selectResourceOffcanvas .form-control.oc-val-error {
+        border: 1.5px solid #ef4444 !important;
+        background-color: #fff5f5 !important;
+        border-radius: 4px;
+    }
+    #selectResourceOffcanvas .form-control.oc-val-error:focus {
+        box-shadow: 0 0 0 2px rgba(239,68,68,.2) !important;
+    }
+    /* per-resource sub-table selectpicker error */
+    .selected-resources .bootstrap-select.oc-val-error > button {
+        border: 1.5px solid #ef4444 !important;
+        background-color: #fff5f5 !important;
+    }
+    .selected-resources .form-control.oc-val-error {
+        border: 1.5px solid #ef4444 !important;
+        background-color: #fff5f5 !important;
+    }
+    input.form-control:not(.val-error):not(.oc-val-error):focus,
+    textarea.form-control:not(.val-error):not(.oc-val-error):focus,
+    select.form-select:not(.val-error):not(.oc-val-error):focus {
+        border-color: #111827 !important;
+        box-shadow: none !important;
+        outline: none !important;
+    }
+    /* ── End of Offcanvas field validation error styles ── */
+
+    /* ── Offcanvas Project Role — read-only locked state ── */
+    #selectResourceOffcanvas .bootstrap-select.oc-role-locked > .dropdown-toggle,
+    #selectResourceOffcanvas .bootstrap-select.oc-role-locked > button {
+        background-color: #f1f5f9 !important;
+        color: #64748b !important;
+        cursor: not-allowed !important;
+        border-color: #e2e8f0 !important;
+        pointer-events: none !important;
+        opacity: 1 !important;
+    }
+    #oc-role-locked-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 11px;
+        color: #64748b;
+        margin-top: 4px;
+    }
+    #oc-role-locked-badge i { color: #f59e0b; font-size: 11px; }
+    /* ── End of Offcanvas Project Role locked styles ── */
+
+    .btn-delete { background: none; border: none; color: var(--danger); font-size: 16px; padding: 4px; cursor: pointer; opacity: .85; }
+    .btn-delete:hover { opacity: 1; }
+    /* Modified by Nikhil Mane on 05-May-2026 — icon-only circular buttons for Action column */
+    /* Modified by Nikhil Mane on 05-May-2026 — action cell center-aligned, overflow visible for tooltips */
+    .rg-action-cell { display: flex; align-items: center; justify-content: center; gap: 4px; overflow: hidden; flex-wrap: nowrap; }
+    .rg-row > div:last-child { min-width: 0; overflow: hidden; }
+    #tabBulkAllocation .rg-row > div:last-child { overflow: hidden; }
+    .btn-action-add {
+        background: none; border: none; border-radius: 50%;
+        color: var(--primary); font-size: 16px;
+        width: 30px; height: 30px; padding: 0;
+        cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
+        transition: background .18s, color .18s;
+    }
+    .btn-action-add i { display: block; line-height: 1; margin: 0 auto; }
+    .btn-action-add:hover { background: var(--primary-light); }
+    .btn-action-add:disabled { opacity: 0.4; cursor: not-allowed; pointer-events: none; }
+    .required {
+        color:red!important;
+    }
+    /* Added By Dipali V On 26th May 2026 - Set Skill section (PM_BulkResourceReq.aspx pattern) */
+    /* Added By Dipali V On 26th May - Project Role cell: dropdown only (same line as No of Resources) */
+    .rg-role-wrap { min-width: 0; width: 100%; }
+    /* Set Skill link sits below rg-row so row controls stay vertically aligned */
+    .rg-set-skill-row { display: none; padding: 0 14px 8px; margin-top: -4px; }
+    .set-skill-link { color: #1a56db; cursor: pointer; background: none; border: none; font-weight: 500; padding: 0; white-space: nowrap; font-size: 11.5px !important; line-height: 2.2; }
+    .set-skill-link:hover { text-decoration: underline; }
+    .bulk-skill-section { display: none; margin: 0 16px 12px; border: 1px solid #dbeafe; border-radius: 8px; overflow: hidden; }
+    .bulk-skill-section.open { display: block; }
+    .skill-section-inner { background: #f8faff; padding: 12px 16px; border-top: 1px solid #dbeafe; }
+    .skill-section-header { display: flex; align-items: center; gap: 7px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+    .skill-section-close { background: none; border: none; cursor: pointer; color: #9ca3af; font-size: 14px; line-height: 1; padding: 0 3px; }
+    .skill-section-close:hover { color: #374151; }
+    .skill-dot { width: 7px; height: 7px; background: #3b82f6; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+    .skills-table { width: 100%; border-collapse: collapse; margin-bottom: 8px; table-layout: fixed; }
+    .skills-table thead tr { background: #f9fafb; }
+    .skills-table thead th { font-weight: 600; color: #374151; padding: 7px 10px; text-align: left; border: 1px solid #dee2e6; white-space: nowrap; font-size: 11.5px !important; }
+    .skills-table tbody td { padding: 8px; vertical-align: middle; border: 1px solid #dee2e6; }
+    .skills-table .form-control { height: 38px; padding: 4px 8px; font-size: 13px !important; width: 100%; max-width: 100%; box-sizing: border-box; }
+    .skills-table .bootstrap-select { width: 100% !important; display: block !important; margin: 0; }
+    .skills-table .bootstrap-select > .dropdown-toggle {
+        height: 38px !important; min-height: 38px; font-size: 13px;
+        border: 1px solid #d1d5db; border-radius: 6px; width: 100% !important;
+    }
+    .skills-table .bootstrap-select > .dropdown-toggle .filter-option-inner-inner {
+        overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    }
+    .skills-table td.td-skill { width: 30%; vertical-align: middle; min-width: 0; }
+    .skills-table td.td-experience { width: 30%; vertical-align: middle; min-width: 0; }
+    /* Match rg-row Project Role dropdown layout (single control per cell) */
+    .skills-table .skill-select-wrap,
+    .skills-table .prof-select-wrap { min-width: 0; width: 100%; }
+    .skills-table .skill-select-wrap .bootstrap-select,
+    .skills-table .prof-select-wrap .bootstrap-select { width: 100% !important; max-width: 100%; display: block !important; margin: 0; }
+    .skills-table .skill-select-wrap .bootstrap-select > button,
+    .skills-table .prof-select-wrap .bootstrap-select > button { width: 100% !important; overflow: hidden; }
+    .skills-table .exp-wrap { display: flex; align-items: center; gap: 6px; width: 100%; min-width: 0; }
+    .skills-table .exp-wrap .exp-year { flex: 1 1 0; min-width: 0; }
+    .skills-table .exp-wrap .exp-month { flex: 1 1 0; min-width: 0; }
+    .skills-table .exp-wrap .bootstrap-select { width: 100% !important; max-width: 100%; display: block !important; margin: 0; }
+    .skills-table .exp-wrap .bootstrap-select > button { width: 100% !important; overflow: hidden; }
+    .skills-table .exp-wrap .exp-sep { color: #6b7280; flex-shrink: 0; }
+    .skills-table .chk-core { width: 16px; height: 16px; accent-color: #1a56db; cursor: pointer; display: block; margin: auto; }
+    /* Added By Dipali V On 26th May - Collapse native select after selectpicker binds (prevents empty gap in cell) */
+    .skills-table td.td-skill select.skill-select.bs-select-hidden {
+        position: absolute !important; width: 1px !important; height: 1px !important;
+        padding: 0 !important; margin: 0 !important; opacity: 0 !important; pointer-events: none;
+    }
+    .skills-table td.td-action { text-align: center; width: 10%; }
+    .skills-table .ibtnDel { background: none; border: none; cursor: pointer; color: #ef4444; padding: 2px 4px; border-radius: 3px; }
+    .skills-table .ibtnDel:hover { color: #dc2626; }
+    .btn-add-skill { background: #fff; border: 1px solid #d1d5db; border-radius: 6px; padding: 5px 12px; font-size: 11.5px !important; font-weight: 600; color: #374151; cursor: pointer; }
+    .btn-add-skill:hover { background: #f3f4f6; border-color: #9ca3af; }
+    /* End of Added By Dipali V On 26th May 2026 */
+    .btn-action-delete {
+        background: none; border: none; border-radius: 50%;
+        color: var(--danger); font-size: 15px;
+        width: 30px; height: 30px; padding: 0;
+        cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
+        transition: background .18s, color .18s;
+    }
+    .btn-action-delete:hover:not(:disabled) { background: #fef2f2; }
+    .btn-action-delete:disabled { opacity: .30; cursor: not-allowed; color: #9ca3af; }
+    /* End of Modified by Nikhil Mane on 05-May-2026 */
+
+    .rg-footer { border-top: 1px solid var(--border); padding: 10px 14px; display: flex; justify-content: flex-end; background: #fafafa; }
+    .btn-select-res { background: none; border: 1px solid var(--primary); border-radius: 6px; color: var(--primary); font-size: 13px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 6px; padding: 6px 14px; transition: all .18s; }
+    .btn-select-res:hover { background: var(--primary); color: #fff; }
+    .btn-select-res i { font-size: 12px; }
+
+    .btn-add-more { background: var(--white); border: 1px solid var(--primary); color: var(--primary); border-radius: 8px; padding: 8px 18px; font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; gap: 7px; cursor: pointer; transition: all .2s; }
+    .btn-add-more:hover { background: var(--primary); color: #fff; }
+
+    /* Hidden store for per-resource allocate payload (not displayed) */
+    #tabBulkAllocation .ba-res-data-store { display: none !important; }
+    /* Hidden until syncBulkAllocTableColumns marks selected columns with .ba-rg-dyn-visible */
+    #tabBulkAllocation .rg-header .ba-rg-dyn-th,
+    #tabBulkAllocation .rg-row .ba-rg-dyn-td { display: none; }
+    #tabBulkAllocation .rg-header .ba-rg-dyn-th.ba-rg-dyn-visible { display: block; }
+    #tabBulkAllocation .rg-row .ba-rg-dyn-td.ba-rg-dyn-visible { display: block; }
+    #tabBulkAllocation .rg-row .ba-rg-dyn-td.ba-rg-dyn-visible.rg-chk-cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 38px;
+    }
+    #tabBulkAllocation .rg-row .ba-rg-dyn-td .form-control,
+    #tabBulkAllocation .rg-row .ba-rg-dyn-td .form-control-sm { height: 38px; font-size: 13px; padding: 7px 10px; }
+    #tabBulkAllocation .rg-row .ba-rg-dyn-td .bootstrap-select { width: 100% !important; }
+    #tabBulkAllocation .rg-row .ba-rg-dyn-td .bootstrap-select > .dropdown-toggle {
+        height: 38px !important; min-height: 38px !important; font-size: 13px !important; padding: 7px 10px !important;
+    }
+    /* Hide native <select> after selectpicker binds — form-control on <select> caused double textbox appearance */
+    #tabBulkAllocation .rg-row .ba-rg-dyn-td select.selectpicker.bs-select-hidden {
+        position: absolute !important; width: 1px !important; height: 1px !important;
+        padding: 0 !important; margin: 0 !important; opacity: 0 !important; pointer-events: none;
+    }
+    #tabBulkAllocation .rg-header,
+    #tabBulkAllocation .rg-row { gap: 8px; padding-left: 10px; padding-right: 10px; }
+    #tabBulkAllocation .rg-header .ba-rg-dyn-th.col-rpt,
+    #tabBulkAllocation .rg-row .ba-rg-dyn-td.col-rpt { min-width: 0; }
+    #tabBulkAllocation .rg-header .ba-rg-dyn-th.col-work,
+    #tabBulkAllocation .rg-row .ba-rg-dyn-td.col-work { min-width: 0; }
+    #tabBulkAllocation .rg-header .ba-rg-dyn-th.col-bill,
+    #tabBulkAllocation .rg-header .ba-rg-dyn-th.col-approver {
+        text-align: center;
+        justify-self: stretch;
+        padding: 0 2px;
+    }
+    #tabBulkAllocation .rg-row .ba-rg-dyn-td.col-bill,
+    #tabBulkAllocation .rg-row .ba-rg-dyn-td.col-approver {
+        justify-self: stretch;
+        padding: 0 2px;
+    }
+    #tabBulkAllocation .rg-row .ba-rg-dyn-td { min-width: 0; width: 100%; box-sizing: border-box; }
+    .selected-resources { margin: 0 14px 10px; }
+    /* Horizontal scrollable wrapper for selected resources table */
+    .selected-resources-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--border); border-radius: 8px; }
+    /* Modified by Nikhil Mane on 06-May-2026 — align Selected Resources visual density with Allocated Resources table */
+    .selected-resources table { width: max-content; min-width: 100%; font-size: 12px; border-collapse: collapse; }
+    .selected-resources thead th { background:#f1f5f9; font-size:10.5px; font-weight:700; color:#64748b; letter-spacing:.4px; padding:7px 12px; border-bottom:1px solid var(--border); white-space: nowrap; }
+    .selected-resources tbody td { padding:7px 12px; border-bottom: 1px solid #f3f4f6; vertical-align: middle; color:#1f2937; }
+    /* Modified by Nikhil Mane on 15-04-2026 — align td top when it contains a textarea */
+    .selected-resources tbody td:has(textarea) { vertical-align: top; padding-top: 9px; }
+    .selected-resources td textarea.form-control-sm { font-size: 11.5px !important; line-height: 1.4; }
+    .selected-resources tbody tr:last-child td { border-bottom: none; }
+    /* Fixed column widths for selected resource table */
+    .selected-resources th.col-res    { min-width: 130px; width: 130px; }
+    .selected-resources th.col-role   { min-width: 160px; width: 160px; }
+    .selected-resources th.col-start  { min-width: 110px; width: 110px; }
+    .selected-resources th.col-end    { min-width: 110px; width: 110px; }
+    .selected-resources th.col-alloc  { min-width: 90px;  width: 90px; }
+    .selected-resources th.col-rpt    { min-width: 160px; width: 160px; }
+    .selected-resources th.col-status { min-width: 140px; width: 140px; }
+    .selected-resources th.col-work     { min-width: 90px;  width: 90px; }
+    .selected-resources th.col-resp     { min-width: 220px; width: 220px; } /* Modified by Nikhil Mane on 15-04-2026 — widened for textarea */
+    .selected-resources th.col-bill     { min-width: 80px;  width: 80px;  text-align: center; }
+    .selected-resources th.col-approver { min-width: 110px; width: 110px; text-align: center; display: none; }
+    .selected-resources th.col-act      { min-width: 60px;  width: 60px;  text-align: center; }
+    /* Checkbox centering in sub-table */
+    .selected-resources td.col-bill,
+    .selected-resources td.col-approver { text-align: center; vertical-align: middle; }
+    /* Ensure selectpicker dropdowns fill column width */
+    .selected-resources td .bootstrap-select,
+    .selected-resources td .bootstrap-select > button { width: 100% !important; }
+    .selected-resources td select.form-control { width: 100% !important; }
+    /* ── Sub-table input height — Modified by Nikhil Mane on 17-04-2026 ──
+       Makes Work (HH:MM) and % Allocation text inputs the same height as
+       the bootstrap-select dropdowns (38px) in the per-resource sub-table. ── */
+    .selected-resources td input.form-control,
+    .selected-resources td input.form-control-sm {
+        height: 30px !important;
+        min-height: 30px !important;
+        line-height: 30px !important;
+        padding: 0 8px !important;
+        box-sizing: border-box;
+        border: 1px solid #d1d5db;
+        border-radius: 5px;
+        font-size: 11.5px !important;
+        color: #1f2937;
+        background: #fff;
+    }
+    /* Added by Nikhil Mane on 06-May-2026 — Selected Resources selectpicker button matches Allocated row-edit controls */
+    .selected-resources td .bootstrap-select > .dropdown-toggle {
+        height: 30px !important;
+        min-height: 30px !important;
+        line-height: 30px !important;
+        padding: 0 24px 0 8px !important;
+        border: 1px solid #d1d5db;
+        border-radius: 5px;
+        font-size: 11.5px !important;
+        background: #fff;
+        color: #1f2937;
+    }
+    .selected-resources td textarea.form-control-sm {
+        border: 1px solid #d1d5db;
+        border-radius: 5px;
+        font-size: 11.5px !important;
+        color: #1f2937;
+        background: #fff;
+    }
+    /* ── End of Sub-table input height fix ── */
+    /* Allocation field disabled styling */
+    .rg-alloc:disabled { background: #f1f5f9 !important; color: #64748b !important; cursor: not-allowed !important; border-color: #e2e8f0 !important; }
+    /* Role locked styling — Modified by Nikhil Mane on 05-May-2026:
+       lockProjectRoleForGroup() adds rg-role-locked directly to the .bootstrap-select
+       wrapper, so the selector must have no space (same-element match).
+       The old descendant selector .rg-role-locked .bootstrap-select never matched. */
+    .bootstrap-select.rg-role-locked > button,
+    .bootstrap-select.rg-role-locked > .dropdown-toggle { background: #f1f5f9 !important; color: #64748b !important; cursor: not-allowed !important; border-color: #e2e8f0 !important; pointer-events: none !important; }
+    .rg-role-locked-badge { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; color: #64748b; margin-top: 3px; }
+    .rg-role-locked-badge i { color: #f59e0b; font-size: 11px; }
+    /* Truncate long option text in selected-resources table dropdowns */
+    .selected-resources td .bootstrap-select > button .filter-option-inner-inner { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; display: block; }
+    .selected-resources td .bootstrap-select > button { overflow: hidden; }
+    /* Added by Nikhil Mane on 05-May-2026 — Selected Resources accordion styles */
+    .selr-section { border-top: 1px solid var(--border); }
+    .selr-toggle-bar { display:flex; align-items:center; justify-content:space-between; padding:8px 14px; background:#f8fafc; cursor:pointer; user-select:none; transition:background .15s; }
+    .selr-toggle-bar:hover { background:#eff6ff; }
+    .selr-toggle-left { display:flex; align-items:center; gap:8px; font-size:12px; font-weight:600; color:#374151; }
+    .selr-toggle-left i.selr-icon { color:var(--primary); font-size:12px; }
+    .selr-count-badge { display:inline-flex; align-items:center; justify-content:center; min-width:22px; height:18px; padding:0 6px; background:var(--primary); color:#fff; border-radius:999px; font-size:10px; font-weight:700; line-height:1; }
+    .selr-count-badge.empty { background:#9ca3af; }
+    .selr-chevron { color:#6b7280; font-size:11px; transition:transform .2s; }
+    .selr-section.collapsed .selr-chevron { transform:rotate(-90deg); }
+    .selr-body { overflow:hidden; transition:max-height .25s ease; max-height:1200px; }
+    .selr-section.collapsed .selr-body { max-height:0; }
+    /* End of Added by Nikhil Mane on 05-May-2026 — Selected Resources accordion styles */
+    /* Uniform input/dropdown height inside the Select Resources offcanvas */
+    #selectResourceOffcanvas .form-control,
+    #selectResourceOffcanvas .input-group .form-control,
+    #selectResourceOffcanvas .bootstrap-select > .dropdown-toggle { height: 38px !important; min-height: 38px !important; line-height: 1.5; box-sizing: border-box; }
+    /* Ensure selectpicker dropdowns rendered on <body> via data-container="body" appear above offcanvas panels */
+    .bs-container { z-index: 1090 !important; }
+    #ui-datepicker-div { z-index: 1095 !important; }
+    #selectResourceOffcanvas .bootstrap-select > .dropdown-toggle .filter-option { display: flex; align-items: center; height: 100%; }
+    /* Start/End Date locked state after resources are selected */
+    .rg-date-locked { background: #f1f5f9 !important; color: #64748b !important; cursor: not-allowed !important; border-color: #e2e8f0 !important; }
+    .rg-start-btn[disabled], .rg-end-btn[disabled] { opacity: 0.4; cursor: not-allowed !important; pointer-events: none !important; }
+    /* Black tooltip — identical to PM_BulkResourceReq.aspx / PM_ProjectSites.aspx */
+    .black-tooltip .tooltip-inner { background-color: #000; color: #fff; padding: 6px 10px; }
+    .black-tooltip.bs-tooltip-top .tooltip-arrow::before { border-top-color: #000; }
+    .black-tooltip.bs-tooltip-bottom .tooltip-arrow::before { border-bottom-color: #000; }
+    .black-tooltip.bs-tooltip-start .tooltip-arrow::before { border-left-color: #000; }
+    .black-tooltip.bs-tooltip-end .tooltip-arrow::before { border-right-color: #000; }
+
+    @media(max-width: 768px) {
+      .rg-header, .rg-row { grid-template-columns: 1fr 1fr; }
+      .rg-header span:nth-child(n+3), .rg-row > *:nth-child(n+3) { display: none; }
+    }
+
+    .offcanvas.offcanvas-wide { width: 78vw; max-width: 78vw; }
+    /* Layered parent-child offcanvas visual */
+    /* Keep panel above backdrop; Bootstrap backdrop is around 1040 */
+    #selectResourceOffcanvas { z-index: 1045; }
+    #resourceDetailsOffcanvas { z-index: 1065; }
+    #rrlAllocationDetailOffcanvas { z-index: 1065; }
+    #resourceLoadingOffcanvas { z-index: 1085; }
+    .resource-detail-panel { width: 420px !important; max-width: 92vw; }
+    #rrlOcEditFields .rrl-oc-field { margin-bottom: 14px; }
+    #rrlOcEditFields .rrl-oc-field label { display: block; font-weight: 600; font-size: 12px; color: #374151; margin-bottom: 5px; }
+    #rrlOcEditFields .rrl-oc-readonly { font-size: 13px; color: #111827; }
+    #rrlOcEditFields .form-control,
+    #rrlOcEditFields .bootstrap-select > .dropdown-toggle { min-height: 38px; font-size: 13px; }
+    #rrlOcEditFields textarea.form-control { min-height: 72px; resize: vertical; }
+    #rrlOcEditFields .rrl-oc-check-row { display: flex; align-items: center; min-height: 32px; }
+    #rrlOcEditFields .rrl-oc-check-row .form-check-input { width: 18px; height: 18px; margin: 0; cursor: pointer; }
+    #rrlOcEditFields .rrl-date-wrap { display: flex; align-items: stretch; width: 100%; }
+    #rrlOcEditFields .rrl-date-wrap .form-control { flex: 1; border-radius: 5px 0 0 5px !important; }
+    #rrlOcEditFields .rrl-date-wrap .rrl-cal-btn { border-radius: 0 5px 5px 0 !important; }
+    #rrlAllocationDetailOffcanvas .offcanvas-body { overflow-x: visible; }
+    #rrlOcEditFields .form-control.oc-val-error,
+    #rrlOcEditFields .bootstrap-select.oc-val-error > button,
+    #rrlOcEditFields .bootstrap-select.oc-val-error > .dropdown-toggle {
+        border: 1.5px solid #ef4444 !important;
+        background-color: #fff5f5 !important;
+    }
+    #rrlOcEditFields .rrl-date-wrap.oc-val-error .form-control {
+        border: 1.5px solid #ef4444 !important;
+        background-color: #fff5f5 !important;
+    }
+    .resource-loading-panel { width: 840px !important; max-width: 88vw; }
+    /* Layered offcanvas: dim parent like Bootstrap backdrop (no blur) */
+    .offcanvas-parent-blur .offcanvas-header,
+    .offcanvas-parent-blur .offcanvas-body {
+      pointer-events: none;
+    }
+    .offcanvas-parent-blur::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background-color: #000;
+      opacity: var(--bs-backdrop-opacity, 0.5);
+      pointer-events: auto;
+      cursor: default;
+    }
+    .line-card { border: 1px solid var(--border); border-radius: 10px; background: #fff; }
+
+    /* Default Approver change modal — above offcanvas panels (1065) */
+    #defaultApproverChangeModal { z-index: 1075 !important; }
+    #defaultApproverChangeModal.show { z-index: 1075 !important; }
+    .modal-header.ui-draggable-handle { background: #2563eb; padding: 12px 16px; display: flex; align-items: center; border-radius: 6px 6px 0 0; }
+    .modal-header.ui-draggable-handle .modal-title { color: #fff; font-size: 14px; align-items: center; gap: 7px; margin: 0; }
+    .modal-header.ui-draggable-handle .close { background: transparent; border: none; padding: 2px 4px; cursor: pointer; display: flex; align-items: center; justify-content: center; border-radius: 4px; line-height: 1; flex-shrink: 0; font-size: inherit; font-weight: inherit; text-shadow: none; }
+    .modal-header.ui-draggable-handle .close:hover { opacity: 1; background: rgba(255,255,255,0.15); }
+    .modalsmall .modal-body { padding: 20px 24px; }
+    .modalsmall .modal-body p { font-size: 13px; color: #374151; margin: 0; text-align: center; line-height: 1.6; }
+    /* Added By Dipali V On 26th May - Confirm modal: centered title, No left / Yes right, white close icon */
+    .modal-header.ui-draggable-handle { position: relative; justify-content: center; }
+    .modal-header.ui-draggable-handle .modal-title {
+      flex: 1; text-align: center; justify-content: center; width: 100%; padding: 0 36px;
+    }
+    .modal-header.ui-draggable-handle .close {
+      position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+      color: #fff !important; opacity: 1;
+    }
+    .modal-header.ui-draggable-handle .close svg { stroke: #fff; }
+    .modalsmall .modal-footer {
+      padding: 12px 16px; background: #f9fafb; border-top: 1px solid #e5e7eb;
+      display: flex; justify-content: space-between; align-items: center;
+      border-radius: 0 0 6px 6px;
+    }
+    .modalsmall .modal-footer .modal-btn-cancel { order: 1; }
+    .modalsmall .modal-footer .modal-btn-confirm { order: 2; }
+    .modal-extend-project .modal-footer {
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .modal-btn-cancel { background: #fff; border: 1.5px solid #d1d5db; color: #374151; padding: 6px 18px; border-radius: 5px; font-size: 12px; font-weight: 500; cursor: pointer; font-family: inherit; display: inline-flex; align-items: center; gap: 5px; line-height: 1.4; }
+    .modal-btn-cancel:hover { background: #f3f4f6; border-color: #9ca3af; }
+    .modal-btn-confirm { background: #2563eb; border: 1.5px solid #2563eb; color: #fff; padding: 6px 18px; border-radius: 5px; font-size: 12px; font-weight: 600; cursor: pointer; font-family: inherit; display: inline-flex; align-items: center; gap: 5px; line-height: 1.4; }
+    .modal-btn-confirm:hover { 
+        background: #e29214; 
+        border-color: #e29214;
+
+    }
+    .modal-btn-confirm { 
+    background: #e29214; 
+    border-color: #e29214;
+
+}
+    .modal-btn-confirm.danger { background: #dc2626; border-color: #dc2626; }
+    .modal-btn-confirm.danger:hover { background: #b91c1c; border-color: #b91c1c; }
+    /* Extend project end date modal */
+    .modal-extend-project { width: 720px; max-width: 95vw; margin: 30px auto; }
+    .modal-extend-project .modal-body { padding: 16px 20px 12px; text-align: left; }
+    .modal-body .extend-project-heading { font-size: 12px !important; color: #374151; margin: 0 0 12px; line-height: 1.6; font-weight: 600; text-align: center; }
+    .extend-project-table-wrap { max-height: 280px; overflow: auto; border: 1px solid var(--border); border-radius: 8px; }
+    .extend-project-table { width: 100%; font-size: 12px; border-collapse: collapse; margin: 0; }
+    .extend-project-table thead th { position: sticky; top: 0; background: #f8fafc; font-size: 11px; font-weight: 600; color: #6b7280; padding: 8px 10px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+    .extend-project-table tbody td { padding: 7px 10px; border-bottom: 1px solid #f3f4f6; color: #1f2937; vertical-align: middle; }
+    .extend-project-table tbody tr:last-child td { border-bottom: none; }
+    .extend-project-table tbody tr.extend-loading td { text-align: center; color: #6b7280; padding: 24px 10px; }
+    .extend-project-table th.extend-project-check-col,
+    .extend-project-table td.extend-project-check-col { width: 44px; min-width: 44px; text-align: center; vertical-align: middle; }
+    .extend-project-row-check { width: 13px; height: 13px; margin: 0 auto; display: block; cursor: pointer; }
+    .extend-project-footer.ir-pagination-container {
+        background: #ffffff;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+        padding: 8px 0 0;
+        margin-top: 8px;
+        border-top: none;
+    }
+    .extend-project-footer .ir-pagination-info { color: #374151; font-size: 11.5px !important; }
+    .extend-project-footer .ir-pagination-buttons { display: flex; gap: 0.5rem; }
+    .extend-project-footer .ir-page-btn {
+        background: #eff6ff;
+        border: 1px solid #bfdbfe;
+        border-radius: 0.375rem;
+        color: #2563eb;
+        cursor: pointer;
+        font-size: 11.5px !important;
+        height: 28px;
+        min-width: 32px;
+        padding: 0 8px;
+    }
+    .extend-project-footer .ir-page-btn:hover:not(:disabled) { background: #dbeafe; }
+    .extend-project-footer .ir-page-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+    /* ── Radio toggle: Exact / Probable ── */
+    .match-type-bar {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 4px 6px;
+    }
+    .match-type-bar label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 12px !important;
+      color: #64748b;
+      transition: all .18s;
+      margin: 0;
+      user-select: none;
+    }
+    .match-type-bar input[type="radio"] { display: none; }
+    .match-type-bar input[type="radio"]:checked + span {
+      /* handled by label styling below */
+    }
+    .match-type-bar label.active-exact {
+      background: #2563eb;
+      color: #fff;
+      box-shadow: 0 1px 4px rgba(37,99,235,.25);
+    }
+    /* Modified by Nikhil Mane on 15-04-2026 — Probable uses same blue as Exact for visual consistency */
+    .match-type-bar label.active-probable {
+      background: #2563eb;
+      color: #fff;
+      box-shadow: 0 1px 4px rgba(37,99,235,.25);
+    }
+    .match-type-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+    .dot-exact    { background: #93c5fd; }
+    .dot-probable { background: #93c5fd; }
+    label.active-exact    .dot-exact    { background: #fff; }
+    label.active-probable .dot-probable { background: #fff; }
+
+    /* Resource table loading overlay */
+    .res-table-wrap { position: relative; }
+    .res-loading-overlay {
+      display: none;
+      position: absolute; inset: 0;
+      background: rgba(255,255,255,.75);
+      z-index: 30;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+    }
+    .res-loading-overlay.show { display: flex; }
+
+    .availability-cell { display: flex; align-items: center; gap: 10px; }
+    .availability-cell .bar { width: 78px; height: 10px; border-radius: 8px; background: #e5e7eb; overflow: hidden; }
+    .availability-cell .bar > span { display: block; height: 100%; background: #2563eb; border-radius: 8px; }
+    .blue-link { color: #2563eb; text-decoration: none; font-weight: 600; }
+    .blue-link:hover { color: #1d4ed8; text-decoration: underline; }
+
+    .btn-add-selected { width: auto;  color: #fff; border: none; border-radius: 8px; font-size: 12px; font-weight: 600; padding: 7px 14px; }
+    /*.btn-add-selected:hover { background: #1d4ed8; }*/
+    /* Added By Dipali V On 27th May - Offcanvas action buttons aligned/same size */
+    .offcanvas-action-btn-group { display: inline-flex; align-items: center; gap: 8px; }
+    .btn-offcanvas-action {
+      min-width: 76px;
+      height: 36px;
+      justify-content: center;
+      font-size: 12px !important;
+      padding: 0 14px !important;
+      white-space: nowrap;
+    }
+    .custmodal .modal-content .modal-header .close {
+    color: #fff;
+    box-shadow: none;
+    border: none;
+    font-size: 24px;
+    text-shadow: none;
+    opacity: 1;
+    position: absolute;
+    top: 21px!important;
+    right: 20px;
+}
+
+      #detailInfoBody tbody tr td {
+          text-align: left;
+      }
+    .info-kv-table td { padding: 8px 10px !important; vertical-align: middle; }
+    .info-kv-table td:first-child { 
+        color: #64748b; width: 48%; 
+        /*display: flex;*/ 
+        text-align:left;
+        align-items: center; gap: 8px; font-weight: 500;
+
+    }
+    .info-kv-table td:last-child { font-weight: 700; color: #0f172a; text-align: justify;
+
+    }
+
+    .skill-chip { display: inline-block; border-radius: 999px; padding: 4px 11px; font-size: 12px; font-weight: 700; margin-right: 6px; margin-bottom: 4px; }
+    .skill-chip.primary { background: #2563eb; color: #fff; }
+    .skill-chip.secondary { background: #fff; color: #1f2937; border: 1px solid #d1d5db; }
+
+    .alloc-box { border: 1px solid #e2e8f0; border-radius: 10px; padding: 10px 10px 8px; background: #fff; margin-bottom: 10px; }
+    .alloc-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; font-weight: 600; }
+    .alloc-row .pct { color: #2563eb; font-weight: 700; }
+    .mini-progress { height: 10px; background: #e5e7eb; border-radius: 999px; overflow: hidden; }
+    .mini-progress > span { display: block; height: 100%; background: #2d73ff; border-radius: 999px; }
+    .project-alloc-list { margin-top: 10px; font-size: 12px; }
+    .project-alloc-list .line { display: flex; justify-content: space-between; margin-bottom: 2px; }
+
+    .datefielddiv { display: flex; align-items: stretch; width: 100%; }
+    .datefielddiv .form-control { border-radius: 6px 0 0 6px; border-right: 0; }
+    .datefielddiv .btncalendar { border: 1px solid #d1d5db; border-left: 0; border-radius: 0 6px 6px 0; background: #fff; color: #6b7280; width: 34px; min-width: 34px; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
+    .datefielddiv .btncalendar:hover { color: #2563eb; }
+
+    .bootstrap-select > .dropdown-toggle { height: 38px; }
+    .bootstrap-select > .dropdown-toggle .filter-option-inner-inner { color: #1f2937; }
+    .bootstrap-select .dropdown-menu { z-index: 1065; }
+    .table-scroll-y { max-height: 380px; overflow: auto; }
+    .bar-fill { width: 0; }
+    .btn-delete-small { font-size: 13px; }
+    .w-40p { width: 40%; } .w-60p { width: 60%; }
+
+    .app-toast { position: fixed; bottom: 28px; right: 28px; z-index: 9999; color: #fff; padding: 12px 20px; border-radius: 10px; display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 500; box-shadow: 0 4px 20px rgba(0,0,0,.18); animation: fadeInUp .3s ease; }
+    .app-toast-success { background: #16a34a; }
+    .app-toast-warning { background: #d97706; }
+    .app-toast-error   { background: #dc2626; }
+
+    /* Pct badge in resource table */
+    .pct-badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 700; }
+    .pct-badge-exact    { background: #dbeafe; color: #1d4ed8; }
+    .pct-badge-probable { background: #ede9fe; color: #6d28d9; }
+.form-check-input:disabled {
+    cursor: no-drop !important;
+    pointer-events: auto !important;
+}
+
+input[type="checkbox"][disabled] {
+    cursor: no-drop !important;
+}
+
+.detail-block-title {
+    color: #7b8ca8;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    font-size: 13px;
+    /*text-transform: uppercase;*/
+    margin: 8px 0 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+    .resource-detail-panel { width: 420px !important; max-width: 92vw; }
+    .resource-detail-name { font-size: 24px; font-weight: 700; line-height: 1.1; margin: 0; }
+    .resource-detail-sub { color: #64748b; font-size: 16px; line-height: 1.2; }
+
+    /* ── Resource Loading extras ── */
+    .offcanvas-title-lg { font-size: 34px; font-weight: 700; color: #111827; }
+    .section-head { font-size: 18px; font-weight: 700; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 14px; }
+    .pill-badge { display: inline-block; padding: 5px 12px; border-radius: 999px; font-size: 12px; font-weight: 700; background: #2563eb; color: #fff; }
+    .res-name-icon { color: var(--primary); opacity: .7; }
+    .status-badge { font-weight: 500; }
+    .status-available { background: #dcfce7; color: #166534; }
+    .status-busy { background: #fee2e2; color: #991b1b; }
+    .status-leave { background: #fef9c3; color: #854d0e; }
+
+    /* ── Default Selection highlight ── */
+    #defaultSelectionAccordionItem.default-highlight {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe !important;
+      border-radius: 8px;
+      box-shadow: 0 0 0 1px rgba(37,99,235,0.12);
+    }
+    #defaultSelectionAccordionItem.default-highlight .accordion-button {
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-weight: 700;
+    }
+
+    /* ── Monthly / Project loading tables ── */
+    .monthly-loading-table th:first-child,
+    .monthly-loading-table td:first-child,
+    .project-loading-table th:first-child,
+    .project-loading-table td:first-child {
+      width: 210px; min-width: 210px; max-width: 210px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .loading-table-wrap { border: 0 !important; box-shadow: none !important; }
+    .resource-pager-btn {
+      min-width: 42px;
+      height: 30px;
+      color: #0d6efd;
+      cursor: pointer;
+    }
+    .resource-pager-btn:disabled {
+      color: #8ab4ff;
+      opacity: 0.5;
+      background-color: #f8fafc;
+      cursor: not-allowed;
+      pointer-events: auto;
+    }
+    /* ── No-access banner — mirrors PM_BulkResourceReq.aspx ── */
+    /* Added by Vyankat B. on 13-Apr-2026 */
+    .no-access-banner { display:flex; align-items:center; justify-content:center; height:60vh; flex-direction:column; gap:12px; color:#6b7280; }
+    .no-access-banner svg { color:#d1d5db; }
+    .no-access-banner h2 { font-size:16px; font-weight:600; color:#374151; margin:0; }
+    .no-access-banner p  { font-size:13px; margin:0; }
+
+    /* Added by Vyankat B. on 8th April 2026 - Apply requested padding only to Default Selection accordion button. */
+    .default-selection-accordion-btn {
+      padding-right: 0 !important;
+      padding-left: 1rem !important;
+    }
+    /* End of Added by Vyankat B. on 8th April 2026 - Apply requested padding only to Default Selection accordion button. */
+  
+    /* ═══════════════════════════════════════════════════════════════════════
+       ROLE RESOURCE LIST styles — Added by Nikhil Mane on 22-Apr-2026
+       ═══════════════════════════════════════════════════════════════════════ */
+    .rrl-section { margin: 0 14px 0; border-top: 1px solid var(--border); }
+    .rrl-toggle-bar { display:flex; align-items:center; justify-content:flex-start; padding:8px 14px; background:#f8fafc; cursor:default; user-select:none; transition:background .15s; }
+    .rrl-toggle-bar:hover { background:#eff6ff; }
+    .rrl-toggle-left { display:flex; align-items:center; gap:8px; font-size:12px; font-weight:600; color:#374151; }
+    .rrl-toggle-left i.rrl-icon { color:var(--primary); font-size:12px; }
+    .rrl-count-badge { display:inline-flex; align-items:center; justify-content:center; min-width:22px; height:18px; padding:0 6px; background:var(--primary); color:#fff; border-radius:999px; font-size:10px; font-weight:700; line-height:1; }
+    .rrl-count-badge.empty { background:#9ca3af; }
+    .rrl-chevron { color:#6b7280; font-size:11px; transition:transform .2s; }
+    .rrl-section.collapsed .rrl-chevron { transform:rotate(-90deg); }
+    .rrl-body { overflow:hidden; transition:max-height .25s ease; max-height:800px; }
+    .rrl-section.collapsed .rrl-body { max-height:0; }
+    .rrl-loading { display:none; padding:14px 18px; font-size:12px; color:#6b7280; align-items:center; gap:8px; }
+    .rrl-loading.show { display:flex; }
+    .rrl-empty {
+        display:none;
+        padding:12px 18px;
+        text-align: center !important;
+        font-style: normal !important;
+        color: #212529 !important;
+        font-family: 'Roboto', sans-serif !important;
+        font-weight: normal !important;
+        font-size: 11.5px !important;
+        vertical-align: middle !important;
+    }
+    .rrl-empty.show { display:block; }
+    .rrl-table-actions { display:flex; justify-content:flex-end; padding:8px 0 6px; }
+    .rrl-table-actions.rrl-actions-row { justify-content: space-between; }
+    .rrl-save-block { display:flex; flex-direction:column; align-items:flex-end; gap:4px; }
+    .btn-rrl-save { min-width:59px; }
+    .btn-rrl-save:disabled { opacity:.65; cursor:not-allowed; }
+    .rrl-mandatory-note { color:#111827; white-space:nowrap; font-size:11.5px }
+    .rrl-mandatory-note .req { color:#dc2626; }
+    .rrl-table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+    /* Modified by Nikhil Mane on 06-May-2026 — scrollbar-below-data / above-pagination layout.
+       The outer container (id=rrl-table-wrap-{gid}) is shown/hidden as before.
+       Inside it: inner-scroll (native bar hidden) → scroll mirror (bar shows here, below rows) → footer (fixed, no horizontal scroll). */
+    .rrl-table-container { }   /* outer wrapper — shown/hidden via id */
+    /* Scrollbar mirror — appears BELOW the data rows, ABOVE the pagination bar */
+    .rrl-scroll-top {
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: 7px;                          /* comfortable scrollbar thumb height */
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+    }
+    .rrl-scroll-top-inner { height: 1px; display: block; }  /* width set by JS to match table */
+    /* Inner scroll area — hides its own native scrollbar (scroll synced from mirror below) */
+    .rrl-table-scroll { overflow-x: scroll; -webkit-overflow-scrolling: touch; }
+    .rrl-table-scroll::-webkit-scrollbar { display: none; }
+    .rrl-table-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    /* End of Modified by Nikhil Mane on 06-May-2026 */
+    .rrl-table { width:max-content; min-width:100%; border-collapse:separate; border-spacing:0; font-size:12px; table-layout:fixed; }
+    .rrl-table thead th { position:sticky; top:0; z-index:4; background-color:#f8fafc; font-size:11.5px; font-weight:600; color:#6b7280; letter-spacing:.4px; padding:7px 12px; border-bottom:1px solid var(--border); white-space:nowrap; }
+    .rrl-table tbody td { padding:7px 12px; border-bottom:1px solid #f3f4f6; vertical-align:middle; color:#1f2937; }
+    .rrl-table tbody tr:last-child td { border-bottom:none; }
+    .rrl-table tbody tr:nth-child(even) td { background:#fcfcfd; }
+    .rrl-table tbody tr:hover td { background:#f9fafb; }
+    /* Modified by Nikhil Mane on 06-May-2026 — expanded to match Selected Resources column order:
+       Resource | Project Role | Planned Start | Planned End | % Allocation | Reporting To | Resource Status | Work (HH:MM) | Responsibilities | Billable | Is Default Approver | Active
+       Modified by Nikhil Mane on 06-May-2026 — added Work (HH:MM) and Responsibilities columns */
+    .rrl-table th.col-rrl-name     { min-width:130px; width:130px; }
+    .rrl-table th.col-rrl-role     { min-width:150px; width:150px; }
+    .rrl-table th.col-rrl-start    { min-width:135px; width:135px; }
+    .rrl-table th.col-rrl-end      { min-width:135px; width:135px; }
+    .rrl-table th.col-rrl-alloc    { min-width:90px;  width:90px;  }
+    .rrl-table th.col-rrl-rpt      { min-width:120px; width:120px; }
+    .rrl-table th.col-rrl-status   { min-width:120px; width:120px; }
+    .rrl-table th.col-rrl-work     { min-width:110px; width:110px; }
+    .rrl-table th.col-rrl-resp     { min-width:130px; width:130px; }
+    .rrl-table th.col-rrl-bill     { min-width:70px;  width:70px;  text-align:center; }
+    .rrl-table th.col-rrl-approver { min-width:130px; width:130px; text-align:center; }
+    /* col-rrl-active removed — Active column removed from Allocated Resources table */
+    /* Added by Nikhil Mane on 06-May-2026 — Edit button column for RRL */
+    .rrl-table th.col-rrl-edit     { min-width:62px;  width:62px;  text-align:center; }
+    .rrl-table th.col-rrl-check    { min-width:50px;  width:50px;  text-align:center; }
+    .rrl-table th.col-rrl-name,     .rrl-table td:nth-child(1)  { min-width:130px; width:130px; max-width:130px; }
+    .rrl-table th.col-rrl-role,     .rrl-table td:nth-child(2)  { min-width:150px; width:150px; max-width:150px; }
+    .rrl-table th.col-rrl-start,    .rrl-table td:nth-child(3)  { min-width:135px; width:135px; max-width:135px; }
+    .rrl-table th.col-rrl-end,      .rrl-table td:nth-child(4)  { min-width:135px; width:135px; max-width:135px; }
+    .rrl-table th.col-rrl-alloc,    .rrl-table td:nth-child(5)  { min-width:90px;  width:90px;  max-width:90px; }
+    .rrl-table th.col-rrl-rpt,      .rrl-table td:nth-child(6)  { min-width:120px; width:120px; max-width:120px; }
+    .rrl-table th.col-rrl-status,   .rrl-table td:nth-child(7)  { min-width:120px; width:120px; max-width:120px; }
+    .rrl-table th.col-rrl-work,     .rrl-table td:nth-child(8)  { min-width:110px; width:110px; max-width:110px; }
+    .rrl-table th.col-rrl-resp,     .rrl-table td:nth-child(9)  { min-width:130px; width:130px; max-width:130px; }
+    .rrl-table th.col-rrl-bill,     .rrl-table td:nth-child(10) { min-width:70px;  width:70px;  max-width:70px;  text-align:center; }
+    .rrl-table th.col-rrl-approver, .rrl-table td:nth-child(11) { min-width:130px; width:130px; max-width:130px; text-align:center; }
+    .rrl-table th.col-rrl-edit,     .rrl-table td:nth-child(12) { min-width:62px;  width:62px;  max-width:62px;  text-align:center; }
+    .rrl-table th.col-rrl-check,    .rrl-table td:nth-child(13) { min-width:50px;  width:50px;  max-width:50px;  text-align:center; }
+    .rrl-table th.col-rrl-name,
+    .rrl-table td:nth-child(1) {
+        position:sticky;
+        left:0;
+        z-index:3;
+        background:#fff;
+        box-shadow:none;
+    }
+    .rrl-table th.col-rrl-name { z-index:5; background-color:#f8fafc; }
+    .rrl-table tbody tr:nth-child(even) td:nth-child(1) { background:#fcfcfd; }
+    .rrl-table tbody tr:hover td:nth-child(1) { background:#f9fafb; }
+    .rrl-table td:nth-child(1) strong,
+    .rrl-table td:nth-child(2) .rrl-display-val,
+    .rrl-table td:nth-child(6) .rrl-display-val,
+    .rrl-table td:nth-child(7) .rrl-display-val,
+    .rrl-table td:nth-child(9) .rrl-display-val { display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .rrl-row-check { width:13px; height:13px; margin:0 auto; display:block; cursor:pointer; }
+    .rrl-required-star { display:none; color:#dc2626; margin-left:1px; }
+    .rrl-table.rrl-editing-active .rrl-required-star { display:inline; }
+    .rrl-table .bootstrap-select.oc-val-error > button,
+    .rrl-table .bootstrap-select.oc-val-error > .dropdown-toggle,
+    .rrl-table input.oc-val-error,
+    .rrl-table textarea.oc-val-error,
+    .rrl-table select.oc-val-error {
+        border: 1.5px solid #ef4444 !important;
+        background-color: #fff5f5 !important;
+    }
+    .rrl-table .rrl-date-wrap .rrl-edit-input.oc-val-error {
+        border-right: 0 !important;
+    }
+    .rrl-table .rrl-date-wrap .rrl-edit-input.oc-val-error + .rrl-cal-btn {
+        border-color: #ef4444 !important;
+        background-color: #fff5f5 !important;
+    }
+    .rrl-table td input.rrl-edit-input.oc-val-error:focus,
+    .rrl-table td select.rrl-edit-select.oc-val-error:focus,
+    .rrl-table td textarea.rrl-edit-textarea.oc-val-error:focus {
+        border-color: #ef4444 !important;
+        box-shadow: 0 0 0 2px rgba(239,68,68,.2) !important;
+    }
+    /* Responsibilities cell — wrap long text, matching selected-resources col-resp behaviour */
+    .rrl-table td.col-rrl-resp-cell { white-space:pre-wrap; word-break:break-word; max-width:150px; }
+    /* ── RRL row edit mode — Added by Nikhil Mane on 06-May-2026 ── */
+    .btn-rrl-edit {
+        background: none; border: none; border-radius: 6px;
+        color: var(--primary); font-size: 14px;
+        width: 15px; height: 28px; padding: 0;
+        cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
+        transition: background .18s, color .18s;
+    }
+    .btn-rrl-edit:hover { background: var(--primary-light); }
+    .btn-rrl-edit.editing { color: #16a34a; }
+    .btn-rrl-edit.editing:hover { background: #dcfce7; }
+    .btn-rrl-edit.rrl-edit-disabled,
+    .btn-rrl-edit:disabled { opacity: 0.45; cursor: not-allowed; pointer-events: none; }
+    .rrl-edit-tip-wrap { vertical-align: middle; }
+    .rrl-edit-tip-wrap .btn-rrl-edit.rrl-edit-disabled { pointer-events: none; }
+    .rrl-table tr.rrl-row-inactive td.rrl-col-start .rrl-display-val,
+    .rrl-table tr.rrl-row-inactive td.rrl-col-end .rrl-display-val,
+    .rrl-table tr.rrl-row-inactive td.rrl-col-alloc .rrl-display-val,
+    .rrl-table tr.rrl-row-inactive td.rrl-col-work .rrl-display-val { color: #6b7280; }
+    .rrl-row-check:disabled { cursor: not-allowed; opacity: 0.5; }
+    /* Added By Dipali V On 5th Jun 2026 — Reallocation list: Name + 7 columns; offcanvas fields kept in hidden row bundle */
+    .rrl-offcanvas-only { display: none !important; }
+    .rrl-offcanvas-only-cell { display: none !important; padding: 0 !important; border: 0 !important; height: 0; line-height: 0; }
+    /* Added By Dipali V On 5th Jun 2026 — Additional Columns on Bulk Allocation role row (rg-header / rg-row) */
+    .ba-pending-alloc-note {
+        font-size: 11px;
+        font-weight: 700;
+        color: #92400e;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.3;
+    }
+    #tabBulkAllocation .ba-project-top-row {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr) 332px;
+        grid-template-rows: auto auto;
+        column-gap: 12px;
+        row-gap: 0;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+    #tabBulkAllocation .ba-project-details-title {
+        grid-column: 1;
+        grid-row: 1;
+        padding: 16px 0 14px 20px;
+        margin: 0;
+        white-space: nowrap;
+    }
+  #tabBulkAllocation .ba-pending-alloc-note {
+        grid-column: 2;
+        grid-row: 1;
+        align-self: center;
+        padding: 0 8px;
+        min-width: 0;
+    }
+    #tabBulkAllocation .ba-project-top-row .additional-columns-card {
+        grid-column: 3;
+        grid-row: 1 / span 2;
+        width: 332px;
+        flex-shrink: 0;
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        padding: 14px;
+        position: relative;
+        margin-top: 0;
+        margin-right: 13px;
+        overflow: visible;
+        z-index: 5;
+        align-self: start;
+    }
+    #tabBulkAllocation .ba-project-details-body {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        min-width: 0;
+    }
+    #tabBulkAllocation .ba-project-details-body .project-info-row {
+        margin: 0 0 0 16px;
+        width: auto;
+        max-width: 100%;
+        overflow:hidden!important;
+    }
+    .ba-oc-header-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: nowrap;
+    }
+    .ba-oc-header-titles {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    #selectResourceOffcanvas .ba-oc-header-titles .ba-pending-alloc-note,
+    #resourceLoadingOffcanvas .ba-oc-header-titles .ba-pending-alloc-note {
+        flex: 1 1 auto;
+        min-width: 0;
+        padding: 0 4px;
+    }
+    .ba-project-details-block { flex: 1 1 280px; min-width: 200px; }
+    #tabBulkAllocation .additional-columns-card h3 { font-size: 12px; font-weight: 600; color: #1a56db; margin-bottom: 0; }
+    #tabBulkAllocation .additional-columns-card .section-header { display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none; padding-bottom: 0; border-bottom: none; }
+    #tabBulkAllocation .additional-columns-card .section-header:hover { opacity: 0.85; }
+    #tabBulkAllocation .tag-bar { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; border: 1px solid #d1d5db; border-radius: 6px; padding: 5px 8px; min-height: 32px; cursor: default; }
+    #tabBulkAllocation .col-tag { display: inline-flex; align-items: center; gap: 3px; background: #fff; border: 1px solid #d1d5db; border-radius: 4px; padding: 2px 6px; font-size: 11.5px; color: #374151; white-space: nowrap; }
+    #tabBulkAllocation .col-tag .remove-tag { cursor: pointer; color: #9ca3af; font-size: 9px; display: flex; align-items: center; margin-left: 2px; }
+    #tabBulkAllocation .col-tag .remove-tag:hover { color: #ef4444; }
+    #tabBulkAllocation .tag-bar-chevron-btn { margin-left: auto; flex-shrink: 0; background: none; border: none; cursor: pointer; color: #6b7280; display: flex; align-items: center; padding: 2px 3px; border-radius: 3px; align-self: flex-start; }
+    #tabBulkAllocation .tag-bar-chevron-btn:hover { background: #f3f4f6; }
+    #tabBulkAllocation .tag-bar-chevron-btn svg { transition: transform 0.2s; }
+    #tabBulkAllocation .tag-bar-chevron-btn.open svg { transform: rotate(180deg); }
+    #tabBulkAllocation .additional-columns-card .col-dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin-top: 4px;
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        z-index: 10000;
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 260px;
+        box-sizing: border-box;
+        scrollbar-width: thin;
+        scrollbar-color: #d1d5db #f9fafb;
+    }
+    #tabBulkAllocation .col-dropdown.open { display: block; }
+    #tabBulkAllocation .dd-section-label { font-size: 10px; font-weight: 600; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.05em; padding: 6px 12px 4px; background: #f9fafb; border-bottom: 1px solid #f3f4f6; position: sticky; top: 0; z-index: 1; }
+    #tabBulkAllocation .dd-divider { border: none; border-top: 1px solid #f3f4f6; margin: 0; }
+    #tabBulkAllocation .col-dd-row { display: flex; align-items: center; padding: 6px 10px 6px 8px; color: #374151; user-select: none; transition: background 0.1s; cursor: default; }
+    #tabBulkAllocation .col-dd-row:hover { background: #f9fafb; }
+    #tabBulkAllocation .col-dd-row.is-selected .dd-handle { visibility: visible; cursor: grab; }
+    #tabBulkAllocation .col-dd-row .dd-handle { visibility: hidden; color: #9ca3af; padding: 0 6px 0 0; display: flex; align-items: center; letter-spacing: -1.5px; line-height: 1; flex-shrink: 0; }
+    #tabBulkAllocation .col-dd-row input[type="checkbox"] { width: 13px; height: 13px; accent-color: #1a56db; cursor: pointer; flex-shrink: 0; margin-right: 7px; }
+    #tabBulkAllocation .col-dd-row input[type="checkbox"]:disabled { cursor: not-allowed; opacity: 0.5; }
+    #tabBulkAllocation .col-dd-row.is-col-locked label { cursor: default; color: #6b7280; }
+    #tabBulkAllocation .col-dd-row.is-col-locked .dd-handle { visibility: hidden !important; cursor: default; }
+    #tabBulkAllocation .col-tag .remove-tag.is-disabled { opacity: 0.35; cursor: not-allowed; pointer-events: none; }
+    #tabBulkAllocation .col-dd-row label { cursor: pointer; flex: 1; margin: 0; font-weight: 400; }
+    #tabBulkAllocation .ba-res-data-store td.ba-dyn-td { display: none; }
+    #group-rrl-realloc .rrl-table.rrl-compact-list { width: 100%; min-width: 100%; }
+    #group-rrl-realloc .rrl-table.rrl-compact-list th.col-rrl-name,
+    #group-rrl-realloc .rrl-table.rrl-compact-list td.rrl-col-name { min-width: 195px; width: 195px; max-width: 195px; position: sticky; left: 0; z-index: 3; background: #fff; box-shadow: none; }
+    /* Added By Dipali V On 5th Jun 2026 — resource initials badge before name (Reallocation tab) */
+    .rrl-name-with-initials { display: flex; align-items: center; gap: 8px; min-width: 0; }
+    .rrl-res-initials {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 32px; height: 32px; min-width: 32px; border-radius: 50%;
+        background: #0d9488; color: #fff; font-size: 11px; font-weight: 700;
+        letter-spacing: 0.02em; flex-shrink: 0; cursor: default;
+    }
+    #group-rrl-realloc .rrl-table.rrl-compact-list td.rrl-col-name .rrl-name-with-initials strong {
+        display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; flex: 1;
+    }
+    #group-rrl-realloc .rrl-table.rrl-compact-list th.col-rrl-role,
+    #group-rrl-realloc .rrl-table.rrl-compact-list td.rrl-col-role { min-width: 150px; width: 150px; max-width: 150px; }
+    #group-rrl-realloc .rrl-table.rrl-compact-list th.col-rrl-start,
+    #group-rrl-realloc .rrl-table.rrl-compact-list td.rrl-col-start { min-width: 135px; width: 135px; max-width: 135px; }
+    #group-rrl-realloc .rrl-table.rrl-compact-list th.col-rrl-end,
+    #group-rrl-realloc .rrl-table.rrl-compact-list td.rrl-col-end { min-width: 135px; width: 135px; max-width: 135px; }
+    #group-rrl-realloc .rrl-table.rrl-compact-list th.col-rrl-alloc,
+    #group-rrl-realloc .rrl-table.rrl-compact-list td.rrl-col-alloc { min-width: 90px; width: 90px; max-width: 90px; }
+    #group-rrl-realloc .rrl-table.rrl-compact-list th.col-rrl-work,
+    #group-rrl-realloc .rrl-table.rrl-compact-list td.rrl-col-work { min-width: 110px; width: 110px; max-width: 110px; }
+    #group-rrl-realloc .rrl-table.rrl-compact-list th.col-rrl-edit,
+    #group-rrl-realloc .rrl-table.rrl-compact-list td.rrl-col-action { min-width: 76px; width: 76px; max-width: 76px; text-align: center; }
+    #group-rrl-realloc .rrl-table.rrl-compact-list th.col-rrl-check,
+    #group-rrl-realloc .rrl-table.rrl-compact-list td.rrl-col-check { min-width: 50px; width: 50px; max-width: 50px; text-align: center; }
+    #group-rrl-realloc .rrl-table.rrl-compact-list th.col-rrl-name { z-index: 5; background-color: #f8fafc; }
+    #group-rrl-realloc .rrl-table.rrl-compact-list tbody tr:nth-child(even) td.rrl-col-name { background: #fcfcfd; }
+    #group-rrl-realloc .rrl-table.rrl-compact-list tbody tr:hover td.rrl-col-name { background: #f9fafb; }
+    #group-rrl-realloc .rrl-table.rrl-compact-list td.rrl-col-name strong { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    #group-rrl-realloc .rrl-table.rrl-compact-list td.rrl-col-role .rrl-display-val { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    #group-rrl-realloc .rrl-table.rrl-compact-list td.rrl-col-action { white-space: nowrap; }
+    #group-rrl-realloc .rrl-table.rrl-compact-list .btn-rrl-view + .btn-rrl-edit { margin-left: 2px; }
+    /* Added By Dipali V On 5th Jun 2026 — Reallocation tab: freeze top + header; vertical scroll on tbody only */
+    /* Added By Dipali V On 16th Jun 2026 — fit within viewport below page-header; flex scroll chain for tbody */
+    .bulk-alloc-layout.is-realloc-tab-active {
+        height: calc(100vh - 72px);
+        max-height: calc(100vh - 72px);
+        overflow: hidden;
+    }
+    .bulk-alloc-scroll-body.is-realloc-tab-active {
+        overflow: hidden !important;
+        flex: 1 1 0;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .bulk-alloc-tab-content.is-realloc-tab-active {
+        flex: 1 1 0;
+        min-height: 0;
+    }
+    .bulk-alloc-tab-content > .tab-pane#tabReallocation.active,
+    .bulk-alloc-tab-content > .tab-pane#tabReallocation.active.show {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 0;
+        min-height: 0;
+        overflow: hidden;
+    }
+    #tabReallocation .card-section {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 0;
+        min-height: 0;
+        max-height: none;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+    #tabReallocation .rrl-tab-section-title {
+        flex: 0 0 auto;
+    }
+    #tabReallocation #reallocationGroupsContainer {
+        flex: 1 1 0;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #group-rrl-realloc.resource-group-rrl {
+        flex: 1 1 0;
+        min-height: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #group-rrl-realloc .rrl-section {
+        flex: 1 1 0;
+        min-height: 0;
+        margin: 0;
+        border-top: none;
+        display: flex;
+        flex-direction: column;
+    }
+    #group-rrl-realloc .rrl-body {
+        flex: 1 1 0;
+        min-height: 0;
+        max-height: none !important;
+        overflow: hidden !important;
+        display: flex;
+        flex-direction: column;
+    }
+    #group-rrl-realloc .rrl-table-container {
+        flex: 1 1 0;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    #group-rrl-realloc .rrl-table-actions.rrl-extend-note-row {
+        flex: 0 0 auto;
+        background: #fff;
+        padding: 8px 14px 8px;
+        margin: 0;
+        border-bottom: 1px solid var(--border);
+    }
+    #group-rrl-realloc .rrl-table-actions.rrl-extend-note-row:has(.rrl-extend-note.d-none) {
+        display: none !important;
+        padding: 0;
+        border-bottom: none;
+    }
+    #group-rrl-realloc .rrl-table-grid {
+        flex: 1 1 0;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    #group-rrl-realloc .rrl-table-grid::-webkit-scrollbar {
+        display: none;
+    }
+    #group-rrl-realloc .rrl-table-head-pane {
+        flex: 0 0 auto;
+        overflow: hidden;
+        background: #f8fafc;
+        border-bottom: 1px solid var(--border);
+    }
+    #group-rrl-realloc .rrl-table-head-pane .rrl-table,
+    #group-rrl-realloc .rrl-table-body-scroll .rrl-table {
+        margin-bottom: 0;
+    }
+    #group-rrl-realloc .rrl-table-body-scroll {
+        flex: 1 1 0;
+        min-height: 0;
+        overflow-y: auto !important;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+    /* Added By Dipali V On 16th Jun 2026 — 1980×1080: shorter grid body; pagination/footer stay in view */
+   /* @media screen and (min-width: 1900px) and (max-width: 2000px) and (min-height: 1000px) and (max-height: 1100px) {
+        .bulk-alloc-layout.is-realloc-tab-active {
+            height: calc(100vh - 280px);
+            max-height: calc(100vh - 280px);
+        }
+        #group-rrl-realloc .rrl-table-grid {
+            flex: 0 1 auto;
+            max-height: 360px;
+        }
+        #group-rrl-realloc .rrl-table-body-scroll {
+            flex: 1 1 auto;
+            max-height: 300px;
+        }
+    }*/
+    .skill-section-inner .table-fixed-header thead tr th:nth-child(4),
+    .table thead tr th:nth-child(4) {
+        white-space: break-spaces;
+    }
+    #group-rrl-realloc .rrl-scroll-top,
+    #group-rrl-realloc .rrl-table-footer {
+        flex: 0 0 auto;
+    }
+    #group-rrl-realloc .rrl-table-head-pane thead th {
+        background-color: #f8fafc;
+    }
+    #group-rrl-realloc .rrl-table.rrl-compact-list thead th.col-rrl-name {
+        left: 0;
+        z-index: 5;
+    }
+    /* Reallocation list edit: Project Role stays read-only; only Start/End/Alloc/Work become inputs */
+    .rrl-table.rrl-compact-list tr.rrl-row-editing td.rrl-col-readonly .rrl-display-val { display: block !important; }
+    .rrl-table.rrl-compact-list tr.rrl-row-editing td.rrl-col-readonly select.rrl-edit-select,
+    .rrl-table.rrl-compact-list tr.rrl-row-editing td.rrl-col-readonly .bootstrap-select.rrl-edit-select,
+    .rrl-table.rrl-compact-list tr.rrl-row-editing td.rrl-col-readonly .bootstrap-select.rrl-edit-select-wrap { display: none !important; }
+    .btn-rrl-view {
+        background: none; border: none; border-radius: 6px; color: var(--primary); font-size: 14px;
+        width: 15px; height: 28px; padding: 0; cursor: pointer;
+        display: inline-flex; align-items: center; justify-content: center;
+        transition: background .18s, color .18s;
+    }
+    .btn-rrl-view:hover { background: var(--primary-light); }
+    /* Editable cell inputs inside RRL rows — Modified by Nikhil Mane on 06-May-2026 */
+    /* Uniform height (30px) for all editable controls except textarea */
+    .rrl-table td input.rrl-edit-input,
+    .rrl-table td select.rrl-edit-select,
+    .rrl-table td textarea.rrl-edit-textarea {
+        display: none;
+        font-size: 11.5px !important;
+        border: 1px solid #d1d5db;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        background: #fff;
+        color: #1f2937;
+        vertical-align: middle;
+    }
+    /* Inputs and selects: fixed 30px height, vertically centred text */
+    .rrl-table td input.rrl-edit-input,
+    .rrl-table td select.rrl-edit-select {
+        height: 30px !important;
+        min-height: 30px !important;
+        line-height: 30px !important;
+        padding: 0 8px !important;
+    }
+    /* Select: extra right padding so selected text never slides under the native arrow */
+    .rrl-table td select.rrl-edit-select {
+        padding-right: 24px !important;
+        appearance: auto;           /* keep native arrow visible */
+        -webkit-appearance: auto;
+    }
+    /* Textarea keeps auto height with comfortable padding */
+    .rrl-table td textarea.rrl-edit-textarea {
+        height: auto;
+        min-height: 46;
+        padding: 5px 8px !important;
+        line-height: 1.4;
+        overflow-y: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .rrl-table td textarea.rrl-edit-textarea::-webkit-scrollbar { display: none; }
+    .rrl-table td input.rrl-edit-input:focus,
+    .rrl-table td select.rrl-edit-select:focus,
+    .rrl-table td textarea.rrl-edit-textarea:focus {
+        border-color: #111827;
+        outline: none;
+        box-shadow: none;
+    }
+    /* In edit mode: hide display value, show input */
+    .rrl-table tr.rrl-row-editing td .rrl-display-val { display: none !important; }
+    .rrl-table tr.rrl-row-editing td input.rrl-edit-input,
+    .rrl-table tr.rrl-row-editing td select.rrl-edit-select,
+    .rrl-table tr.rrl-row-editing td textarea.rrl-edit-textarea { display: block; }
+    /* Added by Nikhil Mane on 06-May-2026 — show/hide bootstrap-select wrappers for searchable edit dropdowns */
+    .rrl-table td .bootstrap-select.rrl-edit-select,
+    .rrl-table td .bootstrap-select.rrl-edit-select-wrap {
+        display: none;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 30px !important;
+        min-height: 30px !important;
+        padding: 0 !important;
+        border: 0 !important;
+        border-radius: 5px;
+        background: transparent !important;
+        box-shadow: none !important;
+        vertical-align: middle;
+    }
+    .rrl-table tr.rrl-row-editing td .bootstrap-select.rrl-edit-select,
+    .rrl-table tr.rrl-row-editing td .bootstrap-select.rrl-edit-select-wrap { display: block; }
+    .rrl-table td .bootstrap-select.rrl-edit-select > .dropdown-toggle,
+    .rrl-table td .bootstrap-select.rrl-edit-select-wrap > .dropdown-toggle {
+        display: flex;
+        align-items: center;
+        height: 30px !important;
+        min-height: 30px !important;
+        line-height: 1.2 !important;
+        padding: 0 24px 0 8px !important;
+        border: 1px solid #d1d5db;
+        border-radius: 5px;
+        font-size: 11.5px !important;
+        background: #fff;
+        color: #1f2937;
+        width: 100% !important;
+        margin: 0 !important;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .rrl-table td .bootstrap-select.rrl-edit-select > .dropdown-toggle .filter-option,
+    .rrl-table td .bootstrap-select.rrl-edit-select-wrap > .dropdown-toggle .filter-option {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        min-width: 0;
+    }
+    .rrl-table td .bootstrap-select.rrl-edit-select > .dropdown-toggle .filter-option-inner,
+    .rrl-table td .bootstrap-select.rrl-edit-select > .dropdown-toggle .filter-option-inner-inner,
+    .rrl-table td .bootstrap-select.rrl-edit-select-wrap > .dropdown-toggle .filter-option-inner,
+    .rrl-table td .bootstrap-select.rrl-edit-select-wrap > .dropdown-toggle .filter-option-inner-inner {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    /* Checkbox edit: hide icon, show checkbox */
+    .rrl-table tr.rrl-row-editing td .rrl-display-icon { display: none !important; }
+    .rrl-table tr.rrl-row-editing td .rrl-edit-check { display: inline-block !important; }
+    .rrl-edit-check { display: none; width: 16px; height: 16px; cursor: pointer; }
+    .rrl-table tr.rrl-row-editing td .rrl-field-locked,
+    .rrl-table tr.rrl-row-editing td .rrl-edit-textarea[readonly],
+    .rrl-table tr.rrl-row-editing td .rrl-edit-textarea:disabled,
+    .rrl-table tr.rrl-row-editing td .rrl-edit-select:disabled,
+    .rrl-table tr.rrl-row-editing td .bootstrap-select.disabled > .dropdown-toggle,
+    .rrl-table tr.rrl-row-editing td .rrl-date-wrap.rrl-field-locked .rrl-edit-input,
+    .rrl-table tr.rrl-row-editing td .rrl-date-wrap.rrl-field-locked .rrl-cal-btn {
+      cursor: no-drop !important;
+    }
+    .rrl-table tr.rrl-row-editing td .rrl-date-wrap.rrl-field-locked .rrl-cal-btn {
+      opacity: 0.45;
+      pointer-events: none;
+    }
+    .rrl-table tr.rrl-row-editing td .rrl-date-wrap.rrl-field-editable .rrl-edit-input[readonly] {
+      cursor: default !important;
+    }
+    .rrl-table tr.rrl-row-editing td .rrl-date-wrap.rrl-field-editable .rrl-cal-btn {
+      cursor: pointer !important;
+    }
+    .rrl-table tr.rrl-row-editing td input.rrl-edit-input.rrl-alloc-editable,
+    .rrl-table tr.rrl-row-editing td input.rrl-edit-input.rrl-work-editable {
+      cursor: text !important;
+    }
+    /* Date input with calendar icon — Modified by Nikhil Mane on 06-May-2026 */
+    .rrl-date-wrap { display: flex; align-items: stretch; gap: 0; }
+    .rrl-date-wrap .rrl-edit-input {
+        border-radius: 5px 0 0 5px !important;
+        border-right: 0 !important;
+        flex: 1 1 auto;
+        background: #fff;
+    }
+    .rrl-date-wrap .rrl-cal-btn {
+        border: 1px solid #d1d5db;
+        border-left: 0;
+        border-radius: 0 5px 5px 0;
+        background: #f9fafb;
+        color: #6b7280;
+        width: 30px;
+        min-width: 30px;
+        height: 30px;           /* matches rrl-edit-input height */
+        display: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 11px;        /* icon same visual weight as input text */
+        box-sizing: border-box;
+        flex-shrink: 0;
+        padding: 0;
+    }
+    .rrl-date-wrap .rrl-cal-btn:hover { background: #eff6ff; color: var(--primary); }
+    .rrl-table tr.rrl-row-editing td .rrl-date-wrap .rrl-cal-btn { display: flex; }
+    /* Highlight row in edit mode */
+    .rrl-table tr.rrl-row-editing td { background: #eff6ff !important; }
+    /* ── End of RRL row edit mode styles ── */
+    /* End of Modified by Nikhil Mane on 06-May-2026 */
+    .rrl-status-badge { display:inline-block; padding:2px 8px; border-radius:999px; font-size:10.5px; font-weight:700; }
+    .rrl-status-available { background:#dcfce7; color:#166534; }
+    .rrl-status-busy      { background:#fee2e2; color:#991b1b; }
+    .rrl-status-other     { background:#e5e7eb; color:#374151; }
+    .rrl-active-dot { display:inline-block; width:8px; height:8px; border-radius:50%; }
+    .rrl-active-dot.active   { background:#16a34a; }
+    .rrl-active-dot.inactive { background:#dc2626; }
+    /* ═══ End of Role Resource List styles ═══ */
+
+    /* Added by Nikhil Mane on 05-May-2026 — RRL pagination styles (IR_Approval.aspx format) */
+    .rrl-table-footer.ir-pagination-container {
+        background:#ffffff;
+        display:flex;
+        justify-content:flex-end;
+        align-items:center;
+        gap:1rem;
+        padding:8px 12px;
+        border-top:1px solid var(--border);
+        margin-top:0;
+    }
+    .rrl-table-footer .ir-pagination-info {
+        color:#374151;
+        font-size:11.5px !important;
+    }
+    .rrl-table-footer .ir-pagination-buttons { display:flex; gap:0.5rem; }
+    .rrl-table-footer .ir-page-btn {
+        background:#eff6ff;
+        border:1px solid #bfdbfe;
+        border-radius:0.375rem;
+        color:#2563eb;
+        cursor:pointer;
+        font-size:11.5px !important;
+        height:28px;
+        min-width:32px;
+        padding:0 8px;
+        position:relative;
+    }
+    .rrl-table-footer .ir-page-btn:hover:not(:disabled) {
+        background:#dbeafe;
+        border-color:#93c5fd;
+        color:#1d4ed8;
+    }
+    .rrl-table-footer .ir-page-btn:disabled {
+        background:#ffffff;
+        border-color:#d1d5db;
+        color:#9ca3af;
+        opacity:1;
+        cursor:not-allowed;
+    }
+    /* End of Added by Nikhil Mane on 05-May-2026 */
+
+    /* Added 25-May-2026 — Page/API loader overlay (PM_Resources.aspx preloader pattern) */
+    .loader-overlay {
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        width: 100%; height: 100%;
+        background-color: rgba(255, 255, 255, 0.75);
+        z-index: 9999;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .loader-overlay .loader {
+        width: 100px;
+        height: 100px;
+        background: url(../../../Whizible2.0-new/dist/img/loading.gif) no-repeat center center;
+        background-size: contain;
+    }
+    /* Initial page-load preloader */
+    .preloader {
+        position: fixed;
+        top: 50%; left: 50%;
+        width: 100px; height: 100px;
+        margin: -50px 0 0 -50px;
+        background: url(../../../Whizible2.0-new/dist/img/loading.gif) no-repeat center center;
+        z-index: 2100;
+    }
+    /* End of Added 25-May-2026 — Page/API loader overlay */
+
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+    margin-right: 15px;
+}
+
+
+#noteBanner li {
+    list-style-type: auto!important;
+}
+
+@keyframes fadeInUp {
+  from { opacity:0; transform:translateY(16px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+/* === Preserved from prior PM_BulkResAllocation.css (additive rules not in page inline styles) === */
+
+.main-content .bulk-alloc-layout {
+    background-color: white !important;
+}
+
+.page-header {
+    margin: 4px 0 1px 0 !important;
+    font-size: 22px;
+}
+
+.bulk-alloc-layout {
+    background: white !important;
+}
+
+.bulk-alloc-sticky-top {
+    background: white !important;
+}
+
+.bulk-alloc-action-left {
+    margin-left: 7px;
+}
+
+.bulk-alloc-action-right {
+    margin-right: 7px;
+}
+
+/* Reporting To selectpicker — body-appended menus + placeholder visibility (Bulk Allocation / Reallocation) */
+#tabBulkAllocation .rg-row .ba-rg-dyn-td.col-rpt,
+#tabBulkAllocation .rg-row .ba-rg-dyn-td.col-rpt .bootstrap-select {
+    overflow: visible;
+}
+.bootstrap-select.open .dropdown-menu {
+    max-height: 320px !important;
+    overflow-y: auto !important;
+}
+.input-group #baSkillSearchInput {
+    width:70%;
+}
+.bootstrap-select .dropdown-menu .inner {
+    max-height: 320px !important;
+    overflow-y: auto !important;
+}
+body > .bootstrap-select .dropdown-menu {
+    z-index: 1065 !important;
+}
+body > .bootstrap-select .dropdown-menu li a,
+body > .bootstrap-select .dropdown-menu .dropdown-item {
+    color: #1f2937;
+}
+#tabBulkAllocation .bootstrap-select > .dropdown-toggle.bs-placeholder .filter-option-inner-inner,
+#rrlOcEditFields .bootstrap-select > .dropdown-toggle.bs-placeholder .filter-option-inner-inner,
+.rrl-table .bootstrap-select > .dropdown-toggle.bs-placeholder .filter-option-inner-inner {
+    color: #6b7280 !important;
+}
+
+/* Added By Dipali V On 16th Jun 2026 — Skills Selection offcanvas table layout (Skills / Select headers, checkbox alignment) */
+.ba-skill-selection-offcanvas .ba-skill-selection-toolbar {
+    width: 100%;
+}
+.ba-skill-selection-offcanvas .ba-skill-search-wrap {
+    width: 70%;
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+.ba-skill-selection-offcanvas .ba-skill-save-wrap {
+    margin-left: auto;
+    flex: 0 0 auto;
+}
+.ba-skill-selection-offcanvas .ba-skill-selection-table th,
+.ba-skill-selection-offcanvas .ba-skill-selection-table td {
+    vertical-align: middle;
+}
+/* Added By Dipali V On 16th Jun 2026 — Force all skill rows white (override Bootstrap striped + global theme rules) */
+.ba-skill-selection-offcanvas #baSkillSelectionTbl > tbody > tr,
+.ba-skill-selection-offcanvas #baSkillSelectionTbl > tbody > tr:nth-of-type(odd),
+.ba-skill-selection-offcanvas #baSkillSelectionTbl > tbody > tr:nth-of-type(even),
+.ba-skill-selection-offcanvas #baSkillSelectionTbl > tbody > tr > td,
+.ba-skill-selection-offcanvas #baSkillSelectionTbl.table-striped > tbody > tr:nth-of-type(odd) > *,
+.ba-skill-selection-offcanvas #baSkillSelectionTbl.table-striped > tbody > tr:nth-of-type(even) > * {
+    --bs-table-accent-bg: #fff !important;
+    --bs-table-striped-bg: #fff !important;
+    background-color: #fff !important;
+    box-shadow: none !important;
+}
+.ba-skill-selection-offcanvas .ba-skill-selection-table th:last-child,
+.ba-skill-selection-offcanvas .ba-skill-selection-table td:last-child {
+    width: 90px;
+    text-align: center !important;
+}
+.ba-skill-selection-offcanvas .ba-skill-selection-table td:last-child .custom_chckbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+/* End of Added By Dipali V On 16th Jun 2026 — Skills Selection offcanvas */

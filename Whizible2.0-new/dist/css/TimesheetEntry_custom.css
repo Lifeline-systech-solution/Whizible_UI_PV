@@ -1,0 +1,2065 @@
+/* Custom CSS start here */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    box-sizing: border-box;
+}
+
+a {
+    color: #1359a6;
+    text-decoration: none;
+}
+
+.textUndrln {
+    text-decoration: underline;
+}
+.textNoln {
+    text-decoration: none;
+}
+
+.stickyHeader {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.stickyTSHeader {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.table-responsive-wrapper {
+    max-height: 80vh;
+    /* Set desired height for vertical scrolling */
+    overflow: auto;
+    /* Enable vertical scrolling */
+    position: relative;
+}
+
+.fnt-10 {
+    font-size: 10px;
+}
+.fnt-11 {
+    font-size: 11px;
+}
+.fnt-12 {
+    font-size: 12px;
+}
+
+.fnt-13 {
+    font-size: 13px;
+}
+
+.fnt-14 {
+    font-size: 14px;
+}
+.fnt-16 {
+    font-size: 16px;
+}
+
+.nostylebtn {
+    /* font-size: 14px; */
+    text-decoration: underline;
+    background: none;
+    border: none;
+}
+label,
+input::placeholder,
+.bootstrap-select>.dropdown-toggle {
+    font-size: 12px;
+}
+input::placeholder, textarea::placeholder, .filter-option-inner-inner {
+    color: #8f8b8b !important;
+}
+.input-group-btn button.btn.btncalendar {
+    margin: 0;
+    height: 34px;
+    background: #eee;
+    border: 1px solid #ddd;
+    border-left: none;
+}
+textarea::placeholder {
+    font-size: 11px;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.table {
+    --bs-table-striped-bg: #f7f7f7;
+}
+.text_green {
+    color: #03bb29;
+}
+
+.text_darkGreen {
+    color: #359534;
+}
+
+.text_red {
+    color: #ef343b;
+}
+
+.textRed {
+    color: #eb1c24 !important;
+}
+
+.mandatoryTxt {
+    color: #f00;
+}
+
+.text_orange {
+    color: #ef750c;
+}
+
+.txt_SkyBlue {
+    color: #00c0ef;
+}
+
+.orangeLegend {
+    color: #F08000;
+}
+
+.text_yellow {
+    color: #f6c000;
+}
+
+.text_voilet {
+    color: #3f48cc;
+}
+
+.text_pink {
+    color: #7d2983;
+}
+
+.text_link {
+    color: #3d81ef;
+}
+
+.blueTxt {
+    color: #2B55CE;
+}
+
+.txt_Blue {
+    color: #133ea1;
+}
+
+.txt_Grey {
+    color: #9d9d9f;
+}
+
+.greyTxt {
+    color: #414042;
+}
+
+.labelOrange {
+    color: #d55f0c;
+}
+
+.iconBlue {
+    color: #2B55CE;
+}
+
+.greyIcn {
+    color: #817a7a;
+}
+
+.iconGrey {
+    color: #a7a7a7;
+}
+.weekcolumnred {
+    color: #eb1c24 !important;
+}
+.bgGreen {
+    background-color: #52c273;
+}
+
+.bgRed {
+    background-color: #ef343b;
+}
+
+.bgOrange {
+    background-color: #ff7f27;
+}
+
+.bgYellow {
+    background-color: #f6c000;
+}
+
+.bgVoilet {
+    background-color: #3f48cc;
+}
+
+.bgGrey {
+    /* background-color: #dfdfdf; */
+    background-color: #edf0f2;
+}
+
+.bgDarkGrey {
+    background-color: #636366;
+}
+
+.bgBlue {
+    background-color: #377fdb;
+}
+
+.bgGreenBlue {
+    background-color: #239b9b;
+}
+
+.orangeBg {
+    background-color: #F08000;
+}
+
+.bgLightGreen {
+    background-color: #eef9e5;
+}
+
+.bgLightBlue {
+    background-color: #e7eeff;
+}
+
+.bgSkyBlue {
+    background-color: #d2f5fd;
+}
+
+.bgLightGrey {
+    background-color: #ededed !important;
+}
+
+.bgLightYellow {
+    background-color: #fff3cf !important;
+}
+.bglightYellow{
+    background-color: #fdf6dd !important;
+}
+.bgLightOrange {
+    background-color: #ffe9db;
+}
+.bgLightGrey1 {
+    background-color: #ebebeb !important;
+}
+.bgLightGrey2 {
+    background-color: #f7f7f7 !important;
+}
+   /* Changed By Madhuri.K on 09-03-2026 */
+.graybg {
+    background-color: #F8FAFC;
+}
+.tr_light_gray {
+    background-color: #f7f7f7 !important;
+}
+.greenBrdr {
+    border-color: #17c653;
+}
+.TimesheetTbl thead tr:first-child th{
+    /* background-color: #e7edf0; */
+    /* background-color: #ededec; */
+    /* background-color: #e8e9ff; */
+    background-color: #ebebfb;
+    /* background-color: #fdeded; */
+    /* background-color: #fdf8e4; */
+}
+.TimesheetTbl thead tr:last-child th{
+    background-color: #f7f7f7;
+}
+.table_row_divider td {
+    padding: 4px!important;
+    line-height: 5px!important;
+    background: #eee!important;
+    border: none!important;
+}
+.redBrdr {
+    border-color: #ed1c24;
+}
+
+.yellowBrdr {
+    border-color: #f6c000;
+}
+
+.btnyellow {
+    /* background-color: #fbce3a; */
+    /* background-color: #fbaa16; */
+    background-color: #f39d00 !important;
+    color: #FFF !important;
+}
+
+.btnyellow:hover {
+    /* background-color: #fbce3a; */
+    /* background-color: #fbaa16; */
+    background-color: #f39d00 !important;
+    color: #FFF !important;
+}
+.btnGreen {
+    background-color: #40ad65;
+    color: #fff;
+}
+
+.btnGreen:hover {
+    background-color: #40ad65;
+    color: #FFF;
+}
+.btnRed {
+    background-color: #eb1c24;
+    color: #fff;
+}
+
+.btnRed:hover {
+    background-color: #eb1c24;
+    color: #FFF;
+}
+
+.borderbtn,
+.borderbtn:hover {
+    background: #fff;
+    border-color: #1359a6;
+    color: #1359a6;
+    font-weight: 500;
+}
+
+.greenBrdrbtn,
+.greenBrdrbtn:hover {
+    background: #fff;
+    border-color: #03bb29;
+    color: #03bb29;
+    font-weight: 500;
+}
+
+.redBrdrbtn,
+.redBrdrbtn:hover {
+    background: #fff;
+    border-color: #eb1c24;
+    color: #eb1c24;
+    font-weight: 500;
+}
+
+.borderbtnblue {
+    border: 1px solid #2B55CE;
+    color: #2b55ce;
+}
+
+.borderbtnblue:hover {
+    border-color: #2B55CE;
+    color: #2b55ce;
+    background: #F9F9F9;
+}
+
+.borderbtnbgblue {
+    border: 1px solid #2B55CE;
+    background: #2B55CE;
+    color: #ffffff;
+}
+
+.borderbtnbgblue:hover {
+    border: 1px solid #2B55CE;
+    background: #284cb4;
+    color: #ffffff;
+}
+
+/* Custom CSS end here */
+
+
+/* Status Dropdown css starts */
+.statusColors .dropdown-menu li a span.text {
+    /* display: inline-block; */
+    /* margin: auto; */
+    display: flex !important;
+    align-items: center;
+}
+
+.statusColors .filter-option-inner-inner {
+    display: flex;
+    align-items: center;
+}
+
+.statusDiv {
+    align-items: center;
+    width: 90px;
+    text-align: left;
+    margin: auto;
+}
+
+.statusDiv label {
+    font-size: 12px;
+}
+
+.statusBox {
+    display: inline-block;
+    border-radius: 50%;
+    min-width: 8px;
+    height: 8px;
+}
+
+.stageBox {
+    display: inline-block;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.statusApproved {
+    /* background-color: #c8ff00; */
+    background-color: #5fd96f;
+}
+
+.statusCancelled {
+    background-color: #868686;
+}
+
+.statusClosed {
+    background-color: #00a65a;
+}
+
+.statusDraft,
+.stageDraft {
+    background-color: #f39c12;
+}
+
+.statusReSubmitted {
+    background-color: #3c8dbc;
+}
+
+.statusRejected {
+    background-color: #dd4b39;
+}
+
+.statusSubmitted {
+    background-color: #00c0ef;
+}
+
+.statusOpen {
+    /* background-color: rgb(255, 255, 51); */
+    background-color: #f9e143;
+}
+
+/* Status Dropdown css starts */
+
+/* Daily updates carousel css starts */
+.carousel-inner {
+    height: 135px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #085ac3;
+    width: 6px;
+    border-radius: 50%;
+}
+
+.carousel-indicators {
+    margin-bottom: 0;
+    position: static;
+    margin-top: -25px;
+}
+.carousel-indicators .active{
+    opacity: 0.9;
+}
+/* Daily updates carousel css ends */
+
+/* Timesheet carousel css starts */
+.carouselTS .carousel-inner {
+    height: 265px;
+}
+
+.carouselTS .GIF_Img {
+    max-width: 65%;
+}
+
+.GIF_div {
+    height: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Timesheet carousel css ends */
+
+/* Selectpicker CSS start here */
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100% !important;
+}
+
+.filter-option-inner-inner {
+    color: #7e7d7d;
+    /* font-size: 14px; */
+    font-size: 11px;
+    font-weight: 400;
+    padding-top: 1px;
+}
+
+.bootstrap-select .dropdown-menu li a {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #E7EDF0;
+    color: black;
+}
+
+/* .bootstrap-select .dropdown-menu li a span.text {
+    font-size: 0.7rem;
+} */
+/* Selectpicker CSS end here */
+
+/* Custom Tabs CSS start here */
+
+ul.nav.nav-tabs.detailsubtabs {
+    border-top: unset;
+    margin: 0;
+}
+
+ul.nav.nav-tabs.customSubTabs {
+    border-top: unset;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.customSubTabs>li>a.nav-link {
+    color: #000;
+}
+
+.customSubTabs.nav-tabs .nav-link:hover,
+.customSubTabs.nav-tabs .nav-link.active,
+.customSubTabs.nav-tabs .nav-link:focus {
+    color: #000;
+    background-color: #fff !important;
+    transition: 0.4s ease-in-out 0s;
+}
+
+.cust_tabpanel .nav-tabs>li>a {
+    background: #d8dde0;
+    margin-right: 1px;
+    border-radius: 1px;
+    color: #464a4c;
+}
+.sm_input{
+    width: 70px;
+}
+.infoIcn{
+    width: 13px;
+}
+/* Custom Tabs CSS end here */
+
+.form-control:focus {
+    border-color: #414042 !important;
+    box-shadow: none !important;
+}
+/* .required {
+    color: #F00;
+} */
+/* Accordion CSS start here */
+.accordion-button:focus {
+    border-color: #ddd;
+    box-shadow: none;
+}
+
+/* .accordion-button:not(.collapsed) {
+    background-color: #FFF;
+} */
+
+.bootstrap-select>.dropdown-toggle {
+    border: 1px solid #ced4da;
+    background-color: #FFF;
+    height: 35px;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    background-color: #FFF;
+}
+
+/* Accordion CSS end here */
+
+/* Initiative graphical representation on list view css start */
+.graphTitle{
+    font-size: 14px;
+    font-weight: 500;
+}
+.graphCardSec .card {
+    flex: 1;
+}
+
+.graphCardSec .card-header {
+    font-weight: 500;
+    min-height: 60px;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+}
+
+.ApprPendingSection {
+    position: relative;
+    height: 22vh;
+    width: 100%;
+}
+.barGraphSec {
+    position: relative;
+    height: 35vh;
+    width: 100%;
+}
+.progress_NatureInit {
+    height: 12px;
+}
+
+.progress_text {
+    font-size: 10px;
+}
+
+.topIniDiv .progress-bar {
+    border-radius: 10px;
+}
+
+.progress_grid1 {
+    background-color: #16872d;
+    width: 95%;
+}
+
+.progress_grid2 {
+    background-color: #F5C330;
+    width: 75%;
+}
+
+.progress_grid3 {
+    background-color: #F08000;
+    width: 55%;
+}
+
+.progress_grid4 {
+    background-color: #239b9b;
+    width: 40%;
+}
+
+.progress_grid5 {
+    background-color: #b364fa;
+    width: 30%;
+}
+
+.graphSection1 {
+    position: relative;
+    height: 38vh;
+    width: 23vw;
+}
+
+.legends-div {
+    flex-wrap: wrap;
+}
+
+.legends-div .legends {
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.legends-div .legend-box {
+    width: 15px;
+    height: 15px;
+    background-color: #2B55CE;
+    margin-top: 4px;
+}
+
+.legends-div .green-box {
+    /* background-color: #03BA28; */
+    background-color: #16872d;
+}
+
+.legends-div .yellow-box {
+    background-color: #fac95f;
+}
+
+.legends-div .red-box {
+    /* background-color: #F55D30; */
+    background-color: #F08000;
+}
+
+.legends-div .pink-box {
+    /* background-color: #F55D30; */
+    background-color: #ff76a7;
+}
+
+.legends-div .blue-box {
+    background-color: #8cb8ff;
+}
+
+.legends-div .sky-box {
+    background-color: #239b9b;
+}
+
+.legends-div .voilet-box {
+    background-color: #b364fa;
+}
+
+.legends-div .lightsky-box {
+    background-color: #63c5ff;
+}
+
+.legends-div .legends .l-name {
+    margin-left: 10px;
+    width: 70px;
+    flex-grow: 1;
+    font-size: 12px;
+}
+
+.legends-div .risk-box {
+    width: 25px;
+    height: 20px;
+    background-color: #f42121;
+}
+
+.legends-div .orange-box {
+    width: 25px;
+    height: 20px;
+    background-color: #ec7103d9;
+}
+
+.legends-div .voi-box {
+    width: 25px;
+    height: 20px;
+    background-color: #ec04ce;
+}
+
+/* Initiative graphical representation on list view css end */
+
+/*GridView seprator Table css*/
+.init_grid_panel {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+table thead th {
+    font-weight: 400;
+}
+
+/* table tbody td {
+    font-size: 12px;
+} */
+
+.accordion-button {
+    font-size: 13px;
+    /* border-bottom: 1px solid #ddd; */
+}
+
+/*End table css*/
+
+/*Initiative Grid Stages start here*/
+.igph_title .col label {
+    font-weight: 300;
+}
+
+.igph_title .col span {
+    font-weight: 500;
+}
+
+/*Initiative-stages*/
+
+.initiativestages {
+    max-width: 60%;
+    margin: 0 auto;
+    padding-right: 10px;
+}
+
+.initiativestages .sbar {
+    border-radius: 12px;
+    border: 1px solid #999;
+    margin-right: -15px;
+    height: 15px;
+    line-height: 15px;
+}
+
+.initiativestages .sbar-gray {
+    background: #ddd;
+    color: #FFF;
+}
+
+.initiativestages .sbar-orange {
+    background: #fbb03b;
+    color: #FFF;
+}
+
+.initiativestages .sbar-green {
+    background: #81cf09;
+    color: #FFF;
+}
+
+.initiativestages .sbar-red {
+    background: #eb1c24;
+    color: #FFF;
+}
+
+.initiativestages .sbar.sbar-current {
+    position: relative;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #464a4c;
+    /*text-shadow: 0px 0px 0.8px #464a4c;*/
+    font-size: 12px;
+    /*padding-right: calc(var(--bs-gutter-x) * 1.5);
+            padding-left: calc(var(--bs-gutter-x) * 1.5);*/
+    width: 33.33333333%;
+    flex: 0 0 auto;
+}
+
+.sbar.sbar-current {
+    min-width: 140px;
+}
+
+.initiativestages .sbar>a {
+    display: block;
+    color: #464a4c;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+/*End style*/
+
+
+/*Legends*/
+.gridlegends {
+    font-size: 12px;
+}
+
+.legendList {
+    width: 150px;
+    display: inline-block;
+    text-align: left;
+    font-weight: 300;
+}
+
+.legendSquare {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 5px;
+    border: 1px solid #414042;
+    vertical-align: middle;
+}
+
+.lgdGreen {
+    background: #03bb29;
+}
+
+.lgdYellow {
+    background: #F5C330;
+}
+
+.lgdOrng {
+    background: #f55c30;
+}
+
+.lgdGray {
+    background: #e7e7e7;
+}
+
+/*End Legends style*/
+
+/* Offcanvas CSS start here*/
+.offcanvas {
+    --bs-offcanvas-width: 23%;
+}
+
+.offcanvas-50 {
+    --bs-offcanvas-width: 50%;
+}
+
+.offcanvas-65 {
+    --bs-offcanvas-width: 65%;
+}
+
+.offcanvas-60 {
+    --bs-offcanvas-width: 60%;
+}
+
+.offcanvas-70 {
+    --bs-offcanvas-width: 70%;
+}
+
+.offcanvas-90 {
+    --bs-offcanvas-width: 90%;
+}
+
+.offcanvas-85 {
+    --bs-offcanvas-width: 85%;
+}
+
+.offcanvasGreyBG {
+    background-color: #f3f3f3;
+}
+
+h5.offcanvasTitle {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.offClose i {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Offcanvas CSS end here*/
+
+.datepicker {
+    padding: 0 4px;
+}
+
+.btnStyle {
+    border: 1px solid #2fc2c2;
+    color: #0ea3a3;
+}
+
+.btnStyle:hover {
+    border: 1px solid #2fc2c2;
+    /* background-color: #a6007d; */
+    background-color: #2fc2c2;
+    color: #FFF;
+}
+
+label.required:after {
+    content: " *";
+    color: red;
+}
+
+.topBrdr {
+    border-top: 1px solid #ddd !important;
+    border-radius: 5px 5px 0 0;
+}
+
+.bottomBrdr {
+    border-bottom: 1px solid #ddd !important;
+    border-radius: 0 0 5px 5px;
+}
+
+.cardGreenBrdr {
+    border-top: 10px solid #03bb29;
+    border-bottom: 10px solid #03bb29;
+}
+
+.topGreenBrdr {
+    border-top: 10px solid #03bb29 !important;
+    border-radius: 10px 10px 0 0;
+}
+
+.bottomGreenBrdr {
+    border-bottom: 10px solid #03bb29 !important;
+    border-radius: 0 0 10px 10px;
+}
+
+.cardOrangeBrdr {
+    border-top: 10px solid #F08000;
+    border-bottom: 10px solid #F08000;
+}
+
+.topOrangeBrdr {
+    border-top: 10px solid #F08000 !important;
+    border-radius: 10px 10px 0 0;
+}
+
+.bottomOrangeBrdr {
+    border-bottom: 10px solid #F08000 !important;
+    border-radius: 0 0 10px 10px;
+}
+
+.cardSkyBlueBrdr {
+    border-top: 10px solid #00c0ef;
+    border-bottom: 10px solid #00c0ef;
+}
+
+.topSkyBlueBrdr {
+    border-top: 10px solid #00c0ef !important;
+    border-radius: 10px 10px 0 0;
+}
+
+.bottomSkyBlueBrdr {
+    border-bottom: 10px solid #00c0ef !important;
+    border-radius: 0 0 10px 10px;
+}
+
+.cardBlueBrdr {
+    border-top: 10px solid #133ea1;
+    border-bottom: 10px solid #133ea1;
+}
+
+.topBlueBrdr {
+    border-top: 10px solid #133ea1 !important;
+    border-radius: 10px 10px 0 0;
+}
+
+.bottomBlueBrdr {
+    border-bottom: 10px solid #133ea1 !important;
+    border-radius: 0 0 10px 10px;
+}
+
+.cardYellowBrdr {
+    border-top: 10px solid #F5C330;
+    border-bottom: 10px solid #F5C330;
+}
+
+.topYellowBrdr {
+    border-top: 10px solid #F5C330 !important;
+    border-radius: 10px 10px 0 0;
+}
+
+.bottomYellowBrdr {
+    border-bottom: 10px solid #F5C330 !important;
+    border-radius: 0 0 10px 10px;
+}
+
+.cardGreyBrdr {
+    border-top: 10px solid #9d9d9f;
+    border-bottom: 10px solid #9d9d9f;
+}
+
+.topGreyBrdr {
+    border-top: 10px solid #9d9d9f !important;
+    border-radius: 10px 10px 0 0;
+}
+
+.bottomGreyBrdr {
+    border-bottom: 10px solid #9d9d9f !important;
+    border-radius: 0 0 10px 10px;
+}
+
+.cardRedBrdr {
+    border-top: 10px solid #ef343b;
+    border-bottom: 10px solid #ef343b;
+}
+
+.topRedBrdr {
+    border-top: 10px solid #ef343b !important;
+    border-radius: 10px 10px 0 0;
+}
+
+.bottomRedBrdr {
+    border-bottom: 10px solid #ef343b !important;
+    border-radius: 0 0 10px 10px;
+}
+
+.TimesheetSec .card {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.projTitle {
+    color: #4263c1;
+    font-weight: 400;
+    font-size: 14px; 
+    /* Modified By Madhuri.K On 26-03-2026 */
+    word-break: break-word;
+    white-space: normal;
+    line-height: 1.2;
+    padding: 10px 0;
+}
+
+.TimesheetSec .card-body {
+    padding: 20px 0 10px;
+}
+
+.cardSection {
+    /* border-top: 10px solid #03bb29; */
+    border-radius: 10px;
+}
+
+.noBorderSelect .dropdown-toggle {
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.navCollapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.greySec {
+    background-color: #ebebeb;
+    padding: 10px 5px;
+    margin: 5px 0;
+}
+
+.TaskList li {
+    padding: 10px 8px;
+}
+
+.TaskList li a {
+    text-decoration: none;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.totalEffortsDiv {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ddd;
+    padding: 15px 0 18px;
+}
+
+.totalEffortsDiv span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.totalTxt {
+    font-size: 12px;
+}
+.quickEntryInput {
+    width: 55px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid #1359a6;
+    /* margin: auto; */
+    /* text-align: center; */
+}
+.quickEntryRecord button {
+    background: #fff;
+    border: 1px solid #1359a6;
+    color: #333;
+    padding: 0 2px;
+    height: 20px;
+    border-radius: 2px;
+}
+.quickEntryRecord button:hover {
+    background: #1359a6;
+    color: #fff;
+    transition: 0.4s ease-in-out 0s;
+}
+.taskTxt {
+    font-size: 12px;
+    font-weight: 500;
+}
+.edtTimeInput{
+    text-align: center;
+    width: 53px;
+    margin: auto;
+}
+.edtTimeInput1 {
+    text-align: center;
+    width: 53px;
+    margin: auto;
+}
+.totalEffDiv {
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.statusList {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+.statusList label {
+    font-size: 12px;
+}
+
+.plusIcn {
+    font-size: 10px;
+}
+
+.NestedAccBtn.collapsed i {
+    transform: rotate(0deg);
+}
+
+.NestedAccBtn:not(.collapsed) i {
+    transform: rotate(180deg);
+    /* margin-bottom: 12px; */
+}
+
+
+.weeklyanddaily span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.weeklyanddaily .switch {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+}
+
+.weeklyanddaily span.labeldail {
+    color: #464a4c;
+}
+
+
+.weekly_calender {
+    position: relative;
+    text-align: center;
+}
+
+.weeklyanddaily .filter {
+    margin-top: 0px;
+}
+
+.weeklyanddaily .filter .fas {
+    font-size: 14px;
+    display: block;
+}
+
+.weekly_calender .input-group {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.weekly_calender .weeklycalender_icon {
+    position: absolute;
+    right: 70px;
+    top: 7px;
+    font-size: 20px;
+}
+
+.fa-calendar:before {
+    content: "\f073" !important;
+}
+
+.timesheetrow .input-group .input-group-addon {
+    border-radius: 4px 0 0 4px;
+    border-color: #848484;
+}
+
+.input-group .form-control:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.weekly_calender .input-group .input-group-addon {
+    width: 60px;
+}
+
+.weeklyanddaily {
+
+    margin: 1px 0 0;
+    line-height: 28px;
+
+}
+
+.weekly_calender .input-group-box {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 215px;
+    margin: 0 6px;
+    position: relative;
+    /* border: 1px solid #464a4c; */
+}
+
+.input-group-box img {
+    position: absolute;
+    right: 8px;
+    width: 20px;
+    z-index: 9;
+    top: 5px;
+}
+
+
+
+/*newdatepicker*/
+/* #DateDemo .showCalendar {
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+    z-index: 9;
+    top: 7px;
+} */
+
+.ui-datepicker {
+    width: unset;
+    z-index: 99999 !important;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+    padding: 0.77em;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    border: 1px solid #999;
+    background: #ccc;
+    color: #333;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+    border: none;
+}
+
+.weekly_calender .ui-widget-content .ui-state-hover {
+    background: #ccc;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active {
+    border: none;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+    border: none;
+}
+
+.ui-state-default {
+    background: #fff;
+}
+
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+    /* opacity: 1 !important; */
+    opacity: 0.5 !important;
+    color: #868383;
+}
+
+.ui-datepicker td {
+    padding: 0;
+}
+
+.ui-state-highlight {
+    background: #1359a6 !important;
+    color: #fff !important;
+}
+
+/*newdatepicker_end*/
+
+.projectsicon {
+    display: block;
+    text-align: right;
+}
+
+.bootstrap-select.open>.dropdown-toggle.btn-default:hover {
+    background: none;
+    box-shadow: none;
+}
+
+.weekly_calender .input-group-box input {
+    /* background-position: 96%; */
+    /* padding: 10px; */
+    width: 100%;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #1359a6;
+    border: 1px solid #ccc !important;
+}
+
+.DWnoumber span.year {
+    display: block;
+    /* border-bottom: 1px solid; */
+    border-bottom: none;
+    font-weight: 600;
+    font-size: 12px;
+    color: #ff6a00;
+}
+
+.DWnoumber span.weekNo {
+    /* padding-top: 2px; */
+    display: block;
+    color: #e76000;
+}
+
+.weeklyanddaily {
+    width: 230px;
+}
+
+button#landingpginfobtn {
+    margin-top: 6px;
+}
+
+.entryselectpro_selectfield .tooltip {
+    display: none !important;
+}
+
+html body table tr td.ui-datepicker-current-day,
+html body table tr td.ui-datepicker-current-day a.ui-state-default {
+    background: #ccc;
+}
+
+a.ui-state-default.ui-priority-secondary {
+    opacity: 0.6;
+}
+
+html body table tr td.ui-datepicker-current-day a.ui-state-default.ui-priority-secondary {
+    background: #fafafa;
+}
+
+.tbl-projecttitle {
+    padding-left: 26px;
+}
+
+.tbl-projecttitle>img {
+    position: absolute;
+    left: 0;
+}
+
+
+/* states and images */
+/* .ui-icon {
+    width: 16px;
+    height: 16px;
+} */
+
+/* .ui-icon,
+.ui-widget-content .ui-icon {
+    background-image: url("../img/ui-icons_444444_256x240.png");
+}
+
+.ui-widget-header .ui-icon {
+    background-image: url("../img/ui-icons_444444_256x240.png");
+}
+
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon,
+.ui-button:hover .ui-icon,
+.ui-button:focus .ui-icon {
+    background-image: url("../img/ui-icons_555555_256x240.png");
+}
+
+.ui-state-active .ui-icon,
+.ui-button:active .ui-icon {
+    background-image: url("images/ui-icons_ffffff_256x240.png");
+}
+
+.ui-state-highlight .ui-icon,
+.ui-button .ui-state-highlight.ui-icon {
+    background-image: url("images/ui-icons_777620_256x240.png");
+}
+
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+    background-image: url("images/ui-icons_cc0000_256x240.png");
+}
+
+.ui-button .ui-icon {
+    background-image: url("images/ui-icons_777777_256x240.png");
+} */
+
+.TaskAccBtn::after {
+    background-image: url(../img/plus.svg);
+}
+
+.TaskAccBtn:not(.collapsed)::after {
+    background-image: url(../img/dash.svg);
+}
+
+.TaskAccBtn::after {
+    background-image: url(../img/plus.svg);
+}
+
+.TaskAccBtn:not(.collapsed)::after {
+    background-image: url(../img/dash.svg);
+}
+
+.TaskAccordianPanel .accordion-item:not(:first-of-type) {
+    border-top: 1px solid #dee2e6;
+}
+
+.TimesheetTbl {
+    /* border-collapse: separate; */
+    border-spacing: 10px 0;
+}
+
+/* Time */
+.TimesheetTbl .NestedAccBtn{
+    border-bottom: 0;
+    padding: 0;
+}
+#QEntryLabel label{
+    top: -12px;
+    left: 45px;
+    color: #133ea1 !important;
+}
+.form-floating>.form-control{
+    height: 20px;
+    margin: auto;
+    width: 50%;
+}
+
+.showFiltersSec .filterName{
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+.WeekProjEffortsSec .card-title h6{
+    background-color: #f5f5f5;
+}
+.DA_Icn{
+    position: absolute;
+    right: 0;
+    bottom: 7px;
+    color: #9d9d9f;
+}
+.TaskAccBtn{
+    font-size: 12px;
+}
+
+.input-group.date span.input-group-text {
+    border-radius: 0px 4px 4px 0;
+}
+.custInput {
+    display: inline-block;
+    width: 85%;
+}
+
+/*Note Section Start here*/
+.notebox {
+    border: none;
+}
+.noteTxt {
+    font-size: 12px;
+}
+.notebox ul li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.noteIcon {
+    background-color: yellow;
+}
+.clsNote {
+    color: red;
+    /* float: right; */
+    margin-left: 14px;
+    /* margin-top: -14px; */
+    font-size: 11px;
+}
+/*Note Section End here*/
+.apprBtns a{
+    font-size: 13px;
+}
+.btn-default, .btn-default:hover {
+    background-color: #f4f4f4;
+    color: #444;
+    border-color: #ddd;
+}
+.filterTitle{
+    font-size: 14px;
+    font-weight: 500;
+}
+/* Basic Rules */
+.switch input {
+    display: none
+}
+
+.switch {
+    display: inline-block;
+    width: 55px;
+    height: 25px;
+    /* margin-top: -12px;
+    transform: translateY(50%); */
+    position: relative
+}
+
+/* Style Wired */
+.slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border: 4px solid transparent;
+    overflow: hidden;
+    transition: .4s;
+    background: #ddd
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 30px;
+    transform: translateX(-30px);
+    transition: .4s
+}
+
+input:checked+.slider:before {
+    transform: translateX(30px);
+    background: #fff
+}
+
+input:checked+.slider {
+    border: 4px solid #a7a7a7;
+    background: #a7a7a7
+}
+
+/* input:checked + .slider{border:4px solid #75bb08;background:#75bb08} */
+/* Style Flat */
+.switch.flat .slider {
+    box-shadow: none
+}
+
+.switch.flat .slider:before {
+    background: #FFF
+}
+
+.switch.flat input:checked+.slider:before {
+    background: white
+}
+
+.switch.flat input:checked+.slider {
+    background: limeGreen
+}
+/* ------------------------------------------- */
+.switch2 input {
+    display: none
+}
+
+.switch2 {
+    display: inline-block;
+    width: 55px;
+    height: 25px;
+    /* margin-top: -12px;
+    transform: translateY(50%); */
+    position: relative
+}
+
+/* Style Wired */
+.slider2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border: 4px solid transparent;
+    overflow: hidden;
+    transition: .4s;
+    background: #ddd
+}
+
+.slider2:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 30px;
+    transform: translateX(-30px);
+    transition: .4s
+}
+
+input:checked+.slider2:before {
+    transform: translateX(30px);
+    background: #fff
+}
+
+input:checked+.slider2 {
+    border: 4px solid #a7a7a7;
+    background: #a7a7a7
+}
+
+/* input:checked + .slider{border:4px solid #75bb08;background:#75bb08} */
+/* Style Flat */
+.switch2.flat .slider2 {
+    box-shadow: none
+}
+
+.switch2.flat .slider2:before {
+    background: #FFF
+}
+
+.switch2.flat input:checked+.slider2:before {
+    background: white
+}
+
+.switch2.flat input:checked+.slider2 {
+    background: limeGreen
+}
+
+/* Pagination CSS start here */
+.pagination{ margin-bottom:15px!important;}
+.pagination>a, .pagination>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #1359a6;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd; cursor: pointer;
+}
+
+.pagination>a:hover{ background: #1359a6; color: #fff; }
+
+.toggled .alocatedresourcereqtbl td{white-space: nowrap;}
+.toggled .alocatedresourcereqtbl td.reqid {min-width: 200px;}
+
+
+/* .dataTables_scrollHead {background: #e7edf0;} */
+div.dataTables_scrollHead table.dataTable{ margin-top: 0!important; }
+div.dataTables_scrollFoot>.dataTables_scrollFootInner{ border-right:1px solid #e9e9e9; border-bottom: 1px solid #e9e9e9;}
+div.dataTables_scrollFoot>.dataTables_scrollFootInner table {margin-bottom: 0!important;border-bottom: none;}
+
+.dataTables_paginate{
+    text-align: right;
+}
+.dataTables_paginate a.paginate_button {
+    border: 1px solid #e9e9e9;
+    min-width: 40px;
+    display: inline-block;
+    text-align: center;
+    height: 32px;
+    padding: 8px;
+    line-height: 14px; color: #1359a6;margin-left: -1px;
+}
+.dataTables_paginate a.paginate_button:hover{ background: #1359a6; transition: 0.4s ease-in-out 0s; color: #fff; cursor: pointer; }
+.dataTables_paginate a.paginate_button.current{
+    background: #1359a6;    
+    color: #fff;
+    cursor: pointer;
+}
+/* Pagination CSS end here */
+
+/* Weekly Calender CSS Start here */
+.weeklyanddaily span{ display: inline-block;  vertical-align: middle;}
+.weeklyanddaily .switch{display: inline-block; margin: 0 10px; vertical-align: top;}
+.weeklyanddaily span.labeldail{ color: #464a4c;}
+
+
+.weekly_calender{ position: relative; text-align: center; }
+.weeklyanddaily .filter{ margin-top: 0px; }
+.weeklyanddaily .filter .fas{ font-size: 14px; display: block;}
+.weekly_calender .input-group { width: 100%;margin: 0 auto; align-items: center;}
+.weekly_calender .weeklycalender_icon {position: absolute; right: 70px;top: 7px;font-size: 20px;}
+
+.fa-calendar:before {
+    content: "\f073"!important;
+}
+.timesheetrow .input-group .input-group-addon{ border-radius: 4px 0 0 4px; border-color: #848484;}
+.input-group .form-control:last-child{border-top-right-radius: 4px;border-bottom-right-radius: 4px;}
+
+.weekly_calender .input-group .input-group-addon{ width: 60px;}
+.weeklyanddaily {
+
+    margin:1px 0 0;
+    line-height: 28px;
+
+}
+.weekly_calender button {
+    display: inline-block;
+    vertical-align: middle;
+    /* font-size: 22px; */
+    cursor: pointer; 
+    background: none; 
+    border:none; outline: none;
+}
+.input-group-box img {
+    position: absolute;
+    right: 8px;
+    width: 20px;
+    z-index: 9;
+    top: 5px;
+}
+
+/*newdatepicker*/
+#DateDemo .showCalendar {
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+    z-index: 9;
+    bottom: 8px;
+}
+.ui-datepicker{
+    width: unset;
+}
+.ui-datepicker td span, .ui-datepicker td a{ padding: 0.77em; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid #999;background: #ccc; color: #333;}
+.ui-state-default, .ui-widget-content .ui-state-default{ border:none; pointer-events:none; } 
+.weekly_calender .ui-widget-content .ui-state-hover{ background:#ccc; }    
+
+.ui-state-active, .ui-widget-content .ui-state-active{border:none;}    
+.ui-state-default{ background: #fff; }
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
+    /* opacity: 1 !important; */
+    opacity: 0.5 !important;
+    color: #868383;
+} 
+.ui-datepicker td{ padding: 0; } 
+.ui-state-highlight {background: #1359a6!important; color: #fff!important;}
+/*newdatepicker_end*/
+
+.projectsicon {display: block;text-align: right;}
+.bootstrap-select.open > .dropdown-toggle.btn-default:hover{ background: none; box-shadow: none; }
+.weekly_calender .form-control {
+    border-color: #464a4c;
+    border-radius: 4px!important;
+}
+.DWnoumber {
+    line-height: normal;
+    text-align: center;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    vertical-align: middle;
+    background: #fff;
+    border: none;
+    border-radius: 4px 4px 0px 0px;
+    margin-bottom: -1px;
+    padding: 3px 5px;
+    width: 231px;
+    height: 20px;
+    color: #e76000;
+}
+
+
+.weeklyanddaily { width:230px;}
+        button#landingpginfobtn {margin-top: 6px;}
+        .entryselectpro_selectfield .tooltip{ display:none!important;}/*added by pradip on 23-03-2020*/
+
+        /* html body table tr td.ui-datepicker-current-day, html body table tr td.ui-datepicker-current-day a.ui-state-default {background: #ccc;} */
+        a.ui-state-default.ui-priority-secondary{ opacity:0.6;}
+        html body table tr td.ui-datepicker-current-day a.ui-state-default.ui-priority-secondary { background:#fafafa;}
+
+        .tbl-projecttitle{ padding-left:26px;}
+        .tbl-projecttitle > img{ position:absolute; left:0;}
+
+
+/* states and images */
+/* .ui-icon {
+	width: 16px;
+	height: 16px;
+} */
+/* .ui-icon,
+.ui-widget-content .ui-icon {
+	background-image: url("../img/ui-icons_444444_256x240.png");
+}
+.ui-widget-header .ui-icon {
+	background-image: url("../img/ui-icons_444444_256x240.png");
+}
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon,
+.ui-button:hover .ui-icon,
+.ui-button:focus .ui-icon {
+	background-image: url("../img/ui-icons_555555_256x240.png");
+}
+.ui-state-active .ui-icon,
+.ui-button:active .ui-icon {
+	background-image: url("images/ui-icons_ffffff_256x240.png");
+}
+.ui-state-highlight .ui-icon,
+.ui-button .ui-state-highlight.ui-icon {
+	background-image: url("images/ui-icons_777620_256x240.png");
+}
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+	background-image: url("images/ui-icons_cc0000_256x240.png");
+}
+.ui-button .ui-icon {
+	background-image: url("images/ui-icons_777777_256x240.png");
+} */
+/* Weekly Calender CSS End here */
+
+.actualExpHrsDiv .HrsTime{
+    border-radius: 4px 0 0 4px;
+    color: #346a02;
+}
+.actualExpHrsDiv .HrsTxt{
+    border-radius: 0 4px 4px 0;
+}
+.actualExpHrsDiv .HrsTime,
+.actualExpHrsDiv .HrsTxt{
+    padding: 5px;
+    border: 1px solid #d5d5d5;
+    background-color: #f9f9f9;
+    font-size: 11px;
+}
+.TaskDescDropdown{
+    width: 250px;
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+/* .prevBtn, .nextBtn{
+    position: absolute;
+    z-index: 1;
+} */
+.PTItooltipbox_hading {
+    font-size: 14px;
+    line-height: normal;
+    margin: 0 0 15px;
+    color: #4263c1;
+}
+.taskIcn {
+    width: 16px;
+    margin-right: 5px;
+}
+.filterName span {
+    /* background-color: #ffffc8; */
+    /*background-color: #fff2b2;*/
+    padding: 0px 4px;
+}
+.projColumn {
+    min-width: 350px;
+}
+
+.colWidth {
+    min-width: 80px;
+}
+.projectSearchbox{
+    max-width: 250px;
+}
+/*.parentRow td {*/
+tr.parentRow {
+    /*  background-color: #ebebfb;
+    --bs-table-striped-bg: #ebebfb;*/
+    background-color: #ebebeb;
+    --bs-table-striped-bg: #ebebeb;
+}
+
+/*.table-striped > tbody > tr.parentRow:nth-of-type(odd) > * {
+    --bs-table-bg-type: #ebebe9;
+}*/
+.copyTxt{
+    line-height: 1.2;}
+
+/*custom-modal*/
+.custmodal .modal-content {
+    border-radius: 10px;
+}
+
+    .custmodal .modal-content .modal-header {
+        display: block !important;
+        background: #4263c1;
+        border: none;
+        color: #fff;
+        border-radius: 10px 10px 0 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+        .custmodal .modal-content .modal-header .close {
+            color: #fff;
+            box-shadow: none;
+            border: none;
+            font-size: 24px;
+            text-shadow: none;
+            opacity: 1;
+            position: absolute;
+            top: 14px;
+            right: 20px;
+        }
+
+    .custmodal .modal-content .modal-body {
+        padding: 40px;
+    }
+
+span.startdateicon { /*margin: 6px 0px 0 -15px;display: block;*/
+    position: absolute;
+    right: 20px;
+    z-index: 9;
+    top: 6px;
+    cursor: pointer;
+}
+
+/* Added By Gauri on 20/01/2025*/
+
+.TS_Icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* custom checkbox CSS start here */
+input[type=checkbox][disabled] {
+    cursor: not-allowed !important;
+}
+
+.custom_chckbox input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer
+}
+
+.custom_chckbox label {
+    position: relative;
+    cursor: pointer
+}
+
+    .custom_chckbox label:before {
+        content: '';
+        -webkit-appearance: none;
+        background-color: transparent;
+        border: 1px solid #464a4c;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05);
+        padding: 7px;
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        /*cursor:pointer;*/
+    }
+
+.custom_chckbox input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 5px;
+    height: 10px;
+    border: solid #464a4c;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg)
+}
+/* custom checkbox CSS end here */
+
+
+.filedownload .dropdown-menu {
+    left: auto;
+    right: 0;
+    min-width: 94px;
+    max-width: 100px;
+}
+
+    .filedownload .dropdown-menu li {
+        padding: 5px 10px;
+    }
+
+        .filedownload .dropdown-menu li a {
+            text-decoration: none;
+            margin: 0;
+        }
+
+            .filedownload .dropdown-menu li a img {
+                margin-right: 10px;
+            }
+
+.myTimesheetTbl thead tr th {
+    background-color: #ebebfb;
+}
+
+
+.bootstrap-select .dropdown-toggle.btn.show {
+    border: 1px solid #ced4da !important;
+    background-color: #FFF !important;
+}
+ 
+/* End of Added By Gauri on 20/01/2025*/

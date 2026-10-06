@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MIMETYPE>
+  <MIME>
+    <MagicNumber>txt</MagicNumber>
+    <ContentType>text/plain</ContentType>
+    <Extension>txt</Extension>
+  </MIME>
+
+  <MIME>
+    <MagicNumber>25 21 50 53 </MagicNumber>
+    <ContentType>application/postscript</ContentType>
+    <Extension>ai</Extension>
+  </MIME>
+
+  <MIME>
+    <MagicNumber>46 4F 52 4D nn nn nn nn 41 49 46 46 </MagicNumber>
+    <ContentType>audio/x-aiff</ContentType>
+    <Extension>aif</Extension>
+  </MIME>
+
+  <MIME>
+    <MagicNumber>42 4D</MagicNumber>
+    <ContentType>image/bmp</ContentType>
+    <Extension>bmp</Extension>
+  </MIME>
+
+  <MIME>
+    <MagicNumber>CA FE BA BE </MagicNumber>
+    <ContentType>application/octet-stream</ContentType>    
+    <Extension>class,xlsx,xls</Extension>
+  </MIME>
+
+  <MIME>
+    <MagicNumber>78 01 73 0D 62 62 60 </MagicNumber>
+    <ContentType>application/octet-stream</ContentType>
+    <Extension>dmg,docx,pptx</Extension>
+  </MIME>
+
+  <MIME>
+    <MagicNumber>D0 CF 11 E0 A1 B1 1A E1 </MagicNumber>
+    <ContentType>application/msword</ContentType>
+    <Extension>doc,xls,ppt,msg</Extension>
+  </MIME>
+
+  <MIME>
+    <MagicNumber> 50 4B 03 04</MagicNumber>
+    <ContentType>application/vnd.openxmlformats-officedocument.wordprocessingml.document</ContentType>
+    <Extension>zip,jar,odt,ods,odp,docx,xlsx,pptx,vsdx,apk,aar</Extension>
+  </MIME>
+
+  <MIME>
+    <MagicNumber>50 4B 05 06</MagicNumber>
+    <ContentType>application/vnd.openxmlformats-officedocument.wordprocessingml.document</ContentType>
+    <Extension>zip,jar,odt,ods,odp,docx,xlsx,pptx,vsdx,apk,aar</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>50 4B 05 06</MagicNumber>
+    <ContentType>application/vnd.ms-powerpoint</ContentType>
+    <Extension>ppt</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>50 4B 05 06</MagicNumber>
+    <ContentType>application/vnd.openxmlformats-officedocument.presentationml.presentation</ContentType>
+    <Extension>pptx</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>50 4B 05 06</MagicNumber>
+    <ContentType>application/x-zip-compressed</ContentType>
+    <Extension>zip,ods,odt</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>50 4B 05 06</MagicNumber>
+    <ContentType>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</ContentType>
+    <Extension>xlsx</Extension>
+  </MIME>
+
+  <MIME>
+    <MagicNumber>50 4B 07 08</MagicNumber>
+    <ContentType>application/vnd.openxmlformats-officedocument.wordprocessingml.document</ContentType>
+    <Extension>zip,jar,odt,ods,odp,docx,xlsx,pptx,vsdx,apk,aar</Extension>
+  </MIME>
+
+  <MIME>
+    <MagicNumber>50 4B 07 08</MagicNumber>
+    <ContentType>application/vnd.oasis.opendocument.spreadsheet</ContentType>
+    <Extension>ods</Extension>
+  </MIME>
+
+  <MIME>
+    <MagicNumber>47 49 46 38 37 61</MagicNumber>
+    <ContentType>image/gif</ContentType>
+    <Extension>gif</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>47 49 46 38 39 61</MagicNumber>
+    <ContentType>image/gif</ContentType>
+    <Extension>gif</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>4D 5A</MagicNumber>
+    <ContentType>application/octet-stream</ContentType>
+    <Extension>exe,rar</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>00 00 01 00</MagicNumber>
+    <ContentType>image/x-icon</ContentType>
+    <Extension>ico</Extension>
+  </MIME>
+
+  <MIME>
+    <MagicNumber>FF D8 FF</MagicNumber>
+    <ContentType>image/pjpeg</ContentType>
+    <Extension>jpeg,jpg</Extension>
+  </MIME>
+
+  <MIME>
+    <MagicNumber>4D 54 68 64</MagicNumber>
+    <ContentType>audio/midi</ContentType>
+    <Extension>mid,midi</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>1F A0</MagicNumber>
+    <ContentType>application/octet-stream</ContentType>
+    <Extension>z,tar.z</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>89 50 4E 47 0D 0A 1A </MagicNumber>
+    <ContentType>image/png</ContentType>
+    <Extension>png</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>89 50 4E 47 0D 0A 1A </MagicNumber>
+    <ContentType>image/x-png</ContentType>
+    <Extension>png</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>46 4F 52 4D nn nn nn nn 41 49 46 46</MagicNumber>
+    <ContentType>audio/basic</ContentType>
+    <Extension>ilbm,lbm,ibm,iff</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>46 4F 52 4D nn nn nn nn 38 53 56 58</MagicNumber>
+    <ContentType>audio/basic</ContentType>
+    <Extension>8svx,8sv,svx,snd,iff</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>49 49 2A 00</MagicNumber>
+    <ContentType>image/tiff</ContentType>
+    <Extension>tif,tiff</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>4D 4D 00 2A</MagicNumber>
+    <ContentType>image/tiff</ContentType>
+    <Extension>tif,tiff</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>75 73 74 61 72 20 20 00</MagicNumber>
+    <ContentType>application/x-ustar</ContentType>
+    <Extension>tar</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>52 49 46 46 nn nn nn nn 57 41 56 45</MagicNumber>
+    <ContentType>audio/x-wav</ContentType>
+    <Extension>wav</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>1F A0 </MagicNumber>
+    <ContentType>application/octet-stream</ContentType>
+    <Extension>z,tar.z</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>00</MagicNumber>
+    <ContentType>image/x-macpaint</ContentType>
+    <Extension>PIC,PIF,SEA,YTR</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>4D 54 68 64</MagicNumber>
+    <ContentType>audio/midi</ContentType>
+    <Extension>mid,midi</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>46 4F 52 4D nn nn nn nn 46 41 4E 54</MagicNumber>
+    <ContentType>video/x-sgi-movie</ContentType>
+    <Extension>iff</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>00 00 00 nn 66 74 79 70 33 67 70 35</MagicNumber>
+    <ContentType>audio/mpeg</ContentType>
+    <Extension>mp3</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>49 44 33</MagicNumber>
+    <ContentType>audio/mpeg</ContentType>
+    <Extension>mp3</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>00 00 00 nn 66 74 79 70 33 67 70 35</MagicNumber>
+    <ContentType>video/mp4</ContentType>
+    <Extension>mp4,mpeg</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>00 00 00 nn 66 74 79 70 33 67 70 35</MagicNumber>
+    <ContentType>video/mpeg</ContentType>
+    <Extension>mp4,mpeg</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>50 4B 03 04</MagicNumber>
+    <ContentType>vnd.openxmlformats-officedocument.presentationml.presentation</ContentType>
+    <Extension>zip,jar,odt,ods,odp,docx,xlsx,pptx,vsdx,apk,aar</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>50 4B 05 06</MagicNumber>
+    <ContentType>vnd.openxmlformats-officedocument.presentationml.presentation</ContentType>
+    <Extension>zip,jar,odt,ods,odp,docx,xlsx,pptx,vsdx,apk,aar</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>50 4B 07 08</MagicNumber>
+    <ContentType>vnd.openxmlformats-officedocument.presentationml.presentation</ContentType>
+    <Extension>zip,jar,odt,ods,odp,docx,xlsx,pptx,vsdx,apk,aar</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>25 50 44 46</MagicNumber>
+    <ContentType>application/pdf</ContentType>
+    <Extension>pdf</Extension>
+  </MIME>
+
+  <MIME>
+    <MagicNumber>52 61 72 21</MagicNumber>
+    <ContentType>application/x-rar-compressed</ContentType>
+    <Extension>rar</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>1A 07 00</MagicNumber>
+    <ContentType>application/x-rar-compressed</ContentType>
+    <Extension>rar</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>1A 07 01 00</MagicNumber>
+    <ContentType>application/x-rar-compressed</ContentType>
+    <Extension>rar</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>3C 21 44 4F 43 54 59 50</MagicNumber>
+    <ContentType>text/html</ContentType>
+    <Extension>html</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>EF BB BF 3C 21</MagicNumber>
+    <ContentType>text/html</ContentType>
+    <Extension>html</Extension>
+  </MIME>
+
+  <MIME>
+    <MagicNumber>EF BB BF 3C 3F 78 6D</MagicNumber>
+    <ContentType>text/xml</ContentType>
+    <Extension>xml</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>EF BB BF 3C 3F 78 6D</MagicNumber>
+    <ContentType>application/xml</ContentType>
+    <Extension>xml</Extension>
+  </MIME>
+  <MIME>
+    <MagicNumber>EF BB BF 3C 3F 78 6D</MagicNumber>
+    <ContentType>application/x-msdownload</ContentType>
+    <Extension>exe</Extension>
+  </MIME>
+
+
+  <MIME>
+    <MagicNumber>50 4B 05 06</MagicNumber>
+    <ContentType>application/vnd.openxmlformats-officedocument.presentationml.presentation</ContentType>
+    <Extension>pptx</Extension>
+  </MIME>
+
+  <MIME>
+    <MagicNumber>50 4B 07 08</MagicNumber>
+    <ContentType>application/oleobject</ContentType>
+    <Extension>ods</Extension>
+  </MIME>
+
+  <MIME>
+    <MagicNumber>CA FE BA BE </MagicNumber>
+    <ContentType>application/vnd.ms-excel</ContentType>
+    <Extension>xls</Extension>
+  </MIME>
+  
+</MIMETYPE>

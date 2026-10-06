@@ -1,0 +1,512 @@
+<!-- Commented by Gauri on 12/08/24 for JQuery and Bootstrap version upgrade -->
+<%CommonFunctions.General.PlotPageHeadTag("")%>
+<!-- End of Commented by Gauri on 12/08/24 for JQuery and Bootstrap version upgrade -->
+ 
+<!-- <script src="../../Whizible2.0-new/plugins/jQuery/jquery-3.6.1.min.js" type="text/javascript"></script> -->
+<script type="text/javascript" src="../../responsive/responsive.js"></script>
+
+<style>
+    .clsTable .clsTRMenu td:first-child
+    {
+        /*width: 35%;*/
+        vertical-align: middle;
+    }
+
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        /*----------------------------------------------------------*/
+        // Starts Feature Tag:whiz41-Web Form Extension Type
+        // Description:Remove section header row in Tablet and Mobile view
+        // By Whom: Miiint
+        // When:23/01/2015
+        /*---------------------------------------------------------*/
+        if ($('.clsPageBody').find('#frmCommonPage').find('#divPage').find('#divSection2').find('.clsSubTagTable').find('#divListTag').find('table').find('.clsTRSectionHeader').length > 0) {
+            removeSectionHeader();
+        }
+        /*---------------------------------------------------------*/
+        // Ends Feature Tag:whiz41-whiz41-Web Form Extension Type
+        /*---------------------------------------------------------*/
+        if ($('.clsgridtable').length > 0) {
+            var divName = $('.clsPageBody').find('#divSection2').find('#divListTag').attr('id');
+            dataCollapse(divName);
+        }
+        /*----------------------------------------------------------*/
+        // Starts Feature Tag:whiz41-InnerMenuDropDown
+        // Description:Creating DropDown for Top Table Inner Menu on document Ready
+        // By Whom: Miiint
+        // When:14/01/2015
+        /*---------------------------------------------------------*/
+        responsiveTopMenu();
+        /*---------------------------------------------------------*/
+        // Ends Feature Tag:whiz41-InnerMenuDropDown
+        /*---------------------------------------------------------*/
+
+        /*----------------------------------------------------------*/
+        // Starts Feature Tag:whiz41-InnerMenuDropDown
+        // Description:Creating DropDown for Footer Table Inner Menu on document Ready
+        // By Whom: Miiint
+        // When:14/01/2015
+        /*---------------------------------------------------------*/
+        responsiveFooterMenu();
+        /*---------------------------------------------------------*/
+        // Ends Feature Tag:whiz41-InnerMenuDropDown
+        /*---------------------------------------------------------*/
+
+        /*----------------------------------------------------------*/
+        // Starts Feature Tag:whiz41-InnerMenuDropDown
+        // Description:Creating DropDown for Sub Table Inner Menu on document Ready
+        // By Whom: Miiint
+        // When:14/01/2015
+        /*---------------------------------------------------------*/
+        responsiveSubTableTopMenu();
+        /*---------------------------------------------------------*/
+        // Ends Feature Tag:whiz41-InnerMenuDropDown
+        /*---------------------------------------------------------*/
+
+        /*----------------------------------------------------------*/
+        // Starts Feature Tag:whiz41-InnerMenuDropDown
+        // Description:Creating DropDown for Sub Table Inner Menu on document Ready
+        // By Whom: Miiint
+        // When:14/01/2015
+        /*---------------------------------------------------------*/
+        responsiveSubTableFooterMenu();
+        /*---------------------------------------------------------*/
+        // Ends Feature Tag:whiz41-InnerMenuDropDown
+        /*---------------------------------------------------------*/
+
+        /*----------------------------------------------------------*/
+        // Starts Feature Tag:whiz41-Remove footer
+        // Description:Display none footer in Tablet and Mobile view
+        // By Whom: Miiint
+        // When:16/01/2015
+        /*---------------------------------------------------------*/
+        /* Display none footer in Tablet and Mobile view*/
+
+        var windowWidth = $(window).width();
+        if (windowWidth < 992) {
+
+        }
+        else {
+
+        }
+        /*---------------------------------------------------------*/
+        // Ends Feature Tag:whiz41-Remove footer
+        /*---------------------------------------------------------*/
+
+        $('#divSection2').find('.clsTable:first').css({ 'float': 'none', 'margin-bottom': '0px' });
+
+        /*----------------------------------------------------------*/
+        // Starts Feature Tag:whiz41-Responsive Navigation Tabs
+        // Description:Display navigation tabs in dropdown
+        // By Whom: Miiint
+        // When:07/02/2015
+        /*---------------------------------------------------------*/
+        $('#divSection2').find('.clsTable:first').addClass('gridTabsOuterTable');
+        $('#divSection2').find('.gridTabsOuterTable').find('table:first').addClass('responsiveNavigationTabsClass');
+        var responsiveNavigationClass = 'responsiveNavigationTabsClass';
+        var responsiveNavigationParentTblClass = 'gridTabsOuterTable';
+        if (windowWidth < 992) {
+            responsiveNavigationTabs(responsiveNavigationClass, responsiveNavigationParentTblClass);
+        }
+        else {
+            $('#divSection2').find('.clsTable:first').find('table:first').css('display', 'block');
+        }
+
+        /*---------------------------------------------------------*/
+        // Ends Feature Tag:whiz41-Responsive Navigation Tabs
+        /*---------------------------------------------------------*/
+
+        $('#divPage').find('#divSection1').find('table:first').addClass('detailInfo');
+        $('#divPage').find('#divSection1').find('#tblInnerDiv').removeClass('detailInfo');
+
+        /*----------------------------------------------------------*/
+        // Starts Feature Tag:whiz41-remove plus sign of Footable for 'Total' column
+        // Description:removing plus sign with footable functionality for 'Total' column
+        // By Whom: Miiint
+        // When:27/04/2015
+        /*---------------------------------------------------------*/
+
+        if (windowWidth < 1040) {
+            var text = $('#tblGrid1053121').find('tr:nth-last-child(2)').find('td:first').text();
+            if (text == "Total") {
+                $('#tblGrid1053121').find('tr:nth-last-child(2)').find('td:first').find('span').css('display', 'none');
+                $('#tblGrid1053121').find('tr:last').css('display', 'none');
+            }
+        }
+
+        /*---------------------------------------------------------*/
+        // Ends Feature Tag:whiz41-remove plus sign of Footable for 'Total' column
+        /*---------------------------------------------------------*/
+    });
+
+    $(window).resize(function () {
+        /*----------------------------------------------------------*/
+        // Starts Feature Tag:whiz41-InnerMenuDropDown
+        // Description:Creating DropDown for Top Table Inner Menu on Window Resize
+        // By Whom: Miiint
+        // When:14/01/2015
+        /*---------------------------------------------------------*/
+        responsiveTopMenuResize();
+        /*---------------------------------------------------------*/
+        // Ends Feature Tag:whiz41-InnerMenuDropDown
+        /*---------------------------------------------------------*/
+
+        /*----------------------------------------------------------*/
+        // Starts Feature Tag:whiz41-Footer InnerMenuDropDown
+        // Description:Creating DropDown for Footer Table Inner Menu on Window Resize
+        // By Whom: Miiint
+        // When:10/02/2015
+        /*---------------------------------------------------------*/
+        responsiveFooterMenuResize();
+        /*---------------------------------------------------------*/
+        // Ends Feature Tag:whiz41-Footer InnerMenuDropDown
+        /*---------------------------------------------------------*/
+
+        /*----------------------------------------------------------*/
+        // Starts Feature Tag:whiz41-InnerMenuDropDown
+        // Description:Creating DropDown for Sub Table Inner Menu on Window Resize
+        // By Whom: Miiint
+        // When:14/01/2015
+        /*---------------------------------------------------------*/
+        responsiveSubTableTopMenuResize();
+        /*---------------------------------------------------------*/
+        // Ends Feature Tag:whiz41-InnerMenuDropDown
+        /*---------------------------------------------------------*/
+
+        /*----------------------------------------------------------*/
+        // Starts Feature Tag:whiz41-FooterMenuDropDown
+        // Description:Creating DropDown for Sub Table Footer Menu on Window Resize
+        // By Whom: Miiint
+        // When:28/05/2015
+        /*---------------------------------------------------------*/
+        responsiveSubTableFooterMenuResize();
+        /*---------------------------------------------------------*/
+        // Ends Feature Tag:whiz41-FooterMenuDropDown
+        /*---------------------------------------------------------*/
+
+        /*----------------------------------------------------------*/
+        // Starts Feature Tag:whiz41-Remove footer
+        // Description:Display none footer in Tablet and Mobile view
+        // By Whom: Miiint
+        // When:16/01/2015
+        /*---------------------------------------------------------*/
+        /* Display none footer in Tablet and Mobile view*/
+
+        var windowWidth = $(window).width();
+        if (windowWidth < 992) {
+
+        }
+        else {
+
+        }
+        /*---------------------------------------------------------*/
+        // Ends Feature Tag:whiz41-Remove footer
+        /*---------------------------------------------------------*/
+        $('#divSection2').find('.clsTable:first').css({ 'float': 'none', 'margin-bottom': '0px' });
+
+        /*----------------------------------------------------------*/
+        // Starts Feature Tag:whiz41-Responsive Navigation Tabs
+        // Description:Display navigation tabs in dropdown
+        // By Whom: Miiint
+        // When:07/02/2015
+        /*---------------------------------------------------------*/
+        responsiveNavigationTabsResize();
+        /*---------------------------------------------------------*/
+        // Ends Feature Tag:whiz41-Responsive Navigation Tabs
+        /*---------------------------------------------------------*/
+
+        /*----------------------------------------------------------*/
+        // Starts Feature Tag:whiz41-collapse & close for tablet view
+        // Description:to solve select all issue, expanding first time & then again closing div for tablet view on Window Resize
+        // By Whom: Miiint
+        // When:17/02/2015
+        /*---------------------------------------------------------*/
+        collapseDivsResize();
+        /*---------------------------------------------------------*/
+        // Ends Feature Tag:whiz41-collapse & close for tablet view
+        /*---------------------------------------------------------*/
+
+        /*----------------------------------------------------------*/
+        // Starts Feature Tag:whiz41-remove plus sign of Footable for 'Total' column
+        // Description:removing plus sign with footable functionality for 'Total' column
+        // By Whom: Miiint
+        // When:27/04/2015
+        /*---------------------------------------------------------*/
+
+        if (windowWidth < 1040) {
+            var text = $('#tblGrid1053121').find('tr:nth-last-child(2)').find('td:first').text();
+            if (text == "Total") {
+                $('#tblGrid1053121').find('tr:nth-last-child(2)').find('td:first').find('span').css('display', 'none');
+                $('#tblGrid1053121').find('tr:last').css('display', 'none');
+            }
+        }
+
+        /*---------------------------------------------------------*/
+        // Ends Feature Tag:whiz41-remove plus sign of Footable for 'Total' column
+        /*---------------------------------------------------------*/
+
+    });
+
+</script>
+<!--Ended by Nilesh gundecha on 18/9/2015 for Responsive Common Page-->
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="PRO_Milestones.aspx.vb" Inherits="PbNIT.PRO_Milestones"%>
+<!--Added and commented by Nilesh gundecha on 18/9/2015 for Responsive Common list Page-->
+<%--<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">--%>
+<!DOCTYPE HTML>
+<!--Ended by Nilesh gundecha on 18/9/2015 for Responsive Common list Page--><HTML>
+	<%CommonFunctions.General.PlotPageHeadTag(m_strPageTitle)%>
+	<body MS_POSITIONING="GridLayout" class="clsBody" onresize="window_onresize()" onload="window_onload()">
+		<form id="frmMilestones" method="post" runat="server">
+
+			<%DrawPage()%>
+		</form>
+	<script language="javascript">
+	var objForm = GetFormReference('frmMilestones');
+	
+	<%' Added By SonalD on 13th Jan 2009 %>
+	<%If CommonFunctions.General.GetApplicationKeySetting("Environment") = "P" Then %>
+        disableRightClick();
+    <%End If%>
+    <%' Added By SonalD on 13th Jan 2009 %>
+	
+	function SortBy(strFieldName,strAscOrDesc)
+	{
+		objForm.action = "PRO_Milestones.aspx?MasterTagID=<%=m_lngTagID%>&ProjectID=<%=m_lngProjectID%>&MilestoneID=<%=m_lngMilestoneID%>&SortField=" + strFieldName + "&SortOrder=" + strAscOrDesc+"&IsProject=<%=m_lngIsProject%>";
+		objForm.submit();
+	}
+	
+	function MilestoneDetails(intProjectID, intMilestoneID)
+	{
+		objForm.action = "PRO_Milestones.aspx?MasterTagID=<%=m_lngTagID%>&MODE=DETAIL&ProjectID=" + intProjectID + "&MilestoneID=" + intMilestoneID + "&SortField=<%=m_strSortField%>&SortOrder=<%=m_strSortOrder%>&IsProject=<%=m_lngIsProject%>";
+		objForm.submit();
+	}
+  
+	function SlippageAndReasoning(intAnalysisID)
+	{
+       //Commented and added by Yogesh J on 15-Feb-2016 to pass Token
+	  //  window.open("PRO_Milestones.aspx?MasterTagID=<%=m_lngTagID%>&MODE=SLIP_N_REASON&ANAL_ID=" + intAnalysisID + "&ProjectID=<%=m_lngProjectID%>&MilestoneID=<%=m_lngMilestoneID%>&SortField=<%=m_strSortField%>&SortOrder=<%=m_strSortOrder%>&IsProject=<%=m_lngIsProject%>", "", "resizable=yes,scrollbars=no,left=" + (window.screen.width - 600) / 2 + ",top=" + (window.screen.height - 300) / 2 + ",width=600,height=300");
+	    window.open("PRO_Milestones.aspx?MasterTagID=<%=m_lngTagID%>&MODE=SLIP_N_REASON&ANAL_ID=" + intAnalysisID + "&ProjectID=<%=m_lngProjectID%>&MilestoneID=<%=m_lngMilestoneID%>&SortField=<%=m_strSortField%>&SortOrder=<%=m_strSortOrder%>&IsProject=<%=m_lngIsProject%>&PKToken=<%=m_PKToken%>", "", "resizable=yes,scrollbars=no,left=" + (window.screen.width - 600) / 2 + ",top=" + (window.screen.height - 300) / 2 + ",width=600,height=300");
+	    //End of Comment by Yogesh J on 15-Feb-2016
+
+	}
+	
+	function TotalLOC(intAnalysisID)
+	{
+	    //Commented and added by Yogesh J on 15-Feb-2016 to pass Token
+	   //  window.open("PRO_Milestones.aspx?MasterTagID=<%=m_lngTagID%>&MODE=TOTAL_LOC&ANAL_ID=" + intAnalysisID + "&ProjectID=<%=m_lngProjectID%>&MilestoneID=<%=m_lngMilestoneID%>&SortField=<%=m_strSortField%>&SortOrder=<%=m_strSortOrder%>&IsProject=<%=m_lngIsProject%>", "", "resizable=yes,scrollbars=no,left=" + (window.screen.width - 400) / 2 + ",top=" + (window.screen.height - 300) / 2 + ",width=400,height=300");
+	    window.open("PRO_Milestones.aspx?MasterTagID=<%=m_lngTagID%>&MODE=TOTAL_LOC&ANAL_ID=" + intAnalysisID + "&ProjectID=<%=m_lngProjectID%>&MilestoneID=<%=m_lngMilestoneID%>&SortField=<%=m_strSortField%>&SortOrder=<%=m_strSortOrder%>&IsProject=<%=m_lngIsProject%>&PKToken=<%=m_PKToken%>", "", "resizable=yes,scrollbars=no,left=" + (window.screen.width - 400) / 2 + ",top=" + (window.screen.height - 300) / 2 + ",width=400,height=300");
+	    //End of Comment by Yogesh J on 15-Feb-2016
+	}
+	
+	function Conclusion(intAnalysisID)
+	{
+	    //Commented and added by Yogesh J on 15-Feb-2016 to pass Token
+        //  window.open("PRO_Milestones.aspx?MasterTagID=<%=m_lngTagID%>&MODE=CONCLUSION&ANAL_ID=" + intAnalysisID + "&ProjectID=<%=m_lngProjectID%>&MilestoneID=<%=m_lngMilestoneID%>&SortField=<%=m_strSortField%>&SortOrder=<%=m_strSortOrder%>&IsProject=<%=m_lngIsProject%>", "", "resizable=yes,scrollbars=no,left=" + (window.screen.width - 600) / 2 + ",top=" + (window.screen.height - 500) / 2 + ",width=600,height=500");
+	    window.open("PRO_Milestones.aspx?MasterTagID=<%=m_lngTagID%>&MODE=CONCLUSION&ANAL_ID=" + intAnalysisID + "&ProjectID=<%=m_lngProjectID%>&MilestoneID=<%=m_lngMilestoneID%>&SortField=<%=m_strSortField%>&SortOrder=<%=m_strSortOrder%>&IsProject=<%=m_lngIsProject%>&PKToken=<%=m_PKToken%>", "", "resizable=yes,scrollbars=no,left=" + (window.screen.width - 600) / 2 + ",top=" + (window.screen.height - 500) / 2 + ",width=600,height=500");
+	    //End of Comment by Yogesh J on 15-Feb-2016
+
+	}
+	
+	function GatherDetails()
+	{
+		<%'Added By MahendraV On 12:34 PM 5/23/2007 ,Enable DIV tag for displaying gathering status'%>
+		<%'Start_MV_5/23/2007'%>
+		    //Added By VarunA on 23-Sep-2008 IssueID-22516
+            //Purpose : createPopup works in IE but not in Mozilla
+		    if (document.all)
+		    {
+		    //End By VarunA on 23-Sep-2008 IssueID-22516
+			    var p=window.createPopup();
+			    var pbody=p.document.body;
+			    pbody.style.color="Black";
+			    pbody.style.fontSize="12";
+			    //pbody.style.fontWeight="bold";
+			    pbody.style.fontFamily="Times New Roman";
+			    pbody.style.backgroundColor="transparent";
+			    pbody.innerHTML=" Gathering details about Issues, Efforts and Schedule deviation.......";
+			    p.show(200,130,400,14,document.body);
+            }			
+			
+		<%'End_MV_5/23/2007'%>
+		
+		objForm.action = "PRO_Milestones.aspx?MasterTagID=<%=m_lngTagID%>&MODE=DETAIL&ACTION=GATHER_DET&ProjectID=<%=m_lngProjectID%>&MilestoneID=<%=m_lngMilestoneID%>&SortField=<%=m_strSortField%>&SortOrder=<%=m_strSortOrder%>&IsProject=<%=m_lngIsProject%>";
+		objForm.submit();
+	}
+	
+	function CausalAnalysis(intAnalysisID)
+	{
+		objForm.action = "PRO_Milestones.aspx?MasterTagID=<%=m_lngTagID%>&MODE=CAUSAL_ANAL&ANAL_ID=" + intAnalysisID + "&ProjectID=<%=m_lngProjectID%>&MilestoneID=<%=m_lngMilestoneID%>&SortField=<%=m_strSortField%>&SortOrder=<%=m_strSortOrder%>&IsProject=<%=m_lngIsProject%>";
+		objForm.submit();
+	}
+	
+	function CalculatePMI(intAnalysisID)	
+	{
+		objForm.action = "PRO_Milestones.aspx?MODE=CAUSAL_ANAL&ACTION=CALC_PMI&ANAL_ID=<%=m_lngAnalysisID%>&MasterTagID=<%=m_lngTagID%>&ProjectID=<%=m_lngProjectID%>&MilestoneID=<%=m_lngMilestoneID%>&SortField=<%=m_strSortField%>&SortOrder=<%=m_strSortOrder%>&IsProject=<%=m_lngIsProject%>";
+		objForm.submit();
+	}
+	
+	function CloseAnalysis()
+	{
+		objForm.action = "PRO_Milestones.aspx?MasterTagID=<%=m_lngTagID%>&MODE=DETAIL&ACTION=CLOSE_MS&ProjectID=<%=m_lngProjectID%>&MilestoneID=<%=m_lngMilestoneID%>&SortField=<%=m_strSortField%>&SortOrder=<%=m_strSortOrder%>&IsProject=<%=m_lngIsProject%>";
+		objForm.submit();
+	}
+	
+	function AddCauses(intResultID)
+	{
+		window.open ("PRO_Milestones.aspx?MasterTagID=<%=m_lngTagID%>&MODE=CAUSAL_DETAILS&ResultID=" + intResultID + "&ProjectID=<%=m_lngProjectID%>&ANAL_ID=<%=m_lngAnalysisID%>&MilestoneID=<%=m_lngMilestoneID%>&SortField=<%=m_strSortField%>&SortOrder=<%=m_strSortOrder%>&IsProject=<%=m_lngIsProject%>","","resizable=yes,scrollbars=no,left=" + (window.screen.width - 400)/2 + ",top=" + (window.screen.height - 300)/2 + ",width=400,height=300");
+	}
+	
+	function MilestoneAnalysisReport(intUniqueID)
+	{
+		window.open("../CRW/CRW_ReportUIBuilder.aspx?MasterTagID=<%=m_lngTagID%>&ReportID=<%=CommonFunctions.Application.MilestoneAnalysisReportID%>&UNIQUEID=" + intUniqueID , "", "resizable=yes,scrollbars=no,left=" + (window.screen.width - 550)/2 + ",top=" + (window.screen.height - 400)/2 + ",width=550,height=400");
+	}
+
+	function ViewPMI(intTypeID)
+	{
+		objForm.action = "PRO_Milestones.aspx?MasterTagID=<%=m_lngTagID%>&MODE=PMI_DETAIL&ProjectID=<%=m_lngProjectID%>&MilestoneID=<%=m_lngMilestoneID%>&TYPEID=" + intTypeID + "&SortField=<%=m_strSortField%>&SortOrder=<%=m_strSortOrder%>&IsProject=<%=m_lngIsProject%>";
+		objForm.submit();
+	}
+	
+	function Back_OnClick()
+	{
+		if ("<%=m_strMode%>" == "DETAIL") 
+			objForm.action = "PRO_Milestones.aspx?MasterTagID=<%=m_lngTagID%>&MODE=LIST&ProjectID=<%=m_lngProjectID%>&SortField=<%=m_strSortField%>&SortOrder=<%=m_strSortOrder%>&IsProject=<%=m_lngIsProject%>";
+		else
+			objForm.action = "PRO_Milestones.aspx?MasterTagID=<%=m_lngTagID%>&MODE=DETAIL&ProjectID=<%=m_lngProjectID%>&MilestoneID=<%=m_lngMilestoneID%>&SortField=<%=m_strSortField%>&SortOrder=<%=m_strSortOrder%>&IsProject=<%=m_lngIsProject%>";
+		
+		objForm.submit();
+	}
+	
+	function validateLOC()
+	{
+		var objLOC = GetObjectReference('frmMilestones','txtLOC')
+		
+		if (disallowBlank(objLOC,'<%=MyBase.GetResourceString("MSG_NOT_BLANK")%>',true)) return false;
+		if (disallowNonNumeric(objLOC,'<%=MyBase.GetResourceString("MSG_NON_NUMERIC")%>',true)) return false;
+		if (disallowNegativeNumeric(objLOC,'<%=MyBase.GetResourceString("MSG_NON_NUMERIC")%>',true)) return false;
+		return true;
+	}
+	
+	function validateConclusion()
+	{
+		objTextArea = GetObjectReference('frmMilestones','txtConclusion');
+		if (disallowMaxlengthViolation(objTextArea, 2000, '<%=MyBase.GetResourceString("MSG_MAX_LENGTH")%> 2000.',true)) return false;
+		
+		objTextArea = GetObjectReference('frmMilestones','txtSuggForImprovement');
+		if (disallowMaxlengthViolation(objTextArea,1000, '<%=MyBase.GetResourceString("MSG_MAX_LENGTH")%> 1000.',true)) return false;
+	
+		objTextArea = GetObjectReference('frmMilestones','txtProjFeedback');
+		if (disallowMaxlengthViolation(objTextArea,1000,'<%=MyBase.GetResourceString("MSG_MAX_LENGTH")%> 1000.',true)) return false;
+	
+		objTextArea = GetObjectReference('frmMilestones','txtPracticesFollowed');
+		if (disallowMaxlengthViolation(objTextArea,1000,'<%=MyBase.GetResourceString("MSG_MAX_LENGTH")%> 1000.',true)) return false;
+	
+		objTextArea = GetObjectReference('frmMilestones','txtShortComings');
+		if (disallowMaxlengthViolation(objTextArea,1000,'<%=MyBase.GetResourceString("MSG_MAX_LENGTH")%> 1000.',true)) return false;
+	
+		return true;
+	}
+	
+	function validateSlippage()
+	{
+		var objTextArea;
+		objTextArea = GetObjectReference('frmMilestones','txtSlippageReason');
+		if (disallowMaxlengthViolation(objTextArea,2000,'<%=MyBase.GetResourceString("MSG_MAX_LENGTH")%> 2000.',true)) return false;
+		
+		objTextArea = GetObjectReference('frmMilestones','txtActionTaken');
+		if (disallowMaxlengthViolation(objTextArea,2000,'<%=MyBase.GetResourceString("MSG_MAX_LENGTH")%> 2000.',true)) return false;
+		
+		return true;
+	}
+	
+	function Save_OnClick()
+	{
+		if ("<%=m_strMode%>" == "SLIP_N_REASON")
+		{
+			if (validateSlippage())
+			{
+				objForm.action = "PRO_Milestones.aspx?MasterTagID=<%=m_lngTagID%>&MODE=SLIP_N_REASON&ACTION=SAVE&ANAL_ID=<%=m_lngAnalysisID%>&ProjectID=<%=m_lngProjectID%>&MilestoneID=<%=m_lngMilestoneID%>&SortField=<%=m_strSortField%>&SortOrder=<%=m_strSortOrder%>&IsProject=<%=m_lngIsProject%>";
+				objForm.submit();
+			}
+		}
+		if ("<%=m_strMode%>" == "TOTAL_LOC")
+		{
+			if (validateLOC())
+			{
+				objForm.action = "PRO_Milestones.aspx?MasterTagID=<%=m_lngTagID%>&FormName=<%=strFromWhere%>&MODE=TOTAL_LOC&ACTION=SAVE&ANAL_ID=<%=m_lngAnalysisID%>&ProjectID=<%=m_lngProjectID%>&MilestoneID=<%=m_lngMilestoneID%>&SortField=<%=m_strSortField%>&SortOrder=<%=m_strSortOrder%>&IsProject=<%=m_lngIsProject%>";
+				objForm.submit();
+			}
+		}
+		if ("<%=m_strMode%>" == "CONCLUSION")
+		{
+			if (validateConclusion())
+			{
+				objForm.action = "PRO_Milestones.aspx?MasterTagID=<%=m_lngTagID%>&MODE=CONCLUSION&ACTION=SAVE&ANAL_ID=<%=m_lngAnalysisID%>&FormName=<%=strFromWhere%>&ProjectID=<%=m_lngProjectID%>&MilestoneID=<%=m_lngMilestoneID%>&SortField=<%=m_strSortField%>&SortOrder=<%=m_strSortOrder%>&IsProject=<%=m_lngIsProject%>";
+				objForm.submit();
+			}
+		}
+		if ("<%=m_strMode%>" == "CAUSAL_DETAILS")
+		{
+			objForm.action = "PRO_Milestones.aspx?MasterTagID=<%=m_lngTagID%>&MODE=CAUSAL_DETAILS&ACTION=SAVE&ProjectID=<%=m_lngProjectID%>&ResultID=<%=m_lngResultID%>&ANAL_ID=<%=m_lngAnalysisID%>&MilestoneID=<%=m_lngMilestoneID%>&SortField=<%=m_strSortField%>&SortOrder=<%=m_strSortOrder%>&IsProject=<%=m_lngIsProject%>";
+			objForm.submit();
+		}
+		
+	
+	}
+	
+  	var objdivlist = GetObjectReference('frmMilestones','DivList');
+	function window_onload()
+  	{
+	   
+		var intDivHeight ;
+	
+		if (objdivlist != null)
+		{
+		    //Commented and added by Yogesh J on 22/12/2015 isssue id=2813 
+		    //	intDivHeight = window.document.body.offsetHeight - objdivlist.offsetTop - 40;
+		    intDivHeight = window.innerHeight - objdivlist.offsetTop - 40;
+            //End of comment by Yogesh J
+			if (intDivHeight < 100)
+				intDivHeight = 100;		// Let the minimum height of the div tag be 100
+		
+		//'Modified by ShraddhaM on Date 22 June,2006 for PMLifeLine Issue ID.4168
+		
+		if(navigator.appName == 'Netscape')
+		{
+		 		 
+		    //intDivHeight = window.document.body.offsetHeight - objdivlist.offsetTop + 380;
+		    intDivHeight = window.innerHeight - objdivlist.offsetTop - 40;
+
+		}
+		    /*Commented And Added by KIRAN K K For Height Issue fixing*/
+	//	objdivlist.style.height = intDivHeight;
+		objdivlist.style.height = intDivHeight + 'px';
+		    /*Commented And Added by KIRAN K K For Height Issue fixing*/ 
+				
+		}
+	}
+
+	function window_onresize()		
+	{
+	    var intDivHeight;
+	    if (objdivlist != null)
+	    {
+	        //Commented and added by Yogesh J on 22/12/2015 isssue id=2813 
+	        //intDivHeight = window.document.body.offsetHeight - objdivlist.offsetTop - 40;
+	        intDivHeight = window.innerHeight - objdivlist.offsetTop - 40;
+	        //End of comment by Yogesh J
+			if (intDivHeight < 100 )
+				intDivHeight = 100;	// Let the minimum height of the div tag be 100
+	        /*Commented And Added by KIRAN K K For Height Issue fixing*/
+			//objdivlist.style.height = intDivHeight;
+			objdivlist.style.height = intDivHeight + 'px';
+	        /*Commented And Added by KIRAN K K For Height Issue fixing*/ 
+			
+		}	
+	}
+	</script>
+    
+	</body>
+</HTML>

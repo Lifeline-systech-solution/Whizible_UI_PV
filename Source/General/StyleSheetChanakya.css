@@ -1,0 +1,560 @@
+
+@import 'custom_stylesheet.css';
+@import 'Stylesheet_Whiz_Laptop-large.css';
+@import 'Stylesheet_Whiz_Laptop.css';
+@import 'Stylesheet_Whiz_Tablet.css';
+@import 'Stylesheet_Whiz_Mobile.css';
+/*Added by Nilesh g on 12/10/2016 Purpose:Loader styleshit*/
+@import 'loaderStylesheet.css';
+
+/*Added By Vaijat K ON 22/09/2016 For Dynamic Theme*/
+TR.clsTRMenuMouseOver {
+    padding-right: 2pt;
+    padding-left: 2pt;
+    font-weight: bolder;
+    font-size: 8pt;
+    background: url('../../Images/Home/MenuSelected.gif');
+    background-image: url('../../Images/Home/MenuSelected.gif');
+    padding-bottom: 2pt;
+    margin: 2pt;
+    color: black;
+    padding-top: 2pt;
+    font-family: Arial, Verdana;
+    height: 15px;
+}
+
+TD.iMenu:hover {
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    padding-top: 1px;
+    border-right: black 0px solid;
+    border-top: black 0px solid;
+    font-weight: lighter;
+    font-size: 10px;
+    border-left: black 0px solid;
+    color: black;
+    border-bottom: black 0px solid;
+    font-family: Verdana, Arial;
+    background-color: #FFD695;
+}
+/* Puneet M ON 24-11-2015 */
+TD.cMenu {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    border-right: #FFD695 1px solid;
+    border-top: black 0px solid;
+    font-weight: lighter;
+    font-size: 11px;
+    border-left: black 0px solid;
+    color: black;
+    border-bottom: black 0px solid;
+    font-family: arial;
+    background-color: #FFD695;
+}
+/* END Puneet M ON 24-11-2015 */
+
+/*Added by Dhanashri on 4 Mar 2015*/
+TD.clsTDScroll {
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin: 0;
+    color: #000000;
+    padding-top: 0;
+    border-right: #e39321 1px solid;
+    border-top: black 0px solid;
+    font-weight: lighter;
+    font-size: 11px;
+    border-left: black 0px solid;
+    border-bottom: black 0px solid;
+    font-family: arial;
+    background-color: #e39321;
+}
+
+
+
+BODY.clsBody {
+    BORDER-RIGHT: #e39321 4px solid;
+    BORDER-TOP: #e39321 4px solid;
+    PADDING-LEFT: 2px;
+    SCROLLBAR-FACE-COLOR: #f5debe;
+    FONT-SIZE: 14px;
+    MARGIN: 2px 0px;
+    SCROLLBAR-HIGHLIGHT-COLOR: #fbecd5;
+    BORDER-LEFT: #000000 0px solid;
+    SCROLLBAR-SHADOW-COLOR: #fbecd5;
+    SCROLLBAR-3DLIGHT-COLOR: #fbecd5;
+    LINE-HEIGHT: 1;
+    SCROLLBAR-ARROW-COLOR: #e28a05;
+    PADDING-TOP: 0px;
+    SCROLLBAR-TRACK-COLOR: #fbecd5;
+    BORDER-BOTTOM: #e39321 4px solid;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    SCROLLBAR-DARKSHADOW-COLOR: #fbecd5;
+    SCROLLBAR-BASE-COLOR: #e0e7ef;
+    /*Commented by SuchitraP on 7-Apr-2009 ,KM UI scrollbar was not displayed*/
+    /*overflow:visible  ;*/
+    /*End by SuchitraP*/
+}
+/*End Added By Vaijat K ON 22/09/2016 For Dynamic Theme*/
+
+
+.table-responsive thead {
+    /*BACKGROUND-COLOR: #f6eee4 !important;*/
+        background: #f0d1a1 !important;
+}
+
+.clsTROdd:not(.clsSettingstabs .odd) {
+    background-color: #f7f3ef !important;
+}
+
+.panel-heading {
+    background-color: #e39321 !important;
+}
+
+.new-req i {
+    color: #e39321 !important;
+}
+
+.sortingApplied {
+    background-color: #e39321 !important;
+    color: white;
+}
+
+.req-dsk-kn.new-req-head {
+    background: #f6eee4 !important;
+}
+
+.help-desk #btnSetting {
+    background: #f6eee4 !important;
+}
+
+.help-desk .setting-btn i {
+    background: #e39321 !important;
+}
+
+
+
+.detail-inner h2 {
+    background: #e39321 !important;
+}
+
+.attacment-file .input-group-btn button {
+    background: white !important;
+    border-color: #e39321 !important;
+    color: #e39321 !important;
+}
+
+button.btn.btn-default.save, .btn.btn-default.attch {
+    background: #e39321 !important;
+    color: white !important;
+    /*border-color: #e39321 !important;*/
+}
+
+    button.btn.btn-default.save, .btn.btn-default.attch:hover {
+        background: #e39321 !important;
+        color: white !important;
+        border-color: #e39321 !important;
+    }
+
+
+.popupnew {
+    float: left;
+    width: 100%;
+    background: #e39321;
+    padding: 5px;
+}
+
+    .popupnew ul li {
+        background: transparent !important;
+        color: #fff;
+        cursor: pointer;
+        display: block !important;
+        padding: 10px 10px;
+        border-bottom: solid #e39321 1px;
+    }
+
+.request-detail .detail-inner {
+    background: #f6eee4 !important;
+}
+
+.req-title {
+    background: #e39321 !important;
+}
+
+.tab-section h3 {
+    background: #e39321 !important;
+}
+
+.updtae-btn {
+    background: #e39321 !important;
+}
+
+.Backbutton {
+    background: #e39321 !important;
+}
+
+#divIssueDetails .form-group {
+    background: #f6eee4 !important;
+}
+
+.imgcontainer {
+    background: #e39321 !important;
+}
+
+/*.right .btn-default {
+    background: #e39321 !important;
+    color: white !important;
+}*/
+
+.navPagination li:nth-child(2) a
+{
+     background-color:#f6eee4 !important
+}
+
+    /*.right .btn-default:hover {
+        background: #e39321 !important;
+        color: white !important;
+    }*/
+/*Added By Dipali V on 23rd Nov 2017 For Pagination Dynamic theme*/
+
+.page-item.active .page-link {
+    z-index: 2;
+    color: #fff !important;
+    background-color: #e39321 !important;
+    border-color: #e39321 !important;
+}
+
+#subMainDiv .pagination > li > a, .pagination > li > span {
+    color: #e39321;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    z-index: 2;
+    color: #fff !important;
+    background-color: #e39321 !important;
+    border-color: #e39321 !important;
+}
+
+
+.clsTopNav li a.Active {
+    border-bottom: 4px solid #e39321 !important;
+}
+
+.clsTopNav li a:hover {
+    border-bottom: 4px solid #e39321 !important;
+}
+
+.imgFeedback {
+    background-color: #e39321 !important;
+    color: white !important;
+}
+
+#btngroupcnlsave1 .btn-default {
+    background: #e39321 !important;
+    color: white !important;
+    border-color: #e39321 !important;
+}
+
+#Feedback .appro-title {
+    color: white !important;
+}
+
+.apply-btn .btn {
+    background: #e39321 !important;
+    color: white !important;
+    border-color: #e39321 !important;
+}
+
+.btnClearFilter span {
+    background: #e39321 !important;
+    padding: 1px;
+    color: #fff !important;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+#seachValueList a:not(:first-child):before {
+    color: #e39321 !important;
+}
+
+.clsLoadFilterList a:not(:first-child):before {
+    color: #e39321 !important;
+}
+
+
+/*.diff-action i {
+      color:#e39321!important;
+}*/
+
+#collapseOne .field-section .fa-times {
+    background: #e39321 !important;
+}
+
+#collapseOne .multi-action .fa-times {
+    background: #e39321 !important;
+}
+/*End of Added By Dipali V on 23rd Nov 2017 For Pagination Dynamic theme*/
+
+.imgcontainer2 {
+    background: #e39321 !important;
+}
+
+.checkbox .btn {
+    background: #e39321 !important;
+}
+
+.modal-content.animate {
+    background: #f6eee4 !important;
+}
+
+ul.custom-ul li:not(.init) {
+    background: #e39321 !important;
+}
+
+.clsFilterDefault {
+    background: #e39321 !important;
+    color: white;
+}
+
+.dropdown-item:hover {
+    background: #f6eee4 !important;
+}
+
+.attacment-file .input-group-btn button {
+    background-color: #e39321 !important;
+    border-color: 1px solid #e39321 !important;
+    color: white !important;
+}
+
+
+#header-fixed .clsTRColumnHeader {
+    border-top: 3px solid #e39321;
+}
+
+
+#divImportContainer button.btn.btn-default.save:hover {
+    background: #e39321 !important;
+    color: white !important;
+    border-color: #e39321 !important;
+}
+
+#divImportContainer button.btn.btn-default.save {
+    background: #e39321 !important;
+}
+
+
+
+/*Added By Vidya Jadhav ON 30 Nov 2017 For aAdding Themes*/
+
+.clsTabs {
+    /*border: 1px solid white !important;
+    background-color: white !important;*/
+    border: 1px solid #ddd !important;
+    background-color: #f5f5f5 !important;
+    border-right: none!important;
+
+}
+
+.btnSettingTab:not(.active) {
+    color: #e39321 !important;
+    font-weight: bold;
+    font-size:15px!important;
+    border-right: 1px solid #f6eee4;
+    border-bottom: 1px solid #f6eee4;
+}
+
+.clsTabs .active {
+    color: #e39321 !important;
+    font-weight: bold;
+    font-size:15px!important;
+    border-bottom: 1px solid #f6eee4;
+}
+
+.clsTabs button:not(.active) {
+    color: #e39321 !important;
+    font-weight: bold !important;
+    border-right: 1px solid #f6eee4 !important;
+    border-bottom: 1px solid #f6eee4 !important;
+    border-top: 1px solid #f6eee4 !important;
+}
+
+.iSettingsTab {
+    color:#fbd1a8!important;
+}
+.v-tabs div.tab button {
+    display: block;
+    background-color: inherit;
+    color: #fff;
+    padding: 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+     height: auto; 
+    padding-left: 17px;
+    font-weight: 600;
+    padding: 10px;
+    font-size: 12px;
+}
+.clsTabs button.active {
+    background: white !important;
+    color: #e39321 !important;
+    font-weight: bold !important;
+    border-top: 1px solid #f6eee4 !important;
+    border-bottom: 1px solid #f6eee4 !important;
+}
+
+.h-tabs div.tab button.active {
+    background-color: transparent;
+}
+
+.clsTabs div.tab button {
+    color: black !important;
+}
+
+    .clsTabs div.tab button:hover {
+        background-color: #f6eee4 !important;
+    }
+/*.clsTabs div.tab button:hover {
+    background-color:#f6eee4 !important;
+}*/
+
+.top-bar .btn-default {
+    background-color: transparent !important;
+    color: black !important;
+}
+
+.h-tabs .btn-default:hover {
+    background-color: transparent !important;
+    color: black !important;
+}
+
+.tablinks.active, .tablinks1.active, .h-tabs div.tab button.tablinks1.active, .h-tabs div.tab button.tablinks2.active, .h-tabs div.tab button.tablinks3.active {
+    color: #FFD695 !important;
+}
+
+.panel-heading span {
+    color: white !important;
+}
+
+.panel-heading .fa-plus {
+    color: white !important;
+}
+
+.panel-heading .fa-minus {
+    color: white !important;
+}
+
+.clsSettingstabs .odd {
+    background-color: #f7f3ef !important;
+}
+
+
+.bg-dark {
+    background-color: #e39321 !important;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header {
+    background-color: #e39321 !important;
+}
+
+#myModal2 .modal-header {
+    background: #e39321;
+    color: white;
+}
+
+#myModal2 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    z-index: 2;
+    color: black;
+    background-color: #f7f3ef;
+    border-color: #f7f3ef;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-family: Helvetica;
+}
+#btnCloseModel {
+    background: #e39321;
+    color: white;
+}
+
+ #myModal2 .comments-list .comment-box:before, .comments-list .comment-box:after {
+	content: '';
+	height: 0;
+	width: 0;
+	position: absolute;
+	display: block;
+	border-width: 10px 12px 10px 0;
+	border-style: solid;
+	border-color: transparent #f7f3ef;
+	top: 8px;
+	left: -11px;
+}
+
+ .comment-box .comment-head {
+	background: #f7f3ef;
+	padding: 10px 12px;
+	border-bottom: 1px solid #f7f3ef;
+	overflow: hidden;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}
+ .comments-list .comment-avatar {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	z-index: 99;
+	float: left;
+	border: 3px solid transparent;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	overflow: hidden;
+}
+.comments-list .comment-box {
+    background: #f7f3ef;
+}
+.comment-box .comment-content {
+	background: #f7f3ef;
+	padding: 12px;
+	font-size: 12px;
+	color: #595959;
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}
+
+#ulUserThemes li {
+    font-size:12px;
+}
+#ulUserThemes li>a:hover {
+    background:#e39321!important;
+    color:white!important;
+}
+
+.clsControlHeight .fa-bars {
+    color:#e39321!important;
+}
+
+.btnBorder {
+    border:1px solid #e39321!important;
+}
+
+/*Added By Yasmin on 9th June*/
+.panel {
+ border: 1px solid #e39321!important;
+}
+/*Commented By Yasmin on 9th June*/
+       /*#divTypeBottom .panel-collapse {
+            border: 1px solid #e39321!important;
+        }*/

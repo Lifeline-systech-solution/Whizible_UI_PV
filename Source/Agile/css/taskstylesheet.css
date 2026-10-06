@@ -1,0 +1,402 @@
+﻿/*@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');*/
+
+@font-face {
+    font-family: ubuntu;
+    src: url(assets/fonts/Ubuntu-Medium.ttf);
+}
+
+body {
+    font-family: helvetica !important;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.formheight::-webkit-scrollbar {
+    display: none;
+}
+
+.formheight {
+    -ms-overflow-style: none;
+}
+
+body {
+    -ms-overflow-style: none;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+textarea.form-control {
+    height: 34px;
+}
+
+.align-right {
+    float: right;
+}
+
+textarea {
+    overflow: hidden !important;
+}
+
+.table-responsive::-webkit-scrollbar {
+    display: none;
+}
+
+.table-responsive {
+    -ms-overflow-style: none;
+}
+
+:-moz-tree-row(hover), .table-responsive {
+    width: 103%;
+}
+
+.btn-primary {
+    background: transparent !important;
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+    border-bottom: 1px solid #ddd !important;
+    border-radius: 0 !important;
+    color: grey !important;
+}
+
+#SprintSel:hover {
+    outline: none !important;
+}
+/*.fa-angle-down {
+float:right;
+}*/
+.align-top {
+    margin-top: 15px;
+}
+
+.search-box {
+    margin-top: -20px;
+    margin-bottom: -60px;
+    float: right;
+    margin-right: -7px;
+}
+
+.searchbox {
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143 !important;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc !important;
+    border-radius: 4px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+    .searchbox:hover {
+        outline: none;
+    }
+
+}
+
+.inactive {
+    background: gray !important;
+}
+
+.status .btn-success {
+    width: 85px !important;
+}
+
+#find {
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    height: 30px;
+    border-top: 1px solid #ddd !important;
+    border-left: 1px solid #ddd !important;
+    border-right: 1px solid #ddd !important;
+}
+
+.btn-success {
+    color: #fff !important;
+    /* background-color: #45ccc3!important;*/
+    background: #11bdb2 !important;
+    border-color: #fff !important;
+    padding: 4px 12px !important;
+}
+
+.btn-default {
+    margin-right: 3px;
+}
+
+.btn-primary:hover {
+    outline: none !important;
+}
+/*.page-title{
+  color: grey;
+ }*/
+.search {
+    width: 255px;
+    margin-left: 6px;
+    margin-right: 7px;
+}
+
+.go {
+    background: #11bdb2 !important;
+    color: #fff !important;
+}
+
+.fa-refresh, .btn-default {
+    color: gray;
+}
+
+.open > .dropdown-menu {
+    /*  margin-left: 38px;*/
+}
+
+.inactive {
+    background-color: #b1aeae !important;
+}
+/*.task-name{
+      color: gray;
+    font-size: 17px;
+    cursor: pointer;
+}*/
+/*.task-name:hover{ text-shadow: 0.7px 1px;}*/
+
+/*.createdate{
+  color:#8c8282;
+}*/
+.createdate {
+    font-size: 12px;
+}
+
+.planstartdate {
+    font-size: 12px;
+}
+/*.task-status{
+  font-size: 12px;
+}*/
+.status {
+    /*vertical-align: top!important;*/
+}
+
+.progress {
+    height: 8px !important;
+}
+
+.user-img {
+    border-radius: 50%;
+    width: 30px;
+    margin-top: 10px;
+}
+
+.viewdetails {
+    /* background: #ABB2B9;*/
+    /*background: #dedede;*/
+    padding: 20px;
+    background: #ececec;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+    .viewdetails .form-control {
+        background: transparent !important;
+        /* border-bottom: 1px solid #fff!important;*/
+        border-bottom: 1px solid #bbb !important;
+    }
+
+.accordian {
+    display: none;
+}
+
+.storypoint + .tooltip > .tooltip-arrow {
+    left: 30% !important;
+}
+/*.control-label{
+      color: #878787;
+    font-size: 16px!important;
+    font-family: Roboto, Arial, sans-serif;
+    letter-spacing: 0.3px;
+}*/
+.table-striped > tbody > tr:nth-of-type(even) {
+    background-color: #f9f9f9 !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #fff !important;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border-top: 1px solid #f7f4f4 !important;
+}
+
+.align-left {
+    margin-left: 24px;
+}
+
+.effort {
+    color: #555555;
+    line-height: 1.7;
+}
+
+.categories {
+    line-height: 2;
+    color: #5d5757;
+}
+
+.overalltaskname {
+    color: #337ab7;
+    font-size: 12px;
+}
+
+.overalltask {
+    color: #337ab7;
+    font-size: 14px;
+    /*display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;*/
+}
+
+.details {
+    color: gray;
+    font-size: 11.5px;
+    font-weight: 700 !important;
+}
+
+.user-text {
+    color: #424040;
+    font-size: 10px;
+}
+
+.align {
+    margin-top: 6px !important;
+}
+
+.progress-status {
+    margin-top: 20px;
+}
+
+select, option {
+    cursor: pointer;
+}
+
+.checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"], .radio input[type="radio"], .radio-inline input[type="radio"] {
+    position: absolute;
+    margin-left: -11px !important;
+}
+
+.checkbox {
+    padding-left: 20px;
+}
+
+    .checkbox label {
+        display: inline-block;
+        position: relative;
+        padding-left: 5px;
+    }
+
+        .checkbox label::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 17px;
+            height: 17px;
+            left: 0;
+            margin-left: -20px;
+            border: 1px solid #cccccc;
+            border-radius: 3px;
+            background-color: #fff;
+            -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+            -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+            transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+        }
+
+        .checkbox label::after {
+            display: inline-block;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: 0;
+            top: 0;
+            margin-left: -20px;
+            padding-left: 3px;
+            padding-top: 1px;
+            font-size: 11px;
+            color: #555555;
+        }
+
+    .checkbox input[type="checkbox"] {
+        opacity: 0;
+    }
+
+        .checkbox input[type="checkbox"]:focus + label::before {
+            outline: thin dotted;
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px;
+        }
+
+        .checkbox input[type="checkbox"]:checked + label::after {
+            font-family: 'FontAwesome';
+            content: "\f00c";
+        }
+
+        .checkbox input[type="checkbox"]:disabled + label {
+            opacity: 0.65;
+        }
+
+            .checkbox input[type="checkbox"]:disabled + label::before {
+                background-color: #eeeeee;
+                cursor: not-allowed;
+            }
+
+    .checkbox.checkbox-circle label::before {
+        border-radius: 50%;
+    }
+
+    .checkbox.checkbox-inline {
+        /*margin-bottom: 10px;*/
+        display: block !important;
+    }
+
+.checkbox-inline + .checkbox-inline {
+    margin-left: 0px !important;
+}
+
+.taskborder {
+    border-bottom: 1px dashed #ddd;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.savetask {
+    color: #fff;
+    background-color: rgb(2, 136, 209) !important;
+    height: 32px;
+}
+
+    .savetask:hover {
+        color: #fff !important;
+    }
+
+.savealign {
+    padding-bottom: 20px;
+    margin-top: 20px;
+    /* float: right; */
+    text-align: right;
+}
+#divTaskList11 input.form-control:not([type=button]) {
+    width: 80% !important;
+}

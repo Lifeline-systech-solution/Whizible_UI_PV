@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<define>
+
+<ISSUE> (issue: A concern raised by any stakeholder, which needs to be addressed, either immediately or during the project)</ISSUE>
+
+<SLA> (SLA: A contract between the service provider and the customer that defines the response times for various issues based on parameters like Issue Type, Priority, Severity and Complexity)</SLA>
+
+<SEVERITY> (severity: A degree of magnitude for the ultimate impact or effect of issue)</SEVERITY>
+
+<PRIORITY> (priority: The precedence i.e. position established in order of importance or urgency for resolving the issue)</PRIORITY> 
+
+<COMPLEXITY> (complexity: One of the measures of efforts required to analyze and respond to the issue)</COMPLEXITY>
+
+<NORM> (norms: The baselines for responding to an issue based on the parameters on which they are to be tracked ) </NORM>
+
+<WORKPROD> (Any artifact created as part of defining, maintaining, or using a software process, including process descriptions, plans, procedures, computer programs, and associated documentation, which may or may not be intended for delivery to the customer or end user) </WORKPROD>
+
+<TOOLS> (Tools are software packages or modules that provide editing and diagnostic capabilities and other support facilities to assist the programming process.)</TOOLS>
+
+<REVIEWER> (reviewer: The resource who conducts the review.)</REVIEWER>
+
+<REVIEWEE> (reviewee: The resource whose work product is under review.)</REVIEWEE>
+
+<REVIEWTYPE> (review types: The generic categories of reviews conducted in the organization.)</REVIEWTYPE>
+
+<REVIEW> (review: A critical evaluation of a work product for determining the feasibility, appropriateness, effectiveness, and efficiency of an issue and drawing the consequent conclusions.) </REVIEW>
+
+<ISSUETYPE> (issue type: The categorization of concerns and problems raised that help in the analysis, classification and consequently effective resolution of the issue.)</ISSUETYPE>
+
+<IMPACTANALYSIS> (impact analyis: Process of identifying the impact of change in a software development process on its related objects.)</IMPACTANALYSIS>
+
+<CHANGEREQ> (change request: A request for a change to the requirements of a work effort(s) that has been signed-off and is now in either the requirements or construction/build phase of development) </CHANGEREQ>
+
+<CHANGEMGMT> (change management: The process of tracking and monitoring changes in order to maintain control and understand the technical progress toward delivering an acceptable end-user product.)</CHANGEMGMT>
+
+<CERTIFICATION> (certification: Certification is the additional accreditation obtained by resources in view of increasing their proficiency)</CERTIFICATION>
+
+<SERVICESEG> (service segmentation: A process of directing all marketing efforts for a service at a particular group of potential customers.)</SERVICESEG>
+
+<CATEGORY> (categories: The collections of projects, resources, assignments, views, and models to which users and groups in Project Server 2007 are granted access.)</CATEGORY>
+
+<RISK> (risk: An event or situation that may negatively impact a project, if it occurs.)</RISK>
+
+<OSTRUCT> (organization structure: The hierarchical way in which the interrelated groups of an organization are constructed.)</OSTRUCT>
+
+<BG> (business group: A top level entity in the organization structure and usually based on the kind of business done by the unit or service segmentation.)</BG>
+
+<OU> (organization unit: A subset of business group, usually based upon location, customer or product within the business group.) </OU>
+
+<DU> (delivery unit: A division of organization unit heading many teams.) </DU>
+
+<DT> (delivery team: One of the teams of deliver unit with a set of resources working for a specific sub project or modules or deliverables.) </DT>
+
+<RISKMGMT> (risk management: risk management is the process of measuring, or assessing risk and then developing strategies to manage the risk)</RISKMGMT>
+
+<RESOURCEALLOCATE> (resource allocation workflow: a structured approach for allocating resources to the project></RESOURCEALLOCATE>
+
+<HELPDESK> (help desk: an information and assistance resource that provides means to log in problems and track them until resolved. It is staffed by people who can either solve the logged problem directly or forward the problem to someone else.) </HELPDESK>
+
+<HELPDESKREQ> (help desk request: A support requirement that is posted by any of the stakeholders to the concerned department.) </HELPDESKREQ>
+
+<TASK> (tasks: The specific activities or functions conducted during the course of project execution.)</TASK>
+
+<SUBTASK> (sub task types: The drill down categories of tasks, which further fine-tune the task type definition in an organization.) </SUBTASK>  
+
+<CUSTOMER> (customer: Customers are the organizations or individuals who have a business relationship with the organization and who receive and use or are directly affected by the products and services of the organization.)</CUSTOMER> 
+
+<CROSSTABS> (cross tabs: The matrix that represents the joint distribution of two or more variables simultaneously. In other words, it merges the frequency counts or two or more variables into one.) </CROSSTABS>
+
+<REQUESTTYPE> (request types: Request Type is the major classification of help requests based on certain common attributes which they address.)</REQUESTTYPE>
+
+<SUBREQUESTTYPE> (sub request type: A sub request type is a subset of the request type which fine-tunes the request type definition.)</SUBREQUESTTYPE>
+
+<TASKTYPE> (task types: Task Types are the logical categories under which tasks can be grouped based on the similarities in the nature of tasks)</TASKTYPE>
+
+<DEPT> (department: Departments are the entities in an organization created by grouping jobs to accomplish particular functions.)</DEPT>
+
+<HRM> (help request manager: An HRM is the person responsible for managing all the requests posted for a department.)</HRM>
+
+<MILESTONE> (milestone: A terminal element in the project schedule that marks completion of work package or phase, typically a high level event such as completion, endorsement or signing of a deliverable, document or a high level review meeting.)</MILESTONE>
+
+<PMI> (process measurement indicator (PMI): A process capability baseline used to execute the project between controlled boundaries. It combines the metrics used to quantify objectives to reflect strategic performance of the project.)</PMI>
+
+ <CHKLST> (checklist:Checklists are standard questionnaires used in engineering reviews, to check process compliance, standardization and error prevention, and others.)</CHKLST>
+
+<PROCESS> (process: Process is an organized set of activities performed to develop a work product.)</PROCESS>
+
+<TEMPLATE> (template: Template can be defined as a model to be followed for creating a work product)</TEMPLATE>
+
+<GUIDELINES> (guidelines: A guideline is detailed explanation to guide you in setting standards or determining a course of action.)</GUIDELINES>
+
+<METRICS> (metrics: Metrics are system of parameters or ways of quantitative assessment of software project attributes.)</METRICS>
+
+<REQUESTOR> (requestor: A requestors is a person who requests support to resolve an incident by reporting a problem to support staff or by creating a ticket in the system. A requestor has an account in the system and is identified by a unique username and password. Either the group manager or the requestor may create a requestor account.)</REQUESTOR>
+
+<DOCLIB> (document library: A folder in which a collection of files is shared and the files often use the same template. Each file in a library is associated with user-defined information that is displayed in the content listing for that library.) </DOCLIB>
+
+<DISCUSSIONTHRD> (discussion thread: Discussion Thread is a messaging system that allows participants to comment on a request till it is resolved.) </DISCUSSIONTHRD>
+
+<PROJECTTYPE> (project type: A means to standardize a operation-specific framework for project execution across the organization. )</PROJECTTYPE>
+
+<PRJTEAM> (project team: A team used only for a defined period of time and for a separate, concretely definable purpose which is nothing but the primary goal of the project.)</PRJTEAM>
+
+<PROJECT> (project: Project is a temporary endeavor undertaken to create a unique product or service that has specific start and end date, specific deliverables and specific resources assigned to perform the work.)</PROJECT>
+
+<PRJGRP> (project group: Project Group is an entity used for classification of projects based on certain common charecterisitcs.)</PRJGRP>
+
+</define>

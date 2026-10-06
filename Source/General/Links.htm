@@ -1,0 +1,153 @@
+
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD>
+		<title></title>
+		<meta content="Microsoft Visual Studio.NET 7.0" name="GENERATOR">
+		<meta content="Visual Basic 7.0" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<meta http-equiv="Cache-Control" CONTENT="no-cache">
+		<meta http-equiv="Pragma" CONTENT="no-cache">
+		<LINK rel="stylesheet" type="text/css" href="StyleSheetChanakya.css">
+		
+		<!--Class=clsBODY leftmargin=0 rightmargin=0 background="../../images/links_back_2.gif"-->
+	</HEAD>
+	<body MS_POSITIONING="GridLayout" BGCOLOR="white" topmargin="10" LeftMargin="0">
+		<SCRIPT language='javascript' src='CommonFunctions.js'></SCRIPT>
+		<form name="frmLink" method="post" action="Links.aspx?FromWhere=SM" id="frmLink">
+<input type="hidden" name="__VIEWSTATE" value="dDwxNDEzNDIyOTIxOzs+CB/1JJii9Y32hIvZqmtkAAUj3G0=" />
+
+			<script language="javascript" src="staticlogo3.js"></script>
+			<script language="javascript" src="commonfunctions.js"></script>
+			<SCRIPT language="javascript">	
+			var objForm;
+			objForm=GetFormReference('frmLink');
+			var source;	
+	function SetDefaultProject()
+	{
+		objForm.action = "Links.aspx?Mode=SetDefaultProject"
+		objForm.submit();
+	}
+	function SetDefaultModule()
+	{
+		objForm.action="Links.aspx?Mode=SetDefaultModule"
+		objForm.submit();
+	}
+	function MyProfile_OnClick()
+	{
+		window.open("../HR/EmployeeProfile.asp", "", "resizable=yes,scrollbars=yes,toolbar=no,statusbar=no,left=" & (window.screen.width - 800)/2 & ",top=" & (window.screen.height - 600)/2 & ",width=800,height=600");
+	}
+	function ShowText(objTDCell,backgroundColor,textColor) {		
+	
+		objTDCell.className=backgroundColor;
+		objTDCell.style.color = textColor;									
+	}
+	
+	function changeTo(highlightColor,textColor,e){	
+		
+	source=e.srcElement;	
+			if((source.tagName == "TR") || (source.tagName == "TABLE"))
+			return
+		
+		while(source.tagName!="TD")
+			source=source.parentElement
+			
+		source.style.cursor = 'hand'
+		
+		if((source.style.backgroundColor != highlightColor) && (source.id != "ignore"))		
+			ShowText(source,highlightColor,textColor)		
+			
+	}
+
+	function changeBack(originalColor,textColor,e){		
+			
+		if(e.fromElement.contains(e.toElement) || source.contains(e.toElement) || source.id=="ignore")
+				return
+			
+		if(e.toElement != source)		
+			ShowText(source,originalColor,textColor)		
+			
+	}
+	
+	function Tab_OnClick(strFromWhere)
+	{
+		window.open("Navigation.aspx?FromWhere=" + strFromWhere,"_top")
+	}
+	
+	function Logout(strLogoutPage)
+	{
+		window.open(strLogoutPage,"_top")
+	}
+	
+			</SCRIPT>
+			<TABLE BORDER=0 cellspacing=0 width=100% cellpadding=0>
+<TR>
+<TD valign=bottom align=right>
+<TABLE valign=bottom BORDER=0 class=clsTable cellspacing=0 width=100 height=22>
+<TR>
+<TD noWrap  Title='PROJECTS'><a class='navtab' href='javascript:Tab_OnClick("PM")'>PROJECTS</a></TD><TD noWrap  Title='ISSUES'><a class='navtab' href='javascript:Tab_OnClick("BTS")'>ISSUES</a></TD><TD noWrap  Title='TIMESHEET'><a class='navtab' href='javascript:Tab_OnClick("DA")'>TIMESHEET</a></TD><TD noWrap  Title='BILLING'><a class='navtab' href='javascript:Tab_OnClick("FA")'>BILLING TESTING</a></TD><TD noWrap  Title='PROCESSES'><a class='navtab' href='javascript:Tab_OnClick("PRO")'>PROCESSES</a></TD><TD noWrap  Title='REPORTS/METRICS'><a class='navtab' href='javascript:Tab_OnClick("MR")'>REPORTS METRICS</a></TD><TD noWrap  Title='HELP-DESK'><a class='navtab' href='javascript:Tab_OnClick("CRM")'>HELP-DESK</a></TD><TD noWrap  Title='KNOWLEDGE'><a class='navtab' href='javascript:Tab_OnClick("KM")'>KNOWLEDGE</a></TD><TD noWrap  Title='RESOURCES'><a class='navtab' href='javascript:Tab_OnClick("RM")'>RESOURCES</a></TD><TD noWrap  Title='Quality&#39;s System Documents'><a class='navtab' href='javascript:Tab_OnClick("QSD")'>QSD&#39;</a></TD><TD noWrap  Title='CONFIGURATION'><span id='selected'>CONFIGURATION</span></TD><TD nowrap title='LOGOUT'><a class='navtab' href='javascript:Logout("../../Default.aspx")'>LOGOUT
+</a></TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD valign=top>
+<TABLE valign='top' align='left' width='100%' cellspacing=0>
+<TR>
+<TD  class=clsLinkPageHeader width='50%' align='Left'>
+<A HRef="JavaScript:hideshowtree()"><Image ID=ImgID BORDER=0 src='..\..\images\TreeOn.gif' alt='Show/Hide Tree'></A><B>User : Admin(Administrator's)| Project: Books Portal
+</B>
+</TD>
+<TD class=clsLinkPageHeader width='100%' align='Right'>|Set As Default&nbsp;<A class=SetAsDefault HRef="JavaScript:SetDefaultProject()">Project</A>/<A class=SetAsDefault  HRef="JavaScript:SetDefaultModule()">Tab</A>&nbsp;|<A class=SetAsDefault STYLE=TEXT-DECORATION:NONE HRef="JavaScript:MyProfile_OnClick()">My Profile</A>&nbsp;|</TD></TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</form>
+		<P></P>
+		<SCRIPT language="javascript">	
+			var intframewidth;
+			intframewidth="230";
+			var blnTreeHide;
+			blnTreeHide=0;
+			var img;
+			img=GetObjectReference('frmLink','ImgID');
+			
+			
+			function hideshowtree()
+			{
+			  var img1;
+			  var img2;
+			  img1='../../images/TreeOn.gif';
+			  img2='../../images/TreeOff.gif';
+			  var pf;
+			  pf=GetParentFrameReference();
+			  /*
+			  var frMain;
+			  frMain=pf[1].parent;
+			  alert(frMain.name);
+			  			  alert(frMain.parent);
+			  			  */
+			  if(blnTreeHide==0)
+			  {
+				blnTreeHide=1
+				//parent.frmDown.cols='0,*'
+				//parent.frames(2).cols='0,*'
+				pf['frmDown'].cols='0,*';
+				img.src=img2;
+			 }
+			  else
+			  {
+				blnTreeHide=0;
+				var strcols;
+				strcols=intframewidth + ',*'
+				pf['frmDown'].cols=strcols;		
+				//parent.frames.item(2).cols=strcols;
+				img.src=img1;
+			  }		
+			}
+		</SCRIPT>
+	</body>
+</HTML>

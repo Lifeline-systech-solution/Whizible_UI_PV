@@ -1,0 +1,244 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Tree</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel='StyleSheet' href='../Source/General/StyleSheetChanakya_Blue.css' type='text/css'>
+<meta http-equiv='Cache-Control' CONTENT='no-cache'>
+<meta http-equiv='Pragma' CONTENT='no-cache'>
+<script type='text/javascript' src='../Source/General/Tree.js'></script>
+<script type='text/javascript' src='../Source/General/CommonFunctions.js'></script>
+<script type='text/javascript'>
+<!--
+var Tree = new Array;
+// nodeId | parentNodeId | nodeName | nodeUrl |Tooltip |IsParent |TreeNodeImagePath
+Tree[0]="1|0|CONFIGURATION||CONFIGURATION|-1|page.gif";
+Tree[1]="2|1|Setup||Setup|-1|page.gif";
+Tree[2]="3|2|Information|../Source/General/CommonPage.aspx?FromWhere=SM&amp;MasterTagId=1029|Information|0|page.gif";
+Tree[3]="4|2|Working Options|../Source/General/CommonPage.aspx?FromWhere=SM&amp;MasterTagId=1030|Working Options|0|page.gif";
+Tree[4]="5|2|Advanced Settings|../Source/General/Advanced_settings.aspx?FromWhere=SM&amp;MasterTagId=3914|Advanced Settings|0|page.gif";
+Tree[5]="6|2|Password Management|../Source/PasswordManagement/PasswordManagement_CommonPage.aspx?FromWhere=SM&amp;MasterTagId=1969|Password Management|0|page.gif";
+Tree[6]="7|1|Overview|../NewAPI/SM/configuration_landing.aspx?FromWhere=SM&amp;MasterTagId=22615|Overview|0|page.gif";
+Tree[7]="8|1|Corporate||Corporate|-1|page.gif";
+Tree[8]="9|8|Structure|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=2184|Structure|0|page.gif";
+Tree[9]="10|8|Business Group|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=1265|Business Group|0|page.gif";
+Tree[10]="11|8|Organization Unit|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=395|Organization Unit|0|page.gif";
+Tree[11]="12|8|Delivery Unit|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=2015|Delivery Unit|0|page.gif";
+Tree[12]="13|8|Delivery Team|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=1266|Delivery Team|0|page.gif";
+Tree[13]="14|8|Department Master|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=396|Department Master|0|page.gif";
+Tree[14]="15|8|Role|../Source/General/CommonList.aspx?Show=0&amp;FromWhere=SM&amp;MasterTagId=53|Role|0|page.gif";
+Tree[15]="16|8|Holiday Calendar|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=26|Holiday Calendar|0|page.gif";
+Tree[16]="17|1|Customer||Customer|-1|page.gif";
+Tree[17]="18|17|Customer|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=54|Customer|0|page.gif";
+Tree[18]="19|17|Customer Product Association|../Source/PRD/PRD_CustomerProductExecution_AMC_CommonList.aspx?FromWhere=SM&amp;MasterTagId=3698|Customer Product Association|0|page.gif";
+Tree[19]="20|17|Country|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=713|Country|0|page.gif";
+Tree[20]="21|17|Region Master|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=3754|Region Master|0|page.gif";
+Tree[21]="22|17|Customer Opening - Closing Balance|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=3836|Customer Opening - Closing Balance|0|page.gif";
+Tree[22]="23|17|Stakeholder||Stakeholder|-1|page.gif";
+Tree[23]="24|23|Group|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=2106|Group|0|page.gif";
+Tree[24]="25|23|Type|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=2108|Type|0|page.gif";
+Tree[25]="26|1|Configuration||Configuration|-1|page.gif";
+Tree[26]="27|26|Scrum Setup||Scrum Setup|-1|page.gif";
+Tree[27]="28|26|Global Project|../Source/PM/GlobalProject_CommonList.aspx?FromWhere=SM&amp;MasterTagId=2189|Global Project|0|page.gif";
+Tree[28]="29|26|Project Group|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=2029|Project Group|0|page.gif";
+Tree[29]="30|26|Project Management||Project Management|-1|page.gif";
+Tree[30]="31|30|Review||Review|-1|page.gif";
+Tree[31]="32|31|Type|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=1034|Type|0|page.gif";
+Tree[32]="33|31|Work Product|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=776|Work Product|0|page.gif";
+Tree[33]="34|31|Map Review With Issue|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=2261|Map Review With Issue|0|page.gif";
+Tree[34]="35|30|Scrum||Scrum|-1|page.gif";
+Tree[35]="36|35|Category|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=22242|Category|0|page.gif";
+Tree[36]="37|35|Version|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=22243|Version|0|page.gif";
+Tree[37]="38|30|Risk||Risk|-1|page.gif";
+Tree[38]="39|38|Category|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=788|Category|0|page.gif";
+Tree[39]="40|38|Repository|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=800|Repository|0|page.gif";
+Tree[40]="41|38|Risk Source|../Source/General/RiskSource_CommonList.aspx?FromWhere=SM&amp;MasterTagId=20113|Risk Source|0|page.gif";
+Tree[41]="42|30|Task||Task|-1|page.gif";
+Tree[42]="43|42|Type|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=1024|Type|0|page.gif";
+Tree[43]="44|42|Sub Type|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=773|Sub Type|0|page.gif";
+Tree[44]="45|42|Generic &amp; Unplanned|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=397|Generic &amp; Unplanned|0|page.gif";
+Tree[45]="46|30|Change Management||Change Management|-1|page.gif";
+Tree[46]="47|46|Complexity|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=2266|Complexity|0|page.gif";
+Tree[47]="48|46|Impact|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=798|Impact|0|page.gif";
+Tree[48]="49|46|Problem Type|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=471|Problem Type|0|page.gif";
+Tree[49]="50|30|Custom Field Setting||Custom Field Setting|-1|page.gif";
+Tree[50]="51|50|Custom Field Maintainance|../Source/PM/PM_CustomFieldMaintenance.aspx?CORP=1&amp;FromWhere=SM&amp;MasterTagId=3560|Custom Field Maintainance|0|page.gif";
+Tree[51]="52|30|Miscellaneous||Miscellaneous|-1|page.gif";
+Tree[52]="53|52|Status|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=1227|Status|0|page.gif";
+Tree[53]="54|52|Commercial Contract|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=1230|Commercial Contract|0|page.gif";
+Tree[54]="55|52|Project Site Master|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=3868|Project Site Master|0|page.gif";
+Tree[55]="56|52|Project Site Template|../Source/NewAPI/PM/PM_Template.aspx?FromWhere=SM&amp;MasterTagId=22607|Project Site Template|0|page.gif";
+Tree[56]="57|52|Sponsor|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=1256|Sponsor|0|page.gif";
+Tree[57]="58|52|Life Cycle|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=1233|Life Cycle|0|page.gif";
+Tree[58]="59|52|Tools||Tools|-1|page.gif";
+Tree[59]="60|59|Software Tools|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=14|Software Tools|0|page.gif";
+Tree[60]="61|59|Software Usage|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=514|Software Usage|0|page.gif";
+Tree[61]="62|59|Hardware|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=505|Hardware|0|page.gif";
+Tree[62]="63|52|Resource Status|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=799|Resource Status|0|page.gif";
+Tree[63]="64|52|Size Unit|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=790|Size Unit|0|page.gif";
+Tree[64]="65|52|Milestone Revenue Status|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=3948|Milestone Revenue Status|0|page.gif";
+Tree[65]="66|26|IR Masters||IR Masters|-1|page.gif";
+Tree[66]="67|66|Company|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=2012|Company|0|page.gif";
+Tree[67]="68|66|Bank|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=2039|Bank|0|page.gif";
+Tree[68]="69|66|Contract Type|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=2040|Contract Type|0|page.gif";
+Tree[69]="70|66|Terms and Conditions|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=3610|Terms and Conditions|0|page.gif";
+Tree[70]="71|66|IR Reports|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=3815|IR Reports|0|page.gif";
+Tree[71]="72|66|IR Company Migration|../Source/RFI/RFI_SelectCompany_CommonList.aspx?FromWhere=SM&amp;MasterTagId=3817|IR Company Migration|0|page.gif";
+Tree[72]="73|66|Contract|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=2041|Contract|0|page.gif";
+Tree[73]="74|66|IR Types|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=2042|IR Types|0|page.gif";
+Tree[74]="75|66|Sales Period|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=2018|Sales Period|0|page.gif";
+Tree[75]="76|66|Tax|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=2020|Tax|0|page.gif";
+Tree[76]="77|66|Accounts|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=2024|Accounts|0|page.gif";
+Tree[77]="78|66|Checklist|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=2036|Checklist|0|page.gif";
+Tree[78]="79|26|Issue Management||Issue Management|-1|page.gif";
+Tree[79]="80|79|Type|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=1025|Type|0|page.gif";
+Tree[80]="81|79|Status|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=527|Status|0|page.gif";
+Tree[81]="82|79|Status of Status|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=540|Status of Status|0|page.gif";
+Tree[82]="83|79|Field Captions|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=578|Field Captions|0|page.gif";
+Tree[83]="84|79|Customer level SLA Definition|../Source/IB/CustomerlevelSLADefinition_CommonList.aspx?FromWhere=SM&amp;MasterTagId=3573|Customer level SLA Definition|0|page.gif";
+Tree[84]="85|79|Sub Type|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=523|Sub Type|0|page.gif";
+Tree[85]="86|79|Attributes||Attributes|-1|page.gif";
+Tree[86]="87|86|Severity|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=524|Severity|0|page.gif";
+Tree[87]="88|86|Priority|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=529|Priority|0|page.gif";
+Tree[88]="89|86|Root Cause|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=2004|Root Cause|0|page.gif";
+Tree[89]="90|86|OS|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=526|OS|0|page.gif";
+Tree[90]="91|86|Kernel|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=522|Kernel|0|page.gif";
+Tree[91]="92|86|Keyword|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=525|Keyword|0|page.gif";
+Tree[92]="93|79|Administration||Administration|-1|page.gif";
+Tree[93]="94|93|Custom Fields|../Source/IB/IB_CustomFieldsMaintenance.aspx?CORP=1&amp;FromWhere=SM&amp;MasterTagId=561|Custom Fields|0|page.gif";
+Tree[94]="95|93|Layout|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=1028|Layout|0|page.gif";
+Tree[95]="96|26|Help Desk Management||Help Desk Management|-1|page.gif";
+Tree[96]="97|96|Type|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=918|Type|0|page.gif";
+Tree[97]="98|96|Sub Type|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=919|Sub Type|0|page.gif";
+Tree[98]="99|96|Status|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=915|Status|0|page.gif";
+Tree[99]="100|96|Priority|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=917|Priority|0|page.gif";
+Tree[100]="101|96|Severity|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=3741|Severity|0|page.gif";
+Tree[101]="102|96|Activity Master|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=8039|Activity Master|0|page.gif";
+Tree[102]="103|96|Feedback Parameters|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=916|Feedback Parameters|0|page.gif";
+Tree[103]="104|96|Helpdesk Workflow|../Source/DM/DemandTypes_CommonList.aspx?FromWhere=SM&amp;MasterTagId=8036|Helpdesk Workflow|0|page.gif";
+Tree[104]="105|96|FAQ Master|../Source/CRM/FrequentlyAskQuestions_CommonList.aspx?isMaster=YES&amp;FromWhere=SM&amp;MasterTagId=9017|FAQ Master|0|page.gif";
+Tree[105]="106|96|SLA Master|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=3743|SLA Master|0|page.gif";
+Tree[106]="107|96|Help Desk SLA Definition|../Source/CRM/HelpDeskSLADefination_CommonList.aspx?FromWhere=SM&amp;MasterTagId=3625|Help Desk SLA Definition|0|page.gif";
+Tree[107]="108|96|HelpDesk Activity Project|../Source/CRM/CRM_ProjectMapping.aspx?FromWhere=SM&amp;MasterTagId=8041|HelpDesk Activity Project|0|page.gif";
+Tree[108]="109|26|Knowledge Management||Knowledge Management|-1|page.gif";
+Tree[109]="110|109|Knowledge Administrators|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=3993|Knowledge Administrators|0|page.gif";
+Tree[110]="111|26|MIS Parameter||MIS Parameter|-1|page.gif";
+Tree[111]="112|111|Market Segmentation||Market Segmentation|-1|page.gif";
+Tree[112]="113|111|Market Segmentation||Market Segmentation|-1|page.gif";
+Tree[113]="114|113|Market|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=2199|Market|0|page.gif";
+Tree[114]="115|113|Sub Market|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=2200|Sub Market|0|page.gif";
+Tree[115]="116|113|External|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=2198|External|0|page.gif";
+Tree[116]="117|111|Service Segmentation||Service Segmentation|-1|page.gif";
+Tree[117]="118|117|Service Offering|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=2195|Service Offering|0|page.gif";
+Tree[118]="119|117|Sub Service Offering|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=2197|Sub Service Offering|0|page.gif";
+Tree[119]="120|117|Service Line|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=2194|Service Line|0|page.gif";
+Tree[120]="121|26|Common||Common|-1|page.gif";
+Tree[121]="122|121|Document Category|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=458|Document Category|0|page.gif";
+Tree[122]="123|121|Currency|../Source/EWF/Currency_CommonList.aspx?FromWhere=SM&amp;MasterTagId=2035|Currency|0|page.gif";
+Tree[123]="124|121|Facility Master|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=1243|Facility Master|0|page.gif";
+Tree[124]="125|121|Financial Years|../Source/Home/FinancialYears_CommonList.aspx?FromWhere=SM&amp;MasterTagId=2321|Financial Years|0|page.gif";
+Tree[125]="126|26|Expenses||Expenses|-1|page.gif";
+Tree[126]="127|126|Financial Processing Center|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=3570|Financial Processing Center|0|page.gif";
+Tree[127]="128|126|Cost Group|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=1246|Cost Group|0|page.gif";
+Tree[128]="129|126|Cost Head|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=1247|Cost Head|0|page.gif";
+Tree[129]="130|126|Mode Of Payment|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=2037|Mode Of Payment|0|page.gif";
+Tree[130]="131|126|Expense Entry Status|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=3571|Expense Entry Status|0|page.gif";
+Tree[131]="132|126|Role Mapping for Expenses|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=3603|Role Mapping for Expenses|0|page.gif";
+Tree[132]="133|26|Product Masters||Product Masters|-1|page.gif";
+Tree[133]="134|133|Product Line|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=3693|Product Line|0|page.gif";
+Tree[134]="135|133|Product Tree|../Source/PRD/PRD_ProductTree.aspx?FromWhere=SM&amp;MasterTagId=3706|Product Tree|0|page.gif";
+Tree[135]="136|133|Product|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=3694|Product|0|page.gif";
+Tree[136]="137|133|Component|../Source/PRD/PRD_Component_CommonList.aspx?FromWhere=SM&amp;MasterTagId=3691|Component|0|page.gif";
+Tree[137]="138|133|Component Type|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=3692|Component Type|0|page.gif";
+Tree[138]="139|133|Price Unit|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=3695|Price Unit|0|page.gif";
+Tree[139]="140|133|Product Competitor|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=3696|Product Competitor|0|page.gif";
+Tree[140]="141|133|Collateral|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=2349|Collateral|0|page.gif";
+Tree[141]="142|26|Test Case Management||Test Case Management|-1|page.gif";
+Tree[142]="143|142|Test Set|../Source/TCM/TestSet_CommonList.aspx?FromWhere=SM&amp;MasterTagId=3648|Test Set|0|page.gif";
+Tree[143]="144|142|Configuration||Configuration|-1|page.gif";
+Tree[144]="145|144|Test Set Group|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=3641|Test Set Group|0|page.gif";
+Tree[145]="146|144|Test Type|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=3642|Test Type|0|page.gif";
+Tree[146]="147|144|Test Status|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=3682|Test Status|0|page.gif";
+Tree[147]="148|144|Test Result|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=3646|Test Result|0|page.gif";
+Tree[148]="149|26|Timesheet Mailer Configuration||Timesheet Mailer Configuration|-1|page.gif";
+Tree[149]="150|149|Timesheet Mailer Configuration|../Source/SM/TSMailerConfiguration_CommonList.aspx?FromWhere=SM&amp;MasterTagId=3649|Timesheet Mailer Configuration|0|page.gif";
+Tree[150]="151|26|Proxy Timesheet||Proxy Timesheet|-1|page.gif";
+Tree[151]="152|151|Proxy User Mapping|../Source/PT/ProxyUserMapping_CommonList.aspx?FromWhere=SM&amp;MasterTagId=3604|Proxy User Mapping|0|page.gif";
+Tree[152]="153|26|Metrics Management||Metrics Management|-1|page.gif";
+Tree[153]="154|153|Data Point List|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=2505|Data Point List|0|page.gif";
+Tree[154]="155|153|Metric Builder|../Source/METRICS/MetricBuilder_CommonList.aspx?FromWhere=SM&amp;MasterTagId=2503|Metric Builder|0|page.gif";
+Tree[155]="156|153|Link Metrics|../Source/Metrics/LinkMetrics.aspx?Show=Customer&amp;FromWhere=SM&amp;MasterTagId=8070|Link Metrics|0|page.gif";
+Tree[156]="157|26|Issue Integration Setup||Issue Integration Setup|-1|page.gif";
+Tree[157]="158|157|External System Master|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=8050|External System Master|0|page.gif";
+Tree[158]="159|157|Time Zone Master|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=8058|Time Zone Master|0|page.gif";
+Tree[159]="160|1|Application Administration||Application Administration|-1|page.gif";
+Tree[160]="161|160|Security||Security|-1|page.gif";
+Tree[161]="162|161|Login||Login|-1|page.gif";
+Tree[162]="163|162|Employee|../Source/ML/ML_Employee_CommonList.aspx?FromWhere=SM&amp;MasterTagId=1009|Employee|0|page.gif";
+Tree[163]="164|162|Unlock User|../Source/PasswordManagement/UnlockUser_CommonList.aspx?FromWhere=SM&amp;MasterTagId=22199|Unlock User|0|page.gif";
+Tree[164]="165|162|Customer|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=1031|Customer|0|page.gif";
+Tree[165]="166|162|Client Login Maintenance|../Source/PM/ClientLoginMaintenance_CommonList.aspx?FromWhere=SM&amp;MasterTagId=1032|Client Login Maintenance|0|page.gif";
+Tree[166]="167|162|Login Maintenance|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=3702|Login Maintenance|0|page.gif";
+Tree[167]="168|162|LDAP Authentication/User Preferences|../Source/HR/HR_LDAPAndClearPreferences_CommonList.aspx?FromWhere=SM&amp;MasterTagId=3877|LDAP Authentication/User Preferences|0|page.gif";
+Tree[168]="169|162|Module Access|../Source/ML/ModuleAccess_CommonList.aspx?FromWhere=SM&amp;MasterTagId=2651|Module Access|0|page.gif";
+Tree[169]="170|161|Group &amp; Access||Group &amp; Access|-1|page.gif";
+Tree[170]="171|170|Role|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=312|Role|0|page.gif";
+Tree[171]="172|170|Group|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=1008|Group|0|page.gif";
+Tree[172]="173|170|Group Access|../Source/General/CommonList.aspx?Mode=Group&amp;FromWhere=SM&amp;MasterTagId=1007|Group Access|0|page.gif";
+Tree[173]="174|170|Node Maintenance|../Source/SM/PB_FunctionalityMaintenance.aspx?FromWhere=SM&amp;MasterTagId=1890|Node Maintenance|0|page.gif";
+Tree[174]="175|161|Reports||Reports|-1|page.gif";
+Tree[175]="176|175|Log|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=785&amp;FromWhere=SM&amp;MasterTagId=807|Log|0|page.gif";
+Tree[176]="177|175|User Access|../Source/CRW/CRW_ReportUIBuilder.aspx?ReportID=786&amp;FromWhere=SM&amp;MasterTagId=808|User Access|0|page.gif";
+Tree[177]="178|161|Document Previleges|../Source/Enhancement/DocumentPrivillages_CommonList.aspx?FromWhere=SM&amp;MasterTagId=20174|Document Previleges|0|page.gif";
+Tree[178]="179|160|Query||Query|-1|page.gif";
+Tree[179]="180|179|Builder|../Source/QRB/QRB_QueryList.aspx?FromWhere=SM&amp;MasterTagId=587|Builder|0|page.gif";
+Tree[180]="181|179|Queries Adminstration|../Source/QRB/QRB_QueryAction.aspx?FromWhere=SM&amp;MasterTagId=588|Queries Adminstration|0|page.gif";
+Tree[181]="182|179|Variables|../Source/QRB/QRB_EB_Variable_List.aspx?FromWhere=SM&amp;MasterTagId=1560|Variables|0|page.gif";
+Tree[182]="183|179|Cross Tab Query|../Source/QRB/QRB_CT_QueryList.aspx?FromWhere=SM&amp;MasterTagId=1562|Cross Tab Query|0|page.gif";
+Tree[183]="184|179|Connection Master|../Source/General/ConnectionMaster_CommonList.aspx?FromWhere=SM&amp;MasterTagId=801|Connection Master|0|page.gif";
+Tree[184]="185|179|Expression Builder|../Source/QRB/QRB_EB_List.aspx?FromWhere=SM&amp;MasterTagId=1558|Expression Builder|0|page.gif";
+Tree[185]="186|179|Entity Update Schedule|../Source/General/SmartNavigation.aspx?FromWhere=SM&amp;MasterTagId=913|Entity Update Schedule|0|page.gif";
+Tree[186]="187|179|Entity||Entity|-1|page.gif";
+Tree[187]="188|187|Entity Access|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=586|Entity Access|0|page.gif";
+Tree[188]="189|160|Report||Report|-1|page.gif";
+Tree[189]="190|189|Report Builder|../Source/CRW/CRW_CommonList.aspx?FromWhere=SM&amp;MasterTagId=545|Report Builder|0|page.gif";
+Tree[190]="191|189|Report Security|../Source/CRW/CRW_Security_CommonList.aspx?FromWhere=SM&amp;MasterTagId=1832|Report Security|0|page.gif";
+Tree[191]="192|189|Custom Report Access|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=1807|Custom Report Access|0|page.gif";
+Tree[192]="193|160|Page||Page|-1|page.gif";
+Tree[193]="194|193|System Dashboards|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=693|System Dashboards|0|page.gif";
+Tree[194]="195|160|Email||Email|-1|page.gif";
+Tree[195]="196|195|Messages|../Source/General/CommonList.aspx?show=0&amp;FromWhere=SM&amp;MasterTagId=456|Messages|0|page.gif";
+Tree[196]="197|195|Setup|../Source/General/CommonList.aspx?FromWhere=SM&amp;MasterTagId=507|Setup|0|page.gif";
+//-->
+</script>
+</head>
+<body class=clsTreeBody>
+<form id='frmTree'>
+<div id='tree'>
+<script type='text/javascript'>
+<!--
+ var objfrm;
+ var objdivlist;
+ objfrm = GetFormReference('frmTree');
+ objdivlist=GetObjectReference('frmTree','tree');
+ if(navigator.appName != 'Microsoft Internet Explorer')
+ {
+     objdivlist.style.overflow='auto';
+     objdivlist.style.height=document.body.clientHeight-document.body.offsetHeight-0.5;
+ }
+createTree(Tree);
+var arrNode0Values=Tree[0].split("|");
+oc(1,0,arrNode0Values[6]);
+var arrNode1Values=Tree[26].split("|");
+oc(27,0,arrNode1Values[6]);
+var arrNode2Values=Tree[143].split("|");
+oc(144,0,arrNode2Values[6]);
+var arrNode3Values=Tree[152].split("|");
+oc(153,0,arrNode3Values[6]);
+var arrNode4Values=Tree[156].split("|");
+oc(157,0,arrNode4Values[6]);
+//--></script>
+</div>
+</form>
+</body>
+</html>

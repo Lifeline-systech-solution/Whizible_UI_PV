@@ -1,0 +1,417 @@
+::selection {
+  background: #000;
+  color: #fff;
+}
+
+body{
+	font-family: 'Roboto-Light';
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Roboto';
+}
+
+a {
+  color: rgba(34, 147, 215, 1);
+  text-decoration: none;
+  position: relative;
+}
+
+a:hover {
+  color: rgba(34, 147, 215, 1);
+  text-decoration: none!important;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  left: 0;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: -webkit-transform .6s;
+  transition: -webkit-transform .6s;
+  -o-transition: transform .6s;
+  transition: transform .6s;
+  transition: transform .6s, -webkit-transform .6s;
+  -webkit-transform-origin: middle;
+  -ms-transform-origin: middle;
+  transform-origin: middle;
+}
+
+a:hover::after,
+a:focus::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+p {
+  color: #212529;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 678px) {
+  .listStyle li {
+    display: block!important;
+  }
+}
+
+.nav-link {
+  color: rgba(34, 147, 215, 1)!important;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+#topheader .navbar-nav li.active>a {
+  color: #fbb03b!important;
+}
+
+.hero-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 8rem 0;
+  height: 450px;
+}
+
+.hero-banner h1 {
+  color: #fff;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  align-items: center;
+}
+
+.overlay-showcase {
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.form-banner-btn {
+  background: #fff;
+  border: 1px solid #d2d6de;
+}
+
+.form-banner-btn:hover {
+  background: rgba(34, 147, 215, 1);
+  color: #fff;
+}
+
+.form-control {
+  border: 1px solid #d2d6de;
+}
+
+.form-control:focus {
+  border-color: #3c8dbc;
+  box-shadow: none;
+}
+
+.listStyle ul {
+  list-style: none;
+}
+
+.listStyle li {
+  display: inline;
+  font-size: 20px;
+  margin-right: 30px;
+}
+
+.listStyle li a {
+  text-decoration: none;
+  color: #4263c1;
+}
+
+.listStyle li a:hover {
+  text-decoration: underline;
+}
+
+.section-inner h2 {
+  font-size: 28px;
+  color: #000;
+  line-height: 40px;
+}
+
+.section-inner h4 {
+  font-size: 20px;
+  color: #4263c1;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.bg-blue {
+  background: #f1f1f1;
+}
+
+.bg-dark-blue {
+  background: rgba(34, 147, 215, 1);
+}
+
+.footer {
+  background: rgba(34, 147, 215, 1);
+}
+
+.footer p,
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer-icons i {
+  color: #fff;
+  font-size: 22px;
+}
+
+i:hover {
+  color: #e7edf0;
+}
+
+.footer-icons a::after,
+.sidebar-list ul li a::after,
+.section-nav ul li a::after,
+.section-nav a:after {
+  display: none;
+}
+
+.knowledge-table table tbody td {
+  font-size: 20px;
+}
+
+.knowledge-table table tbody td a {
+  color: #fbb03b;
+  cursor: pointer;
+}
+
+.right-sidebar {
+  background: #f1f1f1;
+  border: 1px solid #e3e3e3;
+  padding: 20px;
+}
+
+.sidebar-list {
+  margin-bottom: 20px;
+}
+
+.sidebar-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.sidebar-list ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar-list ul li i {
+  color: #000;
+  font-size: 20px;
+}
+
+.loginbtn {
+  background: #fbb03b;
+  border: none;
+  font-weight: 400;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  width: 100%;
+  min-width: 140px;
+  margin: 0 0 15px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+}
+
+.loginbtn:hover {
+  background: #e29214;
+  color: #fff;
+}
+
+
+/* Style the active class, and buttons on mouse-over */
+
+.activeList,
+.list-group-item:hover {
+  background-color: #666;
+  color: white;
+}
+
+.make-me-sticky {
+  position: sticky;
+  top: 1rem;
+  align-self: start;
+}
+
+.section-nav li.active>a {
+  color: #fbb03b;
+}
+
+.section-nav {
+  padding-left: 0;
+  border-left: 1px solid #efefef;
+}
+
+.section-nav a {
+  font-size: 17px;
+  text-decoration: none;
+  display: block;
+  color: #555;
+  transition: all 50ms ease-in-out;
+}
+
+.section-nav a:hover,
+.section-nav a:focus {
+  color: #fbb03b;
+}
+
+.section-nav ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.grade-alert {
+  background: #fbb03b;
+  color: #fff;
+  padding: 6px;
+}
+
+.access-alert {
+  background: #e7edf0;
+  padding: 12px;
+}
+
+.access-alert a {
+  color: #000;
+  font-weight: 500;
+}
+
+.sub-list-heading {
+  font-size: 18px;
+  color: #5e5e5e;
+  font-weight: 700;
+  margin-bottom:5px;
+}
+
+.currentPage li{
+	padding-bottom:5px;
+}
+
+.ui-element-table table thead tr {
+  background: rgba(34, 147, 215, 1);
+  color: #fff;
+}
+
+.ui-element-table table tbody tr:nth-child(odd) {
+  background-color: #e7edf0;
+}
+
+ul li, ol li {
+  margin-bottom: 6px;
+}
+
+.business-rules {
+  border: 1px solid #fbb03b;
+}
+
+.business-heading {
+  background: #fbb03b;
+  color: #fff;
+  padding: 10px;
+}
+
+.business-rules .inner-content {
+  background: #ffebcc;
+  padding: 10px;
+}
+
+a.myBtn{
+	color:#4263c1;
+}
+
+.list-icon li {
+  display:flex;
+  align-items:center;
+  margin-bottom: 0;
+}
+
+.list-icon li:before {
+  content: '\00BB';
+  color:#555;
+  font-size:22px;
+  margin-right: 10px;
+}
+
+.comments i{
+	font-size:20px;
+	color:#555;
+	cursor:pointer;
+}
+
+.comments .badge{
+	font-family: 'Roboto';
+	font-size:14px;
+	position: absolute;
+    top: 4px;
+    left: 13px;
+}
+.comments .badge-red{
+    color: red;
+}
+.comments .badge-green{
+    color: green;
+}
+.comments .badge-blue{
+    color: rgba(34, 147, 215, 1);
+}
+
+#seeSection{
+	margin-top:3rem;	
+}
+#seeSection a{
+	color:#555;
+}
+#seeSection a:hover{
+	color:#fbb03b;
+}
+
+.ui-section{
+	margin-top:4rem;
+	border:1px solid #fbb03b;
+}
+
+.ui-section .ui-heading {
+  background: #fb943b;
+  color: #fff;
+  padding: 10px;
+}
+
+.ui-section .inner-content {
+  background: #ffe5e5;
+  padding: 10px;
+}

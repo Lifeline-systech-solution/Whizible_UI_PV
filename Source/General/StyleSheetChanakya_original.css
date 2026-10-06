@@ -1,0 +1,6414 @@
+/* //'DECLARATION: THIS IS A FRAMEWORK CODE ITEM. IT IS NOT EXPECTED TO MODIFY THIS AT THE APPLICATION LEVEL */
+/*Specified classes modified by Ninad ReqID-WAF3_PB_74 Tab Collection enhancement background-color:White; addded
+1.clsBody 2.clsPageBody 3.clsHorizontalNavBody 4.clsHorizontalNavPageBody 5.clsVerticalNavBody 6.clsVerticalNavPageBody*/
+
+#tree {
+	FONT-FAMILY: Verdana, Arial;
+	font-size: 7pt;
+}
+#tree a {
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 7pt;
+    FONT-WEIGHT: lighter;
+    text-decoration: none;
+}
+
+#tree A:hover:unknown{
+    COLOR: red;
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 7pt;
+    FONT-WEIGHT: lighter;
+    text-decoration: none;
+}
+
+#tree img {
+	border: 0px;
+	width: 19px;
+	height: 16px;
+}
+
+#inactive
+{
+	font-weight: normal;
+	font-size: 9px;
+	background-image: none;
+	margin: 2pt 2pt 2pt 1px;
+	color: gray;
+	font-family: Verdana, Arial;
+}
+
+BODY.clsBody
+{
+	background-color:White;
+    BORDER-RIGHT: #4E7DD1 6px solid;
+    PADDING-LEFT: 2px;
+    BORDER-LEFT: #000000 0px solid;
+    PADDING-TOP: 0px;
+    FONT-SIZE: 7pt;
+    margin: 2px 0px 2px 0px; /* T,L,B,R */
+    LINE-HEIGHT: 1;
+    BORDER-BOTTOM: #4E7DD1 6px solid;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    /*BACKGROUND-COLOR: #EEF6FF;*/
+	SCROLLBAR-FACE-COLOR:#D3E5FC; 
+	SCROLLBAR-HIGHLIGHT-COLOR:#EEF6FF; 
+	SCROLLBAR-SHADOW-COLOR:#EEF6FF; 
+	SCROLLBAR-ARROW-COLOR:#3D5FA3; 
+	SCROLLBAR-TRACK-COLOR:#EEF6FF; 
+	SCROLLBAR-BASE-COLOR:#E0E7EF; 
+	scrollbar-darkshadow-color:#EEF6FF;
+	scrollbar-3dLight-Color:#EEF6FF;
+}
+/*Added By Ninad on 24 Feb 2009 IssueID 27536*/
+BODY.clsCommonSubTagBody
+{
+    BORDER-RIGHT: #4E7DD1 6px solid;
+    PADDING-LEFT: 2px;
+    BORDER-LEFT: #4E7DD1 6px solid;
+    BORDER-TOP: #4E7DD1 6px solid;
+    PADDING-TOP: 0px;
+    FONT-SIZE: 7pt;
+    margin: 2px 0px 2px 0px; /* T,L,B,R */
+    LINE-HEIGHT: 1;
+    BORDER-BOTTOM: #4E7DD1 6px solid;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    /*BACKGROUND-COLOR: #EEF6FF;*/
+	SCROLLBAR-FACE-COLOR:#D3E5FC; 
+	SCROLLBAR-HIGHLIGHT-COLOR:#EEF6FF; 
+	SCROLLBAR-SHADOW-COLOR:#EEF6FF; 
+	SCROLLBAR-ARROW-COLOR:#3D5FA3; 
+	SCROLLBAR-TRACK-COLOR:#EEF6FF; 
+	SCROLLBAR-BASE-COLOR:#E0E7EF; 
+	scrollbar-darkshadow-color:#EEF6FF;
+	scrollbar-3dLight-Color:#EEF6FF;
+}
+/*End Addition By Ninad on 24 Feb 2009 IssueID 27536*/
+BODY.clsPageBody
+{ 
+	background-color:White;
+	BORDER-RIGHT: #4e7dd1 6px solid; 
+	PADDING-LEFT: 2px;
+	SCROLLBAR-FACE-COLOR: #d3e5fc; 
+	FONT-SIZE: 7pt; 
+	MARGIN: 2px 0px; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #eef6ff; 
+	BORDER-LEFT: #000000 0px solid; 
+	SCROLLBAR-SHADOW-COLOR: #eef6ff; 
+	SCROLLBAR-3DLIGHT-COLOR: #eef6ff; 
+	LINE-HEIGHT: 1; 
+	SCROLLBAR-ARROW-COLOR: #3d5fa3; 
+	PADDING-TOP: 0px; 
+	SCROLLBAR-TRACK-COLOR: #eef6ff; 
+	BORDER-BOTTOM: #4e7dd1 6px solid; 
+	BACKGROUND-REPEAT: repeat; 
+	FONT-FAMILY: Verdana, Arial; 
+	SCROLLBAR-DARKSHADOW-COLOR: #eef6ff; 
+	SCROLLBAR-BASE-COLOR: #e0e7ef; /*BACKGROUND-COLOR: #9BBFF0*/ 
+	}
+
+/*WAF3_PB_41 Start*/
+BODY.clsVerticalNavBody
+{
+	background-color:White;
+    BORDER-RIGHT: #4E7DD1 1px solid;/*changed size from 6 to 1*/
+    BORDER-LEFT: #000000 0px solid;
+    PADDING-TOP: 0px;
+    FONT-SIZE: 7pt;
+    margin: 2px 0px 2px 0px; /* T,L,B,R */
+    LINE-HEIGHT: 1;
+    BORDER-BOTTOM: #4E7DD1 6px solid;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    /*BACKGROUND-COLOR: #EEF6FF;*/
+	SCROLLBAR-FACE-COLOR:#D3E5FC; 
+	SCROLLBAR-HIGHLIGHT-COLOR:#EEF6FF; 
+	SCROLLBAR-SHADOW-COLOR:#EEF6FF; 
+	SCROLLBAR-ARROW-COLOR:#3D5FA3; 
+	SCROLLBAR-TRACK-COLOR:#EEF6FF; 
+	SCROLLBAR-BASE-COLOR:#E0E7EF; 
+	scrollbar-darkshadow-color:#EEF6FF;
+	scrollbar-3dLight-Color:#EEF6FF;
+}
+
+BODY.clsVerticalNavPageBody
+{ background-color:White; BORDER-RIGHT: #4e7dd1 6px solid; SCROLLBAR-FACE-COLOR: #d3e5fc; FONT-SIZE: 7pt; MARGIN: 2px 0px; SCROLLBAR-HIGHLIGHT-COLOR: #eef6ff; BORDER-LEFT: #4e7dd1 1px solid; SCROLLBAR-SHADOW-COLOR: #eef6ff; SCROLLBAR-3DLIGHT-COLOR: #eef6ff; LINE-HEIGHT: 1; SCROLLBAR-ARROW-COLOR: #3d5fa3; PADDING-TOP: 0px; SCROLLBAR-TRACK-COLOR: #eef6ff; BORDER-BOTTOM: #4e7dd1 6px solid; BACKGROUND-REPEAT: repeat; FONT-FAMILY: Verdana, Arial; SCROLLBAR-DARKSHADOW-COLOR: #eef6ff; SCROLLBAR-BASE-COLOR: #e0e7ef; /*BACKGROUND-COLOR: #9BBFF0*/ }
+
+BODY.clsHorizontalNavBody
+{
+	background-color:White;
+    BORDER-RIGHT: #4E7DD1 6px solid;
+    BORDER-LEFT: #000000 0px solid;
+    PADDING-TOP: 0px;
+    FONT-SIZE: 7pt;
+    margin: 2px 0px 2px 0px; /* T,L,B,R */
+    LINE-HEIGHT: 1;
+    BORDER-BOTTOM: #4E7DD1 1px solid;/*changed size from 6 to 1*/
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    /*BACKGROUND-COLOR: #EEF6FF;*/
+	SCROLLBAR-FACE-COLOR:#D3E5FC; 
+	SCROLLBAR-HIGHLIGHT-COLOR:#EEF6FF; 
+	SCROLLBAR-SHADOW-COLOR:#EEF6FF; 
+	SCROLLBAR-ARROW-COLOR:#3D5FA3; 
+	SCROLLBAR-TRACK-COLOR:#EEF6FF; 
+	SCROLLBAR-BASE-COLOR:#E0E7EF; 
+	scrollbar-darkshadow-color:#EEF6FF;
+	scrollbar-3dLight-Color:#EEF6FF;
+}
+
+BODY.clsHorizontalNavPageBody
+{ background-color:White; BORDER-RIGHT: #4e7dd1 6px solid; SCROLLBAR-FACE-COLOR: #d3e5fc; FONT-SIZE: 7pt; MARGIN: 2px 0px; SCROLLBAR-HIGHLIGHT-COLOR: #eef6ff; BORDER-LEFT: #000000 0px solid; SCROLLBAR-SHADOW-COLOR: #eef6ff; SCROLLBAR-3DLIGHT-COLOR: #eef6ff; LINE-HEIGHT: 1; SCROLLBAR-ARROW-COLOR: #3d5fa3; PADDING-TOP: 0px; SCROLLBAR-TRACK-COLOR: #eef6ff; BORDER-BOTTOM: #4e7dd1 6px solid; BACKGROUND-REPEAT: repeat; FONT-FAMILY: Verdana, Arial; SCROLLBAR-DARKSHADOW-COLOR: #eef6ff; SCROLLBAR-BASE-COLOR: #e0e7ef; border-top: #4e7dd1 1px solid;/*<new property>*//*BACKGROUND-COLOR: #9BBFF0*/ }
+
+/*WAF3_PB_41 End*/
+
+BODY.clsBodylinks
+{
+	background:url('../../Images/cssImages/clsBody_bg.gif') #EEF6FF;
+}
+
+BODY.clsFullPageBody
+{
+    BORDER-RIGHT: #3D5FA3 6px solid;
+    PADDING-LEFT: 0px;
+    FONT-SIZE: 7pt;
+    MARGIN: 2pt;
+    LINE-HEIGHT: 1;
+    BORDER-BOTTOM: #3D5FA3 6px solid;
+    BORDER-LEFT: #3D5FA3 6px solid;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: white;
+	SCROLLBAR-FACE-COLOR:#ADC8EE; 
+	SCROLLBAR-HIGHLIGHT-COLOR:#ADC8EE; 
+	SCROLLBAR-SHADOW-COLOR:#ADC8EE; 
+	SCROLLBAR-ARROW-COLOR:#3D5FA3; 
+	SCROLLBAR-TRACK-COLOR:#ADC8EE; 
+	SCROLLBAR-BASE-COLOR:#E0E7EF; 
+	scrollbar-darkshadow-color:#ADC8EE;
+	scrollbar-3dLight-Color:#ADC8EE;
+}
+
+TABLE.clsTable
+{
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    BACKGROUND-COLOR: transparent; 
+}
+
+TABLE.clsGridTable
+{
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Verdana, Arial;
+	BACKGROUND-COLOR: #AEAEAE;
+}
+
+TR.clsTRSectionHeader
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-weight: normal;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background-color: #D3E4FB;
+}
+/*Added By NileshD on 11 Jan 2006*/
+THead.clsTRSectionHeader
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-weight: normal;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background-color: #D3E4FB;
+}
+TR.clsTRColumnHeader
+{
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	padding-bottom: 1pt;
+	border-left: thin;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-weight: normal;
+	font-size: 11px;
+	color: black;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background-color: #BED5F4;
+/*	background-image: url(../../Images/cssImages/columnhdr_bg.gif);  */
+
+}
+/* Added By NileshD on 3 Jan 2006 ReqID WAF3_PB_14*/
+THead.clsTRColumnHeader
+{
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	padding-bottom: 1pt;
+	border-left: thin;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-weight: normal;
+	font-size: 11px;
+	color: black;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background-color: #BED5F4;
+/*	background-image: url(../../Images/cssImages/columnhdr_bg.gif);  */
+}
+/* End of Addition By NileshD on 3 Jan 2006 ReqID WAF3_PB_14*/
+TR.clsTRRadarMenu
+{
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	font-weight: bolder;
+	font-size: 11px;
+	padding-bottom: 1pt;
+	border-left: thin;
+	color: white;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background-color: black;
+}
+TR.clsTRRadarCurrent
+{
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	font-weight: bolder;
+	font-size: 11px;
+	padding-bottom: 1pt;
+	border-left: thin;
+	color: red;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background-color: floralwhite;
+}
+TD.clsTDSortColHeader
+{
+	
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	font-weight: normal;
+	font-size: 11px;
+	padding-bottom: 1pt;
+	border-left: thin;
+	color: white;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background: #3D5FA3;	
+	background-image: url(../../Images/cssImages/columnhdr_sel_bg.gif);  
+}
+TR.clsTRPageFilters
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	color: #000000;
+	padding-top: 2pt;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #E7F1FE;
+}
+/* Added By NileshD on 3 Jan 2006 ReqID WAF3_PB_14*/
+TH.clsTDSortColHeader
+{
+	
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	font-weight: normal;
+	font-size: 11px;
+	padding-bottom: 1pt;
+	border-left: thin;
+	color: white;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background: #3D5FA3;	
+	background-image: url(../../Images/cssImages/columnhdr_sel_bg.gif);  
+}
+/* End of Addition By NileshD on 3 Jan 2006 ReqID WAF3_PB_14*/
+TD.clsTDColumnSeparator
+{
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	font-weight: bolder;
+	font-size: 1pt;
+	background-image: none;
+	padding-bottom: 1pt;
+	border-left: thin;
+	width: 1px;
+	color: black;
+	padding-top: 1pt;
+	border-bottom: thin;
+	height: 22px;
+	background-color: black;
+}
+/*Added By NIleshD REQID: WAF3_PB_14*/
+TH.clsTDColumnSeparator
+{
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	font-weight: bolder;
+	font-size: 1pt;
+	background-image: none;
+	padding-bottom: 1pt;
+	border-left: thin;
+	width: 1px;
+	color: black;
+	padding-top: 1pt;
+	border-bottom: thin;
+	height: 22px;
+	background-color: black;
+}
+TR.clsTRBlank
+{
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 7pt;
+    BACKGROUND-IMAGE: none;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    COLOR: #000000;
+    PADDING-TOP: 2pt;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #ffffff
+}
+TR.clsTREven
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	color: #000000;
+	padding-top: 2pt;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #E7F1FE;
+}
+TR.clsTREvenRow
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #E7F1FE;
+}
+/* Added By NileshD REQID- WAF3_PB_10*/
+TR.clsTRNumericPaging
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-size: 8pt;
+	/*padding-bottom: 2pt;
+	padding-top: 2pt;*/
+	margin: 2pt;
+	color: #000000;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	height: 6px;
+	BACKGROUND-COLOR: #E7F1FE;
+}
+/* End Of Addition By NileshD REQID- WAF3_PB_10*/
+TR.clsTRGroupHeader
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-weight: bold;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	color: #000000;
+	padding-top: 2pt;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #BED5F5;
+}
+
+TR.clsTROdd
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #EFFBFE;
+}
+/*Added By NileshD on 28 Dec 2005 for REQIDWAF3_WF_2*/
+TR.clsTRPartialApprover
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: Orange;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #EFFBFE;
+}
+
+TR.clsTRPageHeader
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-weight: lighter;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	color: black;
+	padding-top: 2pt;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #D9E9FF;
+}
+TD.clsTDLabel
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt 4pt 2pt 2pt;
+	color: black;
+	padding-top: 2pt;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	background-color: #BED5F4;
+	text-align: right;
+}
+TD.clsTDBulleted
+{
+    BACKGROUND: #8aabcd
+}
+TD.clsTDEven
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	color: #000000;
+	padding-top: 2pt;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	background-color: #BED5F4;
+}
+
+TD.clsTDOdd
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	background-color: #FAFAFA;
+}
+TD.clsTDHeader
+{
+	border-right: thin;
+	padding-right: 0pt;
+	border-top: thin;
+	font-size: 8pt;
+	border-left: thin;
+	color: black;
+	border-bottom: thin;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	background-color: #c9e7ff;
+}
+
+TD.clsTDColumnHeader
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-weight: lighter;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	background-color: #DBEAF5;
+}
+
+TD.clsTDGroupFooter
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 8pt;
+    BACKGROUND-IMAGE: none;
+    COLOR: black;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #bbddff
+}
+
+.ButtonStyle
+{
+    FONT-SIZE: 8pt! important;
+    TEXT-TRANSFORM: capitalize;
+    WIDTH: 60pt;
+    COLOR: black! important;
+    FONT-FAMILY: Arial;
+    HEIGHT: 18pt;
+    TEXT-ALIGN: center
+}
+
+TD.clsGraphHeading
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #6699cc
+}
+
+TR.clsTRSelected
+{
+	padding-right: 1px;
+	padding-left: 1px;
+	font-weight: bold;
+	font-size: 8pt;
+	padding-bottom: 1px;
+	margin: 1px;
+	color: #000000;
+	padding-top: 1px;
+	font-family: Verdana, Arial;
+	background-color: #000000;
+}
+
+TD.clsTDTreeHeader
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+
+TEXTAREA.clsTextArea
+{
+	border-right: #cccccc 1px solid;
+	border-top: #cccccc 1px solid;
+	font-size: 8pt;
+	border-left: #cccccc 1px solid;
+	border-bottom: #cccccc 1px solid;
+	font-family: Verdana, Arial;
+	background-color: #FBFBFB;
+}
+
+INPUT.clsTextBox
+{
+	border-right: #cccccc 1px solid;
+	border-top: #cccccc 1px solid;
+	font-size: 8pt;
+	border-left: #cccccc 1px solid;
+	border-bottom: #cccccc 1px solid;
+	font-family: Verdana, Arial;
+	background-color: #ffffff;
+}
+/* Added By NileshD REQID -WAF3_PB_10*/
+INPUT.clsNewTextBox
+{
+	border-right: #cccccc 1px solid;
+	border-top: #cccccc 1px solid;
+	font-size: 8pt;
+	border-left: #cccccc 1px solid;
+	border-bottom: #cccccc 1px solid;
+	font-family: Verdana,Arial;
+	background-color: #ffffff;
+	height : 18px
+}
+/* End Of Addition By NileshD REQID -WAF3_PB_10*/
+
+/* Added By RajK REQID -WAF3_CDB_7*/
+INPUT.clsColorPaletteTextBox
+{
+	border-right: #cccccc 1px solid;
+	border-top: #cccccc 1px solid;
+	font-size: 8pt;
+	border-left: #cccccc 1px solid;
+	border-bottom: #cccccc 1px solid;
+	font-family: Verdana,Arial;
+	background-color: #ffffff;
+	height : 18px;
+}
+/* End Of Addition By RajK REQID -WAF3_CDB_7*/
+
+INPUT.clsTextBoxReadOnly
+{
+	border-right: #cccccc 1px solid;
+	border-top: #cccccc 1px solid;
+	font-weight: bold;
+	font-size: 8pt;
+	border-left: #cccccc 1px solid;
+	border-bottom: #cccccc 1px solid;
+	font-family: Verdana, Arial;
+	background-color: #FAFAFA;
+}
+
+INPUT.clsFileControl
+{
+	border-right: #cccccc 1px solid;
+	border-top: #cccccc 1px solid;
+	font-size: 8pt;
+	border-left: #cccccc 1px solid;
+	border-bottom: #cccccc 1px solid;
+	font-family: Verdana, Arial;
+	background-color: #FAFAFA;
+}
+
+INPUT.clsCheckBox
+/*
+Issue ID #19004 RajK
+#BI_26
+May 30 2005
+width: changed from 14px to 19px
+height: changed from 7px to 12px
+*/	
+{
+	font-size: 8pt;
+	border-left-color: #cccccc;
+	border-bottom-color: #cccccc;
+	border-top-style: none;
+	border-top-color: none;
+	font-family: Verdana, Arial;
+	border-right-style: none;
+	border-left-style: none;
+	background-color: none;
+	border-right-color: #cccccc;
+	border-bottom-style: none;
+	height: 12px; 
+	width: 19px;
+}
+INPUT.clsOptionButton
+{
+	font-size: 8pt;
+	border-left-color: #cccccc;
+	border-bottom-color: #cccccc;
+	border-top-style: none;
+	border-top-color: none;
+	font-family: Verdana, Arial;
+	border-right-style: none;
+	border-left-style: none;
+	background-color: none;
+	border-right-color: #cccccc;
+	border-bottom-style: none;
+	width: 14px;
+	height: 12px;  
+}
+
+SELECT.clsComboBox
+{
+	border-right: #cccccc 1px solid;
+	border-top: #cccccc 1px solid;
+	 /*Add by Vinay Purpose:-Mozilla support 06 Oct 2008*/
+	font-weight: normal;
+	/*Addtion End Mozilla support 06 Oct 2008*/
+	font-size: 8pt;
+	border-left: #cccccc 1px solid;
+	border-bottom: #cccccc 1px solid;
+	font-family: Verdana, Arial;
+}
+
+
+TD.clsTDWhiteBG
+{
+    PADDING-RIGHT: 1pt;
+    PADDING-LEFT: 1pt;
+    FONT-SIZE: 7pt;
+    PADDING-BOTTOM: 1pt;
+    MARGIN: 1pt;
+    COLOR: #000000;
+    PADDING-TOP: 1pt;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #FBFBFB;
+    TEXT-ALIGN: left
+}
+TD.clsHeader
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #336699
+}
+BODY.clsHelpBody
+{
+    BACKGROUND-IMAGE: url(../../Images/Q1.gif)
+}
+TD.clsTDHelp
+{
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #FBFBFB;
+}
+INPUT.clsButtonColor
+{
+    FONT-SIZE: 8pt;
+    TEXT-TRANSFORM: capitalize;
+    WIDTH: 60pt;
+    COLOR: tomato;
+    FONT-FAMILY: Arial;
+    HEIGHT: 18pt;
+    TEXT-ALIGN: center
+}
+TD.clsTDUSER
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Verdana;
+    TEXT-DECORATION: none
+}
+TD.clsTDPageHeader
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-weight: lighter;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	color: black;
+	padding-top: 2pt;
+	font-family: Arial, Verdana;
+	background-color: #c9e7ff;
+}
+TD.clsTDOddLabel
+{
+	padding-right: 1px;
+	padding-left: 1px;
+	font-size: 7pt;
+	padding-bottom: 1px;
+	margin: 1px;
+	color: black;
+	padding-top: 1px;
+	font-family: Verdana, Arial;
+	background-color: #FAFAFA;
+	text-align: right;
+}
+TD.clsTDEvenLabel
+{
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;
+    FONT-SIZE: 7pt;
+    PADDING-BOTTOM: 1px;
+    MARGIN: 1px;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #FBFBFB;
+    TEXT-ALIGN: right
+}
+TABLE.clsBorderTable
+{
+    BORDER-RIGHT: thin inset;
+    BORDER-TOP: thin inset;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: thin inset;
+    BORDER-BOTTOM: thin inset;
+    FONT-FAMILY: Verdana, Arial
+}
+A.clsHrefButton
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-STYLE: oblique;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: lightcyan;
+    TEXT-DECORATION: none
+}
+TD.clsTDNormal
+{
+	font-size: 10px;
+	color: white;
+	font-family: Verdana, Arial;
+	background-color: #b9a091;
+	text-align: center;
+}
+TD.clsTDSelected
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #000000;
+    TEXT-ALIGN: center
+}
+
+TD.clsTDMouseOver
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #eac0ae;
+    TEXT-ALIGN: center
+}
+DIV.clsDivKM
+{
+    BACKGROUND-COLOR: #ffffe8;
+}
+TD.clsLinkPageHeader
+{
+	font-weight: bolder;
+	font-size: 10px;
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+	color: white;
+	font-family: Verdana, Arial;
+	background-color: #3D5FA3;
+	
+}
+TR.clsTRLinkPageHeader
+{
+	font-weight: bolder;
+	font-size: 10px;
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+	color: white;
+	font-family: Verdana, Arial;
+	background-color: #660000;
+}
+
+BODY.clsTreeBody
+{
+	padding-left: 0px;
+	font-weight: bold;
+	font-size: 7pt;
+	margin: 0pt;
+	border-left: #4E7DD1 6px solid;
+	background-color: E0EFFF;
+	color: #000000;
+	line-height: 1;
+	border-bottom: #4E7DD1 6px solid;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	SCROLLBAR-FACE-COLOR: E0EFFF; 
+	SCROLLBAR-HIGHLIGHT-COLOR: E0EFFF; 
+	SCROLLBAR-SHADOW-COLOR: E0EFFF; 
+	SCROLLBAR-ARROW-COLOR: #3D5FA3; 
+	SCROLLBAR-TRACK-COLOR: transparent; 
+	SCROLLBAR-BASE-COLOR: #E0E7EF; 
+	scrollbar-darkshadow-color: E0EFFF;
+	scrollbar-3dLight-Color: E0EFFF;
+
+}
+
+BODY.clsTreeBody A.clTocHeading:active
+{
+    FONT-SIZE: 10px;
+    COLOR: maroon;
+    FONT-FAMILY: Verdana;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocHeading:hover
+{
+    FONT-SIZE: 10px;
+    COLOR: red;
+    FONT-FAMILY: Verdana;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocHeading:link
+{
+    FONT-SIZE: 10px;
+    COLOR: maroon;
+    FONT-FAMILY: Verdana;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocHeading:visited
+{
+    FONT-SIZE: 10px;
+    COLOR: maroon;
+    FONT-FAMILY: Verdana;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocItem:active
+{
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocItem:link
+{
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocItem:visited
+{
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocItem:hover
+{
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+TD.clsTDMPPTasks
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: tan
+}
+TD.clsTDAllTasks
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: thistle
+}
+TD.clsTDAssignedTasks
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: darkturquoise
+}
+TD.clsTDOverAllocate
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #d8c4c8
+}
+TD.clsTDOverAllocateMPPTasks
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: peachpuff
+}
+TD.clsTDOverAllocateAssignedTasks
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #adc8d6
+}
+TD.clsTDCritical
+{
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: red;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #e0e7ef
+}
+TD.clsTDCritical A
+{
+    COLOR: red
+}
+TD.clsTDCritical A:active
+{
+    COLOR: red
+}
+TD.clsTDCritical A:link
+{
+    COLOR: red
+}
+TD.clsTDCritical A:visited
+{
+    COLOR: red
+}
+DIV.clsDivDB
+{
+    OVERFLOW: auto;
+    WIDTH: 100%;
+    BACKGROUND-COLOR: #f5f5f5
+}
+TR.clsTRPageCaption
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-weight: bolder;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 20px;
+	background-color: #BED5F5;
+}
+/*Added By NileshD on 11 Jan 2006*/
+THead.clsTRPageCaption
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-weight: bolder;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 20px;
+	background-color: #BED5F5;
+}
+TR.clsTRMenu
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-weight: bolder;
+	font-size: 8pt;
+	background: url('../../Images/cssImages/Menu.gif');
+    background-image: url(../../Images/cssImages/Menu.gif); 
+	padding-bottom: 2pt;
+	margin: 2pt;
+	color: black;
+	padding-top: 2pt;
+	font-family: Arial, Verdana;
+	height: 15px;
+}
+
+TD.clsTDDBNormal
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	background-color: #00cc00;
+}
+TD.clsTDDBWarning
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	background-color: #ffff66;
+}
+TD.clsTDDBDanger
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: white;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	background-color: #ff3300;
+}
+/* Added By Shrikant B on 1 July 2008 ReqID WAF3_PB_64*/
+A.Menu
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	padding-top: 1px;
+	border-top-width: 0px;
+	font-weight: lighter;
+	border-left-width: 0px;
+	font-size: 10px;
+	border-left-color: white;
+	border-bottom-width: 0px;
+	border-bottom-color: white;
+	color: black;
+	border-top-color: white;
+	font-family: Verdana, Arial;
+	border-right-width: 0px;
+	text-decoration: none;
+	border-right-color: white;
+	/*cursor:hand; Commented by Vinay on 06 Oct. 2008 Purpose:-to support Mozilla Firefox*/
+	cursor:pointer; /*Addtion End by Vinay on 06 Oct. 2008*/
+}
+/* Added By Shrikant on 1 July 2008 ReqID WAF3_PB_64*/
+A.Menu:link
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	padding-top: 1px;
+	border-top-width: 0px;
+	font-weight: lighter;
+	border-left-width: 0px;
+	font-size: 10px;
+	border-left-color: white;
+	border-bottom-width: 0px;
+	border-bottom-color: white;
+	color: black;
+	border-top-color: white;
+	font-family: Verdana, Arial;
+	border-right-width: 0px;
+	text-decoration: none;
+	border-right-color: white;
+}
+
+A.Menu:visited
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	padding-top: 1px;
+	border-top-width: 2px;
+	font-weight: lighter;
+	border-left-width: 2px;
+	font-size: 10px;
+	border-left-color: white;
+	border-bottom-width: 2px;
+	border-bottom-color: white;
+	color: black;
+	border-top-color: white;
+	font-family: Verdana, Arial;
+	border-right-width: 2px;
+	text-decoration: none;
+	border-right-color: white;
+}
+
+A.Menu:active
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	padding-top: 1px;
+	border-top-width: 2px;
+	font-weight: lighter;
+	border-left-width: 2px;
+	font-size: 10px;
+	border-left-color: white;
+	border-bottom-width: 2px;
+	border-bottom-color: white;
+	color: black;
+	border-top-color: white;
+	font-family: Verdana, Arial;
+	border-right-width: 2px;
+	text-decoration: none;
+	border-right-color: white;
+}
+
+A.Menu:hover
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	padding-top: 1px;
+	border-right: black 0px solid;
+	border-top: black 0px solid;
+	font-weight: lighter;
+	font-size: 10px;
+	border-left: black 0px solid;
+	color: black;
+	border-bottom: black 0px solid;
+	font-family: Verdana, Arial;
+	background-color: #FFD695;
+}
+
+A.SetAsDefault:link
+{
+	font-weight: bolder;
+	font-size: 10px;
+	color: white;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+
+A.SetAsDefault:hover
+{
+	font-weight: bolder;
+	font-size: 10px;
+	color: white;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+A.SetAsDefault:visited
+{
+	font-weight: bolder;
+	font-size: 10px;
+	color: white;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+A.SetAsDefault:active
+{
+	font-weight: bolder;
+	font-size: 10px;
+	color: white;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+
+/*The "selected" class is used by velocity to render the tab of the page you're on*/
+#selected
+/*
+Issue ID #19004 RajK
+#BI_27
+May 30 2005
+Padding-left: changed from 5px to 2px
+width:20px added
+*/	
+{
+	padding-right: 2px;
+	padding-left: 2px;
+	font-weight: bold;
+	font-size: 10px;
+	padding-bottom: 4px;
+	color: white;
+	padding-top: 4px;
+	font-family: Verdana, Arial;
+	MARGIN: 1px -1px -1px 0px;
+	height: 11px;
+	width: 20px;
+	text-decoration: none;
+	background: url(../../Images/cssImages/navtab_sel_bg.gif) #3D5FA3 repeat-x;  
+}
+		
+/*The remaining tabs are actually links, so they need their own classes*/
+
+
+	
+a.navtab
+
+/* Issue ID #19004 RajK #BI_28 May 30 2005
+Padding-left: changed from 5px to 2px
+width:20px added */
+
+
+{
+    /*COLOR: #3D5FA3;*/
+	COLOR: #003091;
+    BORDER-RIGHT: navy 1px solid;
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial;
+    PADDING-BOTTOM: 4px;
+    MARGIN: 1px 0px 0px 0px;
+    LINE-HEIGHT: 11px;
+    PADDING-TOP: 4px;
+    POSITION: relative;
+    HEIGHT: 10px;
+    width: 20px;
+    TEXT-DECORATION: none;
+	background: url('../../Images/cssImages/navtab_bg.gif') #D6E7FD;
+	/*cursor:hand;/* Added By Shrikant on 1 July 2008 ReqID WAF3_PB_64*/
+	cursor:pointer;/* Added By Vinay on 07 Oct 2008 Purpose:-to support for Mozilla firefox */
+}
+	
+a.navtab:visited
+
+/* Issue ID #19004 RajK #BI_29 May 30 2005
+Padding-left: changed from 5px to 2px
+width:20px added */
+
+
+{
+    COLOR: #003091;
+    BORDER-RIGHT: black 1px solid;
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial;
+    PADDING-BOTTOM: 4px;
+    MARGIN: 1px 0px 0px 0px;
+    LINE-HEIGHT: 11px;
+    PADDING-TOP: 4px;
+    POSITION: relative;
+    HEIGHT: 10px;
+    TEXT-DECORATION: none;
+    BACKGROUND: url(../../Images/cssImages/navtab_bg.gif) #D6E7FD;
+}
+
+
+a.navtab:hover
+
+/* Issue ID #19004 RajK #BI_29 May 30 2005
+Padding-left: changed from 5px to 2px
+width:20px added */
+
+{
+    COLOR: #003091;
+    BORDER-RIGHT: navy 1px solid;
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial;
+    PADDING-BOTTOM: 4px;
+    MARGIN: 1px 0px 0px 0px;
+    LINE-HEIGHT: 11px;
+    PADDING-TOP: 4px;
+    POSITION: relative;
+    HEIGHT: 10px;
+    TEXT-DECORATION: none;
+	background: url("../../Images/cssImages/navtab_hover_bg.gif") #FFDDA8;
+}
+
+
+A.PagingSelected:link
+{
+	font-weight: bold;
+	font-size: 11px;
+	color: black;
+	font-family: Verdana, Arial;
+}
+A.PagingSelected:hover
+{
+	font-weight: bold;
+	font-size: 11px;
+	color: black;
+	font-family: Verdana, Arial;
+}
+A.PagingSelected:visited
+{
+	font-weight: bold;
+	font-size: 11px;
+	color: black;
+	font-family: Verdana, Arial;
+}
+A.PagingSelected:active
+{
+	font-weight: bolder;
+	font-size: 11px;
+	color: black;
+	font-family: Verdana, Arial;
+}
+
+A.PagingNormal:link
+{
+	font-weight: normal;
+	font-size: 10px;
+	color: black;
+	font-family: Verdana, Arial;
+}
+A.PagingNormal:hover
+{
+	font-weight: normal;
+	font-size: 10px;
+	color: black;
+	font-family: Verdana, Arial;
+}
+A.PagingNormal:visited
+{
+	font-weight: normal;
+	font-size: 10px;
+	color: black;
+	font-family: Verdana, Arial;
+}
+A.PagingNormal:active
+{
+	font-weight: normal;
+	font-size: 10px;
+	color: black;
+	font-family: Verdana, Arial;
+}
+TABLE.clsSubTagTable
+{
+	border-right: #3D5FA3 3px solid;
+	border-top: #3D5FA3 3px solid;
+	font-size: 10pt;
+	background-image: none;
+	border-left: #3D5FA3 3px solid;
+	border-bottom: #3D5FA3 3px solid;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	background-color: transparent;
+}
+A.clsCDBLinks:link
+{
+	font-weight: normal;
+	font-size: 10px;
+	color: black;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+A.clsCDBLinks:visited
+{
+	font-weight: normal;
+	font-size: 10px;
+	color: black;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+A.clsCDBLinks:active
+{
+	font-weight: normal;
+	font-size: 10px;
+	color: black;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+A.clsCDBLinks:hover
+{
+	font-weight: bolder;
+	font-size: 10px;
+	color: red;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+/* Added By Shrikant on 1 July 2008 ReqID WAF3_PB_64*/
+A.clsTabSelected
+{
+    PADDING-RIGHT: 2px;
+    BACKGROUND-POSITION: left top;
+    PADDING-LEFT: 5px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    BACKGROUND-ATTACHMENT: scroll;
+    PADDING-BOTTOM: 4px;
+    MARGIN: 1px -1px -5px -2px;
+    COLOR: white;
+    PADDING-TOP: 4px;
+    BACKGROUND-REPEAT: no-repeat;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 11px;
+    BACKGROUND-COLOR: #3D5FA3;
+    TEXT-DECORATION: none;
+    /*cursor:hand;*/
+	cursor:pointer;/* Added By Vinay on 07 Oct 2008 Purpose:-to support for Mozilla firefox */
+   
+}
+/* End Addition By Shrikant B  on 1 July 2008 ReqID WAF3_PB_64*/
+a.clsTabSelected:link
+{
+	padding-right: 2px;
+	background-position: left top;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 10px;
+	background-attachment: scroll;
+	padding-bottom: 4px;
+	margin: 1px -1px -5px -2px;
+	color: white;
+	padding-top: 4px;
+	background-repeat: no-repeat;
+	font-family: Verdana, Arial;
+	height: 11px;
+	background-color: #3D5FA3;
+	text-decoration: none;
+}
+a.clsTabSelected:visited
+{
+	padding-right: 2px;
+	background-position: left top;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 10px;
+	background-attachment: scroll;
+	padding-bottom: 4px;
+	margin: 1px -1px -5px -2px;
+	color: white;
+	padding-top: 4px;
+	background-repeat: no-repeat;
+	font-family: Verdana, Arial;
+	height: 11px;
+	background-color: #3D5FA3;
+	text-decoration: none;
+}
+a.clsTabSelected:active
+{
+	padding-right: 2px;
+	background-position: left top;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 10px;
+	background-attachment: scroll;
+	padding-bottom: 4px;
+	margin: 1px -1px -5px -2px;
+	color: white;
+	padding-top: 4px;
+	background-repeat: no-repeat;
+	font-family: Verdana, Arial;
+	height: 11px;
+	background-color: #3D5FA3;
+	text-decoration: none;
+}
+a.clsTabSelected:hover
+{
+	padding-right: 2px;
+	background-position: left top;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 10px;
+	background-attachment: scroll;
+	padding-bottom: 4px;
+	margin: 1px -1px -5px -2px;
+	color: white;
+	padding-top: 4px;
+	background-repeat: no-repeat;
+	font-family: Verdana, Arial;
+	height: 11px;
+	background-color: #3D5FA3;
+	text-decoration: none;
+}
+A.clsCDBSummaryAlert:active
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: transparent
+}
+A.clsCDBSummaryAlert:visited
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+A.clsCDBSummaryAlert:link
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+A.clsCDBSummaryAlert:hover
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: blue;
+    FONT-FAMILY: Verdana, Arial
+}
+
+A.RadarMenu:link
+{
+	border-top-width: 2px;
+	padding-right: 2px;
+	padding-left: 2px;
+	font-weight: bolder;
+	border-left-width: 2px;
+	font-size: 10px;
+	border-left-color: black;
+	border-bottom-width: 2px;
+	border-bottom-color: black;
+	padding-bottom: 1px;
+	color: white;
+	border-top-color: black;
+	padding-top: 1px;
+	font-family: Verdana, Arial;
+	border-right-width: 2px;
+	text-decoration: none;
+	border-right-color: black;
+}
+A.RadarMenu:visited
+{
+	border-top-width: 2px;
+	padding-right: 2px;
+	padding-left: 2px;
+	font-weight: bolder;
+	border-left-width: 2px;
+	font-size: 10px;
+	border-left-color: black;
+	border-bottom-width: 2px;
+	border-bottom-color: black;
+	padding-bottom: 1px;
+	color: white;
+	border-top-color: black;
+	padding-top: 1px;
+	font-family: Verdana, Arial;
+	border-right-width: 2px;
+	text-decoration: none;
+	border-right-color: black;
+}
+A.RadarMenu:active
+{
+	border-top-width: 2px;
+	padding-right: 2px;
+	padding-left: 2px;
+	font-weight: bolder;
+	border-left-width: 2px;
+	font-size: 10px;
+	border-left-color: black;
+	border-bottom-width: 2px;
+	border-bottom-color: black;
+	padding-bottom: 1px;
+	color: white;
+	border-top-color: black;
+	padding-top: 1px;
+	font-family: Verdana, Arial;
+	border-right-width: 2px;
+	text-decoration: none;
+	border-right-color: black;
+}
+A.RadarMenu:hover
+{
+	border-right: black 1px solid;
+	padding-right: 2px;
+	border-top: black 1px solid;
+	padding-left: 2px;
+	font-weight: bolder;
+	font-size: 10px;
+	padding-bottom: 1px;
+	border-left: black 1px solid;
+	color: black;
+	padding-top: 1px;
+	border-bottom: black 1px solid;
+	font-family: Verdana, Arial;
+	background-color: #FAFAFA;
+}
+/*
+These are new classes for the header table and its enclosing div 
+*/
+DIV.clsHeaderDiv 
+{
+	overflow:hidden;z-index:3;visibility:hidden;position:absolute;
+	
+}
+TABLE.clsHeaderTable {
+	FONT-SIZE: 10pt; BACKGROUND-IMAGE: none; BACKGROUND-REPEAT: repeat; FONT-FAMILY: Verdana, Arial; BACKGROUND-COLOR: transparent; 
+}
+/* This was there for clsHeader Table removed by PrasannaP. 
+   Removed cause, Misplesses the columns
+   table-layout: fixed; 
+*/
+/*End of addition for fixed header implementation*/
+/* Added By Shrikant on 1 July 2008 ReqID WAF3_PB_64*/
+A
+{
+    cursor:hand;
+}
+/* End Addition By Shrikant on 1 July 2008 ReqID WAF3_PB_64*/
+A:active
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: transparent
+}
+A:visited
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+A:link
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+A:hover
+{
+	font-weight: lighter;
+	font-size: 7pt;
+	color: blue;
+	font-family: Verdana, Arial;
+}
+A:inactive
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+
+/* Added By - PushkarK On - Tuesday, December 13, 2005 For Req.ID. - WAF3_GEN_1 */
+BODY.clsBodylnks
+{
+	BACKGROUND-COLOR: #4E7DD1;
+}
+
+TABLE.clsTableBannerFrame:
+{
+	BORDER: 0;
+	WIDTH: 100%;
+	BACKGROUND-IMAGE: none;
+}
+
+TABLE.clsTableNavLinks:
+{
+	BORDER: 0;
+	WIDTH: 100%;
+	BACKGROUND-IMAGE: none;
+}
+
+TR.clsTRBanner
+{
+	BORDER-RIGHT: thin;
+	BORDER-LEFT: thin;
+	BORDER-TOP: thin;
+	BORDER-BOTTOM: thin;	
+}
+
+TR.clsTRNavLinks
+{
+	BORDER-LEFT: thin;
+	BORDER-RIGHT: thin;
+	BORDER-TOP: thin;
+	BORDER-BOTTOM: thin;
+	
+	HEIGHT: 30px;
+	BACKGROUND: url(../../Images/cssImages/blue_color_2.gif);
+}
+
+a.clsNavTab
+{
+	COLOR: #ffffff;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: none;
+    POSITION: relative;  
+}
+	
+a.clsNavTab:visited
+{
+    COLOR: #ffffff;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: none;
+    POSITION: relative;  
+}
+	
+a.clsNavTab:hover
+{
+    COLOR: #ffffff;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: underline;
+    POSITION: relative;   
+}
+
+a.clsSelected
+{
+	COLOR: #003091;
+    FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: none;    
+  
+    PADDING-LEFT: 5px;
+    PADDING-RIGHT: 5px;
+    PADDING-BOTTOM: 2px;
+
+    POSITION: relative; 
+	BACKGROUND: url(../../Images/cssImages/grey-color.gif) repeat-x;
+}
+
+a.clsSelected:visited
+{
+	COLOR: #003091;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+	FONT-FAMILY: Tahoma;
+
+	BORDER-TOP: groove thin 1px blue;
+	BORDER-LEFT: groove thin blue 1px ;
+
+	BORDER-BOTTOM: groove thin 1px #3366ff;
+	BORDER-RIGHT: groove thin 1px #3366ff;
+
+	PADDING-LEFT: 5px;
+	PADDING-RIGHT: 5px;	
+	PADDING-BOTTOM: 2px;
+	
+	POSITION: relative;
+	TEXT-DECORATION: none;
+
+	BACKGROUND: url(../../Images/cssImages/grey-color.gif) repeat-x;
+}
+
+a.clsSelected:hover
+{
+	COLOR: #003091;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+	FONT-FAMILY: Tahoma;
+
+	BORDER-TOP: groove thin 1px blue;
+	BORDER-LEFT: groove thin blue 1px ;
+
+	BORDER-BOTTOM: groove thin 1px #3366ff;
+	BORDER-RIGHT: groove thin 1px #3366ff;
+
+	PADDING-LEFT: 5px;
+	PADDING-RIGHT: 5px;	
+	PADDING-BOTTOM: 2px;
+	
+	POSITION: relative;
+	TEXT-DECORATION: underline;
+
+	BACKGROUND: url(../../Images/cssImages/grey-color.gif) repeat-x;
+}
+
+TD.clsLinkPageHeaderInner
+{
+	font-weight: bolder;
+	font-size: 10px;
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+	color: white;
+	font-family: Verdana, Arial;
+	background-color: #4E7DD1;	
+}
+/* Addition Ends By - PushkarK On - Tuesday, December 13, 2005 For Req.ID. - WAF3_GEN_1 */
+
+/* Added By - PushkarK On - Friday, December 23, 2005 For Req.ID. - WAF3_GEN_1 - NavMenuPane*/
+
+Body.clsNavMenuPaneBody
+{
+    BORDER-LEFT: #4E7DD1 6px solid;
+    BORDER-BOTTOM: #4E7DD1 6px solid;
+
+    MARGIN: 2px 0px 2px 0px; /* T,L,B,R */
+	BACKGROUND: url(../../Images/cssImages/NavMenuPaneBG.gif) no-repeat  #EEF6FF;
+}
+
+Table.clsTableNavMenu
+{
+	BORDER: 0;
+	HEIGHT: 20;
+	BACKGROUND-IMAGE: none;	
+}
+
+/* Parent Node */
+a.clsLinkParentNavMenu
+{
+	COLOR: #003091;
+    TEXT-DECORATION: none;
+    
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+     
+    POSITION: relative;  
+}
+
+a.clsLinkParentNavMenu:visited
+{
+	COLOR: #003091;
+    TEXT-DECORATION: none;
+    
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+     
+    POSITION: relative;  
+}
+
+a.clsLinkParentNavMenu:hover
+{
+	COLOR: #003091;
+    TEXT-DECORATION: underline;
+    
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+    
+    POSITION: relative;
+}
+
+a.clsLinkParentNavMenu:active
+{
+	COLOR: #003091;
+    TEXT-DECORATION: underline;
+    
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+     
+    POSITION: relative;  
+}
+
+TR.clsTRParentNavMenu
+{
+    TEXT-ALIGN: left;
+    POSITION: relative; 
+    height: 20;
+}
+
+TD.clsTDParentNavMenu
+{
+    TEXT-ALIGN: left;
+    POSITION: relative; 
+    height: 20;
+}
+
+TD.clsTDParentNavMenuImg
+{
+    height: 20;
+    vertical-align: top;
+}
+/* Parent Node Ends */
+
+
+/* Child Node */
+a.clsLinkChildNavMenu
+{
+	COLOR: #003091;
+    TEXT-DECORATION: none;
+    
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+       
+    POSITION: relative;  
+}
+
+a.clsLinkChildNavMenu:visited
+{
+	COLOR: #003091;
+    TEXT-DECORATION: none;
+    
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+       
+    POSITION: relative;  
+}
+
+a.clsLinkChildNavMenu:hover
+{
+	COLOR: #003091;
+    TEXT-DECORATION: underline;
+    
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+    
+    POSITION: relative;   
+}
+
+a.clsLinkChildNavMenu:active
+{
+	COLOR: #003091;
+    TEXT-DECORATION: underline;
+    
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+       
+    POSITION: relative;  
+}
+
+TR.clsTRChildNavMenu
+{
+    TEXT-ALIGN: left;
+    POSITION: relative;
+    height: 20;
+}
+
+TD.clsTDChildNavMenu
+{
+	COLOR: #003091;
+    TEXT-DECORATION: none;
+    
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+    POSITION: relative;
+    height: 20;
+}
+
+TD.clsTDChildNavMenuImg
+{
+    height: 20;
+    vertical-align: top;
+}
+/* Child Node Ends */
+
+
+/* Selected Node */
+a.clsLinkSelectedNavMenu
+{
+	COLOR: #003091;
+    TEXT-DECORATION: none;
+    
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+       
+    POSITION: relative; 
+}
+
+a.clsLinkSelectedNavMenu:visited
+{
+	COLOR: #003091;
+    TEXT-DECORATION: none;
+    
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+       
+    POSITION: relative;
+}
+
+a.clsLinkSelectedNavMenu:hover
+{
+	COLOR: #003091;
+    TEXT-DECORATION: underline;
+    
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+    
+    POSITION: relative;
+}
+
+a.clsLinkSelectedNavMenu:active
+{
+	COLOR: #003091;
+    TEXT-DECORATION: underline;
+    
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+       
+    POSITION: relative;
+}
+
+TR.clsTRSelectedNavMenu
+{
+    TEXT-DECORATION: none;    
+    POSITION: relative; 
+	height: 20;
+}
+
+TD.clsTDSelectedNavMenu
+{
+    TEXT-DECORATION: none;    
+    POSITION:  relative; 
+	BACKGROUND: url(../../Images/cssImages/NavMenuselectionBG.gif) no-repeat;
+	background-position: middle middle;
+	height: 20;
+}
+
+TD.clsTDSelectedNavMenuImg
+{
+    height: 20;
+    vertical-align: top;
+}
+/* Selected Node Ends*/
+
+#clsDivNavMenu
+{
+	overflow:auto;
+	scroll:auto;
+	SCROLLBAR-FACE-COLOR:#D3E5FC;
+	SCROLLBAR-HIGHLIGHT-COLOR:#EEF6FF;
+	SCROLLBAR-SHADOW-COLOR:#EEF6FF;
+	SCROLLBAR-ARROW-COLOR:#3D5FA3;
+	SCROLLBAR-TRACK-COLOR:#EEF6FF;
+	SCROLLBAR-BASE-COLOR:#E0E7EF;
+	scrollbar-darkshadow-color:#EEF6FF;
+	scrollbar-3dLight-Color:#EEF6FF;
+}
+/* Addition Ends By - PushkarK On - Friday, December 23, 2005 For Req.ID. - WAF3_GEN_2 - NavMenuPane*/
+
+
+#clsDivNavFavMenu
+{
+	overflow:auto;
+	color: White;
+	
+	FONT-WEIGHT: Bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+	TEXT-DECORATION: none;    
+    POSITION: relative;     
+	
+	background-color: #4E7DD1;
+	scroll:auto;
+	SCROLLBAR-FACE-COLOR:#D3E5FC;
+	SCROLLBAR-HIGHLIGHT-COLOR:#EEF6FF;
+	SCROLLBAR-SHADOW-COLOR:#EEF6FF;
+	SCROLLBAR-ARROW-COLOR:#3D5FA3;
+	SCROLLBAR-TRACK-COLOR:#EEF6FF;
+	SCROLLBAR-BASE-COLOR:#E0E7EF;
+	scrollbar-darkshadow-color:#EEF6FF;
+	scrollbar-3dLight-Color:#EEF6FF;
+}
+
+/* Child Node */
+a.clsLinkFavNavMenu, a.clsLinkFavNavMenu:visited
+{
+	COLOR: #ffffff;
+    TEXT-DECORATION: none;
+    
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+       
+    POSITION: relative;  
+     /* padding: 2 2 4 2; Commented By Shrikant By For WAF3_GEN_18*/
+}
+
+a.clsLinkFavNavMenu:hover
+{
+	COLOR: #ffffff;
+    TEXT-DECORATION: underline;
+    
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+    
+    POSITION: relative;   
+}
+
+a.clsLinkFavNavMenu:active
+{
+	COLOR: #ffffff;
+    TEXT-DECORATION: underline;
+    
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+       
+    POSITION: relative;  
+}
+TD.clsFavoriteChildTDImg
+{
+    vertical-align: top;
+    border: none;
+}
+
+THead.clsTHeadFavoritesNavMenu
+{
+	background-color: #D3E5FC;
+	color: #003091;
+	FONT-WEIGHT: Bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+	
+	TEXT-DECORATION: none;    
+	TEXT-ALIGN: left;
+    POSITION: relative; 
+}
+
+Tabel.clsTableNavFavMenu
+{
+	BORDER: 0;
+	BACKGROUND-IMAGE: none;	
+}
+
+/* Added By NileshD 6 Jan 2006*/
+TR.clsTRBody
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	color: #000000;
+	padding-top: 2pt;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #BED5F5;
+
+}
+/* Added By NileshD REQID- WAF3_PB_10*/
+
+/* Added By - PushkarK On - Friday, February 24, 2006 For Req.ID. - WAF3_CDB_20 - DrillDown Enhancements*/
+BODY.clsCDBBody
+{
+    BORDER-RIGHT: 0px;
+    BORDER-LEFT: 0px;
+    BORDER-BOTTOM: 0px;
+    PADDING-TOP: 0px;
+    FONT-SIZE: 0pt;
+    margin: 0px 0px 0px 0px; /* T,L,B,R */
+    LINE-HEIGHT: 0;
+    BACKGROUND-REPEAT: no-repeat;
+    BACKGROUND-COLOR: white;
+    COLOR: white;
+
+	SCROLLBAR-FACE-COLOR:#D3E5FC; 
+	SCROLLBAR-HIGHLIGHT-COLOR:#EEF6FF; 
+	SCROLLBAR-SHADOW-COLOR:#EEF6FF; 
+	SCROLLBAR-ARROW-COLOR:#3D5FA3; 
+	SCROLLBAR-TRACK-COLOR:#EEF6FF; 
+	SCROLLBAR-BASE-COLOR:#E0E7EF; 
+	scrollbar-darkshadow-color:#EEF6FF;
+	scrollbar-3dLight-Color:#EEF6FF;
+}
+/* Addition Ends By - PushkarK On - Friday, February 24, 2006 For Req.ID. - WAF3_CDB_20 - DrillDown Enhancements*/
+
+/* Added By - PushkarK On - Thursday, June 01, 2006 For Hotfix ID. - 2.0.12-SP4-WAF*/
+TD.Locked, TH.Locked
+
+{
+
+background-color: #D3E4FB;
+
+font-weight: bold;
+
+border-right: 1px solid silver;
+
+}
+/* Addition Ends By - PushkarK On - Thursday, June 01, 2006 For Hotfix ID. - 2.0.12-SP4-WAF*/
+/*WAF3_PB_30 UmeshJ Aug 10, 2006*/
+TD.clsTDFirstColumn
+{
+	border-right: 1px groove;
+	padding-right: 1pt;
+	border-top: 1px groove;
+	padding-left: 1pt;
+	font-weight: bold;
+	padding-bottom: 1pt;
+	border-left: 1px groove;
+	padding-top: 1pt;
+	border-bottom: 1px groove;
+	background-color: lightgrey;
+}
+TH.clsTHHeadFirstColumn
+{
+	border-right: 1px groove;
+	padding-right: 1pt;
+	border-top: 1px groove;
+	padding-left: 1pt;
+	font-weight: bold;
+	padding-bottom: 1pt;
+	border-left: 1px groove;
+	padding-top: 1pt;
+	border-bottom: 1px groove;
+	background-color: lightgrey;
+}
+/* WAF3_WF_2: Webform Workflow Starts*/
+div.clsDivWF
+{
+	height: 400px;
+	overflow: auto;
+}
+table.clsWFtable
+{
+	font-size: 10pt;
+    background-image: none;
+    font-family: Verdana, Arial;
+    background-color: transparent;
+    width:99.9%;
+    height:100%;
+}
+tr.clsTRDesignerBody
+{
+	background-image: url(../../images/cssImages/Workflow/WF_DesignerGrid.gif);
+	background-repeat: repeat;
+	width:99.9%;
+	height:100%;
+}
+
+td.clsRectSubmitStage
+{
+	border-style: none; 
+	width: 190px;
+	height: 55px;
+	vertical-align: middle;
+	text-align: center;	
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+		
+	padding: 0px 15px 0px 15px;
+	background-image: url(../../images/cssImages/Workflow/WF_SubmitStageBG.gif);
+	background-repeat: no-repeat;
+}
+
+td.clsRectArchiveStage
+{
+	border-style: none; 
+	width: 190px;
+	height: 55px;
+	vertical-align: middle;
+	text-align: center;	
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+		
+	padding: 0px 15px 0px 15px;
+	background-image: url(../../images/cssImages/Workflow/WF_ArchiveStageBG.gif);
+	background-repeat: no-repeat;
+}
+
+td.clsRectUserStage
+{
+	border-style: none;
+	width: 190px;
+	height: 55px;
+	vertical-align: middle;
+	text-align: center;	
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+	
+	padding: 0px 25px 0px 25px;
+	background-image: url(../../images/cssImages/Workflow/WF_UserStageBG.gif);
+	background-repeat: no-repeat;
+}
+
+td.clsRectSystemStage
+{
+	border-style: none;
+	width: 190px;
+	height: 55px;
+	vertical-align: middle;
+	text-align: center;	
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+	
+	padding: 0px 25px 0px 25px;
+	background-image: url(../../images/cssImages/Workflow/WF_SystemStageBG.gif);
+	background-repeat: no-repeat;
+}
+
+td.clsRectTimerStage
+{
+	border-style: none;
+	width: 190px;
+	height: 55px;
+	vertical-align: middle;
+	text-align: center;	
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+	
+	padding: 0px 25px 0px 25px;
+	background-image: url(../../images/cssImages/Workflow/WF_TimerStageBG.gif);
+	background-repeat: no-repeat;
+}
+
+td.clsRectStageWait
+{
+	width: 300px;
+	height: 55px;
+	vertical-align: middle;
+	text-align: left;	
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+	
+	padding: 0px 15px 0px 15px;
+	background-image: url(../../images/cssImages/Workflow/WF_EventWait.gif);
+	background-repeat: no-repeat;
+}
+
+td.clsRectStageWaitForOthers
+{
+	width: 190px;
+	height: 55px;
+	vertical-align: middle;
+	text-align: left;	
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+	
+	padding: 0px 15px 0px 15px;
+	background-image: url(../../images/cssImages/Workflow/WF_EventWaitForOthers.gif);
+	background-repeat: no-repeat;
+}
+
+td.clsRectEventApprove
+{
+	width: 300px;
+	height: 55px;
+	vertical-align: middle;
+	text-align: center;	
+	
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+	
+	padding: 0px 25px 0px 25px;
+	background-image: url(../../images/cssImages/Workflow/WF_EventApprove.gif);
+	background-repeat: no-repeat;
+}
+
+td.clsRectEventReject
+{
+	width: 300px;
+	height: 55px;
+	vertical-align: middle;
+	text-align: center;	
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+		
+	padding: 0px 25px 0px 25px;
+	background-image: url(../../images/cssImages/Workflow/WF_EventReject.gif);
+	background-repeat: no-repeat;
+}
+
+td.clsEventDetailCap
+{
+	vertical-align: top;
+	text-align: right;
+	width: 10%;
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+	font-weight: bold;
+}
+td.clsEventDetailText
+{
+	vertical-align: top;
+	text-align: left;	
+	width: 90%;
+	
+    font-family: Verdana, Arial;
+    font-size: 8pt;
+}
+
+td.clsVerticalLine
+{
+	width: 1px;
+	height: 55px;
+	background-image: url(../../images/cssImages/Workflow/lineV.gif);
+	background-position: right top;
+	background-repeat: repeat-y;
+		
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+
+td.clsHorizontalLine
+{
+	width: 50px;
+	height: 1px;
+	background-image: url(../../images/cssImages/Workflow/lineH.gif);
+	background-position: left center;
+	background-repeat: repeat-x;
+	
+	margin:0px 0px 0px0px;
+	padding:0px 0px 0px0px;
+}
+
+
+td.clsVericleLineGap
+{
+	height: 11px;
+	background-image: url(../../images/cssImages/Workflow/lineV.gif);
+	background-position: right top;
+	background-repeat: repeat-y;
+	
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+
+td.clsDownArrow
+{
+	width: 10px;
+	height: 5px;
+	background-image: url(../../images/cssImages/Workflow/arrow_down.gif);
+	background-position: center top;
+	background-repeat: no-repeat;
+	
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+/* WAF3_WF_2: Webform Workflow Ends*/
+
+
+/* WAF3_PB_47: Context Menu: Start */
+div.ContextMenu
+{
+	border-right: black 1px outset;
+	border-top: black 1px outset;
+	font-weight: lighter;
+	font-size: 10px;
+	z-index: 20;
+	background: #f7f7f7;
+	border-left: black 1px outset;
+	border-bottom: black 1px outset;
+	font-family: Verdana, Arial;
+	position: absolute;
+}
+tr.CtMn_Node
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	cursor: default;
+	color: black;
+}
+tr.CtMn_Node_Hover
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	background-color: #c4ddfc;
+	cursor: default;
+	color: black;
+}
+tr.CtMn_Node_Disabled
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	cursor: default;
+	color: Gray;
+}
+td.CtMn_LeftFill
+{
+	background-repeat: repeat-y;
+	background-image:url(../../Images/cssImages/CtMn_LeftFill.jpg);
+	width:20px;	
+}
+td.CtMn_Hr
+{
+	height:5px;
+	vertical-align: bottom; 
+	background-repeat: repeat-x;
+	background-image: url(../../images/cssImages/line_CtMn_Hr.gif);
+}
+td.CtMn_LeftFill_Hr
+{
+	background-image:url(../../Images/cssImages/CtMn_LeftFill.jpg);
+	background-repeat:repeat-y;
+	width:20px;
+	height:5px;
+}
+/* WAF3_PB_47: Context Menu: End */
+
+/* Modified for WAF3_PB_47 : Start */
+/* Dropdown Menu START*/
+td.Mn_LeftFill
+{
+	background-repeat: repeat-y;
+	background-image:url(../../Images/cssImages/Mn_LeftFill.jpg);
+	width: 20px;	
+}
+td.Mn_Hr
+{
+	height: 5px;
+	vertical-align: bottom; 
+	background-repeat: repeat-x;
+	background-image: url(../../images/cssImages/line_Mn_Hr.gif);
+}
+td.Mn_LeftFill_Hr
+{
+	background-image:url(../../Images/cssImages/Mn_LeftFill.jpg);
+	background-repeat:repeat-y;
+	width: 20px;
+	height: 5px;
+}
+Div.DropdownMenu
+{
+	border-right: black 1px outset;
+	border-top: black 1px outset;
+	font-weight: lighter;
+	font-size: 10px;
+	z-index: 20;
+	background: #f7f7f7; /*#98bee7;*/
+	visibility: hidden;
+	border-left: black 1px outset;
+	border-bottom: black 1px outset;
+	font-family: Verdana, Arial;
+	position: absolute;
+	top: -300px;
+}
+TR.Menu_HR
+{
+	height:3px;
+	vertical-align:middle;  
+	background-repeat:repeat-x; 
+	background-image : url(../../images/cssImages/line_HR.gif);
+}
+TR.MenuSelected_Normal
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	cursor: default;
+	color: black;
+}
+TR.MenuSelected_Hover
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	background-color: #c4ddfc;
+	/*background-image: url(../../Images/cssImages/Menu.gif);*/
+	cursor: default;
+	color: black;
+}
+A.Actions:link
+{
+	border-right: black 1px outset;
+	border-top: black 1px outset;
+	border-left: black 1px outset;
+	border-bottom: black 1px solid;
+	font-size: 8pt;
+	font-family: Verdana;
+	cursor: default;	
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;    
+}
+A.Actions:active
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	cursor: default;	
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;    
+}
+A.Actions:visited
+{
+	border-right: black 1px outset;
+	border-top: black 1px outset;
+	border-left: black 1px outset;
+	border-bottom: black 1px solid;
+	font-size: 8pt;
+	font-family: Verdana;
+	cursor: default;	
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;
+}
+A.Actions:hover
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	background-color: #f7f7f7; /*#98bee7;*/
+	cursor: default;
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;    
+}
+A.Actions_Selected:link
+{
+	border-right: black 1px outset;
+	border-top: black 1px outset;
+	border-left: black 1px outset;
+	border-bottom: black thin;
+	PADDING-LEFT: 8px;
+	padding-right: 6px;
+	font-weight: lighter;
+	font-size: 8pt;
+	padding-bottom: 1px;
+	cursor: default;
+	color: black;
+	padding-top: 1px;
+	font-family: Verdana;
+	background-color: #f7f7f7; /*#98bee7;*/
+}
+A.Actions_Selected:active
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	cursor: default;	
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;    
+	background-color: #f7f7f7; /*#98bee7;*/
+}
+A.Actions_Selected:visited
+{
+	border-right: black 1px outset;
+	border-top: black 1px outset;
+	border-left: black 1px outset;
+	border-bottom: black 1px;
+	font-size: 8pt;
+	font-family: Verdana;
+	cursor: default;	
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;	
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;
+    background-color: #f7f7f7; /*#98bee7;*/
+}
+A.Actions_Selected:hover
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	cursor: default;	
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;    
+	background-color: #f7f7f7; /*#98bee7;*/
+}
+/* Dropdown Menu END*/
+/* Modification for WAF3_PB_47: Ends */
+
+/* Added By Ninad Text Area*/
+div.clsDivTextArea
+{
+ BORDER-TOP: gainsboro 1px solid; OVERFLOW: scroll; BORDER-LEFT: gainsboro 1px solid;
+}
+/*End Addition By Ninad Text Area*/
+TR.clsTROddRow
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #f7fcfe;
+}
+
+/*WAF3_QRB_16 START :  Added for Server Grid By PushkarK*/
+
+.ServerGrid_clsTREvenRow
+{
+    border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #E7F1FE;
+}
+
+.ServerGrid_clsTROddRow
+{
+	 BORDER-RIGHT: thin;
+    /*PADDING-RIGHT: 2pt;*/
+    BORDER-TOP: thin;
+    /*PADDING-LEFT: 2pt;*/
+    FONT-SIZE: 8pt;
+    /*PADDING-BOTTOM: 2pt;*/
+    /*MARGIN: 2pt;*/
+    BORDER-LEFT: thin;
+    COLOR: black;
+    /*PADDING-TOP: 2pt;*/
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    /*HEIGHT: 18px;*/
+	background-color: #EFFBFE;
+}
+
+.ServerGrid_clsTRColumnHeader
+{
+    border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	padding-bottom: 1pt;
+	border-left: thin;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-weight: normal;
+	font-size: 11px;
+	color: black;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background-color: #BED5F4;
+}
+
+.ServerGrid_clsGroupBox
+{
+    border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	padding-bottom: 1pt;
+	border-left: thin;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-weight: normal;
+	font-size: 11px;
+	color: black;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background-color: #BED5F4;
+}
+
+.ServerGrid_clsTRGroupRow
+{
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	padding-bottom: 1pt;
+	border-left: thin;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-weight: normal;
+	font-size: 11px;
+	color: black;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background-color: #BED5F4;
+}
+
+.ServerGrid_clsFilterDDL
+{
+	border-right: thin;
+	border-top: thin;
+	font-size: 7pt;
+	border-left: thin;
+	color: black;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	background-color: #E7F1FE;
+}
+
+.ServerGrid_clsFilterDDLHover
+{
+	border-right: thin;
+	border-top: thin;
+	font-size: 7pt;
+	border-left: thin;
+	color: black;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	background-color: #BED5F4;
+}
+.ServerGrid_clsTDSortColHeader
+{
+	
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	font-weight: normal;
+	font-size: 11px;
+	padding-bottom: 1pt;
+	border-left: thin;
+	color: white;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background: #3D5FA3;	
+	background-image: url(../../Images/cssImages/columnhdr_sel_bg.gif);  
+}
+
+.ServerGrid_clsTDNoSortColHeader
+{
+	BORDER-COLOR: Gray;
+	BORDER-STYLE: solid;	
+	BORDER-LEFT-COLOR:White;
+	BORDER-TOP-COLOR:White;
+	BORDER-LEFT-WIDTH:1px;
+	border-right-width:0px;
+	BORDER-TOP-WIDTH:1px;
+	BORDER-BOTTOM-WIDTH:1px;	
+	TEXT-ALIGN :left ;
+    PADDING-RIGHT: 1pt;    
+    PADDING-LEFT: 1pt;
+    FONT-WEIGHT:bold;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 1pt;    
+    COLOR: black;
+    PADDING-TOP: 1pt;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 22px;
+	background-color: #BED5F4;
+}
+
+/*WAF3_QRB_16 END : ---------------------------------------*/
+/* //'DECLARATION: THIS IS A FRAMEWORK CODE ITEM. IT IS NOT EXPECTED TO MODIFY THIS AT THE APPLICATION LEVEL */
+#tree {
+	FONT-FAMILY: Verdana, Arial;
+	font-size: 7pt;
+}
+#tree a {
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 7pt;
+    FONT-WEIGHT: lighter;
+    text-decoration: none;
+}
+
+#tree A:hover:unknown{
+    COLOR: red;
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 7pt;
+    FONT-WEIGHT: lighter;
+    text-decoration: none;
+}
+
+#tree img {
+	border: 0px;
+	width: 19px;
+	height: 16px;
+}
+
+#inactive
+{
+	font-weight: normal;
+	font-size: 9px;
+	background-image: none;
+	margin: 2pt 2pt 2pt 1px;
+	color: gray;
+	font-family: Verdana, Arial;
+}
+
+BODY.clsBody
+{
+    BORDER-RIGHT: #4E7DD1 6px solid;
+    PADDING-LEFT: 2px;
+    BORDER-LEFT: #000000 0px solid;
+    PADDING-TOP: 0px;
+    FONT-SIZE: 7pt;
+    margin: 2px 0px 2px 0px; /* T,L,B,R */
+    LINE-HEIGHT: 1;
+    BORDER-BOTTOM: #4E7DD1 6px solid;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    /*BACKGROUND-COLOR: #EEF6FF;*/
+	SCROLLBAR-FACE-COLOR:#D3E5FC; 
+	SCROLLBAR-HIGHLIGHT-COLOR:#EEF6FF; 
+	SCROLLBAR-SHADOW-COLOR:#EEF6FF; 
+	SCROLLBAR-ARROW-COLOR:#3D5FA3; 
+	SCROLLBAR-TRACK-COLOR:#EEF6FF; 
+	SCROLLBAR-BASE-COLOR:#E0E7EF; 
+	scrollbar-darkshadow-color:#EEF6FF;
+	scrollbar-3dLight-Color:#EEF6FF;
+}
+
+BODY.clsPageBody
+{ 
+	BORDER-RIGHT: #4e7dd1 6px solid; 
+	PADDING-LEFT: 2px;
+	SCROLLBAR-FACE-COLOR: #d3e5fc; 
+	FONT-SIZE: 7pt; 
+	MARGIN: 2px 0px; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #eef6ff; 
+	BORDER-LEFT: #000000 0px solid; 
+	SCROLLBAR-SHADOW-COLOR: #eef6ff; 
+	SCROLLBAR-3DLIGHT-COLOR: #eef6ff; 
+	LINE-HEIGHT: 1; 
+	SCROLLBAR-ARROW-COLOR: #3d5fa3; 
+	PADDING-TOP: 0px; 
+	SCROLLBAR-TRACK-COLOR: #eef6ff; 
+	BORDER-BOTTOM: #4e7dd1 6px solid; 
+	BACKGROUND-REPEAT: repeat; 
+	FONT-FAMILY: Verdana, Arial; 
+	SCROLLBAR-DARKSHADOW-COLOR: #eef6ff; 
+	SCROLLBAR-BASE-COLOR: #e0e7ef; /*BACKGROUND-COLOR: #9BBFF0*/ 
+	}
+
+/*WAF3_PB_41 Start*/
+BODY.clsVerticalNavBody
+{
+    BORDER-RIGHT: #4E7DD1 1px solid;/*changed size from 6 to 1*/
+    BORDER-LEFT: #000000 0px solid;
+    PADDING-TOP: 0px;
+    FONT-SIZE: 7pt;
+    margin: 2px 0px 2px 0px; /* T,L,B,R */
+    LINE-HEIGHT: 1;
+    BORDER-BOTTOM: #4E7DD1 6px solid;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    /*BACKGROUND-COLOR: #EEF6FF;*/
+	SCROLLBAR-FACE-COLOR:#D3E5FC; 
+	SCROLLBAR-HIGHLIGHT-COLOR:#EEF6FF; 
+	SCROLLBAR-SHADOW-COLOR:#EEF6FF; 
+	SCROLLBAR-ARROW-COLOR:#3D5FA3; 
+	SCROLLBAR-TRACK-COLOR:#EEF6FF; 
+	SCROLLBAR-BASE-COLOR:#E0E7EF; 
+	scrollbar-darkshadow-color:#EEF6FF;
+	scrollbar-3dLight-Color:#EEF6FF;
+}
+
+BODY.clsVerticalNavPageBody
+{ BORDER-RIGHT: #4e7dd1 6px solid; SCROLLBAR-FACE-COLOR: #d3e5fc; FONT-SIZE: 7pt; MARGIN: 2px 0px; SCROLLBAR-HIGHLIGHT-COLOR: #eef6ff; BORDER-LEFT: #4e7dd1 1px solid; SCROLLBAR-SHADOW-COLOR: #eef6ff; SCROLLBAR-3DLIGHT-COLOR: #eef6ff; LINE-HEIGHT: 1; SCROLLBAR-ARROW-COLOR: #3d5fa3; PADDING-TOP: 0px; SCROLLBAR-TRACK-COLOR: #eef6ff; BORDER-BOTTOM: #4e7dd1 6px solid; BACKGROUND-REPEAT: repeat; FONT-FAMILY: Verdana, Arial; SCROLLBAR-DARKSHADOW-COLOR: #eef6ff; SCROLLBAR-BASE-COLOR: #e0e7ef; /*BACKGROUND-COLOR: #9BBFF0*/ }
+
+BODY.clsHorizontalNavBody
+{
+    BORDER-RIGHT: #4E7DD1 6px solid;
+    BORDER-LEFT: #000000 0px solid;
+    PADDING-TOP: 0px;
+    FONT-SIZE: 7pt;
+    margin: 2px 0px 2px 0px; /* T,L,B,R */
+    LINE-HEIGHT: 1;
+    BORDER-BOTTOM: #4E7DD1 1px solid;/*changed size from 6 to 1*/
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    /*BACKGROUND-COLOR: #EEF6FF;*/
+	SCROLLBAR-FACE-COLOR:#D3E5FC; 
+	SCROLLBAR-HIGHLIGHT-COLOR:#EEF6FF; 
+	SCROLLBAR-SHADOW-COLOR:#EEF6FF; 
+	SCROLLBAR-ARROW-COLOR:#3D5FA3; 
+	SCROLLBAR-TRACK-COLOR:#EEF6FF; 
+	SCROLLBAR-BASE-COLOR:#E0E7EF; 
+	scrollbar-darkshadow-color:#EEF6FF;
+	scrollbar-3dLight-Color:#EEF6FF;
+}
+
+BODY.clsHorizontalNavPageBody
+{ BORDER-RIGHT: #4e7dd1 6px solid; SCROLLBAR-FACE-COLOR: #d3e5fc; FONT-SIZE: 7pt; MARGIN: 2px 0px; SCROLLBAR-HIGHLIGHT-COLOR: #eef6ff; BORDER-LEFT: #000000 0px solid; SCROLLBAR-SHADOW-COLOR: #eef6ff; SCROLLBAR-3DLIGHT-COLOR: #eef6ff; LINE-HEIGHT: 1; SCROLLBAR-ARROW-COLOR: #3d5fa3; PADDING-TOP: 0px; SCROLLBAR-TRACK-COLOR: #eef6ff; BORDER-BOTTOM: #4e7dd1 6px solid; BACKGROUND-REPEAT: repeat; FONT-FAMILY: Verdana, Arial; SCROLLBAR-DARKSHADOW-COLOR: #eef6ff; SCROLLBAR-BASE-COLOR: #e0e7ef; border-top: #4e7dd1 1px solid;/*<new property>*//*BACKGROUND-COLOR: #9BBFF0*/ }
+
+/*WAF3_PB_41 End*/
+
+BODY.clsBodylinks
+{
+	background:url('../../Images/cssImages/clsBody_bg.gif') #EEF6FF;
+}
+
+BODY.clsFullPageBody
+{
+    BORDER-RIGHT: #3D5FA3 6px solid;
+    PADDING-LEFT: 0px;
+    FONT-SIZE: 7pt;
+    MARGIN: 2pt;
+    LINE-HEIGHT: 1;
+    BORDER-BOTTOM: #3D5FA3 6px solid;
+    BORDER-LEFT: #3D5FA3 6px solid;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: white;
+	SCROLLBAR-FACE-COLOR:#ADC8EE; 
+	SCROLLBAR-HIGHLIGHT-COLOR:#ADC8EE; 
+	SCROLLBAR-SHADOW-COLOR:#ADC8EE; 
+	SCROLLBAR-ARROW-COLOR:#3D5FA3; 
+	SCROLLBAR-TRACK-COLOR:#ADC8EE; 
+	SCROLLBAR-BASE-COLOR:#E0E7EF; 
+	scrollbar-darkshadow-color:#ADC8EE;
+	scrollbar-3dLight-Color:#ADC8EE;
+}
+
+TABLE.clsTable
+{
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    BACKGROUND-COLOR: transparent; 
+}
+
+TABLE.clsGridTable
+{
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Verdana, Arial;
+	BACKGROUND-COLOR: #AEAEAE;
+}
+
+TR.clsTRSectionHeader
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-weight: normal;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background-color: #D3E4FB;
+}
+/*Added By NileshD on 11 Jan 2006*/
+THead.clsTRSectionHeader
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-weight: normal;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background-color: #D3E4FB;
+}
+TR.clsTRColumnHeader
+{
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	padding-bottom: 1pt;
+	border-left: thin;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-weight: normal;
+	font-size: 11px;
+	color: black;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background-color: #BED5F4;
+/*	background-image: url(../../Images/cssImages/columnhdr_bg.gif);  */
+
+}
+/* Added By NileshD on 3 Jan 2006 ReqID WAF3_PB_14*/
+THead.clsTRColumnHeader
+{
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	padding-bottom: 1pt;
+	border-left: thin;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-weight: normal;
+	font-size: 11px;
+	color: black;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background-color: #BED5F4;
+/*	background-image: url(../../Images/cssImages/columnhdr_bg.gif);  */
+}
+/* End of Addition By NileshD on 3 Jan 2006 ReqID WAF3_PB_14*/
+TR.clsTRRadarMenu
+{
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	font-weight: bolder;
+	font-size: 11px;
+	padding-bottom: 1pt;
+	border-left: thin;
+	color: white;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background-color: black;
+}
+TR.clsTRRadarCurrent
+{
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	font-weight: bolder;
+	font-size: 11px;
+	padding-bottom: 1pt;
+	border-left: thin;
+	color: red;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background-color: floralwhite;
+}
+TD.clsTDSortColHeader
+{
+	
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	font-weight: normal;
+	font-size: 11px;
+	padding-bottom: 1pt;
+	border-left: thin;
+	color: white;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background: #3D5FA3;	
+	background-image: url(../../Images/cssImages/columnhdr_sel_bg.gif);  
+}
+TR.clsTRPageFilters
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	color: #000000;
+	padding-top: 2pt;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #E7F1FE;
+}
+/* Added By NileshD on 3 Jan 2006 ReqID WAF3_PB_14*/
+TH.clsTDSortColHeader
+{
+	
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	font-weight: normal;
+	font-size: 11px;
+	padding-bottom: 1pt;
+	border-left: thin;
+	color: white;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background: #3D5FA3;	
+	background-image: url(../../Images/cssImages/columnhdr_sel_bg.gif);  
+}
+/* End of Addition By NileshD on 3 Jan 2006 ReqID WAF3_PB_14*/
+TD.clsTDColumnSeparator
+{
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	font-weight: bolder;
+	font-size: 1pt;
+	background-image: none;
+	padding-bottom: 1pt;
+	border-left: thin;
+	width: 1px;
+	color: black;
+	padding-top: 1pt;
+	border-bottom: thin;
+	height: 22px;
+	background-color: black;
+}
+/*Added By NIleshD REQID: WAF3_PB_14*/
+TH.clsTDColumnSeparator
+{
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	font-weight: bolder;
+	font-size: 1pt;
+	background-image: none;
+	padding-bottom: 1pt;
+	border-left: thin;
+	width: 1px;
+	color: black;
+	padding-top: 1pt;
+	border-bottom: thin;
+	height: 22px;
+	background-color: black;
+}
+TR.clsTRBlank
+{
+    PADDING-RIGHT: 2pt;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 7pt;
+    BACKGROUND-IMAGE: none;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    COLOR: #000000;
+    PADDING-TOP: 2pt;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #ffffff
+}
+TR.clsTREven
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	color: #000000;
+	padding-top: 2pt;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #E7F1FE;
+}
+TR.clsTREvenRow
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #E7F1FE;
+}
+/* Added By NileshD REQID- WAF3_PB_10*/
+TR.clsTRNumericPaging
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-size: 8pt;
+	/*padding-bottom: 2pt;
+	padding-top: 2pt;*/
+	margin: 2pt;
+	color: #000000;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	height: 6px;
+	BACKGROUND-COLOR: #E7F1FE;
+}
+/* End Of Addition By NileshD REQID- WAF3_PB_10*/
+TR.clsTRGroupHeader
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-weight: bold;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	color: #000000;
+	padding-top: 2pt;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #BED5F5;
+}
+
+TR.clsTROdd
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #EFFBFE;
+}
+/*Added By NileshD on 28 Dec 2005 for REQIDWAF3_WF_2*/
+TR.clsTRPartialApprover
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: Orange;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #EFFBFE;
+}
+
+TR.clsTRPageHeader
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-weight: lighter;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	color: black;
+	padding-top: 2pt;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #D9E9FF;
+}
+TD.clsTDLabel
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt 4pt 2pt 2pt;
+	color: black;
+	padding-top: 2pt;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	background-color: #BED5F4;
+	text-align: right;
+}
+TD.clsTDBulleted
+{
+    BACKGROUND: #8aabcd
+}
+TD.clsTDEven
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	color: #000000;
+	padding-top: 2pt;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	background-color: #BED5F4;
+}
+
+TD.clsTDOdd
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	background-color: #FAFAFA;
+}
+TD.clsTDHeader
+{
+	border-right: thin;
+	padding-right: 0pt;
+	border-top: thin;
+	font-size: 8pt;
+	border-left: thin;
+	color: black;
+	border-bottom: thin;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	background-color: #c9e7ff;
+}
+
+TD.clsTDColumnHeader
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-weight: lighter;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	background-color: #DBEAF5;
+}
+
+TD.clsTDGroupFooter
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 8pt;
+    BACKGROUND-IMAGE: none;
+    COLOR: black;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #bbddff
+}
+
+.ButtonStyle
+{
+    FONT-SIZE: 8pt! important;
+    TEXT-TRANSFORM: capitalize;
+    WIDTH: 60pt;
+    COLOR: black! important;
+    FONT-FAMILY: Arial;
+    HEIGHT: 18pt;
+    TEXT-ALIGN: center
+}
+
+TD.clsGraphHeading
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #6699cc
+}
+
+TR.clsTRSelected
+{
+	padding-right: 1px;
+	padding-left: 1px;
+	font-weight: bold;
+	font-size: 8pt;
+	padding-bottom: 1px;
+	margin: 1px;
+	color: #000000;
+	padding-top: 1px;
+	font-family: Verdana, Arial;
+	background-color: #000000;
+}
+
+TD.clsTDTreeHeader
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+
+TEXTAREA.clsTextArea
+{
+	border-right: #cccccc 1px solid;
+	border-top: #cccccc 1px solid;
+	font-size: 8pt;
+	border-left: #cccccc 1px solid;
+	border-bottom: #cccccc 1px solid;
+	font-family: Verdana, Arial;
+	background-color: #FBFBFB;
+}
+
+INPUT.clsTextBox
+{
+	border-right: #cccccc 1px solid;
+	border-top: #cccccc 1px solid;
+	font-size: 8pt;
+	border-left: #cccccc 1px solid;
+	border-bottom: #cccccc 1px solid;
+	font-family: Verdana, Arial;
+	background-color: #ffffff;
+}
+/* Added By NileshD REQID -WAF3_PB_10*/
+INPUT.clsNewTextBox
+{
+	border-right: #cccccc 1px solid;
+	border-top: #cccccc 1px solid;
+	font-size: 8pt;
+	border-left: #cccccc 1px solid;
+	border-bottom: #cccccc 1px solid;
+	font-family: Verdana,Arial;
+	background-color: #ffffff;
+	height : 18px
+}
+/* End Of Addition By NileshD REQID -WAF3_PB_10*/
+
+/* Added By RajK REQID -WAF3_CDB_7*/
+INPUT.clsColorPaletteTextBox
+{
+	border-right: #cccccc 1px solid;
+	border-top: #cccccc 1px solid;
+	font-size: 8pt;
+	border-left: #cccccc 1px solid;
+	border-bottom: #cccccc 1px solid;
+	font-family: Verdana,Arial;
+	background-color: #ffffff;
+	height : 18px;
+}
+/* End Of Addition By RajK REQID -WAF3_CDB_7*/
+
+INPUT.clsTextBoxReadOnly
+{
+	border-right: #cccccc 1px solid;
+	border-top: #cccccc 1px solid;
+	font-weight: bold;
+	font-size: 8pt;
+	border-left: #cccccc 1px solid;
+	border-bottom: #cccccc 1px solid;
+	font-family: Verdana, Arial;
+	background-color: #FAFAFA;
+}
+
+INPUT.clsFileControl
+{
+	border-right: #cccccc 1px solid;
+	border-top: #cccccc 1px solid;
+	font-size: 8pt;
+	border-left: #cccccc 1px solid;
+	border-bottom: #cccccc 1px solid;
+	font-family: Verdana, Arial;
+	background-color: #FAFAFA;
+}
+
+INPUT.clsCheckBox
+/*
+Issue ID #19004 RajK
+#BI_26
+May 30 2005
+width: changed from 14px to 19px
+height: changed from 7px to 12px
+*/	
+{
+	font-size: 8pt;
+	border-left-color: #cccccc;
+	border-bottom-color: #cccccc;
+	border-top-style: none;
+	border-top-color: none;
+	font-family: Verdana, Arial;
+	border-right-style: none;
+	border-left-style: none;
+	background-color: none;
+	border-right-color: #cccccc;
+	border-bottom-style: none;
+	height: 12px; 
+	width: 19px;
+}
+INPUT.clsOptionButton
+{
+	font-size: 8pt;
+	border-left-color: #cccccc;
+	border-bottom-color: #cccccc;
+	border-top-style: none;
+	border-top-color: none;
+	font-family: Verdana, Arial;
+	border-right-style: none;
+	border-left-style: none;
+	background-color: none;
+	border-right-color: #cccccc;
+	border-bottom-style: none;
+	width: 14px;
+	height: 12px;  
+}
+
+SELECT.clsComboBox
+{
+	border-right: #cccccc 1px solid;
+	border-top: #cccccc 1px solid;
+	 /*Add by Vinay Purpose:-Mozilla support 06 Oct 2008*/
+	font-weight: normal;
+	/*Addtion End Mozilla support 06 Oct 2008*/
+	font-size: 8pt;
+	border-left: #cccccc 1px solid;
+	border-bottom: #cccccc 1px solid;
+	font-family: Verdana, Arial;
+}
+
+
+TD.clsTDWhiteBG
+{
+    PADDING-RIGHT: 1pt;
+    PADDING-LEFT: 1pt;
+    FONT-SIZE: 7pt;
+    PADDING-BOTTOM: 1pt;
+    MARGIN: 1pt;
+    COLOR: #000000;
+    PADDING-TOP: 1pt;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #FBFBFB;
+    TEXT-ALIGN: left
+}
+TD.clsHeader
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #336699
+}
+BODY.clsHelpBody
+{
+    BACKGROUND-IMAGE: url(../../Images/Q1.gif)
+}
+TD.clsTDHelp
+{
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #FBFBFB;
+}
+INPUT.clsButtonColor
+{
+    FONT-SIZE: 8pt;
+    TEXT-TRANSFORM: capitalize;
+    WIDTH: 60pt;
+    COLOR: tomato;
+    FONT-FAMILY: Arial;
+    HEIGHT: 18pt;
+    TEXT-ALIGN: center
+}
+TD.clsTDUSER
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Verdana;
+    TEXT-DECORATION: none
+}
+TD.clsTDPageHeader
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-weight: lighter;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	color: black;
+	padding-top: 2pt;
+	font-family: Arial, Verdana;
+	background-color: #c9e7ff;
+}
+TD.clsTDOddLabel
+{
+	padding-right: 1px;
+	padding-left: 1px;
+	font-size: 7pt;
+	padding-bottom: 1px;
+	margin: 1px;
+	color: black;
+	padding-top: 1px;
+	font-family: Verdana, Arial;
+	background-color: #FAFAFA;
+	text-align: right;
+}
+TD.clsTDEvenLabel
+{
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;
+    FONT-SIZE: 7pt;
+    PADDING-BOTTOM: 1px;
+    MARGIN: 1px;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #FBFBFB;
+    TEXT-ALIGN: right
+}
+TABLE.clsBorderTable
+{
+    BORDER-RIGHT: thin inset;
+    BORDER-TOP: thin inset;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: thin inset;
+    BORDER-BOTTOM: thin inset;
+    FONT-FAMILY: Verdana, Arial
+}
+A.clsHrefButton
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-STYLE: oblique;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: lightcyan;
+    TEXT-DECORATION: none
+}
+TD.clsTDNormal
+{
+	font-size: 10px;
+	color: white;
+	font-family: Verdana, Arial;
+	background-color: #b9a091;
+	text-align: center;
+}
+TD.clsTDSelected
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #000000;
+    TEXT-ALIGN: center
+}
+
+TD.clsTDMouseOver
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #eac0ae;
+    TEXT-ALIGN: center
+}
+DIV.clsDivKM
+{
+    BACKGROUND-COLOR: #ffffe8;
+}
+TD.clsLinkPageHeader
+{
+	font-weight: bolder;
+	font-size: 10px;
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+	color: white;
+	font-family: Verdana, Arial;
+	background-color: #3D5FA3;
+	
+}
+TR.clsTRLinkPageHeader
+{
+	font-weight: bolder;
+	font-size: 10px;
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+	color: white;
+	font-family: Verdana, Arial;
+	background-color: #660000;
+}
+
+BODY.clsTreeBody
+{
+	padding-left: 0px;
+	font-weight: bold;
+	font-size: 7pt;
+	margin: 0pt;
+	border-left: #4E7DD1 6px solid;
+	background-color: E0EFFF;
+	color: #000000;
+	line-height: 1;
+	border-bottom: #4E7DD1 6px solid;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	SCROLLBAR-FACE-COLOR: E0EFFF; 
+	SCROLLBAR-HIGHLIGHT-COLOR: E0EFFF; 
+	SCROLLBAR-SHADOW-COLOR: E0EFFF; 
+	SCROLLBAR-ARROW-COLOR: #3D5FA3; 
+	SCROLLBAR-TRACK-COLOR: transparent; 
+	SCROLLBAR-BASE-COLOR: #E0E7EF; 
+	scrollbar-darkshadow-color: E0EFFF;
+	scrollbar-3dLight-Color: E0EFFF;
+
+}
+
+BODY.clsTreeBody A.clTocHeading:active
+{
+    FONT-SIZE: 10px;
+    COLOR: maroon;
+    FONT-FAMILY: Verdana;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocHeading:hover
+{
+    FONT-SIZE: 10px;
+    COLOR: red;
+    FONT-FAMILY: Verdana;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocHeading:link
+{
+    FONT-SIZE: 10px;
+    COLOR: maroon;
+    FONT-FAMILY: Verdana;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocHeading:visited
+{
+    FONT-SIZE: 10px;
+    COLOR: maroon;
+    FONT-FAMILY: Verdana;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocItem:active
+{
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocItem:link
+{
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocItem:visited
+{
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+BODY.clsTreeBody A.clsTocItem:hover
+{
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+TD.clsTDMPPTasks
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: tan
+}
+TD.clsTDAllTasks
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: thistle
+}
+TD.clsTDAssignedTasks
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: darkturquoise
+}
+TD.clsTDOverAllocate
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #d8c4c8
+}
+TD.clsTDOverAllocateMPPTasks
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: peachpuff
+}
+TD.clsTDOverAllocateAssignedTasks
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #adc8d6
+}
+TD.clsTDCritical
+{
+    BORDER-RIGHT: thin;
+    PADDING-RIGHT: 2pt;
+    BORDER-TOP: thin;
+    PADDING-LEFT: 2pt;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2pt;
+    MARGIN: 2pt;
+    BORDER-LEFT: thin;
+    COLOR: red;
+    PADDING-TOP: 2pt;
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #e0e7ef
+}
+TD.clsTDCritical A
+{
+    COLOR: red
+}
+TD.clsTDCritical A:active
+{
+    COLOR: red
+}
+TD.clsTDCritical A:link
+{
+    COLOR: red
+}
+TD.clsTDCritical A:visited
+{
+    COLOR: red
+}
+DIV.clsDivDB
+{
+    OVERFLOW: auto;
+    WIDTH: 100%;
+    BACKGROUND-COLOR: #f5f5f5
+}
+TR.clsTRPageCaption
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-weight: bolder;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 20px;
+	background-color: #BED5F5;
+}
+/*Added By NileshD on 11 Jan 2006*/
+THead.clsTRPageCaption
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-weight: bolder;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 20px;
+	background-color: #BED5F5;
+}
+TR.clsTRMenu
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-weight: bolder;
+	font-size: 8pt;
+	background: url('../../Images/cssImages/Menu.gif');
+    background-image: url(../../Images/cssImages/Menu.gif); 
+	padding-bottom: 2pt;
+	margin: 2pt;
+	color: black;
+	padding-top: 2pt;
+	font-family: Arial, Verdana;
+	height: 15px;
+}
+
+TD.clsTDDBNormal
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	background-color: #00cc00;
+}
+TD.clsTDDBWarning
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	background-color: #ffff66;
+}
+TD.clsTDDBDanger
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: white;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	background-color: #ff3300;
+}
+/* Added By Shrikant B on 1 July 2008 ReqID WAF3_PB_64*/
+A.Menu
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	padding-top: 1px;
+	border-top-width: 0px;
+	font-weight: lighter;
+	border-left-width: 0px;
+	font-size: 10px;
+	border-left-color: white;
+	border-bottom-width: 0px;
+	border-bottom-color: white;
+	color: black;
+	border-top-color: white;
+	font-family: Verdana, Arial;
+	border-right-width: 0px;
+	text-decoration: none;
+	border-right-color: white;
+	/*cursor:hand; Commented by Vinay on 06 Oct. 2008 Purpose:-to support Mozilla Firefox*/
+	cursor:pointer; /*Addtion End by Vinay on 06 Oct. 2008*/
+}
+/* Added By Shrikant on 1 July 2008 ReqID WAF3_PB_64*/
+A.Menu:link
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	padding-top: 1px;
+	border-top-width: 0px;
+	font-weight: lighter;
+	border-left-width: 0px;
+	font-size: 10px;
+	border-left-color: white;
+	border-bottom-width: 0px;
+	border-bottom-color: white;
+	color: black;
+	border-top-color: white;
+	font-family: Verdana, Arial;
+	border-right-width: 0px;
+	text-decoration: none;
+	border-right-color: white;
+}
+
+A.Menu:visited
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	padding-top: 1px;
+	border-top-width: 2px;
+	font-weight: lighter;
+	border-left-width: 2px;
+	font-size: 10px;
+	border-left-color: white;
+	border-bottom-width: 2px;
+	border-bottom-color: white;
+	color: black;
+	border-top-color: white;
+	font-family: Verdana, Arial;
+	border-right-width: 2px;
+	text-decoration: none;
+	border-right-color: white;
+}
+
+A.Menu:active
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	padding-top: 1px;
+	border-top-width: 2px;
+	font-weight: lighter;
+	border-left-width: 2px;
+	font-size: 10px;
+	border-left-color: white;
+	border-bottom-width: 2px;
+	border-bottom-color: white;
+	color: black;
+	border-top-color: white;
+	font-family: Verdana, Arial;
+	border-right-width: 2px;
+	text-decoration: none;
+	border-right-color: white;
+}
+
+A.Menu:hover
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	padding-top: 1px;
+	border-right: black 0px solid;
+	border-top: black 0px solid;
+	font-weight: lighter;
+	font-size: 10px;
+	border-left: black 0px solid;
+	color: black;
+	border-bottom: black 0px solid;
+	font-family: Verdana, Arial;
+	background-color: #FFD695;
+}
+
+A.SetAsDefault:link
+{
+	font-weight: bolder;
+	font-size: 10px;
+	color: white;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+
+A.SetAsDefault:hover
+{
+	font-weight: bolder;
+	font-size: 10px;
+	color: white;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+A.SetAsDefault:visited
+{
+	font-weight: bolder;
+	font-size: 10px;
+	color: white;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+A.SetAsDefault:active
+{
+	font-weight: bolder;
+	font-size: 10px;
+	color: white;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+
+/*The "selected" class is used by velocity to render the tab of the page you're on*/
+#selected
+/*
+Issue ID #19004 RajK
+#BI_27
+May 30 2005
+Padding-left: changed from 5px to 2px
+width:20px added
+*/	
+{
+	padding-right: 2px;
+	padding-left: 2px;
+	font-weight: bold;
+	font-size: 10px;
+	padding-bottom: 4px;
+	color: white;
+	padding-top: 4px;
+	font-family: Verdana, Arial;
+	MARGIN: 1px -1px -1px 0px;
+	height: 11px;
+	width: 20px;
+	text-decoration: none;
+	background: url(../../Images/cssImages/navtab_sel_bg.gif) #3D5FA3 repeat-x;  
+}
+		
+/*The remaining tabs are actually links, so they need their own classes*/
+
+
+	
+a.navtab
+
+/* Issue ID #19004 RajK #BI_28 May 30 2005
+Padding-left: changed from 5px to 2px
+width:20px added */
+
+
+{
+    /*COLOR: #3D5FA3;*/
+	COLOR: #003091;
+    BORDER-RIGHT: navy 1px solid;
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial;
+    PADDING-BOTTOM: 4px;
+    MARGIN: 1px 0px 0px 0px;
+    LINE-HEIGHT: 11px;
+    PADDING-TOP: 4px;
+    POSITION: relative;
+    HEIGHT: 10px;
+    width: 20px;
+    TEXT-DECORATION: none;
+	background: url('../../Images/cssImages/navtab_bg.gif') #D6E7FD;
+	/*cursor:hand;/* Added By Shrikant on 1 July 2008 ReqID WAF3_PB_64*/
+	cursor:pointer;/* Added By Vinay on 07 Oct 2008 Purpose:-to support for Mozilla firefox */
+}
+	
+a.navtab:visited
+
+/* Issue ID #19004 RajK #BI_29 May 30 2005
+Padding-left: changed from 5px to 2px
+width:20px added */
+
+
+{
+    COLOR: #003091;
+    BORDER-RIGHT: black 1px solid;
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial;
+    PADDING-BOTTOM: 4px;
+    MARGIN: 1px 0px 0px 0px;
+    LINE-HEIGHT: 11px;
+    PADDING-TOP: 4px;
+    POSITION: relative;
+    HEIGHT: 10px;
+    TEXT-DECORATION: none;
+    BACKGROUND: url(../../Images/cssImages/navtab_bg.gif) #D6E7FD;
+}
+
+
+a.navtab:hover
+
+/* Issue ID #19004 RajK #BI_29 May 30 2005
+Padding-left: changed from 5px to 2px
+width:20px added */
+
+{
+    COLOR: #003091;
+    BORDER-RIGHT: navy 1px solid;
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial;
+    PADDING-BOTTOM: 4px;
+    MARGIN: 1px 0px 0px 0px;
+    LINE-HEIGHT: 11px;
+    PADDING-TOP: 4px;
+    POSITION: relative;
+    HEIGHT: 10px;
+    TEXT-DECORATION: none;
+	background: url("../../Images/cssImages/navtab_hover_bg.gif") #FFDDA8;
+}
+
+
+A.PagingSelected:link
+{
+	font-weight: bold;
+	font-size: 11px;
+	color: black;
+	font-family: Verdana, Arial;
+}
+A.PagingSelected:hover
+{
+	font-weight: bold;
+	font-size: 11px;
+	color: black;
+	font-family: Verdana, Arial;
+}
+A.PagingSelected:visited
+{
+	font-weight: bold;
+	font-size: 11px;
+	color: black;
+	font-family: Verdana, Arial;
+}
+A.PagingSelected:active
+{
+	font-weight: bolder;
+	font-size: 11px;
+	color: black;
+	font-family: Verdana, Arial;
+}
+
+A.PagingNormal:link
+{
+	font-weight: normal;
+	font-size: 10px;
+	color: black;
+	font-family: Verdana, Arial;
+}
+A.PagingNormal:hover
+{
+	font-weight: normal;
+	font-size: 10px;
+	color: black;
+	font-family: Verdana, Arial;
+}
+A.PagingNormal:visited
+{
+	font-weight: normal;
+	font-size: 10px;
+	color: black;
+	font-family: Verdana, Arial;
+}
+A.PagingNormal:active
+{
+	font-weight: normal;
+	font-size: 10px;
+	color: black;
+	font-family: Verdana, Arial;
+}
+TABLE.clsSubTagTable
+{
+	border-right: #3D5FA3 3px solid;
+	border-top: #3D5FA3 3px solid;
+	font-size: 10pt;
+	background-image: none;
+	border-left: #3D5FA3 3px solid;
+	border-bottom: #3D5FA3 3px solid;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	background-color: transparent;
+}
+A.clsCDBLinks:link
+{
+	font-weight: normal;
+	font-size: 10px;
+	color: black;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+A.clsCDBLinks:visited
+{
+	font-weight: normal;
+	font-size: 10px;
+	color: black;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+A.clsCDBLinks:active
+{
+	font-weight: normal;
+	font-size: 10px;
+	color: black;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+A.clsCDBLinks:hover
+{
+	font-weight: bolder;
+	font-size: 10px;
+	color: red;
+	font-family: Verdana, Arial;
+	text-decoration: none;
+}
+/* Added By Shrikant on 1 July 2008 ReqID WAF3_PB_64*/
+A.clsTabSelected
+{
+    PADDING-RIGHT: 2px;
+    BACKGROUND-POSITION: left top;
+    PADDING-LEFT: 5px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    BACKGROUND-ATTACHMENT: scroll;
+    PADDING-BOTTOM: 4px;
+    MARGIN: 1px -1px -5px -2px;
+    COLOR: white;
+    PADDING-TOP: 4px;
+    BACKGROUND-REPEAT: no-repeat;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 11px;
+    BACKGROUND-COLOR: #3D5FA3;
+    TEXT-DECORATION: none;
+    /*cursor:hand;*/
+	cursor:pointer;/* Added By Vinay on 07 Oct 2008 Purpose:-to support for Mozilla firefox */
+   
+}
+/* End Addition By Shrikant B  on 1 July 2008 ReqID WAF3_PB_64*/
+a.clsTabSelected:link
+{
+	padding-right: 2px;
+	background-position: left top;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 10px;
+	background-attachment: scroll;
+	padding-bottom: 4px;
+	margin: 1px -1px -5px -2px;
+	color: white;
+	padding-top: 4px;
+	background-repeat: no-repeat;
+	font-family: Verdana, Arial;
+	height: 11px;
+	background-color: #3D5FA3;
+	text-decoration: none;
+}
+a.clsTabSelected:visited
+{
+	padding-right: 2px;
+	background-position: left top;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 10px;
+	background-attachment: scroll;
+	padding-bottom: 4px;
+	margin: 1px -1px -5px -2px;
+	color: white;
+	padding-top: 4px;
+	background-repeat: no-repeat;
+	font-family: Verdana, Arial;
+	height: 11px;
+	background-color: #3D5FA3;
+	text-decoration: none;
+}
+a.clsTabSelected:active
+{
+	padding-right: 2px;
+	background-position: left top;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 10px;
+	background-attachment: scroll;
+	padding-bottom: 4px;
+	margin: 1px -1px -5px -2px;
+	color: white;
+	padding-top: 4px;
+	background-repeat: no-repeat;
+	font-family: Verdana, Arial;
+	height: 11px;
+	background-color: #3D5FA3;
+	text-decoration: none;
+}
+a.clsTabSelected:hover
+{
+	padding-right: 2px;
+	background-position: left top;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 10px;
+	background-attachment: scroll;
+	padding-bottom: 4px;
+	margin: 1px -1px -5px -2px;
+	color: white;
+	padding-top: 4px;
+	background-repeat: no-repeat;
+	font-family: Verdana, Arial;
+	height: 11px;
+	background-color: #3D5FA3;
+	text-decoration: none;
+}
+A.clsCDBSummaryAlert:active
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: transparent
+}
+A.clsCDBSummaryAlert:visited
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+A.clsCDBSummaryAlert:link
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+A.clsCDBSummaryAlert:hover
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: blue;
+    FONT-FAMILY: Verdana, Arial
+}
+
+A.RadarMenu:link
+{
+	border-top-width: 2px;
+	padding-right: 2px;
+	padding-left: 2px;
+	font-weight: bolder;
+	border-left-width: 2px;
+	font-size: 10px;
+	border-left-color: black;
+	border-bottom-width: 2px;
+	border-bottom-color: black;
+	padding-bottom: 1px;
+	color: white;
+	border-top-color: black;
+	padding-top: 1px;
+	font-family: Verdana, Arial;
+	border-right-width: 2px;
+	text-decoration: none;
+	border-right-color: black;
+}
+A.RadarMenu:visited
+{
+	border-top-width: 2px;
+	padding-right: 2px;
+	padding-left: 2px;
+	font-weight: bolder;
+	border-left-width: 2px;
+	font-size: 10px;
+	border-left-color: black;
+	border-bottom-width: 2px;
+	border-bottom-color: black;
+	padding-bottom: 1px;
+	color: white;
+	border-top-color: black;
+	padding-top: 1px;
+	font-family: Verdana, Arial;
+	border-right-width: 2px;
+	text-decoration: none;
+	border-right-color: black;
+}
+A.RadarMenu:active
+{
+	border-top-width: 2px;
+	padding-right: 2px;
+	padding-left: 2px;
+	font-weight: bolder;
+	border-left-width: 2px;
+	font-size: 10px;
+	border-left-color: black;
+	border-bottom-width: 2px;
+	border-bottom-color: black;
+	padding-bottom: 1px;
+	color: white;
+	border-top-color: black;
+	padding-top: 1px;
+	font-family: Verdana, Arial;
+	border-right-width: 2px;
+	text-decoration: none;
+	border-right-color: black;
+}
+A.RadarMenu:hover
+{
+	border-right: black 1px solid;
+	padding-right: 2px;
+	border-top: black 1px solid;
+	padding-left: 2px;
+	font-weight: bolder;
+	font-size: 10px;
+	padding-bottom: 1px;
+	border-left: black 1px solid;
+	color: black;
+	padding-top: 1px;
+	border-bottom: black 1px solid;
+	font-family: Verdana, Arial;
+	background-color: #FAFAFA;
+}
+/*
+These are new classes for the header table and its enclosing div 
+*/
+DIV.clsHeaderDiv 
+{
+	overflow:hidden;z-index:3;visibility:hidden;position:absolute;
+	
+}
+TABLE.clsHeaderTable {
+	FONT-SIZE: 10pt; BACKGROUND-IMAGE: none; BACKGROUND-REPEAT: repeat; FONT-FAMILY: Verdana, Arial; BACKGROUND-COLOR: transparent; 
+}
+/* This was there for clsHeader Table removed by PrasannaP. 
+   Removed cause, Misplesses the columns
+   table-layout: fixed; 
+*/
+/*End of addition for fixed header implementation*/
+/* Added By Shrikant on 1 July 2008 ReqID WAF3_PB_64*/
+A
+{
+    cursor:hand;
+}
+/* End Addition By Shrikant on 1 July 2008 ReqID WAF3_PB_64*/
+A:active
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: transparent
+}
+A:visited
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+A:link
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+A:hover
+{
+	font-weight: lighter;
+	font-size: 7pt;
+	color: blue;
+	font-family: Verdana, Arial;
+}
+A:inactive
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 7pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+
+/* Added By - PushkarK On - Tuesday, December 13, 2005 For Req.ID. - WAF3_GEN_1 */
+BODY.clsBodylnks
+{
+	BACKGROUND-COLOR: #4E7DD1;
+}
+
+TABLE.clsTableBannerFrame:
+{
+	BORDER: 0;
+	WIDTH: 100%;
+	BACKGROUND-IMAGE: none;
+}
+
+TABLE.clsTableNavLinks:
+{
+	BORDER: 0;
+	WIDTH: 100%;
+	BACKGROUND-IMAGE: none;
+}
+
+TR.clsTRBanner
+{
+	BORDER-RIGHT: thin;
+	BORDER-LEFT: thin;
+	BORDER-TOP: thin;
+	BORDER-BOTTOM: thin;	
+}
+
+TR.clsTRNavLinks
+{
+	BORDER-LEFT: thin;
+	BORDER-RIGHT: thin;
+	BORDER-TOP: thin;
+	BORDER-BOTTOM: thin;
+	
+	HEIGHT: 30px;
+	BACKGROUND: url(../../Images/cssImages/blue_color_2.gif);
+}
+
+a.clsNavTab
+{
+	COLOR: #ffffff;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: none;
+    POSITION: relative;  
+}
+	
+a.clsNavTab:visited
+{
+    COLOR: #ffffff;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: none;
+    POSITION: relative;  
+}
+	
+a.clsNavTab:hover
+{
+    COLOR: #ffffff;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: underline;
+    POSITION: relative;   
+}
+
+a.clsSelected
+{
+	COLOR: #003091;
+    FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: none;    
+  
+    PADDING-LEFT: 5px;
+    PADDING-RIGHT: 5px;
+    PADDING-BOTTOM: 2px;
+
+    POSITION: relative; 
+	BACKGROUND: url(../../Images/cssImages/grey-color.gif) repeat-x;
+}
+
+a.clsSelected:visited
+{
+	COLOR: #003091;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+	FONT-FAMILY: Tahoma;
+
+	BORDER-TOP: groove thin 1px blue;
+	BORDER-LEFT: groove thin blue 1px ;
+
+	BORDER-BOTTOM: groove thin 1px #3366ff;
+	BORDER-RIGHT: groove thin 1px #3366ff;
+
+	PADDING-LEFT: 5px;
+	PADDING-RIGHT: 5px;	
+	PADDING-BOTTOM: 2px;
+	
+	POSITION: relative;
+	TEXT-DECORATION: none;
+
+	BACKGROUND: url(../../Images/cssImages/grey-color.gif) repeat-x;
+}
+
+a.clsSelected:hover
+{
+	COLOR: #003091;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+	FONT-FAMILY: Tahoma;
+
+	BORDER-TOP: groove thin 1px blue;
+	BORDER-LEFT: groove thin blue 1px ;
+
+	BORDER-BOTTOM: groove thin 1px #3366ff;
+	BORDER-RIGHT: groove thin 1px #3366ff;
+
+	PADDING-LEFT: 5px;
+	PADDING-RIGHT: 5px;	
+	PADDING-BOTTOM: 2px;
+	
+	POSITION: relative;
+	TEXT-DECORATION: underline;
+
+	BACKGROUND: url(../../Images/cssImages/grey-color.gif) repeat-x;
+}
+
+TD.clsLinkPageHeaderInner
+{
+	font-weight: bolder;
+	font-size: 10px;
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+	color: white;
+	font-family: Verdana, Arial;
+	background-color: #4E7DD1;	
+}
+/* Addition Ends By - PushkarK On - Tuesday, December 13, 2005 For Req.ID. - WAF3_GEN_1 */
+
+/* Added By - PushkarK On - Friday, December 23, 2005 For Req.ID. - WAF3_GEN_1 - NavMenuPane*/
+
+Body.clsNavMenuPaneBody
+{
+    BORDER-LEFT: #4E7DD1 6px solid;
+    BORDER-BOTTOM: #4E7DD1 6px solid;
+
+    MARGIN: 2px 0px 2px 0px; /* T,L,B,R */
+	BACKGROUND: url(../../Images/cssImages/NavMenuPaneBG.gif) no-repeat  #EEF6FF;
+}
+
+Table.clsTableNavMenu
+{
+	BORDER: 0;
+	HEIGHT: 20;
+	BACKGROUND-IMAGE: none;	
+}
+
+/* Parent Node */
+a.clsLinkParentNavMenu
+{
+	COLOR: #003091;
+    TEXT-DECORATION: none;
+    
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+     
+    POSITION: relative;  
+}
+
+a.clsLinkParentNavMenu:visited
+{
+	COLOR: #003091;
+    TEXT-DECORATION: none;
+    
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+     
+    POSITION: relative;  
+}
+
+a.clsLinkParentNavMenu:hover
+{
+	COLOR: #003091;
+    TEXT-DECORATION: underline;
+    
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+    
+    POSITION: relative;
+}
+
+a.clsLinkParentNavMenu:active
+{
+	COLOR: #003091;
+    TEXT-DECORATION: underline;
+    
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+     
+    POSITION: relative;  
+}
+
+TR.clsTRParentNavMenu
+{
+    TEXT-ALIGN: left;
+    POSITION: relative; 
+    height: 20;
+}
+
+TD.clsTDParentNavMenu
+{
+    TEXT-ALIGN: left;
+    POSITION: relative; 
+    height: 20;
+}
+
+TD.clsTDParentNavMenuImg
+{
+    height: 20;
+    vertical-align: top;
+}
+/* Parent Node Ends */
+
+
+/* Child Node */
+a.clsLinkChildNavMenu
+{
+	COLOR: #003091;
+    TEXT-DECORATION: none;
+    
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+       
+    POSITION: relative;  
+}
+
+a.clsLinkChildNavMenu:visited
+{
+	COLOR: #003091;
+    TEXT-DECORATION: none;
+    
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+       
+    POSITION: relative;  
+}
+
+a.clsLinkChildNavMenu:hover
+{
+	COLOR: #003091;
+    TEXT-DECORATION: underline;
+    
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+    
+    POSITION: relative;   
+}
+
+a.clsLinkChildNavMenu:active
+{
+	COLOR: #003091;
+    TEXT-DECORATION: underline;
+    
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+       
+    POSITION: relative;  
+}
+
+TR.clsTRChildNavMenu
+{
+    TEXT-ALIGN: left;
+    POSITION: relative;
+    height: 20;
+}
+
+TD.clsTDChildNavMenu
+{
+	COLOR: #003091;
+    TEXT-DECORATION: none;
+    
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+    POSITION: relative;
+    height: 20;
+}
+
+TD.clsTDChildNavMenuImg
+{
+    height: 20;
+    vertical-align: top;
+}
+/* Child Node Ends */
+
+
+/* Selected Node */
+a.clsLinkSelectedNavMenu
+{
+	COLOR: #003091;
+    TEXT-DECORATION: none;
+    
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+       
+    POSITION: relative; 
+}
+
+a.clsLinkSelectedNavMenu:visited
+{
+	COLOR: #003091;
+    TEXT-DECORATION: none;
+    
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+       
+    POSITION: relative;
+}
+
+a.clsLinkSelectedNavMenu:hover
+{
+	COLOR: #003091;
+    TEXT-DECORATION: underline;
+    
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+    
+    POSITION: relative;
+}
+
+a.clsLinkSelectedNavMenu:active
+{
+	COLOR: #003091;
+    TEXT-DECORATION: underline;
+    
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+       
+    POSITION: relative;
+}
+
+TR.clsTRSelectedNavMenu
+{
+    TEXT-DECORATION: none;    
+    POSITION: relative; 
+	height: 20;
+}
+
+TD.clsTDSelectedNavMenu
+{
+    TEXT-DECORATION: none;    
+    POSITION:  relative; 
+	BACKGROUND: url(../../Images/cssImages/NavMenuselectionBG.gif) no-repeat;
+	background-position: middle middle;
+	height: 20;
+}
+
+TD.clsTDSelectedNavMenuImg
+{
+    height: 20;
+    vertical-align: top;
+}
+/* Selected Node Ends*/
+
+#clsDivNavMenu
+{
+	overflow:auto;
+	scroll:auto;
+	SCROLLBAR-FACE-COLOR:#D3E5FC;
+	SCROLLBAR-HIGHLIGHT-COLOR:#EEF6FF;
+	SCROLLBAR-SHADOW-COLOR:#EEF6FF;
+	SCROLLBAR-ARROW-COLOR:#3D5FA3;
+	SCROLLBAR-TRACK-COLOR:#EEF6FF;
+	SCROLLBAR-BASE-COLOR:#E0E7EF;
+	scrollbar-darkshadow-color:#EEF6FF;
+	scrollbar-3dLight-Color:#EEF6FF;
+}
+/* Addition Ends By - PushkarK On - Friday, December 23, 2005 For Req.ID. - WAF3_GEN_2 - NavMenuPane*/
+
+
+#clsDivNavFavMenu
+{
+	overflow:auto;
+	color: White;
+	
+	FONT-WEIGHT: Bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+	TEXT-DECORATION: none;    
+    POSITION: relative;     
+	
+	background-color: #4E7DD1;
+	scroll:auto;
+	SCROLLBAR-FACE-COLOR:#D3E5FC;
+	SCROLLBAR-HIGHLIGHT-COLOR:#EEF6FF;
+	SCROLLBAR-SHADOW-COLOR:#EEF6FF;
+	SCROLLBAR-ARROW-COLOR:#3D5FA3;
+	SCROLLBAR-TRACK-COLOR:#EEF6FF;
+	SCROLLBAR-BASE-COLOR:#E0E7EF;
+	scrollbar-darkshadow-color:#EEF6FF;
+	scrollbar-3dLight-Color:#EEF6FF;
+}
+
+/* Child Node */
+a.clsLinkFavNavMenu, a.clsLinkFavNavMenu:visited
+{
+	COLOR: #ffffff;
+    TEXT-DECORATION: none;
+    
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+       
+    POSITION: relative;  
+     /* padding: 2 2 4 2; Commented By Shrikant By For WAF3_GEN_18*/
+}
+
+a.clsLinkFavNavMenu:hover
+{
+	COLOR: #ffffff;
+    TEXT-DECORATION: underline;
+    
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+    
+    POSITION: relative;   
+}
+
+a.clsLinkFavNavMenu:active
+{
+	COLOR: #ffffff;
+    TEXT-DECORATION: underline;
+    
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+
+    TEXT-ALIGN: left;
+       
+    POSITION: relative;  
+}
+TD.clsFavoriteChildTDImg
+{
+    vertical-align: top;
+    border: none;
+}
+
+THead.clsTHeadFavoritesNavMenu
+{
+	background-color: #D3E5FC;
+	color: #003091;
+	FONT-WEIGHT: Bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma;
+	
+	TEXT-DECORATION: none;    
+	TEXT-ALIGN: left;
+    POSITION: relative; 
+}
+
+Tabel.clsTableNavFavMenu
+{
+	BORDER: 0;
+	BACKGROUND-IMAGE: none;	
+}
+
+/* Added By NileshD 6 Jan 2006*/
+TR.clsTRBody
+{
+	padding-right: 2pt;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	color: #000000;
+	padding-top: 2pt;
+	background-repeat: repeat;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #BED5F5;
+
+}
+/* Added By NileshD REQID- WAF3_PB_10*/
+
+/* Added By - PushkarK On - Friday, February 24, 2006 For Req.ID. - WAF3_CDB_20 - DrillDown Enhancements*/
+BODY.clsCDBBody
+{
+    BORDER-RIGHT: 0px;
+    BORDER-LEFT: 0px;
+    BORDER-BOTTOM: 0px;
+    PADDING-TOP: 0px;
+    FONT-SIZE: 0pt;
+    margin: 0px 0px 0px 0px; /* T,L,B,R */
+    LINE-HEIGHT: 0;
+    BACKGROUND-REPEAT: no-repeat;
+    BACKGROUND-COLOR: white;
+    COLOR: white;
+
+	SCROLLBAR-FACE-COLOR:#D3E5FC; 
+	SCROLLBAR-HIGHLIGHT-COLOR:#EEF6FF; 
+	SCROLLBAR-SHADOW-COLOR:#EEF6FF; 
+	SCROLLBAR-ARROW-COLOR:#3D5FA3; 
+	SCROLLBAR-TRACK-COLOR:#EEF6FF; 
+	SCROLLBAR-BASE-COLOR:#E0E7EF; 
+	scrollbar-darkshadow-color:#EEF6FF;
+	scrollbar-3dLight-Color:#EEF6FF;
+}
+/* Addition Ends By - PushkarK On - Friday, February 24, 2006 For Req.ID. - WAF3_CDB_20 - DrillDown Enhancements*/
+
+/* Added By - PushkarK On - Thursday, June 01, 2006 For Hotfix ID. - 2.0.12-SP4-WAF*/
+TD.Locked, TH.Locked
+
+{
+
+background-color: #D3E4FB;
+
+font-weight: bold;
+
+border-right: 1px solid silver;
+
+}
+/* Addition Ends By - PushkarK On - Thursday, June 01, 2006 For Hotfix ID. - 2.0.12-SP4-WAF*/
+/*WAF3_PB_30 UmeshJ Aug 10, 2006*/
+TD.clsTDFirstColumn
+{
+	border-right: 1px groove;
+	padding-right: 1pt;
+	border-top: 1px groove;
+	padding-left: 1pt;
+	font-weight: bold;
+	padding-bottom: 1pt;
+	border-left: 1px groove;
+	padding-top: 1pt;
+	border-bottom: 1px groove;
+	background-color: lightgrey;
+}
+TH.clsTHHeadFirstColumn
+{
+	border-right: 1px groove;
+	padding-right: 1pt;
+	border-top: 1px groove;
+	padding-left: 1pt;
+	font-weight: bold;
+	padding-bottom: 1pt;
+	border-left: 1px groove;
+	padding-top: 1pt;
+	border-bottom: 1px groove;
+	background-color: lightgrey;
+}
+/* WAF3_WF_2: Webform Workflow Starts*/
+div.clsDivWF
+{
+	height: 400px;
+	overflow: auto;
+}
+table.clsWFtable
+{
+	font-size: 10pt;
+    background-image: none;
+    font-family: Verdana, Arial;
+    background-color: transparent;
+    width:99.9%;
+    height:100%;
+}
+tr.clsTRDesignerBody
+{
+	background-image: url(../../images/cssImages/Workflow/WF_DesignerGrid.gif);
+	background-repeat: repeat;
+	width:99.9%;
+	height:100%;
+}
+
+td.clsRectSubmitStage
+{
+	border-style: none; 
+	width: 190px;
+	height: 55px;
+	vertical-align: middle;
+	text-align: center;	
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+		
+	padding: 0px 15px 0px 15px;
+	background-image: url(../../images/cssImages/Workflow/WF_SubmitStageBG.gif);
+	background-repeat: no-repeat;
+}
+
+td.clsRectArchiveStage
+{
+	border-style: none; 
+	width: 190px;
+	height: 55px;
+	vertical-align: middle;
+	text-align: center;	
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+		
+	padding: 0px 15px 0px 15px;
+	background-image: url(../../images/cssImages/Workflow/WF_ArchiveStageBG.gif);
+	background-repeat: no-repeat;
+}
+
+td.clsRectUserStage
+{
+	border-style: none;
+	width: 190px;
+	height: 55px;
+	vertical-align: middle;
+	text-align: center;	
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+	
+	padding: 0px 25px 0px 25px;
+	background-image: url(../../images/cssImages/Workflow/WF_UserStageBG.gif);
+	background-repeat: no-repeat;
+}
+
+td.clsRectSystemStage
+{
+	border-style: none;
+	width: 190px;
+	height: 55px;
+	vertical-align: middle;
+	text-align: center;	
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+	
+	padding: 0px 25px 0px 25px;
+	background-image: url(../../images/cssImages/Workflow/WF_SystemStageBG.gif);
+	background-repeat: no-repeat;
+}
+
+td.clsRectTimerStage
+{
+	border-style: none;
+	width: 190px;
+	height: 55px;
+	vertical-align: middle;
+	text-align: center;	
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+	
+	padding: 0px 25px 0px 25px;
+	background-image: url(../../images/cssImages/Workflow/WF_TimerStageBG.gif);
+	background-repeat: no-repeat;
+}
+
+td.clsRectStageWait
+{
+	width: 300px;
+	height: 55px;
+	vertical-align: middle;
+	text-align: left;	
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+	
+	padding: 0px 15px 0px 15px;
+	background-image: url(../../images/cssImages/Workflow/WF_EventWait.gif);
+	background-repeat: no-repeat;
+}
+
+td.clsRectStageWaitForOthers
+{
+	width: 190px;
+	height: 55px;
+	vertical-align: middle;
+	text-align: left;	
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+	
+	padding: 0px 15px 0px 15px;
+	background-image: url(../../images/cssImages/Workflow/WF_EventWaitForOthers.gif);
+	background-repeat: no-repeat;
+}
+
+td.clsRectEventApprove
+{
+	width: 300px;
+	height: 55px;
+	vertical-align: middle;
+	text-align: center;	
+	
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+	
+	padding: 0px 25px 0px 25px;
+	background-image: url(../../images/cssImages/Workflow/WF_EventApprove.gif);
+	background-repeat: no-repeat;
+}
+
+td.clsRectEventReject
+{
+	width: 300px;
+	height: 55px;
+	vertical-align: middle;
+	text-align: center;	
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+		
+	padding: 0px 25px 0px 25px;
+	background-image: url(../../images/cssImages/Workflow/WF_EventReject.gif);
+	background-repeat: no-repeat;
+}
+
+td.clsEventDetailCap
+{
+	vertical-align: top;
+	text-align: right;
+	width: 10%;
+	
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+	font-weight: bold;
+}
+td.clsEventDetailText
+{
+	vertical-align: top;
+	text-align: left;	
+	width: 90%;
+	
+    font-family: Verdana, Arial;
+    font-size: 8pt;
+}
+
+td.clsVerticalLine
+{
+	width: 1px;
+	height: 55px;
+	background-image: url(../../images/cssImages/Workflow/lineV.gif);
+	background-position: right top;
+	background-repeat: repeat-y;
+		
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+
+td.clsHorizontalLine
+{
+	width: 50px;
+	height: 1px;
+	background-image: url(../../images/cssImages/Workflow/lineH.gif);
+	background-position: left center;
+	background-repeat: repeat-x;
+	
+	margin:0px 0px 0px0px;
+	padding:0px 0px 0px0px;
+}
+
+
+td.clsVericleLineGap
+{
+	height: 11px;
+	background-image: url(../../images/cssImages/Workflow/lineV.gif);
+	background-position: right top;
+	background-repeat: repeat-y;
+	
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+
+td.clsDownArrow
+{
+	width: 10px;
+	height: 5px;
+	background-image: url(../../images/cssImages/Workflow/arrow_down.gif);
+	background-position: center top;
+	background-repeat: no-repeat;
+	
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+/* WAF3_WF_2: Webform Workflow Ends*/
+
+
+/* WAF3_PB_47: Context Menu: Start */
+div.ContextMenu
+{
+	border-right: black 1px outset;
+	border-top: black 1px outset;
+	font-weight: lighter;
+	font-size: 10px;
+	z-index: 20;
+	background: #f7f7f7;
+	border-left: black 1px outset;
+	border-bottom: black 1px outset;
+	font-family: Verdana, Arial;
+	position: absolute;
+}
+tr.CtMn_Node
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	cursor: default;
+	color: black;
+}
+tr.CtMn_Node_Hover
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	background-color: #c4ddfc;
+	cursor: default;
+	color: black;
+}
+tr.CtMn_Node_Disabled
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	cursor: default;
+	color: Gray;
+}
+td.CtMn_LeftFill
+{
+	background-repeat: repeat-y;
+	background-image:url(../../Images/cssImages/CtMn_LeftFill.jpg);
+	width:20px;	
+}
+td.CtMn_Hr
+{
+	height:5px;
+	vertical-align: bottom; 
+	background-repeat: repeat-x;
+	background-image: url(../../images/cssImages/line_CtMn_Hr.gif);
+}
+td.CtMn_LeftFill_Hr
+{
+	background-image:url(../../Images/cssImages/CtMn_LeftFill.jpg);
+	background-repeat:repeat-y;
+	width:20px;
+	height:5px;
+}
+/* WAF3_PB_47: Context Menu: End */
+
+/* Modified for WAF3_PB_47 : Start */
+/* Dropdown Menu START*/
+td.Mn_LeftFill
+{
+	background-repeat: repeat-y;
+	background-image:url(../../Images/cssImages/Mn_LeftFill.jpg);
+	width: 20px;	
+}
+td.Mn_Hr
+{
+	height: 5px;
+	vertical-align: bottom; 
+	background-repeat: repeat-x;
+	background-image: url(../../images/cssImages/line_Mn_Hr.gif);
+}
+td.Mn_LeftFill_Hr
+{
+	background-image:url(../../Images/cssImages/Mn_LeftFill.jpg);
+	background-repeat:repeat-y;
+	width: 20px;
+	height: 5px;
+}
+Div.DropdownMenu
+{
+	border-right: black 1px outset;
+	border-top: black 1px outset;
+	font-weight: lighter;
+	font-size: 10px;
+	z-index: 20;
+	background: #f7f7f7; /*#98bee7;*/
+	visibility: hidden;
+	border-left: black 1px outset;
+	border-bottom: black 1px outset;
+	font-family: Verdana, Arial;
+	position: absolute;
+	top: -300px;
+}
+TR.Menu_HR
+{
+	height:3px;
+	vertical-align:middle;  
+	background-repeat:repeat-x; 
+	background-image : url(../../images/cssImages/line_HR.gif);
+}
+TR.MenuSelected_Normal
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	cursor: default;
+	color: black;
+}
+TR.MenuSelected_Hover
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	background-color: #c4ddfc;
+	/*background-image: url(../../Images/cssImages/Menu.gif);*/
+	cursor: default;
+	color: black;
+}
+A.Actions:link
+{
+	border-right: black 1px outset;
+	border-top: black 1px outset;
+	border-left: black 1px outset;
+	border-bottom: black 1px solid;
+	font-size: 8pt;
+	font-family: Verdana;
+	cursor: default;	
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;    
+}
+A.Actions:active
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	cursor: default;	
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;    
+}
+A.Actions:visited
+{
+	border-right: black 1px outset;
+	border-top: black 1px outset;
+	border-left: black 1px outset;
+	border-bottom: black 1px solid;
+	font-size: 8pt;
+	font-family: Verdana;
+	cursor: default;	
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;
+}
+A.Actions:hover
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	background-color: #f7f7f7; /*#98bee7;*/
+	cursor: default;
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;    
+}
+A.Actions_Selected:link
+{
+	border-right: black 1px outset;
+	border-top: black 1px outset;
+	border-left: black 1px outset;
+	border-bottom: black thin;
+	PADDING-LEFT: 8px;
+	padding-right: 6px;
+	font-weight: lighter;
+	font-size: 8pt;
+	padding-bottom: 1px;
+	cursor: default;
+	color: black;
+	padding-top: 1px;
+	font-family: Verdana;
+	background-color: #f7f7f7; /*#98bee7;*/
+}
+A.Actions_Selected:active
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	cursor: default;	
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;    
+	background-color: #f7f7f7; /*#98bee7;*/
+}
+A.Actions_Selected:visited
+{
+	border-right: black 1px outset;
+	border-top: black 1px outset;
+	border-left: black 1px outset;
+	border-bottom: black 1px;
+	font-size: 8pt;
+	font-family: Verdana;
+	cursor: default;	
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;	
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;
+    background-color: #f7f7f7; /*#98bee7;*/
+}
+A.Actions_Selected:hover
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	cursor: default;	
+    FONT-WEIGHT: lighter;
+    COLOR: black;
+    PADDING-TOP: 1px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 6px;    
+	background-color: #f7f7f7; /*#98bee7;*/
+}
+/* Dropdown Menu END*/
+/* Modification for WAF3_PB_47: Ends */
+
+/* Added By Ninad Text Area*/
+div.clsDivTextArea
+{
+ BORDER-TOP: gainsboro 1px solid; OVERFLOW: scroll; BORDER-LEFT: gainsboro 1px solid;
+}
+/*End Addition By Ninad Text Area*/
+TR.clsTROddRow
+{
+	border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #f7fcfe;
+}
+
+/*WAF3_QRB_16 START :  Added for Server Grid By PushkarK*/
+
+.ServerGrid_clsTREvenRow
+{
+    border-right: thin;
+	padding-right: 2pt;
+	border-top: thin;
+	padding-left: 2pt;
+	font-size: 8pt;
+	padding-bottom: 2pt;
+	margin: 2pt;
+	border-left: thin;
+	color: black;
+	padding-top: 2pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 18px;
+	background-color: #E7F1FE;
+}
+
+.ServerGrid_clsTROddRow
+{
+	 BORDER-RIGHT: thin;
+    /*PADDING-RIGHT: 2pt;*/
+    BORDER-TOP: thin;
+    /*PADDING-LEFT: 2pt;*/
+    FONT-SIZE: 8pt;
+    /*PADDING-BOTTOM: 2pt;*/
+    /*MARGIN: 2pt;*/
+    BORDER-LEFT: thin;
+    COLOR: black;
+    /*PADDING-TOP: 2pt;*/
+    BORDER-BOTTOM: thin;
+    FONT-FAMILY: Verdana, Arial;
+    /*HEIGHT: 18px;*/
+	background-color: #EFFBFE;
+}
+
+.ServerGrid_clsTRColumnHeader
+{
+    border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	padding-bottom: 1pt;
+	border-left: thin;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-weight: normal;
+	font-size: 11px;
+	color: black;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background-color: #BED5F4;
+}
+
+.ServerGrid_clsGroupBox
+{
+    border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	padding-bottom: 1pt;
+	border-left: thin;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-weight: normal;
+	font-size: 11px;
+	color: black;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background-color: #BED5F4;
+}
+
+.ServerGrid_clsTRGroupRow
+{
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	padding-bottom: 1pt;
+	border-left: thin;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-weight: normal;
+	font-size: 11px;
+	color: black;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background-color: #BED5F4;
+}
+
+.ServerGrid_clsFilterDDL
+{
+	border-right: thin;
+	border-top: thin;
+	font-size: 7pt;
+	border-left: thin;
+	color: black;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	background-color: #E7F1FE;
+}
+
+.ServerGrid_clsFilterDDLHover
+{
+	border-right: thin;
+	border-top: thin;
+	font-size: 7pt;
+	border-left: thin;
+	color: black;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	background-color: #BED5F4;
+}
+.ServerGrid_clsTDSortColHeader
+{
+	
+	border-right: thin;
+	padding-right: 1pt;
+	border-top: thin;
+	padding-left: 1pt;
+	font-weight: normal;
+	font-size: 11px;
+	padding-bottom: 1pt;
+	border-left: thin;
+	color: white;
+	padding-top: 1pt;
+	border-bottom: thin;
+	font-family: Verdana, Arial;
+	height: 22px;
+	background: #3D5FA3;	
+	background-image: url(../../Images/cssImages/columnhdr_sel_bg.gif);  
+}
+
+.ServerGrid_clsTDNoSortColHeader
+{
+	BORDER-COLOR: Gray;
+	BORDER-STYLE: solid;	
+	BORDER-LEFT-COLOR:White;
+	BORDER-TOP-COLOR:White;
+	BORDER-LEFT-WIDTH:1px;
+	border-right-width:0px;
+	BORDER-TOP-WIDTH:1px;
+	BORDER-BOTTOM-WIDTH:1px;	
+	TEXT-ALIGN :left ;
+    PADDING-RIGHT: 1pt;    
+    PADDING-LEFT: 1pt;
+    FONT-WEIGHT:bold;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 1pt;    
+    COLOR: black;
+    PADDING-TOP: 1pt;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 22px;
+	background-color: #BED5F4;
+}
+
+/*WAF3_QRB_16 END : ---------------------------------------*/
+
+/*Req. ID -  WAF3_QRB_17 START : ---------------------------------*/
+
+Span.clsSpanColorX
+{
+ 
+    border-style: outset;
+    border-color: #d4d0c8;
+    border-width: 1px;
+    height: 16px;
+    width: 16px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: rgb(105, 87, 176)
+
+}
+
+Span.clsSpanColorY
+{
+ 
+    border-style: outset;
+    border-color: #d4d0c8;
+    border-width: 1px;
+    height: 16px;
+    width: 16px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: rgb(128,64,64)
+}
+
+Span.clsSpanColorGrand
+{
+ 
+    border-style: outset;
+    border-color: #d4d0c8;
+    border-width: 1px;
+    height: 16px;
+    width: 16px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: #ff6600
+}
+
+SPAN.clsSpanX
+{
+	COLOR: rgb(105,87,176);
+	font-family: Tahoma;
+	font-size: 7pt
+}
+
+SPAN.clsSpanY
+{
+	COLOR: rgb(128,64,64);
+	font-family: Tahoma;
+	font-size: 7pt
+}
+
+SPAN.clsSpanGrand
+{
+	COLOR: #ff6600;
+	font-family: Tahoma;
+	font-size: 7pt
+}
+
+/* Req. ID - WAF3_QRB_17 END : ---------------------------------*/
+/*Added By Ninad on 2 Apr 2009 classes added for R to L culture*/	
+BODY.clsBodyRTL
+{
+    BORDER-RIGHT: #000000 0px solid;
+    PADDING-LEFT: 2px;
+    BORDER-LEFT: #4E7DD1 6px solid;
+    PADDING-TOP: 0px;
+    FONT-SIZE: 7pt;
+    margin: 2px 0px 2px 0px; /* T,L,B,R */
+    LINE-HEIGHT: 1;
+    BORDER-BOTTOM: #4E7DD1 6px solid;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    /*BACKGROUND-COLOR: #EEF6FF;*/
+	SCROLLBAR-FACE-COLOR:#D3E5FC; 
+	SCROLLBAR-HIGHLIGHT-COLOR:#EEF6FF; 
+	SCROLLBAR-SHADOW-COLOR:#EEF6FF; 
+	SCROLLBAR-ARROW-COLOR:#3D5FA3; 
+	SCROLLBAR-TRACK-COLOR:#EEF6FF; 
+	SCROLLBAR-BASE-COLOR:#E0E7EF; 
+	scrollbar-darkshadow-color:#EEF6FF;
+	scrollbar-3dLight-Color:#EEF6FF;
+}
+BODY.clsPageBodyRTL
+{ 
+	BORDER-RIGHT: #000000 0px solid; 
+	PADDING-LEFT: 2px;
+	SCROLLBAR-FACE-COLOR: #d3e5fc; 
+	FONT-SIZE: 7pt; 
+	MARGIN: 2px 0px; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #eef6ff; 
+	BORDER-LEFT: #4e7dd1 6px solid; 
+	SCROLLBAR-SHADOW-COLOR: #eef6ff; 
+	SCROLLBAR-3DLIGHT-COLOR: #eef6ff; 
+	LINE-HEIGHT: 1; 
+	SCROLLBAR-ARROW-COLOR: #3d5fa3; 
+	PADDING-TOP: 0px; 
+	SCROLLBAR-TRACK-COLOR: #eef6ff; 
+	BORDER-BOTTOM: #4e7dd1 6px solid; 
+	BACKGROUND-REPEAT: repeat; 
+	FONT-FAMILY: Verdana, Arial; 
+	SCROLLBAR-DARKSHADOW-COLOR: #eef6ff; 
+	SCROLLBAR-BASE-COLOR: #e0e7ef; /*BACKGROUND-COLOR: #9BBFF0*/ 
+	}
+	
+BODY.clsVerticalNavBodyRTL
+{
+    BORDER-RIGHT: #000000 0px solid;
+    BORDER-LEFT: #4E7DD1 1px solid;
+    PADDING-TOP: 0px;
+    FONT-SIZE: 7pt;
+    margin: 2px 0px 2px 0px; /* T,L,B,R */
+    LINE-HEIGHT: 1;
+    BORDER-BOTTOM: #4E7DD1 6px solid;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    /*BACKGROUND-COLOR: #EEF6FF;*/
+	SCROLLBAR-FACE-COLOR:#D3E5FC; 
+	SCROLLBAR-HIGHLIGHT-COLOR:#EEF6FF; 
+	SCROLLBAR-SHADOW-COLOR:#EEF6FF; 
+	SCROLLBAR-ARROW-COLOR:#3D5FA3; 
+	SCROLLBAR-TRACK-COLOR:#EEF6FF; 
+	SCROLLBAR-BASE-COLOR:#E0E7EF; 
+	scrollbar-darkshadow-color:#EEF6FF;
+	scrollbar-3dLight-Color:#EEF6FF;
+}
+
+BODY.clsVerticalNavPageBodyRTL
+{ BORDER-RIGHT: #4e7dd1 1px solid; SCROLLBAR-FACE-COLOR: #d3e5fc; FONT-SIZE: 7pt; MARGIN: 2px 0px; SCROLLBAR-HIGHLIGHT-COLOR: #eef6ff; BORDER-LEFT: #4e7dd1 6px solid; SCROLLBAR-SHADOW-COLOR: #eef6ff; SCROLLBAR-3DLIGHT-COLOR: #eef6ff; LINE-HEIGHT: 1; SCROLLBAR-ARROW-COLOR: #3d5fa3; PADDING-TOP: 0px; SCROLLBAR-TRACK-COLOR: #eef6ff; BORDER-BOTTOM: #4e7dd1 6px solid; BACKGROUND-REPEAT: repeat; FONT-FAMILY: Verdana, Arial; SCROLLBAR-DARKSHADOW-COLOR: #eef6ff; SCROLLBAR-BASE-COLOR: #e0e7ef; /*BACKGROUND-COLOR: #9BBFF0*/ }
+
+BODY.clsHorizontalNavBodyRTL
+{
+    BORDER-RIGHT: #000000 0px solid;
+    BORDER-LEFT: #4E7DD1 6px solid;
+    PADDING-TOP: 0px;
+    FONT-SIZE: 7pt;
+    margin: 2px 0px 2px 0px; /* T,L,B,R */
+    LINE-HEIGHT: 1;
+    BORDER-BOTTOM: #4E7DD1 1px solid;/*changed size from 6 to 1*/
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    /*BACKGROUND-COLOR: #EEF6FF;*/
+	SCROLLBAR-FACE-COLOR:#D3E5FC; 
+	SCROLLBAR-HIGHLIGHT-COLOR:#EEF6FF; 
+	SCROLLBAR-SHADOW-COLOR:#EEF6FF; 
+	SCROLLBAR-ARROW-COLOR:#3D5FA3; 
+	SCROLLBAR-TRACK-COLOR:#EEF6FF; 
+	SCROLLBAR-BASE-COLOR:#E0E7EF; 
+	scrollbar-darkshadow-color:#EEF6FF;
+	scrollbar-3dLight-Color:#EEF6FF;
+}
+
+BODY.clsHorizontalNavPageBodyRTL
+{ BORDER-RIGHT: #000000 0px solid; SCROLLBAR-FACE-COLOR: #d3e5fc; FONT-SIZE: 7pt; MARGIN: 2px 0px; SCROLLBAR-HIGHLIGHT-COLOR: #eef6ff; BORDER-LEFT: #4e7dd1 6px solid; SCROLLBAR-SHADOW-COLOR: #eef6ff; SCROLLBAR-3DLIGHT-COLOR: #eef6ff; LINE-HEIGHT: 1; SCROLLBAR-ARROW-COLOR: #3d5fa3; PADDING-TOP: 0px; SCROLLBAR-TRACK-COLOR: #eef6ff; BORDER-BOTTOM: #4e7dd1 6px solid; BACKGROUND-REPEAT: repeat; FONT-FAMILY: Verdana, Arial; SCROLLBAR-DARKSHADOW-COLOR: #eef6ff; SCROLLBAR-BASE-COLOR: #e0e7ef; border-top: #4e7dd1 1px solid;/*<new property>*//*BACKGROUND-COLOR: #9BBFF0*/ }
+
+/*Added By Ninad on 2 Apr 2009 classes added for R to L culture*/	
+
+/*Added By PushkarK On 22-Apr-2009 for Req.ID: WAF3_PB_69*/
+div.clsDivWait
+{ 
+	overflow:hidden;
+	position:absolute;
+	z-index:99;
+	top:0px;
+	left:0px;
+}
+table.clsTblWait
+{ 
+	position:absolute;
+	top:0px;
+	left:0px;
+	border: 1;
+	overflow:hidden;
+}
+tr.clsTrWait
+{ 
+	font-family:Verdana, Arial;
+	font-size:8pt;
+	vertical-align:middle;
+}
+td.clsTdWait
+{ 
+	background-color:white;
+	filter:alpha(opacity=60);
+	opacity:0.6;
+	color:black;
+	text-align:center;
+}
+
+/*Addition Ends By PushkarK On 22-Apr-2009 for Req.ID: WAF3_PB_69*/
+/*Addition By NinadP On 31-July-2009 for Dpopup integration*/
+div.WhizDpopup_Title
+{
+	background-color: #2E55B1;
+}
+div.WhizDpopup_body
+{
+	background-color: #DDE8F9;
+}
+/*End Addition By NinadP On 31-July-2009 for Dpopup integration*/
+
+/*Added by NikhilM 25 Oct 2010 for Modal Dialog integration */
+
+div.clsDivModalDialog
+{
+	z-index:900;
+}
+
+.clsMdlDlgCaption
+{
+	font-family: Verdana, Times New Roman;
+	text-align:left;
+	font-size:10pt;
+	font-weight:bold;
+	color:white;
+}
+
+.clsTableModalDlg
+{
+	border-collapse:collapse;
+	border-right:2px solid #0054e3;
+	border-bottom:2px solid #0054e3;
+	border-left:2px solid #0054e3;
+	border-top:2px solid #0054e3;
+	width:100%;
+}
+
+.clsTDClose
+{
+	border-left-style:groove;
+	border-left-width:1px;
+	border-top:1px solid black;
+	border-right:1px solid black;
+	border-bottom:1px solid black;
+	text-align:center;
+	background-color:#0054e3;
+}		
+
+
+.clsTDFirstRow
+{
+	border-top:1px solid black;
+	border-left:1px solid black;
+	border-bottom:1px solid black;
+	background-color:#0054e3;
+}
+
+.clsMaskDiv
+{
+	z-index: 850;
+	left: 0px; 
+	width: 100%; 
+	top: 0px; 
+	height: 100%; 
+	background-color: #d1d1d1
+}
+
+BODY.clsModalBody
+{
+	background-color:White;
+    BORDER-RIGHT: #000000 0px solid;
+    BORDER-LEFT: #000000 0px solid;
+    FONT-SIZE: 7pt;
+    margin: 2px 0px 2px 0px; /* T,L,B,R */
+    LINE-HEIGHT: 1;
+    BORDER-BOTTOM: #000000 0px solid;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial;
+    /*BACKGROUND-COLOR: #EEF6FF;*/
+	SCROLLBAR-FACE-COLOR:#D3E5FC; 
+	SCROLLBAR-HIGHLIGHT-COLOR:#EEF6FF; 
+	SCROLLBAR-SHADOW-COLOR:#EEF6FF; 
+	SCROLLBAR-ARROW-COLOR:#3D5FA3; 
+	SCROLLBAR-TRACK-COLOR:#EEF6FF; 
+	SCROLLBAR-BASE-COLOR:#E0E7EF; 
+	scrollbar-darkshadow-color:#EEF6FF;
+	scrollbar-3dLight-Color:#EEF6FF;	
+}
+
+/*Addition End by NikhilM 25 Oct 2010 for Modal Dialog integration */

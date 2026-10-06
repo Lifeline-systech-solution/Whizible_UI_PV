@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whizible - Financials</title>
+<script type="text/javascript">
+  window.location.replace('../PM/PM_UnderConstruction.aspx');
+</script>
+<script src="../../../Whizible2.0-new/plugins/chartjs/chart.min.js"></script>
+<link rel="stylesheet" href="../../../Whizible2.0-new/bootstrap/css/bootstrap-5.3.2.min.css">
+<link rel="stylesheet" href="../../../Whizible2.0-new/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="../../../Whizible2.0-new/fontawesome/css/v4-shims.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/cxo-pva.css">
+</head>
+<body data-page="finance" class="analytics-pva">
+<div id="AnalyticsPreloader" class="preloader" aria-label="Loading"></div>
+<div class="loader-overlay" id="loaderOverlay" style="display:none;"><div class="loader"></div></div>
+<div class="bgwhite" id="AnalyticsWrapper" style="display:none;">
+  <div class="page-header-section" style="background:white;">
+    <div class="graybg" style="padding:0.4rem 1rem; margin-left:0;">
+      <h2 style="color:#1e40af; font-weight:600; font-size:18px; margin:0 0 0.25rem 0; display:flex; align-items:center;">
+        <i class="fas fa-chart-line" style="color:#1e40af; font-size:1.5rem; margin-right:0.75rem;"></i>
+        Financials
+      </h2>
+      <p style="color:#6b7280; margin:0;">Financial control tower &middot; Revenue, billing, collections, WIP &amp; margin</p>
+    </div>
+  </div>
+
+  <div class="app no-sidebar">
+    <div class="main">
+      <div class="filterbar" id="filterbar">
+        <button class="datebtn" id="dateBtn" type="button">
+          <i class="far fa-calendar-alt"></i>
+          <span id="dateLabel">Current Quarter</span>
+          <small id="dateRangeTxt">Loading...</small>
+          <i class="fas fa-chevron-down" style="font-size:10px;margin-left:4px;"></i>
+        </button>
+        <span class="compare-tag" id="compareTag" style="display:none">vs previous period</span>
+        <span id="chips"></span>
+        <button class="chipbtn" type="button" onclick="toast('27 more dimensions available: Program, BU, Practice, Skill, Contract Type, Vendor, Currency...')">
+          <i class="fas fa-plus"></i> More filters
+        </button>
+        <button class="filter-clear" id="clearFilters" type="button">Reset all</button>
+        <span style="flex:1"></span>
+        <button class="ghostbtn" type="button" onclick="toast('View saved to My Views')">
+          <i class="far fa-star"></i> Save view
+        </button>
+        <button class="ghostbtn" type="button" onclick="openCopilot()">
+          <i class="fas fa-magic"></i> Copilot
+        </button>
+      </div>
+
+      <div class="trail" id="trail">
+        <span class="trail-label">Drill trail</span>
+        <span class="t-chip" style="cursor:default;color:var(--faint)">Click any KPI or chart to start a cross-module drill-through</span>
+      </div>
+
+      <main>
+        <section class="content active" id="page-finance"></section>
+      </main>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="m-hd">
+      <div style="flex:1">
+        <h3 id="mTitle">Drill-down</h3>
+        <div class="m-crumbs" id="mCrumbs"></div>
+      </div>
+      <button class="icon-btn" type="button" onclick="exportDrillMenu(event)" title="Export this view"><i class="fas fa-download"></i></button>
+      <button class="icon-btn" type="button" onclick="closeModal()" title="Close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="m-body" id="mBody"></div>
+  </div>
+</div>
+
+<aside class="copilot" id="copilot" aria-label="AI Copilot">
+  <div class="cp-hd">
+    <div class="logo-mark">&#10022;</div>
+    <div style="flex:1">
+      <b style="font-size:13px">Whizible Copilot</b>
+      <div style="font-size:11px;color:var(--muted)">Grounded in your filtered data</div>
+    </div>
+    <button class="icon-btn" type="button" onclick="document.getElementById('copilot').classList.remove('open')"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="cp-log" id="cpLog"></div>
+  <div class="cp-quick">
+    <button type="button" onclick="askCopilot('Why did profitability drop this quarter?')">Why did profitability drop?</button>
+    <button type="button" onclick="askCopilot('Show projects at risk in the Banking portfolio')">At-risk in Banking</button>
+    <button type="button" onclick="askCopilot('Where is my bench and what should I do with it?')">Bench strategy</button>
+    <button type="button" onclick="askCopilot('Forecast revenue for next quarter')">Revenue forecast</button>
+  </div>
+  <div class="whatif">
+    <h4>Scenario planner - What-if</h4>
+    <div class="wi-row">Add hires <input type="range" id="wiHires" min="0" max="25" value="0"><b id="wiHiresV">0</b></div>
+    <div class="wi-row">Bill-rate change <input type="range" id="wiRate" min="-10" max="15" value="0"><b id="wiRateV">0%</b></div>
+    <div class="wi-out">
+      <div><b id="wiUtil">-</b><span>Utilization</span></div>
+      <div><b id="wiRev">-</b><span>Qtr revenue</span></div>
+      <div><b id="wiMargin">-</b><span>Margin</span></div>
+    </div>
+  </div>
+  <div class="cp-in">
+    <input id="cpInput" placeholder="Ask in natural language...">
+    <button type="button" onclick="sendCopilot()">Send</button>
+  </div>
+</aside>
+
+<div class="toasts" id="toasts"></div>
+<script src="js/app.js"></script>
+</body>
+</html>

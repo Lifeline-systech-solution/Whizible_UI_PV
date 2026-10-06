@@ -1,0 +1,43 @@
+.BodyCopy
+{
+    FONT-SIZE: 8.5pt;
+    COLOR: #000000;
+    FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #ffffff
+}
+.CopyBack
+{
+    FONT-SIZE: 8.5pt;
+    FONT-FAMILY: Tahoma
+}
+.table_odd
+{
+    FONT-SIZE: 8.5pt;
+    COLOR: #000000;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #f7f0f1
+}
+.Questions
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8.5pt;
+    COLOR: blue;
+    FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: white
+}
+.table_heading
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8.5pt;
+    COLOR: white;
+    FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: blue
+}
+.table_even
+{
+    FONT-SIZE: 8.5pt;
+    COLOR: black;
+    FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: white
+}

@@ -1,0 +1,613 @@
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover, a:focus {
+    color: #83b8ff;
+    transition: all 0.5s ease 0s;
+}
+.roboto {
+    font-family: "Roboto",sans-serif;
+}
+body{
+	 
+}
+div.body-bg {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+header {
+	position:relative;
+	background:#364660;
+	float:left;
+	width:100%;
+	min-height:61px;
+}
+.logo{
+	float:left;
+	margin:8px;
+}
+.notifiation{
+	float:right;
+	margin:14px;
+}
+.notifiation i {
+    font-size: 20px;
+color: #fff;
+border-radius: 50%;
+padding: 7px;
+width: 34px;
+text-align: center;
+height:35px;
+}
+.fa-bell{
+	background: #e27020;
+	margin-right: 12px;
+}
+.fa-question{
+	background: #00bcd4;
+	margin-right: 79px;
+}
+.fa-sign-out{
+	background: #f50057;
+	margin-left: 21px;
+}
+.notifiation img {
+    border-radius: 50%;
+	height: 35px;
+}
+.notifiation  span{color:#fff;font-size:10px;font-weight:600;padding-left:10px;}
+
+/**-- section---**/
+section{
+float:left;
+width:100%;
+}
+.main{
+	float:left;
+	width:100%;
+}
+.menu{
+	min-height:995px;
+	background-color: #364660;
+	width:6%;
+	float:left;
+}
+
+.icon-bar {
+    
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 30px;
+}
+.icon-bar a:hover {
+    background-color: #000;
+}
+/**----right-section----**/
+.right-section{
+	min-height:995px;
+	background-color: #fff;
+	width:94%;
+	float:right;
+}
+/**----help-desk----**/
+.help-desk h2 {
+    font-size: 16px;
+    font-weight: 700;
+    background: #edf3f9;
+    padding: 15px 0;
+    text-align: center;
+	margin: 12px 0 22px 0;
+}
+.req-dsk-kn {
+    margin: 21px 0;
+}
+.req-dsk-kn ul {
+    width: 380px;
+    border: 1px solid #d4d0d1;
+	padding: 9px 0;
+}
+.req-dsk-kn ul li{
+	display:inline;
+	list-style:none;
+	padding: 0 26px;
+}
+.req-dsk-kn ul li a{
+	color:#364660;
+	font-size:14px;
+	font-weight:600;
+}
+.help-desk {
+    width:100%;
+}
+.all-req,.filter,.form-info,.multi-action {
+    float: right;
+}
+.grey-bg{
+	width:100%;
+	float:left;
+	background:#eef1f6;
+	padding: 11px 0 0 17px;
+}
+
+.dropdown-menu {
+    left:auto!important;
+    right:0px;
+}
+/**--- request section---**/
+.all-req .btn {
+    font-size: 14px;
+    font-weight: 600;
+    color: #319db6;
+    background: none;
+}
+.all-req .dropdown{
+	float:left;
+}
+.all-req .search-bar{
+	float:right;
+}
+.search-bar i {
+    font-size: 16px;
+    border: 1px solid #dddadc;
+    padding: 5px;
+    text-align: center;
+    width: 37px;
+    height: 29px;
+	color:#364660;
+}
+.search-bar input {
+    height: 29px;
+    width: 186px;
+	border-style: solid;
+    border-color: #dddadc #364660;
+}
+.search-bar .fa-search{float:left;}
+.search-bar .fa-chevron-down{float:right;}
+
+/**--- filter section---**/
+.filter{
+	background:#364660;
+	min-height:40px;
+	margin-top:20px;
+	color:#fff;
+}
+.filter span {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 25px 12px 34px;
+    display: block;
+    float: left;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.filter i {
+    font-size: 25px;
+    padding: 11px 0;
+}
+.fa.fa-minus {
+    margin-right: 31px;
+    font-size: 20px;
+}
+/**---  multi Action---**/
+.multi-action {
+    margin: 8px 0 0 0;
+    border: 1px solid;
+    padding: 8px 23px 15px;
+}
+.multi-action .btn{
+	font-size:11px;
+	font-weight:600;
+}
+.diff-action button span {
+    margin-left: 4px;
+    font-size: 11px;
+}
+.diff-action .btn {
+    float: left;
+    margin-left: 20px;
+    border-radius: 0;
+}
+.diff-action {
+    float: right;
+}
+.multi-action .dropdown .btn{
+	font-size: 12px;
+    font-weight: 600;
+   
+    border-radius: 0;
+	background-color:#fff;
+	color:#000;
+}
+.field-section {
+    float: left;
+    width: 100%;
+	padding-top: 30px;
+}
+.field-section .dropdown {
+    float: left;
+    margin-left: 40px;
+    
+}
+.field-section .glyphicon-remove-sign{
+	margin-left: 20px;
+	margin-top: 5px;
+}
+.apply-btn {
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 7px 0;
+}
+/**----- Form info---**/
+
+.multi-btn,.multi-drop{
+    padding: 27px 0 27px 32px;
+	float:left;
+	width:100%;
+}
+.multi-btn .btn-default {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 11px 22px;
+    margin-left: 19px;
+    border-radius: 0;
+	float:left;
+	position:relative;
+}
+.multi-drop .dropdown{float:left;}
+.multi-drop .dropdown .btn{
+	font-size: 12px;
+    font-weight: 600;
+    padding: 11px 22px;
+    margin-left: 19px;
+    border-radius: 0;
+	background-color:#fff;
+	color:#000;
+}
+.multi-drop .dropdown .btn i{
+    margin-left: 8px;
+}
+.form-info .table-responsive .btn.btn-default {
+    padding: 0;
+    background: none;
+    border: none;
+}
+.fa-flag-o{
+	color:#f88394;
+	font-size:16px;
+}
+.fa-comments-o{
+	color:#33c0df;
+	font-size:16px;
+}
+.fa-paperclip{
+	color:#f68c16;
+	font-size:16px;
+}
+.form-info .fa-pencil-square-o{
+	color:#2e90e6;
+	font-size:16px;
+}
+
+/**------------------------- Approve-----------------------**/
+/* Full-width input fields */
+
+
+/* Set a style for all buttons */
+
+
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    position: relative;
+    background: #364660;
+    color: #fff;
+    height: 34px;
+}
+.modal-content.animate {
+    background: #e8edf6;
+}
+.appro-title {
+    float: left;
+    line-height: 34px;
+    margin-left: 23px;
+}
+
+.appro-form .fa-comments-o {
+    color: #c9ced6;
+    font-size: 22px;
+}
+.appro-form span {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 13px;
+}
+.acc-btn {
+    float: right;
+    margin: 21px 0;
+}
+.acc-btn .btn {
+    width: 72px;
+    height: 30px;
+    text-align: center;
+	margin-left: 13px;
+}
+.acc-btn .fa.fa-eye {
+    vertical-align: -moz-middle-with-baseline;
+}
+#id01 .container {
+    padding: 16px;
+	width: 298px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 330px;
+    height: 300px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+/* Change styles for span and cancel button on extra small screens */
+
+/**------------------------- Flag icon-----------------------**/
+.imgcontainer2 {
+    text-align: center;
+    position: relative;
+    background: #364660;
+    color: #fff;
+    height: 34px;
+}
+#id02 .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 410px;
+    height: 305px;
+}
+#id02 .container {
+    padding: 16px;
+	width: 397px;
+}
+.trac-detail p {
+    font-size: 12px;
+}
+.trac-detail .help{
+font-size:14px;
+font-weight:600;
+color:#364660;
+margin-bottom: 18px;
+}
+.trac-detail .que{
+margin: 0 0 10px;
+float: left;
+width: 100%;
+}
+.trac-detail .help-que{
+font-size: 14px;
+font-weight: 600;
+color: #364660;
+border: 1px solid;
+padding: 12px 21px 3px;
+float: left;
+width: 100%;
+}
+
+/**----  Attachment Icon-----**/
+#id03 .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 410px;
+    height: 305px;
+}
+#id03 .container {
+    padding: 16px;
+	width: 397px;
+}
+button.btn.btn-default.download {
+    background: #364660;
+    color: #fff;
+    float: right;
+}
+.attachment .table-bordered {
+    border: 1px solid #ddd;
+    margin-top: 27px;
+}
+.attachment i.fa.fa-file-pdf-o {
+    color: red;
+}
+td i.fa.fa-download{
+    margin-left: 14px;
+	color:#364660;
+}
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+	
+@media (min-width: 768px) and (max-width: 991px){
+	.fa-bell{	
+	margin-right: 12px;
+}
+.fa-question{	
+	margin-right: 12px;
+}
+.fa-sign-out{	
+	margin-left: 12px;
+}
+.notifiation img {    
+	height: 35px;
+}
+
+.icon-bar a {
+    font-size: 21px;
+}
+.menu{
+	min-height:995px;
+	background-color: #364660;
+	width:6%;
+	float:left;
+}
+.right-section{
+	min-height:995px;
+	background-color: #fff;
+	width:94%;
+	float:right;
+}
+	
+}
+	
+@media(max-width:767px){
+	
+.fa-bell{	
+	margin-right: 5px;
+}
+.fa-question{	
+	margin-right: 5px;
+}
+.fa-sign-out{	
+	margin-left: 5px;
+}
+.menu{
+	min-height:995px;
+	background-color: #364660;
+	width:15%;
+	float:left;
+}
+.right-section{
+	min-height:995px;
+	background-color: #fff;
+	width:85%;
+	float:right;
+}
+.notifiation img {    
+	height: 35px;
+}
+
+.icon-bar a {
+    font-size: 21px;
+}
+
+.all-req .dropdown {
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.all-req .search-bar {
+    float: right;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+}
+
+
+@media(max-width:484px){
+	.req-dsk-kn ul{width:100%;}
+.req-dsk-kn ul li{display:block;}	
+}
+
+@media(max-width:401px){
+	.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.notifiation {
+    float: right;
+    margin: 14px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+}

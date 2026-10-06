@@ -1,0 +1,333 @@
+.tp{
+    height:40px;
+    
+        background-color: rgba(222, 222, 222, 0.2);
+    border: 1px solid;
+    border-color: #dedede;
+}
+.dropdown{
+  padding-top: 8px;
+    padding-left: 5px;
+    height: 25px;
+}
+.hd {
+ padding-top: 10px;
+    padding-left:   5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.slc{
+    border-radius: 4px; height: 25px;
+    margin-top: 8px;
+    margin-left: 8px;
+    font-size: 13px;
+    font-weight: 600;
+   
+}
+.table>thead:first-child>tr:first-child>th{
+    font-size: 11px;
+    text-align: left;
+}
+tr{
+    font-size: 11.5px;
+}
+.table>tbody>tr>td{
+    padding-left: 12px;
+    padding: 6px;
+}
+
+
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 18px;
+
+
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 0px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(21px);
+  -ms-transform: translateX(21px);
+  transform: translateX(21px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+body{
+    font-family: 'Ubuntu';
+    /*Commented By Aniruddh Gujar on 11-Dec-2017*/
+    /*text-transform: lowercase;*/
+    /*End of Commented By Aniruddh Gujar on 11-Dec-2017*/
+    background-color: #d1e0e0;
+}
+
+.container{
+    text-align: center;
+    width: auto;
+    margin: 75px auto;
+    width: 55%;
+}
+
+.share {
+   float: left;
+ 
+   border: none;
+   background-color: #ececec;
+   text-decoration: none;
+   font-size: 14px;
+   color: #FFF;
+   z-index: 1;
+   transition: transform .1s ease-in;
+   margin-top: -8px;
+}
+
+.share i{
+    font-size: 11.5px;
+    padding-right: 0px;
+    color: #3b5998;
+}
+
+.facebook {
+   background-color: #3b5998;
+}
+ 
+.gplus {
+   background-color: #dd4b39;
+}
+ 
+.twitter {
+   background-color: #55acee;
+}
+ 
+.stumbleupon {
+   background-color: #eb4924;
+}
+ 
+.pinterest {
+   background-color: #cc2127;
+}
+ 
+.linkedin {
+   background-color: #0077b5;
+}
+.share:hover {
+   transform: scale(1.3);
+   z-index: 2;
+}
+.mobile-social-share {
+    background: none repeat scroll 0 0 #EEEEEE;
+    display: block !important;
+    min-height: 70px !important;
+    margin: 50px 0;
+}
+
+
+
+
+.mobile-social-share h3 {
+    color: inherit;
+    float: left;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 25px 25px 0 25px;
+}
+
+.share-group {
+    float: right;
+    margin: 18px 25px 0 0;
+}
+
+.btn-group {
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.mobile-social-share ul {
+    float: right;
+    list-style: none outside none;
+    margin: 0;
+    min-width: 61px;
+    padding: 0;
+}
+
+.share {
+    min-width: 17px;
+}
+
+.mobile-social-share li {
+    display: block;
+    font-size: 18px;
+    list-style: none outside none;
+    margin-bottom: 3px;
+    margin-left: 4px;
+    margin-top: 3px;
+}
+
+.btn-share {
+    background-color: #BEBEBE;
+    border-color: #CCCCCC;
+    color: #333333;
+}
+
+.btn-twitter {
+    background-color: #3399CC !important;
+    width: 51px;
+    color:#FFFFFF!important;
+}
+
+.btn-facebook {
+    background-color: #3D5B96 !important;
+    width: 51px;
+    color:#FFFFFF!important;
+}
+
+.btn-facebook {
+    background-color: #3D5B96 !important;
+    width: 51px;
+    color:#FFFFFF!important;
+}
+
+.btn-google {
+    background-color: #DD3F34 !important;
+    width: 51px;
+    color:#FFFFFF!important;
+}
+
+.btn-linkedin {
+    background-color: #1884BB !important;
+    width: 51px;
+    color:#FFFFFF!important;
+}
+
+.btn-pinterest {
+    background-color: #CC1E2D !important;
+    width: 51px;
+    color:#FFFFFF!important;
+}
+
+.btn-mail {
+    background-color: #FFC90E !important;
+    width: 51px;
+    color:#FFFFFF!important;
+}
+
+.caret {
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    border-top: 4px solid;
+    display: inline-block;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    width: 0;
+}
+
+#socialShare {
+    max-width:63px;
+    margin-bottom:18px;
+    margin-right: 10px;
+    margin-top:16px;
+}
+
+#socialShare > a{
+    padding: 6px 10px 6px 10px;
+}
+
+@media (max-width : 320px) {
+    #socialHolder{
+        padding-left:5px;
+        padding-right:5px;
+    }
+    
+    .mobile-social-share h3 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    #socialShare{
+        margin-left:5px;
+        margin-right:5px;
+    }
+    
+    .mobile-social-share h3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width : 238px) {
+    .mobile-social-share h3 {
+        font-size: 11.5px;
+    }
+}
+
+.table-dash {
+    float: left;
+    width: 40%;
+        border: #ccc 1px solid;
+       
+        text-transform: capitalize;
+  }
+  .head-top{
+       float: right;
+    width: 60%;
+}
+
+
+
+  .graf-select{
+    margin: 4px 0px 20px 0px;
+    padding: 4px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+
+    }

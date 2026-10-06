@@ -1,0 +1,4031 @@
+
+.graph {
+    color: #1fb041
+}
+
+.Schedule_modalTbl {
+    width: 100% !important
+}
+
+.del_file_row, #addDoc_attach, .del_URL_row {
+    display: none
+}
+
+.custom_chckbox input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 16px;
+    width: 5px;
+    height: 10px;
+    border: solid #464a4c;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg)
+}
+
+.AddModalScroll {
+    scrollbar-width: thin;
+}
+
+.input-group-btn button.btn.btncalendar {
+    margin: 0;
+    height: 34px;
+    background: #eee;
+    border: 1px solid #ddd;
+    border-left: none;
+}
+
+
+body {
+    font-size: 11.5px !important; /* Modified By Madhuri.K On 26-03-2026 */
+}
+
+.form-control {
+    font-size: 11.5px !important; /* Modified By Madhuri.K On 26-03-2026 */
+}
+
+.custom_chckbox label {
+    position: relative;
+    cursor: pointer;
+    margin: -11px;
+    padding-left: 10px
+}
+
+.task-history-offcanvas-header {
+    background: linear-gradient(135deg, #1359a6 0%, #0d4a7a 100%);
+    color: white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 3px 24px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* font-size: 11.5px; */
+}
+
+
+.linking_style {
+    margin: 5px -5px 0
+}
+
+.upload_style {
+    color: #539dee
+}
+
+.notebox {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px
+}
+
+.dropdown-submenu .dropdown-submenu > a:after {
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    content: " ";
+    display: block;
+    float: right;
+    height: 0;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 0
+}
+
+.dropdown-submenu > .dropdown-submenu:hover a:after {
+    border-color: transparent transparent transparent #464a4c
+}
+
+.hide-col {
+    width: 0 !important;
+    height: 0 !important;
+    display: block !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: #808080 !important
+}
+
+td.hidecol, th.hidecol {
+    display: table-cell;
+    font-size: 0;
+    min-width: auto !important;
+    border: #808080 !important;
+    border-bottom: 1px solid #ddd !important;
+    text-align: center !important;
+    padding: 5px !important
+}
+
+.toplinks {
+    border-top: 1px solid #eee
+}
+
+.custmfields .form-group {
+    background: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px
+}
+
+    .custmfields .form-group .col-sm-2 {
+        padding-right: 0
+    }
+
+.ui-datepicker {
+    z-index: 9999 !important;
+    width: 20em
+}
+
+.mtoplinks .btn {
+    font-size: 11px !important
+}
+
+.AsignTskTblGrid td.hidecol .fa-plus, .AsignTskTblGrid th.hidecol .fa-plus {
+    display: block;
+    font-size: 14px;
+    color: #1359a6
+}
+
+.AsignTskTblGrid td .fa-minus, .AsignTskTblGrid th .fa-minus {
+    display: block
+}
+
+.AsignTskTblGrid td .fa-plus, .AsignTskTblGrid th .fa-plus {
+    display: none
+}
+
+.AsignTskTblGrid td.hidecol .fa-minus, .AsignTskTblGrid th.hidecol .fa-minus {
+    display: none
+}
+
+.hide-column {
+    background: none;
+    border: #808080;
+    outline: none
+}
+
+    .hide-column:hover, .hide-column:focus {
+        background: none;
+        border: none;
+        outline: none
+    }
+
+.hidecol .custom_chckbox {
+    display: none
+}
+
+.card-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600
+}
+
+.badge-billable {
+    background: #d4edda;
+    color: #155724
+}
+
+.badge-nonbillable {
+    background: #f8d9da;
+    color: #721c24
+}
+
+.badge-priority {
+    background: #fff3cd;
+    color: #856404
+}
+
+    .badge-priority.High {
+        background: #f8d7da;
+        color: #721c24
+    }
+
+    .badge-priority.Medium {
+        background: #fff3cd;
+        color: #856404
+    }
+
+    .badge-priority.Low {
+        background: #d1ecf1;
+        color: #0c5460
+    }
+/* Filter Accordion Styles */
+/* Added By Madhuri.K on 09-12-2025 - Search Section Simple Bar Design */
+.search-chevron {
+    transition: transform 0.3s ease;
+}
+
+#filterAccordionCollapse.show ~ div .search-chevron,
+#filterAccordionCollapse:not(.collapse) ~ div .search-chevron,
+[data-bs-target="#filterAccordionCollapse"][aria-expanded="true"] .search-chevron,
+#searchSectionBtn[aria-expanded="true"] #searchSectionChevron {
+    transform: rotate(180deg);
+}
+
+#filterAccordion .accordion-body {
+    padding: 0;
+    overflow: visible !important;
+    position: relative
+}
+
+.task-search-container {
+    background: #fff;
+    padding: 12px 20px;
+    margin: 16px 15px 12px 15px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(15,23,42,.06);
+    border: 1px solid #e5e7eb;
+    overflow: visible !important;
+    position: relative
+}
+
+#filterAccordion .task-search-container {
+    padding: 20px;
+    margin: 0;
+    overflow: visible !important;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border: 1px solid #e5e7eb;
+    background: #ffffff
+}
+
+#dateRangeSection {
+    overflow: visible !important;
+    position: relative
+}
+
+    #dateRangeSection .col-md-8 {
+        overflow: visible !important;
+        position: relative
+    }
+/* Added By Madhuri.K on 09-12-2025 - Ensure all dropdown options are visible with proper scrolling */
+.bootstrap-select .dropdown-menu {
+    max-height: 192px !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    scrollbar-width: auto !important;
+}
+
+.bootstrap-select.open .dropdown-menu {
+    max-height: 300px !important;
+    overflow-y: auto !important;
+}
+
+.bootstrap-select .dropdown-menu.inner {
+    max-height: none !important;
+    overflow: visible !important;
+}
+/* Custom scrollbar styling for selectpicker dropdowns */
+.bootstrap-select .dropdown-menu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.bootstrap-select .dropdown-menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.bootstrap-select .dropdown-menu::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+    .bootstrap-select .dropdown-menu::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+/* Added By Madhuri.K on 09-12-2025 - Hide tooltips immediately on click for sortable elements */
+.status-filter-icon:active .tooltip,
+.priority-filter-icon:active .tooltip,
+.assignee-filter-icon:active .tooltip,
+.status-filter-icon:focus .tooltip,
+.priority-filter-icon:focus .tooltip,
+.assignee-filter-icon:focus .tooltip {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+/* Force hide tooltip when clicked */
+.status-filter-icon.clicked,
+.priority-filter-icon.clicked,
+.assignee-filter-icon.clicked {
+    pointer-events: auto;
+}
+    /* Modified by Dipali V on 31st Dec 2025 - Removed body > .tooltip rule that was hiding all tooltips */
+    /* Only hide sibling tooltips when element has clicked class */
+    .status-filter-icon.clicked ~ .tooltip,
+    .priority-filter-icon.clicked ~ .tooltip,
+    .assignee-filter-icon.clicked ~ .tooltip {
+        display: none !important;
+    }
+
+.task-search-container .form-label {
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 2px
+}
+
+/* Modern inline chips for filter radios */
+.task-search-container .form-check-inline {
+    margin-right: 8px;
+    margin-bottom: 4px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid #d1d5db;
+    background: #f9fafb;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: all .2s ease
+}
+
+.task-search-container .form-check-input {
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute
+}
+
+    .task-search-container .form-check-input:checked + .form-check-label {
+        color: #1359a6;
+        background: transparent;
+        font-weight: 600
+    }
+
+        .task-search-container .form-check-input:checked + .form-check-label::before {
+            background: #1359a6;
+            border-color: #1359a6
+        }
+
+.task-search-container .form-check-label {
+    cursor: pointer;
+    color: #374151;
+    font-size: 11.5px
+    padding-left: 0;
+    position: relative
+}
+
+    /* Custom radio dot inside chip */
+    .task-search-container .form-check-label::before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        border: 2px solid #d1d5db;
+        margin-right: 6px;
+        vertical-align: middle;
+        transition: all .2s ease;
+        background: #fff
+    }
+
+.task-search-container .input-group .btncalendar {
+    background: #fff;
+    border: 1px solid #ced4da;
+    border-left: 0;
+    padding: 8px 12px;
+    cursor: pointer
+}
+
+    .task-search-container .input-group .btncalendar:hover {
+        background: #f8f9fa
+    }
+
+    .task-search-container .input-group .btncalendar i {
+        color: #6c757d
+    }
+
+.task-search-container .input-group input {
+    border-right: 0
+}
+
+.task-search-container .row .form-label {
+    text-align: right;
+    padding-right: 10px
+}
+
+@media (max-width:768px) {
+    .task-search-container .row .form-label {
+        text-align: left;
+        padding-right: 0
+    }
+}
+
+.task-search-wrapper {
+    position: relative;
+    width: 100%
+}
+
+    .task-search-wrapper input {
+        padding: 8px 15px 8px 40px;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+        width: 100%;
+        transition: all 0.3s ease;
+        font-size: 14px
+    }
+
+        .task-search-wrapper input:focus {
+            border-color: #1359a6;
+            box-shadow: 0 0 0 0.2rem rgba(19,89,166,0.15);
+            outline: none
+        }
+
+.task-search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    pointer-events: none;
+    font-size: 14px
+}
+
+.search-results-info {
+    padding: 8px 12px;
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    color: #666;
+    background: #f8f9fa;
+    border-radius: 6px;
+    display: none;
+    margin-bottom: 8px;
+    min-height: 35px
+}
+
+    .search-results-info.show {
+        display: block
+    }
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+    .action-buttons .btn-sm {
+        padding: 7px 16px;
+        font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        border-radius: 999px;
+        border: 1px solid #d1d5db;
+        background: #f9fafb;
+        color: #111827;
+        font-weight: 500
+    }
+
+        .action-buttons .btn-sm i {
+            font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+        }
+
+    .action-buttons .btnyellow.btn-sm {
+        background: linear-gradient(135deg,#f59e0b,#f97316);
+        border: none;
+        color: #fff;
+        box-shadow: 0 4px 10px rgba(248,163,70,.35)
+    }
+
+        .action-buttons .btnyellow.btn-sm:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 14px rgba(248,163,70,.45)
+        }
+/* Chips Section Styles */
+.chips-section {
+    background: #f8f9fa;
+    padding: 1px 2px;
+    margin: 0 15px 10px 15px;
+    border-radius: 8px;
+    border: none;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px
+}
+
+    .chips-section.show {
+        display: flex
+    }
+
+.chips-section-title {
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    font-weight: 600;
+    color: #111827;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px
+}
+
+    .chips-section-title i {
+        color: #1359a6;
+        font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    }
+
+.chip-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    border-radius: 16px;
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    font-weight: 400;
+    background: #e5e7eb;
+    color: #374151;
+    border: none;
+    transition: all 0.2s ease;
+    cursor: default
+}
+
+    .chip-item:hover {
+        background: #d1d5db;
+        transform: translateY(-1px)
+    }
+
+    .chip-item .chip-label {
+        font-weight: 500;
+        color: #374151
+    }
+
+    .chip-item .chip-value {
+        color: #374151
+    }
+
+    .chip-item .chip-close {
+        background: none;
+        border: none;
+        color: #6b7280;
+        cursor: pointer;
+        padding: 0;
+        margin-left: 4px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+        font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+        line-height: 1
+    }
+
+        .chip-item .chip-close:hover {
+            background: #d1d5db;
+            color: #374151;
+            transform: scale(1.1)
+        }
+
+    .chip-item.chip-primary {
+        background: #e5e7eb;
+        color: #374151
+    }
+
+        .chip-item.chip-primary .chip-label, .chip-item.chip-primary .chip-value {
+            color: #374151
+        }
+
+    .chip-item.chip-success {
+        background: #e5e7eb;
+        color: #374151
+    }
+
+        .chip-item.chip-success .chip-label, .chip-item.chip-success .chip-value {
+            color: #374151
+        }
+
+    .chip-item.chip-warning {
+        background: #e5e7eb;
+        color: #374151
+    }
+
+        .chip-item.chip-warning .chip-label, .chip-item.chip-warning .chip-value {
+            color: #374151
+        }
+
+    .chip-item.chip-info {
+        background: #e5e7eb;
+        color: #374151
+    }
+
+        .chip-item.chip-info .chip-label, .chip-item.chip-info .chip-value {
+            color: #374151
+        }
+
+.chips-section-empty {
+    color: #9ca3af;
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    font-style: italic
+}
+/* Added By Madhuri.K on 09-12-2025 - Void Task Button Hover Styles */
+/*#void_tas_canvas:hover, #show_void_task_modal:hover {
+    background: #d1d5db !important;
+    transform: translateY(-1px);
+}*/
+
+#offcanvas_void_tasks .table-fixed-header thead tr th, .table thead tr th {
+    height: 33px !important;
+}
+
+@media (max-width:768px) {
+    .chips-section {
+        padding: 10px 15px;
+        gap: 6px
+    }
+
+    .chips-section-title {
+        margin-right: 8px;
+        font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    }
+
+    .chip-item {
+        padding: 5px 10px;
+        font-size: 11px
+    }
+}
+
+.offcanvas .pgtitle {
+    color: #1d4ed8 !important;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0
+}
+
+.btn-danger-modern {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 18px;
+    padding: 0.25rem 0.5rem;
+    transition: none;
+    box-shadow: none
+}
+
+    .btn-danger-modern:hover {
+        background-color: transparent;
+        color: #333;
+        box-shadow: none
+    }
+
+    .btn-danger-modern i {
+        font-size: 20px;
+        line-height: 1
+    }
+
+.search-clear-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    color: #999;
+    cursor: pointer;
+    padding: 5px;
+    display: none
+}
+
+/*   .search-clear-btn:hover {
+        color: #1359a6
+    }*/
+
+#searchSectionBtn:focus,
+#searchSectionBtn:active {
+    background: inherit !important;
+    color: inherit !important;
+    box-shadow: none !important;
+}
+
+#searchSectionBtn:hover .fa-search {
+    color: #1359a6 !important;
+}
+
+#searchSectionBtn.active {
+    background-color: #1359a6 !important;
+    color: #fff !important;
+}
+
+    #searchSectionBtn.active .fa-search {
+        color: #fff !important;
+    }
+
+.task-search-wrapper.has-text .search-clear-btn {
+    display: block
+}
+
+/* Modified by Nikhil - Main table pagination was position:absolute overlapping the table.
+   Override specifically for #paginationControls so historyPaginationControls (inside offcanvas) is unaffected. */
+#paginationControls.cstm_pagination {
+    position: static;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    z-index: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 8px 20px;
+    border-top: 1px solid #e5e7eb;
+    background: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cstm_pagination {
+    /*position: fixed;*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto
+}
+
+#paginationControls .page-link {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #1359a6;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.2s ease
+}
+
+    #paginationControls .page-link:hover {
+        background-color: #1359a6;
+        color: #fff;
+        border: 1px solid #1359a6
+    }
+
+    #paginationControls .page-link.disabled:hover, #paginationControls .fa-disabled .page-link:hover {
+        background-color: #f8f9fa;
+        color: #6c757d;
+        border-color: #dee2e6
+    }
+
+    #paginationControls .page-link:focus {
+        background-color: #1359a6;
+        color: #fff;
+        border-color: #1359a6;
+        box-shadow: 0 0 0 0.2rem rgba(19,89,166,0.25)
+    }
+
+    #paginationControls .page-link i {
+        font-size: 14px
+    }
+
+.fa-disabled .page-link, .page-link.disabled {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    border-color: #dee2e6;
+    opacity: 0.6;
+    cursor: not-allowed !important;
+    pointer-events: auto !important
+}
+
+.clsPaginationEnableDisable {
+    pointer-events: none !important
+}
+
+body {
+    background: #fff;
+    margin: 0;
+    /* Modified by Nikhil - Reduced from 80px. Was a workaround for position:absolute pagination overlapping content.
+       #paginationControls is now position:static so no extra body padding needed. */
+    padding: 0 0 10px;
+    color: #333
+}
+
+    body.offcanvas-open {
+        overflow: hidden
+    }
+
+    body:not(.offcanvas-open) {
+        overflow: auto
+    }
+
+@media (max-width:768px) {
+    .cstm_pagination {
+        padding: 8px 15px;
+        flex-direction: column;
+        gap: 8px
+    }
+
+    body {
+        /* Modified by Nikhil - Reduced from 100px (was workaround for absolute-positioned pagination) */
+        padding-bottom: 10px
+    }
+}
+
+@media (max-width:480px) {
+    .cstm_pagination {
+        padding: 6px 10px
+    }
+
+    body {
+        /* Modified by Nikhil - Reduced from 90px (was workaround for absolute-positioned pagination) */
+        padding-bottom: 10px
+    }
+}
+
+.tdCurrent[colspan="4"], .tdbaseline[colspan="4"], .tdactual[colspan="4"] {
+    border-right: 1px solid #ddd !important;
+    background-color: #e7edf0 !important
+}
+
+.tdCurrent.hidecol + .tdCurrent.hidecol + .tdCurrent.hidecol + .tdCurrent.hidecol, .tdbaseline.hidecol + .tdbaseline.hidecol + .tdbaseline.hidecol + .tdbaseline.hidecol, .tdactual.hidecol + .tdactual.hidecol + .tdactual.hidecol + .tdactual.hidecol {
+    border-right: 1px solid #ddd !important
+}
+
+.schedule-toggle-btn {
+    background: none;
+    border: none;
+    color: #1359a6;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+}
+
+    .schedule-toggle-btn:hover {
+        color: #0d4b83;
+        text-decoration: underline
+    }
+
+    .schedule-toggle-btn[aria-expanded="true"] .schedule-icon {
+        transform: rotate(90deg)
+    }
+
+.schedule-icon {
+    transition: transform 0.3s ease;
+    display: inline-block;
+    margin-right: 5px
+}
+
+.schedule-details-content {
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    padding-top: 5px
+}
+
+.schedule-tabs {
+    margin-top: 8px
+}
+
+    .schedule-tabs .nav-tabs {
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap
+    }
+
+        .schedule-tabs .nav-tabs .nav-item {
+            margin-bottom: -1px;
+            flex: 1;
+            margin-right: 0
+        }
+
+        .schedule-tabs .nav-tabs .nav-link {
+            border: 1px solid transparent;
+            padding: 8px 12px;
+            font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+            color: #666;
+            background-color: transparent;
+            text-align: center;
+            white-space: nowrap
+        }
+
+            .schedule-tabs .nav-tabs .nav-link:hover {
+                border-color: #ddd;
+                color: #1359a6
+            }
+
+            .schedule-tabs .nav-tabs .nav-link.active {
+                color: #1359a6;
+                background-color: #fff;
+                border-color: #ddd #ddd transparent;
+                font-weight: 600
+            }
+
+    .schedule-tabs .nav-item:last-child {
+        margin-right: 0
+    }
+
+.schedule-tab-content {
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    color: #555;
+    padding: 5px 0;
+    text-align: left !important
+}
+
+    .schedule-tab-content strong {
+        display: inline-block;
+        width: 85px;
+        min-width: 85px
+    }
+
+.dataTables_scrollHeadInner, #showvoidmodalTbl_wrapper .dataTables_scrollHeadInner {
+    width: 100% !important
+}
+
+.displaymodalTbl, #showvoidmodalTbl_wrapper table {
+    width: 100% !important
+}
+
+.AsignTskTblGrid thead, .Document_uploadtab_Tbl thead, .Document_attachtab_Tbl thead {
+    position: sticky;
+    top: 0;
+    z-index: 9
+}
+
+    .AsignTskTblGrid thead th {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        font-weight: 500;
+        font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+        padding: 8px 8px;
+        color: #2c3e50;
+        border: 1px solid #dee2e6;
+        border-bottom: 2px solid #1359a6;
+        text-transform: none;
+        letter-spacing: 0.5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05)
+    }
+
+        .AsignTskTblGrid thead th:first-child {
+            border-top-left-radius: 8px
+        }
+
+        .AsignTskTblGrid thead th:last-child {
+            border-top-right-radius: 8px
+        }
+/* Added By Madhuri.K on 09-12-2025 - Center align all table cells */
+.AsignTskTblGrid tbody td {
+    padding: 4px 6px;
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    vertical-align: middle;
+    border: 1px solid #e9ecef;
+    color: #495057;
+    font-weight: normal;
+    background: #fff;
+    text-align: center
+}
+
+.AsignTskTblGrid tbody tr {
+    background: #fff;
+    border-bottom: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+    position: relative
+}
+
+    .AsignTskTblGrid tbody tr:hover {
+        background: linear-gradient(90deg, #f8f9ff 0%, #ffffff 100%);
+        box-shadow: 0 2px 8px rgba(19,89,166,0.1);
+        transform: translateY(-1px);
+        border-left: 3px solid #1359a6
+    }
+
+    .AsignTskTblGrid tbody tr:first-child td:first-child {
+        border-top-left-radius: 0
+    }
+
+    .AsignTskTblGrid tbody tr:first-child td:last-child {
+        border-top-right-radius: 0
+    }
+
+.AsignTskTblGrid {
+    table-layout: auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.07)
+}
+
+.usernameshort {
+    color: #fff;
+    display: inline-flex;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center
+}
+
+.usernamecirclesmall {
+    width: 30px;
+    height: 30px;
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+}
+
+.circle-bggreen {
+    background: #4bc5c6
+}
+
+.footer_tbl {
+    position: sticky;
+    bottom: 0
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 1px solid #dfdddd
+}
+
+label {
+    font-weight: 600
+}
+
+.borderbtn {
+    border-color: #1359a6
+}
+
+.content {
+    min-height: 90px
+}
+
+button.nostylebtn.delattachbtn {
+    border: none;
+    background: none !important;
+    margin-top: 10px
+}
+
+.offcanvas {
+    width: 85% !important
+}
+
+.Resourcedetailpanel .projectRsrsinfo .form-group .control-label {
+    text-align: right
+}
+
+ul.nav.nav-tabs.detailsubtabs {
+    border-top: unset;
+    margin: 0
+}
+
+.cust_tabpanel .nav-tabs > li > a {
+    background: #d8dde0;
+    margin-right: 1px;
+    border-radius: 1px;
+    color: #464a4c
+}
+
+.currently_selected {
+    color: #1b48ea
+}
+
+.detailTabTitleDiv {
+    background-color: #f9fafb;
+    padding: 6px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-bottom: 0.5rem
+}
+
+    .detailTabTitleDiv:hover {
+        background-color: #f3f4f6
+    }
+
+    .detailTabTitleDiv .detailSubtabTitle {
+        cursor: pointer;
+        user-select: none;
+        flex: 1
+    }
+
+    .detailTabTitleDiv a[data-bs-toggle="collapse"] {
+        color: #1359a6;
+            font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        padding: 5px;
+        flex-shrink: 0
+    }
+
+        .detailTabTitleDiv a[data-bs-toggle="collapse"]:hover {
+            color: #0d4a8a
+        }
+
+        .detailTabTitleDiv a[data-bs-toggle="collapse"] i {
+            transition: transform 0.3s ease;
+            display: inline-block
+        }
+
+        .detailTabTitleDiv[aria-expanded="true"] a[data-bs-toggle="collapse"] i,
+        .detailTabTitleDiv a[data-bs-toggle="collapse"][aria-expanded="true"] i,
+        .detailTabTitleDiv:has(a[aria-expanded="true"]) a[data-bs-toggle="collapse"] i,
+        .detailTabTitleDiv:has(+ .collapse.show) a[data-bs-toggle="collapse"] i {
+            transform: rotate(180deg)
+        }
+
+    .detailTabTitleDiv[aria-expanded="true"],
+    .detailTabTitleDiv:has(+ .collapse.show) {
+        background-color: #f0f7ff
+    }
+
+    .detailTabTitleDiv.highlighted {
+        background-color: #dbeafe;
+        border: 2px solid #3b82f6;
+        box-shadow: 0 0 0 3px rgba(59,130,246,0.1);
+        transition: all 0.3s ease
+    }
+
+        .detailTabTitleDiv.highlighted .detailSubtabTitle {
+            color: #1e40af;
+            font-weight: 400
+        }
+
+        .detailTabTitleDiv.highlighted a[data-bs-toggle="collapse"] {
+            color: #1e40af
+        }
+
+.detailTabTitleDiv {
+    transition: all 0.3s ease
+}
+/* High Priority Icon Styling */
+.high-priority-icon {
+    display: inline-block;
+    vertical-align: middle;
+    animation: pulse 2s infinite;
+}
+
+    .high-priority-icon i.fa-fire {
+        filter: drop-shadow(0 0 3px rgba(255, 107, 53, 0.5));
+        transition: transform 0.2s ease;
+    }
+
+    .high-priority-icon:hover i.fa-fire {
+        transform: scale(1.1);
+    }
+
+.high-priority-icon-header {
+    display: inline-block;
+    vertical-align: middle;
+    animation: pulse 2s infinite;
+}
+
+    .high-priority-icon-header i.fa-fire {
+        filter: drop-shadow(0 0 3px rgba(255, 107, 53, 0.5));
+        transition: transform 0.2s ease;
+    }
+
+    .high-priority-icon-header:hover i.fa-fire {
+        transform: scale(1.1);
+    }
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+/* Input group with link icon styling */
+.input-group .input-group-text[data-bs-toggle="modal"] {
+    border-left: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+    .input-group .input-group-text[data-bs-toggle="modal"]:hover {
+        background-color: #f8f9fa
+    }
+
+    .input-group .input-group-text[data-bs-toggle="modal"] i {
+        transition: color 0.2s ease
+    }
+
+    .input-group .input-group-text[data-bs-toggle="modal"]:hover i {
+        color: #0d4b83
+    }
+
+.bg_current {
+    background-color: #f2ffb7e8 !important;
+    width: 3% !important
+}
+
+.header-section {
+    max-width: 1400px;
+    background: white;
+    position: relative
+}
+
+.header-white-card {
+    padding: 0;
+    position: relative
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    position: relative
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    margin-left: 0
+}
+
+.header-icon {
+    color: #1e40af;
+    margin-right: 0.75rem;
+    transition: all .3s cubic-bezier(.4,0,.2,1)
+}
+
+    .header-icon:hover {
+        transform: scale(1.05)
+    }
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem
+}
+
+.header-title {
+    margin: 0;
+    color: #1e40af;
+    letter-spacing: -.8px;
+    line-height: 1.2;
+    transition: all .3s ease
+}
+
+    .header-title:hover {
+        transform: translateX(1px)
+    }
+
+.header-description {
+    margin: 0;
+    color: #6b7280;
+    line-height: 1.4;
+    opacity: .9;
+    transition: all .3s ease
+}
+
+    .header-description:hover {
+        color: #475569;
+        transform: translateX(2px)
+    }
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.clearalllink {
+    color: #1359a6;
+    text-decoration: none;
+    font-size: 11.5px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    cursor: pointer
+}
+
+    .clearalllink:hover {
+        text-decoration: underline
+    }
+
+    .clearalllink.show {
+        display: inline-block !important
+    }
+
+#PMProjectReviewClearAllFilter {
+    display: none !important
+}
+
+    #PMProjectReviewClearAllFilter.show {
+        display: inline-block !important
+    }
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent
+}
+
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none
+}
+
+#AdvanceFilterIcon.AdvanceFilterIconClicked {
+    background-color: #1359a6 !important;
+    color: white !important;
+    border-radius: 8px !important;
+    border: none !important
+}
+
+    #AdvanceFilterIcon.AdvanceFilterIconClicked i {
+        color: white !important
+    }
+
+.modern-document-section {
+    background: #fff;
+    padding: 1rem 2rem 2rem 2rem
+}
+
+.upload-type-toggle {
+    display: flex;
+    gap: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 4px;
+    background: #f9fafb
+}
+
+.btn-upload-type {
+    flex: 1;
+    padding: 12px 24px;
+    border: none;
+    background: transparent;
+    color: #6b7280;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px
+}
+
+    .btn-upload-type i {
+        font-size: 16px
+    }
+
+    .btn-upload-type:hover {
+        background: #f3f4f6;
+        color: #1359a6
+    }
+
+    .btn-upload-type.active {
+        background: #fff;
+        color: #1359a6;
+        border: 1px solid #e5e7eb
+    }
+
+.upload-area {
+    border: 2px dashed #d1d5db;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    background: #fff;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+    .upload-area:hover {
+        border-color: #1359a6;
+        background: #f8faff
+    }
+
+    .upload-area.dragover {
+        border-color: #1359a6;
+        background: #e6f2ff
+    }
+
+.upload-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.upload-icon {
+    font-size: 48px;
+    color: #9ca3af;
+    margin-bottom: 16px
+}
+
+.upload-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #374151;
+    margin: 0
+}
+
+.upload-hint {
+    font-size: 11.5px
+    color: #9ca3af;
+    margin: 8px 0 16px 0
+}
+
+.upload-btn {
+    background: #1359a6;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease
+}
+
+    .upload-btn:hover {
+        background: #0d4b83;
+        transform: translateY(-2px)
+    }
+
+.file-preview {
+    width: 100%
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background: #f3f4f6;
+    border-radius: 8px;
+    gap: 12px
+}
+
+.file-icon {
+    font-size: 32px;
+    color: #1359a6
+}
+
+.file-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
+.file-name {
+    font-weight: 600;
+    color: #111827;
+    font-size: 14px
+}
+
+.file-size {
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    color: #6b7280
+}
+
+.btn-remove-file {
+    background: none;
+    border: none;
+    color: #ef4444;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease
+}
+
+.btn-icon {
+    background: none;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: #dc3545;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px
+}
+
+    .btn-icon:hover {
+        background: #f0f0f0;
+        transform: scale(1.1)
+    }
+
+        .btn-icon:hover i {
+            opacity: 1
+        }
+
+    .btn-icon i {
+        transition: all 0.2s ease
+    }
+
+.task-row-delayed, .task-row-completed, .task-row-in-progress {
+    position: relative
+}
+
+    .task-row-delayed:hover, .task-row-completed:hover, .task-row-in-progress:hover {
+        background-color: #f8f9fa
+    }
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 0.3px;
+    white-space: nowrap
+}
+
+.status-badge-delayed {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb
+}
+
+.aging-count-display {
+    font-size: 11px;
+    font-weight: normal;
+    margin-top: 3px;
+    display: block
+}
+
+.aging-count-delayed {
+    color: #8b0000
+}
+
+.aging-count-in-progress {
+    color: #004085
+}
+
+.status-badge-completed {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb
+}
+
+.status-badge-in-progress {
+    background: #cce5ff;
+    color: #004085;
+    border: 1px solid #b3d7ff
+}
+
+.resource-with-avatar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 100%;
+    text-align: left
+}
+
+.resource-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e5e7eb;
+    flex-shrink: 0;
+    display: block
+}
+
+/* Unique status accent strip on left of each row */
+.AsignTskTblGrid tbody tr.task-row-in-progress td:first-child::before,
+.AsignTskTblGrid tbody tr.task-row-completed td:first-child::before,
+.AsignTskTblGrid tbody tr.task-row-delayed td:first-child::before,
+.AsignTskTblGrid tbody tr.task-row-status-delayed td:first-child::before,
+.AsignTskTblGrid tbody tr.task-row-status-in-progress td:first-child::before,
+.AsignTskTblGrid tbody tr.task-row-status-ontime td:first-child::before,
+.AsignTskTblGrid tbody tr.task-row-status-yet-to-start td:first-child::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    border-radius: 3px 0 0 3px;
+}
+
+.AsignTskTblGrid tbody tr.task-row-in-progress td:first-child::before {
+    background: linear-gradient(180deg,#3b82f6,#1d4ed8)
+}
+
+.AsignTskTblGrid tbody tr.task-row-completed td:first-child::before {
+    background: linear-gradient(180deg,#22c55e,#15803d)
+}
+
+.AsignTskTblGrid tbody tr.task-row-delayed td:first-child::before {
+    background: linear-gradient(180deg,#f97316,#b91c1c)
+}
+
+/* Added By Madhuri.K on 09-12-2025 - Status-based left border colors */
+.AsignTskTblGrid tbody tr.task-row-status-delayed td:first-child::before {
+    background: linear-gradient(180deg,#dc3545,#b91c1c)
+}
+
+.AsignTskTblGrid tbody tr.task-row-status-in-progress td:first-child::before {
+    background: linear-gradient(180deg,#ff9800,#f57c00)
+}
+
+.AsignTskTblGrid tbody tr.task-row-status-ontime td:first-child::before {
+    background: linear-gradient(180deg,#28a745,#1e7e34)
+}
+
+.AsignTskTblGrid tbody tr.task-row-status-yet-to-start td:first-child::before {
+    background: linear-gradient(180deg,#007bff,#0056b3)
+}
+
+/* Modified by Dipali V on 1st Jan 2026 - Removed inline style and hierarchy-related CSS rules */
+/* Border-left color is now handled via ::before pseudo-element on td:first-child using status classes */
+
+/* Modern Modal Styles - Added for Selection Modals (Deliverables, Milestone, Phase, Module, etc.) */
+/* Deliverables Modal - Bottom Slide Animation */
+.modal-dialog-bottom {
+    position: fixed !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: auto !important;
+    transform: translateY(100%) !important;
+    margin: 0 11px 0 1px !important;
+    max-width: 600px !important;
+    width: calc(90% - 20px) !important;
+    transition: transform 0.3s ease-out !important;
+}
+
+.modal.show .modal-dialog-bottom,
+.modal.showing .modal-dialog-bottom {
+    transform: translateY(0) !important;
+}
+
+#CRDTmodal .modal-content {
+    border-radius: 16px 0 0 0 !important;
+    border: none !important;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15) !important;
+    margin: 0 !important;
+    max-height: 90vh !important;
+}
+
+#CRDTmodal .modal-header {
+    background: white !important;
+    border-bottom: 1px solid #e5e7eb !important;
+    padding: 12px 15px !important;
+    position: relative !important;
+}
+
+    #CRDTmodal .modal-header .close {
+        position: absolute !important;
+        left: 15px !important;
+        top: 12px !important;
+        background: #1359a6 !important;
+        color: white !important;
+        width: 28px !important;
+        height: 28px !important;
+        border-radius: 6px !important;
+        border: none !important;
+        padding: 0 !important;
+        text-align: center !important;
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        opacity: 1 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        cursor: pointer !important;
+        transition: all 0.2s ease !important;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) !important;
+        z-index: 10 !important;
+    }
+
+        #CRDTmodal .modal-header .close:hover {
+            background: #0d4b83 !important;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2) !important;
+            transform: scale(1.05) !important;
+        }
+
+        #CRDTmodal .modal-header .close:active {
+            transform: scale(0.95) !important;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        #CRDTmodal .modal-header .close span {
+            color: white !important;
+            font-size: 16px !important;
+            line-height: 1 !important;
+            font-weight: 400 !important;
+        }
+
+#CRDTmodal .modal-title {
+    color: #111827 !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    /* Modified By Madhuri.K On 01-04-2026 */
+    margin: 0 !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+#CRDTmodal .modal-body {
+    background: white !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    max-height: calc(90vh - 100px) !important;
+}
+
+/* Custom scrollbar for modal body - Apply to all modals */
+.modal-body-scrollable {
+    padding: 15px !important;
+    overflow-y: auto !important;
+    flex: 1 !important;
+}
+
+    /* Custom scrollbar styling - show on hover only - Apply to all modals */
+    .modal-body-scrollable::-webkit-scrollbar {
+        width: 6px !important;
+    }
+
+    .modal-body-scrollable::-webkit-scrollbar-track {
+        background: transparent !important;
+        border-radius: 10px !important;
+    }
+
+    .modal-body-scrollable::-webkit-scrollbar-thumb {
+        background: transparent !important;
+        border-radius: 10px !important;
+        transition: background 0.3s ease !important;
+    }
+
+    /* Show scrollbar on hover - Apply to all modals */
+    .modal-body-scrollable:hover::-webkit-scrollbar-track {
+        background: #f1f1f1 !important;
+    }
+
+    .modal-body-scrollable:hover::-webkit-scrollbar-thumb {
+        background: #c1c1c1 !important;
+    }
+
+        .modal-body-scrollable:hover::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8 !important;
+        }
+
+/* Firefox scrollbar - show on hover - Apply to all modals */
+.modal-body-scrollable {
+    scrollbar-width: thin !important;
+    scrollbar-color: transparent transparent !important;
+    transition: scrollbar-color 0.3s ease !important;
+}
+
+    .modal-body-scrollable:hover {
+        scrollbar-color: #c1c1c1 #f1f1f1 !important;
+    }
+
+/* Old modal styles removed - all modals now use the new bottom-right slide style */
+/* Old custmodal styles removed - modals now use bottom-right slide style */
+/* Only showBaslineModal and showVoidModal still use custmodal class */
+
+/* Fix for modal backdrop blocking page interactions */
+.modal-backdrop {
+    z-index: 1040 !important;
+}
+
+.modal {
+    z-index: 1050 !important;
+}
+/* Ensure body is clickable when no modal is open */
+body:not(.modal-open) {
+    pointer-events: auto !important;
+    overflow: auto !important;
+}
+    /* Remove backdrop when modal is not shown */
+    body:not(.modal-open) .modal-backdrop {
+        display: none !important;
+    }
+
+/* Modern Task Detail UI Styles - Added for Create New Task Offcanvas */
+#offcanvas_new_assigntask .offcanvas-body {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    overflow: hidden !important;
+    max-height: 100vh !important;
+}
+
+.task-detail-header {
+    background: #ffffff;
+    padding: 0px 13px;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin: 0;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+#offcanvas_new_assigntask .task-detail-content,
+#offcanvas_new_assigntask .tab-content {
+    flex: 1;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    padding: 0;
+    margin: 0;
+    min-height: 0;
+    max-height: 100%;
+}
+
+#offcanvas_new_assigntask .tab-pane {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    max-height: 100%;
+}
+
+.task-detail-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.task-detail-title-wrapper {
+    flex: 1;
+}
+
+.task-detail-title {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #0054ff;
+    margin: 0 0 0.125rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.task-title-icon {
+    color: #9ca3af;
+    font-size: 1.125rem;
+}
+
+.task-detail-subtitle {
+    font-size: 0.75rem;
+    color: #864bb2;
+    margin: 0;
+    font-weight: 400;
+}
+
+.task-detail-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.task-detail-menu-btn {
+    background: none;
+    border: none;
+    color: #6b7280;
+    font-size: 16px;
+    /* padding: 0.5rem; */
+    cursor: pointer;
+    /* border-radius: 6px; */
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .task-detail-menu-btn:hover {
+        background: #f3f4f6;
+        color: #111827;
+    }
+
+.task-detail-close-btn {
+    background: none;
+    border: none;
+    color: #6b7280;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .task-detail-close-btn:hover {
+        background: #f3f4f6;
+        color: #dc2626;
+    }
+
+.task-detail-menu-dropdown {
+    min-width: 180px;
+    padding: 0.25rem 0;
+    margin-top: 0.25rem;
+}
+
+.task-detail-menu-item {
+    /*display: flex;*/
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    color: #374151;
+    text-decoration: none;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    font-weight: 400;
+}
+
+    .task-detail-menu-item:hover {
+        background: #f3f4f6;
+    }
+
+    .task-detail-menu-item.active {
+        background: #eff6ff;
+        font-weight: 500;
+    }
+
+    .task-detail-menu-item .task-detail-field-icon {
+        margin-left: 0.5rem;
+        width: 16px;
+        flex-shrink: 0;
+    }
+
+/* Different colors for each menu item */
+.menu-item-details {
+    color: #1359a6 !important; /* Blue */
+}
+
+    .menu-item-details:hover {
+        color: #1359a6 !important;
+        background: #eff6ff !important;
+    }
+
+    .menu-item-details.active {
+        color: #1359a6 !important;
+        background: #dbeafe !important;
+    }
+
+    .menu-item-details .task-detail-field-icon {
+        color: #1359a6 !important;
+    }
+
+    .menu-item-details:hover .task-detail-field-icon,
+    .menu-item-details.active .task-detail-field-icon {
+        color: inherit !important;
+    }
+
+.menu-item-resources {
+    color: #1359a6 !important; /* Green */
+}
+
+    .menu-item-resources:hover {
+        color: #1359a6 !important;
+        background: #ecfdf5 !important;
+    }
+
+    .menu-item-resources.active {
+        color: #1359a6 !important;
+        background: #d1fae5 !important;
+    }
+
+    .menu-item-resources .task-detail-field-icon {
+        color: #1359a6 !important;
+    }
+
+    .menu-item-resources:hover .task-detail-field-icon,
+    .menu-item-resources.active .task-detail-field-icon {
+        color: inherit !important;
+    }
+
+.menu-item-documents {
+    color: #1359a6 !important; /* Purple */
+}
+
+    .menu-item-documents:hover {
+        color: #1359a6 !important;
+        background: #f5f3ff !important;
+    }
+
+    .menu-item-documents.active {
+        color: #1359a6 !important;
+        background: #ede9fe !important;
+    }
+
+    .menu-item-documents .task-detail-field-icon {
+        color: #1359a6 !important;
+    }
+
+    .menu-item-documents:hover .task-detail-field-icon,
+    .menu-item-documents.active .task-detail-field-icon {
+        color: inherit !important;
+    }
+
+.menu-item-baseline {
+    color: #1359a6 !important; /* Orange */
+}
+
+    .menu-item-baseline:hover {
+        color: #1359a6 !important;
+        background: #fffbeb !important;
+    }
+
+    .menu-item-baseline.active {
+        color: #1359a6 !important;
+        background: #fef3c7 !important;
+    }
+
+    .menu-item-baseline .task-detail-field-icon {
+        color: #1359a6 !important;
+    }
+
+    .menu-item-baseline:hover .task-detail-field-icon,
+    .menu-item-baseline.active .task-detail-field-icon {
+        color: inherit !important;
+    }
+
+.menu-item-taskAttributes {
+    color: #1359a6 !important;
+}
+
+    .menu-item-taskAttributes:hover {
+        color: #1359a6 !important;
+        background: #fef2f2 !important;
+    }
+
+    .menu-item-taskAttributes.active {
+        color: #1359a6 !important;
+        background: #fee2e2 !important;
+    }
+
+    .menu-item-taskAttributes .task-detail-field-icon {
+        color: #1359a6 !important;
+    }
+
+    .menu-item-taskAttributes:hover .task-detail-field-icon,
+    .menu-item-taskAttributes.active .task-detail-field-icon {
+        color: inherit !important;
+    }
+
+.menu-item-agile {
+    color: #1359a6 !important; /* Cyan */
+}
+
+    .menu-item-agile:hover {
+        color: #1359a6 !important;
+        background: #ecfeff !important;
+    }
+
+    .menu-item-agile.active {
+        color: #1359a6 !important;
+        background: #cffafe !important;
+    }
+
+    .menu-item-agile .task-detail-field-icon {
+        color: #1359a6 !important;
+    }
+
+    .menu-item-agile:hover .task-detail-field-icon,
+    .menu-item-agile.active .task-detail-field-icon {
+        color: inherit !important;
+    }
+
+.menu-item-customFields {
+    color: #1359a6 !important; /* Indigo */
+}
+
+    .menu-item-customFields:hover {
+        color: #1359a6 !important;
+        background: #eef2ff !important;
+    }
+
+    .menu-item-customFields.active {
+        color: #1359a6 !important;
+        background: #e0e7ff !important;
+    }
+
+    .menu-item-customFields .task-detail-field-icon {
+        color: #1359a6 !important;
+    }
+
+    .menu-item-customFields:hover .task-detail-field-icon,
+    .menu-item-customFields.active .task-detail-field-icon {
+        color: inherit !important;
+    }
+
+#AsignTskTbl.table tbody tr {
+    margin-bottom: 8px;
+    display: table-row;
+}
+
+#moreActionDropdown {
+    font-size: 11.5px !important; /* Modified By Madhuri.K On 26-03-2026 */
+}
+/* Top Action Buttons in Header */
+.task-detail-top-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+    font-size: 11.5px !important; /* Modified By Madhuri.K On 26-03-2026 */
+}
+
+.bootstrap-select .dropdown-menu li a span.text {
+    display: inline-block;
+    font-size: 11.5px !important; /* Modified By Madhuri.K On 26-03-2026 */
+}
+
+#showvoidmodalTbl tr td:nth-child(1) {
+    width: 300px !important;
+}
+/* Menu Items List (Visible List instead of Dropdown) */
+.task-detail-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 0;
+}
+
+    .task-detail-menu-list .task-detail-menu-item {
+        padding: 0.5rem 1rem;
+        border: 1px solid #e5e7eb;
+        border-radius: 6px;
+        background: #ffffff;
+        color: #374151;
+        font-size: 11.5px;
+        /* Modified By Madhuri.K On 26-03-2026 */
+        transition: all 0.2s ease;
+    }
+
+        .task-detail-menu-list .task-detail-menu-item:hover {
+            background: #f3f4f6;
+            border-color: #d1d5db;
+            color: #1359a6;
+        }
+
+        .task-detail-menu-list .task-detail-menu-item.active {
+            background: #eff6ff;
+            border-color: #3b82f6;
+            color: #1359a6;
+            font-weight: 500;
+        }
+
+/* Bottom Action Buttons Section */
+.task-detail-bottom-actions {
+    position: Fixed !important;
+    bottom: 0 !important;
+    background: white !important;
+    z-index: 10 !important;
+    border-top: 1px solid #e5e7eb !important;
+    padding: 0.75rem 1rem !important;
+    margin-top: auto !important;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08) !important;
+    width: 84.5% !important;
+}
+
+.task-detail-bottom-actions-inner {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* .task-detail-content {
+    padding: 2rem;
+    background: #f9fafb;
+    min-height: calc(100vh - 200px);
+} */
+
+/* Modern Form Styles */
+.task-form-actions {
+    background: #ffffff;
+    padding: 3px;
+    margin: 3px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.task-form-actions-inner {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary-action {
+    background: #fef3c7;
+    color: #d97706;
+    border: none;
+    padding: 0.3rem 0.78rem;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: none;
+}
+
+    .btn-primary-action:hover {
+        background: #fde68a;
+        color: #b45309;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn-primary-action:active {
+        transform: translateY(0);
+    }
+
+    .btn-primary-action .fas {
+        color: #d97706;
+    }
+
+.btn-save-add {
+    background: #dbeafe;
+    color: #2563eb;
+    border: none;
+    box-shadow: none;
+}
+
+    .btn-save-add:hover {
+        background: #bfdbfe;
+        color: #1d4ed8;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn-save-add .fas {
+        color: #2563eb;
+    }
+
+.btn-secondary-action {
+    background: #f3f4f6;
+    color: #6b7280;
+    border: none;
+    padding: 0.3rem 0.78rem;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+    .btn-secondary-action:hover {
+        background: #e5e7eb;
+        color: #4b5563;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn-secondary-action:active {
+        transform: translateY(0);
+    }
+
+    .btn-secondary-action .fas {
+        color: #6b7280;
+    }
+
+/* Modern Form Groups */
+.modern-form-group {
+    margin-bottom: 1.5rem;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+    .modern-form-group:hover {
+        box-shadow: none;
+    }
+
+/* Modern Form Labels */
+.modern-form-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 400;
+    /* font-size: 0.8125rem; */
+    margin-bottom: 0.5rem;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+    .modern-form-label .label-icon {
+        color: #1359a6;
+        font-size: 0.75rem;
+        width: 14px;
+        text-align: center;
+    }
+
+    .modern-form-label.required::after {
+        content: '*';
+        color: #f87171;
+        margin-left: 0.25rem;
+        font-weight: 400;
+    }
+
+/* Modern Input Fields */
+/* .modern-input {
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 0.625rem 0.875rem;
+    font-size: 0.8125rem;
+    color: #374151;
+    transition: all 0.3s ease;
+    background: #ffffff;
+    font-weight: 400;
+} */
+
+.modern-input:focus {
+    border: 1px solid #93c5fd;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(147, 197, 253, 0.1);
+    background: #ffffff;
+    color: #111827;
+}
+
+.modern-input:hover {
+    border-color: #d1d5db;
+}
+
+.modern-input::placeholder {
+    color: #d1d5db;
+    font-style: normal;
+}
+
+.modern-textarea {
+    min-height: 100px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+/* Modern Input Group for Date Pickers */
+.modern-input-group {
+    display: flex;
+    position: relative;
+}
+
+    .modern-input-group .modern-input {
+        flex: 1;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: none;
+    }
+
+.btn-calendar-modern {
+    background: #dbeafe;
+    color: #3b82f6;
+    border: 1px solid #93c5fd;
+    border-left: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 0.625rem 0.875rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+    .btn-calendar-modern:hover {
+        background: #bfdbfe;
+        color: #2563eb;
+        border-color: #60a5fa;
+    }
+
+    .btn-calendar-modern:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(209, 213, 219, 0.2);
+    }
+
+/* Modern Select Wrapper */
+.modern-select-wrapper {
+    position: relative;
+}
+
+    .modern-select-wrapper .modern-select,
+    .modern-select-wrapper .selectpicker,
+    .modern-select-wrapper select {
+        border: 1px solid #e5e7eb;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+        background: #ffffff;
+        color: #374151;
+    }
+
+        .modern-select-wrapper .modern-select:focus,
+        .modern-select-wrapper .selectpicker:focus,
+        .modern-select-wrapper select:focus {
+            border: 1px solid #93c5fd;
+            box-shadow: 0 0 0 3px rgba(147, 197, 253, 0.1);
+            background: #ffffff;
+            outline: none;
+        }
+
+        .modern-select-wrapper .modern-select:hover,
+        .modern-select-wrapper .selectpicker:hover,
+        .modern-select-wrapper select:hover {
+            border-color: #d1d5db;
+        }
+
+    /* Bootstrap select styling */
+    .modern-select-wrapper .bootstrap-select > .dropdown-toggle {
+        border: 1px solid #e5e7eb !important;
+        border-radius: 6px !important;
+        background: #ffffff !important;
+        color: #374151 !important;
+    }
+
+        .modern-select-wrapper .bootstrap-select > .dropdown-toggle:focus,
+        .modern-select-wrapper .bootstrap-select > .dropdown-toggle:hover {
+            border: 1px solid #93c5fd !important;
+            box-shadow: 0 0 0 3px rgba(147, 197, 253, 0.1) !important;
+            background: #ffffff !important;
+        }
+
+    .modern-select-wrapper .bootstrap-select .dropdown-toggle,
+    .modern-select-wrapper .bootstrap-select .btn {
+        border: 1px solid #e5e7eb !important;
+        background: #ffffff !important;
+        color: #374151 !important;
+    }
+
+        .modern-select-wrapper .bootstrap-select .dropdown-toggle:focus,
+        .modern-select-wrapper .bootstrap-select .btn:focus {
+            border: 1px solid #93c5fd !important;
+            box-shadow: 0 0 0 3px rgba(147, 197, 253, 0.1) !important;
+            background: #ffffff !important;
+        }
+
+/* Modern Checkbox */
+.modern-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-top: 0.5rem;
+}
+
+.modern-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.modern-checkbox-input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #d1d5db;
+    border-radius: 4px;
+}
+
+.modern-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    color: #9ca3af;
+    cursor: pointer;
+    margin: 0;
+}
+
+    .modern-checkbox-label .fas {
+        color: #93c5fd;
+        font-size: 0.75rem;
+    }
+
+/* Form Helper Links */
+.form-helper-link {
+    margin-top: 0.5rem;
+}
+
+.helper-link {
+    color: #93c5fd;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+    .helper-link:hover {
+        color: #60a5fa;
+        text-decoration: underline;
+    }
+
+    .helper-link .fas {
+        font-size: 0.75rem;
+        color: #93c5fd;
+    }
+
+.task-detail-section {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task-detail-section-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.task-detail-field {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+    .task-detail-field:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+.task-detail-field-label {
+    font-size: 11.5px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    font-weight: 500;
+    color: #6b7280;
+    min-width: 120px;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.task-detail-field-value {
+    flex: 1;
+    font-size: 11.5px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    color: #111827;
+}
+
+.task-detail-field-icon {
+    color: #6b7280;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    /* Modified By Madhuri.K On 26-03-2026 */
+}
+
+.task-detail-description-box {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.task-detail-description-edit {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #6b7280;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    /* Modified By Madhuri.K On 26-03-2026 */
+}
+
+    .task-detail-description-edit:hover {
+        background: #f3f4f6;
+        color: #1359a6;
+    }
+
+.task-detail-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+.task-detail-badge-overdue {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.task-detail-badge-status {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.task-detail-save-actions {
+    position: sticky;
+    bottom: 0;
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    z-index: 10;
+}
+
+.task-detail-tab-content {
+    display: none;
+}
+
+/* Override for Documents - ensure it can be shown */
+#prositedetailTab2 {
+    display: none;
+}
+
+/* Baseline tab - hidden by default */
+#prositedetailTab3 {
+    display: none;
+}
+
+/* Hide Documents tab when Details tab is active - but allow override when Documents is active */
+.tab-content #prositedetailTab1.active ~ #prositedetailTab2:not(.active),
+#prositedetailTab1.active ~ #prositedetailTab2:not(.active) {
+    display: none !important;
+}
+
+/* Override: Show Documents when it's active */
+.tab-content #prositedetailTab2.active,
+#prositedetailTab2.active {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Override: Show Baseline when it's active */
+.tab-content #prositedetailTab3.active,
+#prositedetailTab3.active {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Ensure Documents is hidden by default unless explicitly active */
+#prositedetailTab2:not(.active):not(.show) {
+    display: none;
+}
+
+/* Force show Documents when it has force-show class */
+#prositedetailTab2.force-show-documents {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.task-detail-tab-content.active,
+.tab-pane.task-detail-tab-content.active,
+.tab-pane.active.task-detail-tab-content {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Documents content - direct display without tab structure - HIGHER SPECIFICITY */
+.tab-content #prositedetailTab2.active,
+.tab-content #prositedetailTab2.active.show,
+.tab-content #prositedetailTab2.show,
+#prositedetailTab2.active,
+#prositedetailTab2.active.show,
+#prositedetailTab2.show,
+#prositedetailTab2[class*="active"],
+#prositedetailTab2.tab-pane.active,
+#prositedetailTab2.tab-pane.active.show {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    height: auto !important;
+    overflow: visible !important;
+}
+
+/* Override Bootstrap's default tab-pane display for Documents */
+.tab-content > #prositedetailTab2.active,
+.tab-content > #prositedetailTab2.active.show {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    overflow: visible !important;
+}
+
+/* ULTIMATE OVERRIDE - Force show Documents when active - Highest specificity */
+div#prositedetailTab2.active,
+div#prositedetailTab2.active.show,
+div#prositedetailTab2.tab-pane.active,
+div#prositedetailTab2.tab-pane.active.show,
+div#prositedetailTab2.task-detail-tab-content.active {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    overflow: visible !important;
+    position: relative !important;
+}
+
+/* Baseline Tab Display Rules */
+div#prositedetailTab3.active,
+div#prositedetailTab3.active.show,
+div#prositedetailTab3.tab-pane.active,
+div#prositedetailTab3.tab-pane.active.show,
+div#prositedetailTab3.task-detail-tab-content.active {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    overflow: visible !important;
+    position: relative !important;
+}
+
+#prositedetailTab3.active .task-detail-content,
+#prositedetailTab3.active .RoleRateContent,
+#prositedetailTab3.active .RoleRateContentMain,
+#prositedetailTab3.active .container-fluid,
+#prositedetailTab3.active .detailsubtabsbtn,
+#prositedetailTab3.active .showbaseline_Tbl,
+#prositedetailTab3.active .accordion,
+#prositedetailTab3.active .table-responsive {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+#prositedetailTab3.active .showbaseline_Tbl,
+#prositedetailTab3.active table {
+    display: table !important;
+}
+
+/* Documents Tab Display Rules - Ensure all elements visible */
+#prositedetailTab2.active .TPdocuments,
+#prositedetailTab2.active .modern-document-section,
+#prositedetailTab2.active .form-group,
+#prositedetailTab2.active .upload-area,
+#prositedetailTab2.active .upload-type-toggle,
+#prositedetailTab2.active table {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+#prositedetailTab2.active table {
+    display: table !important;
+}
+
+#prositedetailTab2.active .task-detail-content,
+#prositedetailTab2.active .RoleRateContent,
+#prositedetailTab2.active .RoleRateContentMain,
+#prositedetailTab2.active .container-fluid,
+#prositedetailTab2.active .TPdocuments,
+#prositedetailTab2.active .modern-document-section,
+#prositedetailTab2.active .form-group,
+#prositedetailTab2.active .upload-area,
+#prositedetailTab2.active .upload-type-toggle {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Ensure Documents section is always visible when active */
+#prositedetailTab2.active .modern-document-section {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    min-height: 100px;
+}
+
+/* Hide default tabs, use menu navigation instead - but show when Documents/Baseline tabs are active */
+.offcanvas .nav-tabs.detailsubtabs {
+    display: none !important;
+}
+
+    /* Show nav-tabs when Documents or Baseline is active */
+    .offcanvas .nav-tabs.detailsubtabs.show-tabs {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    /* Allow nav-tabs to be shown temporarily for Bootstrap tab functionality */
+    .offcanvas .nav-tabs.detailsubtabs.temp-show {
+        display: flex !important;
+    }
+
+/* Slight lift and glow on hover to feel more interactive */
+.AsignTskTblGrid tbody tr:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(15,23,42,0.08);
+}
+
+/* Offcanvas header and labels */
+.offcanvas-header-main {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 2px 4px rgba(15,23,42,0.03);
+    padding: 10px 18px;
+}
+
+.offcanvas-body .control-label {
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    font-weight: 500;
+    color: #4b5563;
+}
+
+    .offcanvas-body .control-label.required::after {
+        content: " *";
+        color: #ef4444;
+    }
+
+/* Offcanvas tabs - modern rounded background style */
+ul.nav.nav-tabs.detailsubtabs {
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 8px 16px;
+    background: #ffffff;
+    margin: 0;
+}
+
+    ul.nav.nav-tabs.detailsubtabs .nav-link {
+        font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+        font-weight: 500;
+        padding: 8px 20px;
+        border: none;
+        border-radius: 6px;
+        color: #9ca3af;
+        margin-right: 8px;
+        background: transparent;
+        transition: all 0.2s ease;
+    }
+
+        ul.nav.nav-tabs.detailsubtabs .nav-link:hover {
+            color: #6b7280;
+            background: transparent;
+        }
+
+        ul.nav.nav-tabs.detailsubtabs .nav-link.active {
+            background: #f3f4f6 !important;
+            color: #374151 !important;
+            border: none !important;
+            font-weight: 500;
+        }
+
+/* Offcanvas Document section card */
+.modern-document-section {
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(15,23,42,0.05);
+    border: 1px solid #e5e7eb;
+}
+
+/* Offcanvas Baseline section card & table */
+.RoleRateContentMain .showbaseline_Tbl {
+    background: #ffffff;
+}
+
+    .RoleRateContentMain .showbaseline_Tbl thead th {
+        background: #f9fafb;
+        font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+        font-weight: 600;
+    }
+
+    .RoleRateContentMain .showbaseline_Tbl tbody td {
+        font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    }
+/* Added By Madhuri.K on 26-11-2025 - Task Management Tab Styles - Start */
+.task-management-tabs {
+    overflow-x: auto;
+    overflow-y: hidden
+}
+
+    .task-management-tabs::-webkit-scrollbar {
+        height: 4px
+    }
+
+    .task-management-tabs::-webkit-scrollbar-thumb {
+        background: #1359a6;
+        border-radius: 2px
+    }
+
+    .task-management-tabs .nav-link {
+        transition: all 0.3s ease;
+        cursor: pointer;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+        font-weight: 500
+    }
+
+        .task-management-tabs .nav-link:hover {
+            color: #1359a6 !important;
+            background: #f0f7ff !important;
+            border-bottom-color: #1359a6 !important
+        }
+
+        .task-management-tabs .nav-link.active {
+            color: #1359a6 !important;
+            background: #f0f7ff !important;
+            border-bottom-color: #1359a6 !important;
+            font-weight: 500 !important
+        }
+
+        .task-management-tabs .nav-link i {
+            font-size: 14px
+        }
+
+#assignedTasksContent {
+    transition: opacity 0.3s ease
+}
+
+#otherPagesContainer {
+    background: #fff;
+    padding: 10px;
+    height: calc(100vh - 120px);
+    min-height: 600px
+}
+
+.loading-overlay-tabs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.95);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    flex-direction: column;
+    gap: 15px
+}
+
+    .loading-overlay-tabs.show {
+        display: flex
+    }
+
+    .loading-overlay-tabs:after {
+        content: 'Loading page...';
+        color: #666;
+        font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+        margin-top: 10px
+    }
+
+.spinner-tabs {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #1359a6;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+/* Added By Madhuri.K on 26-11-2025 - Task Management Tab Styles - End */
+
+/* Enhanced Table Decoration Styles - Added for Modern UI */
+.AsignTskTblGrid {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+    /* Added By Madhuri.K on 09-12-2025 - Enhanced Priority Badge Styles - Lighter colors */
+    .AsignTskTblGrid .badge-priority {
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-weight: 500;
+        font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        display: inline-block;
+        transition: all 0.2s ease;
+    }
+
+    /* Added By Madhuri.K on 09-12-2025 - Priority badge hover effect for clickable sorting */
+    .AsignTskTblGrid .priority-filter-icon:hover {
+        transform: scale(1.05);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+        opacity: 0.9;
+    }
+
+    .AsignTskTblGrid .badge-priority.High,
+    .AsignTskTblGrid .badge-priority.high {
+        background: #ffe0e0;
+        color: #b85450;
+        border: 1px solid #ffcccc;
+    }
+
+    .AsignTskTblGrid .badge-priority.Medium,
+    .AsignTskTblGrid .badge-priority.medium {
+        background: #fff8e1;
+        color: #b8860b;
+        border: 1px solid #ffe082;
+    }
+
+    .AsignTskTblGrid .badge-priority.Low,
+    .AsignTskTblGrid .badge-priority.low {
+        background: #e0f2f1;
+        color: #4a7c59;
+        border: 1px solid #b2dfdb;
+    }
+
+    /* Added By Madhuri.K on 09-12-2025 - Plan Column UI - plan (lowercase) with badge at top-right, actual below */
+    .AsignTskTblGrid .timeline-plan-indicator {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        align-items: center;
+        padding: 4px 0;
+    }
+
+    .AsignTskTblGrid .timeline-plan-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        line-height: 1.4;
+        position: relative;
+    }
+
+        .AsignTskTblGrid .timeline-plan-item.current {
+            text-decoration: underline;
+        }
+
+        .AsignTskTblGrid .timeline-plan-item.actual {
+            text-decoration: none;
+        }
+
+        .AsignTskTblGrid .timeline-plan-item .badge-circle {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 9px;
+            font-weight: 600;
+            flex-shrink: 0;
+            border: 1px solid #fff;
+            position: absolute;
+            top: -4px;
+            right: -12px;
+        }
+
+        .AsignTskTblGrid .timeline-plan-item.current .badge-circle {
+            background: #1359a6;
+            color: #fff;
+            border-color: #fff;
+        }
+
+            /* Added By Madhuri.K on 09-12-2025 - Badge circle color variants */
+            .AsignTskTblGrid .timeline-plan-item.current .badge-circle.badge-blue {
+                background: #1359a6;
+                color: #fff;
+                border-color: #fff;
+            }
+
+            .AsignTskTblGrid .timeline-plan-item.current .badge-circle.badge-red {
+                background: #dc3545;
+                color: #fff;
+                border-color: #fff;
+            }
+
+    /* Added By Madhuri.K on 09-12-2025 - Assignee icon hover effect for clickable sorting */
+    .AsignTskTblGrid .assignee-filter-icon:hover {
+        transform: scale(1.1);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        opacity: 0.9;
+        transition: all 0.2s ease;
+    }
+
+    .AsignTskTblGrid .timeline-plan-item.actual .badge-circle {
+        display: none;
+    }
+
+/* Visual Timeline Bar for Date Columns */
+.timeline-visual-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 6px 0;
+}
+
+.timeline-visual-bar {
+    position: relative;
+    height: 24px;
+    background: #f3f4f6;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+}
+
+    .timeline-visual-bar.plan {
+        background: linear-gradient(90deg, #e3f2fd 0%, #bbdefb 100%);
+        border-color: #90caf9;
+    }
+
+    .timeline-visual-bar.actual {
+        background: linear-gradient(90deg, #e8f5e9 0%, #c8e6c9 100%);
+        border-color: #81c784;
+    }
+
+    .timeline-visual-bar .timeline-label {
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #374151;
+        margin-right: 6px;
+        min-width: 45px;
+    }
+
+    .timeline-visual-bar.plan .timeline-label {
+        color: #1359a6;
+    }
+
+    .timeline-visual-bar.actual .timeline-label {
+        color: #2e7d32;
+    }
+
+    .timeline-visual-bar .timeline-date {
+        font-size: 11px;
+        font-weight: 500;
+        color: #111827;
+        flex: 1;
+    }
+
+    .timeline-visual-bar.plan .timeline-date {
+        color: #0d4b83;
+    }
+
+    .timeline-visual-bar.actual .timeline-date {
+        color: #1b5e20;
+    }
+
+/* Added By Madhuri.K on 09-12-2025 - Compact Timeline View for Date Columns - Center aligned */
+.timeline-compact-view {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 4px 0;
+    align-items: center;
+}
+
+.timeline-compact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 2px 0;
+    font-size: 11px;
+    width: 100%;
+}
+
+    .timeline-compact-item.plan {
+        background: transparent;
+        border: none;
+    }
+
+    .timeline-compact-item.actual {
+        background: transparent;
+        border: none;
+    }
+
+    .timeline-compact-item .timeline-date-text {
+        font-weight: 500;
+        color: #374151;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .timeline-compact-item.plan .timeline-date-text {
+        color: #0d4b83;
+    }
+
+    .timeline-compact-item.actual .timeline-date-text {
+        color: #374151;
+    }
+
+    /* Added By Madhuri.K on 09-12-2025 - Calendar icon for date columns */
+    .timeline-compact-item .calendar-icon {
+        color: #9ca3af;
+        font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+        opacity: 0.6;
+        flex-shrink: 0;
+    }
+
+    .timeline-compact-item.plan .calendar-icon {
+        color: #90caf9;
+        opacity: 0.7;
+    }
+
+    .timeline-compact-item.actual .calendar-icon {
+        color: #9ca3af;
+        opacity: 0.7;
+    }
+
+/* Enhanced Date Display in Timeline Columns - Updated for new UI */
+.AsignTskTblGrid tbody td div {
+    padding: 2px 0;
+}
+
+/* Legacy classes for backward compatibility */
+.AsignTskTblGrid .timeline-date-current {
+    font-weight: 400;
+    color: #6c757d;
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    padding: 3px 0;
+    background: transparent;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.AsignTskTblGrid .timeline-date-actual {
+    font-weight: 400;
+    color: #6c757d;
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    padding: 3px 0;
+    background: transparent;
+    border-radius: 4px;
+    display: block;
+    line-height: 1.4;
+}
+
+/* Added By Madhuri.K on 09-12-2025 - Enhanced Assignee Column - Center aligned */
+.AsignTskTblGrid .assignee-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 4px 0;
+    text-align: center;
+}
+
+.AsignTskTblGrid .usernameshort {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+}
+
+.AsignTskTblGrid tbody tr:hover .usernameshort {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.AsignTskTblGrid .assignee-name {
+    display: none;
+}
+
+/* Enhanced Action Buttons */
+.AsignTskTblGrid .action-buttons-container {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.AsignTskTblGrid .btn-icon {
+    width: 27px;
+    height: 27px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    background: transparent;
+    border: none;
+}
+
+    .AsignTskTblGrid .btn-icon:hover {
+        background: transparent;
+        border: none;
+        transform: translateY(-2px);
+        box-shadow: none;
+    }
+
+        .AsignTskTblGrid .btn-icon:hover i {
+            color: #1359a6 !important;
+        }
+
+    .AsignTskTblGrid .btn-icon i {
+        transition: all 0.3s ease;
+    }
+
+/* Task Name Column Enhancement */
+.AsignTskTblGrid tbody td:first-child {
+    font-weight: 500;
+    color: #2c3e50;
+    max-width: 150px;
+    cursor: default;
+}
+
+    /* Task Name Column - Allow icon to show, truncate only text */
+    .AsignTskTblGrid tbody td:first-child > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+        .AsignTskTblGrid tbody td:first-child > div > span:first-child {
+            flex-shrink: 0;
+        }
+
+        .AsignTskTblGrid tbody td:first-child > div > span:not(:first-child),
+        .AsignTskTblGrid tbody td:first-child > div > span:last-child {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            min-width: 0;
+        }
+
+.AsignTskTblGrid tbody tr:hover td:first-child {
+    color: #1359a6;
+}
+
+/* Light color for Priority column data */
+.AsignTskTblGrid tbody td:nth-child(2) {
+    color: #6c757d;
+    padding: 2px 4px !important;
+}
+
+/* Added By Madhuri.K on 09-12-2025 - Plan column center aligned */
+.AsignTskTblGrid tbody td:nth-child(3) {
+    color: #6c757d;
+    padding: 2px 4px !important;
+    text-align: center;
+}
+
+/* Added By Madhuri.K on 09-12-2025 - Start Date column center aligned */
+.AsignTskTblGrid tbody td:nth-child(4) {
+    color: #6c757d;
+    text-align: center;
+}
+
+/* Added By Madhuri.K on 09-12-2025 - Start Date column center aligned (old styles removed) */
+
+/* Added By Madhuri.K on 09-12-2025 - End Date column center aligned */
+.AsignTskTblGrid tbody td:nth-child(5) {
+    color: #6c757d;
+    text-align: center;
+}
+
+/* Assignee column - compact and centered */
+.AsignTskTblGrid tbody td:nth-child(8) {
+    padding: 2px 4px !important;
+    text-align: center;
+}
+
+/* Added By Madhuri.K on 09-12-2025 - End Date column center aligned (old styles removed) */
+
+/* Duration and Work Columns */
+.AsignTskTblGrid .duration-value,
+.AsignTskTblGrid .work-value {
+    font-weight: 400;
+    padding: 2px 0;
+    border-radius: 4px;
+    display: block;
+    line-height: 1.4;
+}
+
+/* Added By Madhuri.K on 09-12-2025 - Duration column center aligned */
+.AsignTskTblGrid tbody td:nth-child(6) {
+    text-align: center;
+}
+
+    .AsignTskTblGrid tbody td:nth-child(6) .timeline-date-current,
+    .AsignTskTblGrid tbody td:nth-child(6) .timeline-date-actual {
+        display: block;
+        margin-bottom: 2px;
+        text-align: center;
+        font-variant-numeric: tabular-nums;
+    }
+
+/* Added By Madhuri.K on 09-12-2025 - Work column center aligned */
+.AsignTskTblGrid tbody td:nth-child(7) {
+    text-align: center;
+}
+
+    .AsignTskTblGrid tbody td:nth-child(7) .timeline-date-current,
+    .AsignTskTblGrid tbody td:nth-child(7) .timeline-date-actual {
+        display: block;
+        margin-bottom: 2px;
+        text-align: center;
+        font-variant-numeric: tabular-nums;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+/* Empty State Styling */
+.AsignTskTblGrid .empty-state {
+    padding: 40px 20px;
+    text-align: center;
+    color: #6c757d;
+}
+
+    .AsignTskTblGrid .empty-state p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+/* Table Container Enhancement */
+#assignedTasksContent {
+    background: #fff;
+    /* padding: 20px; */
+    border-radius: 12px;
+    /* margin: 15px; */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Additional Table Wrapper Styling */
+.AsignTskTblGrid {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    /* Enhanced Table Header for Timeline Column */
+    .AsignTskTblGrid thead tr:first-child th[colspan="5"] {
+        background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+        color: #1359a6;
+        font-weight: 700;
+        font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+        letter-spacing: 0.5px;
+    }
+
+    /* Subtle row alternation for better readability */
+    .AsignTskTblGrid tbody tr:nth-child(even) {
+        background: #fafbfc;
+    }
+
+        .AsignTskTblGrid tbody tr:nth-child(even):hover {
+            background: linear-gradient(90deg, #f8f9ff 0%, #ffffff 100%);
+        }
+
+    /* Work Hours Display Enhancement */
+    .AsignTskTblGrid .work-hours {
+        font-family: 'Courier New', monospace;
+        font-weight: 600;
+        color: #495057;
+    }
+
+    /* Checkbox Styling Enhancement */
+    .AsignTskTblGrid .custom_chckbox input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+        border-radius: 4px;
+        border: 2px solid #dee2e6;
+        transition: all 0.3s ease;
+    }
+
+        .AsignTskTblGrid .custom_chckbox input[type="checkbox"]:checked {
+            background: #1359a6;
+            border-color: #1359a6;
+        }
+
+        .AsignTskTblGrid .custom_chckbox input[type="checkbox"]:hover {
+            border-color: #1359a6;
+            box-shadow: 0 0 0 3px rgba(19,89,166,0.1);
+        }
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+    .AsignTskTblGrid thead th {
+        font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+        padding: 10px 6px;
+    }
+
+    .AsignTskTblGrid tbody td {
+        font-size: 11.5px;
+        padding: 10px 6px;
+    }
+
+    .AsignTskTblGrid .btn-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Generic frozen header for modal tables - Added by Dipali V on 06th Jan 2026 */
+.modal-body .table-responsive {
+    max-height: 400px;
+    overflow-y: auto;
+    position: relative;
+}
+
+    .modal-body .table-responsive table thead {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #f8f9fa;
+    }
+
+        .modal-body .table-responsive table thead th {
+            background-color: #f8f9fa !important;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+        }
+
+/* Void Task Modal specific height - Added by Dipali V on 06th Jan 2026 */
+#showVoidModal .modal-body {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+#showVoidModal .table-responsive {
+    max-height: 450px;
+}
+
+/* Task History Offcanvas Styles - Converted from Modal by Dipali V on 06th Jan 2026 */
+.task-history-offcanvas {
+    border-left: 1px solid #dee2e6;
+}
+
+.task-history-offcanvas-header {
+    background: linear-gradient(135deg, #1359a6 0%, #0d4a7a 100%);
+    color: white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-history-header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-history-title {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.task-history-header-icon {
+    margin-right: 12px;
+    color: white;
+    font-size: 22px;
+}
+
+.task-history-offcanvas-header .task-detail-close-btn {
+    color: white;
+    opacity: 0.9;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    padding: 8px 12px;
+    transition: all 0.2s ease;
+}
+
+    .task-history-offcanvas-header .task-detail-close-btn:hover {
+        background: rgba(255, 255, 255, 0.2);
+        opacity: 1;
+    }
+
+.task-history-offcanvas-body {
+    padding: 24px;
+    overflow-y: auto;
+}
+
+.task-history-info {
+    padding: 12px 16px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #1359a6;
+}
+
+.task-history-label {
+    font-weight: 600;
+    color: #495057;
+    margin-right: 8px;
+}
+
+.task-history-task-name {
+    color: #1359a6;
+    font-weight: 500;
+}
+
+.task-history-filters {
+    margin-bottom: 16px;
+}
+
+    .task-history-filters .form-label {
+        font-weight: 500;
+        color: #495057;
+        font-size: 11.5px
+        margin-bottom: 6px;
+    }
+
+    .task-history-filters .form-select {
+        border: 1px solid #dee2e6;
+        border-radius: 6px;
+        font-size: 11.5px
+    }
+
+.task-history-table-container {
+    max-height: calc(100vh - 350px);
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+    .task-history-table-container table {
+        margin-bottom: 0;
+        font-size: 11.5px
+    }
+
+.task-history-thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #f8f9fa;
+}
+
+    .task-history-thead th {
+        background: #f8f9fa !important;
+        font-weight: 600;
+        color: #495057;
+        padding: 12px 10px;
+        border-bottom: 2px solid #dee2e6;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+    }
+
+.task-history-table-container tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+    .task-history-table-container tbody tr:hover {
+        background-color: #f8f9fa;
+    }
+
+.task-history-table-container tbody td {
+    padding: 10px;
+    vertical-align: middle;
+    border-bottom: 1px solid #e9ecef;
+}
+
+/* End of Task History Offcanvas Styles */
+
+/* Highlight style for DivDetailsScetion - Added by Dipali V on 06th Jan 2026 */
+#DivDetailsScetion.highlighted {
+    /* background-color: #f0f7ff; */
+    border: 1px solid #1359a6;
+    padding: 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(19, 89, 166, 0.1);
+}
+
+/* End of Highlight style for DivDetailsScetion */
+
+.table-fixed-header thead tr th, .table thead tr th {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+
+/* Refactored by Dipali V on 06th Jan 2026 - Read-only section styling */
+.section-readonly {
+    background-color: #f8f9fa !important;
+    opacity: 0.8;
+}
+
+    .section-readonly input,
+    .section-readonly select {
+        background-color: #e9ecef !important;
+        cursor: not-allowed !important;
+    }
+
+    .section-readonly .input-group-text {
+        background-color: #e9ecef !important;
+        cursor: not-allowed !important;
+    }
+
+.custmodal .modal-content .modal-header .close {
+    color: #fff !important;
+    box-shadow: none;
+    border: none;
+    font-size: 24px;
+    text-shadow: none;
+    opacity: 1;
+    position: absolute;
+    top: 8px !important;
+    right: 20px !important;
+    background: none !important;
+}
+
+/* .btn {
+    width: 86px!important;
+    height: 32px !important;
+} */
+
+/* Added by Dipali V on 26th Jan 2026 - Make task-detail-bottom-actions sticky at bottom */
+/*.task-detail-bottom-actions {
+    position: sticky !important;
+    bottom: 0 !important;
+    background: white !important;
+    z-index: 10 !important;
+    border-top: 1px solid #e5e7eb !important;
+    padding: 0.75rem 1rem !important;
+    margin-top: auto !important;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+*/
+.task-detail-bottom-actions-inner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 8px !important;
+}
+
+/* Added by Dipali V on 13th Jan 2026 - Ensure offcanvas-body has proper flex layout for sticky header and footer */
+#offcanvas_new_assigntask .offcanvas-body {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 0 !important;
+    height: 100% !important;
+    overflow: hidden !important;
+}
+
+    /* Added by Dipali V on 13th Jan 2026 - Make header sticky at top */
+    #offcanvas_new_assigntask .offcanvas-body > .task-detail-header {
+        flex-shrink: 0 !important;
+        position: sticky !important;
+        top: 0 !important;
+        background: white !important;
+        z-index: 20 !important;
+        border-bottom: 1px solid #e5e7eb !important;
+    }
+
+    /* Added by Dipali V on 13th Jan 2026 - Make tab-content scrollable between header and footer */
+    #offcanvas_new_assigntask .offcanvas-body > .tab-content {
+        flex: 1 !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        padding: 1rem !important;
+        min-height: 0 !important;
+    }
+
+    /* Added by Dipali V on 13th Jan 2026 - Make bottom actions sticky at bottom */
+    #offcanvas_new_assigntask .offcanvas-body > .task-detail-bottom-actions {
+        flex-shrink: 0 !important;
+    }
+
+/* Added by Dipali V on 26th Jan 2026 - Add spacing only between parent rows, not child rows */
+#AsignTskTbl {
+    border-collapse: separate !important;
+    border-spacing: 0 6px !important;
+}
+
+    /* Only parent rows should have spacing - child rows should be grouped together */
+    #AsignTskTbl tbody tr.parent-task-row {
+        margin-bottom: 0 !important;
+    }
+
+    #AsignTskTbl tbody tr.child-task-row {
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+    }
+
+#parentTaskResourceTable .btn.btn-success, .btn.btn-secondary {
+    width: 19px !important;
+    height: 19px !important;
+}
+
+.projDetailsContentMain {
+    /*height: 600px !important;*/
+    height: 498px !important;
+    overflow: auto !important;
+}
+
+.tooltip-inner {
+    font-size: 11px;
+    max-width: 220px;
+    padding: 6px 8px;
+}
+
+#offcanvas_title {
+    font-size: 17px;
+}
+/* Added By Dipali V On 2nd Feb 2026 For W26 - Button alignment fixes for responsive design */
+.assigned-tasks-control-section {
+    background: rgb(255 255 255);
+    padding: 0.4rem 1rem;
+    margin: 2px 16px 2px 16px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 5px 5px -3px, rgba(0, 0, 0, 0.043) 0px 8px 10px 1px, rgba(0, 0, 0, 0.035) 0px 3px 14px 2px;
+}
+
+.assigned-tasks-control-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.assigned-tasks-project-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+    min-width: 200px;
+}
+
+.assigned-tasks-project-label {
+    color: #1e40af;
+    font-size: 11.5px;
+    font-weight: 400;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.assigned-tasks-project-dropdown {
+    min-width: 200px;
+}
+
+.assigned-tasks-button-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+.assigned-tasks-btn {
+    flex-shrink: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+    .assigned-tasks-btn i.fa-search {
+        color: #1359a6;
+        font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    }
+
+.assigned-tasks-chevron {
+    color: #111827;
+    font-size: 11.5px; /* Modified By Madhuri.K On 26-03-2026 */
+    transition: transform 0.3s ease;
+}
+
+/* Media query for 1366x768 resolution and similar */
+@media (max-width: 1400px) {
+    .assigned-tasks-control-wrapper {
+        gap: 0.5rem;
+    }
+
+    .assigned-tasks-project-section {
+        min-width: 180px;
+    }
+
+    .assigned-tasks-project-dropdown {
+        min-width: 180px;
+    }
+
+    .assigned-tasks-button-section {
+        gap: 0.4rem;
+    }
+
+    .assigned-tasks-btn {
+        font-size: 11.5px;
+        padding: 0.375rem 0.65rem;
+    }
+}
+
+/* Media query for smaller screens (1366x768 and below) - Buttons in one line on right side */
+@media (max-width: 1366px) {
+    .assigned-tasks-control-section {
+        padding: 0.4rem 0.75rem;
+        margin: 2px 8px 2px 8px;
+    }
+
+    .assigned-tasks-control-wrapper {
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+    }
+
+    .assigned-tasks-project-section {
+        flex: 0 0 auto;
+        min-width: 160px;
+    }
+
+    .assigned-tasks-project-dropdown {
+        min-width: 160px;
+    }
+
+    .assigned-tasks-button-section {
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        gap: 0.4rem;
+        margin-left: auto;
+        flex-shrink: 0;
+    }
+
+    .assigned-tasks-btn {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        font-size: 0.8rem;
+        padding: 0.35rem 0.6rem;
+    }
+}
+
+/* Media query for tablets and smaller */
+@media (max-width: 768px) {
+    .assigned-tasks-control-section {
+        padding: 0.4rem 0.5rem;
+        margin: 2px 4px 2px 4px;
+    }
+
+    .assigned-tasks-project-section {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 0.25rem;
+    }
+
+    .assigned-tasks-project-dropdown {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .assigned-tasks-button-section {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+        margin-left: 0;
+    }
+
+    .assigned-tasks-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

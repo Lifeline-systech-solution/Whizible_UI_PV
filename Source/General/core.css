@@ -1,0 +1,2698 @@
+BODY {
+	MARGIN: 0px
+}
+FORM {
+	MARGIN: 0px
+}
+BODY {
+	COLOR: #000000; FONT-FAMILY: verdana,arial,helvetica,sans-serif; BACKGROUND-COLOR: #ffffff
+}
+.ms-alphaimage {
+	BEHAVIOR: url("/_layouts/alphaimage.htc")
+}
+.ms-toolbar {
+	FONT-SIZE: 8pt; COLOR: #3966bf; FONT-FAMILY: verdana; TEXT-DECORATION: none
+}
+.ms-viewtoolbar {
+	FONT-SIZE: 8pt; COLOR: #3966bf; FONT-FAMILY: verdana; TEXT-DECORATION: none
+}
+.ms-formtoolbar {
+	FONT-SIZE: 8pt; COLOR: #3966bf; FONT-FAMILY: verdana; TEXT-DECORATION: none
+}
+.ms-formtoolbar {
+	MARGIN-BOTTOM: 7px
+}
+.ms-formtoolbar TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+.ms-toolbar-togglebutton-on {
+	BORDER-RIGHT: #2353b2 1px solid; BORDER-TOP: #2353b2 1px solid; BORDER-LEFT: #2353b2 1px solid; BORDER-BOTTOM: #2353b2 1px solid; BACKGROUND-COLOR: #fffacc
+}
+TABLE.ms-toolbar {
+	BACKGROUND-IMAGE: url(/_layouts/images/toolgrad.gif); BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #d6e8ff
+}
+TABLE.ms-viewtoolbar {
+	BACKGROUND-IMAGE: url(/_layouts/images/toolgrad.gif); BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #d6e8ff
+}
+TABLE.ms-toolbar {
+	BORDER-RIGHT: #83b0ec 1px solid; BORDER-TOP: #83b0ec 1px solid; BORDER-LEFT: #83b0ec 1px solid; BORDER-BOTTOM: #83b0ec 1px solid
+}
+TABLE.ms-viewtoolbar {
+	BORDER-TOP: #6f9dd9 1px solid; BORDER-BOTTOM: #6f9dd9 1px solid
+}
+.ms-attachButton {
+	TEXT-ALIGN: left
+}
+.ms-listheader {
+	BACKGROUND-IMAGE: url(/_layouts/images/listheadergrad.gif); FONT: bold 10pt verdana; COLOR: #204d89; BACKGROUND-REPEAT: repeat-x; HEIGHT: 28px; BACKGROUND-COLOR: #d9d9d9
+}
+.ms-menutoolbar {
+	BACKGROUND-IMAGE: url(/_layouts/images/listheadergrad.gif); BORDER-BOTTOM: #6f9dd9 1px solid; BACKGROUND-REPEAT: repeat-x; HEIGHT: 22px; BACKGROUND-COLOR: #afd2ff
+}
+.ms-menutoolbar TD {
+	BORDER-TOP: #f2f8ff 1px solid; BORDER-BOTTOM: #d6e8ff 1px solid
+}
+.ms-menutoolbar TD A {
+	FONT-SIZE: 8pt; COLOR: #003399; FONT-FAMILY: tahoma
+}
+.ms-menutoolbar TD A:hover {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.ms-menutoolbar TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: middle; PADDING-TOP: 0px
+}
+.ms-menutoolbar TD A:hover {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.ms-menubuttoninactivehover {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 3px; MARGIN: 2px; LINE-HEIGHT: 16px; PADDING-TOP: 2px; BACKGROUND-COLOR: transparent
+}
+.ms-menubuttonactivehover {
+	BORDER-RIGHT: #6f9dd9 1px solid; PADDING-RIGHT: 7px; BORDER-TOP: #6f9dd9 1px solid; PADDING-LEFT: 7px; BACKGROUND-IMAGE: url(/_layouts/images/menubuttonhover.gif); PADDING-BOTTOM: 4px; MARGIN: 0px 1px; BORDER-LEFT: #6f9dd9 1px solid; CURSOR: pointer; LINE-HEIGHT: 16px; PADDING-TOP: 3px; BORDER-BOTTOM: #6f9dd9 1px solid
+}
+TD.ms-menutoolbarheader {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #204d89; LINE-HEIGHT: 16px; FONT-FAMILY: verdana
+}
+.ms-listheaderlabel {
+	COLOR: #204d89
+}
+.ms-listheaderlabel {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma
+}
+.ms-viewselector {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma
+}
+.ms-viewselectortext {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma
+}
+.ms-viewselectorhover {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma
+}
+.ms-menutoolbar TD TD.ms-viewselector {
+	BORDER-RIGHT: #d2b47a 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #d2b47a 1px solid; PADDING-LEFT: 0px; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(/_layouts/images/viewselectorgrad.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: #d2b47a 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #d2b47a 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #ffe6a0
+}
+.ms-menutoolbar TD TD.ms-viewselectorhover {
+	BORDER-RIGHT: #d2b47a 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #d2b47a 1px solid; PADDING-LEFT: 0px; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(/_layouts/images/viewselectorgrad.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: #d2b47a 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #d2b47a 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #ffe6a0
+}
+.ms-toolbar TD TD.ms-viewselector {
+	BORDER-RIGHT: #d2b47a 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #d2b47a 1px solid; PADDING-LEFT: 0px; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(/_layouts/images/viewselectorgrad.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: #d2b47a 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #d2b47a 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #ffe6a0
+}
+.ms-toolbar TD TD.ms-viewselectorhover {
+	BORDER-RIGHT: #d2b47a 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #d2b47a 1px solid; PADDING-LEFT: 0px; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(/_layouts/images/viewselectorgrad.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: #d2b47a 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #d2b47a 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #ffe6a0
+}
+.ms-authoringcontrols TD TD.ms-viewselector {
+	BORDER-RIGHT: #d2b47a 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #d2b47a 1px solid; PADDING-LEFT: 0px; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(/_layouts/images/viewselectorgrad.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: #d2b47a 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #d2b47a 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #ffe6a0
+}
+.ms-authoringcontrols TD TD.ms-viewselectorhover {
+	BORDER-RIGHT: #d2b47a 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #d2b47a 1px solid; PADDING-LEFT: 0px; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(/_layouts/images/viewselectorgrad.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: #d2b47a 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #d2b47a 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #ffe6a0
+}
+.ms-menutoolbar TD TD {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+DIV.ms-viewselector {
+	BORDER-RIGHT: #ffffff 1px solid; PADDING-RIGHT: 12px; BACKGROUND-POSITION: right center; BORDER-TOP: #ffffff 1px solid; PADDING-LEFT: 4px; BACKGROUND-IMAGE: url(/_layouts/images/menudarkspaced.gif); PADDING-BOTTOM: 1px; BORDER-LEFT: #ffffff 1px solid; CURSOR: pointer; PADDING-TOP: 1px; BORDER-BOTTOM: #ffffff 1px solid; BACKGROUND-REPEAT: no-repeat
+}
+DIV.ms-viewselectorhover {
+	BORDER-RIGHT: #ffffff 1px solid; PADDING-RIGHT: 12px; BACKGROUND-POSITION: right center; BORDER-TOP: #ffffff 1px solid; PADDING-LEFT: 4px; BACKGROUND-IMAGE: url(/_layouts/images/menudarkspaced.gif); PADDING-BOTTOM: 1px; BORDER-LEFT: #ffffff 1px solid; CURSOR: pointer; PADDING-TOP: 1px; BORDER-BOTTOM: #ffffff 1px solid; BACKGROUND-REPEAT: no-repeat
+}
+TD.ms-viewselector {
+	WIDTH: 125px
+}
+.ms-bottompaging {
+	BACKGROUND: #ebf3ff
+}
+.ms-bottompagingline1 {
+	BACKGROUND: #83b0ec; LINE-HEIGHT: 1px
+}
+.ms-bottompagingline2 {
+	BACKGROUND: #ffffff; LINE-HEIGHT: 1px
+}
+.ms-bottompagingline3 {
+	BACKGROUND: #ffffff; LINE-HEIGHT: 0px
+}
+.ms-paging {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #204d89; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-bottompaging .ms-paging {
+	COLOR: #4c4c4c
+}
+.ms-menutoolbar .ms-splitbuttondropdown {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; MARGIN: 1px; PADDING-TOP: 0px
+}
+.ms-menutoolbar .ms-splitbuttontext {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 8px; PADDING-BOTTOM: 1px; PADDING-TOP: 0px
+}
+.ms-splitbutton {
+	MARGIN: 0px 1px
+}
+.ms-splitbuttonhover {
+	BACKGROUND-IMAGE: url(/_layouts/images/menubuttonhover.gif); MARGIN: 0px 1px; BORDER-COLLAPSE: collapse
+}
+.ms-splitbuttonhover .ms-splitbuttondropdown {
+	BORDER-RIGHT: #6f9dd9 1px solid; BORDER-TOP: #6f9dd9 1px solid; BORDER-LEFT: #6f9dd9 1px solid; CURSOR: pointer; BORDER-BOTTOM: #6f9dd9 1px solid
+}
+.ms-splitbuttonhover .ms-splitbuttontext {
+	BORDER-RIGHT: #6f9dd9 1px solid; BORDER-TOP: #6f9dd9 1px solid; BORDER-LEFT: #6f9dd9 1px solid; CURSOR: pointer; BORDER-BOTTOM: #6f9dd9 1px solid
+}
+.ms-splitbuttonhover .ms-splitbuttondropdown {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.ms-splitbuttonhover .ms-splitbuttontext {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 7px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.ms-rtetoolbarmenu {
+	COLOR: #000000; BACKGROUND-COLOR: #9ac6ff
+}
+TD.ms-rtetoolbarunsel {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+TD.ms-rtetoolbarsel {
+	BORDER-RIGHT: #001747 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #001747 1px solid; PADDING-LEFT: 2px; BACKGROUND-IMAGE: url(/_layouts/images/rtebnsel.gif); PADDING-BOTTOM: 2px; BORDER-LEFT: #001747 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #001747 1px solid; BACKGROUND-REPEAT: repeat-x
+}
+.ms-rtetoolbardis {
+	FILTER: alpha(opacity=25)
+}
+A.ms-rtetoolbardis {
+	CURSOR: default
+}
+TD.ms-rtetoolbarhov {
+	BORDER-RIGHT: #001747 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #001747 1px solid; PADDING-LEFT: 2px; BACKGROUND-IMAGE: url(/_layouts/images/rtebnhov.gif); PADDING-BOTTOM: 2px; BORDER-LEFT: #001747 1px solid; CURSOR: pointer; COLOR: #000000; PADDING-TOP: 2px; BORDER-BOTTOM: #001747 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #fff699
+}
+.ms-gridT1 {
+	FONT-SIZE: 0.6em; WIDTH: 190px; COLOR: #7f7f7f; FONT-FAMILY: verdana; TEXT-ALIGN: left
+}
+.ms-gridCol {
+	FONT-SIZE: 0.6em; WIDTH: 90px; COLOR: #7f7f7f; FONT-FAMILY: verdana; TEXT-ALIGN: center
+}
+.ms-viewselect A:link {
+	FONT-SIZE: 8pt; COLOR: #3966bf; FONT-FAMILY: Verdana,sans-serif
+}
+.ms-GRFontSize {
+	FONT-SIZE: 8pt; COLOR: #3966bf; FONT-FAMILY: Verdana,sans-serif
+}
+SELECT {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana,sans-serif
+}
+HR {
+	COLOR: #3966bf; HEIGHT: 2px
+}
+.ms-formlabel {
+	PADDING-RIGHT: 8px; BORDER-TOP: #d8d8d8 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 0.7em; PADDING-BOTTOM: 6px; COLOR: #525252; PADDING-TOP: 3px; FONT-FAMILY: verdana; TEXT-ALIGN: left
+}
+.ms-formdescription A {
+	COLOR: #3966bf; TEXT-DECORATION: none
+}
+.ms-formvalidation {
+	FONT-SIZE: 8pt; COLOR: #ff0000; FONT-FAMILY: verdana
+}
+.ms-formtable .ms-formbody .ms-formbodysurvey {
+	LINE-HEIGHT: 1.3em
+}
+.ms-informationbar {
+	BORDER-RIGHT: #ffdf88 1px solid; BORDER-TOP: #ffdf88 1px solid; BORDER-LEFT: #ffdf88 1px solid; BORDER-BOTTOM: #ffdf88 1px solid; BACKGROUND-COLOR: #fff9de
+}
+.ms-informationbar TD {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: tahoma
+}
+.ms-radiotext {
+	FONT-SIZE: 8pt; CURSOR: default; FONT-FAMILY: verdana; HEIGHT: 19px; TEXT-ALIGN: left
+}
+.ms-radiobutton-child {
+	MARGIN-LEFT: 20px
+}
+.ms-gridtext {
+	FONT-SIZE: 8pt; CURSOR: default; FONT-FAMILY: verdana; HEIGHT: 19px; TEXT-ALIGN: right
+}
+.ms-formbody {
+	PADDING-RIGHT: 6px; BORDER-TOP: #d8d8d8 1px solid; PADDING-LEFT: 6px; FONT-SIZE: 0.7em; BACKGROUND: #ebf3ff; PADDING-BOTTOM: 4px; VERTICAL-ALIGN: top; PADDING-TOP: 3px; FONT-FAMILY: verdana
+}
+.ms-formbodysurvey {
+	PADDING-RIGHT: 8px; BORDER-TOP: medium none; PADDING-LEFT: 8px; FONT-SIZE: 0.7em; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 15px; VERTICAL-ALIGN: top; PADDING-TOP: 5px; FONT-FAMILY: verdana
+}
+.ms-formbody FONT {
+	LINE-HEIGHT: normal
+}
+.ms-formline {
+	PADDING-RIGHT: 8px; BORDER-TOP: #c4c4c4 1px solid; PADDING-LEFT: 8px
+}
+.ms-formbutton {
+	BORDER-RIGHT: #7f7f7f 1px solid; BORDER-TOP: #7f7f7f 1px solid; BACKGROUND-IMAGE: url(/_layouts/images/buttongrad.gif); BORDER-LEFT: #7f7f7f 1px solid; BORDER-BOTTOM: #7f7f7f 1px solid; TEXT-ALIGN: center
+}
+.ms-formbutton A {
+	FONT-SIZE: 0.68em; COLOR: #000000; FONT-FAMILY: verdana; POSITION: relative; TOP: -2px; TEXT-DECORATION: none
+}
+.ms-formbuttonwrapper {
+	PADDING-RIGHT: 8px; PADDING-BOTTOM: 8px; PADDING-TOP: 8px
+}
+.ms-formdescription {
+	FONT-SIZE: 8pt; COLOR: #7f7f7f; FONT-FAMILY: verdana
+}
+.ms-formfieldcontainer {
+	
+}
+.ms-formfieldlabelcontainer {
+	MARGIN: 4px 4px 0px
+}
+.ms-formfieldlabel {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 8pt; BACKGROUND-IMAGE: url(/_layouts/images/globgrad.gif); PADDING-BOTTOM: 1px; BORDER-LEFT: #cccccc 1px solid; COLOR: #777777; PADDING-TOP: 1px; BACKGROUND-REPEAT: repeat-x; FONT-FAMILY: tahoma; HEIGHT: 18px; BACKGROUND-COLOR: #efebef; TEXT-ALIGN: left
+}
+.ms-formfieldvaluecontainer {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 5px; MARGIN-BOTTOM: 4px; PADDING-BOTTOM: 5px; MARGIN-LEFT: 4px; BORDER-LEFT: #cccccc 1px solid; MARGIN-RIGHT: 4px; PADDING-TOP: 5px; BORDER-BOTTOM: #cccccc 1px solid
+}
+.ms-searchbox {
+	BORDER-RIGHT: medium none; BORDER-TOP: #7f9db9 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 8pt; BORDER-LEFT: #7f9db9 1px solid; COLOR: #1952a4; PADDING-TOP: 2px; BORDER-BOTTOM: #7f9db9 1px solid; FONT-FAMILY: Verdana; HEIGHT: 20px
+}
+.ms-searchform {
+	MARGIN-RIGHT: 10px; POSITION: relative; TOP: -6px
+}
+.ms-searchform INPUT {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; HEIGHT: 19px
+}
+SELECT.ms-searchbox {
+	MARGIN-RIGHT: 6px
+}
+.ms-searchimage {
+	BORDER-RIGHT: #7f9db9 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #7f9db9 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 2px; BORDER-LEFT: #9ed6ff 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #7f9db9 1px solid; BACKGROUND-COLOR: #e9f2fd
+}
+.ms-searchcorner {
+	BACKGROUND-POSITION: left top; BACKGROUND-IMAGE: url(/_layouts/images/srchcrnr.gif); BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #ffffff
+}
+.ms-secondary-title {
+	DISPLAY: block; PADDING-BOTTOM: 3px
+}
+TABLE.ms-form TH {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; VERTICAL-ALIGN: top; COLOR: #3966bf; FONT-FAMILY: verdana; TEXT-ALIGN: left
+}
+TABLE.ms-form TD {
+	FONT-SIZE: 8pt; VERTICAL-ALIGN: top; WIDTH: 100%
+}
+.ms-formrecurrence {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; VERTICAL-ALIGN: top; FONT-FAMILY: verdana; TEXT-ALIGN: left
+}
+.ms-fileinput {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana,sans-serif
+}
+.ms-longfileinput {
+	FONT-SIZE: 8pt; WIDTH: 386px; FONT-FAMILY: Verdana,sans-serif
+}
+.ms-long {
+	WIDTH: 386px
+}
+.ms-longer {
+	WIDTH: 411px
+}
+.ms-rtelong {
+	WIDTH: 384px
+}
+.ms-rtelonger {
+	WIDTH: 409px
+}
+.ms-input {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana,sans-serif
+}
+.ms-long {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana,sans-serif
+}
+.ms-rtelong {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana,sans-serif
+}
+.ms-longer {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana,sans-serif
+}
+.ms-rtelonger {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana,sans-serif
+}
+.ms-radiotext {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana,sans-serif
+}
+.ms-inputuserfield {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana,sans-serif
+}
+.ms-inputuserfield {
+	BORDER-RIGHT: #a5a5a5 1px solid; BORDER-TOP: #a5a5a5 1px solid; BORDER-LEFT: #a5a5a5 1px solid; BORDER-BOTTOM: #a5a5a5 1px solid
+}
+.ms-rtelong {
+	BORDER-RIGHT: #a5a5a5 1px solid; BORDER-TOP: #a5a5a5 1px solid; BORDER-LEFT: #a5a5a5 1px solid; BORDER-BOTTOM: #a5a5a5 1px solid
+}
+.ms-rtelonger {
+	BORDER-RIGHT: #a5a5a5 1px solid; BORDER-TOP: #a5a5a5 1px solid; BORDER-LEFT: #a5a5a5 1px solid; BORDER-BOTTOM: #a5a5a5 1px solid
+}
+DIV.ms-inputuserfield A {
+	FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; TEXT-DECORATION: none
+}
+DIV.ms-inputuserfield {
+	PADDING-LEFT: 1px; PADDING-TOP: 2px
+}
+.ms-usereditor {
+	WIDTH: 386px
+}
+.ms-italic {
+	FONT-STYLE: italic
+}
+.ms-bold {
+	FONT-WEIGHT: bold
+}
+.ms-bannerframe {
+	
+}
+.ms-GRHeaderBackground {
+	
+}
+.ms-storMeFree {
+	BACKGROUND-COLOR: #80f0dc
+}
+.ms-banner {
+	VERTICAL-ALIGN: bottom
+}
+.ms-banner A:link {
+	WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+.ms-banner A:visited {
+	TEXT-DECORATION: none
+}
+.ms-banner {
+	
+}
+.ms-GRHeaderText {
+	
+}
+.ms-bannerContainer {
+	PADDING-RIGHT: 10px; BACKGROUND-POSITION: right top; PADDING-LEFT: 5px; BACKGROUND-IMAGE: url(/_layouts/images/siteTitleBKGD.gif); BACKGROUND-REPEAT: repeat-y; BACKGROUND-COLOR: #ffffff
+}
+.ms-globalbreadcrumb {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 5px; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; BACKGROUND-COLOR: #ebf3ff; TEXT-ALIGN: right
+}
+.ms-globalbreadcrumb {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ms-globalbreadcrumb A {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ms-globalleft {
+	FLOAT: left
+}
+.ms-globalright {
+	FLOAT: right
+}
+.ms-globallinks {
+	FONT-SIZE: 8pt; BACKGROUND: none transparent scroll repeat 0% 0%; FONT-FAMILY: tahoma
+}
+.ms-globallinks {
+	COLOR: #666666; FONT-FAMILY: tahoma; TEXT-DECORATION: none
+}
+.ms-globallinks A {
+	COLOR: #666666; FONT-FAMILY: tahoma; TEXT-DECORATION: none
+}
+.ms-pagebreadcrumb {
+	PADDING-RIGHT: 3px; BORDER-TOP: #ffffff 1px solid; PADDING-LEFT: 11px; PADDING-BOTTOM: 3px; BORDER-LEFT: #ffffff 1px solid; PADDING-TOP: 2px
+}
+.ms-pagebreadcrumb {
+	FONT-SIZE: 8pt; COLOR: #666666; BACKGROUND-COLOR: #ebf3ff; TEXT-DECORATION: none
+}
+.ms-pagebreadcrumb A {
+	FONT-SIZE: 8pt; COLOR: #666666; BACKGROUND-COLOR: #ebf3ff; TEXT-DECORATION: none
+}
+.ms-sitetitle {
+	PADDING-LEFT: 6px; MARGIN: 0px; FONT: bold 11pt verdana; VERTICAL-ALIGN: top; COLOR: #666666; PADDING-TOP: 3px
+}
+.ms-sitetitle A {
+	FONT: bold 11pt verdana; COLOR: #666666; TEXT-DECORATION: none
+}
+.ms-siteaction {
+	FONT: bold 8pt tahoma; COLOR: #666666; TEXT-DECORATION: none
+}
+.ms-siteaction A {
+	FONT: bold 8pt tahoma; COLOR: #666666; TEXT-DECORATION: none
+}
+TABLE.ms-siteaction TD.ms-siteaction {
+	BORDER-RIGHT: #bfbfbf 1px solid
+}
+TABLE.ms-siteaction TD.ms-siteaction DIV {
+	BORDER-RIGHT: #ffffff 1px solid; PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.ms-siteactionsmenu {
+	BORDER-RIGHT: medium none; PADDING-RIGHT: 0px; BORDER-TOP: medium none; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; FONT: 8pt tahoma; BORDER-LEFT: medium none; PADDING-TOP: 0px; BORDER-BOTTOM: medium none; WHITE-SPACE: nowrap
+}
+.ms-siteactionsmenu DIV {
+	
+}
+.ms-siteactionsmenu DIV DIV {
+	
+}
+.ms-siteactionsmenu DIV DIV DIV {
+	BORDER-RIGHT: #6593cf 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #6593cf 1px solid; PADDING-LEFT: 10px; BACKGROUND-IMAGE: url(/_layouts/images/siteactionsmenugrad.gif); PADDING-BOTTOM: 3px; BORDER-LEFT: #6593cf 1px solid; PADDING-TOP: 1px; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #6593cf
+}
+.ms-siteactionsmenu DIV DIV DIV A {
+	FONT-WEIGHT: bold; COLOR: #ffffff
+}
+.ms-siteactionsmenu DIV DIV DIV.ms-siteactionsmenuhover {
+	BORDER-RIGHT: #89724f 1px solid; BORDER-TOP: #89724f 1px solid; BACKGROUND-IMAGE: url(/_layouts/images/siteactionsmenuhovergrad.gif); BORDER-LEFT: #89724f 1px solid; BACKGROUND-COLOR: #ffa521
+}
+.ms-actionbar {
+	BORDER-RIGHT: #6f9dd9 1px solid; BORDER-TOP: #6f9dd9 1px solid; BORDER-LEFT: #6f9dd9 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #6f9dd9 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.ms-actionsep {
+	BORDER-RIGHT: #6f9dd9 1px solid; HEIGHT: 8px
+}
+.ms-topnavContainer {
+	BORDER-RIGHT: #c2dcff 1px solid; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+.ms-topnav {
+	BORDER-RIGHT: medium none; BORDER-TOP: #c2dcff 1px solid; FONT-SIZE: 8pt; BACKGROUND-IMAGE: url(/_layouts/images/topnavunselected.gif); BORDER-LEFT: #c2dcff 1px solid; COLOR: #3764a0; BORDER-BOTTOM: medium none; BACKGROUND-REPEAT: repeat-x; FONT-FAMILY: Tahoma; BACKGROUND-COLOR: #c2dcff
+}
+.ms-topnav A {
+	PADDING-RIGHT: 8px; DISPLAY: block; PADDING-LEFT: 8px; PADDING-BOTTOM: 0px; PADDING-TOP: 1px; WHITE-SPACE: nowrap; HEIGHT: 18px
+}
+.ms-topnavselected {
+	BORDER-RIGHT: #79a7e3 1px solid; BORDER-TOP: #79a7e3 1px solid; FONT-WEIGHT: bold; BACKGROUND: url(/_layouts/images/topnavselected.gif) #79a7e3 repeat-x; BORDER-LEFT: #79a7e3 1px solid; COLOR: #003399; BORDER-BOTTOM: medium none
+}
+.ms-topNavHover {
+	BACKGROUND-IMAGE: url(/_layouts/images/topnavhover.gif); COLOR: #000000; BACKGROUND-COLOR: #ffe6a0
+}
+.ms-topnav IMG {
+	LEFT: -6px; POSITION: relative
+}
+.ms-topNavFlyOutsContainer {
+	BORDER-RIGHT: #c2dcff 1px solid; BORDER-TOP: #c2dcff 1px solid; BORDER-LEFT: #c2dcff 1px solid; BORDER-BOTTOM: #c2dcff 1px solid
+}
+.ms-topNavFlyOuts {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma; BACKGROUND-COLOR: #f2f8ff
+}
+.ms-topNavFlyOuts A {
+	PADDING-RIGHT: 8px; DISPLAY: block; PADDING-LEFT: 8px; PADDING-BOTTOM: 4px; WIDTH: 120px; COLOR: #3764a0; PADDING-TOP: 4px; min-width: 120px
+}
+.ms-topNavFlyOutsHover {
+	COLOR: #000000; BACKGROUND-COLOR: #ffe6a0
+}
+.ms-nav TD {
+	FONT-SIZE: 8pt
+}
+.ms-nav .ms-SPZoneLabel {
+	FONT-SIZE: 8pt
+}
+.ms-SPZoneLabel {
+	FONT-FAMILY: Verdana,sans-serif
+}
+.ms-formula {
+	FONT-SIZE: 8pt; WIDTH: 222px; FONT-FAMILY: Verdana,sans-serif; HEIGHT: 135px
+}
+.ms-dtinput {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 0px; FONT-SIZE: 0px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: middle; PADDING-TOP: 0px
+}
+.ms-dttimeinput {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 0px; FONT-SIZE: 0px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: middle; PADDING-TOP: 0px
+}
+.ms-dttimeinput {
+	
+}
+.ms-nav TH {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana,sans-serif; TEXT-ALIGN: left
+}
+.ms-quicklaunchnavsep {
+	BACKGROUND-COLOR: #83b0ec
+}
+.ms-quicklaunch TABLE TD {
+	BORDER-TOP: #add1ff 1px solid
+}
+.ms-quicklaunch .ms-treeviewouter TABLE TD {
+	BORDER-TOP: medium none
+}
+.ms-quicklaunch TABLE.ms-navheader TD {
+	PADDING-RIGHT: 6px; BORDER-TOP: #f2f8ff 1px solid; PADDING-LEFT: 6px; PADDING-BOTTOM: 3px; BORDER-LEFT: #f2f8ff 1px solid; PADDING-TOP: 1px; BACKGROUND-COLOR: #d6e8ff
+}
+.ms-navheader2 TD {
+	PADDING-RIGHT: 6px; BORDER-TOP: #f2f8ff 1px solid; PADDING-LEFT: 6px; PADDING-BOTTOM: 3px; BORDER-LEFT: #f2f8ff 1px solid; PADDING-TOP: 1px; BACKGROUND-COLOR: #d6e8ff
+}
+.ms-quicklaunch SPAN.ms-navheader {
+	PADDING-RIGHT: 6px; BORDER-TOP: #f2f8ff 1px solid; PADDING-LEFT: 6px; PADDING-BOTTOM: 3px; BORDER-LEFT: #f2f8ff 1px solid; PADDING-TOP: 1px; BACKGROUND-COLOR: #d6e8ff
+}
+.ms-quicklaunch SPAN.ms-navheader {
+	PADDING-RIGHT: 6px; BORDER-TOP: #add1ff 1px solid; PADDING-LEFT: 6px; PADDING-BOTTOM: 3px; BORDER-LEFT: #f2f8ff 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #add1ff 1px solid; BACKGROUND-COLOR: #d6e8ff
+}
+.ms-quicklaunch TABLE.ms-navsubmenu2 TD {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+.ms-quicklaunch TABLE.ms-selectednavheader TD {
+	WIDTH: 100%; BACKGROUND-COLOR: #fff699
+}
+.ms-quicklaunch TABLE.ms-selectednavheader {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+.ms-quicklaunch SPAN {
+	DISPLAY: block
+}
+.ms-quicklaunch DIV.ms-navsubmenu1 BR {
+	DISPLAY: none
+}
+TABLE.ms-navitem {
+	PADDING-RIGHT: 6px; BACKGROUND-POSITION: left top; PADDING-LEFT: 17px; BACKGROUND-IMAGE: url(/_layouts/images/navBullet.gif); PADDING-BOTTOM: 4px; PADDING-TOP: 3px; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: tahoma
+}
+SPAN.ms-navitem {
+	PADDING-RIGHT: 6px; BACKGROUND-POSITION: left top; PADDING-LEFT: 17px; BACKGROUND-IMAGE: url(/_layouts/images/navBullet.gif); PADDING-BOTTOM: 4px; PADDING-TOP: 3px; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: tahoma
+}
+.ms-navsubmenu1 {
+	WIDTH: 100%; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #f2f8ff
+}
+.ms-navsubmenu2 {
+	MARGIN-BOTTOM: 6px; WIDTH: 100%; BACKGROUND-COLOR: #f2f8ff
+}
+TABLE.ms-navselected {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+TABLE.ms-navselected {
+	BACKGROUND-IMAGE: url(/_layouts/images/SELECTEDNAV.GIF); BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #ffe6a0
+}
+SPAN.ms-navselected {
+	BACKGROUND-IMAGE: url(/_layouts/images/SELECTEDNAV.GIF); BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #ffe6a0
+}
+TABLE.ms-navselected TD {
+	PADDING-RIGHT: 6px; BACKGROUND-POSITION: 0px 0px; PADDING-LEFT: 17px; BACKGROUND-IMAGE: url(/_layouts/images/navBullet.gif); PADDING-BOTTOM: 4px; PADDING-TOP: 3px; BACKGROUND-REPEAT: no-repeat
+}
+TABLE.ms-navheader TD {
+	BACKGROUND-IMAGE: none
+}
+.ms-navheader A {
+	FONT-WEIGHT: bold; COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-navheader2 A {
+	FONT-WEIGHT: bold; COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-navheader A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-navheader2 A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-navItem A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-navItem A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-navheaderstatic {
+	COLOR: #4c4c4c
+}
+.ms-navitemstatic {
+	COLOR: #4c4c4c
+}
+.ms-quicklaunchouter {
+	BORDER-RIGHT: #83b0ec 1px solid; MARGIN: 0px 1px 2px 2px; BORDER-BOTTOM: #83b0ec 1px solid
+}
+TABLE.ms-recyclebin TD {
+	PADDING-RIGHT: 5px; BORDER-TOP: #ffffff 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 6px; BORDER-LEFT: #ffffff 1px solid; WIDTH: 100%; PADDING-TOP: 2px; BACKGROUND-COLOR: #f2f8ff
+}
+TABLE.ms-recyclebin TD A {
+	FONT-WEIGHT: bold; COLOR: #008800; TEXT-DECORATION: none
+}
+TABLE.ms-recyclebin TD A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-quickLaunch {
+	BORDER-RIGHT: #6f9dd9 1px solid; BORDER-TOP: #6f9dd9 1px solid; FONT-SIZE: 8pt; BORDER-LEFT: #6f9dd9 1px solid; LINE-HEIGHT: 10pt; BORDER-BOTTOM: #6f9dd9 1px solid; FONT-FAMILY: tahoma; BACKGROUND-COLOR: #f2f8ff
+}
+.ms-quicklaunchheader {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 6px; FONT-WEIGHT: normal; BACKGROUND-IMAGE: url(/_layouts/images/quickLaunchHeader.gif); PADDING-BOTTOM: 3px; BORDER-LEFT: #f2f8ff 1px solid; COLOR: #3966bf; PADDING-TOP: 2px; BACKGROUND-REPEAT: repeat-x; HEIGHT: 18px; BACKGROUND-COLOR: #d6e8ff
+}
+.ms-quicklaunchheader A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-selectednav A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-unselectednav A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-quicklaunchheader A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-storMeUsed {
+	BACKGROUND: #8ebbf5
+}
+.ms-storMeFilterBar {
+	BACKGROUND: #8ebbf5
+}
+.ms-navline {
+	BORDER-BOTTOM: #adadad 1px solid
+}
+.ms-navwatermark {
+	COLOR: #ffdf88
+}
+.ms-selectednav {
+	BORDER-RIGHT: #2353b2 1px solid; BORDER-TOP: #2353b2 1px solid; BACKGROUND: #fff699; PADDING-BOTTOM: 2px; BORDER-LEFT: #2353b2 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #2353b2 1px solid
+}
+.ms-GRSortFilter {
+	BORDER-RIGHT: #2353b2 1px solid; BORDER-TOP: #2353b2 1px solid; BACKGROUND: #fff699; PADDING-BOTTOM: 2px; BORDER-LEFT: #2353b2 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #2353b2 1px solid
+}
+.ms-unselectednav {
+	BORDER-RIGHT: #83b0ec 1px solid; BORDER-TOP: #83b0ec 1px solid; PADDING-BOTTOM: 2px; BORDER-LEFT: #83b0ec 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #83b0ec 1px solid
+}
+.ms-templatepickerselected {
+	FLOAT: left
+}
+.ms-templatepickerunselected {
+	FLOAT: left
+}
+.ms-templatepickerunselected {
+	MARGIN-RIGHT: 1px; PADDING-TOP: 2px
+}
+.ms-templatepickerselected {
+	MARGIN-RIGHT: 1px
+}
+.ms-templatepickerunselected DIV {
+	BORDER-RIGHT: #c4c4c4 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #c4c4c4 1px solid; PADDING-LEFT: 5px; BACKGROUND-IMAGE: url(/_layouts/images/templatepickerunselected.gif); PADDING-BOTTOM: 3px; BORDER-LEFT: #c4c4c4 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: medium none; BACKGROUND-REPEAT: repeat-x; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #bdbdbd
+}
+.ms-templatepickerselected DIV {
+	BORDER-RIGHT: #c2a770 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #c2a770 1px solid; PADDING-LEFT: 5px; BACKGROUND-IMAGE: url(/_layouts/images/templatepickerselected.gif); PADDING-BOTTOM: 3px; BORDER-LEFT: #c2a770 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: medium none; BACKGROUND-REPEAT: repeat-x; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #ffffff
+}
+.ms-templatepickerselected DIV A {
+	COLOR: #000000
+}
+.ms-templatepickerunselected DIV A {
+	COLOR: #000000
+}
+.ms-templatepicker {
+	WIDTH: 320px; HEIGHT: 175px
+}
+.ms-lactiontable {
+	WIDTH: 100%
+}
+.ms-laction {
+	PADDING-RIGHT: 2px; BORDER-TOP: #b8bed0 1px solid; PADDING-LEFT: 2px; BACKGROUND-IMAGE: url(/_layouts/images/seealsograd.gif); BACKGROUND-REPEAT: repeat-x
+}
+.ms-lactionheader {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px
+}
+.ms-lactionitem {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; WHITE-SPACE: nowrap
+}
+.ms-lactionitem A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-lactionitem A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-diffselected {
+	BORDER-RIGHT: #d2b47a 1px solid; BORDER-TOP: #d2b47a 1px solid; BACKGROUND-IMAGE: url(/_layouts/images/SELECTEDNAV.GIF); BORDER-LEFT: #d2b47a 1px solid; BORDER-BOTTOM: #d2b47a 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #ffe6a0
+}
+.ms-diffselected TABLE {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; WIDTH: 100%; BORDER-BOTTOM: #ffffff 1px solid
+}
+.ms-diffselected .ms-lactionbullet {
+	PADDING-LEFT: 3px
+}
+.ms-diffselected .ms-lactionitem {
+	PADDING-RIGHT: 3px
+}
+.ms-diffselected .ms-lactionitem A {
+	COLOR: #000000
+}
+.ms-versiondiffnum {
+	FONT-WEIGHT: bold
+}
+.ms-verticaldots {
+	BORDER-RIGHT: #83b0ec 1px solid; BORDER-LEFT: medium none
+}
+.ms-nav {
+	BACKGROUND-IMAGE: url(/_layouts/images/navshape.jpg); BACKGROUND-REPEAT: repeat-x; FONT-FAMILY: tahoma; BACKGROUND-COLOR: #83b0ec
+}
+.ms-relatedtable {
+	BORDER-RIGHT: #949494 1px solid; BORDER-TOP: #949494 1px solid; BACKGROUND: #f2f2f2; BORDER-LEFT: #949494 1px solid; WIDTH: 100%; BORDER-BOTTOM: #949494 1px solid
+}
+.ms-relatedheader {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FONT-WEIGHT: bold; BACKGROUND: url(/_layouts/images/ACTIONHD.GIF) #949494; WIDTH: 100%; COLOR: #ffffff
+}
+.ms-relatedheaderleftcorner {
+	
+}
+.ms-relatedheaderrightcorner {
+	
+}
+.ms-relatedicon {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; TEXT-ALIGN: center
+}
+.ms-relatedicon IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.ms-relatedtext {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; COLOR: #3966bf; PADDING-TOP: 2px
+}
+.ms-relatedtext A:visited {
+	COLOR: #3966bf; FONT-FAMILY: tahoma,sans-serif; TEXT-DECORATION: none
+}
+.ms-relatedtext A:link {
+	COLOR: #3966bf; FONT-FAMILY: tahoma,sans-serif; TEXT-DECORATION: none
+}
+.ms-relatedtext A:active {
+	COLOR: #3966bf; FONT-FAMILY: tahoma,sans-serif; TEXT-DECORATION: none
+}
+.ms-relatedtext A:hover {
+	COLOR: #3966bf; FONT-FAMILY: tahoma,sans-serif; TEXT-DECORATION: underline
+}
+.ms-globalTitleArea {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: right top; PADDING-LEFT: 5px; BACKGROUND-IMAGE: url(/_layouts/images/siteTitleBKGD.gif); PADDING-TOP: 1px; BACKGROUND-REPEAT: repeat-y; TEXT-ALIGN: right
+}
+.ms-globalTitleAreaSeparator {
+	BACKGROUND-POSITION: right 50%; BACKGROUND-IMAGE: url(/_layouts/images/siteTitleBKGD.gif); BACKGROUND-REPEAT: repeat-y; BACKGROUND-COLOR: #ffffff
+}
+.ms-globalTitleArea TD {
+	
+}
+.ms-titlearea {
+	FONT-SIZE: 8pt; COLOR: #666666; FONT-FAMILY: tahoma; LETTER-SPACING: 0.1em
+}
+.ms-titlearea A {
+	COLOR: #3966bf; TEXT-DECORATION: none
+}
+.ms-titlearea A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-titlearealeft {
+	BACKGROUND-COLOR: #d6e8ff
+}
+TD.ms-titleareaframe {
+	BACKGROUND-POSITION: left top; BACKGROUND-IMAGE: url(/_layouts/images/pageTitleBKGD.gif); BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #d6e8ff; TEXT-ALIGN: center
+}
+DIV.ms-titleareaframe {
+	BACKGROUND-POSITION: left top; BACKGROUND-IMAGE: url(/_layouts/images/pageTitleBKGD.gif); BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #d6e8ff; TEXT-ALIGN: center
+}
+.ms-pagetitleareaframe {
+	BACKGROUND-POSITION: left top; BACKGROUND-IMAGE: url(/_layouts/images/pageTitleBKGD.gif); BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #d6e8ff; TEXT-ALIGN: center
+}
+.ms-mwspagetitleareaframe {
+	BACKGROUND-POSITION: left top; BACKGROUND-IMAGE: url(/_layouts/images/pageTitleBKGD.gif); BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #d6e8ff; TEXT-ALIGN: center
+}
+.ms-consoletitleareaframe {
+	BACKGROUND-POSITION: left top; BACKGROUND-IMAGE: url(/_layouts/images/pageTitleBKGD.gif); BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #d6e8ff; TEXT-ALIGN: center
+}
+.ms-pagetitleareaframe TABLE {
+	BACKGROUND-POSITION: 332px 4px; BACKGROUND-IMAGE: url(/_layouts/images/topshape.jpg); BACKGROUND-REPEAT: no-repeat; HEIGHT: 54px
+}
+.ms-titlearealine {
+	BACKGROUND-COLOR: #83b0ec
+}
+.ms-storMeEstimated {
+	BACKGROUND-COLOR: #83b0ec
+}
+.ms-titleareaframe TABLE TD.ms-titlearea {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 1px; PADDING-TOP: 7px
+}
+.ms-areaseparator TABLE TD.ms-titlearea {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 1px; PADDING-TOP: 7px
+}
+.ms-pagetitleareaframe TABLE TD.ms-titlearea {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 1px; PADDING-TOP: 7px
+}
+.ms-consoletitleareaframe {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 1px; PADDING-TOP: 7px
+}
+.ms-consoletitleareaframe {
+	WIDTH: 8px
+}
+.ms-consoletitleareaframebottom {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-COLOR: #d6e8ff; TEXT-ALIGN: center
+}
+.ms-mwspagetitleareaframe {
+	WIDTH: 100%
+}
+.ms-mwstitlearealine {
+	BACKGROUND-COLOR: #d6e8ff
+}
+.ms-titleareaseparator {
+	PADDING-BOTTOM: 5px; BACKGROUND-COLOR: #83b0ec
+}
+.ms-titleareaseparator DIV {
+	BORDER-TOP: #6f9dd9 1px solid; BACKGROUND-COLOR: #d6e8ff
+}
+.ms-areaseparatorcorner {
+	BORDER-RIGHT: #6f9dd9 1px solid; BACKGROUND-POSITION: left top; BACKGROUND-IMAGE: url(/_layouts/images/framecornergrad.gif); BACKGROUND-REPEAT: repeat-y; HEIGHT: 8px
+}
+TD.ms-areaseparatorleft {
+	BORDER-RIGHT: #6f9dd9 1px solid; BACKGROUND: url(/_layouts/images/pageTitleBKGD.gif) #d6e8ff repeat-x; HEIGHT: 100%
+}
+DIV.ms-areaseparatorleft {
+	BORDER-RIGHT: #6f9dd9 1px solid; BACKGROUND: url(/_layouts/images/navshape.jpg) #83b0ec no-repeat -145px 0px; HEIGHT: 100%
+}
+DIV.ms-areaseparatorright {
+	PADDING-RIGHT: 2px; BACKGROUND: url(/_layouts/images/pagebackgrad.gif) #83b0ec repeat-x; BORDER-LEFT: #6f9dd9 1px solid; HEIGHT: 100%
+}
+.ms-titlearearight .ms-areaseparatorright {
+	PADDING-RIGHT: 2px; BACKGROUND: url(/_layouts/images/pageTitleBKGD.gif) #d6e8ff repeat-x; BORDER-LEFT: #6f9dd9 1px solid; HEIGHT: 100%
+}
+.ms-areaseparator {
+	BORDER-RIGHT: medium none; PADDING-LEFT: 5px; BACKGROUND-IMAGE: url(/_layouts/images/formtitlegrad.gif); BORDER-LEFT: medium none; BACKGROUND-REPEAT: repeat-x; HEIGHT: 61px; BACKGROUND-COLOR: #ffeaad
+}
+.ms-pagemargin {
+	BACKGROUND-IMAGE: url(/_layouts/images/pagebackgrad.gif); BACKGROUND-REPEAT: repeat-x; HEIGHT: 100%; BACKGROUND-COLOR: #83b0ec
+}
+.ms-bodyareacell {
+	VERTICAL-ALIGN: top; WIDTH: 100%; HEIGHT: 100%
+}
+.ms-pagebottommargin {
+	BACKGROUND: #83b0ec
+}
+.ms-pagebottommarginleft {
+	BACKGROUND: #83b0ec
+}
+.ms-pagebottommarginright {
+	BACKGROUND: #83b0ec
+}
+.ms-bodyareapagemargin {
+	BORDER-TOP: #6f9dd9 1px solid; BACKGROUND: #83b0ec
+}
+.ms-bodyareaframe {
+	BORDER-RIGHT: #6f9dd9 1px solid; BORDER-TOP: #6f9dd9 1px solid; VERTICAL-ALIGN: top; BORDER-LEFT: #6f9dd9 1px solid; WIDTH: 100%; HEIGHT: 100%; BACKGROUND-COLOR: #ffffff
+}
+.ms-viewareaframe {
+	BORDER-RIGHT: #6f9dd9 1px solid; BORDER-TOP: #6f9dd9 1px solid; VERTICAL-ALIGN: top; BORDER-LEFT: #6f9dd9 1px solid; WIDTH: 100%; HEIGHT: 100%; BACKGROUND-COLOR: #ffffff
+}
+.ms-bodyareaframe {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+.ms-formareaframe {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 8px; VERTICAL-ALIGN: top; PADDING-TOP: 8px; HEIGHT: 100%; BACKGROUND-COLOR: #ffffff
+}
+.ms-pagetitle {
+	FONT-WEIGHT: normal; FONT-SIZE: 16pt; MARGIN: 0px; COLOR: #000000; FONT-FAMILY: verdana
+}
+.ms-pagetitle A {
+	FONT-WEIGHT: normal; MARGIN: 0px; COLOR: #000000; TEXT-DECORATION: none
+}
+.ms-pagetitle A:hover {
+	
+}
+.ms-pagecaption {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: arial,verdana,sans-serif
+}
+.ms-selected {
+	BACKGROUND-POSITION: left top; BORDER-TOP: #8ebbf5 1px solid; BACKGROUND-IMAGE: url(/_layouts/images/filedialogselected.gif); COLOR: #000000; BORDER-BOTTOM: #8ebbf5 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #8ebbf5
+}
+.ms-selected SPAN {
+	COLOR: #000000
+}
+.ms-selectedtitle {
+	BORDER-RIGHT: #b09460 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #b09460 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 0px; BORDER-LEFT: #b09460 1px solid; CURSOR: pointer; PADDING-TOP: 1px; BORDER-BOTTOM: #b09460 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.ms-selectedtitlealternative {
+	BORDER-RIGHT: #b09460 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #b09460 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; MARGIN: 1px; BORDER-LEFT: #b09460 1px solid; CURSOR: pointer; PADDING-TOP: 0px; BORDER-BOTTOM: #b09460 1px solid; BACKGROUND-COLOR: #f8f8f8
+}
+.ms-unselectedtitle {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 1px; PADDING-TOP: 1px; BACKGROUND-COLOR: transparent
+}
+.ms-menuimagecell {
+	CURSOR: pointer; BACKGROUND-COLOR: #ffde89
+}
+.ms-filedialog TD {
+	HEIGHT: 16px
+}
+.ms-descriptiontext {
+	FONT-SIZE: 8pt; COLOR: #4c4c4c; FONT-FAMILY: tahoma
+}
+.ms-webpartpagedescription {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 12px; FONT-SIZE: 8pt; PADDING-BOTTOM: 0px; COLOR: #5a5a5a; PADDING-TOP: 8px; FONT-FAMILY: verdana
+}
+.ms-inputformdescription {
+	PADDING-RIGHT: 9px; WIDTH: 475px
+}
+.ms-inputformcontrols {
+	WIDTH: 375px
+}
+.ms-dspadapterlist {
+	PADDING-LEFT: 1cm; FONT-SIZE: 8pt; COLOR: #7f7f7f; FONT-FAMILY: verdana
+}
+.ms-alerttext {
+	FONT-SIZE: 8pt; COLOR: #ff0000; FONT-FAMILY: verdana
+}
+.ms-separator {
+	FONT-SIZE: 10pt; COLOR: #b7bed0
+}
+.ms-separator IMG {
+	BORDER-RIGHT: #f2f8ff 1px solid; BACKGROUND: #9ac6ff; MARGIN: 0px 1px; WIDTH: 1px; BORDER-BOTTOM: #f2f8ff 1px solid; HEIGHT: 16px
+}
+.ms-authoringcontrols {
+	FONT-SIZE: 8pt; COLOR: #083772; FONT-FAMILY: tahoma; BACKGROUND-COLOR: #ebf3ff
+}
+.ms-sectionheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #083772; FONT-FAMILY: tahoma
+}
+.ms-linksectionheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: tahoma; TEXT-ALIGN: left
+}
+TD.ms-linksectionheader {
+	BORDER-RIGHT: #add1ff 1px solid; BORDER-TOP: #add1ff 1px solid; BACKGROUND-IMAGE: url(/_layouts/images/linksectiongrad.gif); BORDER-LEFT: #add1ff 1px solid; BORDER-BOTTOM: #add1ff 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #ebf3ff; TEXT-ALIGN: left
+}
+TH.ms-linksectionheader {
+	BORDER-RIGHT: #add1ff 1px solid; BORDER-TOP: #add1ff 1px solid; BACKGROUND-IMAGE: url(/_layouts/images/linksectiongrad.gif); BORDER-LEFT: #add1ff 1px solid; BORDER-BOTTOM: #add1ff 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #ebf3ff; TEXT-ALIGN: left
+}
+.ms-attachUploadButtons {
+	TEXT-ALIGN: left
+}
+.ms-sectionheader A {
+	COLOR: #083772; TEXT-DECORATION: none
+}
+.ms-sectionheader A:hover {
+	COLOR: #083772; TEXT-DECORATION: none
+}
+.ms-sectionheader A:visited {
+	COLOR: #083772; TEXT-DECORATION: none
+}
+.ms-sectionline {
+	BACKGROUND-COLOR: #d9d9d9
+}
+.ms-sectionhighlight-top {
+	BORDER-RIGHT: 0px solid; BORDER-TOP: #ff9932 1px solid; FONT-SIZE: 8pt; BORDER-LEFT: 0px solid; BORDER-BOTTOM: #ff9932 1px solid; FONT-FAMILY: tahoma; BACKGROUND-COLOR: #f7f3cd
+}
+.ms-sectionhighlight {
+	COLOR: #4c4c4c; BACKGROUND-COLOR: #fffbd8
+}
+.ms-sectionhighlight-line {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; HEIGHT: 1px; BACKGROUND-COLOR: #ff9932
+}
+.ms-partline {
+	BACKGROUND-COLOR: #add1ff
+}
+.ms-propertysheet {
+	FONT-SIZE: 0.7em; COLOR: #7f7f7f; FONT-FAMILY: verdana; TEXT-ALIGN: left
+}
+.ms-propertysheet TH {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #7f7f7f; FONT-FAMILY: verdana
+}
+.ms-propertysheet A {
+	COLOR: #3966bf; TEXT-DECORATION: none
+}
+.ms-propertysheet A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+TABLE.ms-pageinformation {
+	FONT-SIZE: 8pt; BORDER-BOTTOM: #6f9dd9 1px solid; FONT-FAMILY: tahoma; HEIGHT: 115px
+}
+TABLE.ms-createpageinformation {
+	FONT-SIZE: 8pt; BORDER-BOTTOM: #6f9dd9 1px solid; FONT-FAMILY: tahoma; HEIGHT: 115px
+}
+TABLE.ms-pageinformation {
+	BACKGROUND-IMAGE: url(/_layouts/images/settingsgraphic.jpg); BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #e3efff
+}
+TABLE.ms-createpageinformation {
+	BACKGROUND-IMAGE: url(/_layouts/images/creategraphic.jpg); BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #ffffff
+}
+.ms-pageinformation TH {
+	COLOR: #204d89; TEXT-ALIGN: left
+}
+.ms-createpageinformation TH {
+	COLOR: #204d89; TEXT-ALIGN: left
+}
+.ms-pageinformation TABLE TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 1px; FONT-SIZE: 8pt; PADDING-BOTTOM: 3px; COLOR: #000000; PADDING-TOP: 3px; FONT-FAMILY: tahoma; TEXT-ALIGN: left
+}
+.ms-createpageinformation TABLE TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 1px; FONT-SIZE: 8pt; PADDING-BOTTOM: 3px; COLOR: #000000; PADDING-TOP: 3px; FONT-FAMILY: tahoma; TEXT-ALIGN: left
+}
+.ms-settingsframe {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid
+}
+.ms-informationtablehover {
+	BORDER-RIGHT: #add1ff 1px solid; BORDER-TOP: #add1ff 1px solid; BORDER-LEFT: #add1ff 1px solid; BORDER-BOTTOM: #add1ff 1px solid; BORDER-COLLAPSE: collapse
+}
+.ms-informationtablehover TD {
+	BACKGROUND-COLOR: #ebf3ff
+}
+.ms-informationtablehover TH {
+	BACKGROUND-COLOR: #ebf3ff
+}
+.ms-informationtablehover TD {
+	BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #ffffff 1px solid
+}
+.ms-informationtablehover TH {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: medium none; BORDER-BOTTOM: #ffffff 1px solid
+}
+.ms-informationtablestatic {
+	BACKGROUND-IMAGE: url(/_layouts/images/settingsbkg.jpg); BACKGROUND-REPEAT: no-repeat
+}
+.ms-pageinformationheader {
+	FONT-WEIGHT: bold; COLOR: #000000
+}
+.ms-itemheader A {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #3966bf; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.ms-itemstatic {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #ffffff 1px solid; BACKGROUND-COLOR: transparent
+}
+.ms-itemhover {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #f2f8ff
+}
+.ms-discussiontitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 0.7em; COLOR: #000000; FONT-FAMILY: verdana
+}
+.ms-listdescription {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BACKGROUND: #f8f8f8; PADDING-BOTTOM: 3px; COLOR: #4c4c4c; DIRECTION: ltr; PADDING-TOP: 3px; BORDER-BOTTOM: #6f9dd9 1px solid; FONT-FAMILY: tahoma; TEXT-ALIGN: left
+}
+.ms-vh {
+	FONT-WEIGHT: normal; VERTICAL-ALIGN: top; COLOR: #7f7f7f; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.ms-vh2 {
+	FONT-WEIGHT: normal; VERTICAL-ALIGN: top; COLOR: #7f7f7f; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.ms-vh-icon {
+	FONT-WEIGHT: normal; VERTICAL-ALIGN: top; COLOR: #7f7f7f; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.ms-vh-icon-empty {
+	FONT-WEIGHT: normal; VERTICAL-ALIGN: top; COLOR: #7f7f7f; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.ms-vhImage {
+	FONT-WEIGHT: normal; VERTICAL-ALIGN: top; COLOR: #7f7f7f; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.ms-vh2-nograd {
+	FONT-WEIGHT: normal; VERTICAL-ALIGN: top; COLOR: #7f7f7f; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.ms-vh2-nograd-icon {
+	FONT-WEIGHT: normal; VERTICAL-ALIGN: top; COLOR: #7f7f7f; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.ms-vh2-nofilter {
+	FONT-WEIGHT: normal; VERTICAL-ALIGN: top; COLOR: #7f7f7f; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.ms-vh2-nofilter-icon {
+	FONT-WEIGHT: normal; VERTICAL-ALIGN: top; COLOR: #7f7f7f; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.ms-gb {
+	COLOR: #666666
+}
+.ms-gb2 {
+	COLOR: #666666
+}
+.ms-gbload {
+	COLOR: #666666
+}
+.ms-vb {
+	COLOR: #666666
+}
+.ms-vb2 {
+	COLOR: #666666
+}
+.ms-vb-tall {
+	COLOR: #666666
+}
+.ms-GRFont {
+	COLOR: #666666
+}
+.ms-vb-user {
+	COLOR: #666666
+}
+TABLE.ms-disc TD {
+	COLOR: #666666
+}
+.ms-vh {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-vh2 {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-vh-icon {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-vh-icon-empty {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-vhImage {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-gb {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-gb2 {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-gbload {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-vb {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-vb2 {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-vb-tall {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-GRFont {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-vb-user {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma,sans-serif
+}
+TABLE.ms-disc TD {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-vh2-nofilter {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-vh2-nograd {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-vh2-nograd-icon {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-vh2-nofilter-icon {
+	FONT-SIZE: 8pt; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-vh {
+	WHITE-SPACE: nowrap
+}
+.ms-vh2 {
+	WHITE-SPACE: nowrap
+}
+.ms-vh2-nofilter {
+	WHITE-SPACE: nowrap
+}
+.ms-vh2-nograd {
+	WHITE-SPACE: nowrap
+}
+.ms-vh2-nograd-icon {
+	WHITE-SPACE: nowrap
+}
+.ms-vh2-nofilter-icon {
+	WHITE-SPACE: nowrap
+}
+.ms-vh {
+	
+}
+.ms-vh2 {
+	
+}
+.ms-vh {
+	BACKGROUND-IMAGE: url(/_layouts/images/viewheadergrad.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: #e0e0e0 1px solid; PADDING-TOP: 0px; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #f2f2f2
+}
+.ms-vh2 {
+	BACKGROUND-IMAGE: url(/_layouts/images/viewheadergrad.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: #e0e0e0 1px solid; PADDING-TOP: 0px; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #f2f2f2
+}
+.ms-vh-icon {
+	BACKGROUND-IMAGE: url(/_layouts/images/viewheadergrad.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: #e0e0e0 1px solid; PADDING-TOP: 0px; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #f2f2f2
+}
+.ms-vh2-nofilter {
+	BACKGROUND-IMAGE: url(/_layouts/images/viewheadergrad.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: #e0e0e0 1px solid; PADDING-TOP: 0px; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #f2f2f2
+}
+.ms-vh2-nofilter-icon {
+	BACKGROUND-IMAGE: url(/_layouts/images/viewheadergrad.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: #e0e0e0 1px solid; PADDING-TOP: 0px; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #f2f2f2
+}
+.ms-viewheadertr .ms-vh-group {
+	BACKGROUND-IMAGE: url(/_layouts/images/viewheadergrad.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: #e0e0e0 1px solid; PADDING-TOP: 0px; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #f2f2f2
+}
+.ms-vh2-nograd {
+	BACKGROUND-IMAGE: url(/_layouts/images/viewheadergrad.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: #e0e0e0 1px solid; PADDING-TOP: 0px; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #f2f2f2
+}
+.ms-vh2-nograd-icon {
+	BACKGROUND-IMAGE: url(/_layouts/images/viewheadergrad.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: #e0e0e0 1px solid; PADDING-TOP: 0px; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #f2f2f2
+}
+.ms-vh .ms-vh {
+	PADDING-LEFT: 1px; BACKGROUND-IMAGE: none; BORDER-LEFT: medium none
+}
+.ms-vh2 {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px
+}
+.ms-vh-icon {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 4px; WIDTH: 12px
+}
+.ms-vh2-nograd-icon {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 4px; WIDTH: 12px
+}
+.ms-vh2-nofilter-icon {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 4px; WIDTH: 12px
+}
+.ms-vh-icon-empty {
+	WIDTH: 0px
+}
+.ms-vh A {
+	COLOR: #7f7f7f; TEXT-DECORATION: none
+}
+.ms-vh A:visited {
+	COLOR: #7f7f7f; TEXT-DECORATION: none
+}
+.ms-vh2 A {
+	COLOR: #7f7f7f; TEXT-DECORATION: none
+}
+.ms-vh2-nofilter A {
+	COLOR: #7f7f7f; TEXT-DECORATION: none
+}
+.ms-vh A:hover {
+	TEXT-DECORATION: underline
+}
+.ms-vh2 A:hover {
+	TEXT-DECORATION: underline
+}
+.ms-vh2-nofilter A:hover {
+	TEXT-DECORATION: underline
+}
+.ms-vhImage {
+	WIDTH: 18pt
+}
+.ms-cbp {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px
+}
+.ms-standardheader {
+	FONT-SIZE: 1em; MARGIN: 0em
+}
+.ms-gb {
+	BORDER-TOP: #6f9dd9 1px solid; FONT-WEIGHT: bold; COLOR: #000000; BORDER-BOTTOM: #6f9dd9 1px solid; HEIGHT: 18px; BACKGROUND-COLOR: #ffffff
+}
+.ms-gb2 {
+	FONT-WEIGHT: bold; COLOR: #666666; HEIGHT: 18px
+}
+.ms-gbload {
+	COLOR: #000000; HEIGHT: 18px; BACKGROUND-COLOR: #ffffff
+}
+.ms-vb {
+	VERTICAL-ALIGN: top
+}
+.ms-vb2 {
+	VERTICAL-ALIGN: top
+}
+.ms-GRFont {
+	VERTICAL-ALIGN: top
+}
+.ms-vb-user {
+	VERTICAL-ALIGN: top
+}
+TABLE.ms-disc TD {
+	VERTICAL-ALIGN: top
+}
+.ms-vb-tall {
+	VERTICAL-ALIGN: top
+}
+.ms-vb A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-vb2 A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-GRStatusText A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-vb-user A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-disc A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-vb A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-vb2 A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-vb-user A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-disc A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-vb A:visited {
+	COLOR: #000066; TEXT-DECORATION: none
+}
+.ms-vb2 A:visited {
+	COLOR: #000066; TEXT-DECORATION: none
+}
+.ms-GRStatusText A:visited {
+	COLOR: #000066; TEXT-DECORATION: none
+}
+.ms-vb-user A:visited {
+	COLOR: #000066; TEXT-DECORATION: none
+}
+.ms-disc A:visited {
+	COLOR: #000066; TEXT-DECORATION: none
+}
+.ms-vb A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-vb2 A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-vb-user A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-disc A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-vb-icon {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 8px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; WIDTH: 0%; PADDING-TOP: 3px
+}
+.ms-vb-icon-overlay {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; LEFT: -8px; BORDER-LEFT: 0px; BOTTOM: -2px; BORDER-BOTTOM: 0px; POSITION: relative
+}
+.ms-vb-user {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-TOP: 3px
+}
+.ms-vb-title {
+	PADDING-LEFT: 5px; PADDING-BOTTOM: 3px; PADDING-TOP: 2px
+}
+.ms-vb-title TD {
+	PADDING-LEFT: 2px
+}
+.ms-vb2 {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px
+}
+.ms-vb-tall {
+	PADDING-BOTTOM: 10px; LINE-HEIGHT: 1.5em; PADDING-TOP: 2px
+}
+TH .ms-vb A {
+	FONT-SIZE: 8pt; COLOR: #949494; FONT-FAMILY: tahoma,sans-serif
+}
+TH .ms-vb {
+	FONT-SIZE: 8pt; COLOR: #949494; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-vh2-nofilter A {
+	FONT-SIZE: 8pt; COLOR: #949494; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-vh2-nofilter-icon A {
+	FONT-SIZE: 8pt; COLOR: #949494; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-vh2-nofilter {
+	FONT-SIZE: 8pt; COLOR: #949494; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-vh2-nofilter-icon {
+	FONT-SIZE: 8pt; COLOR: #949494; FONT-FAMILY: tahoma,sans-serif
+}
+TH.ms-vh2-nograd {
+	FONT-SIZE: 8pt; COLOR: #949494; FONT-FAMILY: tahoma,sans-serif
+}
+TH.ms-vh2-nograd-icon {
+	FONT-SIZE: 8pt; COLOR: #949494; FONT-FAMILY: tahoma,sans-serif
+}
+.ms-vh2-nofilter {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-TOP: 2px; HEIGHT: 17px
+}
+.ms-vh2-nofilter-icon {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-TOP: 2px; HEIGHT: 17px
+}
+.ms-vh2-nograd {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-TOP: 2px; HEIGHT: 17px
+}
+.ms-vh2-nograd-icon {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-TOP: 2px; HEIGHT: 17px
+}
+.ms-nlline {
+	BACKGROUND: #dadde6
+}
+.ms-ppleft {
+	OVERFLOW: auto; HEIGHT: 430px
+}
+.ms-ppright {
+	WIDTH: 600px
+}
+.ms-homepagetitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #000000; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+A.ms-addnew {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #3966bf; FONT-FAMILY: verdana; TEXT-DECORATION: none
+}
+TD.ms-addnew {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px
+}
+.ms-error {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #ff0000; FONT-FAMILY: Verdana,sans-serif
+}
+IMG.ms-button {
+	CURSOR: pointer
+}
+.ms-announcementtitle {
+	FONT-WEIGHT: bold
+}
+.ms-homepagetitle:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-discussionseparator {
+	COLOR: #cccccc; HEIGHT: 1px
+}
+.ms-summarytitlebarframe {
+	BACKGROUND-COLOR: #2353b2
+}
+.ms-summarytitlebar A:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; COLOR: #ffffff; FONT-FAMILY: Verdana,serif; TEXT-DECORATION: none
+}
+.ms-summarytitlebar A:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; COLOR: #ffffff; FONT-FAMILY: Verdana,serif; TEXT-DECORATION: none
+}
+.ms-summarytitlebar {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.68em; COLOR: #ffffff; FONT-FAMILY: verdana; TEXT-DECORATION: none
+}
+.ms-summarytitlebartitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.ms-summarytitlebartitle:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+IMG.thumbnail {
+	BORDER-RIGHT: #83b0ec 3px solid; BORDER-TOP: #83b0ec 3px solid; BORDER-LEFT: #83b0ec 3px solid; BORDER-BOTTOM: #83b0ec 3px solid
+}
+TR.ms-imglibselectedrow {
+	BACKGROUND-COLOR: #f2f2f2
+}
+TR.ms-highlight {
+	BACKGROUND-COLOR: #f2f2f2
+}
+.ms-imglibthumbnail {
+	BORDER-RIGHT: #83b0ec 0px solid; BORDER-TOP: #83b0ec 0px solid; BORDER-LEFT: #83b0ec 0px solid; BORDER-BOTTOM: #83b0ec 0px solid; BACKGROUND-COLOR: #d8d8d8
+}
+SPAN.thumbnail {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 16px; WIDTH: 5px; PADDING-TOP: 16px; POSITION: relative
+}
+SPAN.userdata {
+	DISPLAY: none; BEHAVIOR: url(#default#userData)
+}
+.ms-imglibmenuarea {
+	BACKGROUND-COLOR: #f2f8ff
+}
+A.ms-imglibPreviewTitle {
+	OVERFLOW: hidden; WIDTH: 130px; TEXT-OVERFLOW: ellipsis
+}
+TABLE.ms-imglibPreviewTable {
+	DISPLAY: none
+}
+TABLE.ms-disc TD {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+.ms-disc-nopad {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+TABLE TR TD.ms-disc-nopad {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+TABLE TR TD.ms-disc-padabove {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 10px
+}
+TABLE.ms-disc-nopad TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+TR.ms-disc-gray TD {
+	BACKGROUND-COLOR: #d8d8d8
+}
+TR.ms-disc-gray TD DIV {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+TD.ms-disc-bordered {
+	BORDER-RIGHT: #d8d8d8 1px solid; BORDER-TOP: #d8d8d8 0px solid; BORDER-LEFT: #d8d8d8 1px solid; BORDER-BOTTOM: #d8d8d8 1px solid
+}
+TD.ms-disc-bordered-noleft {
+	BORDER-RIGHT: #d8d8d8 1px solid; BORDER-TOP: #d8d8d8 0px solid; BORDER-LEFT: #d8d8d8 1px solid; BORDER-BOTTOM: #d8d8d8 1px solid
+}
+TABLE TR TD.ms-disc-bordered-noleft {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BORDER-LEFT-WIDTH: 0px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+.UserShadedRegion {
+	FONT-FAMILY: verdana,sans-serif; BACKGROUND-COLOR: #fffacc
+}
+.UserCaption {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana; BACKGROUND-COLOR: #d6e8ff
+}
+.UserConfiguration {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana; BACKGROUND-COLOR: #f2f2f2
+}
+.UserDottedLine {
+	BACKGROUND-IMAGE: url(/_layouts/images/dot.gif); MARGIN-BOTTOM: 2px; OVERFLOW: hidden; HEIGHT: 1px; BACKGROUND-COLOR: #3966bf
+}
+.UserButton {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana,Arial,Sans-Serif
+}
+.UserInput {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana,Arial,Sans-Serif
+}
+.UserSelect {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana,Arial,Sans-Serif
+}
+.UserNotification {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; COLOR: #7f7f7f; PADDING-TOP: 4px; FONT-FAMILY: verdana,sans-serif
+}
+.ConnectionChooseActiveTab {
+	BORDER-RIGHT: #999999 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #999999 1px solid; DISPLAY: inline; PADDING-LEFT: 3px; FONT-SIZE: 8pt; PADDING-BOTTOM: 3px; BORDER-LEFT: #999999 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #ece9d8 1px solid; FONT-FAMILY: Verdana,Arial,Sans-Serif; HEIGHT: 24px; BACKGROUND-COLOR: #ece9d8
+}
+.ConnectionChooseInactiveTab {
+	BORDER-RIGHT: #999999 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #999999 1px solid; MARGIN-TOP: 4px; DISPLAY: inline; PADDING-LEFT: 3px; FONT-SIZE: 8pt; PADDING-BOTTOM: 3px; COLOR: #333333; PADDING-TOP: 3px; BORDER-BOTTOM: #999999 1px solid; FONT-FAMILY: Verdana,Arial,Sans-Serif; HEIGHT: 20px; BACKGROUND-COLOR: #bfbfbf
+}
+.ConnectionConfigureInactiveTab {
+	PADDING-RIGHT: 3px; BORDER-TOP: #999999 1px solid; MARGIN-TOP: 4px; DISPLAY: inline; PADDING-LEFT: 3px; FONT-SIZE: 8pt; PADDING-BOTTOM: 3px; BORDER-LEFT: #999999 1px solid; COLOR: #333333; PADDING-TOP: 3px; BORDER-BOTTOM: #999999 1px solid; FONT-FAMILY: Verdana,Arial,Sans-Serif; HEIGHT: 20px; BACKGROUND-COLOR: #bfbfbf
+}
+.ConnectionConfigureActiveTab {
+	BORDER-RIGHT: #999999 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #999999 1px solid; DISPLAY: inline; PADDING-LEFT: 3px; FONT-SIZE: 8pt; PADDING-BOTTOM: 3px; BORDER-LEFT: #999999 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #ece9d8 1px solid; FONT-FAMILY: Verdana,Arial,Sans-Serif; HEIGHT: 24px; BACKGROUND-COLOR: #ece9d8
+}
+.UserConnectionTop {
+	FONT-SIZE: 8pt; WIDTH: 100%; BORDER-BOTTOM: #999999 1px solid; FONT-FAMILY: Verdana,Arial,Sans-Serif; HEIGHT: 24px
+}
+.UserToolBarTextArea {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 8pt; PADDING-BOTTOM: 5px; FONT-FAMILY: Verdana,sans-serif
+}
+.UserToolbarTextArea A:link {
+	COLOR: #3966bf; TEXT-DECORATION: none
+}
+.UserToolbarTextArea A:visited {
+	COLOR: #3966bf; TEXT-DECORATION: none
+}
+.UserToolbarTextArea A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.UserToolbarDisabledLink {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; FONT-SIZE: 8pt; PADDING-BOTTOM: 4px; COLOR: #7f7f7f; PADDING-TOP: 4px; FONT-FAMILY: verdana
+}
+.UserToolbarImage {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-SIZE: 8pt; BORDER-LEFT: medium none; CURSOR: pointer; BORDER-BOTTOM: medium none; BACKGROUND-COLOR: #f2f2f2; TEXT-ALIGN: center
+}
+.UserToolBarImageArea {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 8pt; PADDING-BOTTOM: 5px; FONT-FAMILY: Verdana,sans-serif
+}
+.UserToolbarSelectedImage {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: bold; FONT-SIZE: 8pt; VERTICAL-ALIGN: top; BORDER-LEFT: medium none; BORDER-BOTTOM: #000000 1px solid; TEXT-ALIGN: center
+}
+.UserCaptionShadow {
+	BORDER-RIGHT: #add1ff 1px solid; BACKGROUND-IMAGE: url(/_layouts/images/viewheadergrad.gif); BORDER-LEFT: #add1ff 1px solid; BACKGROUND-REPEAT: repeat-x; HEIGHT: 2px; BACKGROUND-COLOR: #f3f3f3
+}
+.UserGenericHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #000000; FONT-FAMILY: arial,sans-serif
+}
+.UserGeneric {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 7px; PADDING-TOP: 8px
+}
+.UserGenericBody {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 17px; PADDING-BOTTOM: 0px; PADDING-TOP: 5px
+}
+.UserGenericText {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: verdana,arial,sans-serif
+}
+.UserBackground {
+	BACKGROUND-COLOR: #ffffff
+}
+.UserSectionTitle {
+	FONT-WEIGHT: bold; MARGIN-BOTTOM: 5px; PADDING-BOTTOM: 2px; WIDTH: 100%; COLOR: #595959; BORDER-BOTTOM: #c4c4c4 1px solid
+}
+.UserSectionHead {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 3px; WIDTH: 100%; COLOR: #595959; PADDING-TOP: 0px
+}
+.UserSectionBody {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 0px; WIDTH: 100%; PADDING-TOP: 0px
+}
+.UserControlGroup {
+	PADDING-BOTTOM: 10px; PADDING-TOP: 2px
+}
+.UserSectionFooter {
+	BORDER-TOP: #c8c8c8 1px solid; MARGIN-TOP: 5px; WIDTH: 100%; COLOR: #000000; PADDING-TOP: 2px
+}
+.UserFooter {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 7px; WIDTH: 100%; PADDING-TOP: 10px
+}
+.UserCommandArea {
+	PADDING-TOP: 7px
+}
+.UserToolbar {
+	PADDING-RIGHT: 2px; BACKGROUND-POSITION: left bottom; PADDING-LEFT: 2px; BACKGROUND-IMAGE: url(/_layouts/images/topnavunselected.gif); BORDER-BOTTOM: #6f9dd9 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: transparent
+}
+.UserCellHover {
+	BORDER-RIGHT: #2353b2 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #2353b2 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; BORDER-LEFT: #2353b2 1px solid; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #2353b2 1px solid; FONT-FAMILY: Verdana,Arial,Sans-Serif
+}
+.UserCellSelected {
+	BORDER-RIGHT: #d2b47a 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #d2b47a 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 8pt; BACKGROUND-IMAGE: url(/_layouts/images/selectednav.gif); PADDING-BOTTOM: 2px; BORDER-LEFT: #d2b47a 1px solid; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #d2b47a 1px solid; BACKGROUND-REPEAT: repeat-x; FONT-FAMILY: Verdana,Arial,Sans-Serif; BACKGROUND-COLOR: #ffdf88
+}
+.UserCell {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 8pt; PADDING-BOTTOM: 3px; COLOR: #003399; PADDING-TOP: 2px; FONT-FAMILY: Verdana,Arial,Sans-Serif
+}
+.UserGenericBulletItem {
+	PADDING-BOTTOM: 2px
+}
+.ms-ToolPaneFrame {
+	BORDER-RIGHT: #6f9dd9 2px solid; PADDING-RIGHT: 0px; BORDER-TOP: #6f9dd9 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-COLOR: #f2f2f2
+}
+.ms-ToolPaneBody {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.ms-ToolPaneHeader {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BACKGROUND-COLOR: #2353b2; BORDER-BOTTOM-STYLE: none
+}
+.ms-ToolPaneBorder {
+	BORDER-RIGHT: #add1ff 1px solid; BORDER-TOP: transparent 0px solid; BORDER-LEFT: #add1ff 1px solid; BORDER-BOTTOM: transparent 0px solid
+}
+.ms-ToolPaneClose {
+	PADDING-RIGHT: 3px; BORDER-TOP: #e3efff 1px solid; PADDING-LEFT: 0px; BACKGROUND-IMAGE: url(/_layouts/images/topnavselected.gif); BORDER-BOTTOM: #83b0ec 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #79a7e3
+}
+.ms-ToolPaneTitle {
+	PADDING-RIGHT: 7px; BORDER-TOP: #e3efff 1px solid; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; BACKGROUND-IMAGE: url(/_layouts/images/topnavselected.gif); PADDING-BOTTOM: 2px; BORDER-LEFT: #e3efff 1px solid; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #83b0ec 1px solid; BACKGROUND-REPEAT: repeat-x; FONT-FAMILY: verdana,arial,helvetica,sans-serif; BACKGROUND-COLOR: #79a7e3; TEXT-ALIGN: left
+}
+.ms-ToolPaneFooter {
+	PADDING-RIGHT: 5px; BORDER-TOP: #c8c8c8 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 5px; COLOR: #595959; DIRECTION: ltr; PADDING-TOP: 5px; FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ms-ToolPaneError {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 8pt; PADDING-BOTTOM: 10px; COLOR: #e00000; PADDING-TOP: 10px; FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ms-ToolPaneInfo {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 8pt; PADDING-BOTTOM: 0px; COLOR: #ffffff; PADDING-TOP: 5px; FONT-FAMILY: verdana,arial,helvetica,sans-serif; BACKGROUND-COLOR: #204d89
+}
+.ms-ToolPartSpacing {
+	PADDING-TOP: 8px
+}
+.ms-ToolStripSelected {
+	PADDING-RIGHT: 4px; BORDER-TOP: #f2f8ff 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 8pt; BACKGROUND-IMAGE: url(/_layouts/images/menubuttonhover.gif); PADDING-BOTTOM: 2px; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #d6e8ff 1px solid; FONT-FAMILY: Verdana,Arial,Sans-Serif; BACKGROUND-COLOR: #afd2ff
+}
+.ms-ToolStrip {
+	PADDING-RIGHT: 4px; BORDER-TOP: #f2f8ff 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 8pt; BACKGROUND-IMAGE: url(/_layouts/images/listheadergrad.gif); PADDING-BOTTOM: 2px; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #d6e8ff 1px solid; FONT-FAMILY: Verdana,Arial,Sans-Serif; BACKGROUND-COLOR: #afd2ff
+}
+.ms-TPBorder {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+.ms-TPHeader {
+	BACKGROUND-COLOR: #ffdf88
+}
+.ms-TPTitle {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; COLOR: #2a4666; PADDING-TOP: 2px; FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ms-TPBody {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ms-TPBody A:link {
+	CURSOR: pointer; COLOR: #3966bf; TEXT-DECORATION: none
+}
+.ms-TPBody A:visited {
+	CURSOR: pointer; COLOR: #3966bf; TEXT-DECORATION: none
+}
+.ms-TPBody A:hover {
+	CURSOR: pointer; COLOR: #3966bf; TEXT-DECORATION: none
+}
+.ms-TPCommands {
+	
+}
+.ms-TPInput {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ms-PropGridBuilderButton {
+	BORDER-RIGHT: #3966bf 1px solid; BORDER-TOP: #3966bf 1px solid; DISPLAY: none; FONT-SIZE: 8pt; BORDER-LEFT: #3966bf 1px solid; WIDTH: 16px; BORDER-BOTTOM: #3966bf 1px solid; BACKGROUND-COLOR: #add1ff
+}
+.ms-BuilderBackground {
+	BACKGROUND: #ece9d8
+}
+.ms-SPZone {
+	BORDER-RIGHT: #7f7f7f 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #7f7f7f 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: #7f7f7f 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #7f7f7f 1px solid
+}
+.ms-SPZoneSelected {
+	BORDER-RIGHT: #00ff00 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #00ff00 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: #00ff00 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #00ff00 1px solid
+}
+.ms-SPZoneIBar {
+	BORDER-RIGHT: #00ff00 3px solid; BORDER-TOP: #00ff00 3px solid; BORDER-LEFT: #00ff00 3px solid; BORDER-BOTTOM: #00ff00 3px solid
+}
+.ms-SPZoneLabel {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 8pt; PADDING-BOTTOM: 0px; COLOR: #7f7f7f; PADDING-TOP: 0px; FONT-FAMILY: verdana
+}
+.ms-SPZoneCaption {
+	FONT-SIZE: 9pt; COLOR: #7f7f7f; FONT-FAMILY: verdana
+}
+.ms-WPDesign {
+	BACKGROUND-COLOR: #add1ff
+}
+.ms-WPMenu {
+	BACKGROUND-COLOR: #add1ff
+}
+.ms-WPTitle {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 10pt; PADDING-BOTTOM: 2px; COLOR: #4c4c4c; PADDING-TOP: 2px; FONT-FAMILY: tahoma,sans-serif; TEXT-ALIGN: left
+}
+.ms-WPTitle A:link {
+	CURSOR: pointer; COLOR: #4c4c4c; TEXT-DECORATION: none
+}
+.ms-WPTitle A:visited {
+	CURSOR: pointer; COLOR: #4c4c4c; TEXT-DECORATION: none
+}
+.ms-WPTitle A:hover {
+	CURSOR: pointer; COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-WPSelected {
+	BORDER-RIGHT: #ffbb77 3px dashed; BORDER-TOP: #ffbb77 3px dashed; BORDER-LEFT: #ffbb77 3px dashed; BORDER-BOTTOM: #ffbb77 3px dashed
+}
+.ms-WPBody {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ms-WPBody TABLE {
+	FONT-SIZE: 1em
+}
+.ms-TPBody TABLE {
+	FONT-SIZE: 1em
+}
+.ms-WPBody A:link {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-WPBody A:visited {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-WPBody A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-WPBody TH {
+	FONT-WEIGHT: bold
+}
+.ms-TPBody TH {
+	FONT-WEIGHT: bold
+}
+.ms-WPBody TD {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ms-WPBody H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 200%
+}
+.ms-TPBody H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 200%
+}
+.ms-WPBody H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 150%
+}
+.ms-TPBody H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 150%
+}
+.ms-WPBody H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 120%
+}
+.ms-TPBody H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 120%
+}
+.ms-WPBody H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 100%
+}
+.ms-TPBody H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 100%
+}
+.ms-WPBody H5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 80%
+}
+.ms-TPBody H5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 80%
+}
+.ms-WPBody H6 {
+	FONT-WEIGHT: bold; FONT-SIZE: 65%
+}
+.ms-TPBody H6 {
+	FONT-WEIGHT: bold; FONT-SIZE: 65%
+}
+.ms-WPBorder {
+	BORDER-RIGHT: #9ac6ff 1px solid; BORDER-TOP: #9ac6ff 1px solid; BORDER-LEFT: #9ac6ff 1px solid; BORDER-BOTTOM: #9ac6ff 1px solid
+}
+.ms-WPBorderBorderOnly {
+	BORDER-RIGHT: #9ac6ff 1px solid; BORDER-TOP: #9ac6ff 1px solid; BORDER-LEFT: #9ac6ff 1px solid; BORDER-BOTTOM: #9ac6ff 1px solid
+}
+.ms-WPBorder {
+	BORDER-TOP-WIDTH: 0px
+}
+.ms-HoverCellInActive {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN: 1px; VERTICAL-ALIGN: top; BORDER-LEFT: medium none; COLOR: #4c4c4c; BORDER-BOTTOM: medium none; BACKGROUND-COLOR: transparent
+}
+.ms-SpLinkButtonInActive {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN: 1px; VERTICAL-ALIGN: top; BORDER-LEFT: medium none; COLOR: #4c4c4c; BORDER-BOTTOM: medium none; BACKGROUND-COLOR: transparent
+}
+.ms-HoverCellActive {
+	BORDER-RIGHT: #6f9dd9 1px solid; BORDER-TOP: #6f9dd9 1px solid; BACKGROUND-IMAGE: url(/_layouts/images/menubuttonhover.gif); VERTICAL-ALIGN: top; BORDER-LEFT: #6f9dd9 1px solid; BORDER-BOTTOM: #6f9dd9 1px solid; BACKGROUND-COLOR: #ffbb47
+}
+.ms-SpLinkButtonActive {
+	BORDER-RIGHT: #6f9dd9 1px solid; BORDER-TOP: #6f9dd9 1px solid; BACKGROUND-IMAGE: url(/_layouts/images/menubuttonhover.gif); VERTICAL-ALIGN: top; BORDER-LEFT: #6f9dd9 1px solid; BORDER-BOTTOM: #6f9dd9 1px solid; BACKGROUND-COLOR: #ffbb47
+}
+.ms-HoverCellActiveDark {
+	BORDER-RIGHT: #ffdf88 1px solid; BORDER-TOP: #ffdf88 1px solid; VERTICAL-ALIGN: top; BORDER-LEFT: #ffdf88 1px solid; COLOR: #ffffff; BORDER-BOTTOM: #ffdf88 1px solid; BACKGROUND-COLOR: #4682b4
+}
+.ms-SpLinkButtonInActive {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+.ms-SpLinkButtonActive {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+.ms-SpLinkButtonActive A {
+	COLOR: #000000
+}
+.ms-SPLink {
+	FONT-SIZE: 8pt; COLOR: #3966bf; FONT-FAMILY: verdana
+}
+.ms-SPLink A:link {
+	COLOR: #2a4666; TEXT-DECORATION: none
+}
+.ms-SPLink A:visited {
+	COLOR: #2a4666; TEXT-DECORATION: none
+}
+.ms-SPButton {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana
+}
+.ms-PartSpacingVertical {
+	MARGIN-TOP: 12px; FONT-SIZE: 1pt
+}
+.ms-PartSpacingHorizontal {
+	FONT-SIZE: 1pt; WIDTH: 8px
+}
+.ms-WPHeader {
+	
+}
+.ms-WPHeader TD {
+	BORDER-BOTTOM: #4e7cb7 1px solid; BORDER-COLLAPSE: collapse
+}
+.ms-WPEditText {
+	PADDING-RIGHT: 1px; DISPLAY: inline; PADDING-LEFT: 1px; FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; FONT-FAMILY: verdana,arial,sans-serif
+}
+.ms-SPzone .ms-WPHeader TD {
+	BORDER-RIGHT: #d8d8d8 1px solid; BORDER-TOP: #d8d8d8 1px solid; BACKGROUND-IMAGE: url(/_layouts/images/partgrad.gif); BORDER-LEFT: #d8d8d8 1px solid; BORDER-BOTTOM: #d8d8d8 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #f2f8ff
+}
+.ms-SPZoneSelected .ms-WPHeader TD {
+	BORDER-RIGHT: #d8d8d8 1px solid; BORDER-TOP: #d8d8d8 1px solid; BACKGROUND-IMAGE: url(/_layouts/images/partgrad.gif); BORDER-LEFT: #d8d8d8 1px solid; BORDER-BOTTOM: #d8d8d8 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #f2f8ff
+}
+.ms-rtApplyBackground {
+	BORDER-RIGHT: buttonshadow 1px solid; BORDER-BOTTOM: buttonshadow 1px solid; BACKGROUND-COLOR: #ffdf88
+}
+.ms-tbButtonMouseOverDown {
+	BORDER-RIGHT: buttonhighlight 1px solid; BORDER-TOP: buttonshadow 1px solid; BORDER-LEFT: buttonshadow 1px solid; WIDTH: 23px; BORDER-BOTTOM: buttonhighlight 1px solid; TOP: 1px; HEIGHT: 22px; BACKGROUND-COLOR: #ffdf88
+}
+.ms-rtRemoveBackground {
+	BORDER-RIGHT: #ffdf88 1px solid; BORDER-TOP: #ffdf88 1px solid; BORDER-LEFT: #ffdf88 1px solid; BORDER-BOTTOM: #ffdf88 1px solid; BACKGROUND-COLOR: transparent
+}
+.ms-subsmanageheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; VERTICAL-ALIGN: top; FONT-FAMILY: verdana; BACKGROUND-COLOR: #f2f2f2; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.ms-subsmanagecell {
+	FONT-SIZE: 0.68em; VERTICAL-ALIGN: top; COLOR: #000000; FONT-FAMILY: verdana; HEIGHT: 18px
+}
+.ms-ConnError {
+	COLOR: #ff0000
+}
+.ms-underline {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; VERTICAL-ALIGN: top; PADDING-TOP: 3px; BORDER-BOTTOM: #bfbfbf 1px solid
+}
+.ms-underlineback {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; VERTICAL-ALIGN: top; PADDING-TOP: 3px; BORDER-BOTTOM: #bfbfbf 1px solid; BACKGROUND-COLOR: #f2f2f2
+}
+.ms-back {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; VERTICAL-ALIGN: top; PADDING-TOP: 2px; BACKGROUND-COLOR: #f2f2f2
+}
+.ms-smallheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: verdana
+}
+.ms-smallsectionline {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-COLOR: #bfbfbf
+}
+.ms-tabselected {
+	BORDER-RIGHT: #6f9dd9 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #6f9dd9 1px solid; PADDING-LEFT: 10px; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(/_layouts/images/viewselectorgrad.gif); PADDING-BOTTOM: 3px; BORDER-LEFT: #6f9dd9 1px solid; COLOR: #3966bf; PADDING-TOP: 3px; BORDER-BOTTOM: white; BACKGROUND-REPEAT: repeat-x; POSITION: relative; TOP: 0px; BACKGROUND-COLOR: #ffe6a0
+}
+.ms-tabinactive {
+	BORDER-RIGHT: #c2dcff 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #c2dcff 1px solid; PADDING-LEFT: 10px; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(/_layouts/images/topnavunselected.gif); PADDING-BOTTOM: 3px; BORDER-LEFT: #c2dcff 1px solid; COLOR: #3966bf; PADDING-TOP: 3px; BORDER-BOTTOM: medium none; BACKGROUND-REPEAT: repeat-x; POSITION: relative; TOP: 0px; BACKGROUND-COLOR: #e3efff
+}
+.ms-tabinactive A:link {
+	COLOR: #3966bf; TEXT-DECORATION: none
+}
+.ms-tabinactive A:hover {
+	COLOR: #3966bf; TEXT-DECORATION: none
+}
+.ms-tabinactive A:visited {
+	COLOR: #3966bf; TEXT-DECORATION: none
+}
+.ms-surveyHBar {
+	FONT-SIZE: 2px; BACKGROUND-COLOR: #3966bf
+}
+.ms-surveyHBarB {
+	FONT-SIZE: 2px; BACKGROUND-COLOR: #cccccc
+}
+.ms-surveyVBar {
+	FONT-SIZE: 2px; BACKGROUND-COLOR: #3966bf
+}
+.ms-surveyVBarB {
+	FONT-SIZE: 2px; VERTICAL-ALIGN: bottom; BACKGROUND-COLOR: #cccccc
+}
+.ms-surveyVBarBI {
+	FONT-SIZE: 2px; VERTICAL-ALIGN: top; BACKGROUND-COLOR: #3966bf
+}
+.ms-surveyVBarS {
+	FONT-SIZE: 2px
+}
+.ms-surveyVBarT {
+	FONT-SIZE: 7pt; COLOR: #7f7f7f; FONT-FAMILY: verdana
+}
+.ms-surveyVBarTC {
+	FONT-SIZE: 7pt; COLOR: #7f7f7f; FONT-FAMILY: verdana; TEXT-ALIGN: center
+}
+.ms-surveyHR {
+	COLOR: #cccccc; HEIGHT: 1px
+}
+.ms-surveyTotal {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; FONT-SIZE: 8pt; COLOR: #7f7f7f; FONT-FAMILY: verdana
+}
+.ms-uploadborder {
+	BORDER-RIGHT: #83b0ec 1px solid; BORDER-TOP: #83b0ec 1px solid; BORDER-LEFT: #83b0ec 1px solid; BORDER-BOTTOM: #83b0ec 1px solid
+}
+.ms-uploadcontrol {
+	BACKGROUND-COLOR: #f2f2f2
+}
+.ms-spaceBetContentAndButton {
+	HEIGHT: 10px
+}
+.ms-ButtonHeightWidth {
+	FONT: 8pt tahoma; WIDTH: 7.5em; HEIGHT: 2.1em
+}
+.ms-ButtonHeightWidth2 {
+	FONT: 8pt tahoma; WIDTH: 11.72em; HEIGHT: 2.1em
+}
+.ms-SpaceBetButtons {
+	WIDTH: 6px
+}
+.ms-summarycustombody {
+	MARGIN-TOP: 5px; MARGIN-LEFT: 3px; MARGIN-RIGHT: 6px
+}
+.ms-summarystandardbody {
+	MARGIN-TOP: 0px; MARGIN-LEFT: 0px; MARGIN-RIGHT: 6px
+}
+.ms-stylebox {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid; FONT-FAMILY: verdana; TEXT-ALIGN: left
+}
+.ms-stylelabel {
+	FONT-SIZE: 8pt; COLOR: #7f7f7f; FONT-FAMILY: verdana
+}
+.ms-styleheader {
+	FONT-SIZE: 0.68em; FONT-FAMILY: verdana; BACKGROUND-COLOR: #f2f2f2
+}
+.ms-styleheader A:link {
+	COLOR: #3966bf; TEXT-DECORATION: none
+}
+.ms-stylebody A:link {
+	COLOR: #3966bf; TEXT-DECORATION: none
+}
+.ms-styleheader A:visited {
+	TEXT-DECORATION: none
+}
+.ms-stylebody A:visited {
+	TEXT-DECORATION: none
+}
+.ms-stylebody {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana
+}
+.ms-styleheader A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-stylebody A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-alternating {
+	BACKGROUND-COLOR: #f9f9f9
+}
+.ms-MWSSelectedInstance {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.ms-MWSInstantiated A:link {
+	COLOR: #3966bf; TEXT-DECORATION: none
+}
+.ms-MWSInstantiated A:visited {
+	COLOR: #3966bf; TEXT-DECORATION: none
+}
+.ms-MWSInstantiated A:hover {
+	COLOR: #8ebbf5; TEXT-DECORATION: underline
+}
+.ms-MWSUninstantiated A:link {
+	COLOR: #3966bf; TEXT-DECORATION: none
+}
+.ms-MWSUninstantiated A:visited {
+	COLOR: #3966bf; TEXT-DECORATION: none
+}
+.ms-MWSUninstantiated A:hover {
+	COLOR: #3966bf; TEXT-DECORATION: underline
+}
+.ms-entity-resolved {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-entity-unresolved {
+	BACKGROUND-POSITION: left bottom; BACKGROUND-IMAGE: url(/_layouts/images/squiggle.gif); PADDING-BOTTOM: 2px; VERTICAL-ALIGN: text-top; CURSOR: pointer; COLOR: #000000; BACKGROUND-REPEAT: repeat; FONT-STYLE: italic
+}
+.ms-ganttTitleCell {
+	BORDER-RIGHT: #d6e8ff 1px solid; BORDER-TOP: #d6e8ff 1px solid; PADDING-LEFT: 7px; BORDER-LEFT: #d6e8ff 1px solid; WIDTH: 222px; COLOR: black; BORDER-BOTTOM: #d6e8ff 1px solid; HEIGHT: 22px
+}
+.ms-ganttTitleHeaderCell {
+	BORDER-RIGHT: #d6e8ff 1px solid; BORDER-TOP: #d6e8ff 1px solid; PADDING-LEFT: 7px; BORDER-LEFT: #d6e8ff 1px solid; WIDTH: 222px; COLOR: #4e7cb7; BORDER-BOTTOM: #d6e8ff 1px solid
+}
+.ms-ganttInnerTable {
+	
+}
+.ms-ganttInnerTable TD {
+	FONT-SIZE: 0.68em; FONT-FAMILY: verdana
+}
+.ms-ganttDiv {
+	OVERFLOW: auto; WIDTH: 100%; POSITION: absolute; HEIGHT: 180px
+}
+.ms-ganttDivNotIE {
+	OVERFLOW: auto; WIDTH: 100%; HEIGHT: 180px
+}
+.ms-ganttOuterTable {
+	WIDTH: 100%; HEIGHT: 180px
+}
+.ms-ganttMajorTimeUnitHeaderCell {
+	BORDER-RIGHT: #d6e8ff 1px solid; BORDER-LEFT: #d6e8ff 1px solid; COLOR: #4e7cb7; BACKGROUND-COLOR: #f9f9f9; TEXT-ALIGN: center
+}
+.ms-ganttDetailTimeUnitRow TD {
+	BORDER-RIGHT: #d6e8ff 1px solid; BORDER-TOP: #d6e8ff 1px solid; BORDER-LEFT: #d6e8ff 1px solid; COLOR: #4e7cb7; BORDER-BOTTOM: #d6e8ff 1px solid; BACKGROUND-COLOR: #f9f9f9; TEXT-ALIGN: center
+}
+.ms-ganttWorkingDay {
+	
+}
+.ms-ganttNonWorkingDay {
+	BACKGROUND: #f9f9f9
+}
+.ms-ganttToday {
+	BACKGROUND: cornsilk
+}
+.ms-ganttTransparentImage {
+	POSITION: absolute
+}
+.ms-ganttNonTransparentImage {
+	POSITION: absolute
+}
+.ms-dgselected {
+	FONT-WEIGHT: bold; BACKGROUND: #5980a5; VERTICAL-ALIGN: middle; COLOR: #ffffff
+}
+.ms-dgselected A {
+	FONT-WEIGHT: bold; COLOR: #ffffff
+}
+.ms-dgselected A:visited {
+	FONT-WEIGHT: bold; COLOR: #ffffff
+}
+.ms-dgbottom {
+	BORDER-RIGHT: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid
+}
+.ms-dgadd A {
+	FONT-WEIGHT: bold
+}
+.ms-dgadd {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; VERTICAL-ALIGN: middle; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #c0c6e0 1px solid
+}
+.ms-infobar {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; FONT-SIZE: 10px; BORDER-LEFT: #999999 1px solid; BORDER-BOTTOM: #999999 1px solid; FONT-FAMILY: Tahoma; BACKGROUND-COLOR: #edf0d9
+}
+.ms-unpublishedresource {
+	BORDER-RIGHT: #ff0000 thick dashed; BORDER-TOP: #ff0000 thick dashed; MARGIN: 5px; BORDER-LEFT: #ff0000 thick dashed; BORDER-BOTTOM: #ff0000 thick dashed
+}
+.ms-inconsistentresource {
+	BORDER-RIGHT: #00ff00 thick dashed; BORDER-TOP: #00ff00 thick dashed; MARGIN: 5px; BORDER-LEFT: #00ff00 thick dashed; BORDER-BOTTOM: #00ff00 thick dashed
+}
+.ms-annotatedanchorspacing {
+	LEFT: 3px; WIDTH: 3px; TOP: 3px; HEIGHT: 3px
+}
+.ms-consolemptablerow {
+	BACKGROUND-COLOR: #79a7e3
+}
+.ms-consolestatus {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma,verdana
+}
+.ms-consoleerror {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma,verdana
+}
+.ms-consolemessage {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma,verdana
+}
+.ms-consoletoolbar {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma,verdana
+}
+.ms-consoleframe {
+	BORDER-RIGHT: 0px solid; BORDER-LEFT: 0px solid; BORDER-TOP-STYLE: solid; BORDER-BOTTOM: 1px solid
+}
+.ms-consolestatusframe {
+	BORDER-RIGHT: 0px solid; BORDER-LEFT: 0px solid; BORDER-TOP-STYLE: solid; BORDER-BOTTOM: 1px solid
+}
+.ms-consolestatuscell {
+	BACKGROUND-POSITION: left top; BACKGROUND-IMAGE: url(/_layouts/images/pageTitleBKGD.gif); BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #d5dced; TEXT-ALIGN: center
+}
+.ms-consoleframe {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-COLOR: #83b0ec; BORDER-BOTTOM-COLOR: #83b0ec; BORDER-TOP-COLOR: #83b0ec; BORDER-RIGHT-COLOR: #83b0ec
+}
+.ms-consolestatusframe {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-COLOR: #ffffff; BORDER-BOTTOM-COLOR: #ffffff; BORDER-TOP-COLOR: #ffffff; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #f6fdfd; BORDER-RIGHT-COLOR: #ffffff
+}
+TD.ms-consolestatusmajorframe {
+	BACKGROUND-REPEAT: repeat-x
+}
+TD.ms-consolestatusminorframe {
+	BACKGROUND-REPEAT: repeat-x
+}
+TD.ms-consolestatuscheckoutframe {
+	BACKGROUND-REPEAT: repeat-x
+}
+.ms-consolestatusmajorframe {
+	BACKGROUND: url(/_layouts/images/cnspgrdn.gif)
+}
+.ms-consolestatusminorframe {
+	BACKGROUND: url(/_layouts/images/cnsugrdn.gif)
+}
+.ms-consolestatuscheckoutframe {
+	BACKGROUND: url(/_layouts/images/cnsugrdn.gif)
+}
+.ms-consolestatusshadowframe {
+	BACKGROUND: url(/_layouts/images/cnsshdo.gif); HEIGHT: 4px
+}
+.ms-consolestatusshadowframeleft {
+	BACKGROUND: url(/_layouts/images/cnsshdol.gif); WIDTH: 3px; HEIGHT: 4px
+}
+.ms-consolestatusshadowframeright {
+	BACKGROUND: url(/_layouts/images/cnsshdor.gif); WIDTH: 3px; HEIGHT: 4px
+}
+.ms-consolestatus {
+	PADDING-BOTTOM: 3px; COLOR: #666666; PADDING-TOP: 3px; TEXT-DECORATION: none
+}
+.ms-consolestatus A {
+	COLOR: #3966bf; TEXT-DECORATION: none
+}
+.ms-consolestatus A:hover {
+	TEXT-DECORATION: underline
+}
+.ms-consolehr {
+	HEIGHT: 1px; BACKGROUND-COLOR: #cdcdcd
+}
+.ms-consoleerror {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+.ms-consoleerror A {
+	COLOR: #3966bf; TEXT-DECORATION: none
+}
+.ms-consoleerror A:hover {
+	COLOR: #3966bf; TEXT-DECORATION: underline
+}
+.ms-consolemessage {
+	COLOR: #204d89; TEXT-DECORATION: none
+}
+.ms-consolemessage A {
+	TEXT-DECORATION: none
+}
+.ms-consolemessage A:hover {
+	TEXT-DECORATION: underline
+}
+.ms-consoletoolbar {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-consoletoolbar A {
+	TEXT-DECORATION: none
+}
+.ms-consoleqaback TD {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 3px; BACKGROUND-IMAGE: url(/_layouts/images/qarsgrd.gif)
+}
+.ms-consoleqabackhover TD {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 3px; BACKGROUND-IMAGE: url(/_layouts/images/qahvgrd.gif)
+}
+.ms-consoleqaemptyborderh {
+	HEIGHT: 1px
+}
+.ms-consoleqaemptyborderv {
+	WIDTH: 1px
+}
+.ms-consoleqaemptycorner {
+	WIDTH: 1px; HEIGHT: 1px
+}
+.ms-consoleqaborderh {
+	BACKGROUND-COLOR: #cad7e7
+}
+.ms-consoleqaborderv {
+	BACKGROUND-COLOR: #cad7e7
+}
+.ms-consoleqacorner {
+	BACKGROUND-COLOR: #cad7e7
+}
+.ms-consoleqaborderhhover {
+	BACKGROUND-COLOR: #d2b47a
+}
+.ms-consoleqabordervhover {
+	BACKGROUND-COLOR: #d2b47a
+}
+.ms-consoleqacornerhover {
+	BACKGROUND-COLOR: #d2b47a
+}
+.ms-consoleqaborderh {
+	HEIGHT: 1px
+}
+.ms-consoleqaborderv {
+	WIDTH: 1px
+}
+.ms-consoleqacorner {
+	WIDTH: 1px; HEIGHT: 1px
+}
+.ms-consoleqaborderhhover {
+	HEIGHT: 1px
+}
+.ms-consoleqabordervhover {
+	WIDTH: 1px
+}
+.ms-consoleqacornerhover {
+	WIDTH: 1px; HEIGHT: 1px
+}
+.ms-webpartpickerpagebackground {
+	BACKGROUND-COLOR: #efebc2
+}
+.ms-webpartpickerpageinnerbackground {
+	BACKGROUND-COLOR: #f2f2f2
+}
+.ms-webpartpickerpagetext {
+	COLOR: #656b77; TEXT-ALIGN: left
+}
+.ms-webpartpickerpagetext A {
+	COLOR: #3966bf; TEXT-ALIGN: left
+}
+.ms-webpartpickerpageHeaderBorder A {
+	COLOR: #3966bf
+}
+.ms-webpartpickeralign {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 3px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.ms-webpartpickerwarning {
+	COLOR: #ff0000
+}
+.ms-viewtotalselect {
+	WIDTH: 104px
+}
+.hierarchy-node-partialcheck {
+	FONT-STYLE: italic
+}
+.ms-wikitoolbar A.ms-toolbar {
+	COLOR: #124890
+}
+.ms-wikieditouter {
+	BORDER-RIGHT: #6393d4 1px solid; BORDER-TOP: #6393d4 1px solid; RIGHT: 10px; FONT: 8pt tahoma; BORDER-LEFT: #6393d4 1px solid; BORDER-BOTTOM: medium none; POSITION: absolute; TOP: 30px; HEIGHT: 23px; TEXT-ALIGN: center
+}
+.ms-wikieditsecond {
+	
+}
+.ms-wikieditthird {
+	BACKGROUND: url(/_layouts/images/toolgrad.gif)
+}
+.ms-wikieditorange {
+	
+}
+.ms-wikieditorangeinnera {
+	FONT-SIZE: 0px; LINE-HEIGHT: 0px; HEIGHT: 0px
+}
+.ms-wikieditbutton SPAN {
+	VERTICAL-ALIGN: top
+}
+.ms-wikieditbutton A {
+	COLOR: #7f7f7f; TEXT-DECORATION: none
+}
+.ms-wikieditbutton A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.ms-wikicontent A {
+	TEXT-DECORATION: underline
+}
+.ms-wikicontent A.ms-wikilink {
+	TEXT-DECORATION: none
+}
+.ms-wikicontent A.ms-missinglink {
+	BORDER-BOTTOM: #000000 1px dashed; TEXT-DECORATION: none
+}
+.ms-wikicontent {
+	COLOR: #333333; LINE-HEIGHT: 1.3
+}
+.errorinl {
+	FONT-SIZE: 8pt; COLOR: #ff0000; FONT-FAMILY: verdana,sans-serif
+}
+.ms-diffbox {
+	BORDER-RIGHT: #c3c3c3 1px solid; BORDER-TOP: #c3c3c3 1px solid; BORDER-LEFT: #c3c3c3 1px solid; BORDER-BOTTOM: #c3c3c3 1px solid
+}
+.ms-diffdeletenostrike {
+	BACKGROUND-COLOR: #e0e0e0
+}
+.ms-diffdelete {
+	BACKGROUND-COLOR: #e0e0e0
+}
+.ms-diffdelete {
+	TEXT-DECORATION: line-through
+}
+.ms-diffinsert {
+	BACKGROUND-COLOR: #ffeaad
+}
+.ms-diffchange {
+	BACKGROUND-COLOR: #fefe7f
+}
+.ms-wikifieldheader {
+	PADDING-RIGHT: 2px; MARGIN-TOP: 15px; PADDING-LEFT: 2px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 2px; COLOR: #515151; PADDING-TOP: 2px; BORDER-BOTTOM: #c3c3c3 1px solid; FONT-FAMILY: tahoma
+}
+UL.ms-blogAdminLinks {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 4px; PADDING-BOTTOM: 0px; MARGIN: 4px 10px 0px 0px; PADDING-TOP: 0px; WHITE-SPACE: nowrap; LIST-STYLE-TYPE: none
+}
+UL.ms-blogAdminLinks LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 20px; BACKGROUND: url(/_layouts/images/rect.gif) no-repeat 5px 8px; PADDING-BOTTOM: 3px; MARGIN: 0px; PADDING-TOP: 0px
+}
+UL.ms-blogAdminLinks LI A {
+	COLOR: #003399
+}
+.ms-PostWrapper {
+	WIDTH: 588px; COLOR: #4c4c4c
+}
+.ms-CommentsWrapper {
+	WIDTH: 588px; COLOR: #4c4c4c
+}
+.ms-blogrss {
+	WIDTH: 588px; COLOR: #4c4c4c
+}
+.ms-PostTitle {
+	BORDER-TOP: #e3efff 1px solid; FONT-SIZE: 16pt; PADDING-TOP: 6px
+}
+.ms-PostTitle SPAN {
+	RIGHT: auto; LEFT: -2px; POSITION: relative
+}
+.ms-PostTitle A {
+	COLOR: #4c4c4c; TEXT-DECORATION: none
+}
+.ms-PostFooter {
+	FONT-SIZE: 8pt; PADDING-BOTTOM: 22px; COLOR: #999999
+}
+.ms-CommentFooter {
+	FONT-SIZE: 8pt; PADDING-BOTTOM: 22px; COLOR: #999999
+}
+.ms-PostFooter A {
+	COLOR: #6c90d8; WHITE-SPACE: nowrap
+}
+.ms-CommentFooter A {
+	COLOR: #6c90d8; WHITE-SPACE: nowrap
+}
+.ms-PostBody {
+	FONT-SIZE: 8pt; PADDING-BOTTOM: 12px; COLOR: #4c4c4c; LINE-HEIGHT: 1.7em; PADDING-TOP: 6px
+}
+.ms-PostBody A {
+	COLOR: #003399
+}
+.ms-PostBody P {
+	MARGIN: 0px 0px 1em
+}
+H1.ms-PostDate {
+	FONT-SIZE: 8pt; PADDING-BOTTOM: 5px; MARGIN: 0px; COLOR: #7f7f7f; BORDER-BOTTOM: #6f9dd9 1px solid
+}
+H1.ms-CommentHeader {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 16pt; RIGHT: auto; LEFT: -2px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #999999; PADDING-TOP: 0px; POSITION: relative; TOP: -0.25em
+}
+H2.ms-CommentTitle {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 8pt; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #666666; LINE-HEIGHT: 1.7em; PADDING-TOP: 0px
+}
+.ms-CommentBody {
+	FONT-SIZE: 8pt; PADDING-BOTTOM: 12px; COLOR: #4c4c4c; LINE-HEIGHT: 1.7em; PADDING-TOP: 6px
+}
+.ms-commentsempty {
+	FONT-SIZE: 8pt; PADDING-BOTTOM: 22px; COLOR: #4c4c4c; PADDING-TOP: 6px
+}
+.ms-blogedit {
+	BORDER-TOP: #e3efff 1px solid; FONT-SIZE: 8pt; VERTICAL-ALIGN: top; LINE-HEIGHT: 1.7em
+}
+.ms-blogedit A {
+	BORDER-RIGHT: #e3efff 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: medium none; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; BORDER-LEFT: #e3efff 1px solid; COLOR: #003399; PADDING-TOP: 0px; BORDER-BOTTOM: #e3efff 1px solid; HEIGHT: 22px
+}
+.ms-blogrss {
+	BORDER-TOP: #e3efff 1px solid; FONT-SIZE: 8pt; PADDING-TOP: 5px
+}
+.ms-blogrss A {
+	COLOR: #003399
+}
+.ms-blogrss IMG {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; VERTICAL-ALIGN: middle; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+.ms-commenttable {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 15px 0px 0px; PADDING-TOP: 0px
+}
+.ms-commenttable TD {
+	BORDER-TOP: #d6e8ff 1px solid
+}
+.ms-CommentFooter A {
+	MARGIN: 0px; PADDING-TOP: 4px
+}
+.ms-pickerwait {
+	FONT-SIZE: 8pt; MARGIN: 0px; WIDTH: 100%; COLOR: #000000; FONT-FAMILY: verdana; HEIGHT: 100%; BACKGROUND-COLOR: #ffffff
+}
+.ms-CategoryTitleCell {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.ms-CategoryTitleCell A {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 16px; BACKGROUND: url(/_layouts/images/navbullet.gif) no-repeat left top; PADDING-BOTTOM: 3px; MARGIN: 0px; PADDING-TOP: 3px
+}
+.ms-BlogEmptyListText {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 10px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.ms-BlogNavigator P.ms-descriptiontext {
+	DISPLAY: none
+}
+.ms-BlogNavigator DIV.ms-navheader {
+	PADDING-RIGHT: 6px; BORDER-TOP: #f2f8ff 1px solid; PADDING-LEFT: 6px; PADDING-BOTTOM: 3px; BORDER-LEFT: #f2f8ff 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #add1ff 1px solid; BACKGROUND-COLOR: #d6e8ff
+}
+.ms-BlogNavigator DIV.ms-navheader A {
+	COLOR: #003399
+}
+.ms-BlogNavigator DIV.ms-navheader {
+	FONT-WEIGHT: bold; COLOR: #4c4c4c
+}
+.ms-BlogNavigator .ms-quicklaunch TABLE TD {
+	BORDER-TOP: medium none
+}
+.ms-BlogNavigator DIV.ms-WPBody {
+	BORDER-TOP: #add1ff 1px solid
+}
+.ms-BlogNavigator DIV.ms-PartSpacingVertical {
+	MARGIN-TOP: 0px; FONT-SIZE: 1pt
+}
+.ms-BlogNavigator TD.ms-addnew {
+	PADDING-LEFT: 6px
+}
+.ms-BlogNavigator TD.ms-addnew IMG {
+	MARGIN-RIGHT: 2px
+}
+.ms-BlogEmptyListText {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 6px; PADDING-BOTTOM: 2px; COLOR: #4c4c4c; PADDING-TOP: 4px
+}
+
+@media Print    
+{
+.ms-leftareacell {
+	DISPLAY: none
+}
+.ms-globallinks {
+	DISPLAY: none
+}
+.ms-siteaction {
+	DISPLAY: none
+}
+.ms-areaseparatorleft {
+	DISPLAY: none
+}
+.ms-rightareacell {
+	DISPLAY: none
+}
+.ms-areaseparatorright {
+	DISPLAY: none
+}
+.ms-areaseparatorcorner {
+	DISPLAY: none
+}
+.ms-titlearealeft {
+	DISPLAY: none
+}
+.ms-titlearearight {
+	DISPLAY: none
+}
+.ms-searchform {
+	DISPLAY: none
+}
+.ms-banner {
+	DISPLAY: none
+}
+.ms-buttonheightwidth {
+	DISPLAY: none
+}
+.ms-buttonheightwidth2 {
+	DISPLAY: none
+}
+    }
+.ms-hidden {
+	LEFT: 0px; OVERFLOW: hidden; WIDTH: 1px; POSITION: absolute; TOP: -500px; HEIGHT: 1px
+}
+.ms-SrvMenuUI {
+	DISPLAY: none
+}
+.ms-MenuUIPopupBody {
+	BORDER-RIGHT: #868686 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #868686 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #868686 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #868686 1px solid; BACKGROUND-COLOR: #fafafa
+}
+.ms-MenuUIPopupBody TABLE {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 100%; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #003399; PADDING-TOP: 0px
+}
+.ms-MenuUIPopupBody DIV {
+	CURSOR: pointer
+}
+.ms-MenuUI {
+	CURSOR: pointer; BACKGROUND-REPEAT: repeat-y
+}
+.ms-MenuUILarge {
+	CURSOR: pointer; BACKGROUND-REPEAT: repeat-y
+}
+.ms-MenuUIRtL {
+	CURSOR: pointer; BACKGROUND-REPEAT: repeat-y
+}
+.ms-MenuUILargeRtL {
+	CURSOR: pointer; BACKGROUND-REPEAT: repeat-y
+}
+.ms-MenuUI {
+	BACKGROUND-POSITION: left 50%
+}
+.ms-MenuUILarge {
+	BACKGROUND-POSITION: left 50%
+}
+.ms-MenuUIRtL {
+	BACKGROUND-POSITION: right 50%
+}
+.ms-MenuUILargeRtL {
+	BACKGROUND-POSITION: right 50%
+}
+.ms-MenuUI {
+	BACKGROUND-IMAGE: url(/_layouts/images/MGrad.gif)
+}
+.ms-MenuUILarge {
+	BACKGROUND-IMAGE: url(/_layouts/images/MGradLarge.gif); WIDTH: 250px
+}
+.ms-MenuUIRtL {
+	BACKGROUND-IMAGE: url(/_layouts/images/MGradRtl.gif)
+}
+.ms-MenuUILargeRtL {
+	BACKGROUND-IMAGE: url(/_layouts/images/MGradLargeRtl.gif); WIDTH: 250px
+}
+.ms-MenuUIItemTableCell {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; COLOR: #003399; PADDING-TOP: 2px; FONT-FAMILY: tahoma; TEXT-DECORATION: none
+}
+.ms-MenuUIItemTableCellCompact {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; COLOR: #003399; PADDING-TOP: 2px; FONT-FAMILY: tahoma; TEXT-DECORATION: none
+}
+.ms-MenuUIItemTableCellCompact {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+.ms-MenuUIItemTableCell A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-MenuUIItemTableCellHover A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-MenuUIItemTableCellCompact A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-MenuUIItemTableCellCompactHover A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-menuitemdescription {
+	COLOR: #666666
+}
+.ms-MenuUIItemTableCellHover {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FONT-SIZE: 8pt; PADDING-BOTTOM: 1px; COLOR: #003399; PADDING-TOP: 1px; FONT-FAMILY: tahoma; TEXT-DECORATION: none
+}
+.ms-MenuUIItemTableCellCompactHover {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FONT-SIZE: 8pt; PADDING-BOTTOM: 1px; COLOR: #003399; PADDING-TOP: 1px; FONT-FAMILY: tahoma; TEXT-DECORATION: none
+}
+.ms-MenuUIItemTableCellCompactHover {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.ms-MenuUIItemTableHover {
+	BORDER-RIGHT: #d2b47a 1px solid; BORDER-TOP: #d2b47a 1px solid; BORDER-LEFT: #d2b47a 1px solid; BORDER-BOTTOM: #d2b47a 1px solid; BACKGROUND-COLOR: #ffe6a0
+}
+.ms-MenuUIItemTableHover .ms-menuitemdescription {
+	COLOR: #333333
+}
+.ms-MenuUIIcon {
+	WIDTH: 24px; HEIGHT: 16px
+}
+.ms-MenuUIIconRtL {
+	WIDTH: 24px; HEIGHT: 16px
+}
+.ms-MenuUIIconLarge {
+	WIDTH: 40px; HEIGHT: 16px
+}
+.ms-MenuUIIconLargeRtl {
+	WIDTH: 40px; HEIGHT: 16px
+}
+.ms-MenuUIIcon {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.ms-MenuUIIconLarge {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.ms-MenuUIIconRtL {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.ms-MenuUIIconLargeRtl {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.ms-MenuUILabel {
+	WIDTH: 100%
+}
+.ms-MenuUILabelRtL {
+	WIDTH: 100%
+}
+.ms-menuuilabelcompact {
+	WIDTH: 100%
+}
+.ms-menuuilabelcompactRtl {
+	WIDTH: 100%
+}
+.ms-MenuUILabel {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 6px; PADDING-BOTTOM: 3px; PADDING-TOP: 2px
+}
+.ms-MenuUILabelRtL {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 0px; PADDING-BOTTOM: 3px; PADDING-TOP: 2px
+}
+.ms-menuuilabelcompact {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 7px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+.ms-menuuilabelcompactRtl {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 0px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+.ms-MenuUISubmenuArrow {
+	WIDTH: 16px; HEIGHT: 16px
+}
+.ms-MenuUISeparator {
+	FONT-SIZE: 1px; LINE-HEIGHT: 1px; HEIGHT: 1px; BACKGROUND-COLOR: #c5c5c5
+}
+.ms-MenuUISeparatorRtL {
+	FONT-SIZE: 1px; LINE-HEIGHT: 1px; HEIGHT: 1px; BACKGROUND-COLOR: #c5c5c5
+}
+.ms-MenuUISeparatorLarge {
+	FONT-SIZE: 1px; LINE-HEIGHT: 1px; HEIGHT: 1px; BACKGROUND-COLOR: #c5c5c5
+}
+.ms-MenuUISeparatorLargeRtl {
+	FONT-SIZE: 1px; LINE-HEIGHT: 1px; HEIGHT: 1px; BACKGROUND-COLOR: #c5c5c5
+}
+.ms-MenuUISeparator {
+	MARGIN: 0px 0px 0px 32px
+}
+.ms-MenuUISeparatorRtL {
+	MARGIN: 0px 32px 0px 0px
+}
+.ms-MenuUISeparatorLarge {
+	MARGIN: 0px 0px 0px 48px
+}
+.ms-MenuUISeparatorLargeRtl {
+	MARGIN: 0px 48px 0px 0px
+}
+.ms-MenuUICheckMark {
+	BACKGROUND-IMAGE: url(/_layouts/images/ChkMrk.gif)
+}
+.ms-MenuUIItemTableCellDisabled {
+	COLOR: #999999
+}
+.ms-sbtable {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.7em; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Verdana
+}
+.ms-sbtablealt {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.7em; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Verdana
+}
+.ms-sbtable-ex {
+	MARGIN: 0px; WIDTH: 100%; BORDER-COLLAPSE: collapse
+}
+.ms-sbtable-border {
+	BORDER-RIGHT: #efefef 1px solid; BORDER-TOP: #efefef 1px solid; BORDER-LEFT: #efefef 1px solid; BORDER-BOTTOM: #efefef 1px solid
+}
+.ms-sbtable-border {
+	BORDER-RIGHT: #a1a9be 1px solid; BORDER-TOP: #a1a9be 1px solid; BORDER-LEFT: #a1a9be 1px solid; BORDER-BOTTOM: #a1a9be 1px solid
+}
+.ms-sbcell {
+	PADDING-RIGHT: 0px; WHITE-SPACE: nowrap
+}
+.ms-sbtext {
+	FONT-WEIGHT: bold; FONT-SIZE: 1em; FONT-FAMILY: Tahoma
+}
+.ms-sbplain {
+	FONT-SIZE: 1em; FONT-FAMILY: Tahoma
+}
+.ms-sblink {
+	PADDING-RIGHT: 14px
+}
+.ms-sblink A:link {
+	PADDING-LEFT: 4px; FONT-SIZE: 1em; COLOR: #666666; FONT-FAMILY: Tahoma; TEXT-DECORATION: none
+}
+.ms-sblink A:visited {
+	PADDING-LEFT: 4px; FONT-SIZE: 1em; COLOR: #666666; FONT-FAMILY: Tahoma; TEXT-DECORATION: none
+}
+.ms-sbgo {
+	PADDING-LEFT: 4px
+}
+.ms-sbLastcell {
+	WIDTH: 100%
+}

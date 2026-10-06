@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whizible - Forecasting Report</title>
+<script type="text/javascript">
+  window.location.replace('../PM/PM_UnderConstruction.aspx');
+</script>
+<meta name="description" content="Weekly and monthly resource forecasting dashboard with role filtering and search.">
+<script src="../../../Whizible2.0-new/plugins/chartjs/chart.min.js"></script>
+<link rel="stylesheet" href="../../../Whizible2.0-new/dist/css/whiz20_theme.css?v=0.1">
+<link rel="stylesheet" href="../../../Whizible2.0-new/bootstrap/css/bootstrap-5.3.2.min.css">
+<link rel="stylesheet" href="../../../Whizible2.0-new/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="../../../Whizible2.0-new/fontawesome/css/v4-shims.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/cxo-pva.css">
+</head>
+<body data-page="preview" class="analytics-pva">
+<span id="crumbPage" hidden>Forecasting Report</span>
+<div id="AnalyticsPreloader" class="preloader" aria-label="Loading"></div>
+<div class="loader-overlay" id="loaderOverlay" style="display:none;"><div class="loader"></div></div>
+<div class="bgwhite" id="AnalyticsWrapper" style="display:none;">
+  <div class="page-header-section" style="background:white;">
+    <div class="graybg" style="padding:0.4rem 1rem; margin-left:0;">
+      <h2 style="color:#1e40af; font-weight:600; font-size:18px; margin:0 0 0.25rem 0; display:flex; align-items:center;">
+        <i class="fas fa-chart-line" style="color:#1e40af; font-size:1.5rem; margin-right:0.75rem;"></i>
+        Forecasting Report
+      </h2>
+      <p style="color:#6b7280; margin:0;">Resource planning &middot; Weekly and monthly forecast vs actual</p>
+    </div>
+  </div>
+
+<div class="app no-sidebar">
+  <div class="main">
+    <!-- ============ GLOBAL FILTERS ============ -->
+    <div class="filterbar" id="filterbar">
+      <button class="datebtn" id="dateBtn" type="button">
+        <i class="far fa-calendar-alt"></i>
+        <span id="dateLabel">Current Quarter</span>
+        <small id="dateRangeTxt">Apr 1 – Jun 30, 2026</small>
+        <i class="fas fa-chevron-down" style="font-size:10px;margin-left:4px;"></i>
+      </button>
+      <span class="compare-tag" id="compareTag" style="display:none">vs previous period</span>
+      <span id="chips"></span>
+      <button class="chipbtn" type="button" onclick="toast('27 more dimensions available: Program, BU, Practice, Skill, Contract Type, Vendor, Currency…')">
+        <i class="fas fa-plus"></i> More filters
+      </button>
+      <button class="filter-clear" id="clearFilters" type="button">Reset all</button>
+      <span style="flex:1"></span>
+      <a class="ghostbtn" href="resource-allocation.html"><i class="fas fa-th-list"></i> Allocation view</a>
+      <button class="ghostbtn" type="button" onclick="toast('View saved to My Views')">
+        <i class="far fa-star"></i> Save view
+      </button>
+      <button class="ghostbtn" type="button" onclick="openCopilot()">
+        <i class="fas fa-magic"></i> Copilot
+      </button>
+    </div>
+
+    <div class="trail" id="trail">
+      <span class="trail-label">Drill trail</span>
+      <span class="t-chip" style="cursor:default;color:var(--faint)">Click any resource row to open the forecast panel →</span>
+    </div>
+
+    <!-- ============ PAGE ============ -->
+    <main>
+      <section class="content active" id="page-preview">
+
+        <div class="page-hd cxo-toolbar">
+          <p>Forecast grid responds to the filters above</p>
+          <div class="hd-actions">
+            <span class="badge b-good" style="align-self:center"><span class="pulse" style="width:7px;height:7px;border-radius:50%;background:var(--good);display:inline-block"></span> Live data</span>
+            <button class="ghostbtn" type="button" onclick="exportMenu(event,'fcWidget')"><i class="fas fa-download"></i> Export</button>
+          </div>
+        </div>
+
+        <!-- ---------- KPI summary ---------- -->
+        <div class="grid kpi-grid" id="fcKpis"></div>
+
+        <!-- ---------- Filters ---------- -->
+        <div class="widget hours-filters mt">
+          <div class="w-body">
+            <div class="hours-filter-grid">
+              <div class="hours-field"><label>Business Group</label>
+                <div id="fcBGHost" class="ss-host"></div></div>
+              <div class="hours-field"><label>Origination Unit</label>
+                <div id="fcOUHost" class="ss-host"></div></div>
+              <div class="hours-field"><label>Department</label>
+                <div id="fcDeptHost" class="ss-host"></div></div>
+              <div class="hours-field"><label>Role</label>
+                <div id="fcRoleHost" class="ss-host"></div></div>
+              <div class="hours-field"><label for="fcName">Resource Name</label>
+                <input id="fcName" type="search" placeholder="Search resource…" oninput="fcSetFilter('q',this.value)"></div>
+              <div class="hours-field"><label>&nbsp;</label>
+                <button class="ghostbtn" type="button" style="width:100%;justify-content:center;min-height:34px" onclick="fcClear()">Clear</button></div>
+            </div>
+
+            <div class="hours-quick">
+              <span class="hours-quick-label">Show</span>
+              <button class="chipbtn on" data-band="idle" onclick="fcToggleBand('idle')">Idle</button>
+              <button class="chipbtn on" data-band="low"  onclick="fcToggleBand('low')">Low</button>
+              <button class="chipbtn on" data-band="mid"  onclick="fcToggleBand('mid')">Mid</button>
+              <button class="chipbtn on" data-band="high" onclick="fcToggleBand('high')">High</button>
+              <span style="flex:1"></span>
+              <span class="hours-quick-label">Period</span>
+              <div class="seg" id="fcSeg" role="tablist" aria-label="Forecast granularity" style="margin-bottom:0">
+                <button class="seg-btn" role="tab" data-mode="month" onclick="fcSetMode('month')">Monthly</button>
+                <button class="seg-btn" role="tab" data-mode="week"  onclick="fcSetMode('week')">Weekly</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------- Forecast grid ---------- -->
+        <div class="mt">
+          <div class="widget" id="fcWidget">
+            <div class="w-hd">
+              <div>
+                <div class="w-title">Forecast vs actual</div>
+                <div class="w-sub" id="fcPeriodLabel">—</div>
+              </div>
+              <div class="w-tools">
+                <button class="w-tool" title="Previous periods" type="button" onclick="fcPeriodPage(-1)"><i class="fas fa-chevron-left"></i></button>
+                <button class="w-tool" title="Next periods" type="button" onclick="fcPeriodPage(1)"><i class="fas fa-chevron-right"></i></button>
+                <button class="w-tool" title="Drill into utilization" type="button" onclick="drill('util')"><i class="fas fa-filter"></i></button>
+                <button class="w-tool" title="Export / share / schedule" type="button" onclick="exportMenu(event,'fcWidget')"><i class="fas fa-download"></i></button>
+                <button class="w-tool" title="Expand to full screen" type="button" onclick="toggleFS('fcWidget')"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+
+            <div class="w-body">
+              <nav style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px" aria-label="Forecast period navigation">
+                <button class="ghostbtn" id="fcPrevPeriod" onclick="fcPeriodPage(-1)">‹ Previous</button>
+                <span class="w-sub" id="fcPeriodNote">—</span>
+                <button class="ghostbtn" id="fcNextPeriod" onclick="fcPeriodPage(1)">Next ›</button>
+              </nav>
+
+              <div class="grid-scroll">
+                <table class="tbl" id="fcTable">
+                  <thead id="fcHead"></thead>
+                  <tbody id="fcBody"></tbody>
+                </table>
+              </div>
+
+              <div class="legend">
+                <span><i style="background:var(--surface-2)"></i>Idle — 0%</span>
+                <span><i style="background:var(--risk)"></i>Low — under 40%</span>
+                <span><i style="background:var(--warn)"></i>Mid — 40–69%</span>
+                <span><i style="background:var(--good)"></i>High — 70% and above</span>
+              </div>
+
+              <nav style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:14px" aria-label="Resource pagination">
+                <span class="w-sub" id="fcShowing"></span>
+                <span style="display:flex;align-items:center;gap:8px">
+                  <button class="ghostbtn" onclick="fcRowPage(-1)">‹ Prev</button>
+                  <span class="w-sub" id="fcRowNote"></span>
+                  <button class="ghostbtn" onclick="fcRowPage(1)">Next ›</button>
+                </span>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </div>
+</div>
+</div>
+
+<!-- ============ RESOURCE FORECAST OFFCANVAS (reuses .copilot panel) ============ -->
+<aside class="copilot" id="fcPanel" aria-label="Resource forecast detail" aria-hidden="true">
+  <div class="cp-hd">
+    <div class="avatar" id="fcPanelAv">–</div>
+    <div style="flex:1">
+      <b style="font-size:13.5px" id="fcPanelName">Resource forecast</b>
+      <div style="font-size:11px;color:var(--muted)" id="fcPanelRole">–</div>
+    </div>
+    <button class="icon-btn" onclick="fcClosePanel()" title="Close" aria-label="Close panel">✕</button>
+  </div>
+  <div class="cp-log" id="fcPanelBody"></div>
+  <div class="cp-in">
+    <button class="ghostbtn" style="flex:1;justify-content:center" onclick="fcClosePanel()">Close</button>
+    <button onclick="fcPanelAllocate()">Open allocation</button>
+  </div>
+</aside>
+
+<!-- ============ DRILL MODAL ============ -->
+<div class="overlay" id="overlay">
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="m-hd">
+      <div style="flex:1">
+        <h3 id="mTitle">Drill-down</h3>
+        <div class="m-crumbs" id="mCrumbs"></div>
+      </div>
+      <button class="icon-btn" onclick="exportDrillMenu(event)" title="Export this view">⤓</button>
+      <button class="icon-btn" onclick="closeModal()" title="Close">✕</button>
+    </div>
+    <div class="m-body" id="mBody"></div>
+  </div>
+</div>
+
+<!-- ============ AI COPILOT ============ -->
+<aside class="copilot" id="copilot" aria-label="AI Copilot">
+  <div class="cp-hd">
+    <div class="logo-mark">✦</div>
+    <div style="flex:1"><b style="font-size:13.5px">Whizible Copilot</b><div style="font-size:11px;color:var(--muted)">Grounded in your filtered data · Fable-5 class model</div></div>
+    <button class="icon-btn" onclick="document.getElementById('copilot').classList.remove('open')">✕</button>
+  </div>
+  <div class="cp-log" id="cpLog"></div>
+  <div class="cp-quick">
+    <button onclick="askCopilot('Where is the biggest forecast gap this quarter?')">Biggest forecast gap</button>
+    <button onclick="askCopilot('Who is idle and can be redeployed?')">Idle resources</button>
+    <button onclick="askCopilot('Show projects at risk in the Banking portfolio')">At-risk in Banking</button>
+    <button onclick="askCopilot('Forecast revenue for next quarter')">Revenue forecast</button>
+  </div>
+  <div class="whatif">
+    <h4>Scenario planner · What-if</h4>
+    <div class="wi-row">Add hires <input type="range" id="wiHires" min="0" max="25" value="0"><b id="wiHiresV">0</b></div>
+    <div class="wi-row">Bill-rate change <input type="range" id="wiRate" min="-10" max="15" value="0"><b id="wiRateV">0%</b></div>
+    <div class="wi-out">
+      <div><b id="wiUtil">—</b><span>Utilization</span></div>
+      <div><b id="wiRev">—</b><span>Qtr revenue</span></div>
+      <div><b id="wiMargin">—</b><span>Margin</span></div>
+    </div>
+  </div>
+  <div class="cp-in">
+    <input id="cpInput" placeholder="Ask in natural language…">
+    <button onclick="sendCopilot()">Send</button>
+  </div>
+</aside>
+
+<div class="toasts" id="toasts"></div>
+
+<!-- capture the static shell before app.js boots (see glue at the bottom) -->
+<script>const FC_MARKUP = document.getElementById("page-preview").innerHTML;</script>
+<script src="js/app.js"></script>
+<script src="js/search-select.js"></script>
+
+<script>
+/* =====================================================================
+   FORECASTING REPORT — page controller
+   Reuses toast() / drill() / exportMenu() / toggleFS() from js/app.js and
+   every class from css/styles.css. No new CSS.
+===================================================================== */
+
+const FC_MONTHS  = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+/* planned capacity per resource, per month (working-day based) */
+const FC_PLAN_M  = [140,140,175,168,175,168,184,168,176,184,168,152];
+
+/* 15 resources · actuals for Jan–Mar are fixed, Apr–Dec derived deterministically */
+const FC_RES = [
+  ["Aditya J","Developer","Engineering","Digital Engineering","Pune Delivery",[114,34,124]],
+  ["Sneha D","Designer","Design","Digital Engineering","Pune Delivery",[119,24,133]],
+  ["Sneha D Ex","Designer","Design","Digital Engineering","Mumbai Delivery",[117,22,136]],
+  ["Vishal M","Developer","Engineering","Digital Engineering","Mumbai Delivery",[103,27,127]],
+  ["Satyanarayana Reddy Deva Krishnna Swami Raoo","Manager","Management","Enterprise Solutions","Chennai Delivery",[87,41,112]],
+  ["Aamir","QA","QA","Enterprise Solutions","Chennai Delivery",[65,62,91]],
+  ["Adi","Developer","Engineering","Enterprise Solutions","Pune Delivery",[44,84,71]],
+  ["ADMIN","Admin","Management","Managed Services","Pune Delivery",[29,102,52]],
+  ["Priya K","Business Analyst","Business Analysis","Enterprise Solutions","Mumbai Delivery",[96,58,108]],
+  ["Rahul S","Developer","Engineering","Digital Engineering","Chennai Delivery",[88,71,99]],
+  ["Neha T","QA","QA","Managed Services","Mumbai Delivery",[72,45,84]],
+  ["Karthik R","DevOps","Engineering","Digital Engineering","Pune Delivery",[105,38,118]],
+  ["Meera V","Designer","Design","Managed Services","Chennai Delivery",[41,93,66]],
+  ["Arun P","Architect","Engineering","Enterprise Solutions","Mumbai Delivery",[0,0,0]],
+  ["Divya N","Support","Operations","Managed Services","Chennai Delivery",[58,112,160]]
+].map((r,i)=>{
+  const a = r[5].slice();
+  for(let m=3;m<12;m++){
+    const seed = (i*37 + m*61) % 100;
+    const base = r[5].reduce((x,y)=>x+y,0)/3;
+    a.push(base===0 ? 0 : Math.max(0, Math.min(FC_PLAN_M[m], Math.round(base*(0.55 + seed/125)))));
+  }
+  return {id:"r"+String(i+1).padStart(2,"0"), name:r[0], role:r[1], dept:r[2], bg:r[3], ou:r[4], actual:a};
+});
+
+/* weekly view: 52 weeks derived from the owning month */
+const FC_WEEK_OF_MONTH = [];
+for(let m=0;m<12;m++) for(let w=0;w<(m===11?5:4);w++) FC_WEEK_OF_MONTH.push(m);
+const FC_WEEKS = FC_WEEK_OF_MONTH.length; /* 53 */
+
+const fcState = {mode:"month", periodPage:0, perPeriod:3, rowPage:0, perRow:8,
+                 bg:"", ou:"", dept:"", role:"", q:"",
+                 bands:{idle:true, low:true, mid:true, high:true}, sel:null};
+
+/* ---------- period model ---------- */
+function fcPeriods(){
+  if(fcState.mode==="month")
+    return FC_MONTHS.map((m,i)=>({key:i, label:m, month:m}));
+  return Array.from({length:FC_WEEKS},(_,w)=>{
+    const m = FC_WEEK_OF_MONTH[w];
+    return {key:w, label:"W"+(w+1), month:FC_MONTHS[m]};
+  });
+}
+function fcPlanned(p){
+  if(fcState.mode==="month") return FC_PLAN_M[p.key];
+  const m = FC_WEEK_OF_MONTH[p.key];
+  return Math.round(FC_PLAN_M[m]/4);
+}
+function fcActual(r,p){
+  if(fcState.mode==="month") return r.actual[p.key];
+  const m = FC_WEEK_OF_MONTH[p.key];
+  const share = [0.28,0.26,0.24,0.22,0.20][p.key % 5];
+  return Math.round(r.actual[m] * share * 4 / 4);
+}
+function fcVisiblePeriods(){
+  const all = fcPeriods(), s = fcState.periodPage*fcState.perPeriod;
+  return all.slice(s, s+fcState.perPeriod);
+}
+function fcPeriodPages(){ return Math.ceil(fcPeriods().length/fcState.perPeriod); }
+
+/* ---------- bands ---------- */
+function fcBand(pct){ return pct<=0 ? "idle" : pct<40 ? "low" : pct<70 ? "mid" : "high"; }
+const FC_BAND_BG = {idle:"var(--surface-2)", low:"var(--risk-soft)", mid:"var(--warn-soft)", high:"var(--good-soft)"};
+const FC_BAND_FG = {idle:"var(--faint)",     low:"var(--risk)",      mid:"var(--warn)",      high:"var(--good)"};
+const FC_BAND_SOLID = {idle:"var(--surface-2)", low:"var(--risk)", mid:"var(--warn)", high:"var(--good)"};
+
+/* ---------- helpers ---------- */
+const fcEsc  = s => String(s).replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fcInit = n => n.split(/\s+/).filter(Boolean).map(w=>w[0]).slice(0,2).join("").toUpperCase();
+const fcNum  = n => n.toLocaleString("en-IN");
+const fcUniq = k => [...new Set(FC_RES.map(r=>r[k]))].sort();
+
+/* ---------- filtering ---------- */
+function fcRows(){
+  const cols = fcVisiblePeriods();
+  return FC_RES.filter(r=>{
+    if(fcState.bg   && r.bg   !== fcState.bg)   return false;
+    if(fcState.ou   && r.ou   !== fcState.ou)   return false;
+    if(fcState.dept && r.dept !== fcState.dept) return false;
+    if(fcState.role && r.role !== fcState.role) return false;
+    if(fcState.q && !(r.name+" "+r.role+" "+r.dept).toLowerCase().includes(fcState.q.toLowerCase())) return false;
+    const plan = cols.reduce((s,p)=>s+fcPlanned(p),0);
+    const act  = cols.reduce((s,p)=>s+fcActual(r,p),0);
+    return fcState.bands[fcBand(plan? act/plan*100 : 0)];
+  });
+}
+
+/* ---------- KPI cards ---------- */
+function fcRenderKpis(){
+  const cols = fcVisiblePeriods(), rows = fcRows();
+  const plan = rows.length * cols.reduce((s,p)=>s+fcPlanned(p),0);
+  const act  = rows.reduce((s,r)=>s+cols.reduce((x,p)=>x+fcActual(r,p),0),0);
+  const util = plan ? Math.round(act/plan*100) : 0;
+  const band = fcBand(util);
+  const health = {idle:"Idle", low:"Under-utilised", mid:"Watch", high:"Healthy"}[band];
+  const unit = fcState.mode==="month" ? "months" : "weeks";
+  const card = (label,val,sub,delta) => `
+    <div class="kpi" role="button" tabindex="0" data-drill="util" title="Click to drill down">
+      <div class="kpi-top"><span class="kpi-label">${label}</span></div>
+      <div class="kpi-val">${val}</div>
+      <div><span class="kpi-delta ${delta}">${sub}</span></div>
+    </div>`;
+  document.getElementById("fcKpis").innerHTML =
+    card("Resources", rows.length, "of "+FC_RES.length+" total", "flat") +
+    card("Planned Hours", fcNum(plan), cols.length+" "+unit+" shown", "flat") +
+    card("Actual Hours", fcNum(act), fcNum(Math.max(0,plan-act))+" remaining", "flat") +
+    `<div class="kpi" role="button" tabindex="0" data-drill="util" title="Click to drill down">
+       <div class="kpi-top"><span class="kpi-label">Utilization</span>
+         <span class="badge b-${band==="high"?"good":band==="mid"?"warn":band==="low"?"risk":"mut"}">${health}</span></div>
+       <div class="kpi-val">${util}<small>%</small></div>
+       <div class="pbar" style="margin-top:8px"><i style="width:${Math.min(100,util)}%;background:${FC_BAND_SOLID[band]}"></i></div>
+     </div>`;
+}
+
+/* ---------- forecast grid ---------- */
+function fcRenderTable(){
+  const cols = fcVisiblePeriods();
+  const rows = fcRows();
+  const pages = Math.max(1, Math.ceil(rows.length/fcState.perRow));
+  if(fcState.rowPage >= pages) fcState.rowPage = pages-1;
+  if(fcState.rowPage < 0) fcState.rowPage = 0;
+  const start = fcState.rowPage*fcState.perRow;
+  const slice = rows.slice(start, start+fcState.perRow);
+
+  document.getElementById("fcHead").innerHTML = `
+    <tr><th scope="col" rowspan="2">Resource · Actual / Planned Hrs</th>
+      ${cols.map(p=>`<th scope="col" style="text-align:center">${fcEsc(p.label)}</th>`).join("")}</tr>
+    <tr>${cols.map(()=>`<th scope="col" style="text-align:center;font-weight:500">Total</th>`).join("")}</tr>`;
+
+  document.getElementById("fcBody").innerHTML = slice.length ? slice.map(r=>`
+    <tr onclick="fcOpenPanel('${r.id}')" title="Open forecast panel">
+      <td><span style="display:flex;align-items:center;gap:9px">
+        <span class="avatar">${fcInit(r.name)}</span>
+        <span style="white-space:normal"><b>${fcEsc(r.name)}</b>
+        <small style="display:block;color:var(--muted);font-size:11px">${fcEsc(r.role)} · ${fcEsc(r.dept)}</small></span></span></td>
+      ${cols.map(p=>{
+        const a=fcActual(r,p), pl=fcPlanned(p), b=fcBand(pl?a/pl*100:0);
+        return `<td><div class="hc" style="background:${FC_BAND_BG[b]};color:${FC_BAND_FG[b]}" title="${fcEsc(r.name)} · ${fcEsc(p.label)}: ${a} of ${pl} hrs">${a}/${pl}</div></td>`;
+      }).join("")}
+    </tr>`).join("")
+    : `<tr><td colspan="${cols.length+1}" style="text-align:center;color:var(--muted);padding:26px">No resources match these filters.</td></tr>`;
+
+  const first = cols[0], last = cols[cols.length-1];
+  const note = `Showing ${first.label} (${first.month}) – ${last.label} (${last.month}) · Page ${fcState.periodPage+1} of ${fcPeriodPages()}`;
+  document.getElementById("fcPeriodNote").textContent  = note;
+  document.getElementById("fcPeriodLabel").textContent = note;
+  document.getElementById("fcPrevPeriod").disabled = fcState.periodPage===0;
+  document.getElementById("fcNextPeriod").disabled = fcState.periodPage>=fcPeriodPages()-1;
+
+  document.getElementById("fcShowing").textContent = rows.length
+    ? `Showing ${start+1}–${Math.min(start+fcState.perRow, rows.length)} of ${rows.length}`
+    : "No resources to show";
+  document.getElementById("fcRowNote").textContent = `Page ${fcState.rowPage+1} of ${pages}`;
+
+  document.querySelectorAll("#fcSeg .seg-btn").forEach(b=>{
+    const on = b.dataset.mode===fcState.mode;
+    b.classList.toggle("active", on); b.setAttribute("aria-selected", on);
+  });
+  document.querySelectorAll(".hours-quick .chipbtn[data-band]").forEach(b=>
+    b.classList.toggle("on", !!fcState.bands[b.dataset.band]));
+}
+
+/* ---------- filter dropdowns (searchable) ---------- */
+function fcRenderFilters(){
+  if(typeof SearchSelect === "undefined") return;
+  SearchSelect.render("fcBGHost", {
+    key: "fcBG",
+    options: fcUniq("bg"),
+    value: fcState.bg,
+    placeholder: "Select Business Group",
+    searchPlaceholder: "Search Business Group...",
+    onChange: function(v){ fcSetFilter("bg", v); }
+  });
+  SearchSelect.render("fcOUHost", {
+    key: "fcOU",
+    options: fcUniq("ou"),
+    value: fcState.ou,
+    placeholder: "Select Origination Unit",
+    searchPlaceholder: "Search Origination Unit...",
+    onChange: function(v){ fcSetFilter("ou", v); }
+  });
+  SearchSelect.render("fcDeptHost", {
+    key: "fcDept",
+    options: fcUniq("dept"),
+    value: fcState.dept,
+    placeholder: "Select Department",
+    searchPlaceholder: "Search Department...",
+    onChange: function(v){ fcSetFilter("dept", v); }
+  });
+  SearchSelect.render("fcRoleHost", {
+    key: "fcRole",
+    options: fcUniq("role"),
+    value: fcState.role,
+    placeholder: "Select Role",
+    searchPlaceholder: "Search Role...",
+    onChange: function(v){ fcSetFilter("role", v); }
+  });
+  const n = document.getElementById("fcName");
+  if(n && n.value !== fcState.q) n.value = fcState.q;
+}
+
+/* ---------- offcanvas ---------- */
+function fcOpenPanel(id){
+  const r = FC_RES.find(x=>x.id===id); if(!r) return;
+  fcState.sel = id;
+  if(location.hash !== "#/resource/"+id) location.hash = "#/resource/"+id;
+  document.getElementById("fcPanelAv").textContent   = fcInit(r.name);
+  document.getElementById("fcPanelName").textContent = r.name;
+  document.getElementById("fcPanelRole").textContent = r.role + " · " + r.dept;
+
+  const yearPlan = FC_PLAN_M.reduce((a,b)=>a+b,0);
+  const yearAct  = r.actual.reduce((a,b)=>a+b,0);
+  const yearUtil = Math.round(yearAct/yearPlan*100);
+  const yb = fcBand(yearUtil);
+
+  document.getElementById("fcPanelBody").innerHTML = `
+    <div class="grid" style="grid-template-columns:1fr 1fr;gap:8px">
+      <div class="hours-ex"><div class="n">${yearUtil}%</div><div class="t">FY utilization</div>
+        <div class="d">${fcNum(yearAct)} of ${fcNum(yearPlan)} hrs</div></div>
+      <div class="hours-ex"><div class="n">${fcNum(Math.max(0,yearPlan-yearAct))}</div><div class="t">Hours remaining</div>
+        <div class="d">Across 12 months</div></div>
+    </div>
+
+    <div>
+      <div class="hours-quick-label" style="margin-bottom:8px">Monthly forecast vs actual</div>
+      ${FC_MONTHS.map((m,i)=>{
+        const a=r.actual[i], p=FC_PLAN_M[i], pc=Math.round(a/p*100), b=fcBand(pc);
+        return `<div style="display:flex;align-items:center;gap:9px;margin-bottom:7px">
+          <span class="w-sub" style="width:30px">${m}</span>
+          <div class="pbar" style="flex:1;min-width:0"><i style="width:${Math.min(100,pc)}%;background:${FC_BAND_SOLID[b]}"></i></div>
+          <span class="num" style="width:74px;text-align:right;font-size:11.5px">${a}/${p}</span>
+          <span class="badge b-${b==="high"?"good":b==="mid"?"warn":b==="low"?"risk":"mut"}" style="width:44px;justify-content:center">${pc}%</span>
+        </div>`;}).join("")}
+    </div>
+
+    <div style="border-top:1px solid var(--border);padding-top:12px">
+      <div class="hours-quick-label" style="margin-bottom:8px">Assignment</div>
+      <div class="legend" style="margin-top:0">
+        <span><i style="background:var(--accent)"></i>${fcEsc(r.bg)}</span>
+        <span><i style="background:var(--info)"></i>${fcEsc(r.ou)}</span>
+        <span><i style="background:${FC_BAND_SOLID[yb]}"></i>${fcEsc(r.role)}</span>
+      </div>
+      <div class="ai-act" style="margin-top:10px">
+        <button onclick="drill('util')">Drill utilization</button>
+        <button onclick="openCopilot('How should I redeploy ${fcEsc(r.name)} next quarter?')">Ask Copilot</button>
+      </div>
+    </div>`;
+
+  const el = document.getElementById("fcPanel");
+  el.classList.add("open"); el.setAttribute("aria-hidden","false");
+  document.getElementById("copilot").classList.remove("open");
+}
+function fcClosePanel(){
+  const el = document.getElementById("fcPanel");
+  el.classList.remove("open"); el.setAttribute("aria-hidden","true");
+  fcState.sel = null;
+  if(location.hash.startsWith("#/resource/")) location.hash = "#/";
+}
+function fcPanelAllocate(){
+  if(!fcState.sel) return;
+  location.href = "resource-allocation.html#/";
+}
+
+/* ---------- toolbar actions ---------- */
+function fcSetFilter(k,v){ fcState[k]=v; fcState.rowPage=0; fcHydrate(); }
+function fcToggleBand(b){ fcState.bands[b]=!fcState.bands[b]; fcState.rowPage=0; fcHydrate(); }
+function fcSetMode(m){
+  if(fcState.mode===m) return;
+  fcState.mode=m; fcState.periodPage=0; fcState.rowPage=0; fcHydrate();
+  toast(m==="month" ? "Monthly forecast · 12 periods" : "Weekly forecast · 53 periods");
+}
+function fcPeriodPage(d){
+  const n = Math.min(Math.max(0, fcState.periodPage+d), fcPeriodPages()-1);
+  if(n===fcState.periodPage) return;
+  fcState.periodPage=n; fcHydrate();
+}
+function fcRowPage(d){
+  const pages = Math.max(1, Math.ceil(fcRows().length/fcState.perRow));
+  const n = Math.min(Math.max(0, fcState.rowPage+d), pages-1);
+  if(n===fcState.rowPage) return;
+  fcState.rowPage=n; fcRenderTable();
+}
+function fcClear(){
+  Object.assign(fcState,{bg:"",ou:"",dept:"",role:"",q:"",rowPage:0,
+    bands:{idle:true,low:true,mid:true,high:true}});
+  fcHydrate(); toast("Filters cleared");
+}
+
+/* ---------- hydration + routing ---------- */
+function fcHydrate(){
+  if(!document.getElementById("fcBody")) return;
+  fcRenderFilters(); fcRenderKpis(); fcRenderTable();
+  const m = location.hash.match(/^#\/resource\/(\w+)$/);
+  if(m && fcState.sel !== m[1]) fcOpenPanel(m[1]);
+  if(!m && fcState.sel) fcClosePanel();
+}
+
+/* =====================================================================
+   GLUE — app.js owns rendering: renderPage() rewrites #page-preview from
+   its PAGES map on boot, on theme toggle and on persona switch. We hand it
+   this page's static shell, then re-hydrate immediately after so no state
+   is lost. Nothing inside js/app.js is modified.
+===================================================================== */
+PAGE_NAMES.preview = "Forecasting Report";
+PAGES.preview = () => FC_MARKUP;
+const fcBaseRenderPage = window.renderPage;
+window.renderPage = function(){ fcBaseRenderPage(); fcHydrate(); };
+
+window.addEventListener("hashchange", fcHydrate);
+document.addEventListener("keydown", e=>{ if(e.key==="Escape") fcClosePanel(); });
+
+renderPage();
+</script>
+</body>
+</html>

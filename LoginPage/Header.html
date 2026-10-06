@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <!-- it works the same with all jquery version from 1.x to 2.x -->
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../images/NewHomePage2/TransitionsForFirefox/demos/demos.css" media="screen,projection" />
+    <link href="DefaultCSS.css" rel="stylesheet" />
+    <script src="../Source/General/CommonFunctions.js"></script>
+    <script src="../js/Pmlifeline.js"></script>
+
+    <style>
+        .captionOrange, .captionBlack
+        {
+            color: #fff;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .captionOrange
+        {
+            background: #EB5100;
+            background-color: rgba(235, 81, 0, 0.6);
+        }
+
+        .captionBlack
+        {
+            font-size: 16px;
+            background: #000;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+        {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+            a.captionOrange:hover
+            {
+                color: #eb5100;
+                text-decoration: underline;
+                background-color: #eeeeee;
+                background-color: rgba(238, 238, 238, 0.7);
+            }
+
+        .bricon
+        {
+            background: url(../img/browser-icons.png);
+        }
+
+        div.logbox
+        {
+            width: 21%;
+            display: block;
+            background: #FFFFFF;
+            /* float: left; */
+            border: 1px solid #d5d5d5;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            z-index: 1;
+            height: 300px;
+            position: absolute;
+            right: 12%;
+        }
+
+        input.loginbutton
+        {
+            cursor: pointer;
+            border: 1px solid #000000;
+            background-color: #FFFFFF;
+            FONT-SIZE: 12px;
+            padding-top: 1pt;
+            padding-bottom: 1pt;
+            padding-left: 0pt;
+            padding-right: 0pt;
+            text-decoration: none;
+            font-family: Verdana, Arial;
+            position: absolute;
+            color: #000000;
+        }
+
+        #menu li
+        {
+            display: inline;
+            padding: 5px;
+        }
+
+        a.link
+        {
+            cursor: pointer;
+            border: 1px solid #FFFFFF;
+            background-color: #FFFFFF;
+            border-radius: 15px;
+            FONT-SIZE: 12px;
+            padding-top: 1pt;
+            padding-bottom: 1pt;
+            padding-left: 2pt;
+            padding-right: 2pt;
+            text-decoration: none;
+            font-family: Verdana, Arial;
+            /*  border-right: black 1px solid;
+	            border-top: black 1px solid;
+	            border-left: black 1px solid;
+	            border-bottom: black 1px solid;*/
+            color: #000000;
+        }
+
+        #linkstyle
+        {
+            font-family: Arial,Helvatica,sans-serif;
+            font-size: 17px;
+            color: #454545;
+        }
+
+        #LoginBtn
+        {
+            font-family: Arial,Helvatica,sans-serif;
+            font-size: 17px;
+            color: #454545;
+        }
+
+        #imgheight
+        {
+            height: 460px !important;
+        }
+
+
+        .modal-login
+        {
+            box-shadow: none;
+            /*font-size: 1em; Commented and added by Nilesh G on 19/11/2015 for issue id 1669*/
+            font-size: 12px;
+            font-weight: 300;
+            font-style: normal;
+            padding: 0 .5em;
+            background: transparent;
+            color: #101010;
+            border: 0;
+            border-radius: 0;
+            border-bottom: 1px solid #cfd2d5;
+        }
+
+        @media (max-width:961px)
+        {
+            #divContent
+            {
+                margin-bottom: 2% !important; /* Added By Vaijat K ON 23/11/2015*/
+            }
+        }
+
+        #divModal
+        {
+            max-height: none !important; /* Added By Vaijat K ON 23/11/2015*/
+        }
+
+
+
+        .fade-in
+        {
+            opacity: 1;
+        }
+
+        .HoverDiv:hover
+        {
+            overflow: auto;
+        }
+    </style>
+
+
+    <script>
+        function ClickMe() {
+
+            var data1 = window.parent.document.getElementById("popmodel");
+            var data2 = window.parent.document.getElementById("fadeIn");
+
+            $(data2).show();
+
+            data1.style.display = "block";
+
+            $(data1).fadeIn("slow");
+            data1.style.opacity = "1";
+            data1.style.top = "7%";
+        }
+
+        function Cancel(id) {
+
+            $('#' + id).modal('hide');
+            $("#popmodel").hide();
+            $("#fadeIn").hide();
+            //Added And Commented By Vidya J On 30-11-2015
+            document.getElementById('lblLoginError').textContent = "";
+            //End Of Added And Commented By Vidya J On 30-11-2015
+        }
+    </script>
+</head>
+<body>
+    <div class="HoverDiv" style="height: 100px">
+        <table style="width: 99%; margin-left: auto; margin-right: auto; border: 0px solid black; border-collapse: collapse;" border="0">
+
+            <tr style="height: 12%; border: 0px;">
+                <td style="text-align: left; width: 20%; border-right: 1px solid white;">
+                    <img src="../LoginImages/Logo.jpg" />
+                </td>
+                <td style="width: 60%">
+                    <div id="menu">
+                        <ul>
+                      <!--      <li><a id="linkstyle" class="link" href="#" onclick="window.open ('images/Support.html', 'child')">Support</a></li>
+                            <li><a id="linkstyle" class="link" href="#" onclick="window.open ('images/Features.html', 'child')">Features Us</a></li>
+                            <li><a id="linkstyle" class="link" href="#" onclick="window.open ('images/Company.html', 'child')">Company</a></li>
+                            <li><a id="linkstyle" class="link" href="#" onclick="window.open ('images/Contact.html', 'child')">Contacts</a></li>
+                            <li><a id="linkstyle" class="link" href="#" onclick="window.open ('images/Blogs.html', 'child')">Blogs</a></li>-->
+                            <li><a id="LoginBtn" class="link" data-toggle="modal" href="#popmodel" onclick="ClickMe()" class="btn btn-primary">Login</a></li>
+                        </ul>
+                    </div>
+
+
+
+                </td>
+                <td style="width: 20%; text-align: right; border-left: 1px solid white;">
+                    <img src="../LoginImages/easi-logo.jpg" />
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+</html>

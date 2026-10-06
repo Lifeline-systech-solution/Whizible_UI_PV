@@ -1,0 +1,162 @@
+/*	Added by PrashantSJ on 11 Apr 2008
+	Purpose: For extended feature.
+*/
+.mainTabsSection {
+	 /*PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #f2f2f2; */
+	PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; /*BACKGROUND-COLOR: #f2f2f2; */
+}
+.mainTabsSection H1 {
+	/*PADDING-RIGHT: 12px; PADDING-LEFT: 5px; FONT-WEIGHT: normal! important; FONT-SIZE: 13pt! important; PADDING-BOTTOM: 12px; MARGIN: 0px; PADDING-TOP: 12px; FONT-FAMILY: Tahoma; TEXT-ALIGN: left*/
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: normal! important; FONT-SIZE: 13pt! important; PADDING-BOTTOM: 12px; MARGIN: 0px; PADDING-TOP: 12px; FONT-FAMILY: Tahoma; TEXT-ALIGN: left
+}
+.mainTabsSection A 
+{
+	/*BORDER-RIGHT: #919b9c 1px thin; PADDING-RIGHT: 17px; BORDER-TOP: #919b9c 1px thin; DISPLAY: block; PADDING-LEFT: 17px;   FONT-SIZE: 7.5pt; FLOAT: left; PADDING-BOTTOM: 2px; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #919b9c 1px thin; FONT-FAMILY:  Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;   TEXT-DECORATION: none;  BACKGROUND: url('../../Images/tabimages/tab_left_inactive.gif');#D6E7FD; */ 
+	BORDER-RIGHT: #919b9c 1px thin; PADDING-RIGHT: 15px; BORDER-TOP: #919b9c 1px thin; DISPLAY: block; PADDING-LEFT: 17px;   FONT-SIZE: 7.5pt; FLOAT: left; PADDING-BOTTOM: 2px; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #919b9c 1px thin; FONT-FAMILY:  Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;   TEXT-DECORATION: none;  /*BACKGROUND: url('../../Images/tabimages/tab_left_inactive.gif'); #D6E7FD; */ 
+	
+	/*margin-left:2px;
+		margin-right:2px;*/
+}
+.mainTabsSection A:visited {
+	/*BORDER-RIGHT: #919b9c 1px thin; PADDING-RIGHT: 17px; BORDER-TOP: #919b9c 1px thin; DISPLAY: block; PADDING-LEFT: 17px;  FONT-SIZE: 7.5pt; FLOAT: left; PADDING-BOTTOM: 2px; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #919b9c 1px thin; FONT-FAMILY:Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif; TEXT-DECORATION: none;  /*BACKGROUND: url('../../Images/tabimages/tab_left_active.gif'); #D6E7FD; */
+		BORDER-RIGHT: #919b9c 1px thin; PADDING-RIGHT: 15px; BORDER-TOP: #919b9c 1px thin; DISPLAY: block; PADDING-LEFT: 17px;  FONT-SIZE: 7.5pt; FLOAT: left; PADDING-BOTTOM: 2px; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #919b9c 1px thin; FONT-FAMILY:Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif; TEXT-DECORATION: none;  /*BACKGROUND: url('../../Images/tabimages/tab_left_active.gif'); #D6E7FD; */
+		
+	/*margin-left:2px;
+		margin-right:2px;*/
+}
+.mainTabsSection A:hover {
+	/*BORDER-RIGHT: #919b9c 1px thin; PADDING-RIGHT: 17px; BORDER-TOP: #919b9c 1px thin; DISPLAY: block; PADDING-LEFT: 17px;  FONT-SIZE: 7.5pt; FLOAT: left; PADDING-BOTTOM: 2px; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #919b9c 1px thin; FONT-FAMILY: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif; TEXT-DECORATION: none;  BACKGROUND: url('../../Images/tabimages/tab_left_over.gif') /*#FFDDA8;*/
+		BORDER-RIGHT: #919b9c 1px thin; PADDING-RIGHT: 15px; BORDER-TOP: #919b9c 1px thin; DISPLAY: block; PADDING-LEFT: 17px;  FONT-SIZE: 7.5pt; FLOAT: left; PADDING-BOTTOM: 2px; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #919b9c 1px thin; FONT-FAMILY: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif; TEXT-DECORATION: none;  /*BACKGROUND: url('../../Images/tabimages/tab_left_over.gif') #FFDDA8;*/
+		
+	/* margin-left:2px;
+		margin-right:2px;*/
+
+  
+}
+/*.mainTabsSection A:hover {
+	BACKGROUND-COLOR: #e7a476
+}*/
+
+.mainTabsSection .CurrentTab {
+	 /*BACKGROUND: url('../../Images/tabimages/tab_left_active.gif');   #3D5FA3;*/
+	 border: 2px; 
+}
+
+
+.mainTabsSection .selectedTab {
+	 /*BACKGROUND: url('../../Images/tabimages/tab_left_active.gif');   #3D5FA3;*/
+	  font-weight: bold;
+	  TEXT-DECORATION: underline;
+}
+.mainTabsSection .selectedTab:visited {
+	 /*BACKGROUND: url('../../Images/tabimages/tab_left_active.gif');   #3D5FA3;*/ 
+}
+.mainTabsSection .selectedTab:hover {
+	 /*BACKGROUND: url('../../Images/tabimages/tab_left_active.gif');   #3D5FA3;*/
+}
+.mainTabsSection .selectedTab:hover {
+	TEXT-DECORATION: underline
+	font-weight: bold;
+	TEXT-DECORATION: underline;
+}
+.tabsDivider {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-SIZE: 0px; BACKGROUND: #919b9c; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 2px
+}
+.tabsContainer {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px;  text-align: center; /*BACKGROUND-COLOR:#f2f2f2;*/
+	
+}
+
+/* End of addition by PrashantSJ on 11 Apr 2008 */
+
+/* Added By ShraddhaM*/
+ 
+.mainTabsSectionEasyMenu {
+	 PADDING-LEFT: 10px; PADDING-BOTTOM: 0px;
+	
+}
+.mainTabsSectionEasyMenu H1 {
+	PADDING-RIGHT: 12px; 
+	PADDING-LEFT: 5px; 
+	FONT-WEIGHT: normal! important; 
+	FONT-SIZE: 13pt! important; 
+	PADDING-BOTTOM: 12px; 
+	MARGIN: 0px; 
+	PADDING-TOP: 12px; 
+	FONT-FAMILY: Tahoma; 
+	TEXT-ALIGN: left;
+}
+.mainTabsSectionEasyMenu A 
+{
+	BORDER-RIGHT: #919b9c 1px thin;
+	PADDING-RIGHT: 10px; 
+	BORDER-TOP: #919b9c 1px thin;  
+	PADDING-LEFT: 10px;   
+	FONT-SIZE: 11.8px ; 
+	FLOAT: left;
+	COLOR: black; 
+	BORDER-BOTTOM: #919b9c 1px thin; 
+	FONT-FAMILY:  Trebuchet MS,  Arial, Lucida Sans Unicode,sans-serif;   
+	TEXT-DECORATION: none;  
+	BACKGROUND: url('../../Images/tabimages/tab_left_inactive.gif');  
+	PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+	width:12%;/*92px;*/
+	text-align:center ;
+	
+	 /* PADDING-BOTTOM: 2px; PADDING-TOP: 2px;DISPLAY: block;*/
+}
+.mainTabsSectionEasyMenu A:visited {
+	BORDER-RIGHT: #919b9c 1px thin; PADDING-RIGHT: 10px; BORDER-TOP: #919b9c 1px thin; DISPLAY: block; 
+	PADDING-LEFT: 10px;  FONT-SIZE: 7.5pt; FLOAT: left; PADDING-BOTTOM: 2px; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #919b9c 1px thin; FONT-FAMILY:Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif; TEXT-DECORATION: none;   
+	width:12%;/*92px;*/text-align:center ;
+	
+}
+.mainTabsSectionEasyMenu A:hover {
+	BORDER-RIGHT: #919b9c 1px thin; PADDING-RIGHT: 10px; BORDER-TOP: #919b9c 1px thin; 
+	DISPLAY: block; PADDING-LEFT: 10px;  FONT-SIZE: 7.5pt; FLOAT: left; PADDING-BOTTOM: 2px; COLOR: black; 
+	PADDING-TOP: 2px; BORDER-BOTTOM: #919b9c 1px thin; 
+	FONT-FAMILY: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif; 
+	TEXT-DECORATION: none;  
+	BACKGROUND: url('../../Images/tabimages/tab_left_over.gif')  ;
+	width:12%;/*92px;*/text-align:center ;
+	   
+}
+ 
+.mainTabsSectionEasyMenu .selectedTab {
+	 BACKGROUND: url('../../Images/tabimages/tab_left_active.gif');  
+	 width:12%;/*92px;*/text-align:center ;
+}
+.mainTabsSectionEasyMenu .selectedTab:visited {
+	 BACKGROUND: url('../../Images/tabimages/tab_left_active.gif'); 
+}
+.mainTabsSectionEasyMenu .selectedTab:hover {
+	 BACKGROUND: url('../../Images/tabimages/tab_left_active.gif');  
+}
+.mainTabsSectionEasyMenu .selectedTab:hover {
+	TEXT-DECORATION: underline
+}
+.tabsDividerEasyMenu {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-SIZE: 0px; BACKGROUND: #919b9c; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 2px
+}
+.tabsContainerEasyMenu {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px;  text-align: center; /*BACKGROUND-COLOR:#f2f2f2;*/
+	
+}
+ 
+
+.mainTabsLastEasyMenu  
+{
+	BORDER-RIGHT: #919b9c 1px thin; PADDING-RIGHT: 10px; 
+	BORDER-TOP: #919b9c 1px thin;  PADDING-LEFT: 10px;   
+	FONT-SIZE: 11.8px ; FLOAT: left;COLOR: black; 
+	BORDER-BOTTOM: #919b9c 1px thin; 
+	FONT-FAMILY:  Trebuchet MS,  Arial, Lucida Sans Unicode,sans-serif;   
+	TEXT-DECORATION: none;  
+	BACKGROUND: url('../../Images/tabimages/tab_left_inactive.gif');  
+	PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+	width:12%;/*92px;*/
+	text-align:center ;
+	
+	 /* PADDING-BOTTOM: 2px; PADDING-TOP: 2px;DISPLAY: block;*/
+}
+/* End of Addition By ShraddhaM*/

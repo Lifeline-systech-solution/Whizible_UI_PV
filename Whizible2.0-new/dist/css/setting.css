@@ -1,0 +1,553 @@
+.new-req-head h4{
+	
+}
+
+.v-tabs h4 {
+    font-size: 16px;
+    color: #fff;
+    padding-left: 17px;
+    height: 64px;
+    margin: 0;
+	line-height: 65px;
+}
+.v-tabs h4 i{padding-left: 12px;}
+.v-tabs h3{
+	font-size: 16px;
+	margin: 0;
+}
+.v-tabs,.h-tabs{
+	float:left;
+	width:100%;
+	}
+	/* Style the tab */
+.v-tabs .tab {
+    float: left;
+    border: 1px solid #647ea8;
+    background-color: #647ea8;
+    width: 15%;
+    height: 1100px;
+	padding-left:0;
+}
+
+/* Style the buttons inside the tab */
+.v-tabs div.tab button {
+    display: block;
+    background-color: inherit;
+    color: #fff;
+	padding: 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 31px;
+    padding-left: 17px;
+    font-weight: 600;
+	font-size:12px;
+}
+/* Change background color of buttons on hover */
+.v-tabs div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.v-tabs div.tab button.active {
+    background-color: #7d93b6;
+	border-bottom:1px solid #fff !important;
+}
+.v-tabs  .tablinks.active{text-decoration:none;}
+/* Style the tab content */
+.v-tabs .tabcontent {
+    float: left;
+    padding:0;
+	border-style:solid;
+	border-color:#647ea8;
+	border-width:7px 15px 7px 1px;	
+    width: 85%;
+    border-left: none;
+    height: 1100px;
+}
+.setting-src {
+    padding: 17px 18px;   
+}
+
+/* Style the tab */
+.v-tabs .h-tabs div.tab {    
+	width:100%;
+	height:42px;
+	background:none;	
+	border:none;
+	margin-bottom:0;
+	padding-left:19px;
+	border-top: 1px solid #e3e2e2;
+	border-bottom: 1px solid #e3e2e2;
+}
+.h-tabs{
+padding: 0 0 20px 0px;
+}
+/* Style the buttons inside the tab */
+.v-tabs .h-tabs  div.tab button {
+    background-color: inherit;
+    float: left;  
+	width:auto;
+	color:#000;	
+}
+.v-tabs .h-tabs  div.tab button.tablinks1{margin-right: 50px;padding-left:0px;}
+/* Change background color of buttons on hover */
+.v-tabs .h-tabs  div.tab button:hover {
+    
+}
+
+/* Create an active/current tablink class */
+.v-tabs .h-tabs  div.tab button.active {
+    
+}
+
+/* Style the tab content */
+.v-tabs .h-tabs .tabcontent1 {
+    display: none;
+    padding: 6px 0px;
+    border: none;
+    border-top: none;
+	width: 100%;
+	float:left;
+}
+.h-tabs button{
+	
+	line-height:10px;
+}
+.h-tabs .clearall button{
+	border:none;
+}
+
+.h-tabs input[type=checkbox]{outline: 1px solid #c7d3e5;width: 15px;}
+.h-tabs .chk input{
+	margin-right:8px;	
+}
+.save button{background-color:#343660;color:#fff;}
+/** Type**/
+.h-tabs .h-type{
+	border:none !important;
+	float:left;
+	width:100%;
+}
+#Type .form-group{border:none;}
+.form-horizontal .form-group{margin:0;}
+.h-tabs .h-type .top-bar{padding: 11px 11px 11px 40px;}
+.top-bar ul li {
+    padding:0 10px;
+	float:left;
+	font-size: 11.5px;
+	font-weight: 600;
+}
+.type-top-bar.top-bar ul.left li {
+    /*padding: 0 28px 0 0; Commented By Vaijat K ON 15/12/2017*/
+}
+.top-bar ul.right li{
+	border-right:1px solid;
+}
+.top-bar ul.right i{
+	color: #647ea8;
+	padding-left: 5px;
+}
+.top-bar ul.right .fa-trash-o{color:red;}
+.top-bar ul.right li:last-child{border-right:none;}
+.top-bar button{font-size:11px;}
+.top-bar i{font-size:11px;}
+
+.h-tabs .table-responsive{border-bottom: 2px solid #e3e2e2;margin-bottom: 9px;}
+.h-tabs .table-responsive .table{margin-bottom:0;}
+.h-tabs .form-group{font-size:12px; font-weight:600;}
+.bottom-bar{float:left;width:100%;}
+.bottom-bar h3 {
+    font-size: 11.5px;
+	width:97%;
+	line-height: 1px;
+	color:#000;
+}
+.h-tabs div#headingOne {
+    height: 21px;
+	border-style:solid;
+	border-color:#e3e2e2;
+	border-width:1px 0 1px 0;
+}
+.h-tabs button{font-size:11px; font-weight:600;}
+.bottom-bar .panel-heading {
+    background-color:#fff;
+	color:#000;
+	border:1px solid;
+}
+
+.bottom-bar .pannel-section i.fa.fa-plus,.bottom-bar .pannel-section i.fa.fa-minus {
+    /*color:#000;*/
+    line-height: 2px;
+
+}
+.bottom-bar .panel-title a {    
+    font-size: 13px;    
+    padding:0;
+}
+.bottom-bar .panel-body{padding-top:22px;}
+/*Commented By Dipali V On 13th Nov 2017 For Remove Line*/
+.form-group 
+{
+    /*border-bottom: 1px solid #ebedf2;*/
+
+}
+/*End of Commented By Dipali V On 13th Nov 2017 For Remove Line*/
+.bottom-bar .panel-body form{
+	float: left;
+}
+
+/*Add By Dipali V On 13th Nov 2017 For For TextBox CSS*/
+.bottom-bar input :not(.search-bar){
+	width: 210px!important;
+    height: 26px;
+    padding: 0;
+    font-size: 11px;
+     border-radius: 21px;
+    padding-left: 10px;
+     border-color: #ddd; 
+     font-size:12px!important;
+    font-weight:100!important;
+}
+
+.bottom-bar .editor textarea, input[type="text"]:not(.search-bar) {
+   width: 200px!important;
+    height: 26px;
+    padding: 0;
+    font-size: 11px;
+    border-radius: 21px;
+    padding-left: 16px!important;
+     border-color: #ddd; 
+     font-size:12px!important;
+    font-weight:100!important;
+    outline:none;
+    margin-top: 6px!important; /*Added by Vaijat K ON 15/12/2017*/
+}
+.search-bar button {
+    width:100%;
+}
+.search-bar .fa-search {
+    position:absolute!important;
+    margin-top:10px!important;
+    margin-bottom:10px!important;
+    right:10px!important;
+    left:auto!important;
+    font-size: 14px!important;
+    margin-left:0px!important;
+}
+/*.faSettingSearch {
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 5px;
+}*/
+
+.faSettingSearch {
+    position: absolute;
+    margin-top: 13px!important;
+    margin-left: 6px!important;
+}
+.bottom-bar textarea {
+    border-color:#ddd!important;
+}
+.editor textarea, input[type="text"] {
+    width: 292px;
+    height: 26px;
+    padding: 0;
+    font-size: 11px;
+    border-radius: 4px;
+    padding-left: 16px!important;
+     border-color: #ddd; 
+     font-size:12px!important;
+    font-weight:100!important;
+}
+.form-control {
+    font-size:12px!important;
+   font-weight:100!important;
+}
+
+
+/*End of Added By Dipali V On 13th Nov 2017 For TextBox CSS*/
+.bottom-bar #checkall{margin:0;outline:none;}
+/*.bottom-bar textarea{border-color:#82c4d3;}*/
+.bottom-bar .panel-body .top-bar ul li i{font-size:11px;left:42px;}
+.bottom-bar .panel-body .top-bar{
+	border-style:solid;
+	border-color:#e3e2e2;
+	border-width:1px 0 1px 0;
+	padding:0;
+	margin-bottom: 4px;
+}
+.bottom-bar .panel-body .top-bar ul{margin-bottom:0;height: 27px;}
+.bottom-bar .panel-body .top-bar ul select{margin-bottom:0;}
+.bottom-bar #accordion .fa.fa-minus{display:block;}
+.bottom-bar #accordion .fa.fa-plus{display:none;}
+.bottom-bar #accordion .collapse.in .fa.fa-minus{ display:block;}
+.bottom-bar #accordion .collapse.in .fa.fa-plus{display:none;}
+.bottom-bar #accordion .collapsed .fa.fa-minus{display:none;}
+.bottom-bar #accordion .collapsed .fa.fa-plus{display:block;}
+
+/** sub type tab**/
+.h-form .form-horizontal .control-label {
+    padding-top: 0px;
+    margin-bottom: 0;
+    text-align: right;
+	font-size:11px;
+}
+
+/**-------------Department tabs------------------**/
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 740px;
+    height: 340px;
+}
+
+#id09 .container-fluid,#id10 .container-fluid,#id11 .container-fluid,#id12 .container-fluid{
+    padding: 16px;
+    width: 740px;
+}
+#id09 .h-tabs{padding:0;}
+#id09 .modal-content.animate,#id10 .modal-content.animate,#id11 .modal-content.animate,#id12 .modal-content.animate,#id13 .modal-content.animate,#id14 .modal-content.animate,#id15 .modal-content.animate {
+    background: #fff;
+}
+#id09 .form-group{border-bottom:none;margin-bottom:0;}
+#id09 .table th,#id09 .table td,#id15 .table th,#id015 .table td{font-size:11px;}
+
+#id13 .imgcontainer,#id14 .imgcontainer,#id15 .imgcontainer{margin-bottom:10px;}
+#id14 label,#id13 label{font-size: 11px;}
+#id14 .modal-content{
+	width: 573px;
+	height: 195px;}
+#id14 .container{
+		width: 542px;
+}
+#id15 .modal-content{
+	max-width:923px;
+	height:235px;
+}
+#id15 .container {
+    width: 741px;
+}
+/**-------------------- AutoClose-----------------------**/
+.auto-desc {
+    float: left;
+    max-width: 567px;
+    border: 1px solid #e3e2e2;
+    font-size: 11.5px;
+    font-style: italic;
+    font-weight: 600;
+    padding: 5px 28px 5px 14px;
+    margin-top: 8px;
+    margin-left: 16px;
+	color:#9197a3;
+}
+.auto-day-sel {
+    float: left;
+    width: 100%;
+    margin: 11px 0;
+	padding-left: 16px;
+}
+/*#Autoclose h3 {
+    border: 1px solid #e3e2e2;
+    padding: 10px 0 10px 17px;
+	border-left:none;
+	border-right:none;
+}*/
+.auto-sec-btn{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	border: 1px solid #e3e2e2;
+	padding: 6px 0;
+	border-left:none;
+	border-right:none;
+}
+.auto-sec-btn button{margin-right:11px;}
+/**------------ Email----------------------**/
+/**Email Setting**/
+#Email .tab button{width:104px;}
+#Email .top-pagination ul{margin:0;}
+#Email .top-pagination ul li {
+    border: none !important;
+    padding: 0;
+}
+/**------------ User Role And Access----------------------**/
+#Users .tab button{width:120px;}
+
+
+
+.h-type .table-responsive .table {
+        margin-bottom:0px !important;
+        }
+        .tab-section .table-responsive td, .h-type .table-responsive td {
+        border:none !important;
+        }
+
+.h-type div#headingOne {
+    height: 23px;
+	border-style:solid;
+	border-color:#e3e2e2;
+	border-width:1px 0 1px 0;
+    padding-top: 11px;
+}
+
+.h-type button {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.h-type .table-responsive{border-bottom: 1px solid #e3e2e2;margin-bottom: 9px;}
+.h-type .table-responsive .table{margin-bottom:0;}
+.h-type .form-group{font-size:12px; font-weight:600;}
+.h-type button{font-size:11px; font-weight:600;}
+
+
+.h-type  div.tab button {
+    background-color: inherit;
+    float: left;  
+	width:69px;
+	color:#000;	
+}
+.h-type  div.tab button.tablinks1{margin-right: 50px;padding-left:0px;}
+/* Change background color of buttons on hover */
+.v-tabs .h-type  div.tab button:hover {
+    
+}
+
+/* Create an active/current tablink class */
+.h-type  div.tab button.active {
+    
+}
+
+/* Style the tab content */
+.v-tabs .h-type .tabcontent1 {
+    display: none;
+    padding: 6px 0px;
+    border: none;
+    border-top: none;
+	width: 100%;
+	float:left;
+}
+.h-type button{
+	
+	line-height:10px;
+}
+.h-type .clearall button{
+	border:none;
+}
+
+.h-type input[type=checkbox]{outline: 1px solid #c7d3e5;width: 15px;}
+.h-type .chk input{
+	margin-right:8px;	
+}
+
+.h-type input[type=checkbox] {
+outline:none !important;
+}
+div#Type, #Subtype {
+border:none;
+}
+
+ 
+.h-type .panel-heading  {
+    height: 21px;
+    border-style: solid;
+    border-color: #e3e2e2;
+    border-width: 1px 0 1px 0;
+}
+
+.top-bar {
+    padding:14px 17px !important;
+    padding-bottom: 7px !important;
+}
+
+.top-bar ul.right li {
+border-right:0.1px solid #ddd;
+}
+dl, ol, ul {
+margin-bottom:0px !important;}
+
+.setting-src {
+    padding: 3px 18px!important;
+    margin-bottom: 10px!important;
+}
+
+/*.bottom-bar .panel-title a {
+padding:0px 15px 15px 25px !important;
+float:left;
+
+}
+
+.panel-heading h3 {
+    width: 100%;
+    float: left;
+}*/
+
+
+.bottom-bar .fa.fa-plus {
+display:none;
+}
+
+.bottom-bar .fa.fa-minus {
+display:block;
+}
+
+.bottom-bar .collapsed .fa.fa-plus {
+    display: block;
+}
+.bottom-bar .collapsed .fa.fa-minus {
+display:none;
+}
+
+.dataTables_empty {
+text-align:center;
+}
+.form-horizontal .control-label  {
+font-size:12px !important;
+}
+input.form-control:not([type=button]) {
+    background-color: #fff;
+    border-color: transparent;
+    box-sizing: border-box;
+    padding: 4px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    color: #000;
+    margin-bottom: 0px;
+    margin-top: 6px;
+    font-size:12px!important;
+    font-weight:100!important;
+    width:200px!important;
+}
+.form-control:focus {
+    border-color: #66afe9 !important;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.6);
+}
+button[title='Save And Add'] {
+    white-space:nowrap;
+}
+button[title='Save And Add'] i {
+    float:none!important;
+    position:relative!important;
+    margin-top:0px!important;
+    margin-left:3px!important;
+    display: inline-block!important;
+}
+
+button[title='Save and Add'] i {
+    float:none!important;
+    position:relative!important;
+    margin-top:0px!important;
+    margin-left:3px!important;
+    display: inline-block!important;
+}
+
+#isSaveandAdd {
+    display: inline-block!important;
+}

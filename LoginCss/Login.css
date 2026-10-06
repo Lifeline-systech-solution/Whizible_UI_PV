@@ -1,0 +1,91 @@
+﻿
+#Companylogo
+{
+    width:40%;
+}
+#Customerlogo
+{
+    width:40%;
+    float:right;
+}
+.font
+{
+      
+    font-size: 0.25em;
+    color:white;
+}
+footer
+{
+    padding: 20px 0 30px 0;
+    background-color: #053c6d;
+}
+.header
+{
+        font-weight: bold;
+        margin: 15px 0 5px 0;
+        font-size: 1.30em;
+        color:white;
+}
+.contain
+{
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px 0;
+    list-style: none;
+    min-height: 260px;
+}
+.first
+{
+    padding: 0;
+   
+}
+.textcontent
+{
+    min-height: 260px;
+    width: 186px;
+    float: left;
+}
+.headerfirst
+{
+     font-weight: bold;
+    margin: 0 0 5px 0;
+    font-size: 1.30em;
+    color:white;
+}
+
+.textcontent a
+{
+    font-size: 12px;
+    font-family: Arial,Helvetica,sans-serif;
+    color: #FFF;
+    width: 100%;
+    float: left;
+    margin: 0 0 1px 0;
+    text-decoration: none;
+    text-align: left;
+}
+footer .middleContainer
+{
+    text-align: center;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.05em;
+    color: white;
+    margin-top: 30px;
+    line-height: 22px;
+}
+.footer-facebook
+{
+    background-position: 0 -58px;
+    width: 27px;
+    display: table-cell;
+}
+.WhizDesc
+{
+    width: 90%;
+    border: 1px solid;
+    text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+	font-size:10px;
+}

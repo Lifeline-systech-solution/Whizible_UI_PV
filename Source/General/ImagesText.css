@@ -1,0 +1,101 @@
+.HeadGroup
+{
+	cursor:hand;
+	padding: 2px;
+}
+
+.MenuGroup
+{
+	background-color: white;
+	cursor:hand;
+	padding: 0px;
+	border: 1px solid Black;	
+}
+
+.MenuItem
+{
+	background-color: white;
+	color:navy;
+	font-family:tahoma;
+	font-size:12px;
+	cursor:default;
+	padding: 0px;
+	text-align: right;
+}
+
+.MenuItemOver
+{
+  background-color:#81ADD8; 
+  color:white; 
+  font-family:tahoma; 
+  font-size:12px;
+  padding: 0px;
+  cursor:hand;
+  text-align: right; 
+}
+
+.ImageOverClass
+{
+	cursor: pointer;
+	cursor: hand;
+}
+
+.InsiderGroup
+{
+	background-color: white;
+	cursor:hand;
+	padding: 0px;
+	border: 1px solid Black;
+}
+
+.Insider
+{
+	background-color: white;
+	color:navy;
+	font-family:tahoma;
+	font-size:12px;
+	cursor:default;
+	padding: 0px;
+	text-align: right;
+}
+
+.InsiderOver
+{
+  background-color: #BFDA8C; 
+  color:white; 
+  font-family:tahoma; 
+  font-size:12px;
+  padding: 0px;
+  cursor:hand;
+  text-align: right; 
+}
+
+.ProductsGroup
+{
+	background-color: white;
+	cursor:hand;
+	padding: 0px;
+	border: 1px solid Black;
+}
+
+.Products
+{
+	background-color: white;
+	color:navy;
+	font-family:tahoma;
+	font-size:12px;
+	cursor:default;
+	padding: 0px;
+	text-align: right;
+}
+
+.ProductsOver
+{
+  background-color: #F2A98D; 
+  color:white; 
+  font-family:tahoma; 
+  font-size:12px;
+  padding: 0px;
+  cursor:hand;
+  text-align: right; 
+}

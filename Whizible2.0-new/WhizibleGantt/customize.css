@@ -1,0 +1,525 @@
+
+.resLine {
+    width: 95%;
+    padding: 3px;
+    margin: 5px;
+    border: 1px solid #d0d0d0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.ganttButtonBar h1 {
+    color: #000000;
+    font-weight: bold;
+    font-size: 28px;
+    margin-left: 10px;
+}
+/* Customize  */
+.teamworkIcon {
+    margin: 5px;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding: 0 0 10px 0 !important
+}
+
+.table > thead > tr > th {
+    border-bottom: 1px solid #dcdcdc !important;
+}
+
+.ganttFixHead {
+    height: 42px !important;
+}
+
+.taskBoxSVG {
+    overflow: visible !important;
+}
+
+.ganttButtonBar h1 {
+    color: #000000;
+    font-weight: bold;
+    font-size: 28px;
+    margin-left: 10px;
+}
+
+.hideSection {
+    display: none;
+}
+
+
+.custom-tab-slider--tabs {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border-radius: 35px;
+    background: #eee;
+    height: 32px;
+    -webkit-user-select: none;
+    -mos-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .custom-tab-slider--tabs:after {
+        content: '';
+        background: #1359a6;
+        height: 100%;
+        position: absolute;
+        color: White;
+        top: 0;
+        left: 0;
+        -webkit-transition: all 250ms ease-in-out;
+        transition: all 250ms ease-in-out;
+        border-radius: 35px;
+    }
+
+#custom_toggle_task.custom-tab-slider--tabs:after {
+    width: 48%;
+}
+
+#custom_toggle_task.custom-tab-slider--tabs.slide:after {
+    left: 61px;
+    width: 58%;
+}
+
+#custom_toggle_tasktype.custom-tab-slider--tabs:after {
+    width: 59%;
+}
+
+#custom_toggle_tasktype.custom-tab-slider--tabs.slide:after {
+    left: 87px;
+    width: 45%;
+}
+
+#custom_toggle_progress.custom-tab-slider--tabs:after {
+    width: 58%;
+}
+
+#custom_toggle_progress.custom-tab-slider--tabs.slide:after {
+    left: 131px;
+    width: 46%;
+}
+
+
+.tab-slider--trigger {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 700;
+    color: #777;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none !important;
+    padding: 11px 20px 11px 15px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-transition: color 250ms ease-in-out;
+    transition: color 250ms ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .tab-slider--trigger.active {
+        color: #fff;
+    }
+
+.gdfEditorErrorMsg {
+    color: white;
+    width: 100%;
+    padding: 3px 3px 3px 24px;
+    text-align: left;
+    background: red;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid red;
+    margin: 4px;
+    font-size: 12px;
+}
+
+.gdfInputError {
+    background: #ead1d1 !important;
+    border: 1px solid red !important;
+}
+
+.gdfSmallInput {
+    width: 70px;
+}
+
+.multiselect {
+    width: 200px;
+}
+
+​
+.selectBox {
+    position: relative;
+}
+
+    ​
+    .selectBox select {
+        width: 100%;
+        font-weight: bold;
+    }
+
+​
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+​
+#checkboxes {
+    display: none;
+    border: 1px #dadada solid;
+    list-style: none;
+    color: #1359a6;
+    font-weight: 600;
+}
+
+    ​
+    #checkboxes label {
+        display: block;
+    }
+
+        ​
+        #checkboxes label:hover {
+            background-color: #1e90ff;
+        }
+
+
+#context-menu {
+    padding: 10px;
+    background: rgb(188, 234, 182);
+    border: solid 1px #1359a6;
+}
+
+    #context-menu li {
+        color: #1359a6;
+        font-weight: 500;
+    }
+
+        #context-menu li input[type=checkbox], input[type=radio] {
+            margin: 7px;
+        }
+
+.taskEditRow.rowSelected td {
+    /*
+    background-color: rgb(234, 248, 255);
+    color: black;
+    */
+    background-color: #F3D505; /* rgb(19, 89, 166, 0.7);*/
+    font-weight: 200;
+}
+
+    .taskEditRow.rowSelected td input[readonly] {
+        color: #777
+    }
+
+
+.taskEditRow input, .columnWidthTest {
+    font-weight: 400 !important;
+}
+
+.extrawidth {
+    width: 55px !important;
+}
+
+.disabled-link {
+    pointer-events: none !important;
+}
+
+.hidden-column {
+    display: none !important;
+}
+
+table#taskDataTable select {
+    max-width: 156px !important;
+}
+
+.gdf-custom-column {
+    float: left;
+    width: 25%;
+}
+
+    .gdf-custom-column > label > b {
+        color: red;
+        font-size: 12px;
+    }
+
+.gdf-import-task-container {
+    width: 100%;
+    margin: 10px;
+}
+
+    .gdf-import-task-container .gdf-import-task-column {
+        width: 45%;
+        float: left;
+        margin-left: 5%;
+    }
+
+        .gdf-import-task-container .gdf-import-task-column label {
+            width: 40%;
+        }
+
+            .gdf-import-task-container .gdf-import-task-column label b {
+                float: right;
+                margin-right: 20px;
+            }
+
+.gdf-import-task-column select {
+    width: 55%;
+    font-size: 13px;
+}
+
+.ganttTaskEditor .gdf-breadcrumb {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+    .ganttTaskEditor .gdf-breadcrumb li {
+        float: left;
+    }
+
+        .ganttTaskEditor .gdf-breadcrumb li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 96px;
+            background: #4694EA;
+            position: relative;
+            display: block;
+            float: left;
+            width: auto;
+        }
+
+            .ganttTaskEditor .gdf-breadcrumb li a:after {
+                content: " ";
+                display: block;
+                width: 0;
+                height: 0;
+                border-top: 50px solid transparent; /* Go big on the size, and let overflow hide */
+                border-bottom: 50px solid transparent;
+                border-left: 30px solid #4694EA;
+                position: absolute;
+                top: 50%;
+                margin-top: -50px;
+                left: 100%;
+                z-index: 2;
+            }
+
+            .ganttTaskEditor .gdf-breadcrumb li a:before {
+                content: " ";
+                display: block;
+                width: 0;
+                height: 0;
+                border-top: 50px solid transparent; /* Go big on the size, and let overflow hide */
+                border-bottom: 50px solid transparent;
+                border-left: 30px solid white;
+                position: absolute;
+                top: 50%;
+                margin-top: -50px;
+                margin-left: 1px;
+                left: 100%;
+                z-index: 1;
+            }
+
+            .ganttTaskEditor .gdf-breadcrumb li a.active {
+                background: #1359a6;
+            }
+
+                .ganttTaskEditor .gdf-breadcrumb li a.active:after {
+                    border-left: 30px solid #1359a6;
+                }
+
+.taskCondition {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    text-indent: 0;
+    position: relative;
+    box-shadow: none;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+}
+
+    .taskCondition[condition="CONDITION_AMBER"], .taskCondition[condition="CONDITION_AMBER1"], .taskCondition[condition="CONDITION_AMBER2"], .taskCondition[condition="CONDITION_AMBER3"] {
+        background-color: #FFBF00;
+        color: #000;
+    }
+
+    .taskCondition[condition="CONDITION_YELLOW"] {
+        background-color: #ffff00;
+        color: #000;
+    }
+
+    .taskCondition[condition="CONDITION_GREEN"] {
+        background-color: #3BBF67;
+        color: #000;
+    }
+
+    .taskCondition[condition="CONDITION_RED"], .taskCondition[condition="CONDITION_RED1"], .taskCondition[condition="CONDITION_RED2"], .taskCondition[condition="CONDITION_RED3"], .taskCondition[condition="CONDITION_RED4"] {
+        background-color: #FF0000;
+        color: #000;
+    }
+
+    .taskCondition[condition="CONDITION_BLACK"] {
+        background-color: #000;
+        color: #000;
+    }
+
+select.import-field[disabled] {
+    background: #ccc;
+}
+
+table#importEditorDetails {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+    table#importEditorDetails td, table#importEditorDetails th {
+        border: 1px solid #ccc;
+        padding: 1px 5px;
+    }
+
+.bottom-step {
+    bottom: 30px;
+    position: absolute;
+}
+
+.invalidTaskRow td {
+    background: red !important;
+    color: #eee !important;
+}
+
+table#assigsTable tbody > tr:last-child {
+    display: none;
+}
+
+table#assigsTable tbody > tr:nth-child(2) {
+    display: table-row;
+}
+
+.taskOverFlow, .task-I, .task-V {
+    color: red !important;
+}
+
+
+
+#assigsTable select.formElements {
+    width: 95%;
+}
+
+/*Commented And Added By Vaijat K For Task Hold Issue*/
+/*#panel_basic.task-I, #panel_basic.task-C, #panel_basic.task-V, #panel_basic.task-H,
+.taskEditRow.task-C input, .taskEditRow.task-I input, .taskEditRow.task-V input, .taskEditRow.task-H input,
+.taskBoxSVG.task-C, .taskBoxSVG.task-H, .taskBoxSVG.task-V, .taskBoxSVG.task-I, .taskEditRow.task-H, #workSpace.msp .taskBoxSVG {*/
+#panel_basic.task-I, #panel_basic.task-C, #panel_basic.task-V, #panel_basic.task-H, .taskEditRow.task-C input, .taskEditRow.task-I input, .taskEditRow.task-V input, .taskEditRow.task-H input, .taskBoxSVG.task-C, .taskBoxSVG.task-H, .taskBoxSVG.task-V, .taskBoxSVG.task-I, #workSpace.msp .taskBoxSVG {
+    pointer-events: none;
+}
+    /*End Commented And Added By Vaijat K For Task Hold Issue*/
+
+    #panel_basic.task-C #status,
+    #panel_basic.task-I #status,
+    #panel_basic.task-V #status,
+    #panel_basic.task-H #status {
+        pointer-events: auto;
+    }
+
+.modalPopup {
+    /*Commented By Vaijat K For popup issue*/
+    /*pointer-events: none;*/
+    /*Commented By Vaijat K For popup issue*/
+}
+
+.bwinPopupd {
+    pointer-events: all;
+}
+
+.ganttTaskEditor.msp-task input[type="text"],
+.ganttTaskEditor.msp-task select,
+.ganttTaskEditor.msp-task textarea {
+    background: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    pointer-events: none;
+}
+
+.ganttTaskEditor.msp-task .openCalendar, .ganttTaskEditor.msp-task #saveButton {
+    display: none
+}
+
+#workSpace {
+    overflow: initial !important;
+}
+
+.hideDeleteIcon button.icon.delete,
+.hideDeleteIcon .requireCanDelete {
+    display: none;
+}
+
+table.gdfTable th.gdfCell.edit {
+    cursor: pointer !important;
+}
+
+.hideEditIcon table.gdfTable th.gdfCell.edit {
+    pointer-events: none;
+    cursor: not-allowed !important;
+}
+
+    .hideEditIcon table.gdfTable th.gdfCell.edit .teamworkIcon, .gray-out {
+        opacity: 0.5;
+    }
+
+.hideEditIcon span#saveButton {
+    display: none;
+}
+
+span#accessAlertContainer {
+    padding: 9px;
+}
+
+.text-center, .text-center > *, .gdfColHeader, .gdfCell.taskAssigs.resources {
+    text-align: center !important;
+}
+
+    .gdfCell.taskAssigs.resources, .gdfColHeader.gdfResizable.resources {
+        width: 200px;
+    }
+
+.taskOverFlow input[readonly] {
+    color: red !important;
+}
+
+.task-I input[readonly] {
+    color: red !important;
+}
+
+.task-V input[readonly] {
+    color: red !important;
+}
+
+.orangeRow {
+    color: orange !important;
+}
+
+.taskBox {
+    pointer-events: none;
+}
+
+fieldset {
+    padding: .35em .4em .4em!important;
+    margin: 0 2px!important;
+    border: 1px solid silver!important;
+}

@@ -1,0 +1,7 @@
+In SendEmailWithAttachment
+ call usp_SEL_Tbl_PM_CompanyInformation
+ strAttachments.Count > 0 
+ Not strAttachments Is Nothing  
+ Not strAttachmentlisteds Is Nothing  
+ Before Send Mail 
+ After Send Mail 

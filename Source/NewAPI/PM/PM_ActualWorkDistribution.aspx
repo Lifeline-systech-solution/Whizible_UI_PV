@@ -1,0 +1,2973 @@
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="PM_ActualWorkDistribution.aspx.vb" Inherits="Whizible.PM_ActualWorkDistribution" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= MyBase.GetResourceString("C_TotalTasksInProgress") %></title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../../Whizible2.0-new/dist/css/jquery-ui-1.13.2.min.css">
+    <link rel="stylesheet" href="../../../Whizible2.0-new/bootstrap/css/bootstrap-5.3.2.min.css">
+    <link rel="stylesheet" href="../../../Whizible2.0-new/bootstrap/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../../../Whizible2.0-new/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../../../Whizible2.0-new/dist/css/whiz20_theme.css?v=0.1">
+    <link rel="stylesheet" href="../../../Whizible2.0-new/dist/css/BS5_migration.css?v=0.1">
+    <link rel="stylesheet" href="../../../Whizible2.0-new/dist/css/style_custom.css">
+    <link rel="stylesheet" href="../../../Whizible2.0-new/dist/css/custom.css">
+    <link rel="stylesheet" href="../../../Whizible2.0-new/dist/css/style_custom_project.css">
+    <link rel="stylesheet" href="../../../Whizible2.0-new/dist/css/media_queries.css?v=2">
+    <link rel="stylesheet" href="../../../Whizible2.0-new/plugins/alertify/css/alertify.min.css" />
+    
+    <style type="text/css">
+        /* CSS CUSTOM PROPERTIES (THEME VARIABLES) - Match main page */
+        :root {
+            --primary-color: #2563eb;
+            --primary-dark: #1e40af;
+            --primary-light: #3b82f6;
+            --secondary-color: #64748b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --info-color: #06b6d4;
+            
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --bg-hover: #f8f9fa;
+            
+            --text-primary: #000000;
+            --text-secondary: #000000;
+            --text-tertiary: #000000;
+            --text-muted: #000000;
+            
+            --border-color: #e2e8f0;
+            --border-radius: 8px;
+            --border-radius-sm: 6px;
+            --border-radius-lg: 12px;
+            
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            
+            --transition-base: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            background: #f5f7fa;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        /* Use same structure as main page */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Match main page CSS structure */
+        .reports-top-section {
+            background: var(--bg-primary);
+            padding: 1.25rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        
+        /* Ensure parent containers don't clip the dropdown */
+        .reports-top-section {
+            overflow: visible !important;
+        }
+        
+        .report-header {
+            margin-bottom: 1rem;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .report-title {
+            font-size: 18px;
+            font-weight: normal;
+            font-family: 'Roboto', sans-serif;
+            color: #1e40af;
+            margin: 0 0 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .report-title::before {
+            content: '';
+            width: 4px;
+            height: 2rem;
+            background: linear-gradient(180deg, #1e40af 0%, #3b82f6 100%);
+            border-radius: 2px;
+        }
+        
+        .report-description {
+            color: #000000;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.4;
+            margin: 0 0 0.75rem 0;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            min-height: 20px;
+        }
+        
+        .reports-middle-section {
+            display: flex;
+            flex: 1;
+            overflow: visible;
+            width: 100%;
+            gap: 1rem;
+            align-items: flex-start;
+            min-height: calc(100vh - 200px);
+        }
+        
+        .reports-content {
+            flex: 1;
+            overflow-y: visible;
+            overflow-x: auto;
+            padding: 2rem;
+            background: var(--bg-secondary);
+            min-width: 0;
+            min-height: 500px;
+        }
+        
+        .charts-section {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            width: 280px;
+            min-width: 280px;
+            padding: 0.75rem;
+            background: var(--bg-primary);
+            border-left: 1px solid var(--border-color);
+            overflow: visible;
+        }
+        
+        .filters-section {
+            background: var(--bg-secondary);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+            overflow: visible;
+            transition: var(--transition-base);
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 1rem;
+        }
+        
+        .filters-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+            background: var(--bg-primary);
+            cursor: pointer;
+            user-select: none;
+            transition: var(--transition-base);
+            position: relative;
+            z-index: 10;
+        }
+        
+        .filters-header:hover {
+            background: var(--bg-hover);
+        }
+        
+        .filters-header h3 {
+            margin: 0;
+            font-size: 0.75rem;
+            font-weight: normal;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            pointer-events: none;
+        }
+        
+        .filters-header i {
+            color: var(--primary-color);
+            pointer-events: none;
+        }
+        
+        .filters-toggle-icon {
+            transition: transform 0.3s ease;
+            color: var(--text-secondary);
+        }
+        
+        .filters-section.collapsed .filters-toggle-icon {
+            transform: rotate(-90deg);
+        }
+        
+        .filters-content {
+            padding: 0.75rem 1rem;
+            max-height: 400px;
+            transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+            overflow: visible;
+            opacity: 1;
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .filters-section.collapsed .filters-content {
+            max-height: 0;
+            padding: 0 1rem;
+            opacity: 0;
+        }
+        
+        .filter-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            overflow: visible !important;
+        }
+        
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.375rem;
+            position: relative;
+            overflow: visible !important;
+        }
+        
+        .filter-group label {
+            font-size: 12px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            color: #2563eb;
+            margin: 0;
+        }
+        
+        .filter-group select,
+        .filter-group input {
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 0.375rem 0.625rem;
+            font-size: 12px;
+            font-family: 'Roboto', sans-serif;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .filter-group select:focus,
+        .filter-group input:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        
+        .bs-wrapper {
+            display: block !important;
+            width: 100% !important;
+        }
+        
+        .filter-actions-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0.75rem;
+            gap: 1rem;
+        }
+        
+        .filter-notes-container {
+            flex: 1;
+        }
+        
+        .filter-note {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #374151;
+            font-size: 0.75rem;
+            padding: 0;
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            margin-top: 0;
+            padding-top: 0;
+            border-top: none;
+            flex: 1;
+            box-sizing: border-box;
+        }
+        
+        .filter-note i {
+            font-size: 1rem;
+            color: #374151;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-top: 0;
+            margin-left: auto;
+            justify-content: flex-end;
+        }
+        
+        
+        .download-options {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+            padding: 0 1rem;
+        }
+        
+        .download-link {
+            font-size: 0.75rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition-base);
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        
+        .download-link i {
+            font-size: 0.5rem;
+        }
+        
+        .download-link:hover {
+            text-decoration: underline;
+        }
+        
+        .download-link-pdf:hover {
+            color: #dc2626;
+        }
+        
+        .download-link-excel:hover {
+            color: #16a34a;
+        }
+        
+        .download-divider {
+            color: var(--border-color);
+            font-size: 0.75rem;
+            margin: 0 0.25rem;
+        }
+        
+        .btn-action {
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius-sm);
+            font-weight: normal;
+            font-size: 0.8125rem;
+            cursor: pointer;
+            border: none;
+            transition: var(--transition-base);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.375rem;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .btn-show {
+            background: #f97316;
+            color: #ffffff;
+            font-weight: 500;
+            border-radius: 4px;
+        }
+        
+        .btn-show:hover {
+            background: #ea580c;
+            color: #ffffff;
+        }
+        
+        .btnyellow {
+            background: #ffc107;
+            color: #000000;
+            font-weight: 500;
+            border-radius: 4px;
+        }
+        
+        .btnyellow:hover {
+            background: #ffb300;
+            color: #000000;
+        }
+        
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .table th {
+            background-color: #f9fafb;
+            padding: 0.375rem 0.375rem;
+            text-align: center !important;
+            font-weight: 600;
+            font-size: 11px;
+            color: #374151;
+            border-bottom: 2px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .table td {
+            padding: 0.375rem 0.375rem;
+            font-size: 11px;
+            border-bottom: 1px solid #e5e7eb;
+            color: #1f2937;
+            text-align: center !important;
+        }
+        
+        .table tbody tr:hover {
+            background-color: #f9fafb;
+        }
+        
+        /* KPI Container and Boxes */
+        .kpi-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .kpi-box {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 0.75rem;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-base);
+            position: relative;
+            overflow: hidden;
+            min-height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .kpi-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color) 0%, var(--primary-light) 100%);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+        
+        .kpi-box:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-color);
+        }
+        
+        .kpi-box:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .kpi-label {
+            font-size: 11px;
+            font-family: 'Roboto', sans-serif;
+            color: var(--primary-color);
+            margin-bottom: 0.25rem;
+            font-weight: normal;
+            line-height: 1.2;
+            text-align: center;
+            word-wrap: break-word;
+            hyphens: auto;
+        }
+        
+        .kpi-value {
+            font-size: 1rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+            color: var(--primary-color);
+            line-height: 1.2;
+            text-align: center;
+        }
+        
+        .data-table-container {
+            background: var(--bg-primary);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+            padding: 1rem;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .pagination-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+        
+        .pagination-info {
+            color: #64748b;
+            font-size: 14px;
+        }
+        
+        .pagination {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 5px;
+        }
+        
+        .page-item {
+            margin: 0;
+        }
+        
+        .page-link {
+            padding: 8px 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            color: #1e40af;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .page-link:hover {
+            background-color: #f1f5f9;
+        }
+        
+        .page-item.fa-disabled .page-link {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        
+        .chart-container {
+            background: var(--bg-secondary);
+            border-radius: var(--border-radius);
+            padding: 0.75rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            flex-shrink: 0;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        
+        .chart-title {
+            font-size: 0.6875rem;
+            font-weight: normal;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            text-align: center;
+            padding-bottom: 0.375rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .chart-wrapper {
+            height: 140px;
+            position: relative;
+            width: 100%;
+        }
+        
+        .chart-wrapper canvas {
+            max-width: 100% !important;
+            height: 140px !important;
+        }
+        
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        
+        .spinner-border {
+            width: 3rem;
+            height: 3rem;
+            border: 4px solid #f3f4f6;
+            border-top-color: #1e40af;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:HiddenField ID="hdnProjectID" runat="server" />
+        <asp:HiddenField ID="hdnUserID" runat="server" />
+        <asp:HiddenField ID="hdnReportID" runat="server" Value="607" />
+        <asp:HiddenField ID="hdnViewAccess" runat="server" />
+        
+        <% If m_blnViewAccess Then %>
+        <!-- Top Section - Full Width (Title, Description, Note, Filters) -->
+        <div class="reports-top-section">
+            <div class="report-header">
+                <h1 class="report-title">Actual Work Distribution By Task Type By Resources</h1>
+                <p class="report-description">
+                </p>
+            </div>
+            
+            <!-- Filters Section -->
+            <div class="filters-section collapsed" id="filtersSection">
+                <div class="filters-header" id="filtersHeader">
+                    <h3>
+                        <i class="fas fa-filter"></i>
+                        <%= MyBase.GetResourceString("C_FiltersAndActions") %>
+                    </h3>
+                    <i class="fas fa-chevron-down filters-toggle-icon"></i>
+                </div>
+                <div class="filters-content" id="filtersContent">
+                    <div class="filter-row" id="standardFilters">
+                        <div class="filter-group" id="projectFilterGroup">
+                            <label for="cboProject"><%= MyBase.GetResourceString("C_ProjectName") %></label>
+                            <div class="bs-wrapper">
+                                <%CommonFunctions.HTMLControls.DrawComboBox("cboProject", "usp_Whizible2_Sel_AccessibleProjects_LoginResource " & Session("intUserID") & ", '" & Session("LoginType") & "', 1, 0,'[Over] = ''0''','ProjectName ASC'",,, "onchange='ProjectonChange();' class='selectpicker' data-live-search='true'",,,) %>
+                            </div>
+                        </div>
+                        <div class="filter-group" id="periodFilterGroup">
+                            <label for="cboPeriod"><%= MyBase.GetResourceString("C_Period") %></label>
+                            <select class="form-control selectpicker" id="cboPeriod" data-live-search="true">
+                                <option value=""><%= MyBase.GetResourceString("C_AllPeriods") %></option>
+                            </select>
+                        </div>
+                        <div class="filter-group" id="resourceFilterGroup">
+                            <label for="cboResource"><%= MyBase.GetResourceString("C_Resource") %></label>
+                            <select class="form-control selectpicker" id="cboResource" data-live-search="true">
+                                <option value=""><%= MyBase.GetResourceString("C_AllResources") %></option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Date filters for Report 607 (Actual Work Distribution By Task Type By Resources) -->
+                    <div class="filter-row" id="dateFilters">
+                        <div class="filter-group">
+                            <label for="txtStartDate"><%= MyBase.GetResourceString("C_StartDate") %></label>
+                            <input type="date" class="form-control" id="txtStartDate" />
+                        </div>
+                        <div class="filter-group">
+                            <label for="txtEndDate"><%= MyBase.GetResourceString("C_EndDate") %></label>
+                            <input type="date" class="form-control" id="txtEndDate" />
+                        </div>
+                    </div>
+                    <div class="filter-actions-row" style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.75rem;">
+                        <div class="filter-notes-container" style="flex: 1;">
+                            <div class="filter-note" id="dateFilterNote">
+                                <i class="fas fa-info-circle"></i>
+                                <span>Please select a date range to view the report</span>
+                            </div>
+                        </div>
+                        <div class="action-buttons">
+                            <button type="button" class="btn btnyellow" id="btnShow"><%= MyBase.GetResourceString("C_Show") %></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Download Options - Outside Filter Box -->
+            <div class="download-options">
+                <a href="javascript:void(0);" class="download-link download-link-pdf" id="btnDownloadPdf">
+                    <i class="fas fa-download"></i> PDF
+                </a>
+                <span class="download-divider">|</span>
+                <a href="javascript:void(0);" class="download-link download-link-excel" id="btnDownloadExcel">
+                    <i class="fas fa-download"></i> <%= MyBase.GetResourceString("C_EXCEL") %>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Middle Section - KPI Cards, Table, and Charts -->
+        <div class="reports-middle-section">
+            <!-- Content Area (KPI Cards, Table, Charts) -->
+            <div class="reports-content">
+                <!-- KPI Section -->
+                <div class="kpi-container">
+                        <div class="kpi-box">
+                            <div class="kpi-label"><%= MyBase.GetResourceString("C_TotalCompletedTasks") %></div>
+                            <div class="kpi-value" id="kpiTotalTasks">0</div>
+                        </div>
+                        <div class="kpi-box">
+                            <div class="kpi-label"><%= MyBase.GetResourceString("C_AverageDelayDays") %></div>
+                            <div class="kpi-value" id="kpiAvgDelay">0</div>
+                        </div>
+                        <div class="kpi-box">
+                            <div class="kpi-label"><%= MyBase.GetResourceString("C_AverageEffortOverrun") %></div>
+                            <div class="kpi-value" id="kpiEffortOverrun">0%</div>
+                        </div>
+                        <div class="kpi-box">
+                            <div class="kpi-label"><%= MyBase.GetResourceString("C_TasksCompletedOnTime") %></div>
+                            <div class="kpi-value" id="kpiOnTime">0%</div>
+                        </div>
+                </div>
+                
+                <!-- Data Table Section -->
+                <div class="data-table-container">
+                    <div class="table-responsive-custom" style="overflow-x: auto; overflow-y: visible; min-height: 300px;">
+                        <table id="tblReportData" class="table table-stripped table-bordered" style="width: 100%;">
+                                <thead id="tblReportDataHead">
+                                    <tr>
+                                        <th>Task Type</th>
+                                        <th><%= MyBase.GetResourceString("C_TableHeaderResourceName") %></th>
+                                        <th>Efforts (Hrs)</th>
+                                        <th>Emp Module %</th>
+                                        <th>Emp Total %</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tblReportDataBody">
+                                    <!-- Data will be populated dynamically -->
+                                </tbody>
+                            </table>
+                    </div>
+                    <!-- Pagination -->
+                    <div class="pagination-container">
+                        <div class="pagination-info" id="paginationInfo">
+                            <span class="spntotal"><%= MyBase.GetResourceString("C_TotalRecords") %></span>
+                            <span class="spntotal" id="totalRecords">0</span>
+                        </div>
+                        <nav aria-label="<%= MyBase.GetResourceString("C_PageNavigation") %>">
+                            <ul class="pagination justify-content-end">
+                                <li class="page-item fa-disabled" id="btnprevious">
+                                    <a class="page-link" aria-label="<%= MyBase.GetResourceString("C_Previous") %>" href="javascript:;" data-bs-toggle="tooltip" title="<%= MyBase.GetResourceString("C_PreviousPage") %>" id="LinkPrevious" onclick="goToPreviousPage(); return false;">
+                                        <i class="fas fa-angle-double-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item fa-disabled" id="btnnext">
+                                    <a class="page-link" aria-label="<%= MyBase.GetResourceString("C_Next") %>" href="javascript:;" data-bs-toggle="tooltip" title="<%= MyBase.GetResourceString("C_NextPage") %>" id="LinkNext" onclick="goToNextPage(); return false;">
+                                        <i class="fas fa-angle-double-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Charts Section - Right Side -->
+            <div class="charts-section">
+                <div class="chart-container" data-chart="1">
+                    <div class="chart-title"><%= MyBase.GetResourceString("C_ChartTop5ResourcesTotalVsCompleted") %></div>
+                    <div class="chart-wrapper">
+                        <canvas id="chart1"></canvas>
+                    </div>
+                </div>
+                
+                <div class="chart-container" data-chart="2">
+                    <div class="chart-title"><%= MyBase.GetResourceString("C_ChartTop5ResourcesTotalVsOverrun") %></div>
+                    <div class="chart-wrapper">
+                        <canvas id="chart2"></canvas>
+                    </div>
+                </div>
+                
+                <div class="chart-container" data-chart="3">
+                    <div class="chart-title"><%= MyBase.GetResourceString("C_ChartTop5ResourcesScheduleVariance") %></div>
+                    <div class="chart-wrapper">
+                        <canvas id="chart3"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% Else %>
+        <div style="min-height: calc(100vh - 60px); display: flex; align-items: flex-start; justify-content: center; padding-top: 50px; padding-left: 20px; padding-right: 20px;">
+            <div style="text-align: center; width: 100%;">
+                <b style="font-size: 16px; color: #333333; font-weight: bold;"><%= MyBase.GetResourceString("A_NotAuthorizedToView") %></b>
+            </div>
+        </div>
+        <% End If %>
+    </form>
+    
+    <!-- jQuery and other scripts -->
+    <script src="../../../Whizible2.0-new/plugins/jQuery/jquery-3.7.1.min.js"></script>
+    <script src="../../../Whizible2.0-new/plugins/jQueryUI/jquery-ui-1.13.2.min.js"></script>
+    <script src="../../../Whizible2.0-new/bootstrap/js/bootstrap.bundle-5.3.2.min.js"></script>
+    <script src="../../../Whizible2.0-new/dist/js/jquery.dataTables-1.13.1.min.js"></script>
+    <script src="../../../Whizible2.0-new/dist/js/dataTables.bootstrap5.min.js"></script>
+    <script src="../../../Whizible2.0-new/bootstrap/js/bootstrap-select.min.js"></script>
+    <script src="../../../Whizible2.0-new/plugins/alertify/alertify.min.js"></script>
+    <script src="../../../Whizible2.0-new/plugins/chartjs/Chart.min.js"></script>
+    
+    <script type="text/javascript">
+        // ============================================
+        // ALERTIFY CONFIGURATION
+        // ============================================
+        // Configure alertify to show alerts in top-right corner
+        function configureAlertify() {
+            if (typeof alertify !== 'undefined') {
+                alertify.set('notifier', 'position', 'top-right');
+                // Optional: Set delay for auto-dismiss (in seconds)
+                alertify.set('notifier', 'delay', 5);
+                
+                // Suppress success messages
+                alertify.success = function(message) {
+                    // Suppress success messages - do nothing
+                    return alertify;
+                };
+            } else {
+                // Retry if alertify not loaded yet
+                setTimeout(configureAlertify, 100);
+            }
+        }
+        
+        // Configure immediately if available, otherwise wait for DOM
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', configureAlertify);
+        } else {
+            configureAlertify();
+        }
+        
+        // ============================================
+        // RESOURCE VALUES
+        // ============================================
+        // Resource values
+        var Resources = {
+            C_TotalTasksInProgress: '<%= MyBase.GetResourceString("C_TotalTasksInProgress") %>',
+            C_TasksCompletedOnTime: '<%= MyBase.GetResourceString("C_TasksCompletedOnTime") %>',
+            C_ReportDescriptionTasksInProgress: '<%= MyBase.GetResourceString("C_ReportDescriptionTasksInProgress") %>',
+            C_ChartTop5ResourcesTotalVsCompleted: '<%= MyBase.GetResourceString("C_ChartTop5ResourcesTotalVsCompleted") %>',
+            A_ReportIDNotFound: '<%= MyBase.GetResourceString("A_ReportIDNotFound") %>',
+            A_ProjectShouldNotBeBlank: '<%= MyBase.GetResourceString("A_ProjectShouldNotBeBlank") %>',
+            A_ErrorDownloadingReport: '<%= MyBase.GetResourceString("A_ErrorDownloadingReport") %>',
+            A_ReportDownloadedSuccessfully: '<%= MyBase.GetResourceString("A_ReportDownloadedSuccessfully") %>',
+            A_UnknownError: '<%= MyBase.GetResourceString("A_UnknownError") %>',
+            A_PleaseAllowPopups: '<%= MyBase.GetResourceString("A_PleaseAllowPopups") %>',
+            A_ReportOpenedInNewWindow: '<%= MyBase.GetResourceString("A_ReportOpenedInNewWindow") %>',
+            A_UnableToDownload: '<%= MyBase.GetResourceString("A_UnableToDownload") %>',
+            A_InvalidResponseFromServer: '<%= MyBase.GetResourceString("A_InvalidResponseFromServer") %>'
+        };
+        
+        // Global variables
+        var currentPage = 1;
+        var pageSize = 5;
+        var totalRecords = 0;
+        var reportData = [];
+        var chartInstances = {};
+        
+        // API Configuration - Base URL from web.config for W26API (external .NET Core solution)
+        // This matches the pattern used in PM_ReportUIBuilder.aspx
+        var strUrl = '<%=System.Configuration.ConfigurationManager.AppSettings("WebAPIUrl-W26API").ToString%>';
+        
+        // Fallback if web.config setting is not available
+        if (!strUrl || strUrl === '' || strUrl === 'undefined') {
+            // Try to detect the current host and use it
+            var currentHost = window.location.protocol + '//' + window.location.host;
+            // If API is on a different port, you may need to adjust this
+            // For development, API might be on localhost:5095 or similar
+            strUrl = currentHost + '/';
+        }
+        
+        // Ensure trailing slash
+        if (strUrl && !strUrl.endsWith('/')) {
+            strUrl += '/';
+        }
+        
+        // Use W26API base URL - remove trailing slash for API calls
+        var baseUrl = strUrl || window.location.origin;
+        if (baseUrl.endsWith('/')) {
+            baseUrl = baseUrl.slice(0, -1);
+        }
+        
+        // Helper function to get authentication token
+        function getAuthToken() {
+            return sessionStorage.getItem("access_token_W26API") || '';
+        }
+        
+        // Helper function to get AJAX headers with authentication
+        function getAjaxHeaders() {
+            var token = getAuthToken();
+            return {
+                'Content-Type': 'application/json',
+                'Authorization': token ? 'bearer ' + token : ''
+            };
+        }
+        
+        // Helper function to get URL parameter by name
+        function getURLParameter(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+            var results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+        
+        // Initialize on page load
+        $(document).ready(function() {
+            initializePage();
+        });
+        
+        function initializePage() {
+            // Load report description
+            loadReportDescription();
+            
+            // Initialize filters toggle - match main page exactly
+            $(document).on('click', '#filtersHeader', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                toggleFiltersSection();
+            });
+            
+            // Also bind to h3 inside filters header
+            $(document).on('click', '#filtersHeader h3', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                toggleFiltersSection();
+            });
+            
+            // Also bind to the icon
+            $(document).on('click', '.filters-toggle-icon', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                toggleFiltersSection();
+            });
+            
+        function toggleFiltersSection() {
+            var filtersSection = $('#filtersSection');
+            var isCollapsed = filtersSection.hasClass('collapsed');
+            
+            if (isCollapsed) {
+                filtersSection.removeClass('collapsed');
+                // Refresh selectpickers when expanded
+                setTimeout(function() {
+                    if (typeof $.fn.selectpicker !== 'undefined') {
+                        $('.selectpicker').selectpicker('refresh');
+                    }
+                }, 150);
+            } else {
+                filtersSection.addClass('collapsed');
+            }
+        }
+            
+            // Initialize Show button
+            $('#btnShow').on('click', function() {
+                handleShow();
+            });
+            
+            // Initialize download buttons
+            $('#btnDownloadPdf').on('click', function() {
+                downloadReport('pdf');
+            });
+            
+            $('#btnDownloadExcel').on('click', function() {
+                downloadReport('excel');
+            });
+            
+            // Load periods on page load
+            var periodsPromise = loadPeriods();
+            
+            // Initialize charts
+            initializeCharts();
+            
+            // Pre-fill filters from URL parameters (but don't auto-load data)
+            var urlProjectID = getURLParameter('ProjectID');
+            var urlReportID = getURLParameter('ReportID');
+            var urlPeriod = getURLParameter('Period');
+            var urlResourceID = getURLParameter('ResourceID');
+
+            if (urlProjectID && urlProjectID !== '' && urlProjectID !== '0') {
+                // Function to set project and pre-fill filters (but NOT load data)
+                function setProjectAndFilters() {
+                    var $projectSelect = $('#cboProject');
+                    if ($projectSelect.length > 0) {
+                        // Check if the project option exists in dropdown
+                        var projectExists = $projectSelect.find('option[value="' + urlProjectID + '"]').length > 0;
+                        
+                        if (projectExists) {
+
+                            $projectSelect.val(urlProjectID);
+                            $('#<%= hdnProjectID.ClientID %>').val(urlProjectID);
+                            
+                            // Set dates if provided
+                            if (urlStartDate && urlStartDate !== '') {
+                                $('#txtStartDate').val(urlStartDate);
+                            }
+                            if (urlEndDate && urlEndDate !== '') {
+                                $('#txtEndDate').val(urlEndDate);
+                            }
+                            
+                            // Refresh selectpicker if available
+                            if (typeof $.fn.selectpicker !== 'undefined') {
+                                $projectSelect.selectpicker('refresh');
+                            }
+                            
+                            // Trigger ProjectonChange to load resources
+                            if (typeof ProjectonChange === 'function') {
+                                ProjectonChange();
+                            }
+                            
+                            // Load resources for the project and set resource filter (but don't load data)
+                            var resourcesPromise = loadResourcesForProject(urlProjectID);
+                            resourcesPromise.done(function() {
+                                // Set resource if provided
+                                if (urlResourceID && urlResourceID !== '' && urlResourceID !== '0') {
+                                    $('#cboResource').val(urlResourceID);
+                                    if (typeof $.fn.selectpicker !== 'undefined') {
+                                        $('#cboResource').selectpicker('refresh');
+                                    }
+                                }
+
+                            }).fail(function() {
+
+                            });
+                            
+                            return true;
+                        } else {
+
+                            return false;
+                        }
+                    }
+                    return false;
+                }
+                
+                // Set project and filters directly (no periods to wait for)
+                setTimeout(function() {
+                    if (!setProjectAndFilters()) {
+                        setTimeout(function() {
+                            setProjectAndFilters();
+                        }, 1000);
+                    }
+                }, 500);
+                } else {
+
+                }
+        }
+        
+        function toggleFiltersSection() {
+            var filtersSection = $('#filtersSection');
+            var isCollapsed = filtersSection.hasClass('collapsed');
+            
+            if (isCollapsed) {
+                filtersSection.removeClass('collapsed');
+                // Refresh selectpickers when expanded
+                setTimeout(function() {
+                    if (typeof $.fn.selectpicker !== 'undefined') {
+                        $('.selectpicker').selectpicker('refresh');
+                    }
+                }, 150);
+            } else {
+                filtersSection.addClass('collapsed');
+            }
+        }
+        
+        function loadReportDescription() {
+            var reportID = $('#<%= hdnReportID.ClientID %>').val() || 324;
+
+            $.ajax({
+                url: baseUrl + '/api/ReportUIBuilder/GetReportComponent',
+                type: 'POST',
+                headers: getAjaxHeaders(),
+                data: JSON.stringify({ ReportID: parseInt(reportID) }),
+                success: function(response) {
+
+                    var description = '';
+                    var reportMaster = null;
+                    
+                    // Handle different response structures
+                    if (response) {
+                        var isSuccess = response.success === true || response.status === 'SUCCESS' || response.Status === 'SUCCESS';
+                        
+                        if (isSuccess && response.data) {
+                            // Try multiple paths to find ReportMaster
+                            reportMaster = response.data.ReportMaster || 
+                                         response.data.reportMaster || 
+                                         response.data.ReportMasterData ||
+                                         response.ReportMaster ||
+                                         response.reportMaster;
+                            
+                            if (reportMaster) {
+                                description = reportMaster.description || 
+                                            reportMaster.Description || 
+                                            reportMaster.Desc ||
+                                            '';
+                            }
+                        }
+                    }
+                    
+                    // If description found, display it
+                    if (description && description.trim() !== '') {
+
+                        $('.report-description').html(description.replace(/\n/g, '<br>')).css({
+                            'display': 'block',
+                            'visibility': 'visible',
+                            'opacity': '1',
+                            'min-height': '20px'
+                        });
+                    } else {
+                        // Use default description for Tasks In Progress
+                        var defaultDesc = Resources.C_ReportDescriptionTasksInProgress || '';
+                        if (defaultDesc && defaultDesc.trim() !== '') {
+
+                            $('.report-description').html(defaultDesc.replace(/\n/g, '<br>')).css({
+                                'display': 'block',
+                                'visibility': 'visible',
+                                'opacity': '1',
+                                'min-height': '20px'
+                            });
+                        } else {
+                            // Show note even if no description
+
+                            $('.report-description').css({
+                                'display': 'block',
+                                'visibility': 'visible',
+                                'opacity': '1',
+                                'min-height': '20px'
+                            });
+                        }
+                    }
+                },
+                error: function(xhr, status, error) {
+
+                    // Use default description if API call fails
+                    var defaultDesc = Resources.C_ReportDescriptionCompletedTasks || '';
+                    if (defaultDesc && defaultDesc.trim() !== '') {
+                        $('.report-description').html(defaultDesc.replace(/\n/g, '<br>')).css({
+                            'display': 'block',
+                            'visibility': 'visible',
+                            'opacity': '1',
+                            'min-height': '20px'
+                        });
+                    } else {
+                        // At least show the element
+                        $('.report-description').css({
+                            'display': 'block',
+                            'visibility': 'visible',
+                            'opacity': '1',
+                            'min-height': '20px'
+                        });
+                    }
+                }
+            });
+        }
+        
+        function ProjectonChange() {
+            var projectID = $('#cboProject').val();
+            if (projectID && projectID !== '' && projectID !== '0') {
+                $('#<%= hdnProjectID.ClientID %>').val(projectID);
+                loadResourcesForProject(projectID);
+                loadPeriodsForProject(projectID);
+            }
+        }
+        
+        function loadResourcesForProject(projectID) {
+            if (!projectID || projectID === '' || projectID === '0') {
+                return $.Deferred().resolve().promise();
+            }
+            
+            return $.ajax({
+                url: baseUrl + '/api/ReportUIBuilder/GetAllFilterDropdowns',
+                type: 'POST',
+                headers: getAjaxHeaders(),
+                data: JSON.stringify({
+                    ProjectID: parseInt(projectID),
+                    GetResources: true
+                }),
+                success: function(response) {
+                    if (response && response.success && response.data && response.data.Resources) {
+                        var $resourceSelect = $('#cboResource');
+                        $resourceSelect.empty();
+                        $resourceSelect.append('<option value=""><%= MyBase.GetResourceString("C_AllResources") %></option>');
+                        
+                        $.each(response.data.Resources, function(index, resource) {
+                            $resourceSelect.append('<option value="' + (resource.EmployeeID || resource.Id) + '">' + (resource.EmployeeName || resource.Name) + '</option>');
+                        });
+                        
+                        $resourceSelect.selectpicker('refresh');
+                    }
+                },
+                error: function(xhr, status, error) {
+
+                }
+            });
+        }
+        
+        function loadPeriods() {
+            return $.ajax({
+                url: baseUrl + '/api/ReportUIBuilder/GetAllFilterDropdowns',
+                type: 'POST',
+                headers: getAjaxHeaders(),
+                data: JSON.stringify({
+                    GetPeriods: true
+                }),
+                success: function(response) {
+                    if (response && response.success && response.data && response.data.Periods) {
+                        var $periodSelect = $('#cboPeriod');
+                        $periodSelect.empty();
+                        $periodSelect.append('<option value=""><%= MyBase.GetResourceString("C_AllPeriods") %></option>');
+                        
+                        $.each(response.data.Periods, function(index, period) {
+                            $periodSelect.append('<option value="' + (period.UniqueID || period.Id) + '">' + (period.Description || period.Name) + '</option>');
+                        });
+                        
+                        $periodSelect.selectpicker('refresh');
+                    }
+                },
+                error: function(xhr, status, error) {
+
+                }
+            });
+        }
+        
+        function loadPeriodsForProject(projectID) {
+            // Implementation for loading periods specific to project if needed
+        }
+        
+        function handleShow() {
+            var projectID = $('#cboProject').val();
+            var startDate = $('#txtStartDate').val();
+            var endDate = $('#txtEndDate').val();
+            var resourceID = $('#cboResource').val();
+            
+            if (!projectID || projectID === '' || projectID === '0') {
+                alertify.error(Resources.A_ProjectShouldNotBeBlank || 'Please select a project');
+                return;
+            }
+            
+            showLoading();
+            
+            // Build parameters object - API expects parameters nested in Parameters property
+            // Report 607 uses date filters (StartDate, EndDate) instead of Period
+            var requestData = {
+                ReportID: 607,
+                Parameters: {
+                    ProjectID: parseInt(projectID)
+                }
+            };
+            
+            if (startDate && startDate !== '') {
+                requestData.Parameters.StartDate = startDate;
+            }
+            
+            if (endDate && endDate !== '') {
+                requestData.Parameters.EndDate = endDate;
+            }
+            
+            if (resourceID && resourceID !== '' && resourceID !== '0') {
+                requestData.Parameters.ResourceID = parseInt(resourceID);
+            }
+            
+            // Load report data
+            loadReportData(requestData);
+        }
+        
+        function loadReportData(requestData) {
+
+            $.ajax({
+                url: baseUrl + '/api/ReportUIBuilder/GetReportData',
+                type: 'POST',
+                headers: getAjaxHeaders(),
+                data: JSON.stringify(requestData),
+                success: function(response) {
+                    hideLoading();
+
+                    // Handle different response structures
+                    var dataArray = [];
+                    if (response) {
+                        // Check for success flag (lowercase or uppercase) OR presence of data
+                        var hasSuccessFlag = response.success === true || response.status === 'SUCCESS' || response.Status === 'SUCCESS';
+                        var hasData = (response.data && Array.isArray(response.data) && response.data.length > 0) ||
+                                     (response.data && response.data.Data && Array.isArray(response.data.Data)) ||
+                                     (response.data && response.data.data && Array.isArray(response.data.data)) ||
+                                     (response.data && response.data.ReportData && Array.isArray(response.data.ReportData)) ||
+                                     (response.Data && Array.isArray(response.Data)) ||
+                                     (Array.isArray(response) && response.length > 0);
+                        
+                        var isSuccess = hasSuccessFlag || hasData;
+                        
+                        if (isSuccess) {
+                            // Extract data array from various possible structures
+                            if (response.data) {
+                                if (Array.isArray(response.data)) {
+                                    dataArray = response.data;
+                                } else if (response.data.Data && Array.isArray(response.data.Data)) {
+                                    dataArray = response.data.Data;
+                                } else if (response.data.data && Array.isArray(response.data.data)) {
+                                    dataArray = response.data.data;
+                                } else if (response.data.ReportData && Array.isArray(response.data.ReportData)) {
+                                    dataArray = response.data.ReportData;
+                                }
+                            } else if (response.Data && Array.isArray(response.Data)) {
+                                dataArray = response.Data;
+                            } else if (Array.isArray(response)) {
+                                dataArray = response;
+                            }
+                            
+                            if (dataArray.length > 0) {
+                                reportData = dataArray;
+                                totalRecords = reportData.length;
+                                currentPage = 1;
+
+                                displayReportData();
+                                calculateKPIs();
+                                loadCharts(requestData);
+                            } else {
+                                // No data but response structure looks successful
+                                reportData = [];
+                                totalRecords = 0;
+                                currentPage = 1;
+                                displayReportData();
+                                calculateKPIs();
+
+                            }
+                        } else {
+                            var errorMsg = response.message || response.Message || 'Failed to load report data';
+                            alertify.error(errorMsg);
+
+                        }
+                    } else {
+                        alertify.error(Resources.A_InvalidResponseFromServer || 'Invalid response from server');
+
+                    }
+                },
+                error: function(xhr, status, error) {
+                    hideLoading();
+                    var errorMessage = (Resources.A_ErrorLoadingReportData || 'Error loading report data') + ': ' + error;
+                    if (xhr.responseJSON) {
+                        if (xhr.responseJSON.message) {
+                            errorMessage = xhr.responseJSON.message;
+                        } else if (xhr.responseJSON.error) {
+                            errorMessage = xhr.responseJSON.error;
+                        } else if (xhr.responseJSON.Message) {
+                            errorMessage = xhr.responseJSON.Message;
+                        }
+                    }
+                    alertify.error(errorMessage);
+
+                }
+            });
+        }
+        
+        function displayReportData() {
+            var $tbody = $('#tblReportDataBody');
+            $tbody.empty();
+            
+            var startIndex = (currentPage - 1) * pageSize;
+            var endIndex = Math.min(startIndex + pageSize, reportData.length);
+            var pageData = reportData.slice(startIndex, endIndex);
+            
+            $.each(pageData, function(index, item) {
+                // ReportID 607 columns: TaskType, ResourceName, Efforts, EmpModulePercentage, EmpTotalPercentage
+                var taskType = item.TaskType || item.taskType || '';
+                var resourceName = item.ResourceName || item.EmployeeName || item.resourceName || item.employeeName || '';
+                var efforts = parseFloat(item.Efforts || item.efforts || 0);
+                var empModulePercentage = parseFloat(item.EmpModulePercentage || item.empModulePercentage || 0);
+                var empTotalPercentage = parseFloat(item.EmpTotalPercentage || item.empTotalPercentage || 0);
+                
+                var row = '<tr>' +
+                    '<td>' + escapeHtml(taskType) + '</td>' +
+                    '<td>' + escapeHtml(resourceName) + '</td>' +
+                    '<td>' + efforts.toFixed(2) + '</td>' +
+                    '<td>' + empModulePercentage.toFixed(2) + '%</td>' +
+                    '<td>' + empTotalPercentage.toFixed(2) + '%</td>' +
+                    '</tr>';
+                $tbody.append(row);
+            });
+            
+            // Update pagination
+            updatePagination();
+            $('#totalRecords').text(totalRecords);
+        }
+        
+        function formatDate(dateString) {
+            if (!dateString) return '';
+            var date = new Date(dateString);
+            if (isNaN(date.getTime())) return '';
+            return date.toLocaleDateString();
+        }
+        
+        function updatePagination() {
+            var totalPages = Math.ceil(totalRecords / pageSize);
+            $('#btnprevious').toggleClass('fa-disabled', currentPage <= 1);
+            $('#btnnext').toggleClass('fa-disabled', currentPage >= totalPages);
+        }
+        
+        function goToPreviousPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                displayReportData();
+            }
+        }
+        
+        function goToNextPage() {
+            var totalPages = Math.ceil(totalRecords / pageSize);
+            if (currentPage < totalPages) {
+                currentPage++;
+                displayReportData();
+            }
+        }
+        
+        function calculateKPIs() {
+            if (!reportData || reportData.length === 0) {
+                $('#kpiTotalTasks').text('0');
+                $('#kpiAvgDelay').text('0');
+                $('#kpiEffortOverrun').text('0%');
+                $('#kpiOnTime').text('0%');
+                return;
+            }
+            
+            var totalTasks = reportData.length;
+            var totalDelay = 0;
+            var totalEffortOverrun = 0;
+            var tasksOnTime = 0;
+            var tasksWithDates = 0;
+            
+            $.each(reportData, function(index, task) {
+                // Calculate delay
+                if (task.EndDate && task.ActualEndDate) {
+                    var endDate = new Date(task.EndDate);
+                    var actualEndDate = new Date(task.ActualEndDate);
+                    var delay = Math.max(0, Math.ceil((actualEndDate - endDate) / (1000 * 60 * 60 * 24)));
+                    totalDelay += delay;
+                    tasksWithDates++;
+                    
+                    if (delay === 0) {
+                        tasksOnTime++;
+                    }
+                }
+                
+                // Calculate effort overrun
+                if (task.Work && task.ActualWork) {
+                    var overrun = ((task.ActualWork - task.Work) / task.Work) * 100;
+                    totalEffortOverrun += overrun;
+                }
+            });
+            
+            var avgDelay = tasksWithDates > 0 ? Math.round(totalDelay / tasksWithDates) : 0;
+            var avgEffortOverrun = totalTasks > 0 ? Math.round(totalEffortOverrun / totalTasks) : 0;
+            var percentOnTime = totalTasks > 0 ? Math.round((tasksOnTime / totalTasks) * 100) : 0;
+            
+            $('#kpiTotalTasks').text(totalTasks);
+            $('#kpiAvgDelay').text(avgDelay);
+            $('#kpiEffortOverrun').text(avgEffortOverrun + '%');
+            $('#kpiOnTime').text(percentOnTime + '%');
+        }
+        
+        function initializeCharts() {
+            initializeChart1();
+            initializeChart2();
+            initializeChart3();
+        }
+        
+        function initializeChart1() {
+            try {
+                var canvas1 = document.getElementById('chart1');
+                if (!canvas1) {
+                    return;
+                }
+                
+                // CRITICAL FIX: Properly destroy existing chart if it exists
+                if (chartInstances.chart1) {
+                    try {
+                        chartInstances.chart1.destroy();
+                    } catch (e) {}
+                    chartInstances.chart1 = null;
+                }
+                
+                if (typeof Chart !== 'undefined') {
+                    var chartId = canvas1.id;
+                    if (Chart.instances && Chart.instances[chartId]) {
+                        try {
+                            Chart.instances[chartId].destroy();
+                            delete Chart.instances[chartId];
+                        } catch (e) {}
+                    }
+                    try {
+                        var existingChart = Chart.getChart(canvas1);
+                        if (existingChart) {
+                            existingChart.destroy();
+                        }
+                    } catch (e) {}
+                }
+                if (canvas1.chart) {
+                    try {
+                        canvas1.chart.destroy();
+                        canvas1.chart = null;
+                    } catch (e) {}
+                }
+                if (canvas1.hasAttribute && canvas1.hasAttribute('data-chartjs-chart')) {
+                    canvas1.removeAttribute('data-chartjs-chart');
+                }
+                
+                var ctx1 = canvas1.getContext('2d');
+                chartInstances.chart1 = new Chart(ctx1, {
+                    type: 'bar',
+                    data: {
+                        labels: ['R1', 'R2', 'R3', 'R4', 'R5'],
+                        datasets: [{
+                            label: 'In Progress',
+                            data: [100, 100, 100, 100, 100],
+                            backgroundColor: '#3b82f6'
+                        }, {
+                            label: 'Completed',
+                            data: [40, 60, 80, 70, 50],
+                            backgroundColor: '#f97316'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: true,
+                                position: 'top',
+                                labels: {
+                                    font: {
+                                        size: 8
+                                    },
+                                    boxWidth: 10,
+                                    padding: 5
+                                }
+                            },
+                            tooltip: {
+                                mode: 'index',
+                                intersect: false,
+                                titleFont: {
+                                    size: 11
+                                },
+                                bodyFont: {
+                                    size: 10
+                                },
+                                callbacks: {
+                                    label: function(context) {
+                                        var label = context.dataset.label || '';
+                                        var value = parseFloat(context.parsed.y) || 0;
+                                        var resourceName = context.label || '';
+                                        
+                                        // Check if this is Report 607 (has 4 datasets for task types)
+                                        var isReport607 = context.chart.data.datasets.length >= 4;
+                                        
+                                        if (isReport607) {
+                                            // Report 607: Stacked bar chart with task types
+                                            // Get total work from stored data if available
+                                            var totalWork = 0;
+                                            if (context.chart.data.totalWork && context.chart.data.totalWork[context.dataIndex] !== undefined) {
+                                                totalWork = parseFloat(context.chart.data.totalWork[context.dataIndex]) || 0;
+                                            }
+                                            
+                                            // Calculate total from all datasets if not stored
+                                            if (totalWork === 0) {
+                                                for (var i = 0; i < context.chart.data.datasets.length; i++) {
+                                                    if (context.chart.data.datasets[i].data[context.dataIndex] !== undefined) {
+                                                        totalWork += parseFloat(context.chart.data.datasets[i].data[context.dataIndex]) || 0;
+                                                    }
+                                                }
+                                            }
+                                            
+                                            // Get values from other datasets for breakdown
+                                            var childTask = context.chart.data.datasets[0] && context.chart.data.datasets[0].data[context.dataIndex] !== undefined ? parseFloat(context.chart.data.datasets[0].data[context.dataIndex]) || 0 : 0;
+                                            var mppTask = context.chart.data.datasets[1] && context.chart.data.datasets[1].data[context.dataIndex] !== undefined ? parseFloat(context.chart.data.datasets[1].data[context.dataIndex]) || 0 : 0;
+                                            var bulkTask = context.chart.data.datasets[2] && context.chart.data.datasets[2].data[context.dataIndex] !== undefined ? parseFloat(context.chart.data.datasets[2].data[context.dataIndex]) || 0 : 0;
+                                            var issueTask = context.chart.data.datasets[3] && context.chart.data.datasets[3].data[context.dataIndex] !== undefined ? parseFloat(context.chart.data.datasets[3].data[context.dataIndex]) || 0 : 0;
+                                            
+                                            return resourceName + ':\n' + label + ': ' + value.toFixed(2) + ' hrs\n' +
+                                                   'Child Task: ' + childTask.toFixed(2) + ' hrs\n' +
+                                                   'MPP Task: ' + mppTask.toFixed(2) + ' hrs\n' +
+                                                   'Bulk Task: ' + bulkTask.toFixed(2) + ' hrs\n' +
+                                                   'Issue Task: ' + issueTask.toFixed(2) + ' hrs\n' +
+                                                   'Total Work: ' + totalWork.toFixed(2) + ' hrs';
+                                        } else {
+                                            // Standard 2-dataset chart (In Progress/Completed)
+                                            // Get total tasks from stored data if available
+                                            var totalValue = 0;
+                                            if (context.chart.data.totalTasks && context.chart.data.totalTasks[context.dataIndex] !== undefined) {
+                                                totalValue = parseInt(context.chart.data.totalTasks[context.dataIndex]) || 0;
+                                            }
+                                            
+                                        if (context.datasetIndex === 0) {
+                                            var completedValue = 0;
+                                            if (context.chart.data.datasets[1] && 
+                                                context.chart.data.datasets[1].data[context.dataIndex] !== undefined) {
+                                                completedValue = parseInt(context.chart.data.datasets[1].data[context.dataIndex]) || 0;
+                                            }
+                                                // Use stored total if available, otherwise calculate
+                                                if (totalValue === 0) {
+                                                    totalValue = value + completedValue;
+                                                }
+                                                return resourceName + ':\nIn Progress: ' + value + '\nCompleted: ' + completedValue + '\nTotal tasks: ' + totalValue;
+                                        } else if (context.datasetIndex === 1) {
+                                            var remainingValue = 0;
+                                            if (context.chart.data.datasets[0] && 
+                                                context.chart.data.datasets[0].data[context.dataIndex] !== undefined) {
+                                                remainingValue = parseInt(context.chart.data.datasets[0].data[context.dataIndex]) || 0;
+                                            }
+                                                // Use stored total if available, otherwise calculate
+                                                if (totalValue === 0) {
+                                                    totalValue = value + remainingValue;
+                                        }
+                                                return resourceName + ':\nCompleted: ' + value + '\nIn Progress: ' + remainingValue + '\nTotal tasks: ' + totalValue;
+                                            }
+                                        }
+                                        return resourceName + ':\n' + label + ': ' + value;
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                stacked: true,
+                                categoryPercentage: 0.4,
+                                barPercentage: 0.4,
+                                ticks: {
+                                    font: {
+                                        size: 7
+                                    },
+                                    maxRotation: 45,
+                                    minRotation: 0
+                                },
+                                title: {
+                                    display: false
+                                }
+                            },
+                            y: {
+                                stacked: true,
+                                beginAtZero: true,
+                                min: 0,
+                                max: 100,
+                                ticks: {
+                                    stepSize: 5,
+                                    precision: 0,
+                                    display: true,
+                                    autoSkip: true,
+                                    maxTicksLimit: 11,
+                                    min: 0,
+                                    font: {
+                                        size: 7
+                                    },
+                                    callback: function(value, index, values) {
+                                        if (value === undefined || value === null || isNaN(value)) {
+                                            return '';
+                                        }
+                                        return value.toString();
+                                    }
+                                },
+                                grid: {
+                                    display: true,
+                                    drawBorder: true
+                                },
+                                afterBuildTicks: function(scale) {
+                                    scale.ticks = [];
+                                    var step = (scale.options && scale.options.ticks && scale.options.ticks.stepSize) ? scale.options.ticks.stepSize : 5;
+                                    var max = (scale.max !== undefined && scale.max !== null && !isNaN(scale.max)) ? scale.max : 100;
+                                    if (max > 0 && step > 0) {
+                                        for (var i = 0; i <= max; i += step) {
+                                            scale.ticks.push({ value: i });
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            } catch (error) {
+            }
+        }
+        
+        function initializeChart2() {
+            try {
+                var canvas2 = document.getElementById('chart2');
+                if (!canvas2) {
+                    return;
+                }
+                
+                if (chartInstances.chart2) {
+                    try {
+                        chartInstances.chart2.destroy();
+                    } catch (e) {}
+                    chartInstances.chart2 = null;
+                }
+                
+                if (typeof Chart !== 'undefined') {
+                    var chartId = canvas2.id;
+                    if (Chart.instances && Chart.instances[chartId]) {
+                        try {
+                            Chart.instances[chartId].destroy();
+                            delete Chart.instances[chartId];
+                        } catch (e) {}
+                    }
+                    try {
+                        var existingChart = Chart.getChart(canvas2);
+                        if (existingChart) {
+                            existingChart.destroy();
+                        }
+                    } catch (e) {}
+                }
+                if (canvas2.chart) {
+                    try {
+                        canvas2.chart.destroy();
+                        canvas2.chart = null;
+                    } catch (e) {}
+                }
+                
+                var ctx2 = canvas2.getContext('2d');
+                chartInstances.chart2 = new Chart(ctx2, {
+                    type: 'bar',
+                    data: {
+                        labels: [],
+                        datasets: [{
+                            label: 'Total',
+                            data: [],
+                            backgroundColor: '#3b82f6'
+                        }, {
+                            label: 'Overrun',
+                            data: [],
+                            backgroundColor: '#f97316'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: true,
+                                position: 'top',
+                                labels: {
+                                    font: {
+                                        size: 8
+                                    },
+                                    boxWidth: 10,
+                                    padding: 5
+                                }
+                            },
+                            tooltip: {
+                                mode: 'index',
+                                intersect: false,
+                                titleFont: {
+                                    size: 11
+                                },
+                                bodyFont: {
+                                    size: 10
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                stacked: false,
+                                categoryPercentage: 0.4,
+                                barPercentage: 0.4,
+                                ticks: {
+                                    font: {
+                                        size: 7
+                                    },
+                                    maxRotation: 45,
+                                    minRotation: 0
+                                },
+                                title: {
+                                    display: false
+                                }
+                            },
+                            y: {
+                                stacked: false,
+                                beginAtZero: true,
+                                min: 0,
+                                max: 15,
+                                ticks: {
+                                    stepSize: 5,
+                                    precision: 0,
+                                    display: true,
+                                    autoSkip: true,
+                                    maxTicksLimit: 11,
+                                    min: 0,
+                                    font: {
+                                        size: 7
+                                    },
+                                    callback: function(value, index, values) {
+                                        if (value === undefined || value === null || isNaN(value)) {
+                                            return '';
+                                        }
+                                        return value.toString();
+                                    }
+                                },
+                                grid: {
+                                    display: true,
+                                    drawBorder: true
+                                },
+                                afterBuildTicks: function(scale) {
+                                    scale.ticks = [];
+                                    var step = (scale.options && scale.options.ticks && scale.options.ticks.stepSize) ? scale.options.ticks.stepSize : 5;
+                                    var max = (scale.max !== undefined && scale.max !== null && !isNaN(scale.max)) ? scale.max : 15;
+                                    if (max > 0 && step > 0) {
+                                        for (var i = 0; i <= max; i += step) {
+                                            scale.ticks.push({ value: i });
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            } catch (error) {
+            }
+        }
+        
+        function initializeChart3() {
+            try {
+                var canvas3 = document.getElementById('chart3');
+                if (!canvas3) {
+                    return;
+                }
+                
+                if (chartInstances.chart3) {
+                    try {
+                        chartInstances.chart3.destroy();
+                    } catch (e) {}
+                    chartInstances.chart3 = null;
+                }
+                
+                if (typeof Chart !== 'undefined') {
+                    var chartId = canvas3.id;
+                    if (Chart.instances && Chart.instances[chartId]) {
+                        try {
+                            Chart.instances[chartId].destroy();
+                            delete Chart.instances[chartId];
+                        } catch (e) {}
+                    }
+                    try {
+                        var existingChart = Chart.getChart(canvas3);
+                        if (existingChart) {
+                            existingChart.destroy();
+                        }
+                    } catch (e) {}
+                }
+                if (canvas3.chart) {
+                    try {
+                        canvas3.chart.destroy();
+                        canvas3.chart = null;
+                    } catch (e) {}
+                }
+                
+                var ctx3 = canvas3.getContext('2d');
+                chartInstances.chart3 = new Chart(ctx3, {
+                    type: 'bar',
+                    data: {
+                        labels: ['R1', 'R2', 'R3', 'R4', 'R5'],
+                        datasets: [{
+                            label: 'Total Tasks',
+                            data: [10, 8, 12, 6, 5],
+                            backgroundColor: '#3b82f6'
+                        }, {
+                            label: 'Schedule Variance',
+                            data: [4, 3, 6, 2, 2],
+                            backgroundColor: '#f97316'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: true,
+                                position: 'top',
+                                labels: {
+                                    font: {
+                                        size: 8
+                                    },
+                                    boxWidth: 10,
+                                    padding: 5
+                                }
+                            },
+                            tooltip: {
+                                mode: 'index',
+                                intersect: false,
+                                titleFont: {
+                                    size: 11
+                                },
+                                bodyFont: {
+                                    size: 10
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                stacked: false,
+                                categoryPercentage: 0.4,
+                                barPercentage: 0.4,
+                                ticks: {
+                                    font: {
+                                        size: 7
+                                    },
+                                    maxRotation: 45,
+                                    minRotation: 0
+                                },
+                                title: {
+                                    display: false
+                                }
+                            },
+                            y: {
+                                stacked: false,
+                                beginAtZero: true,
+                                min: 0,
+                                max: 15,
+                                ticks: {
+                                    stepSize: 5,
+                                    precision: 0,
+                                    display: true,
+                                    autoSkip: true,
+                                    maxTicksLimit: 11,
+                                    min: 0,
+                                    font: {
+                                        size: 7
+                                    },
+                                    callback: function(value, index, values) {
+                                        if (value === undefined || value === null || isNaN(value)) {
+                                            return '';
+                                        }
+                                        return value.toString();
+                                    }
+                                },
+                                grid: {
+                                    display: true,
+                                    drawBorder: true
+                                },
+                                afterBuildTicks: function(scale) {
+                                    scale.ticks = [];
+                                    var step = (scale.options && scale.options.ticks && scale.options.ticks.stepSize) ? scale.options.ticks.stepSize : 5;
+                                    var max = (scale.max !== undefined && scale.max !== null && !isNaN(scale.max)) ? scale.max : 15;
+                                    if (max > 0 && step > 0) {
+                                        for (var i = 0; i <= max; i += step) {
+                                            scale.ticks.push({ value: i });
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            } catch (error) {
+            }
+        }
+        
+        function loadCharts(requestData) {
+            // Load chart data from API - Report 607 uses specific APIs
+            var reportId = requestData.ReportID || 607;
+            var parameters = requestData.Parameters || {};
+            
+            // Build parameters object for Report 607 (uses date filters, not period)
+            var chartParameters = {};
+            if (parameters.ProjectID) {
+                chartParameters.ProjectID = parameters.ProjectID;
+            }
+            // Report 607 uses StartDate and EndDate, not Period
+            if (parameters.StartDate) {
+                chartParameters.StartDate = parameters.StartDate;
+            }
+            if (parameters.EndDate) {
+                chartParameters.EndDate = parameters.EndDate;
+            }
+            if (parameters.ResourceID) {
+                chartParameters.ResourceID = parameters.ResourceID;
+            }
+            
+            // Load all 3 charts from API using Report 607 specific endpoints
+            loadChart1FromAPI(reportId, chartParameters);
+            loadChart2FromAPI(reportId, chartParameters);
+            loadChart3FromAPI(reportId, chartParameters);
+        }
+        
+        function loadChart1FromAPI(reportId, parameters) {
+            // ProjectID is required
+            if (!parameters.ProjectID || parameters.ProjectID === '' || parameters.ProjectID === '0') {
+                return;
+            }
+            
+            // Build request data for Report 607 API (uses date filters)
+            var requestData = {
+                ProjectID: parseInt(parameters.ProjectID),
+                StartDate: parameters.StartDate || null,
+                EndDate: parameters.EndDate || null,
+                StrEmployeeIDs: parameters.ResourceID ? parameters.ResourceID.toString() : null
+            };
+            
+            $.ajax({
+                url: baseUrl + '/api/ReportUIBuilder/GetResourcesActualWorkByTaskType',
+                type: 'POST',
+                headers: getAjaxHeaders(),
+                data: JSON.stringify(requestData),
+                success: function(response) {
+                    
+                    // Extract chart data from response
+                    var chartData = null;
+                    if (response && response.data) {
+                        if (response.data.data && Array.isArray(response.data.data.ResourcesActualWorkByTaskTypeResponse)) {
+                            chartData = response.data.data.ResourcesActualWorkByTaskTypeResponse;
+                        } else if (response.data.ResourcesActualWorkByTaskTypeResponse && Array.isArray(response.data.ResourcesActualWorkByTaskTypeResponse)) {
+                            chartData = response.data.ResourcesActualWorkByTaskTypeResponse;
+                        } else if (Array.isArray(response.data)) {
+                        chartData = response.data;
+                    }
+                    } else if (Array.isArray(response)) {
+                        chartData = response;
+                    }
+                    
+                    if (chartData && Array.isArray(chartData) && chartData.length > 0) {
+                        // Process chart data for Chart.js
+                        // Chart 1: Stacked bar chart showing Actual Work by Task Type for each Resource
+                        // Data structure: [{ ResourceName, TaskType, ActualWork, TotalWorkPerResource }, ...]
+                        
+                        // Group data by ResourceName
+                        var resourceGroups = {};
+                        chartData.forEach(function(item) {
+                            var resourceName = item.ResourceName || item.resourceName || '';
+                            var taskType = item.TaskType || item.taskType || '';
+                            var actualWork = parseFloat(item.ActualWork || item.actualWork || 0);
+                            
+                            if (!resourceGroups[resourceName]) {
+                                resourceGroups[resourceName] = {
+                                    ChildTask: 0,
+                                    MPPTask: 0,
+                                    BulkTask: 0,
+                                    IssueTask: 0,
+                                    Total: 0
+                                };
+                            }
+                            
+                            // Map task types to dataset names
+                            if (taskType && taskType.toLowerCase) {
+                                var taskTypeLower = taskType.toLowerCase();
+                                if (taskTypeLower.indexOf('child') !== -1) {
+                                    resourceGroups[resourceName].ChildTask += actualWork;
+                                } else if (taskTypeLower.indexOf('mpp') !== -1) {
+                                    resourceGroups[resourceName].MPPTask += actualWork;
+                                } else if (taskTypeLower.indexOf('bulk') !== -1) {
+                                    resourceGroups[resourceName].BulkTask += actualWork;
+                                } else if (taskTypeLower.indexOf('issue') !== -1) {
+                                    resourceGroups[resourceName].IssueTask += actualWork;
+                                }
+                            }
+                            
+                            resourceGroups[resourceName].Total += actualWork;
+                        });
+                        
+                        // Get top 5 resources by total work
+                        var sortedResources = Object.keys(resourceGroups).sort(function(a, b) {
+                            return resourceGroups[b].Total - resourceGroups[a].Total;
+                        }).slice(0, 5);
+                        
+                        // Prepare data for Chart.js
+                        var labels = sortedResources;
+                        var childTaskData = sortedResources.map(function(r) { return resourceGroups[r].ChildTask || 0; });
+                        var mppTaskData = sortedResources.map(function(r) { return resourceGroups[r].MPPTask || 0; });
+                        var bulkTaskData = sortedResources.map(function(r) { return resourceGroups[r].BulkTask || 0; });
+                        var issueTaskData = sortedResources.map(function(r) { return resourceGroups[r].IssueTask || 0; });
+                        var totalWorkData = sortedResources.map(function(r) { return resourceGroups[r].Total || 0; });
+                        
+                        
+                        // Update Chart 1 with stacked bar data
+                        updateChart1ForReport607(labels, childTaskData, mppTaskData, bulkTaskData, issueTaskData, totalWorkData);
+                    } else {
+                        updateChart1ForReport607([], [], [], [], [], []);
+                    }
+                },
+                error: function(xhr, status, error) {
+
+                    updateChart1ForReport607([], [], [], [], [], []);
+                }
+            });
+        }
+        
+        function loadChart2FromAPI(reportId, parameters) {
+            // ProjectID is required
+            if (!parameters.ProjectID || parameters.ProjectID === '' || parameters.ProjectID === '0') {
+                return;
+            }
+            
+            // Build request data for Report 607 API (uses date filters)
+            var requestData = {
+                ProjectID: parseInt(parameters.ProjectID),
+                StartDate: parameters.StartDate || null,
+                EndDate: parameters.EndDate || null,
+                StrEmployeeIDs: parameters.ResourceID ? parameters.ResourceID.toString() : null
+            };
+            
+            $.ajax({
+                url: baseUrl + '/api/ReportUIBuilder/GetResourcesAverageEffortOverrun',
+                type: 'POST',
+                headers: getAjaxHeaders(),
+                data: JSON.stringify(requestData),
+                success: function(response) {
+                    
+                    // Extract chart data from response
+                    var chartData = null;
+                    if (response && response.data) {
+                        if (response.data.data && Array.isArray(response.data.data.ResourcesAverageEffortOverrunResponse)) {
+                            chartData = response.data.data.ResourcesAverageEffortOverrunResponse;
+                        } else if (response.data.ResourcesAverageEffortOverrunResponse && Array.isArray(response.data.ResourcesAverageEffortOverrunResponse)) {
+                            chartData = response.data.ResourcesAverageEffortOverrunResponse;
+                        } else if (Array.isArray(response.data)) {
+                        chartData = response.data;
+                    }
+                    } else if (Array.isArray(response)) {
+                        chartData = response;
+                    }
+                    
+                    if (chartData && Array.isArray(chartData) && chartData.length > 0) {
+                        // Process chart data for Chart.js
+                        // Chart 2: Bar chart showing Planned Work vs Actual Work for each Resource
+                        // Data structure: [{ ResourceName, AverageEffortOverrunPercent, PlannedWork, ActualWork }, ...]
+                        
+                        // Sort by total work (PlannedWork + ActualWork) and get top 5
+                        var sortedData = chartData.slice().sort(function(a, b) {
+                            var totalA = (parseFloat(a.PlannedWork || a.plannedWork || 0) + parseFloat(a.ActualWork || a.actualWork || 0));
+                            var totalB = (parseFloat(b.PlannedWork || b.plannedWork || 0) + parseFloat(b.ActualWork || b.actualWork || 0));
+                            return totalB - totalA;
+                        }).slice(0, 5);
+                        
+                        // Extract data for Chart.js
+                        var labels = sortedData.map(function(item) {
+                            return item.ResourceName || item.resourceName || '';
+                        });
+                        var plannedWorkData = sortedData.map(function(item) {
+                            return parseFloat(item.PlannedWork || item.plannedWork || 0);
+                        });
+                        var actualWorkData = sortedData.map(function(item) {
+                            return parseFloat(item.ActualWork || item.actualWork || 0);
+                        });
+                        var totalWorkData = plannedWorkData.map(function(planned, index) {
+                            return planned + actualWorkData[index];
+                        });
+                        
+                        
+                        // Update Chart 2 with Planned Work vs Actual Work
+                        updateChart2ForReport607(labels, plannedWorkData, actualWorkData, totalWorkData);
+                    } else {
+                        updateChart2ForReport607([], [], [], []);
+                    }
+                },
+                error: function(xhr, status, error) {
+
+                    updateChart2ForReport607([], [], [], []);
+                }
+            });
+        }
+        
+        function loadChart3FromAPI(reportId, parameters) {
+            // ProjectID is required
+            if (!parameters.ProjectID || parameters.ProjectID === '' || parameters.ProjectID === '0') {
+                return;
+            }
+            
+            // Build request data for Report 607 API (uses date filters)
+            var requestData = {
+                ProjectID: parseInt(parameters.ProjectID),
+                StartDate: parameters.StartDate || null,
+                EndDate: parameters.EndDate || null,
+                StrEmployeeIDs: parameters.ResourceID ? parameters.ResourceID.toString() : null
+            };
+            
+            $.ajax({
+                url: baseUrl + '/api/ReportUIBuilder/GetResourcesScheduleVariance',
+                type: 'POST',
+                headers: getAjaxHeaders(),
+                data: JSON.stringify(requestData),
+                success: function(response) {
+                    
+                    // Extract chart data from response
+                    var chartData = null;
+                    if (response && response.data) {
+                        if (response.data.data && Array.isArray(response.data.data)) {
+                            chartData = response.data.data;
+                        } else if (response.data.ResourcesScheduleVarianceResponse && Array.isArray(response.data.ResourcesScheduleVarianceResponse)) {
+                            chartData = response.data.ResourcesScheduleVarianceResponse;
+                        } else if (Array.isArray(response.data)) {
+                        chartData = response.data;
+                    }
+                    } else if (Array.isArray(response)) {
+                        chartData = response;
+                    }
+                    
+                    if (chartData && Array.isArray(chartData)) {
+                        if (chartData.length === 0) {
+                            updateChart3ForReport607([], [], []);
+                            return;
+                        }
+                        
+                        // Process chart data for Chart.js
+                        // Chart 3: Bar chart showing Total Tasks vs Schedule Variance (or Delayed Tasks) for each Resource
+                        // Data structure: [{ ResourceName, ScheduleVariance, TotalTasks, DelayedTasks }, ...]
+                        
+                        // Sort by TotalTasks and get top 5
+                        var sortedData = chartData.slice().sort(function(a, b) {
+                            var totalA = parseInt(a.TotalTasks || a.totalTasks || 0);
+                            var totalB = parseInt(b.TotalTasks || b.totalTasks || 0);
+                            return totalB - totalA;
+                        }).slice(0, 5);
+                        
+                        // Extract data for Chart.js
+                        var labels = sortedData.map(function(item) {
+                            return item.ResourceName || item.resourceName || '';
+                        });
+                        var totalTasksData = sortedData.map(function(item) {
+                            return parseInt(item.TotalTasks || item.totalTasks || 0);
+                        });
+                        var scheduleVarianceData = sortedData.map(function(item) {
+                            // Use DelayedTasks if available (it's an int), otherwise use ScheduleVariance (it's a double)
+                            if (item.DelayedTasks !== undefined && item.DelayedTasks !== null) {
+                                return parseInt(item.DelayedTasks || item.delayedTasks || 0);
+                            } else {
+                                // ScheduleVariance is a double, but for chart display we can use it as-is or round it
+                                return Math.round(parseFloat(item.ScheduleVariance || item.scheduleVariance || 0));
+                            }
+                        });
+                        
+                        
+                        updateChart3ForReport607(labels, totalTasksData, scheduleVarianceData);
+                    } else {
+                        updateChart3ForReport607([], [], []);
+                    }
+                },
+                error: function(xhr, status, error) {
+
+                    updateChart3ForReport607([], [], []);
+                }
+            });
+        }
+        
+        function updateChart1(labels, totalTasks, completedTasks) {
+            if (!chartInstances.chart1) {
+                initializeChart1();
+            }
+            
+            if (!chartInstances.chart1) {
+                return;
+            }
+            
+            // Ensure arrays are the same length
+            var maxLength = Math.max(labels.length, totalTasks.length, completedTasks.length);
+            var safeLabels = labels.slice(0, maxLength);
+            var safeTotalTasks = totalTasks.slice(0, maxLength);
+            var safeCompletedTasks = completedTasks.slice(0, maxLength);
+            
+            // Pad arrays if needed
+            while (safeLabels.length < maxLength) safeLabels.push('');
+            while (safeTotalTasks.length < maxLength) safeTotalTasks.push(0);
+            while (safeCompletedTasks.length < maxLength) safeCompletedTasks.push(0);
+            
+            // Sanitize data arrays
+            safeTotalTasks = safeTotalTasks.map(function(v) { 
+                var num = parseInt(v);
+                return (isNaN(num) || num === null || num === undefined) ? 0 : num;
+            });
+            safeCompletedTasks = safeCompletedTasks.map(function(v) { 
+                var num = parseInt(v);
+                return (isNaN(num) || num === null || num === undefined) ? 0 : num;
+            });
+            safeLabels = safeLabels.map(function(v) { 
+                return (v === undefined || v === null) ? '' : String(v);
+            });
+            
+            chartInstances.chart1.data.labels = safeLabels;
+            
+            // For stacked bar chart, dataset[0] should be "Remaining" (Total - Completed)
+            var safeRemainingTasks = safeTotalTasks.map(function(total, index) {
+                var totalVal = parseInt(total) || 0;
+                var completedVal = parseInt(safeCompletedTasks[index]) || 0;
+                return Math.max(0, totalVal - completedVal);
+            });
+            
+            chartInstances.chart1.data.datasets[0].data = safeRemainingTasks;
+            chartInstances.chart1.data.datasets[1].data = safeCompletedTasks;
+            chartInstances.chart1.data.datasets[0].label = 'In Progress';
+            chartInstances.chart1.data.datasets[1].label = 'Completed';
+            
+            // Update max value for Y-axis
+            var allValues = safeTotalTasks.map(function(v) { return parseInt(v) || 0; });
+            var maxValue = allValues.length > 0 ? Math.max.apply(null, allValues) : 0;
+            
+            var calculatedMax, stepSize;
+            if (maxValue > 0) {
+                calculatedMax = Math.ceil(maxValue * 1.2);
+                calculatedMax = Math.ceil(calculatedMax / 5) * 5;
+                stepSize = 5;
+            } else {
+                calculatedMax = 10;
+                stepSize = 5;
+            }
+            
+            chartInstances.chart1.options.scales.y.min = 0;
+            chartInstances.chart1.options.scales.y.max = calculatedMax;
+            
+            if (!chartInstances.chart1.options.scales.y.ticks) {
+                chartInstances.chart1.options.scales.y.ticks = {};
+            }
+            if (!chartInstances.chart1.options.scales.y.ticks.font) {
+                chartInstances.chart1.options.scales.y.ticks.font = {};
+            }
+            
+            chartInstances.chart1.options.scales.y.ticks.stepSize = stepSize;
+            chartInstances.chart1.options.scales.y.ticks.display = true;
+            chartInstances.chart1.options.scales.y.ticks.autoSkip = true;
+            chartInstances.chart1.options.scales.y.ticks.min = 0;
+            chartInstances.chart1.options.scales.y.ticks.max = calculatedMax;
+            var maxTicks = Math.min(Math.ceil(calculatedMax / stepSize) + 1, 11);
+            chartInstances.chart1.options.scales.y.ticks.maxTicksLimit = maxTicks;
+            chartInstances.chart1.options.scales.y.ticks.font.size = 7;
+            
+            if (!chartInstances.chart1.options.scales.x.ticks) {
+                chartInstances.chart1.options.scales.x.ticks = {};
+            }
+            if (!chartInstances.chart1.options.scales.x.ticks.font) {
+                chartInstances.chart1.options.scales.x.ticks.font = {};
+            }
+            chartInstances.chart1.options.scales.x.ticks.font.size = 7;
+            chartInstances.chart1.options.scales.x.ticks.maxRotation = 45;
+            chartInstances.chart1.options.scales.x.ticks.minRotation = 0;
+            
+            if (!chartInstances.chart1.options.plugins.legend) {
+                chartInstances.chart1.options.plugins.legend = {};
+            }
+            if (!chartInstances.chart1.options.plugins.legend.labels) {
+                chartInstances.chart1.options.plugins.legend.labels = {};
+            }
+            if (!chartInstances.chart1.options.plugins.legend.labels.font) {
+                chartInstances.chart1.options.plugins.legend.labels.font = {};
+            }
+            chartInstances.chart1.options.plugins.legend.labels.font.size = 8;
+            chartInstances.chart1.options.plugins.legend.labels.boxWidth = 10;
+            chartInstances.chart1.options.plugins.legend.labels.padding = 5;
+            
+            chartInstances.chart1.options.scales.y.afterBuildTicks = function(scale) {
+                scale.ticks = [];
+                var max = (calculatedMax !== undefined && calculatedMax !== null && !isNaN(calculatedMax)) ? calculatedMax : 10;
+                var step = 5;
+                if (max > 0 && step > 0) {
+                    for (var i = 0; i <= max; i += step) {
+                        scale.ticks.push({ value: i });
+                    }
+                }
+            };
+            
+            if (!chartInstances.chart1.options.scales.y.ticks.callback) {
+                chartInstances.chart1.options.scales.y.ticks.callback = function(value, index, values) {
+                    if (value === undefined || value === null || isNaN(value)) {
+                        return '';
+                    }
+                    return value.toString();
+                };
+            }
+            
+            chartInstances.chart1.update('none');
+        }
+        
+        function updateChart2(labels, totalTasks, overrunTasks) {
+            if (!chartInstances.chart2) {
+                initializeChart2();
+            }
+            
+            if (!chartInstances.chart2) {
+                return;
+            }
+            
+            // Ensure arrays are the same length
+            var maxLength = Math.max(labels.length, totalTasks.length, overrunTasks.length);
+            var safeLabels = labels.slice(0, maxLength);
+            var safeTotalTasks = totalTasks.slice(0, maxLength).map(function(v) { return parseInt(v) || 0; });
+            var safeOverrunTasks = overrunTasks.slice(0, maxLength).map(function(v) { return parseInt(v) || 0; });
+            
+            // Pad arrays if needed
+            if (maxLength > 0) {
+                while (safeLabels.length < maxLength) safeLabels.push('');
+                while (safeTotalTasks.length < maxLength) safeTotalTasks.push(0);
+                while (safeOverrunTasks.length < maxLength) safeOverrunTasks.push(0);
+            }
+            
+            chartInstances.chart2.data.labels = safeLabels;
+            chartInstances.chart2.data.datasets[0].data = safeTotalTasks;
+            chartInstances.chart2.data.datasets[1].data = safeOverrunTasks;
+            chartInstances.chart2.data.datasets[0].label = 'Total';
+            chartInstances.chart2.data.datasets[1].label = 'Overrun';
+            
+            // Update max value for Y-axis
+            var allValues = safeTotalTasks.concat(safeOverrunTasks);
+            var maxValue = allValues.length > 0 ? Math.max.apply(null, allValues) : 0;
+            
+            var calculatedMax;
+            if (maxValue > 0) {
+                calculatedMax = Math.ceil(maxValue * 1.2);
+                calculatedMax = Math.ceil(calculatedMax / 5) * 5;
+            } else {
+                calculatedMax = 10;
+            }
+            
+            chartInstances.chart2.options.scales.y.min = 0;
+            chartInstances.chart2.options.scales.y.max = calculatedMax;
+            
+            if (!chartInstances.chart2.options.scales.y.ticks) {
+                chartInstances.chart2.options.scales.y.ticks = {};
+            }
+            if (!chartInstances.chart2.options.scales.y.ticks.font) {
+                chartInstances.chart2.options.scales.y.ticks.font = {};
+            }
+            
+            chartInstances.chart2.options.scales.y.ticks.stepSize = 5;
+            chartInstances.chart2.options.scales.y.ticks.display = true;
+            chartInstances.chart2.options.scales.y.ticks.autoSkip = true;
+            chartInstances.chart2.options.scales.y.ticks.min = 0;
+            chartInstances.chart2.options.scales.y.ticks.max = calculatedMax;
+            var maxTicks = Math.min(Math.ceil(calculatedMax / 5) + 1, 11);
+            chartInstances.chart2.options.scales.y.ticks.maxTicksLimit = maxTicks;
+            chartInstances.chart2.options.scales.y.ticks.font.size = 7;
+            
+            if (!chartInstances.chart2.options.scales.x.ticks) {
+                chartInstances.chart2.options.scales.x.ticks = {};
+            }
+            if (!chartInstances.chart2.options.scales.x.ticks.font) {
+                chartInstances.chart2.options.scales.x.ticks.font = {};
+            }
+            chartInstances.chart2.options.scales.x.ticks.font.size = 7;
+            chartInstances.chart2.options.scales.x.ticks.maxRotation = 45;
+            chartInstances.chart2.options.scales.x.ticks.minRotation = 0;
+            
+            if (!chartInstances.chart2.options.plugins.legend) {
+                chartInstances.chart2.options.plugins.legend = {};
+            }
+            if (!chartInstances.chart2.options.plugins.legend.labels) {
+                chartInstances.chart2.options.plugins.legend.labels = {};
+            }
+            if (!chartInstances.chart2.options.plugins.legend.labels.font) {
+                chartInstances.chart2.options.plugins.legend.labels.font = {};
+            }
+            chartInstances.chart2.options.plugins.legend.labels.font.size = 8;
+            chartInstances.chart2.options.plugins.legend.labels.boxWidth = 10;
+            chartInstances.chart2.options.plugins.legend.labels.padding = 5;
+            
+            chartInstances.chart2.options.scales.y.afterBuildTicks = function(scale) {
+                scale.ticks = [];
+                var max = (calculatedMax !== undefined && calculatedMax !== null && !isNaN(calculatedMax)) ? calculatedMax : 10;
+                var step = 5;
+                if (max > 0 && step > 0) {
+                    for (var i = 0; i <= max; i += step) {
+                        scale.ticks.push({ value: i });
+                    }
+                }
+            };
+            
+            chartInstances.chart2.options.scales.x.stacked = false;
+            chartInstances.chart2.options.scales.y.stacked = false;
+            
+            chartInstances.chart2.update('none');
+        }
+        
+        function updateChart3(labels, totalTasks, scheduleVarianceTasks) {
+            if (!chartInstances.chart3) {
+                initializeChart3();
+            }
+            
+            if (!chartInstances.chart3) {
+                return;
+            }
+            
+            // Ensure arrays are the same length
+            var maxLength = Math.max(labels.length, totalTasks.length, scheduleVarianceTasks.length);
+            var safeLabels = labels.slice(0, maxLength);
+            var safeTotalTasks = totalTasks.slice(0, maxLength).map(function(v) { return parseInt(v) || 0; });
+            var safeScheduleVarianceTasks = scheduleVarianceTasks.slice(0, maxLength).map(function(v) { return parseInt(v) || 0; });
+            
+            // Pad arrays if needed
+            if (maxLength > 0) {
+                while (safeLabels.length < maxLength) safeLabels.push('');
+                while (safeTotalTasks.length < maxLength) safeTotalTasks.push(0);
+                while (safeScheduleVarianceTasks.length < maxLength) safeScheduleVarianceTasks.push(0);
+            }
+            
+            // Ensure we have two datasets (Total Tasks and Schedule Variance)
+            if (chartInstances.chart3.data.datasets.length < 2) {
+                if (chartInstances.chart3.data.datasets.length === 1) {
+                    chartInstances.chart3.data.datasets.push({
+                        label: 'Schedule Variance',
+                        data: safeScheduleVarianceTasks,
+                        backgroundColor: '#f97316'
+                    });
+                    chartInstances.chart3.data.datasets[0].label = 'Total Tasks';
+                    chartInstances.chart3.data.datasets[0].backgroundColor = '#3b82f6';
+                } else if (chartInstances.chart3.data.datasets.length === 0) {
+                    chartInstances.chart3.data.datasets = [
+                        {
+                            label: 'Total Tasks',
+                            data: safeTotalTasks,
+                            backgroundColor: '#3b82f6'
+                        },
+                        {
+                            label: 'Schedule Variance',
+                            data: safeScheduleVarianceTasks,
+                            backgroundColor: '#f97316'
+                        }
+                    ];
+                }
+            }
+            
+            // Update chart data - both total tasks and schedule variance
+            chartInstances.chart3.data.labels = safeLabels;
+            chartInstances.chart3.data.datasets[0].data = safeTotalTasks;
+            chartInstances.chart3.data.datasets[0].label = 'Total Tasks';
+            chartInstances.chart3.data.datasets[0].backgroundColor = '#3b82f6';
+            chartInstances.chart3.data.datasets[1].data = safeScheduleVarianceTasks;
+            chartInstances.chart3.data.datasets[1].label = 'Schedule Variance';
+            chartInstances.chart3.data.datasets[1].backgroundColor = '#f97316';
+            
+            // Update max value for Y-axis based on both datasets
+            var maxTotalTasks = safeTotalTasks.length > 0 ? Math.max.apply(null, safeTotalTasks) : 0;
+            var maxScheduleVariance = safeScheduleVarianceTasks.length > 0 ? Math.max.apply(null, safeScheduleVarianceTasks) : 0;
+            var maxValue = Math.max(maxTotalTasks, maxScheduleVariance);
+            
+            var calculatedMax;
+            if (maxValue > 0) {
+                calculatedMax = Math.ceil(maxValue * 1.2);
+                calculatedMax = Math.ceil(calculatedMax / 5) * 5;
+            } else {
+                calculatedMax = 10;
+            }
+            
+            chartInstances.chart3.options.scales.y.min = 0;
+            chartInstances.chart3.options.scales.y.max = calculatedMax;
+            
+            if (!chartInstances.chart3.options.scales.y.ticks) {
+                chartInstances.chart3.options.scales.y.ticks = {};
+            }
+            if (!chartInstances.chart3.options.scales.y.ticks.font) {
+                chartInstances.chart3.options.scales.y.ticks.font = {};
+            }
+            
+            chartInstances.chart3.options.scales.y.ticks.stepSize = 5;
+            chartInstances.chart3.options.scales.y.ticks.display = true;
+            chartInstances.chart3.options.scales.y.ticks.autoSkip = true;
+            chartInstances.chart3.options.scales.y.ticks.min = 0;
+            chartInstances.chart3.options.scales.y.ticks.max = calculatedMax;
+            var maxTicks = Math.min(Math.ceil(calculatedMax / 5) + 1, 11);
+            chartInstances.chart3.options.scales.y.ticks.maxTicksLimit = maxTicks;
+            chartInstances.chart3.options.scales.y.ticks.font.size = 7;
+            
+            if (!chartInstances.chart3.options.scales.x.ticks) {
+                chartInstances.chart3.options.scales.x.ticks = {};
+            }
+            if (!chartInstances.chart3.options.scales.x.ticks.font) {
+                chartInstances.chart3.options.scales.x.ticks.font = {};
+            }
+            chartInstances.chart3.options.scales.x.ticks.font.size = 7;
+            chartInstances.chart3.options.scales.x.ticks.maxRotation = 45;
+            chartInstances.chart3.options.scales.x.ticks.minRotation = 0;
+            
+            if (!chartInstances.chart3.options.plugins.legend) {
+                chartInstances.chart3.options.plugins.legend = {};
+            }
+            if (!chartInstances.chart3.options.plugins.legend.labels) {
+                chartInstances.chart3.options.plugins.legend.labels = {};
+            }
+            if (!chartInstances.chart3.options.plugins.legend.labels.font) {
+                chartInstances.chart3.options.plugins.legend.labels.font = {};
+            }
+            chartInstances.chart3.options.plugins.legend.labels.font.size = 8;
+            chartInstances.chart3.options.plugins.legend.labels.boxWidth = 10;
+            chartInstances.chart3.options.plugins.legend.labels.padding = 5;
+            
+            chartInstances.chart3.options.scales.y.afterBuildTicks = function(scale) {
+                scale.ticks = [];
+                var max = (calculatedMax !== undefined && calculatedMax !== null && !isNaN(calculatedMax)) ? calculatedMax : 10;
+                var step = 5;
+                if (max > 0 && step > 0) {
+                    for (var i = 0; i <= max; i += step) {
+                        scale.ticks.push({ value: i });
+                    }
+                }
+            };
+            
+            chartInstances.chart3.options.scales.x.stacked = false;
+            chartInstances.chart3.options.scales.y.stacked = false;
+            
+            chartInstances.chart3.update('active');
+        }
+        
+        // ============================================
+        // CHART UPDATE FUNCTIONS FOR REPORT 607
+        // ============================================
+        
+        function updateChart1ForReport607(labels, childTaskData, mppTaskData, bulkTaskData, issueTaskData, totalWorkData) {
+            // Ensure charts are initialized
+            if (!chartsInitialized || !chartInstances) {
+                initializeCharts();
+            }
+            
+            if (!chartInstances.chart1) {
+                initializeChart1();
+            }
+            
+            if (!chartInstances.chart1) {
+                return;
+            }
+            
+            // Store total work for tooltip calculation
+            chartInstances.chart1.data.totalWork = totalWorkData;
+            
+            // Update chart for stacked bar (Actual Work by Task Type)
+            chartInstances.chart1.data.labels = labels;
+            
+            // Ensure we have 4 datasets for stacked bar chart
+            while (chartInstances.chart1.data.datasets.length < 4) {
+                chartInstances.chart1.data.datasets.push({
+                    label: '',
+                    data: [],
+                    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                    borderColor: 'rgba(0, 0, 0, 1)',
+                    borderWidth: 1
+                });
+            }
+            
+            // Update datasets for stacked bar chart
+            chartInstances.chart1.data.datasets[0].data = childTaskData;
+            chartInstances.chart1.data.datasets[0].label = 'Child Task';
+            chartInstances.chart1.data.datasets[0].backgroundColor = 'rgba(54, 162, 235, 0.8)';
+            chartInstances.chart1.data.datasets[0].borderColor = 'rgba(54, 162, 235, 1)';
+            
+            chartInstances.chart1.data.datasets[1].data = mppTaskData;
+            chartInstances.chart1.data.datasets[1].label = 'MPP Task';
+            chartInstances.chart1.data.datasets[1].backgroundColor = 'rgba(255, 159, 64, 0.8)';
+            chartInstances.chart1.data.datasets[1].borderColor = 'rgba(255, 159, 64, 1)';
+            
+            chartInstances.chart1.data.datasets[2].data = bulkTaskData;
+            chartInstances.chart1.data.datasets[2].label = 'Bulk Task';
+            chartInstances.chart1.data.datasets[2].backgroundColor = 'rgba(75, 192, 192, 0.8)';
+            chartInstances.chart1.data.datasets[2].borderColor = 'rgba(75, 192, 192, 1)';
+            
+            chartInstances.chart1.data.datasets[3].data = issueTaskData;
+            chartInstances.chart1.data.datasets[3].label = 'Issue Task';
+            chartInstances.chart1.data.datasets[3].backgroundColor = 'rgba(153, 102, 255, 0.8)';
+            chartInstances.chart1.data.datasets[3].borderColor = 'rgba(153, 102, 255, 1)';
+            
+            // Remove extra datasets if any
+            if (chartInstances.chart1.data.datasets.length > 4) {
+                chartInstances.chart1.data.datasets = chartInstances.chart1.data.datasets.slice(0, 4);
+            }
+            
+            // Ensure stacked is enabled
+            if (chartInstances.chart1.options.scales) {
+                if (chartInstances.chart1.options.scales.x) {
+                    chartInstances.chart1.options.scales.x.stacked = true;
+                }
+                if (chartInstances.chart1.options.scales.y) {
+                    chartInstances.chart1.options.scales.y.stacked = true;
+                    // Update Y-axis max based on data
+                    var maxValue = totalWorkData.length > 0 ? Math.max.apply(null, totalWorkData) : 0;
+                    if (maxValue > 0) {
+                        var calculatedMax = Math.ceil(maxValue * 1.2);
+                        calculatedMax = Math.ceil(calculatedMax / 5) * 5;
+                        chartInstances.chart1.options.scales.y.max = calculatedMax;
+                    }
+                }
+            }
+            
+            chartInstances.chart1.update();
+        }
+        
+        function updateChart2ForReport607(labels, plannedWorkData, actualWorkData, totalWorkData) {
+            // Ensure charts are initialized
+            if (!chartsInitialized || !chartInstances) {
+                initializeCharts();
+            }
+            
+            if (!chartInstances.chart2) {
+                initializeChart2();
+            }
+            
+            if (!chartInstances.chart2) {
+                return;
+            }
+            
+            // Store total work for tooltip calculation
+            chartInstances.chart2.data.totalWork = totalWorkData;
+            
+            chartInstances.chart2.data.labels = labels;
+            
+            // Ensure we have 2 datasets
+            if (chartInstances.chart2.data.datasets.length < 2) {
+                while (chartInstances.chart2.data.datasets.length < 2) {
+                    chartInstances.chart2.data.datasets.push({
+                        label: '',
+                        data: [],
+                        backgroundColor: '#3b82f6',
+                        borderColor: '#3b82f6',
+                        borderWidth: 1
+                    });
+                }
+            }
+            
+            chartInstances.chart2.data.datasets[0].data = plannedWorkData;
+            chartInstances.chart2.data.datasets[0].label = 'Planned Work';
+            chartInstances.chart2.data.datasets[0].backgroundColor = '#3b82f6';
+            
+            chartInstances.chart2.data.datasets[1].data = actualWorkData;
+            chartInstances.chart2.data.datasets[1].label = 'Actual Work';
+            chartInstances.chart2.data.datasets[1].backgroundColor = '#f97316';
+            
+            // Update Y-axis max based on data
+            var maxValue = Math.max.apply(null, plannedWorkData.concat(actualWorkData));
+            if (maxValue > 0 && chartInstances.chart2.options.scales && chartInstances.chart2.options.scales.y) {
+                var calculatedMax = Math.ceil(maxValue * 1.2);
+                calculatedMax = Math.ceil(calculatedMax / 5) * 5;
+                chartInstances.chart2.options.scales.y.max = calculatedMax;
+            }
+            
+            chartInstances.chart2.update();
+        }
+        
+        function updateChart3ForReport607(labels, totalTasksData, scheduleVarianceData) {
+            // Ensure charts are initialized
+            if (!chartsInitialized || !chartInstances) {
+                initializeCharts();
+            }
+            
+            if (!chartInstances.chart3) {
+                initializeChart3();
+            }
+            
+            if (!chartInstances.chart3) {
+                return;
+            }
+            
+            // Store totalTasks for tooltip calculation
+            chartInstances.chart3.data.totalTasks = totalTasksData;
+            
+            chartInstances.chart3.data.labels = labels;
+            
+            // Ensure we have 2 datasets
+            if (chartInstances.chart3.data.datasets.length < 2) {
+                while (chartInstances.chart3.data.datasets.length < 2) {
+                    chartInstances.chart3.data.datasets.push({
+                        label: '',
+                        data: [],
+                        backgroundColor: '#3b82f6',
+                        borderColor: '#3b82f6',
+                        borderWidth: 1
+                    });
+                }
+            }
+            
+            chartInstances.chart3.data.datasets[0].data = totalTasksData;
+            chartInstances.chart3.data.datasets[0].label = 'Total Tasks';
+            chartInstances.chart3.data.datasets[0].backgroundColor = '#3b82f6';
+            
+            chartInstances.chart3.data.datasets[1].data = scheduleVarianceData;
+            chartInstances.chart3.data.datasets[1].label = 'Schedule Variance';
+            chartInstances.chart3.data.datasets[1].backgroundColor = '#f97316';
+            
+            // Update Y-axis max based on data
+            var maxValue = Math.max.apply(null, totalTasksData.concat(scheduleVarianceData));
+            if (maxValue > 0 && chartInstances.chart3.options.scales && chartInstances.chart3.options.scales.y) {
+                var calculatedMax = Math.ceil(maxValue * 1.2);
+                calculatedMax = Math.ceil(calculatedMax / 5) * 5;
+                chartInstances.chart3.options.scales.y.max = calculatedMax;
+            }
+            
+            chartInstances.chart3.update();
+        }
+        
+        function downloadReport(format) {
+
+            var projectID = $('#cboProject').val();
+            var startDate = $('#txtStartDate').val();
+            var endDate = $('#txtEndDate').val();
+            var resourceID = $('#cboResource').val();
+
+            if (!projectID || projectID === '' || projectID === '0') {
+                alertify.error(Resources.A_ProjectShouldNotBeBlank || 'Please select a project');
+                return;
+            }
+            
+            // Build request data - API expects parameters nested in Parameters property
+            // Report 607 uses date filters (StartDate, EndDate) instead of Period
+            var requestData = {
+                ReportID: 607,
+                Format: format,
+                Parameters: {
+                    ProjectID: parseInt(projectID)
+                }
+            };
+            
+            if (startDate && startDate !== '') {
+                requestData.Parameters.StartDate = startDate;
+            }
+            
+            if (endDate && endDate !== '') {
+                requestData.Parameters.EndDate = endDate;
+            }
+            
+            if (resourceID && resourceID !== '' && resourceID !== '0') {
+                requestData.Parameters.ResourceID = parseInt(resourceID);
+            }
+            
+            
+            // Use fetch API for file download with authentication
+            var token = getAuthToken();
+            showLoading();
+
+            fetch(baseUrl + '/api/ReportUIBuilder/DownloadReport', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': token ? 'bearer ' + token : ''
+                },
+                body: JSON.stringify(requestData)
+            })
+            .then(function(response) {
+
+
+                // Get content type
+                var contentType = response.headers.get('content-type') || '';
+
+                if (!response.ok) {
+                    // Try to get error message from response
+                    return response.text().then(function(text) {
+
+                        try {
+                            var errorData = JSON.parse(text);
+                            var errorMsg = errorData.message || errorData.error || 'Download failed: ' + response.status;
+                            throw new Error(errorMsg);
+                        } catch (e) {
+                            throw new Error('Download failed: ' + response.status + ' - ' + (text || 'Unknown error'));
+                        }
+                    });
+                }
+                
+                // If content-type is JSON, it's likely an error response
+                if (contentType.indexOf('application/json') !== -1) {
+                    return response.json().then(function(jsonData) {
+
+                        var errorMsg = jsonData.message || jsonData.error || 'Server returned JSON instead of file';
+                        throw new Error(errorMsg);
+                    });
+                }
+                
+                return response.blob().then(function(blob) {
+
+
+                    // Check if blob is suspiciously small (might be an error response)
+                    if (blob.size < 100) {
+                        return blob.text().then(function(text) {
+
+                            try {
+                                var jsonResponse = JSON.parse(text);
+                                if (jsonResponse.message || jsonResponse.error) {
+                                    throw new Error(jsonResponse.message || jsonResponse.error || 'No data available to download');
+                                }
+                            } catch (e) {
+                                // Not JSON, might be valid small file - continue
+                            }
+                            return blob;
+                        });
+                    }
+                    return blob;
+                });
+            })
+            .then(function(blob) {
+                hideLoading();
+                
+                if (!blob || blob.size === 0) {
+                    throw new Error('Downloaded file is empty');
+                }
+
+                // Create blob URL
+                var url = window.URL.createObjectURL(blob);
+                var fileExtension = format === 'pdf' ? 'pdf' : (format === 'excel' || format === 'xlsx' || format === 'xls') ? 'xls' : 'pdf';
+                var fileName = 'ActualWorkDistribution_' + format + '_' + new Date().getTime() + '.' + fileExtension;
+                
+                // Check if we're in an iframe
+                var isInIframe = window.self !== window.top;
+
+                // Method 1: Try using anchor click in parent window if in iframe
+                try {
+                    var targetDoc = isInIframe ? window.top.document : document;
+                    var a = targetDoc.createElement('a');
+                a.href = url;
+                    a.download = fileName;
+                    a.style.position = 'fixed';
+                    a.style.left = '-9999px';
+                    targetDoc.body.appendChild(a);
+
+                    // Use requestAnimationFrame to ensure DOM is ready
+                    requestAnimationFrame(function() {
+                        try {
+                a.click();
+
+                            // Clean up after download starts
+                            setTimeout(function() {
+                                if (a.parentNode) {
+                                    targetDoc.body.removeChild(a);
+                                }
+                window.URL.revokeObjectURL(url);
+
+                            }, 1000);
+                            
+                            // Show success message
+                            if (typeof alertify !== 'undefined') {
+                                alertify.success(Resources.A_ReportDownloadedSuccessfully || 'Report download started. Please check your downloads folder.');
+                            }
+                        } catch (clickError) {
+
+                            // Fallback: open in new window
+                            var newWindow = window.open(url, '_blank');
+                            if (newWindow) {
+                                setTimeout(function() {
+                                    newWindow.close();
+                                }, 100);
+                            } else {
+                                alertify.error(Resources.A_PleaseAllowPopups || 'Please allow popups to download the file.');
+                            }
+                            window.URL.revokeObjectURL(url);
+                        }
+                    });
+                } catch (e) {
+
+                    // Final fallback: try direct window.open
+                    var newWindow = window.open(url, '_blank');
+                    if (newWindow) {
+                        setTimeout(function() {
+                            newWindow.close();
+                        }, 100);
+                        alertify.success(Resources.A_ReportOpenedInNewWindow || 'Report opened in new window. Please save it manually.');
+                    } else {
+                        alertify.error(Resources.A_UnableToDownload || 'Unable to download. Please check browser settings or try right-clicking the download link.');
+                    }
+                    window.URL.revokeObjectURL(url);
+                }
+            })
+            .catch(function(error) {
+                hideLoading();
+
+                alertify.error((Resources.A_ErrorDownloadingReport || 'Error downloading report') + ': ' + (error.message || Resources.A_UnknownError || 'Unknown error'));
+            });
+        }
+        
+        function showLoading() {
+            if ($('.loading-overlay').length === 0) {
+                $('body').append('<div class="loading-overlay"><div class="spinner-border"></div></div>');
+            }
+        }
+        
+        function hideLoading() {
+            $('.loading-overlay').remove();
+        }
+    </script>
+</body>
+</html>
+

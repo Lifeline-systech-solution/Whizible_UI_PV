@@ -1,0 +1,2729 @@
+﻿#uiRevieweeList {
+    height:150px;
+    overflow:auto;
+
+}
+
+#uiReviewerList {
+    height: 150px;
+    overflow: auto;
+}
+
+
+/*Added By Dipali V On 10th May 2019 For Reviewee & Reviwer List height*/
+
+#divReviewForm .dropdown-menu {
+    height: 150px;
+    overflow: auto;
+    margin-left: 0px !important;
+    left: 0px !important;
+}
+/*End of Added By Dipali V On 10th May 2019 For Reviewee & Reviwer List height*/
+
+.activeclss {
+    background-color: #3c7dcf;
+}
+/*Changed By yasmin on 8-3-19*/
+.open > .dropdown-menu {
+    display: block;
+    margin-top: 8px;
+    background: #fff !important;
+    opacity: 1 !important;
+    margin-left: 174px;
+}
+
+textarea {
+    resize: none !important;
+}
+
+.card {
+    margin-top: 0px !important;
+}
+
+.fixed-top {
+    position: fixed !important;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+      /* Changed by Madhuri.K on 09-03-2026 */
+    background: #F8FAFC;
+    /* background: #e7edf0; modified by pradip on 6-10-2020 */
+    padding: 5px 10px;
+    padding-bottom: 10px;
+    margin-top: -10px;
+    line-height: 2.2;
+}
+
+.clsDivHeader {
+    margin-top: 3px !important;
+    /* Modified By Madhuri.K On 01-04-2026 */
+    font-size: 14px !important;
+}
+/*Changed By yasmin on 27-2-19*/
+#divTaskList {
+    height: 200px;
+    overflow: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+
+#tblEntityFields tr td {
+    width: 25%;
+}
+
+    #tblEntityFields tr td:nth-child(3) {
+        text-align: center !important;
+    }
+
+.fa {
+    font-size: 14px !important;
+    /* Modified By Madhuri.K On 01-04-2026 */
+}
+
+.badge {
+    display: inline-block;
+    min-width: 10px !important;
+    padding: 3px 5px !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    color: #000 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    vertical-align: middle !important;
+    background-color: #777;
+    border-radius: 10px !important;
+    margin-top: -6px !important;
+}
+
+.sprint_card {
+    background: #fff !important;
+    margin: 0px !important;
+    padding: 12px 3px !important;
+    box-shadow: 0 5px 5px rgba(0,0,0,.1),0 6px 10px 0 rgba(0,0,0,0.19) !important;
+    -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.1),0 6px 10px 0 rgba(0,0,0,0.19) !important;
+}
+
+    .sprint_card:hover {
+        -webkit-transform: translateY(-3px) !important;
+        transform: translateY(-3px) !important;
+        box-shadow: 0 4px 6px 0 rgba(0,0,0,0.07), 0 6px 10px 0 rgba(0,0,0,0.19) !important;
+        -webkit-box-shadow: 0 4px 6px 0 rgba(0,0,0,0.07), 0 6px 10px 0 rgba(0,0,0,0.19) !important;
+    }
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td, .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: none !important;
+}
+
+.btn.btn-info.active.focus, .btn.btn-info.active:focus, .btn.btn-info.active:hover, .btn.btn-info:active.focus, .btn.btn-info:active:focus, .btn.btn-info:active:hover, .open > .btn.btn-info.dropdown-toggle.focus, .open > .btn.btn-info.dropdown-toggle:focus, .open > .btn.btn-info.dropdown-toggle:hover, .show > .btn.btn-info.dropdown-toggle.focus, .show > .btn.btn-info.dropdown-toggle:focus, .show > .btn.btn-info.dropdown-toggle:hover {
+    color: #fff !important;
+    background-color: #00aec5 !important;
+    border-color: #004b55 !important;
+}
+
+.btn.btn-info:hover {
+    color: #fff !important;
+    background-color: #00aec5 !important;
+    border-color: #004b55 !important;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,188,212,.14),0 3px 1px -2px rgba(0,188,212,.2),0 1px 5px 0 rgba(0,188,212,.12) !important;
+    box-shadow: 0 2px 2px 0 rgba(0,188,212,.14),0 3px 1px -2px rgba(0,188,212,.2),0 1px 5px 0 rgba(0,188,212,.12) !important;
+}
+
+.btn.btn-info {
+    text-transform: Capitalize !important;
+    color: #fff !important;
+    background-color: #01579B !important;
+    border-color: #01579B !important;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,188,212,.14), 0 3px 1px -2px rgba(0,188,212,.2), 0 1px 5px 0 rgba(0,188,212,.12) !important;
+    box-shadow: 0 2px 2px 0 rgba(0,188,212,.14), 0 3px 1px -2px rgba(0,188,212,.2), 0 1px 5px 0 rgba(0,188,212,.12) !important;
+}
+
+.btn {
+    position: relative;
+    padding: 6px 12px !important;
+    text-decoration: none;
+    letter-spacing: 0;
+    border: 0;
+    border-radius: .2rem;
+    outline: 0;
+    -webkit-transition: background-color .2s cubic-bezier(.4,0,.2,1),-webkit-box-shadow .2s cubic-bezier(.4,0,1,1);
+    transition: background-color .2s cubic-bezier(.4,0,.2,1),-webkit-box-shadow .2s cubic-bezier(.4,0,1,1);
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1);
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),-webkit-box-shadow .2s cubic-bezier(.4,0,1,1);
+}
+
+.dropdown-menu li:hover {
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+.page-item.disabled .page-link {
+    color: #12b8cc !important;
+    pointer-events: none;
+    background-color: #fff !important;
+    border: 1px solid #12b8cc !important;
+    margin-right: 3px;
+}
+
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+    color: #fff !important;
+    background-color: #1bb4c7;
+    border-color: #ddd;
+    border-radius: 20px;
+}
+
+.btn.btn-primary.active, .btn.btn-primary:active, .open > .btn.btn-primary.dropdown-toggle, .show > .btn.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #1bb4c7;
+    border-color: #1bb4c7;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(156,39,176,.14),0 3px 1px -2px rgba(156,39,176,.2),0 1px 5px 0 rgba(156,39,176,.12);
+    box-shadow: 0 2px 2px 0 rgba(156,39,176,.14),0 3px 1px -2px rgba(156,39,176,.2),0 1px 5px 0 rgba(156,39,176,.12);
+}
+
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #1bb4c7;
+    text-decoration: none;
+    background-color: #fff;
+    border: none !important;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: rgb(27, 180, 199) !important;
+    border-color: rgb(27, 180, 199) !important;
+    border-radius: 20px !important;
+}
+
+.btn.btn-primary.active.focus, .btn.btn-primary.active:focus, .btn.btn-primary.active:hover, .btn.btn-primary:active.focus, .btn.btn-primary:active:focus, .btn.btn-primary:active:hover, .open > .btn.btn-primary.dropdown-toggle.focus, .open > .btn.btn-primary.dropdown-toggle:focus, .open > .btn.btn-primary.dropdown-toggle:hover, .show > .btn.btn-primary.dropdown-toggle.focus, .show > .btn.btn-primary.dropdown-toggle:focus, .show > .btn.btn-primary.dropdown-toggle:hover {
+    color: #fff;
+    background-color: #1bb4c7;
+    border-color: #1bb4c7;
+}
+
+.pagination > li > a:hover {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: #1bb4c7 !important;
+    border: none !important;
+    border-radius: 20px;
+}
+
+/*.card [class*=card-header-]:not(.card-header-icon):not(.card-header-text):not(.card-header-image) {
+   margin-top: -20px !important;
+padding: 4px !important;
+}*/
+
+.card .card-header-primary .card-icon, .card .card-header-primary .card-text, .card .card-header-primary:not(.card-header-icon):not(.card-header-text) {
+    -webkit-box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(156,39,176,.4) !important;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(156,39,176,.4) !important;
+}
+
+.sprint_header {
+    color: white !important;
+}
+
+.card [class*=card-header-] {
+    margin: 0 15px !important;
+    padding: 0;
+    position: relative !important;
+}
+
+.card .card-header {
+    z-index: 3 !important;
+}
+
+.card .card-header-primary .card-icon, .card .card-header-primary .card-text, .card .card-header-primary:not(.card-header-icon):not(.card-header-text), .card.bg-primary, .card.card-rotate.bg-primary .back, .card.card-rotate.bg-primary .front {
+    background: lightslategray;
+    COLOR: #FFF !IMPORTANT;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+}
+
+#txtSprintSearch {
+    box-shadow: none !important;
+    width: 22% !important;
+    border: none !important;
+    border-bottom: 1px solid #ddd !important;
+    text-align: left;
+    height: 32px;
+    font-weight: 100;
+    /*float: right;*/
+}
+
+.dataTables_scrollHeadInner, .table {
+    width: 100% !important;
+}
+
+    #DivSubTabIssuesList .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+        border: 1px solid #ccc !important;
+    }
+
+.iteration_name {
+    color: #777777 !important;
+    font-size: 16px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.card-text {
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #948e8e !important;
+}
+
+.sprint_list {
+    color: #428bca !important;
+}
+
+.label1 {
+    display: inline;
+    padding: .4em .6em .4em;
+    /* font-size: 75%; */
+    font-weight: 500;
+    line-height: 1;
+    color: #fff;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    border-radius: 5px !important;
+    padding: 5px 10px !important;
+}
+
+#txtRemark2321:focus {
+    outline: none !important;
+}
+
+.dropdown-item {
+    color: #145b82 !important;
+}
+
+.SprintSeach {
+    float: right;
+    margin-right: 13px;
+    margin-top: -34px;
+    color: #4b4b4b !important;
+}
+
+.fa-certificate {
+    font-size: 59px !important;
+    margin-top: -21%;
+}
+/*.fa-angle-double-right {
+        color: #fff!important;
+    margin-top: -17PX;
+    background: rgb(1, 87, 149);
+    border-radius: 20px;
+    padding: 3px 5px;
+    margin-right: 15px;
+}
+.fa-angle-double-left {
+    margin-top: -12px;
+    background: #01579b;
+    border-radius: 20px;
+    padding: 3px 5px;
+        MARGIN-LEFT: -20PX;
+color: #fff!important;
+
+}*/
+/*----------------Discussion---------------------*/
+.chatReply li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #999999;
+    /* box-shadow: 1px 1px 1px 1px #ccc; */
+    margin-top: 9px;
+    width: 64%;
+    padding: 4px !important;
+}
+
+#SprintRelease {
+    margin-left: 10px !important;
+}
+
+#SprintReleaseAddDiscussion {
+}
+
+.align-right {
+    text-align: right;
+    margin-top: 20px;
+}
+
+#SprintReleaseUS {
+    float: right;
+    margin-right: -58%;
+    margin-top: 2%;
+}
+
+#SprintReleaseAddDiscussionUS {
+    float: right;
+    margin-right: 29%;
+    margin-top: 2%;
+}
+
+#divSprintList1, #divTaskList, #divIssuesList, #divReviewList, #divhistoryList {
+    margin-top: 20px;
+}
+/*-----------------------History------------------------------------*/
+#DivHistorykList .dataTables_scrollHeadInner table {
+    display: none;
+}
+
+#DivHistorykList .odd {
+    background-color: white !important;
+}
+
+#DivHistorykList .dataTables_sizing {
+    height: 35px !important;
+    color: #867c7c !important;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0%;
+}
+
+#DivHistorykList {
+    /*margin-top: 3%;*/
+    /*margin-left: 3%;*/
+}
+
+    #DivHistorykList .modal-header1 {
+        border-bottom: 1px solid #ddd !important;
+        margin-top: 1px;
+        margin-left: 1%;
+        padding: 0px !important;
+    }
+
+    #DivHistorykList .table > tbody > tr > td, .table > tbody > tr > th,
+    .table > tfoot > tr > td, .table > tfoot > tr > th,
+    .table > thead > tr > td, .table > thead > tr > th {
+        border-top: 1px solid white !important;
+        border-bottom: 1px solid #ddd !important;
+        white-space: nowrap;
+    }
+
+        #DivHistorykList .table > tbody > tr > td:nth-child(6) {
+            word-break: break-all !important;
+            text-align: left !important;
+        }
+
+    #DivHistorykList .table > thead > tr > th:nth-child(6) {
+        word-break: break-all !important;
+        text-align: left !important;
+    }
+
+    #DivHistorykList .table-bordered {
+        border: 1px solid white !important;
+    }
+/*-----------------Risks-------------------------*/
+#DivRisksList .dataTables_scrollHeadInner table {
+    display: none;
+}
+
+#DivRisksList .dataTables_sizing {
+    height: 35px !important;
+    color: #867c7c !important;
+    font-weight: 600;
+    text-align: center !important;
+    margin-top: 0%;
+}
+
+#DivRisksList .table > tbody > tr > td, .table > tbody > tr > th,
+.table > tfoot > tr > td, .table > tfoot > tr > th,
+.table > thead > tr > td, .table > thead > tr > th {
+    white-space: nowrap;
+}
+
+    #DivRisksList .table > tbody > tr > td:nth-child(6) {
+        word-break: break-all !important;
+        text-align: left !important;
+    }
+
+#DivRisksList .table > thead > tr > th:nth-child(6) {
+    word-break: break-all !important;
+    text-align: left !important;
+}
+
+#DivRisksList .table-bordered {
+    border: 1px solid white !important;
+}
+
+#DivRisksList .odd {
+    background-color: white !important;
+}
+
+.label-Yellow {
+    background-color: #ffcc00 !important;
+}
+
+#DivRisksList {
+    margin-left: 3%;
+}
+
+    #DivRisksList .modal-header1 {
+        border-bottom: 1px solid #ddd !important;
+        margin-top: 1px;
+        margin-left: 1%;
+        padding: 0px !important;
+    }
+/*---------------End of Risks-----------------*/
+/*-------------Impediments Logs--------------*/
+#DivImpedimentsLogsList .dataTables_scrollHeadInner table {
+    display: none;
+}
+
+#DivImpedimentsLogsList .dataTables_sizing {
+    height: 35px !important;
+    color: #867c7c !important;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0%;
+}
+
+#DivImpedimentsLogsList .odd {
+    background-color: white !important;
+}
+
+#DivImpedimentsLogsList {
+    margin-left: 3%;
+}
+
+    #DivImpedimentsLogsList .modal-header1 {
+        border-bottom: 1px solid #ddd !important;
+        margin-top: 1px;
+        margin-left: 1%;
+        padding: 0px !important;
+    }
+
+    #DivImpedimentsLogsList .table > tbody > tr > td, .table > tbody > tr > th,
+    .table > tfoot > tr > td, .table > tfoot > tr > th,
+    .table > thead > tr > td, .table > thead > tr > th {
+        white-space: nowrap;
+    }
+
+        #DivImpedimentsLogsList .table > tbody > tr > td:nth-child(6) {
+            word-break: break-all !important;
+            text-align: left !important;
+        }
+
+    #DivImpedimentsLogsList .table > thead > tr > th:nth-child(6) {
+        word-break: break-all !important;
+        text-align: left !important;
+    }
+
+    #DivImpedimentsLogsList .table-bordered {
+        border: 1px solid white !important;
+    }
+/*--------------------Review--------------------------------*/
+#DivReviewList .dataTables_scrollHeadInner table {
+    display: none;
+}
+
+#DivReviewList .dataTables_sizing {
+    height: 35px !important;
+    color: #867c7c !important;
+    font-weight: 600;
+    text-align: center !important;
+    margin-top: 0%;
+}
+
+#DivReviewList .table > tbody > tr > td, .table > tbody > tr > th,
+.table > tfoot > tr > td, .table > tfoot > tr > th,
+.table > thead > tr > td, .table > thead > tr > th {
+    white-space: nowrap;
+}
+
+    #DivReviewList .table > tbody > tr > td:nth-child(6) {
+        word-break: break-all !important;
+        text-align: left !important;
+    }
+
+#DivReviewList .table > thead > tr > th:nth-child(6) {
+    word-break: break-all !important;
+    text-align: left !important;
+}
+
+#DivReviewList .table-bordered {
+    border: 1px solid white !important;
+}
+
+#DivReviewList .odd {
+    background-color: white !important;
+}
+
+#DivReviewList {
+    /*margin-top: 3%;*/
+    /*margin-left: 3%;*/
+}
+
+    #DivReviewList .modal-header1 {
+        border-bottom: 1px solid #ddd !important;
+        margin-top: 1px;
+        margin-left: 1%;
+        padding: 0px !important;
+    }
+/*--------------------Issue--------------------------------*/
+#DivSubTabIssuesList .dataTables_scrollHeadInner table {
+    display: none;
+}
+
+#DivSubTabIssuesList .odd {
+    background-color: white !important;
+}
+
+#DivSubTabIssuesList .dataTables_sizing {
+    height: 35px !important;
+    color: #867c7c !important;
+    font-weight: 600;
+    /**/ /*text-align: center;*/
+    margin-top: 0%;
+}
+/*Changed By yasmin on 27-2-19*/
+#DivSubTabIssuesList {
+    /*margin-top: 3%;*/
+    /*margin-left: 3%;*/
+}
+
+    #DivSubTabIssuesList .modal-header1 {
+        border-bottom: 1px solid #ddd !important;
+        margin-top: 1px;
+        margin-left: 1%;
+        padding: 0px !important;
+    }
+
+    #DivSubTabIssuesList .table > tbody > tr > td, .table > tbody > tr > th,
+    .table > tfoot > tr > td, .table > tfoot > tr > th,
+    .table > thead > tr > td, .table > thead > tr > th {
+        white-space: normal;
+    }
+
+        #DivSubTabIssuesList .table > tbody > tr > td:nth-child(6) {
+            word-break: break-all !important;
+            text-align: left !important;
+        }
+
+    #DivSubTabIssuesList .table > thead > tr > th:nth-child(6) {
+        word-break: break-all !important;
+        text-align: left !important;
+    }
+
+    #DivSubTabIssuesList .table-bordered {
+        border: 1px solid white !important;
+    }
+/*------------------------------Start Task---------------------------------------*/
+#DivTaskList .dataTables_scrollHeadInner table {
+    display: none;
+}
+
+#DivTaskList .odd {
+    background-color: white !important;
+}
+
+#DivTaskList .dataTables_sizing {
+    height: 35px !important;
+    color: #867c7c !important;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0%;
+}
+/*Changed By yasmin on 27-2-19*/
+#DivTaskList {
+    /*margin-top: 3%;*/
+    /*margin-left: 3%;*/
+}
+
+    #DivTaskList .modal-header1 {
+        border-bottom: 1px solid #ddd !important;
+        margin-top: 1px;
+        margin-left: 1%;
+        padding: 0px !important;
+    }
+
+    #DivTaskList .table > tbody > tr > td, .table > tbody > tr > th,
+    .table > tfoot > tr > td, .table > tfoot > tr > th,
+    .table > thead > tr > td, .table > thead > tr > th {
+        white-space: nowrap;
+    }
+
+        #DivTaskList .table > tbody > tr > td:nth-child(6) {
+            word-break: break-all !important;
+            text-align: left !important;
+        }
+
+    #DivTaskList .table > thead > tr > th:nth-child(6) {
+        word-break: break-all !important;
+        text-align: left !important;
+    }
+
+    #DivTaskList .table-bordered {
+        border: 1px solid white !important;
+    }
+/*-----------------------Start Team--------------------------------------*/
+.clsTeamTable {
+    width: 100%;
+}
+
+.ClsTeamDetails {
+    text-align: left;
+}
+
+.details {
+    width: 110%;
+}
+
+.Activity {
+    height: 600px;
+    overflow: auto;
+}
+
+#listattachment {
+    margin-top: 70px;
+}
+
+.NoTeam {
+    margin-top: 1%;
+    text-align: center;
+    background-color: #f7f7f7;
+    height: 37px;
+    line-height: 2.2;
+    margin-right: 20px;
+}
+
+.ResourcePercentage {
+    color: #f0ad4e;
+    text-align: left;
+    font-weight: 700;
+}
+
+.ClsRole {
+    color: #3c7dcf !important;
+}
+
+.clsTeamTable tr td {
+    width: 50%;
+}
+
+.clsTeamTable {
+    width: 100%;
+}
+
+#divTeamsList .card {
+    width: 96%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+
+/*---------------Start User Story-------------------------------*/
+
+
+.label-Yellow {
+    background-color: #ffcc00 !important;
+}
+
+#DivCurrentSprintUS .dataTables_sizing {
+    height: 35px !important;
+    color: #867c7c !important;
+    font-weight: 600;
+    text-align: center !important;
+    margin-top: 0%;
+}
+
+#DivCurrentSprintUS .table {
+}
+
+#DivCurrentSprintUS .dataTables_scrollHeadInner table {
+    display: none;
+}
+
+#DivCurrentSprintUS .odd {
+    background-color: white !important;
+}
+
+#DivCurrentSprintUS .table {
+    border-spacing: 0 5px !important;
+    border: none !important;
+    /* border-top: 1px solid #DDD!important; */
+}
+
+    #DivCurrentSprintUS .table > tbody > tr > td {
+        border-top: 1px solid #DDD !important;
+        /*border-bottom: 1px solid #DDD!important;*/
+        height: 40px;
+        padding-top: 10px;
+        word-break: break-all;
+        /*border: none!important;*/
+    }
+
+#DivCurrentSprintUS .dataTables_info {
+    margin-left: 6% !important;
+    margin-top: 7% !important;
+}
+
+#DivCurrentSprintUS .table-bordered td {
+    border: 1px solid white;
+}
+
+#DivCurrentSprintUS .table-bordered th {
+    border: 1px solid white;
+}
+
+#DivSprintlist1 .dataTables_scrollHead {
+    display: none;
+}
+
+#DivSprintlist1 .dataTables_length {
+    display: none;
+}
+
+#DivSprintlist1 .dataTables_filter {
+    display: none;
+}
+/*Changed By yasmin on 27-2-19*/
+#DivCurrentSprintUS {
+    /*margin-top: 3%;*/
+    /*margin-left: 3%;*/
+}
+
+    #DivCurrentSprintUS .modal-header1 {
+        border-bottom: 1px solid #ddd !important;
+        margin-top: 1px;
+        margin-left: 1%;
+        padding: 0px !important;
+    }
+
+
+/*---------------End User Story-------------------------------*/
+/*---------- Start Graph Dashboard------------------*/
+#myScrollspy .nav-pills > li > a:hover {
+    background: #5bc0de !important;
+    /*-webkit-box-shadow: -118px 0 0 #5bc0de inset;*/
+    border-right: 4px solid rgb(51, 122, 183);
+    color: black !important;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: linear;
+    /*box-shadow: 0px 0 0rgb(51, 122, 183) inset;*/
+    /*//box-shadow: 0 0 1px #ccc;*/
+}
+
+.scrollspy-example {
+    position: relative;
+    height: 330px;
+    margin-top: 10px;
+    overflow: hidden;
+    padding-bottom: 200px;
+}
+
+    .scrollspy-example:hover {
+        overflow-y: auto;
+    }
+
+.chartjs-render-monitor {
+    height: 273px !important;
+}
+
+#myScrollspy .nav-pills > li > a {
+    width: 120px;
+}
+
+.tabcontentChart {
+    float: left;
+    padding: 0px 12px;
+    /* border: 1px solid #ccc; */
+    width: 81%;
+    border-left: none;
+    /*height: 300px;*/
+    /* border-radius: 4px; */
+    margin-top: 2%;
+}
+
+.divLineGraph {
+    padding: 5px;
+    border-top: 2px solid #3c8dbc !important;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    height: 100%;
+    width: 126% !important;
+}
+
+.ClsHeaderGraph {
+    margin-top: 0%;
+    margin-left: 2%;
+}
+
+#DivCompleteSprint .dataTables_scrollBody {
+    height: 245px !important;
+}
+
+
+
+/*#Clsbox
+        {
+            border: none!Important;
+            border-top: 3px solid #d2d6de;
+        }*/
+#myScrollspy ul.nav-pills {
+    top: 20px;
+    position: relative;
+}
+
+.ClsHeaderGraph {
+    margin-top: 0%;
+    margin-left: 2%;
+}
+/*---------- End Graph Dashboard------------------*/
+.labelclass {
+    font-size: 14px !important;
+    font-weight: 100 !important;
+    color: #A9A9A9 !important;
+}
+
+#divUserstories, #divTasks, #divIssues, #div_Reviews, #divHistory .modal-header {
+    text-align: left !important;
+}
+
+#dash_hr {
+    margin-right: 7px;
+}
+
+.wordwrap {
+    /*white-space: nowrap;
+            width: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;*/
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    font-size: 11.5px !important;
+    /* Modified By Madhuri.K On 01-04-2026 */
+}
+/*Set All span Font Size*/
+#MouseOver td span {
+    font-size: 11.5px;
+    font-weight: 500;
+}
+
+
+
+.Description {
+    font-weight: 600 !important;
+    color: #948e8e !important;
+}
+
+.odd {
+    background-color: #f7f7f7;
+}
+
+.even {
+    background-color: white;
+}
+
+.odd:hover {
+    background-color: #f7f7f7;
+}
+
+.even:hover {
+    background-color: white;
+}
+
+.required {
+    color: gray;
+}
+
+#Create ul li:hover,
+#Create ul li:focus {
+    background-color: deepskyblue;
+}
+/*#Create .selected
+        {
+            background-color:deepskyblue;
+        }*/
+/*SHOW  Drop Box while dragging*/
+.ui-sortable-placeholder {
+    border: 5px dashed;
+    border-color: darkgrey;
+    margin: 2px 20px 2px 50px;
+    height: 140px;
+}
+
+/*th >span:hover
+        {
+            background-color:green;
+        }*/
+/*------------Start -------Charts -------------------------*/
+/* Style the tab */
+.tabs-left {
+    border-bottom: none;
+    padding-top: 2px;
+}
+
+    .tabs-left > li.active > a,
+    .tabs-left > li.active > a:hover,
+    .tabs-left > li.active > a:focus {
+        border: none;
+        color: white;
+        background-color: deepskyblue;
+        border-radius: 10px;
+        /*border-bottom-color: #ddd;*/
+    }
+
+    .tabs-left > li > a:hover {
+        border: none;
+        color: white;
+        background-color: deepskyblue;
+        border-radius: 10px;
+    }
+
+/*-------------------End----Charts -------------------------*/
+/*---------------------Start-Add Sprint --And Release------------------------*/
+
+.textArea {
+    box-shadow: none;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+.textbox {
+    box-shadow: none;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+#add_sprint {
+    float: right;
+    padding: -1px 16px;
+    font-size: 11.5px;
+    margin-right: 41px;
+    border-radius: 3px;
+    height: 33px;
+    padding-top: 6px;
+    font-size: 14px;
+    margin-top: 25PX;
+}
+
+#add_Release {
+    float: right;
+    padding: -1px 16px;
+    font-size: 11.5px;
+    margin-right: 41px;
+    border-radius: 3px;
+    height: 33px;
+    padding-top: 6px;
+    font-size: 14px;
+    margin-top: 25px;
+}
+/*---------------------End  Add Sprint --------------------------*/
+/*-----------Discussion CSS ---------- */
+
+
+.btn-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -100px;
+    width: 200px;
+}
+
+.pieContainer {
+    height: 150px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.hold {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    /*clip: rect(0px, 150px, 150px, 75px);*/
+}
+
+.innerCircle {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 60px;
+    top: 15px;
+    left: 15px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.5) inset;
+    color: white;
+}
+
+    .innerCircle .content {
+        position: absolute;
+        display: block;
+        width: 120px;
+        top: 30px;
+        left: 0;
+        text-align: center;
+        font-size: 14px;
+    }
+
+.box {
+    width: 265px;
+    height: 250px;
+    padding: 6px;
+    border: 1px solid #8888885c;
+}
+
+a.selected {
+    color: rgb(96, 255, 167);
+    text-decoration: underline;
+}
+
+.flex-list li {
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: .25em 0;
+    padding: 1px 2em;
+    text-align: center;
+    border-left: 2px solid #ccc;
+    /* background-color: #fff; */
+}
+
+.dropdown_category {
+    margin-left: -140px !important;
+    padding: 0px !important;
+}
+/*Changhe by yasmin on 27-2-19*/
+#tab_link {
+    /*padding-left: 139px !important;*/
+    background-color: #0288D1 !important;
+    width: auto;
+    padding-bottom: 20px !important;
+    padding-top: 16px;
+    margin-left: -4PX !important;
+    margin-right: 32PX !important;
+    /*text-align: center;*/
+}
+
+    #tab_link li {
+        padding-left: 21px !important;
+        float: none !important;
+    }
+
+#countDown {
+    font-size: 11.5px;
+    font-weight: 500;
+    color: grey;
+    float: right;
+    margin-top: -35px;
+    margin-right: -25px;
+}
+
+textarea {
+    resize: both !important;
+}
+/*Changed by yasmin on 1-3-19*/
+
+.clsDiscussion {
+    /* background-color: #ddd; */
+    color: #000 !important;
+    height: 25px;
+    margin-top: 0%;
+    /* padding-top: 1%; */
+    line-height: 2;
+    font-size: 18px !important;
+    padding-bottom: 5%;
+    text-align: left !important;
+    /*margin-left: 2% !important;
+    margin-right: 2% !important;*/
+}
+
+.upload {
+    float: right;
+    margin-top: 10px;
+}
+
+#div_graph {
+}
+
+#div_Attachment {
+    margin-top: 46px;
+}
+
+.clsDiscussion_border_bottom {
+    border-bottom: 2px solid rgb(60, 141, 188) !important;
+}
+
+.table > tbody > tr > td {
+    border: 1px solid #ddd !important;
+}
+
+th {
+    color: #808080 !important;
+}
+
+#DivCurrentSprintUS .table-bordered th {
+    border: 1px solid #ddd !important;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border: 1px solid #ddd !important;
+}
+
+canvas {
+    width: 85% !important;
+}
+
+.flex-list {
+    position: relative;
+    /*margin: 1em;*/
+    overflow: hidden;
+}
+
+#ContainAllDivs {
+    height: 99%;
+    overflow: hidden;
+}
+/*Changed By yasmin on 27-2-19*/
+/*Changed by yasmin on 1-3-19*/
+#sprint_details {
+    width: 100%;
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+}
+    /*Added by yasmin on 1-3-19*/
+    #sprint_details:hover {
+        overflow-y: auto !important;
+    }
+
+#tab_link li a {
+    font-family: helvetica !important;
+    color: white;
+    font-size: 14px;
+}
+
+    #tab_link li a.selected {
+        color: rgb(96, 255, 167);
+        text-decoration: underline;
+    }
+/* ---------End  Discussion CSS ----- */
+
+/*For User Story*/
+
+
+.dataTables_filter {
+    display: none;
+}
+
+#MainDiv2 .col-sm-12 {
+    padding: 0px !important;
+}
+
+
+#divBody {
+    padding-top: 23px !important;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.control-label {
+    font-weight: 500;
+    color: #969696;
+    white-space: nowrap;
+    font-size: 11.5px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    margin-top: 11px;
+    text-align: right;
+}
+
+/*Changed by yasmin on 1-3-19*/
+input.form-control:not([type=button]) {
+    /*width: 100% !important;*/
+}
+
+
+
+input, textarea {
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    box-shadow: none !important;
+}
+
+#divBody {
+    margin-top: -5%;
+}
+
+select {
+    display: inline-block !important;
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    box-shadow: none !important;
+}
+
+#countdown {
+    float: left;
+    margin-top: -11%;
+    margin-left: 100% !important;
+}
+
+.clsTextArea {
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    box-shadow: none !important;
+}
+/*For User Story*/
+
+/*datatable styles*/
+.dataTables_info {
+    margin-top: 20px;
+}
+
+.dataTables_paginate {
+    margin: 0;
+    white-space: nowrap;
+    text-align: right;
+    margin-top: 2px;
+}
+
+.dataTables_length {
+    display: none;
+}
+
+.clsTRColumnHeader {
+    display: table-header-group;
+}
+/*datatable styles*/
+.clsNumber {
+    color: rgb(255, 0, 0);
+}
+/* ------------Modal -----*/
+.modal-footer {
+    border-top: 1px solid white !important;
+}
+
+
+.modal-header1 {
+    border-bottom: 1px solid white !important;
+}
+
+.checkboxcls {
+    float: right;
+    margin-right: 2%;
+}
+/* ------------Modal End -----*/
+
+.badge-notify {
+    position: absolute;
+    top: 8px;
+}
+
+.thHeader {
+    cursor: pointer;
+    background: #fff;
+    color: white;
+    font-weight: bold;
+}
+
+.notifyThFirstTable {
+    top: 7px;
+}
+
+.badge-notifytd {
+    display: inline-block;
+    min-width: 10px !important;
+    padding: 3px 7px !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    vertical-align: middle !important;
+    background-color: #777;
+    border-radius: 10px !important;
+    margin-top: -28px !important;
+}
+
+#ftd {
+    display: block;
+    width: 100%;
+}
+
+#tblFGrid tr th {
+    font-weight: 100 !important;
+    /*font-size: 14px!important;*/
+}
+
+#tblSGrid tr th {
+    font-weight: 100 !important;
+    /*font-size: 14px!important;*/
+}
+
+.table {
+    margin-bottom: 0rem !important;
+}
+
+#SecondDivTbl, #FirstDivTbl, #mainbody2 {
+    overflow-x: hidden !important;
+}
+
+#tblFGrid, #tblSGrid tr th {
+    border: none !important;
+}
+
+.tblCommonFont {
+    font-size: 12px !important;
+}
+
+.badge-notify1 {
+    position: absolute;
+    top: -8px;
+    float: right;
+}
+
+#iTdCategoryColor {
+    display: initial !important;
+}
+
+
+
+.setColor {
+    font-weight: bold;
+}
+
+.clsUnmappendheader {
+    /*margin-top: 1%;
+            width: 958px;
+            margin-left: -9%;*/
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+body {
+    font-family: helvetica !important;
+    font-size: 14px;
+}
+
+
+#divMain {
+    margin-left: 8px;
+    margin-top: 8px;
+    /*overflow: hidden;*/
+    overflow-x: auto;
+    padding-left: 12px;
+    width: 102%;
+}
+
+.clsDivHeader {
+    font-size: 14px !important;
+    /* Modified By Madhuri.K On 01-04-2026 */
+    color: #292828;
+    margin-top: 7px;
+    margin-left: 35px !important;
+}
+
+#MainDiv2 {
+    margin-top: 55px;
+}
+
+.fa-ellipsis-h {
+    font-size: 20px;
+}
+
+.dropdown-menu {
+    right: 0px !important;
+       left:auto!important;
+    /*left: auto !important;*/
+}
+
+#divDiscussions .dropdown-menu {
+    right: auto !important;
+    left: auto !important;
+}
+
+.panel-footer {
+    /*background-color:#fff;*/
+    padding: 1px 15px;
+    min-height: 25px;
+}
+/*Changed By Yasmin on 8-3-19*/
+.dropdown-menu li {
+    list-style: none;
+    cursor: pointer;
+    padding: 5px 10px !important;
+}
+
+.panel-heading {
+    background-color: #fff;
+    padding: 5px 15px;
+    border: 0px;
+}
+
+.moredetail {
+    cursor: pointer;
+    color: #428bca !important;
+}
+
+    .moredetail:hover {
+        text-decoration: underline;
+    }
+
+.clsCategory {
+    width: 100%;
+    padding: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 5px;
+    background: #fff;
+    top: -3px;
+    position: relative;
+}
+
+.col-sm-1 .clsCategory {
+    width: 100%;
+    padding: 6px;
+    padding-left: 15px;
+    background: transparent;
+    padding-right: 15px;
+    margin-bottom: 5px;
+    top: -7px;
+    position: absolute;
+}
+
+.panel {
+    border: 0px;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    margin: 8px;
+}
+
+    .panel:hover {
+        box-shadow: 1px 1px 2px 2px #003761;
+    }
+
+.divBox {
+    height: 12px;
+    width: 12px;
+    float: right;
+}
+
+.fa-gear {
+    font-size: 20px;
+}
+
+.row {
+}
+
+.btn-Green {
+    background-color: #22B14C;
+    color: #fff;
+    border-radius: 0px;
+    padding: 4px 12px;
+}
+
+    .btn-Green:hover {
+        color: #fff;
+    }
+
+.Main {
+    padding: 4px;
+    background-color: #f9f9f9;
+    margin-top: 5px;
+    overflow-y: auto;
+}
+
+.panel-body {
+    min-height: 50px;
+}
+/*Changed by yasmin on 27-02-19*/
+.label-success {
+    background-color: #ccc;
+    float: right;
+    margin-top: -40px !important;
+    margin-right: -12px !important;
+    border-radius: 10px;
+    font-size: 11.5px !important;
+}
+
+.label {
+    margin-right: 7px;
+}
+
+.fa-arrows-alt {
+    transform: rotate(45deg);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.view {
+    /*display: none;*/
+}
+
+
+.panel-footer .fa {
+    font-size: 18px;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.fa {
+    cursor: pointer;
+}
+
+.fa-ellipsis-v {
+    font-size: 17px;
+}
+
+.pull-right:not(input) {
+    margin-right: 5px;
+}
+
+.btn-info {
+    padding: 0px 12px;
+}
+
+
+
+/*.col-sm-3 {
+    width: 30%;
+    border-right: 1px solid #ccc; 
+}*/
+
+#icnShow {
+    font-size: 19px;
+    color: #003741;
+}
+
+.col-sm-1 {
+    width: auto;
+}
+
+.row {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#divHeaderLeftSection .dropdown-menu {
+    top: auto !important;
+    max-height: 420px !important;
+    width: 500px;
+    padding: 0px;
+}
+
+    #divHeaderLeftSection .dropdown-menu table {
+        width: 100%;
+    }
+
+#tblAdvHeader {
+    text-align: left;
+    /*Added And Commneted By Dipali V On 1st march*/
+    /*background-color: #ebf2f9;*/
+    /*background-color:#22B14C;*/
+    border-bottom: 1px solid #ccc;
+    padding-top: 1%;
+    color: black !important;
+    /*End of Added And Commneted By Dipali V On 1st march*/
+}
+
+#tblColumnView td {
+    padding: 8px;
+}
+
+#tblColumnView button {
+    width: 100px;
+    float: right;
+    margin: 0px;
+    margin-right: 5px;
+    /*background-color:#22B14C;*/
+    color: black;
+}
+
+#tblAdvHeader p {
+    margin: 8px 0 10px !important;
+    /*Added And Commneted By Dipali V On 1st march*/
+    font-size: 14px;
+    margin-left: 8px;
+    /*margin-top: 5px;*/
+    /*End of Added And Commneted By Dipali V On 1st march*/
+}
+
+#tblAdvHeader .fa {
+    float: right;
+    margin-right: 5px;
+}
+
+.divDraggable {
+    /*overflow: hidden;*/
+    scrollbar-face-color: #f9f9f9;
+    scrollbar-shadow-color: #f9f9f9;
+    scrollbar-highlight-color: #f9f9f9;
+    scrollbar-3dlight-color: #f9f9f9;
+    scrollbar-darkshadow-color: #f9f9f9;
+    scrollbar-track-color: #f9f9f9;
+    scrollbar-arrow-color: #f9f9f9;
+    padding: 0px;
+}
+
+.draggable .panel-footer .table td {
+    border: none !important;
+}
+
+.divDraggable:hover {
+    /*overflow-y: auto;*/
+}
+
+#tblFGrid th, tr, td {
+    border: none !important;
+}
+
+.card-header {
+    color: #fff !important;
+}
+
+.ui-state-highlight {
+    /*height: 100px;*/
+    line-height: 1.2em;
+}
+
+.Main {
+    overflow: hidden;
+}
+
+    .Main:hover {
+        overflow: hidden;
+    }
+
+/**/
+#left {
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: #f5f5f5;
+    min-height: 657px;
+    border-radius: 3px;
+}
+
+#left {
+    width: 49%;
+    float: left;
+}
+/*Changed by yasmin on 1-3-19*/
+input.form-control:not([type=button]) {
+    /*width: 100% !important;*/
+}
+
+
+
+
+
+.card-footer {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.close {
+    float: right !important;
+    font-size: 21px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    color: #000 !important;
+    text-shadow: 0 1px 0 #fff !important;
+}
+
+.modal-title {
+    margin: 0 !important;
+    line-height: 2.428571 !important;
+    FONT-SIZE: 14px !important;
+    /* Modified By Madhuri.K On 01-04-2026 */
+    color: #808080 !important;
+    text-align: center !important;
+}
+
+.required {
+    font-size: 11.5px;
+    /* Modified By Madhuri.K On 01-04-2026 */
+    color: red;
+}
+
+
+.modal ::-webkit-scrollbar {
+    background: transparent; /* optional: just make scrollbar invisible */
+    width: 0px;
+}
+
+
+
+
+@media only screen and (max-width:1024px) {
+}
+
+p {
+    color: grey;
+}
+
+a {
+    color: #88888880;
+    font-size: 11.5px;
+}
+
+ul li {
+    display: inline !important;
+}
+
+hr {
+    margin-top: 0px !important;
+}
+
+.control-label {
+    font-weight: 500;
+    color: #969696;
+    white-space: nowrap;
+    font-size: 11.5px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    margin-top: 11px;
+    text-align: right;
+}
+
+#creation_status {
+    font-size: 11.5px;
+    color: #88888880;
+}
+
+.table small {
+    position: relative;
+    top: -5px;
+    font-weight: bold;
+}
+
+select {
+    display: inline-block !important;
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+}
+
+input, textarea {
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+}
+
+.fa {
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.right {
+    white-space: nowrap;
+}
+
+.fa-trash:not(.attachRow .fa-trash) {
+    color: #ec0000;
+}
+
+.fa-trash-o {
+    color: red;
+}
+
+
+.dropdown-menu li {
+    list-style: none;
+    cursor: pointer;
+    float: left;
+    width: 100%;
+    padding: 6px;
+    font-weight: normal;
+}
+
+    .dropdown-menu li :hover {
+        background-color: #ddd;
+    }
+
+.container-fluid > .row {
+    margin: 0px !important;
+    container-fluid;
+}
+
+/*.container-fluid {
+    padding: 0px;
+}*/
+
+.btn-info {
+    color: #fff;
+    background-color: #003761;
+    border-color: #003761;
+}
+
+
+
+
+.divBody .fa-save {
+    float: right;
+}
+
+
+.divBody #countdown {
+    margin-top: -2% !important;
+}
+
+.divBody hr {
+    border-top: 1px solid #f3f3f3;
+}
+
+
+#divUserStroryDetails {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+    #divUserStroryDetails:hover {
+        overflow-y: auto;
+    }
+/*Changed by yasmin on 1-3-19*/
+/*#divDiscussionsUS {
+    width: 104%;
+}*/
+
+.chat {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .chat li {
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px dotted #999999;
+        /*box-shadow: 1px 1px 1px 1px #ccc;*/
+        margin-top: 9px;
+        padding: 4px !important;
+    }
+
+.chat-inline li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 0px;
+    margin-top: 9px;
+    padding: 4px !important;
+}
+/*.chat-inline .pull-right {
+    padding-right: 13px;
+}*/
+.chat-inline {
+    padding-left: 20px !important;
+}
+
+    .chat-inline label {
+        font-weight: 400;
+    }
+
+.chat li.left .chat-body {
+    margin-left: 60px;
+}
+
+.chat li .chat-body p {
+    margin: 0;
+}
+
+#divSubstoryList {
+    height: 450px;
+    background-color: #fbfbfb;
+    padding: 4px !important;
+    /*border:1px solid #ccc;
+    border-collapse:collapse;*/
+}
+
+#divSubstoryForm, #divSubstories {
+    height: 550px;
+    overflow-y: auto;
+    /*border:1px solid #ccc;
+    border-collapse:collapse;*/
+}
+
+    #divSubstoryForm .fa-save {
+        margin-bottom: 5px;
+    }
+
+.counter {
+    background-color: #eaecf0;
+    text-align: center;
+}
+
+.employees, .customer, .design, .order {
+    margin: 8px;
+}
+
+.counter-count {
+    font-size: 14px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    background-color: #00b3e7;
+    border-radius: 50%;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    line-height: 62px;
+    width: 62px;
+    height: 62px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+}
+
+.employee-p, .customer-p, .order-p, .design-p {
+    font-size: 18px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    color: #000000;
+    white-space: nowrap;
+}
+
+.card-img-top {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.primary-font {
+    width: 100%;
+}
+
+h2 a {
+    cursor: pointer;
+}
+
+.demo-droppable {
+    /*background: #08c;*/
+    color: white !important;
+    padding: 25px 0;
+    text-align: center;
+    border: 2px dotted #ccc;
+}
+
+    .demo-droppable.dragover {
+        background: #00CC71;
+    }
+
+    .demo-droppable p {
+        color: black !important;
+    }
+
+.attachRow {
+    padding: 8px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+    .attachRow .fa-trash {
+        float: right;
+    }
+
+a {
+    cursor: pointer;
+}
+
+.chat-img {
+    margin-right: 10px;
+}
+
+#divProductBacklog_Body {
+    /*padding-top: 23px !important;*/
+}
+
+.Editor-editor {
+    height: 150px !important;
+    padding: 1%;
+    border: 1px solid #CCC;
+    border-radius: 0;
+    word-wrap: break-word;
+    background-color: white;
+}
+
+#menuBarDiv .btn-group:nth-child(5) {
+    display: none;
+}
+
+#menuBarDiv .btn-group:nth-child(6) {
+    display: none;
+}
+
+#menuBarDiv .btn-group:nth-child(7) {
+    display: none;
+}
+
+#menuBarDiv .btn-group:nth-child(8) {
+    display: none;
+}
+
+#menuBarDiv .btn-group:nth-child(9) {
+    display: none;
+}
+
+[data-toggle="collapse"] {
+    font-weight: normal !important;
+    cursor: pointer;
+}
+
+#ulTabs {
+    background-color: #0288D1 !important;
+    width: auto;
+    padding-right: 33px !important;
+    padding-bottom: 7px !important;
+    padding-top: 8px;
+    /*margin-left: 10PX;*/
+}
+
+    #ulTabs li {
+        padding: 2px 8px;
+        float: none;
+    }
+
+        #ulTabs li a {
+            color: white;
+        }
+
+#form1 {
+    overflow: hidden;
+}
+/*Changed By yasmin S on 27 feb 2019*/
+#countdownFN, #countdown, #countdownAC, #countdown {
+    float: right;
+    margin-top: 0px;
+    margin-right: 0px;
+    font-size: 11.5px !important;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    color: #887d7d !important;
+}
+
+#countdown1 {
+    float: right;
+    margin-top: 0px !important;
+    margin-right: -1px;
+    font-size: 11.5px !important;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    color: #887d7d !important;
+}
+
+.divBody #countdown {
+    margin-top: 0px !important;
+}
+/*Commentd by Yasmin On 8-6-18*/
+#countSubUSdown, #countdownDescription, #countdownSummary {
+    /*margin-right: -30px !important;
+    margin-top: -27px !important;*/
+    font-size: 11.5px !important;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    color: #887d7d !important;
+    float: right !important;
+    margin-left: 0px !important;
+}
+
+#trProjectDetail {
+    font-size: 11.5px !important;
+}
+
+input.form-control:not([type=button]) {
+    font-size: 11.5px !important;
+}
+
+.datepicker-dropdown {
+    margin-right: 53% !important;
+}
+
+.datepicker.dropdown-menu {
+    display: grid;
+    min-width: 262px !important;
+}
+/*NEW CSS*/
+@media (max-width:991px) {
+    .clsDiscussion {
+        padding-bottom: 5% !important;
+    }
+
+    .details {
+        width: 105%;
+    }
+
+    #divLineGraph {
+        width: 103%;
+    }
+
+    canvas {
+        width: 75% !important;
+    }
+}
+
+.note {
+    color: red;
+    margin-top: 17px;
+    margin-left: -9px;
+    font-size: 12px !important;
+}
+
+
+#divRighttask p:first-child {
+    font-size: 11.5px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    color: red;
+    text-align: left;
+}
+
+#divAssignedTask .modal-header {
+    padding: 10px;
+}
+
+#divAssignedTask .modal-header {
+    background-color: #00B050;
+}
+
+legend {
+    border: 1px solid #0288D1 !important;
+    margin-left: 10px;
+    width: auto;
+    font-size: 11.5px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    background-color: #0288D1 !important;
+    color: white;
+    padding: 3px;
+    text-align: left;
+}
+
+#divtaskForm .btn-default {
+    background-color: #00B050 !important;
+    color: white;
+}
+
+.clsfullWidth {
+    /*background-color: #00a65a;*/
+    /*color: white;*/
+    height: 70px;
+    /*color: white;*/
+    margin-bottom: 10px;
+}
+
+#tblAssignedHeader tr td {
+    width: 50%;
+    color: white;
+}
+
+.clsNoCustomFields {
+    color: #C3EC13 !important;
+    margin-top: -7%;
+}
+
+#tblAssignedHeader tr:first-child td:nth-child(2) {
+    text-align: right;
+}
+
+#divAssignedTask .modal-header {
+    height: 70px;
+}
+/*Added by kashish for textarea enhancement*/
+.clsCaption {
+    vertical-align: text-top !important;
+    padding-right: 5px !important;
+    font-family: helvetica !important;
+    /*font-size: 12px !important;*/
+}
+
+.clsShowInEdit {
+    padding-right: 5px !important;
+    font-family: helvetica !important;
+    font-size: 12px !important;
+}
+
+#divEntity {
+    width: 105%;
+    padding-right: 5%;
+}
+
+#modalbodycontain {
+    padding-top: 10px;
+    overflow: AUTO;
+    height: 381PX;
+}
+
+#divtaskForm {
+    font-family: helvetica !important;
+    font-size: 12px !important;
+    padding-left: 8px;
+    margin-left: 6%;
+    overflow-x: hidden;
+    height: 400px;
+    width: 103%;
+    overflow-y: auto;
+}
+
+    #divtaskForm #SaveBtn0 {
+        float: right;
+        margin-right: 14%;
+    }
+
+.divBorder {
+    border: 1px solid #ddd;
+    font-size: 14px;
+    width: 115px;
+    display: inline;
+    padding: 2px;
+    margin-left: 5px;
+}
+
+#tblAssignedTasks td {
+    width: 25% !important;
+}
+
+#tblAssignedTasks tr td:nth-child(1) {
+    text-align: left !important;
+    /*position: absolute;
+    float: left;*/
+}
+
+#tblAssignedTasks tr td:nth-child(3) {
+    text-align: center !important;
+}
+
+#divRighttask {
+    text-align: right;
+    display: table;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/*Commented By yasmin on 8-3-19*/
+/*#txtTaskName, #txtTaskNotes {
+    width: 95% !important;
+}*/
+
+#divtaskForm .form-control:not(#txtTaskNotes):not(#txtTaskName):not(#dtStartDate):not(#dtEndDate) {
+    /*width: 180px !important;*/
+}
+
+#tblAssignedTasks tr td:nth-child(3) {
+    width: 13%;
+}
+
+.clslabelInfo {
+    color: white !important;
+}
+
+#cboResourceStartDate {
+    display: none !important;
+}
+
+#cboResourceEndDate {
+    display: none !important;
+}
+
+fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 1px solid #ddd;
+}
+/*Added By Yasmin on 11th may 2018*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+div {
+    -ms-overflow-style: none;
+}
+
+textarea {
+    overflow-y: auto !important;
+    -ms-overflow-style: none;
+    /*overflow: -moz-scrollbars-none;*/
+    /*padding-bottom: 10px !important;*/
+}
+
+    textarea:focus {
+        outline: none !important;
+    }
+
+/*Changed bY yasmin on 28-2-19*/
+#divIssues, #frmDetails {
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*margin-top: 20px*/
+}
+
+#divDiscussionsUS {
+    overflow-y: hidden;
+    height:600px!important;
+    /*margin-top: 20px*/
+}
+
+    #divDiscussionsUS:hover {
+        overflow-y: auto;
+        /*margin-top: 20px*/
+    }
+
+#divSubstoryForm {
+    overflow-y: auto;
+}
+
+.save {
+    float: right !important;
+    margin-left: 25px !important;
+    margin-right: 12px !important;
+    margin-top: 0% !important;
+}
+
+#AssignSaveBtn0 {
+    display: none;
+}
+
+#divDiscussionListSprintRelease, #divDiscussionList {
+    height: 500px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+    #divDiscussionListSprintRelease:hover, #divDiscussionList:hover {
+        overflow-y: auto;
+    }
+
+#txtDiscussions, #DiscussionTextArea {
+    max-height: 400px;
+    overflow-y: auto !important;
+    -ms-overflow-style: none;
+    /*width: 128% !important;*/
+}
+/*Comment by Yasmin to hide the scroll of task textarea on 4-06-18*/
+/*#txtTaskNotes {
+max-height:700px;
+overflow-y:auto!important;
+
+}*/
+#tblAssignedTasks, #divEntity {
+    height: 500px;
+}
+
+.clsCaption {
+    text-align: left !important;
+    /*position: absolute;
+    float: left;*/
+}
+
+.tabcontentChart {
+    float: left;
+    padding: 0px 12px;
+    /* border: 1px solid #ccc; */
+    width: 81% !important;
+    border-left: none;
+    /*height: 300px;*/
+    /* border-radius: 4px; */
+    margin-top: 2%;
+}
+
+#myScrollspy .nav-pills > li > a:hover {
+    /*-webkit-box-shadow: -100px 0 0 #5bc0de inset;*/
+    background: #5bc0de !important;
+    border-right: 4px solid rgb(51, 122, 183);
+    color: black !important;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: linear;
+    /*box-shadow: 0px 0 0rgb(51, 122, 183) inset;*/
+    /*//box-shadow: 0 0 1px #ccc;*/
+}
+
+/*#myScrollspy .nav-pills > li > a{
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: linear;
+   box-shadow: 0 0 1px #ccc;
+}*/
+#myScrollspy ul.nav-pills {
+    top: 20px;
+    /*margin-left:120px;*/
+    position: relative;
+}
+
+#myScrollspy .nav-pills > li > a {
+    width: 120px;
+}
+/*Changed By yasmin on 27-2-19*/
+/*#myScrollspy {
+    margin-left: -1%;
+}*/
+
+.scrollspy-example {
+    position: relative !important;
+    height: 330px !important;
+    margin-top: 10px !important;
+    padding-bottom: 200px !important;
+}
+
+#myScrollspy .nav-pills > li > a {
+    width: 120px !important;
+}
+
+.divLineGraph {
+    padding: 5px;
+    border-top: 2px solid #3c8dbc !important;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    height: 100%;
+    width: 126% !important;
+}
+
+/*canvas {
+    width:auto!important;
+}*/
+.wrap {
+    word-break: break-all;
+    -ms-word-break: break-all;
+    white-space: normal;
+}
+/*.table tr td {
+    word-break:break-all;
+-ms-word-break:break-all;
+white-space:normal!important;
+}*/
+.table th {
+    text-align: center !important;
+}
+
+/*Added by Yasmin On 27-2-19*/
+#SprintBody {
+    margin-top: 25px;
+}
+
+#smallRemark {
+    font-weight: 500;
+    color: grey;
+    /* text-align: right; */
+    margin-left: -46px;
+    /* float: right; */
+    margin-left: -29px;
+    color: #000;
+}
+
+:focus {
+    outline: none !important;
+}
+
+.search-container {
+    display: inline-block;
+    margin-left: -14px;
+}
+
+.form-row {
+    margin-top: 20px;
+}
+
+#countDown {
+    font-size: 11.5px !important;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    color: #887d7d !important;
+    float: right;
+    margin-top: 0px;
+    margin-right: 9px;
+}
+
+#txtSRDescription, #txtSRName {
+    margin-left: -8px;
+}
+
+.searchus {
+    margin-top: -55px;
+}
+
+.detail {
+    width: 100% !important;
+}
+
+.updatebtnrls {
+    margin: -4px 29px;
+}
+
+.fa-certificate p {
+    right: 0;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+        font-size: 11.5px;
+    /* Modified By Madhuri.K On 26-03-2026 */
+    position: absolute;
+    top: 10px;
+    left: 9px;
+}
+
+#divProductBacklog_Body .modal-header {
+    padding: 3px 4px;
+    border-bottom: none;
+}
+
+.empname, .empimg, .clsempname {
+    margin-top: 5px;
+}
+
+#DivSubTabIssuesList, #DivReviewList, #DivHistorykList, #divDiscussionsUS {
+    overflow-y: hidden !important;
+    height: 300px;
+}
+
+    #DivSubTabIssuesList:hover, #DivReviewList:hover, #DivHistorykList:hover {
+        overflow-y: auto !important;
+    }
+
+#divDiscussions {
+    overflow-y: hidden !important;
+}
+
+    #divDiscussions:hover {
+        overflow-y: auto !important;
+    }
+
+#divTaskList11 {
+    width: 100%;
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden !important;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+#tblProjectDetail input {
+    margin-left: 11px !important;
+}
+
+#txtTaskName0, #txtStartDate0, #txtEndDate0, #txtWorkHrs0, #txtStoryPoints0 {
+    width: 90px;
+}
+
+#cboTaskType0 {
+    width: 105px;
+    margin-left: 9px;
+}
+
+#cboresource0 {
+    width: 130px;
+    margin-left: 9px;
+}
+
+#DivSubTabIssuesList .table > tbody > tr > td:nth-child(6) {
+    word-break: break-all !important;
+    width: 210px !important;
+}
+
+#ContainAllDivs .clsDiscussion_border_bottom {
+    margin-left: 10px;
+    margin-right: 18px;
+}
+
+#div_details input.form-control:not([type=button]), #divSubstoryForm input.form-control:not([type=button]) {
+    width: 100% !important;
+}
+
+.form-control[readonly] {
+    cursor: auto !important;
+}
+
+.readytorelease {
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    background: transparent !important;
+    border: 1px solid #01579B !important;
+    color: #01579B !important;
+}
+
+#btnExport {
+    float: right;
+    margin-left: 10px;
+}
+
+#countTaskName, #countTaskNote {
+    font-size: 12px !important;
+    color: #887d7d !important;
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+}
+
+#AssigntxtStoryPoints {
+    width: 180px !important;
+}
+#divTeamsList {
+    height: 500px;
+    overflow-y: hidden;
+}
+
+#divTeamsList:hover {
+    overflow-y: auto;
+}
+#idStartItern {
+    border: 1px solid #4792be;
+    background: #fff;
+    margin-bottom: 3px;
+    margin-top: 0px;
+    color: #01579B !important;
+}
+/*Added By Yasmin On 3-4-19  for task detail section*/
+#tblProjectDetail .fa-calendar-check-o, #trProjectDetail .fa-calendar-check-o {
+    margin-top: 12px !important;
+    float: right !important;
+    /* margin-right: 0%; */
+    color: #0099CC;
+    position: relative;
+    /* margin-left: -1px; */
+}
+#divTaskList11 .form-control {
+    padding: 6px 0px;
+}
+#divTaskList11 input.form-control:not([type=button]){
+    width: 80% !important;
+}
+
+.detail {
+    height: 570px !important;
+}
+
+#DivCurrentSprintUS {
+    height: 300px;
+    overflow-y: hidden !important;
+}
+
+    #DivCurrentSprintUS:hover {
+        overflow-y: auto !important;
+    }
+
+#divUserStroryDetails .clsBox {
+    margin-bottom: 20px;
+}
+
+.form-control[readonly] {
+    cursor: auto !important;
+}
+
+    @media (min-width: 992px) {
+        #div_details .col-md-10 {
+            width: 82.333333% !important;
+        }
+
+        #divtaskForm .col-md-9 {
+            width: 81%;
+        }
+    }

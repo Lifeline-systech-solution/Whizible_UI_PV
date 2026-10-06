@@ -1,0 +1,42 @@
+﻿/*Added by Nilesh for Loader 8/1/16*/
+#preloader {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -400px;
+    top: 50%;
+    left: 50%;
+    padding: 30px 15px 0px;
+    border: 3px solid #ababab;
+    box-shadow: 1px 1px 10px #ababab;
+    border-radius: 20px;
+    background-color: white;
+    /*  Commented & Added By Dipali V On 4th April 2023 For Loader Image Path*/
+    /*background: url("../../Images/KloaderImage.gif") rgba( 255, 255, 255, .8 ) 100% 100% no-repeat;*/
+    background: url('../../Whizible2.0-new/dist/img/loading.gif') rgba( 255, 255, 255, .8 ) 100% 100% no-repeat;
+    /*   Commented & Added By Dipali V On 4th April 2023 For Loader Image Path*/
+    width: 100px;
+    height: 100px;
+    /*z-index: 99;
+            height: 100%;*/
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    z-index: 1002;
+    text-align: center;
+}
+
+    #fillDiv {
+        opacity: 0.4;
+        background-color: ghostwhite;
+        /*DISPLAY: none;*/
+        Z-INDEX: 100;
+        LEFT: 0px;
+        VISIBILITY: visible;
+        WIDTH: 100%;
+        POSITION: absolute;
+        TOP: 0px;
+        HEIGHT: 100%;
+        float: right;
+    }
+   
+    /*Added by Nilesh for Loader 8/1/16*/

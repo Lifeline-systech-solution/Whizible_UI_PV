@@ -1,0 +1,473 @@
+.close {
+    float: right !important;
+    border: none !important;
+    background: none !important;
+    margin-top: 2px !important;
+}
+
+.dataTables_scrollBody {
+    margin-bottom: 10px
+}
+
+.input-group-btn button.btn.btncalendar {
+    border-radius: 2px;
+}
+
+.listboxpanel select {
+    min-height: 320px
+}
+
+table tr th, table tr td {
+    text-align: center !important
+}
+
+.dataTables_scrollHeadInner, .dataTables_scrollHeadInner table {
+    width: 100% !important
+}
+
+.dataTables_scrollHeadInner {
+    width: 100% !important
+}
+
+div.dataTables_scrollBody > table {
+    width: 100% !important
+}
+
+.custom_chckbox label:before {
+    margin-right: 10px;
+}
+
+.notebox {
+    padding: 10px;
+}
+
+/* Style for readonly popup fields */
+.popup-field,
+input[id^="txtDeliverable"],
+input[id^="txtPhase"],
+input[id^="txtMilestone"],
+input[id^="txtModule"],
+input[id^="txtSubProject"],
+input[id^="txtChangeRequest"],
+input[id^="txtFeature"],
+input[id^="txtEstimationType"],
+input[id^="txtUserStory"] {
+    background-color: #f8f9fa !important;
+    cursor: pointer !important;
+}
+
+.actionlinks a {
+    margin: 0px 5px;
+}
+
+.notebox ul {
+    margin-bottom: 0;
+    padding: 0px 0px 0px 15px;
+}
+/* Ensure ordered lists show numbers in notes */
+.notebox ol {
+    margin-bottom: 0 !important;
+    padding-left: 30px !important;
+    padding-right: 0 !important;
+    list-style: decimal !important;
+    list-style-position: outside !important;
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+    .notebox ol li {
+        margin-bottom: 5px !important;
+        display: list-item !important;
+        text-align: left !important;
+        list-style-position: outside !important;
+    }
+/* Override table alignment for notebox content */
+.notebox, .notebox * {
+    text-align: left !important;
+}
+/* Isolate panel-body from table alignment */
+#collapseOne .panel-body,
+#collapseOne .panel-body *,
+#collapseOne .notebox,
+#collapseOne .notebox *,
+#collapseOne ol,
+#collapseOne ol li {
+    text-align: left !important;
+}
+/* Force list display using CSS counters - more reliable */
+#collapseOne ol {
+    counter-reset: note-counter;
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin: 0 !important;
+    display: block !important;
+}
+
+    #collapseOne ol li {
+        counter-increment: note-counter;
+        list-style: none !important;
+        padding-left: 25px !important;
+        position: relative !important;
+        margin-bottom: 5px !important;
+        display: block !important;
+        text-align: left !important;
+    }
+
+        #collapseOne ol li::before {
+            content: counter(note-counter) ". ";
+            position: absolute !important;
+            left: 0 !important;
+            font-weight: normal !important;
+            color: #000 !important;
+        }
+
+.taskclosurtbl span.usernameshort.circle-bggreen.usernamecirclesmall {
+    margin: 0 auto;
+}
+
+span.usernameshort.usernamecirclesmall {
+    width: 30px;
+    height: 30px;
+    font-size: 11.5px;
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+span.usernameshort {
+    color: #fff;
+    display: block;
+    border-radius: 100%;
+    text-align: center;
+    border: 1px solid #eee;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.circle-bggreen {
+    background: #4bc5c6;
+}
+
+ul.remarkslist {
+    padding: 0;
+    list-style: circle;
+    font-size: 13px;
+}
+
+.tskValTbl tr th:first-child {
+    min-width: 100px;
+}
+
+.tskValTbl tr th:nth-child(2), .tskValTbl tr td:nth-child(2) {
+    text-align: left !important;
+}
+
+ul.remarkslist li {
+    line-height: normal;
+    margin-bottom: 5px
+}
+
+.delTbl th {
+    min-width: 150px;
+}
+
+/* Required field asterisk styling */
+.required {
+    color: red !important;
+    /*font-weight: bold;*/
+}
+
+/* Added By Dipali V On 23rd Jan 2026 For W26 - Keep required * inline for popup (link-icon) textboxes */
+td[data-group="field"] input.form-control.popup-field {
+    display: inline-block !important;
+    vertical-align: middle !important;
+    /* keep some room for the link icon and the asterisk */
+    width: calc(100% - 6px) !important;
+}
+
+    td[data-group="field"] input.form-control.popup-field + .required {
+        display: inline-block !important;
+        vertical-align: middle !important;
+        margin-left: 5px !important;
+    }
+
+/* Added By Dipali V On 23rd Jan 2026 For W26 - Ensure asterisk stays inline with selectpicker */
+td[data-group="field"] div[style*="inline-block"] {
+    display: inline-flex !important;
+    align-items: center !important;
+    width: calc(100% - 15px) !important;
+}
+
+    td[data-group="field"] div[style*="inline-block"] .bootstrap-select {
+        flex: 1 !important;
+        margin-right: 3px !important;
+    }
+
+    td[data-group="field"] div[style*="inline-block"] .required {
+        display: inline-block !important;
+        margin-left: 3px !important;
+        vertical-align: middle !important;
+        flex-shrink: 0 !important;
+    }
+
+/* Added By Dipali V On 23rd Jan 2026 For W26 - Prevent red color for popup-field inputs with required class */
+input.form-control.popup-field.required,
+input.form-control.popup-field.required:focus {
+    color: inherit !important;
+}
+
+/* Red cross icon for validation */
+.Icnvalidation .validationIcon,
+.Icnvalidation i.fa-times {
+    color: red !important;
+}
+
+/* Green tick icon for validated rows */
+.Icnvalidated {
+    color: green !important;
+}
+
+    .Icnvalidated i.fa-check-circle {
+        color: green !important;
+    }
+
+/* Copy icon - hidden by default, shown when row is validated */
+.Icncopytask {
+    display: none;
+}
+
+    .Icncopytask.show {
+        display: inline-block;
+    }
+
+/* Table scrolling optimization */
+.table-responsive {
+    overflow-x: auto;
+    overflow-y: visible;
+    max-height: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scrollTable {
+    overflow-y: auto !important;
+    overflow-x: auto !important;
+    /* Height will be set dynamically by JavaScript */
+}
+
+/* Added By Dipali V On 23rd Jan 2026 For W26 - Freeze table header */
+.freezeColumns {
+    position: relative;
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+    .freezeColumns thead {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #fff;
+    }
+
+        .freezeColumns thead th {
+            background-color: #e7edf0 !important;
+            border-bottom: 2px solid #e7edf0;
+            position: sticky;
+            top: 0;
+            z-index: 11;
+        }
+
+.bootstrap-select .dropdown-menu li a.opt {
+   
+    font-size: 11.5px !important;
+}
+.form-control {
+    font-size: 11.5px !important;
+    color: black !important;
+}
+
+#bulkTaskTbl {
+    width: 100%;
+    display: table;
+    font-size: 11.5px !important;
+}
+
+    #bulkTaskTbl thead th {
+        white-space: nowrap !important;
+        min-width: 180px;
+        max-width: 200px;
+    }
+
+    #bulkTaskTbl td {
+        white-space: nowrap;
+        min-width: 180px;
+        max-width: 200px;
+    }
+
+        /* Specific column sizing */
+        #bulkTaskTbl th[data-group="action"],
+        #bulkTaskTbl td[data-group="action"] {
+            min-width: 120px;
+            max-width: 120px;
+        }
+
+        #bulkTaskTbl th[data-group="field"]:first-of-type,
+        #bulkTaskTbl td[data-group="field"]:first-of-type {
+            min-width: 200px;
+            max-width: 250px;
+        }
+
+    /* Prevent wrapping in headers with asterisks */
+    #bulkTaskTbl th span {
+        display: inline !important;
+        white-space: nowrap;
+    }
+
+/* Ensure selectpicker only shows once */
+.bootstrap-select.btn-group {
+    display: block !important;
+}
+
+.bootstrap-select > select {
+    position: absolute !important;
+    clip: rect(0,0,0,0) !important;
+    pointer-events: none !important;
+}
+
+select.selectpicker {
+    position: absolute !important;
+    clip: rect(0,0,0,0) !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+/* Fix for modal selectpickers - hide original select */
+.modal select.selectpicker {
+    position: absolute !important;
+    clip: rect(0,0,0,0) !important;
+    pointer-events: none !important;
+    opacity: 0 !important;
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.modal .bootstrap-select {
+    width: 100% !important;
+}
+    /* Prevent multiple instances - hide all but the first */
+    .modal .bootstrap-select + .bootstrap-select,
+    .modal .bootstrap-select ~ .bootstrap-select {
+        display: none !important;
+    }
+/* Specifically target #deliverableTypeFilter container */
+#deliverableTypeFilter {
+    position: relative !important;
+}
+    /* Hide original select when bootstrap-select wrapper exists */
+    #deliverableTypeFilter.bootstrap-select-hidden,
+    #deliverableTypeFilter + .bootstrap-select ~ select {
+        display: none !important;
+    }
+/* Hide columns marked as hidden */
+.column-hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+#bulkTaskTbl thead th.column-hidden,
+#bulkTaskTbl tbody td.column-hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+.task-note-textarea {
+
+width:139px;
+}
+/* Style for date input autocomplete suggestions if they appear */
+input[id^="BTStartdate"]::-webkit-calendar-picker-indicator,
+input[id^="BTEnddate"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+/* Ensure Alertify toasts appear above Bootstrap modals/backdrops */
+.alertify-notifier, .alertify-notifier .ajs-message {
+    z-index: 200000 !important;
+}
+
+/* Force datepicker to open below input fields */
+.ui-datepicker {
+    position: absolute !important;
+    z-index: 9999 !important;
+}
+    /* Prevent datepicker from flipping upside down - remove top positioning */
+    .ui-datepicker.ui-datepicker-top {
+        top: auto !important;
+    }
+
+#bulkTaskTbl .dropdown-menu, .dropdown-menu .inner {
+    max-height: 192px !important;
+    /*overflow-y: auto!important;*/
+}
+
+.scrollTable {
+    overflow-y: auto !important;
+    overflow-x: auto !important;
+    height: 252px;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+    overflow: hidden;
+    color: black;
+    font-size:12px;
+}
+.borderbtn {
+    font-size: 11.5px !important;
+}
+#validationModal .tskValTbl tbody tr.warning {
+    background-color: #fff3cd !important;  Light orange for warnings 
+}
+
+#validationModal .tskValTbl tbody tr.danger {
+    background-color: #f8d7da !important;  Light red for errors 
+}
+ Hover effect for better UX 
+#validationModal .tskValTbl tbody tr.warning:hover {
+    background-color: #ffe69c !important;
+}
+
+#validationModal .tskValTbl tbody tr.danger:hover {
+    background-color: #f5c2c7 !important;
+}
+
+#validationModal .tskValTbl tbody tr.warning td {
+    background-color: #fff3cd !important;
+}
+
+#validationModal .tskValTbl tbody tr.danger td {
+    background-color: #f8d7da !important;
+}
+
+#validationModal .tskValTbl tbody tr.warning:hover td {
+    background-color: #ffe69c !important;
+}
+
+#validationModal .tskValTbl tbody tr.danger:hover td {
+    background-color: #f5c2c7 !important;
+}
+
+.inline-note-list {
+    display: flex !important;
+    gap: 20px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    counter-reset: note !important;
+}
+
+    .inline-note-list li {
+        list-style: none !important;
+        counter-increment: note !important;
+        white-space: nowrap !important;
+    }
+
+        .inline-note-list li::before {
+            content: counter(note) ". ";
+            font-weight: 600 !important;
+        }

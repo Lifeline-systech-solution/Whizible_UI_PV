@@ -1,0 +1,84 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WhizibleSem13.0", "WhizibleSem13.0.vbproj", "{5820280A-3833-40AE-A7C8-78CC732F61DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhizibleAPI", "WhizibleAPISolution\WhizibleAPI\WhizibleAPI.csproj", "{9563892D-DCF2-4611-9FCF-13A03C14AD5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhizibleAPI-II", "WhizibleAPISolution\WhizibleAPI-II\WhizibleAPI-II.csproj", "{1B01ECF7-1728-42A0-9F7A-8AE714CC2599}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhizibleAPI-Help", "WhizibleAPISolution\WhizibleAPI-Help\WhizibleAPI-Help.csproj", "{219D0CD3-6418-44DD-85FC-E5CB95FEACC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhizibleAPI-Project", "WhizibleAPISolution\WhizibleAPI-Project\WhizibleAPI-Project.csproj", "{D5223AB1-574B-4CE6-A61F-9D878D78E1BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhizibleAPI-Helpdesk", "WhizibleAPISolution\WhizibleAPI-Helpdesk\WhizibleAPI-Helpdesk.csproj", "{E6B64743-91D9-4A30-AE65-51AF618EB6C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhizibleAPI-Issue", "WhizibleAPISolution\WhizibleAPI-Issue\WhizibleAPI-Issue.csproj", "{FF608C87-961D-4ABB-8F0C-C66CAAEE27E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhizibleAPI-Resource", "WhizibleAPISolution\WhizibleAPI-Resource\WhizibleAPI-Resource.csproj", "{051A9A84-CE3D-43BA-9231-31C4C61935D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhizibleAPI-Invoice", "WhizibleAPISolution\WhizibleAPI-Invoice\WhizibleAPI-Invoice.csproj", "{C0681047-F6BB-401A-9634-1E63A6451283}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhizibleAPI-Dashboard", "WhizibleAPISolution\WhizibleAPI-Dashboard\WhizibleAPI-Dashboard.csproj", "{CCD6301C-7F49-452E-A68D-C330B1E09F58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhizibleAPI-Timesheet", "WhizibleAPISolution\WhizibleAPI-Timesheet\WhizibleAPI-Timesheet.csproj", "{F2FB95B5-34D6-4A74-95FD-B4D6959692FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5820280A-3833-40AE-A7C8-78CC732F61DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5820280A-3833-40AE-A7C8-78CC732F61DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5820280A-3833-40AE-A7C8-78CC732F61DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5820280A-3833-40AE-A7C8-78CC732F61DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9563892D-DCF2-4611-9FCF-13A03C14AD5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9563892D-DCF2-4611-9FCF-13A03C14AD5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9563892D-DCF2-4611-9FCF-13A03C14AD5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9563892D-DCF2-4611-9FCF-13A03C14AD5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B01ECF7-1728-42A0-9F7A-8AE714CC2599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B01ECF7-1728-42A0-9F7A-8AE714CC2599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B01ECF7-1728-42A0-9F7A-8AE714CC2599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B01ECF7-1728-42A0-9F7A-8AE714CC2599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{219D0CD3-6418-44DD-85FC-E5CB95FEACC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{219D0CD3-6418-44DD-85FC-E5CB95FEACC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{219D0CD3-6418-44DD-85FC-E5CB95FEACC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{219D0CD3-6418-44DD-85FC-E5CB95FEACC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5223AB1-574B-4CE6-A61F-9D878D78E1BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5223AB1-574B-4CE6-A61F-9D878D78E1BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5223AB1-574B-4CE6-A61F-9D878D78E1BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5223AB1-574B-4CE6-A61F-9D878D78E1BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6B64743-91D9-4A30-AE65-51AF618EB6C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6B64743-91D9-4A30-AE65-51AF618EB6C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6B64743-91D9-4A30-AE65-51AF618EB6C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6B64743-91D9-4A30-AE65-51AF618EB6C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF608C87-961D-4ABB-8F0C-C66CAAEE27E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF608C87-961D-4ABB-8F0C-C66CAAEE27E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF608C87-961D-4ABB-8F0C-C66CAAEE27E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF608C87-961D-4ABB-8F0C-C66CAAEE27E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{051A9A84-CE3D-43BA-9231-31C4C61935D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{051A9A84-CE3D-43BA-9231-31C4C61935D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{051A9A84-CE3D-43BA-9231-31C4C61935D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{051A9A84-CE3D-43BA-9231-31C4C61935D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0681047-F6BB-401A-9634-1E63A6451283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0681047-F6BB-401A-9634-1E63A6451283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0681047-F6BB-401A-9634-1E63A6451283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0681047-F6BB-401A-9634-1E63A6451283}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCD6301C-7F49-452E-A68D-C330B1E09F58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCD6301C-7F49-452E-A68D-C330B1E09F58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCD6301C-7F49-452E-A68D-C330B1E09F58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCD6301C-7F49-452E-A68D-C330B1E09F58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2FB95B5-34D6-4A74-95FD-B4D6959692FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2FB95B5-34D6-4A74-95FD-B4D6959692FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2FB95B5-34D6-4A74-95FD-B4D6959692FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2FB95B5-34D6-4A74-95FD-B4D6959692FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {619CA614-22AA-4FA5-A11F-A3BE694F3ACB}
+	EndGlobalSection
+EndGlobal

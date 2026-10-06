@@ -1,0 +1,11 @@
+﻿ .box:hover 
+{    
+	  box-shadow: 10px 10px 10px #ccc ;  
+	z-index:2;
+	width:105%;
+    }
+	.active{ 
+	  box-shadow: 10px 10px 10px #ccc;  
+	z-index:2;
+	width:105%;
+	}

@@ -1,0 +1,1 @@
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="ManageQuestions_CommonList.aspx.vb" Inherits="Whiz.ManageQuestions_CommonList"%>

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Dashboard</title>
+
+    <script type="text/javascript" src="js/loader.js"></script>
+  <script type="text/javascript" src="js/gchrt.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Custom fonts for this template --> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">	
+    <!-- Custom styles for this template -->
+	<!-- Plugin CSS -->
+	 <link href="css/editor.css" type="text/css" rel="stylesheet"/>
+	 <link href="css/style.css" rel="stylesheet">
+	 <link href="css/reqdetail.css" rel="stylesheet">
+	 <link href="css/setting.css" rel="stylesheet">
+    <link href="css/sb-admin.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">	
+	<link rel="stylesheet" href="css/timepicker.min.css">
+	<link rel="stylesheet" href="css/dashboard.css">
+	
+	<!-- graf bar -->
+	
+	<!-- Bootstrap core CSS -->
+	    <link href="graf-css/bootstrap.min.css" rel="stylesheet" id="bootstrap-style">
+	
+		<!-- page css files -->
+		<link href="graf-css/fullcalendar.css" rel="stylesheet">
+	
+	<!-- end graf bar -->
+<style>
+#id17 .form-group.cutom-view-list {
+    height: 220px;
+    overflow-y: auto;
+    border: none;
+}
+.select-all-view {
+    background: rgba(0,0,0,.05);
+}
+.view{
+	margin-top: -245px;
+	text-align: right;
+}
+.view1{
+	margin-top: -252px;
+	width: 100%;
+	
+	height: 30px;
+}
+.btnx{
+	margin-top: 2px;
+}
+
+
+</style>
+  </head>
+  <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <a class="navbar-brand" href="#"><img src="img/logo.png"></a>      
+      <div class="collapse navbar-collapse in shoW" id="navbarResponsive">
+        <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+		
+		  <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Dashboard">
+            <a class="nav-link" href="#">
+              <i class="fa fa-bars" aria-hidden="true"></i>              
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+            <a class="nav-link" href="#">
+              <i class="fa fa-search"></i>              
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+            <a class="nav-link" href="#">
+              <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+            <a class="nav-link" href="#">
+              <i class="fa fa-home"></i>
+            </a>
+          </li>       
+         
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+            <a class="nav-link" href="#">
+              <i class="fa fa-cogs" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+        
+        <ul class="navbar-nav ml-auto">          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mr-lg-2" href="#" id="alertsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-fw fa-bell"></i>             
+              <span class="new-indicator text-warning d-none d-lg-block">
+                <span class="number">3</span>
+              </span>
+            </a>
+            
+          </li>
+          <li><i class="fa fa-question" aria-hidden="true"></i>	</li>
+		  <li><img src="img/userimg.png"><span>UserName</span></li>
+		  <li><i class="fa fa-sign-out" aria-hidden="true"></i></li>          
+        </ul>
+      </div>
+    </nav>
+
+    <div class="content-wrapper" style="background:#f2f4f4;">
+
+      <div class="container-fluid">
+		
+		 <div class="help-desk" data-spy="affix" data-offset-top="100">
+							<div class="row">						
+									<div class="req-dsk-kn new-req-head">									
+									<div class="col-md-12">
+									<ul>
+										<li><h4>Dashboard</h4></li>										
+										<li class="active"><a href="requestdetail.html">Requests</a></li>
+										<li><a href="dashboard.html">Dashboard</a></li>
+										<li><a href="#">Knowledge</a></li>
+										<li class="new-r-btn"><a href="newequest.html"><button type="button" class="btn btn-default">New Request<i class="fa fa-plus" aria-hidden="true"></i></button></a></li>
+										<li style="float: right;padding-right: 0;" class="setting-btn"><a href="setting.html"><button type="button" class="btn " style="border: none;padding: 0;" title="Setting"><i class="fa fa-cog" aria-hidden="true"></i></button></a></li>
+										<!-- <li class="new-r-btn"><button type="button" class="btn btn-default">New Request<i class="fa fa-plus" aria-hidden="true"></i></button></li> -->
+									</ul>
+									</div>
+									</div>
+									
+							</div>
+			</div>
+	
+		
+		<div class="dashbr-section">
+		 <div class="row">
+		  <div class="white-section">
+		 <div class="top-dash">
+		    <ul class="dash-comman-icon">
+			  <li><a href=""><img src="img/reload.png" alt="#" />Reset</a></li>
+			  <li><a href=""><img src="img/right-icon.png" alt="#" />Make This as Default</a></li>
+			</ul>
+			<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle btn-c-new" type="button" data-toggle="dropdown">Choose Widgets
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu new">
+      <div id="id17">
+   
+  <form class="modal-content" action="/action_page.php">
+    <div class="imgcontainer">
+	<span class="appro-title">Choose Widgets</span>
+    </div>
+	  <div class="search-bar-id17" style="width:100%;">
+	      <div id="custom-search-input" style="width:100%;">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" placeholder="Search" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+	   </div>
+    <div class="container">			
+		
+		<div class="form-group cutom-view-list" style="margin-top:15px;">	
+  
+          <div class="select-all-view">
+		
+			<div class="col-sm-2">
+				<input type="checkbox" class="checkthis">
+			</div>
+			<label class="control-label col-sm-10" for="request type">Counter Graphs</label>
+			
+			</div>
+			
+			<div class="col-sm-2">
+				<input type="checkbox" class="checkthis">
+			</div>
+			<label class="control-label col-sm-10" for="request type">Priority</label>
+			
+			<div class="col-sm-2">
+				<input type="checkbox" class="checkthis">
+			</div>
+			<label class="control-label col-sm-10" for="request type">Requester</label>
+			
+			<div class="col-sm-2">
+				<input type="checkbox" class="checkthis">
+			</div>
+			<label class="control-label col-sm-10" for="request type">Requester satisfaction</label>
+			
+			 <div class="select-all-view">
+		
+			<div class="col-sm-2">
+				<input type="checkbox" class="checkthis">
+			</div>
+			<label class="control-label col-sm-10" for="request type">In Rate Out Rate Graph</label>
+			
+			</div>
+			
+			<div class="col-sm-2">
+				<input type="checkbox" class="checkthis">
+			</div>
+			<label class="control-label col-sm-10" for="request type">Department</label>
+			
+			<div class="col-sm-2">
+				<input type="checkbox" class="checkthis">
+			</div>
+			<label class="control-label col-sm-10" for="request type">Priority</label>
+			
+			<div class="col-sm-2">
+				<input type="checkbox" class="checkthis">
+			</div>
+			<label class="control-label col-sm-10" for="request type">Assigned To</label>
+			
+			<div class="col-sm-2">
+				<input type="checkbox" class="checkthis">
+			</div>
+			<label class="control-label col-sm-10" for="request type">Subcategory</label>
+			
+			<div class="col-sm-2">
+				<input type="checkbox" class="checkthis">
+			</div>
+			<label class="control-label col-sm-10" for="request type">Requester</label>
+			
+			<div class="col-sm-2">
+				<input type="checkbox" class="checkthis">
+			</div>
+			<label class="control-label col-sm-10" for="request type">Requester</label>
+			
+			<div class="col-sm-2">
+				<input type="checkbox" class="checkthis">
+			</div>
+			<label class="control-label col-sm-10" for="request type">Requester</label>
+			
+			<div class="col-sm-2">
+				<input type="checkbox" class="checkthis">
+			</div>
+			<label class="control-label col-sm-10" for="request type">Requester</label>
+			
+			</div>
+		<div class="form-group" style="border-top:solid #ccc 1px;border-bottom:none;margin-bottom:0;">
+				<div class="right" style="margin-top: 12px;">
+					 <button type="button" class="btn btn-default">Save</button>
+					 <button type="button" class="btn btn-default">Cancel</button>
+				</div>
+		</div>
+		
+    </div>
+  </form>
+</div>
+    </ul>
+  </div>
+			<div class="select-colum">
+			  <select>
+			      <option>Number of Columns</option>
+				  <option>Number of Columns2</option>
+				  <option>Number of Columns3</option>
+			   </select>
+			</div>
+		 </div>
+		</div>
+	</div>
+		 
+		 <div class="progress-meter-section">
+		  <div class="row">
+		   <div class="col-md-12 col-sm-12 col-xs-12">
+		      <div class="col-md-3 col-sm-3 col-xs-3">
+			    <div class="inner-bx" ">
+				 <div class="progress new blue">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">90%</div>
+				
+            </div>
+			<h4>Assigned To Me</h4>
+			    </div>
+			  </div>
+			  <div class="col-md-3 col-sm-3 col-xs-3">
+			    <div class="inner-bx" style="height:270px;">
+				 <div class="progress new yellow">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">75%</div>
+				
+            </div>
+			<h4>Assigned To Me</h4>
+			    </div>
+			  </div>
+
+			  <div class="col-md-3 col-sm-3 col-xs-3">
+			    <div class="inner-bx">
+
+				  <div class="head-meter">
+			    	
+          	
+							    <p style=" margin:0;padding-top: 10px;;">Current Response<br>Performance</p>
+                                <p style="font-size:32px;font-weight:700;">78%</p>								
+							</div>
+							<div style="width:100%;">
+								<canvas id="gauge1"></canvas>
+ <span class="infor-max col-md-4 col-sm-4 col-xs-4 pull-left view"  "><div class="dropdown">
+ 	<button class="btn  btn-xs dropdown-toggle" type="button" data-toggle="dropdown" style="background-color:#fff; border:solid #ddd 1px;border-radius: 4px; color:#000000">View
+<span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div></span>
+							<span class="infor-max col-md-6 col-sm-6 col-xs-6" style="text-align:left;">Minimum</span>
+                            <span class="infor-max col-md-6 col-sm-6 col-xs-6" style="text-align:right;">Maximum</span>		
+					</div>	
+			    </div>
+			  </div>
+			  <div class="col-md-3 col-sm-3 col-xs-3">
+			    <div class="inner-bx">
+				  <div class="head-meter">
+							    <p style="margin:0;padding-top: 10px;">Current Response<br>Performance</p>
+                                <p style="font-size:32px;font-weight:700;">28%</p>								
+							</div>
+							<div style="width:100%;">
+								<canvas id="gauge2"></canvas>
+<span class="infor-max col-md-4 col-sm-4 col-xs-4 pull-left view"  ">
+	<div class="dropdown">
+  <button class="btn  btn-xs dropdown-toggle" type="button" data-toggle="dropdown" style="background-color:#fff; border:solid #ddd 1px;border-radius: 4px; color:#000000">View
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div>
+</span>
+							<span class="infor-max col-md-6 col-md-6 col-sx-6" style="text-align:left;">Minimum</span>
+                            <span class="infor-max col-md-6 col-md-6 col-sx-6" style="text-align:right;">Maximum</span>								
+					</div>
+			    </div>
+			  </div>
+		   </div>
+		   </div>
+		 </div>
+	
+
+<div class="progress-meter-section">
+		  <div class="row">
+		   <div class="col-md-12 col-sm-12 col-xs-12">
+		      <div class="col-md-4 col-sm-4 col-xs-4">
+			    <div class="inner-bx" style="height:300px;">
+
+			 <div id="donutchart" style="margin-top:50px;"></div>
+<h4>Assigned To Me</h4>	
+			 <div class="view1">
+			 	<div class="dropdown  pull-left  col-md-6 col-sm-6 col-xs-6 ">
+  <button class="btn btnx btn-xs dropdown-toggle" type="button" data-toggle="dropdown" style="background-color:#fff; border:solid #ddd 1px;border-radius: 4px; color:#000000">Graph Type
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div>
+		 	<div class="dropdown  pull-right  col-md-4 col-sm-4 col-xs-4 ">
+  <button class="btn btnx btn-xs dropdown-toggle" type="button" data-toggle="dropdown" style="background-color:#fff; border:solid #ddd 1px;border-radius: 4px; color:#000000">Graph Type
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div>
+</div>
+
+		 
+			
+			    </div>
+			  </div>
+		
+
+
+
+
+
+	      <div class="col-md-4 col-sm-4 col-xs-4">
+			    <div class="inner-bx" style="height:300px;">
+
+		<div id="columnchart_values" style="margin-top: 30px;"></div>
+<h4>Assigned To Me</h4>	
+			 <div class="view1">
+			 	<div class="dropdown  pull-left  col-md-6 col-sm-6 col-xs-6 ">
+  <button class="btn btnx btn-xs dropdown-toggle" type="button" data-toggle="dropdown" style="background-color:#fff; border:solid #ddd 1px;border-radius: 4px; color:#000000">Graph Type
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div>
+		 	<div class="dropdown  pull-right  col-md-4 col-sm-4 col-xs-4 ">
+  <button class="btn btnx btn-xs dropdown-toggle" type="button" data-toggle="dropdown" style="background-color:#fff; border:solid #ddd 1px;border-radius: 4px; color:#000000">Graph Type
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div>
+</div>
+
+		 
+			
+			    </div>
+			  </div>
+
+
+
+
+
+
+
+	      <div class="col-md-4 col-sm-4 col-xs-4">
+			    <div class="inner-bx" style="height:300px;">
+
+			 <div id="chart_div" style="margin-top:50px;"></div>
+<h4>Assigned To Me</h4>	
+			 <div class="view1">
+			 	<div class="dropdown  pull-left  col-md-6 col-sm-6 col-xs-6 ">
+  <button class="btn btnx btn-xs dropdown-toggle" type="button" data-toggle="dropdown" style="background-color:#fff; border:solid #ddd 1px;border-radius: 4px; color:#000000">Graph Type
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div>
+		 	<div class="dropdown  pull-right  col-md-4 col-sm-4 col-xs-4 ">
+  <button class="btn btnx btn-xs dropdown-toggle" type="button" data-toggle="dropdown" style="background-color:#fff; border:solid #ddd 1px;border-radius: 4px; color:#000000">Graph Type
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div>
+</div>
+
+		 
+			
+			    </div>
+			  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+			 
+			
+
+
+		   </div>
+		   </div>
+		 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		 <div class="col-md-12 col-xs-12"> 
+		<div class="panel panel-default">
+		
+						<div class="head-top"><h2>Requests by Department</h2><div class="graf-select"><select><option>Request by  Department</option><option>Request by  Department2</option><option>Request by  Department2</option></select></div></div>
+						<div id="main-chart" style="height: 390px; padding: 0px; position: relative;">
+						
+						<canvas class="flot-base" width="987" height="390" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 987px; height: 390px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 70px; top: 373px; left: 889px; text-align: center;">Dec</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 70px; top: 373px; left: 42px; text-align: center;">Jan</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 70px; top: 373px; left: 120px; text-align: center;">Feb</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 70px; top: 373px; left: 191px; text-align: center;">Mar</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 70px; top: 373px; left: 271px; text-align: center;">Apr</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 70px; top: 373px; left: 345px; text-align: center;">May</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 70px; top: 373px; left: 425px; text-align: center;">Jun</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 70px; top: 373px; left: 503px; text-align: center;">Jul</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 70px; top: 373px; left: 579px; text-align: center;">Aug</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 70px; top: 373px; left: 658px; text-align: center;">Sep</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 70px; top: 373px; left: 735px; text-align: center;">Oct</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 70px; top: 373px; left: 813px; text-align: center;">Nov</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 360px; left: 36px; text-align: right;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 270px; left: 30px; text-align: right;">20</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 180px; left: 30px; text-align: right;">40</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 90px; left: 30px; text-align: right;">60</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 0px; left: 30px; text-align: right;">80</div></div></div><canvas class="flot-overlay" width="987" height="390" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 987px; height: 390px;"></canvas><div class="legend"><div style="position: absolute; width: 74px; height: 32px; top: 13px; right: 17px; background-color: rgb(255, 255, 255); opacity: 0.85;"> </div><table style="position:absolute;top:13px;right:17px;;font-size:smaller;color:#d1d4d7"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(99,194,222);overflow:hidden"></div></div></td><td class="legendLabel">All clients</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(77,189,116);overflow:hidden"></div></div></td><td class="legendLabel">New clients</td></tr></tbody></table></div>
+						</div>
+						
+						<div class="panel-footer">
+							<ul class="panel-footer-stats">
+								<li>
+									<canvas id="gauge-success" height="50" width="70"></canvas>
+									<span class="number">148.125</span>
+									<span class="title">New users</span>
+								</li>
+								<li>
+									<canvas id="gauge-info" height="50" width="70"></canvas>
+									<span class="number">452.352</span>
+									<span class="title">Pageviews</span>
+								</li>
+								<li>
+									<canvas id="gauge-warning" height="50" width="70"></canvas>
+									<span class="number">2,19</span>
+									<span class="title">Pages / Visit</span>
+								</li>
+								<li>
+									<canvas id="gauge-danger" height="50" width="70"></canvas>
+									<span class="number">59,83%</span>
+									<span class="title">Bounce Rate</span>
+								</li>
+								<li>
+									<canvas id="gauge-primary" height="50" width="70"></canvas>
+									<span class="number">70,79%</span>
+									<span class="title">New Visits</span>
+								</li>								
+							</ul>		
+						</div>
+						
+					</div>	
+				</div>
+				<div class="col-md-12 col-xs-12">
+				  <div class="row">
+				     <div class="col-md-5 col-sm-5 col-xs-5">
+					 <div id="donutchart" ></div>
+					 </div>
+					 <div class="col-md-7 col-sm-7 col-xs-7">
+					  <div class="inner-bx">
+					    <div class="table-dash">
+						   <table class="table table-striped">
+    <thead>
+      <tr>
+        <th style="padding-left:18px;">Dummy</th>
+        <th>Column1</th>
+        <th>Column2</th>
+		<th>Column3</th>
+		<th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding-left:18px;">Row1</td>
+        <td>54</td>
+        <td>12</td>
+		<td>10.5%</td>
+        <td>$50</td>
+      </tr>
+	  <tr>
+        <td style="padding-left:18px;">Row2</td>
+        <td>96</td>
+        <td>24</td>
+		<td>25%</td>
+        <td>$10</td>
+      </tr>
+	  <tr>
+        <td style="padding-left:18px;">Row3</td>
+        <td>5</td>
+        <td>5</td>
+		<td>100%</td>
+        <td>$10</td>
+      </tr>
+	  <tr>
+        <td style="padding-left:18px;">Row4</td>
+        <td>1</td>
+        <td>0</td>
+		<td>0.0%</td>
+        <td>$0</td>
+	  </tr>
+      <tr>
+        <td style="padding-left:18px;">Row4</td>
+        <td>5</td>
+        <td>0</td>
+		<td>0.0%</td>
+        <td>$0</td>
+	  </tr>
+	  <tr>
+        <td style="padding-left:18px;">Row4</td>
+        <td>0</td>
+        <td>0</td>
+		<td>0.0%</td>
+        <td>$0</td>
+	  </tr>
+	  <tr>
+        <td style="padding-left:18px;">Row4</td>
+        <td>1</td>
+        <td>0</td>
+		<td>0.0%</td>
+        <td>$0</td>
+	  </tr>
+	  <tr>
+        <td style="padding-left:18px;">Row4</td>
+        <td>5</td>
+        <td>0</td>
+		<td>0.0%</td>
+        <td>$0</td>
+	  </tr>
+    </tbody>
+</table>
+						</div>
+					  </div>
+					 </div>
+				  </div>
+				 </div>
+				 
+			</div>	
+	
+
+<!-- graf end -->
+        <script src="graf-js/jquery-3.1.0.min.js.download"></script>
+		<script src="graf-js/bootstrap.min.js.download"></script>
+		<script src="graf-js/jquery-ui-1.10.4.min.js.download"></script> 
+		
+		<script src="graf-js/moment.min.js.download"></script> 
+		<script src="graf-js/jquery.flot.min.js.download"></script> 
+		<script src="graf-js/jquery.flot.resize.min.js.download"></script> 
+		<script src="graf-js/jquery.flot.time.min.js.download"></script> 
+		<script src="graf-js/jquery.flot.spline.min.js.download"></script>
+		<script src="graf-js/jquery.autosize.min.js.download"></script> 
+		<script src="graf-js/jquery.placeholder.min.js.download"></script> 
+		<script src="graf-js/jquery.dataTables.min.js.download"></script> 
+		
+		<script src="graf-js/gauge.min.js.download"></script>
+		<script src="graf-js/daterangepicker.min.js.download"></script>
+	
+		<script src="graf-js/core.min.js.download"></script>
+		<script src="graf-js/index.js.download"></script>
+			<script src="js/gchrt.js"></script>
+  <script type="text/javascript">
+  	  google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Year', 'Visitations', { role: 'style' } ],
+        ['2010', 10, 'color: gray'],
+        ['2020', 14, 'color: #76A7FA'],
+        ['2030', 16, 'opacity: 0.2'],
+        ['2040', 22, 'stroke-color: #703593; stroke-width: 2; fill-color: #C5A5CF'],
+        ['2050', 28, 'stroke-color: #871B47; stroke-opacity: 0.2; stroke-width: 2; fill-color: #BC5679; fill-opacity: 0.2']
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+      
+  height: 220,
+        animation:{
+          "startup": true,
+        duration: 1000,
+        easing: 'out',
+      },
+        
+        bar: {groupWidth: "100%"},
+        legend: { position: "none" },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+      chart.draw(view, options);
+  }
+
+  </script>
+</body>
+
+</html>
+
