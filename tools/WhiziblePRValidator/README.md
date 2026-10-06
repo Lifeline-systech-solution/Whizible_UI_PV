@@ -60,7 +60,7 @@ git diff --name-only origin/main...HEAD | Out-File -Encoding utf8 changed-files.
 
 ## What is checked
 
-ASPX markup uses a stack parser. Script and style bodies are raw text, so JavaScript such as `a < b` is not treated as a tag. Rules ASPX-001 through ASPX-005 cover markup, server controls, duplicate IDs, `runat`, and directives.
+ASPX markup uses a stack parser. Script and style bodies are raw text, so JavaScript such as `a < b` is not treated as a tag. Rules ASPX-001 through ASPX-005 cover markup, server controls, duplicate IDs, `runat`, and directives. A JavaScript `debugger` statement inside a `<script>` block is ASPX-011 and fails the check. A `debugger` word inside a comment, a string, an object key, or a property name does not.
 
 `runat="server"` and `runat="Server"` are both valid. Duplicate IDs are scoped to naming containers. Repeater, GridView, and template tags each get their own ID scope. Unknown `<asp:>` types are rejected only when `System.Web.dll` can be loaded from the .NET Framework installation. `<%@ Register %>` custom controls are accepted. If System.Web is missing, the tool reports an info message and does not guess control names.
 

@@ -3966,6 +3966,7 @@
     }
 
     function drawBudgetVarianceChart(data) {
+        debugger
         var canvas = document.getElementById('chVar');
         var labels = [];
         var values = [];
@@ -5200,6 +5201,7 @@
     // Added By Vyankat b. on 1st Oct 2026 for the Delayed Projects export on Level 1 only
 
     function renderDelayedProjectsDrill() {
+        debugger
         var ov = document.getElementById('overlay');
         var title = document.getElementById('mTitle');
         var crumbs = document.getElementById('mCrumbs');
