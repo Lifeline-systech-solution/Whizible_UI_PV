@@ -3966,6 +3966,7 @@
     }
 
     function drawBudgetVarianceChart(data) {
+        debugger
         var canvas = document.getElementById('chVar');
         var labels = [];
         var values = [];
